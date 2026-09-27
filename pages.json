@@ -1,0 +1,3500 @@
+[
+  {
+    "route": "/en/",
+    "file": "dist\\en\\index.html",
+    "ads": false,
+    "lang": "en",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/"
+      }
+    ]
+  },
+  {
+    "route": "/en/procedures/",
+    "file": "dist\\en\\procedures\\index.html",
+    "ads": false,
+    "lang": "en",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/procedures/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/procedures/"
+      }
+    ]
+  },
+  {
+    "route": "/en/procedures/bbl/",
+    "file": "dist/en/procedures/bbl/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/en/procedures/bbl/",
+        "name": "Brazilian Butt Lift (BBL) in Cartagena",
+        "inLanguage": "en",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Brazilian butt lift"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Brazilian butt lift",
+        "description": "A Brazilian butt lift (BBL) is gluteal fat grafting: fat is removed by liposuction from areas such as the abdomen, flanks or back, purified, and injected into the buttocks and hips to change their shape and projection. No implant is used. ASPS explains that surgeons often harvest up to three times more fat than they finally inject, and that on average about 60–80% of the transferred fat survives long term.",
+        "url": "https://fulviocorrea.com.co/en/procedures/bbl/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is a BBL in Colombia safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Safety depends on the surgeon, facility and technique rather than the country. Plastic surgery societies support injecting fat only above the gluteal muscle with real-time ultrasound, in licensed facilities, with the surgeon available for complications. Ask how each point is handled."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long can I not sit after a BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS advises avoiding prolonged sitting for about two weeks, and some surgeons prefer longer. When sitting is necessary, a cushion under the back of the thighs keeps pressure off the grafted fat."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much of the transferred fat survives?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "According to ASPS, patients retain on average about 60 to 80 percent of the transferred fat, sometimes more and sometimes less. The final result is visible at about one year."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get a BBL if I am thin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on available donor fat. Lean patients can sometimes have a modest transfer, but volume is limited by how much fat can be safely harvested, which is measured at consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I exercise after a Brazilian butt lift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS notes that exercise can generally resume after six to eight weeks. Your surgeon decides based on how the donor and grafted areas are healing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Cartagena after a BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The date is set after your follow-up visits, taking into account sitting restrictions, swelling and the length of your flight. Plan a flexible return ticket rather than a fixed short stay."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "bbl",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/procedures/bbl/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/procedures/bbl/"
+      }
+    ]
+  },
+  {
+    "route": "/en/ads/bbl/",
+    "file": "dist/en/ads/bbl/index.html",
+    "lang": "en",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "bbl",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/ads/bbl/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/ads/bbl/"
+      }
+    ]
+  },
+  {
+    "route": "/en/procedures/breast-augmentation/",
+    "file": "dist/en/procedures/breast-augmentation/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Breast Expert (Dr Fulvio Correa)",
+        "description": "An introduction to the procedure by Dr. Fulvio Correa.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video.webp",
+        "uploadDate": "2024-10-05T02:18:04+00:00",
+        "duration": "PT141S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/5a704bd1570ab497567659041b09d526a78e49bb.mp4",
+        "inLanguage": "en",
+        "captionLanguage": [
+          "en",
+          "es"
+        ],
+        "transcript": "If you are watching this video, it's because you want to improve the appearance of your breasts, perhaps because you want to increase the size, improve the projection or maybe because you have lost volume and they have fallen and you want to recover the appearance before breastfeeding or when you were younger. Maybe it is the opposite and you have a very large and heavy breast that causes you discomfort and pain and you want to reduce its size. Regardless of your case, through a breast augmentation, breast lift or breast reduction procedure we can give you the result you dreamed of, the result that allows you to feel good about yourself, that allows you to wear the clothes you want and not the ones that you have to wear. The result that makes you feel confident, wherever you are, no matter if it is a family dinner, if you are at work or wearing a swimsuit. Let me introduce myself, I'm Dr. Fulvio Correa, a board certified plastic surgeon. For more than 10 years, I have helped women of different ages to achieve their breast dream, for example Andrea, who now has fuller and more projected breasts and share with us these incredible photos that you are seeing right now or Camila, who send us these photos of her magnificent breast lift result. Just like them, I can also help you to achieve a result like the ones you just watched. But that's not the best part. Through our all-inclusive program that we have designed specifically for patients who come from other countries like you, my staff will accompany you in every phase of the journey, answering all your questions, helping you to plan your trip, scheduling your accommodation in our recovery house, where you will have all the comforts and care necessary for a prompt and satisfactory recovery. Schedule your free evaluation right now, and start your journey to achieve your goals and boost your confidence."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/en/procedures/breast-augmentation/",
+        "name": "Breast Augmentation Cartagena, Colombia",
+        "inLanguage": "en",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Breast augmentation"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Breast augmentation",
+        "description": "Breast augmentation in Colombia—augmentation mammoplasty, or a \"boob job\" in everyday language—is surgery that increases breast size or restores volume by placing a breast implant either behind the breast tissue or behind the chest muscle. Mayo Clinic notes that people choose it to enlarge small breasts, balance asymmetry or restore volume lost after pregnancy or weight loss.",
+        "url": "https://fulviocorrea.com.co/en/procedures/breast-augmentation/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Colombia after breast augmentation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS suggests waiting at least five to seven days before flying after breast augmentation. The exact date depends on your first follow-up visit, including stitch or drain removal if needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long do breast implants last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Implants are not lifetime devices. Mayo Clinic notes they last about 10 years on average, and rupture, capsular contracture or aging can lead to another surgery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Silicone or saline implants: which is better?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Neither is best for everyone. Silicone implants come pre-filled with gel; saline implants are filled with sterile salt water once placed. Feel, incision size, rupture monitoring and your tissue coverage guide the choice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it better to place implants over or under the muscle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on how much natural tissue covers the implant, your activity level and the look you want. Placement behind the muscle can give more coverage, while placement in front of it can mean an easier early recovery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I breastfeed after breast augmentation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many women can, but for some it becomes more difficult. Discuss future pregnancy and breastfeeding plans during your consultation so incision and placement take them into account."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will I need MRI or ultrasound checks after silicone implants?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The FDA suggests imaging 5 to 6 years after silicone implant surgery to check for silent rupture, then every 2 to 3 years. Ask your doctor at home which test fits your case."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "breast-augmentation",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/procedures/breast-augmentation/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/procedures/breast-augmentation/"
+      }
+    ]
+  },
+  {
+    "route": "/en/ads/breast-augmentation/",
+    "file": "dist/en/ads/breast-augmentation/index.html",
+    "lang": "en",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "breast-augmentation",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/ads/breast-augmentation/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/ads/breast-augmentation/"
+      }
+    ]
+  },
+  {
+    "route": "/en/procedures/breast-lift-reduction/",
+    "file": "dist/en/procedures/breast-lift-reduction/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Breast Expert (Dr Fulvio Correa)",
+        "description": "An introduction to the procedure by Dr. Fulvio Correa.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video.webp",
+        "uploadDate": "2024-10-05T02:18:04+00:00",
+        "duration": "PT141S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/5a704bd1570ab497567659041b09d526a78e49bb.mp4",
+        "inLanguage": "en",
+        "captionLanguage": [
+          "en",
+          "es"
+        ],
+        "transcript": "If you are watching this video, it's because you want to improve the appearance of your breasts, perhaps because you want to increase the size, improve the projection or maybe because you have lost volume and they have fallen and you want to recover the appearance before breastfeeding or when you were younger. Maybe it is the opposite and you have a very large and heavy breast that causes you discomfort and pain and you want to reduce its size. Regardless of your case, through a breast augmentation, breast lift or breast reduction procedure we can give you the result you dreamed of, the result that allows you to feel good about yourself, that allows you to wear the clothes you want and not the ones that you have to wear. The result that makes you feel confident, wherever you are, no matter if it is a family dinner, if you are at work or wearing a swimsuit. Let me introduce myself, I'm Dr. Fulvio Correa, a board certified plastic surgeon. For more than 10 years, I have helped women of different ages to achieve their breast dream, for example Andrea, who now has fuller and more projected breasts and share with us these incredible photos that you are seeing right now or Camila, who send us these photos of her magnificent breast lift result. Just like them, I can also help you to achieve a result like the ones you just watched. But that's not the best part. Through our all-inclusive program that we have designed specifically for patients who come from other countries like you, my staff will accompany you in every phase of the journey, answering all your questions, helping you to plan your trip, scheduling your accommodation in our recovery house, where you will have all the comforts and care necessary for a prompt and satisfactory recovery. Schedule your free evaluation right now, and start your journey to achieve your goals and boost your confidence."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/en/procedures/breast-lift-reduction/",
+        "name": "Breast Lift & Reduction in Cartagena",
+        "inLanguage": "en",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Breast reduction & lift"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Breast reduction & lift",
+        "description": "This page covers two related operations. A breast lift (mastopexy) removes excess skin and reshapes breast tissue so that the breasts and nipples sit higher; it does not significantly change size. A breast reduction (reduction mammoplasty) removes fat, glandular tissue and skin to make heavy breasts smaller and lighter, and it lifts them in the process. Both are common reasons U.S. and Colombian patients look for breast lift in Colombia or breast reduction in Cartagena.",
+        "url": "https://fulviocorrea.com.co/en/procedures/breast-lift-reduction/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between a breast lift and a breast reduction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A breast lift repositions and reshapes the breasts without significantly changing their size. A breast reduction removes tissue, fat and skin to make the breasts smaller and lighter, and lifts them at the same time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I breastfeed after a breast lift or reduction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often yes after a lift, although the breasts may look different afterward. After a reduction breastfeeding may be harder or not possible, so Mayo Clinic suggests postponing surgery if you plan to have children."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long is recovery after breast reduction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS describes about three weeks of short-term recovery and three to four months for swelling to settle. Mayo Clinic advises limiting physical activity for four to six weeks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need implants with a breast lift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. A lift restores position and shape; implants are added only if you also want more volume or upper-breast fullness."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should I wait after breastfeeding to have a breast lift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic reports that surgeons suggest waiting about six months to a year after you stop breastfeeding, so the breasts reach a stable size and shape."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will the scars be visible?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The scars are permanent but usually soften and fade over one to two years. They are placed so they can usually be covered by a bra or swimsuit."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "breast-lift-reduction",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/procedures/breast-lift-reduction/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/procedures/breast-lift-reduction/"
+      }
+    ]
+  },
+  {
+    "route": "/en/ads/breast-lift-reduction/",
+    "file": "dist/en/ads/breast-lift-reduction/index.html",
+    "lang": "en",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "breast-lift-reduction",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/ads/breast-lift-reduction/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/ads/breast-lift-reduction/"
+      }
+    ]
+  },
+  {
+    "route": "/en/procedures/facelift/",
+    "file": "dist/en/procedures/facelift/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Deep Plane Facelift Specialist (Dr Fulvio Correa)",
+        "description": "An introduction to the procedure by Dr. Fulvio Correa.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/facelift-video.webp",
+        "uploadDate": "2024-10-05T02:18:56+00:00",
+        "duration": "PT124S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/8e94fb88b6a420579e28d466715d936f260d954a.mp4",
+        "inLanguage": "en",
+        "captionLanguage": [
+          "en",
+          "es"
+        ],
+        "transcript": "If you desire a fresh and youthful look, a look that you have lost due to sagging skin, loss of volume and accentuation of wrinkles, a face lift is the right option for you. I will explain why. A face lift goes far beyond lifting the skin. When we perform this procedure, we also mobilize the layer of tissue that covers, invests, and connects the muscles of the face and neck, also known as the SMAS layer. Lifting this layer allows us to achieve a natural and harmonious improvement in the appearance of the skin and also in the expression of the face. In this way, the result is much more durable. In addition, we can use advanced filler techniques to give volume to areas that have lost it and get an even more powerful result in the youthfulness that the face reflects. The vast majority of our patients says that they feel that they have rejuvenated ten years in time. That is the case of Caroline, whose photos you are watching right now and with whom we achieved this magnificent result. However, due to the complexity of the facial tissue and the large number of nerves that the face has, it is extremely important that this procedure will be performed by a board-certified plastic surgeon. Let me introduce myself. I'm Dr. Fulvio Correa, a board-certified plastic surgeon. Through our all-inclusive program that we have designed especially for patients come from other countries like you. My staff will accompany you in every phase of the journey, answering all your questions, helping you to plan your trip, scheduling your accommodation in our recovery house, where you will have all the comforts and care necessary for a prompt and satisfactory recovery. Schedule your free evaluation right now and start your journey to achieve your goals and boost your confidence."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/en/procedures/facelift/",
+        "name": "Facelift in Cartagena, Colombia",
+        "inLanguage": "en",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Facelift"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Facelift",
+        "description": "A facelift, or rhytidectomy, is surgery that lifts and tightens the deeper tissues of the face and removes excess skin to reduce sagging of the lower face and jawline. It is often combined with a neck lift to address loose skin and fat under the chin. Mayo Clinic is clear about its limits: a facelift does not remove fine lines and wrinkles or sun damage, and it does not stop the aging process.",
+        "url": "https://fulviocorrea.com.co/en/procedures/facelift/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Colombia after a facelift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS guidance on cosmetic surgery tourism suggests waiting 7 to 10 days before flying after a facelift. That usually covers drain removal and stitch removal at about one week; your exact stay is confirmed in consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a facelift last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Results are long-lasting, but a facelift does not stop aging. Mayo Clinic notes that the skin continues to age over time, so the face will keep changing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the recovery time for a facelift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most bruising fades within about two weeks, and many people return to everyday activities around 10 to 15 days. Residual swelling and numbness improve over several months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between a facelift and a neck lift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A facelift targets sagging of the cheeks and jawline, while a neck lift addresses loose skin and fat under the chin and along the neck. They are frequently performed together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will facelift scars be visible?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The incisions are placed in the hairline and around the ear so they follow natural contours. The scars are permanent but usually become discreet as they mature."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a facelift remove wrinkles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It improves sagging and deeper folds, but Mayo Clinic notes it does not correct fine lines, wrinkles or sun damage. Skin treatments are considered separately."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "facelift",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/procedures/facelift/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/procedures/facelift/"
+      }
+    ]
+  },
+  {
+    "route": "/en/ads/facelift/",
+    "file": "dist/en/ads/facelift/index.html",
+    "lang": "en",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "facelift",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/ads/facelift/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/ads/facelift/"
+      }
+    ]
+  },
+  {
+    "route": "/en/procedures/liposuction/",
+    "file": "dist/en/procedures/liposuction/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Renew your figure - Liposuction Expert (Dr Fulvio Correa)",
+        "description": "Liposuction video from Dr. Fulvio Correa’s practice.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/liposuction-video.webp",
+        "uploadDate": "2024-10-05T02:19:50.000Z",
+        "duration": "PT2M4S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/2dc7351288bbc2cd36511213629a777bcec6bae4.mp4",
+        "isPartOf": {
+          "@id": "https://fulviocorrea.com.co/en/procedures/liposuction/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/en/procedures/liposuction/",
+        "name": "Liposuction in Cartagena, Colombia",
+        "inLanguage": "en",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Liposuction"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Liposuction",
+        "description": "Liposuction in Cartagena is body-contouring surgery that removes stubborn fat deposits through small incisions using a thin tube (cannula) connected to suction. Mayo Clinic describes it as a way to reshape areas such as the abdomen, flanks, back, arms, thighs or under the chin that have not responded to diet and exercise. It is not a weight-loss method: it works best in people who are close to a stable weight and have localized fat.",
+        "url": "https://fulviocorrea.com.co/en/procedures/liposuction/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Cartagena after liposuction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS suggests waiting at least five to seven days before flying after liposuction. Larger or combined procedures may need more time, and your surgeon confirms the date after checking swelling and incisions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is liposuction a way to lose weight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. It removes localized fat deposits to improve contour. Mayo Clinic notes that diet, exercise or other types of surgery lead to more weight loss than liposuction."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between liposuction and lipo 360?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lipo 360 is a common name for treating the abdomen, flanks and back in one session. It is the same procedure over a larger area, which means more operating time and a higher complication risk."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long do I wear a compression garment after liposuction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most people wear compression garments for a few weeks to reduce swelling and support the new contour. Your surgeon sets the exact duration based on the areas treated."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the fat come back after liposuction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The fat cells removed do not return, but remaining fat can grow with weight gain, sometimes in untreated areas. Keeping a stable weight preserves the result."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does liposuction tighten loose skin or remove cellulite?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Liposuction does not treat cellulite or stretch marks, and loose skin may look looser after fat removal. Significant skin excess usually needs a lifting procedure such as a tummy tuck."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "liposuction",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/procedures/liposuction/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/procedures/liposuction/"
+      }
+    ]
+  },
+  {
+    "route": "/en/ads/liposuction/",
+    "file": "dist/en/ads/liposuction/index.html",
+    "lang": "en",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "liposuction",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/ads/liposuction/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/ads/liposuction/"
+      }
+    ]
+  },
+  {
+    "route": "/en/procedures/mommy-makeover/",
+    "file": "dist/en/procedures/mommy-makeover/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Mommy Makeover Expert (Dr Fulvio Correa)",
+        "description": "An introduction to the procedure by Dr. Fulvio Correa.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mommy-video.webp",
+        "uploadDate": "2024-10-08T20:19:47+00:00",
+        "duration": "PT32S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/4fb54b504958465f5f6595590fa15312fbbb50d3.mp4",
+        "inLanguage": "en",
+        "captionLanguage": [
+          "en",
+          "es"
+        ],
+        "transcript": "Mommy Makeover is the ideal combination of procedure for women who had one or more children and wants to get their figure back. I'm doctor Fulvio Correa, board certified plastic surgeon with more than ten years experience. We have developed a specialized program for patients from abroad who wants to live an amazing all inclusive plastic surgery experience. I encourage you to click this video and know more."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/en/procedures/mommy-makeover/",
+        "name": "Mommy Makeover in Cartagena, Colombia",
+        "inLanguage": "en",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Mommy Makeover"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Mommy Makeover",
+        "description": "A mommy makeover in Colombia is a personalized combination of body procedures—most often a tummy tuck, breast surgery (lift, implants, reduction or a mix) and liposuction—planned to address the changes that pregnancy, childbirth and breastfeeding leave behind. The American Society of Plastic Surgeons (ASPS) notes that it is typically performed as a single-stage operation, with the number of procedures limited to what is safe for each patient.",
+        "url": "https://fulviocorrea.com.co/en/procedures/mommy-makeover/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long do you need to stay in Colombia after a mommy makeover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the procedures combined and how recovery goes. ASPS suggests at least five to seven days before flying after body procedures like liposuction or breast augmentation, and Avianca lists travel from 14 days after a tummy tuck with a recent medical certificate. Your surgeon confirms the date after the follow-up visits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does a mommy makeover usually include?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most plans combine a tummy tuck, breast surgery (lift, implants, reduction or lift with implants) and liposuction of the waist or flanks. The exact mix depends on your anatomy and on what can be done safely in one operation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long is mommy makeover recovery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "According to ASPS, initial recovery typically lasts two to three weeks, with a gradual return to normal activities over six to eight weeks. Final results can take six to 12 months as swelling resolves."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a mommy makeover cost in Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The cost depends on how many procedures are combined, operating time, the facility, anesthesia and the follow-up included, so it is quoted after an evaluation. When comparing quotes, ask exactly what each one includes, from garments to post-operative visits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I have a mommy makeover after a C-section?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often, yes. Mayo Clinic notes that the existing C-section scar can usually be included in the new tummy tuck incision. Significant scar tissue from previous abdominal surgery is reviewed during the evaluation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I wait until I am done having children?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS lists being finished with childbearing as a candidacy criterion, because a later pregnancy can stretch the abdomen and change the breasts again. Many surgeons also recommend waiting several months after breastfeeding ends."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it safe to combine several procedures in one surgery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can be, when the combination fits your health and the total operating time. Complication risk increases with the size and number of areas treated, so the surgeon may suggest staging the plan instead."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "mommy-makeover",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/procedures/mommy-makeover/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/procedures/mommy-makeover/"
+      }
+    ]
+  },
+  {
+    "route": "/en/ads/mommy-makeover/",
+    "file": "dist/en/ads/mommy-makeover/index.html",
+    "lang": "en",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "mommy-makeover",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/ads/mommy-makeover/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/ads/mommy-makeover/"
+      }
+    ]
+  },
+  {
+    "route": "/en/procedures/rhinoplasty/",
+    "file": "dist/en/procedures/rhinoplasty/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "The nose of your dreams with Dr Fulvio Correa",
+        "description": "An introduction to the procedure by Dr. Fulvio Correa.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/rhinoplasty-video.webp",
+        "uploadDate": "2024-10-05T02:20:14+00:00",
+        "duration": "PT76S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/b1f864765ffbaa4b84bb83b6025da33231fb6f9e.mp4",
+        "inLanguage": "en",
+        "captionLanguage": [
+          "en",
+          "es"
+        ],
+        "transcript": "The nose is the most prominent feature of the face. It is the central point of the face and it's the feature that can most influence all the areas in the face. That is why any change we make to the nose, no matter how small, will affect the appearance of your face. That's why when you're choosing the professional to perform a rhinoplasty, it's very important that you make sure that he or she is qualified and has the necessary experience to understand what you want to achieve and give you a safe and satisfactory result. Let me introduce myself. I'm Dr. Fulvio Correa, a board certified plastic surgeon. Through our all-inclusive program that we have designed especially for patients, come from other countries like you. My staff will accompany you in every phase of the journey. Answering all your questions, helping you to plan your trip, scheduling your accommodation in our recovery house, where you will have all the comforts and care necessary for a prompt and satisfactory recovery. Schedule your free evaluation right now and start your journey to achieve your goals and boost your confidence."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/en/procedures/rhinoplasty/",
+        "name": "Rhinoplasty in Cartagena, Colombia",
+        "inLanguage": "en",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Rhinoplasty"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Rhinoplasty",
+        "description": "Rhinoplasty is surgery that changes the shape of the nose, its function, or both. It can modify the bone, the cartilage and the skin: narrowing a wide bridge, reducing a hump, refining or supporting the tip, or correcting a nose that is crooked after an injury. When the septum—the wall that divides the nostrils—is straightened in the same operation to improve airflow, it is often called septorhinoplasty.",
+        "url": "https://fulviocorrea.com.co/en/procedures/rhinoplasty/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long do I need to stay in Colombia after rhinoplasty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS guidance on cosmetic surgery tourism recommends waiting 7 to 10 days before flying after rhinoplasty. The external splint usually comes off at about one week, so many trips are planned around that visit; your exact stay is confirmed in consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does rhinoplasty swelling last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bruising around the eyes usually fades in two to three weeks. Nasal swelling improves over months and can take up to a year to disappear completely, especially at the tip."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can rhinoplasty improve breathing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can when the obstruction comes from the septum or nasal structure. Straightening a deviated septum is often combined with cosmetic changes. Breathing problems from allergies need separate treatment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between open and closed rhinoplasty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In closed rhinoplasty all incisions are inside the nostrils. Open rhinoplasty adds a small incision across the columella to give the surgeon more direct access to the tip. The choice depends on the changes planned."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I wear glasses after a nose job?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic recommends not resting eyeglasses or sunglasses on the nose for at least four weeks. They can be taped to the forehead or supported on the cheeks in the meantime."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How soon can I have a revision rhinoplasty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic advises waiting at least one year, because the nose keeps changing as swelling resolves. A revision is planned only once the shape has stabilized."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "rhinoplasty",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/procedures/rhinoplasty/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/procedures/rhinoplasty/"
+      }
+    ]
+  },
+  {
+    "route": "/en/ads/rhinoplasty/",
+    "file": "dist/en/ads/rhinoplasty/index.html",
+    "lang": "en",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "rhinoplasty",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/ads/rhinoplasty/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/ads/rhinoplasty/"
+      }
+    ]
+  },
+  {
+    "route": "/en/procedures/tummy-tuck/",
+    "file": "dist/en/procedures/tummy-tuck/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/en/procedures/tummy-tuck/",
+        "name": "Tummy Tuck in Cartagena, Colombia",
+        "inLanguage": "en",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Tummy tuck"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Tummy tuck",
+        "description": "A tummy tuck in Colombia—medically, an abdominoplasty—is surgery that removes loose skin and fat from the lower abdomen and tightens the connective tissue (fascia) over the abdominal muscles. When pregnancy has separated those muscles, a condition called rectus diastasis, the repair narrows the waist and flattens the bulge that exercise alone rarely fixes. Mayo Clinic adds that liposuction is often done at the same time to contour the whole abdominal area.",
+        "url": "https://fulviocorrea.com.co/en/procedures/tummy-tuck/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long do I need to stay in Colombia after a tummy tuck?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plan around at least two weeks if you are flying: Avianca lists travel from 14 days after an abdominoplasty with a medical certificate issued within 10 days of the flight. The final date depends on your surgeon's clearance at follow-up."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between a full and a mini tummy tuck?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A full tummy tuck removes skin from hip to hip, repositions the navel and usually tightens the abdominal muscles. A mini tummy tuck uses a shorter incision and treats only the area below the navel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will a tummy tuck fix muscle separation after pregnancy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, that is one of its main purposes. The surgeon stitches the fascia over separated abdominal muscles, a condition called rectus diastasis, which flattens the bulge and narrows the waist."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I go back to work after a tummy tuck?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic notes that many people return to work in about two to four weeks. Physical jobs take longer, and lifting or straining is avoided for about six weeks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a tummy tuck remove stretch marks?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It removes stretch marks located on the skin that is excised, mostly below the belly button. Stretch marks above that area may remain, although they can shift lower."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I have a tummy tuck if I want more children?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is usually better to wait. A future pregnancy can stretch the skin and separate the muscles again, and Mayo Clinic lists planned pregnancy as a reason surgeons may advise against surgery."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "tummy-tuck",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/procedures/tummy-tuck/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/procedures/tummy-tuck/"
+      }
+    ]
+  },
+  {
+    "route": "/en/ads/tummy-tuck/",
+    "file": "dist/en/ads/tummy-tuck/index.html",
+    "lang": "en",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "tummy-tuck",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/ads/tummy-tuck/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/ads/tummy-tuck/"
+      }
+    ]
+  },
+  {
+    "route": "/en/about/",
+    "file": "dist\\en\\about\\index.html",
+    "ads": false,
+    "lang": "en",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/about/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/about/"
+      }
+    ]
+  },
+  {
+    "route": "/en/international-patients/",
+    "file": "dist/en/international-patients/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I start without traveling to Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The international-patient program describes an initial virtual consultation to discuss your goals, medical history and expectations. Contact the practice to arrange an assessment and confirm the next steps."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no single itinerary for every procedure or patient. Ask the treating team to confirm the expected stay and the conditions for your return journey after assessing your individual plan and recovery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when I arrive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The program includes an in-person medical evaluation in Cartagena. This is an opportunity to review your plan and preparation with the doctor before surgery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What recovery support is available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The program describes supervised recovery, follow-up and professional assistance. Confirm the accommodation and services included in your individual quotation, as well as any arrangements you need to make separately."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I travel with a companion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Discuss this with the team during your assessment. The appropriate arrangements depend on your procedure and circumstances; do not assume that the same advice applies to every patient."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there follow-up after I return home?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The practice describes remote follow-up after returning home. Confirm the contact channel, appointment arrangements and how to raise concerns before leaving Cartagena."
+            }
+          }
+        ]
+      }
+    ],
+    "cover": "/assets/blog-cartagena-medical-tourism.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/international-patients/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/international-patients/"
+      }
+    ]
+  },
+  {
+    "route": "/en/before-after/",
+    "file": "dist/en/before-after/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": true,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/before-after/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/before-after/"
+      }
+    ]
+  },
+  {
+    "route": "/en/resources/",
+    "file": "dist\\en\\resources\\index.html",
+    "ads": false,
+    "lang": "en",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/resources/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/resources/"
+      }
+    ]
+  },
+  {
+    "route": "/en/resources/your-consultation/",
+    "file": "dist\\en\\resources\\your-consultation\\index.html",
+    "ads": false,
+    "lang": "en",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/resources/your-consultation/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/resources/your-consultation/"
+      }
+    ]
+  },
+  {
+    "route": "/en/faq/",
+    "file": "dist\\en\\faq\\index.html",
+    "ads": false,
+    "lang": "en",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/faq/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/faq/"
+      }
+    ]
+  },
+  {
+    "route": "/en/book-consultation/",
+    "file": "dist\\en\\book-consultation\\index.html",
+    "ads": false,
+    "lang": "en",
+    "noindex": true,
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/book-consultation/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/book-consultation/"
+      }
+    ]
+  },
+  {
+    "route": "/en/image-sources/",
+    "file": "dist\\en\\image-sources\\index.html",
+    "ads": false,
+    "lang": "en",
+    "noindex": true,
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/image-sources/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/image-sources/"
+      }
+    ]
+  },
+  {
+    "route": "/en/404/",
+    "file": "dist\\en\\404\\index.html",
+    "ads": false,
+    "lang": "en",
+    "noindex": true,
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/404/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/404/"
+      }
+    ]
+  },
+  {
+    "route": "/es/",
+    "file": "dist\\es\\index.html",
+    "ads": false,
+    "lang": "es",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/"
+      }
+    ]
+  },
+  {
+    "route": "/es/procedures/",
+    "file": "dist\\es\\procedures\\index.html",
+    "ads": false,
+    "lang": "es",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/procedures/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/procedures/"
+      }
+    ]
+  },
+  {
+    "route": "/es/procedures/bbl/",
+    "file": "dist/es/procedures/bbl/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/es/procedures/bbl/",
+        "name": "Lipotransferencia glútea (BBL) Cartagena",
+        "inLanguage": "es",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Aumento glúteo con grasa"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Aumento glúteo con grasa",
+        "description": "La lipotransferencia glútea, conocida como BBL (Brazilian butt lift) o aumento de glúteos con grasa propia, consiste en extraer grasa con liposucción de zonas como abdomen, flancos o espalda, procesarla e inyectarla en glúteos y caderas para mejorar su forma y proyección, sin implantes. La ASPS explica que suele extraerse hasta tres veces más grasa de la que finalmente se inyecta y que, en promedio, sobrevive entre el 60 % y el 80 % de la grasa transferida.",
+        "url": "https://fulviocorrea.com.co/es/procedures/bbl/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Es seguro hacerse un BBL en Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La seguridad depende del cirujano, la clínica y la técnica, no del país. Las sociedades de cirugía plástica respaldan inyectar la grasa solo por encima del músculo glúteo, con ecografía en tiempo real y en instituciones habilitadas. Pregunta cómo se cumple cada punto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo no me puedo sentar después de un BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La ASPS recomienda evitar estar sentada por periodos prolongados durante unas dos semanas; algunos cirujanos piden más. Cuando sea necesario, usa un cojín bajo los muslos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánta grasa se reabsorbe después de la lipotransferencia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Según la ASPS, en promedio se conserva entre el 60 % y el 80 % de la grasa transferida, a veces más y a veces menos. El resultado final se aprecia hacia el año."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta un aumento de glúteos con grasa en Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende de las zonas donantes, la cantidad de grasa, la anestesia, la clínica y los controles incluidos. El valor se entrega después de la valoración."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo hacerme un BBL si soy delgada?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende de la grasa disponible. En personas delgadas el volumen que se puede transferir es limitado; en la valoración se calcula qué es realista."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo volver al gimnasio después de un BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La ASPS indica que el ejercicio suele retomarse entre las seis y las ocho semanas, siempre con autorización de tu cirujano."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "bbl",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/procedures/bbl/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/procedures/bbl/"
+      }
+    ]
+  },
+  {
+    "route": "/es/ads/bbl/",
+    "file": "dist/es/ads/bbl/index.html",
+    "lang": "es",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "bbl",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/ads/bbl/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/ads/bbl/"
+      }
+    ]
+  },
+  {
+    "route": "/es/procedures/breast-augmentation/",
+    "file": "dist/es/procedures/breast-augmentation/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Breast Expert (Dr Fulvio Correa)",
+        "description": "Presentación del procedimiento por el Dr. Fulvio Correa.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video.webp",
+        "uploadDate": "2024-10-05T02:18:04+00:00",
+        "duration": "PT141S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/5a704bd1570ab497567659041b09d526a78e49bb.mp4",
+        "inLanguage": "en",
+        "captionLanguage": [
+          "en",
+          "es"
+        ],
+        "transcript": "Si estás viendo este video, es porque quieres mejorar la apariencia de tus senos, quizás porque quieres aumentar su tamaño, mejorar su proyección o porque han perdido volumen y han caído, y deseas recuperar su apariencia anterior a la lactancia o de cuando eras más joven. Quizás sea lo contrario y tengas senos muy grandes y pesados que te causen molestias y dolor, y quieras reducir su tamaño. Sea cual sea tu caso, mediante un aumento, levantamiento o reducción de senos podemos darte el resultado que has soñado, un resultado que te permita sentirte bien contigo misma y llevar la ropa que quieres, en lugar de la que tienes que usar. Un resultado que te haga sentir segura donde estés, ya sea en una cena familiar, en el trabajo o en traje de baño. Me presento: soy el doctor Fulvio Correa, cirujano plástico certificado. Durante más de diez años he ayudado a mujeres de diferentes edades a lograr los senos que desean. Por ejemplo, Andrea, que ahora tiene senos más llenos y proyectados, y comparte estas fotos que estás viendo ahora, o Camila, que nos envió estas fotos del resultado de su levantamiento de senos. Al igual que a ellas, puedo ayudarte a conseguir un resultado como los que acabas de ver. Pero esa no es la mejor parte. A través de nuestro programa integral, diseñado específicamente para pacientes de otros países como tú, mi equipo te acompañará en cada etapa del viaje, resolviendo tus preguntas, ayudándote a planificar el viaje y organizando tu alojamiento en nuestra casa de recuperación, donde tendrás las comodidades y los cuidados necesarios para una recuperación pronta y satisfactoria. Agenda tu evaluación gratuita ahora y comienza tu camino para alcanzar tus objetivos y mejorar tu confianza."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/es/procedures/breast-augmentation/",
+        "name": "Aumento de senos en Cartagena, Colombia",
+        "inLanguage": "es",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Aumento de senos"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Aumento de senos",
+        "description": "El aumento de senos en Cartagena, o mamoplastia de aumento, es la cirugía que incrementa el volumen del busto mediante un implante mamario ubicado detrás de la glándula o detrás del músculo pectoral. Se busca tanto para aumentar un busto pequeño como para corregir asimetrías o recuperar el volumen perdido después de la lactancia o de bajar de peso.",
+        "url": "https://fulviocorrea.com.co/es/procedures/breast-augmentation/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto duran los implantes mamarios?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No son para toda la vida. Mayo Clinic indica que duran alrededor de 10 años en promedio, y la ruptura, la contractura capsular o los cambios del cuerpo pueden llevar a una nueva cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura la recuperación de un aumento de senos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Durante al menos dos semanas se evitan los esfuerzos. Muchas pacientes vuelven a trabajos no físicos en pocas semanas, y el implante termina de acomodarse en unos meses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es mejor el implante encima o debajo del músculo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende de cuánto tejido propio cubre el implante, de tu actividad física y del resultado buscado. Detrás del músculo suele haber más cobertura; delante, la recuperación inicial puede ser más llevadera."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta un aumento de senos en Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del tipo de implante, la técnica, la anestesia, la clínica y los controles incluidos. El valor se entrega después de la valoración, con el detalle de lo que incluye."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo lactar después de ponerme implantes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Muchas mujeres pueden, aunque en algunas es más difícil. Coméntalo en la valoración para que la incisión y la ubicación del implante lo tengan en cuenta."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días después de la cirugía puedo viajar en avión?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La ASPS sugiere esperar al menos cinco a siete días después de un aumento de senos. La fecha la confirma tu cirujano en el primer control."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "breast-augmentation",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/procedures/breast-augmentation/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/procedures/breast-augmentation/"
+      }
+    ]
+  },
+  {
+    "route": "/es/ads/breast-augmentation/",
+    "file": "dist/es/ads/breast-augmentation/index.html",
+    "lang": "es",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "breast-augmentation",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/ads/breast-augmentation/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/ads/breast-augmentation/"
+      }
+    ]
+  },
+  {
+    "route": "/es/procedures/breast-lift-reduction/",
+    "file": "dist/es/procedures/breast-lift-reduction/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Breast Expert (Dr Fulvio Correa)",
+        "description": "Presentación del procedimiento por el Dr. Fulvio Correa.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video.webp",
+        "uploadDate": "2024-10-05T02:18:04+00:00",
+        "duration": "PT141S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/5a704bd1570ab497567659041b09d526a78e49bb.mp4",
+        "inLanguage": "en",
+        "captionLanguage": [
+          "en",
+          "es"
+        ],
+        "transcript": "Si estás viendo este video, es porque quieres mejorar la apariencia de tus senos, quizás porque quieres aumentar su tamaño, mejorar su proyección o porque han perdido volumen y han caído, y deseas recuperar su apariencia anterior a la lactancia o de cuando eras más joven. Quizás sea lo contrario y tengas senos muy grandes y pesados que te causen molestias y dolor, y quieras reducir su tamaño. Sea cual sea tu caso, mediante un aumento, levantamiento o reducción de senos podemos darte el resultado que has soñado, un resultado que te permita sentirte bien contigo misma y llevar la ropa que quieres, en lugar de la que tienes que usar. Un resultado que te haga sentir segura donde estés, ya sea en una cena familiar, en el trabajo o en traje de baño. Me presento: soy el doctor Fulvio Correa, cirujano plástico certificado. Durante más de diez años he ayudado a mujeres de diferentes edades a lograr los senos que desean. Por ejemplo, Andrea, que ahora tiene senos más llenos y proyectados, y comparte estas fotos que estás viendo ahora, o Camila, que nos envió estas fotos del resultado de su levantamiento de senos. Al igual que a ellas, puedo ayudarte a conseguir un resultado como los que acabas de ver. Pero esa no es la mejor parte. A través de nuestro programa integral, diseñado específicamente para pacientes de otros países como tú, mi equipo te acompañará en cada etapa del viaje, resolviendo tus preguntas, ayudándote a planificar el viaje y organizando tu alojamiento en nuestra casa de recuperación, donde tendrás las comodidades y los cuidados necesarios para una recuperación pronta y satisfactoria. Agenda tu evaluación gratuita ahora y comienza tu camino para alcanzar tus objetivos y mejorar tu confianza."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/es/procedures/breast-lift-reduction/",
+        "name": "Reducción y mastopexia en Cartagena",
+        "inLanguage": "es",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Reducción y levantamiento de senos"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Reducción y levantamiento de senos",
+        "description": "En esta página reunimos dos cirugías de mama relacionadas. La reducción de senos (mamoplastia de reducción) retira glándula, grasa y piel para disminuir el tamaño y el peso del busto, y al mismo tiempo lo eleva. El levantamiento de senos o mastopexia retira piel sobrante y remodela la mama para subirla, sin cambiar mucho su volumen. La Sociedad Colombiana de Cirugía Plástica (SCCP) las describe como procedimientos distintos, cada uno con su propia indicación.",
+        "url": "https://fulviocorrea.com.co/es/procedures/breast-lift-reduction/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre mastopexia y reducción de senos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La mastopexia sube y remodela el busto sin cambiar mucho su tamaño. La reducción retira glándula, grasa y piel para que el busto sea más pequeño y liviano, y además lo eleva."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo lactar después de una reducción o un levantamiento de senos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tras una mastopexia en general sí. Después de una reducción la lactancia puede ser difícil o imposible, por eso Mayo Clinic sugiere aplazar la cirugía si planeas tener hijos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura la recuperación de una reducción de senos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La recuperación inicial toma unas tres semanas y la inflamación se resuelve en tres o cuatro meses. La actividad física se limita durante cuatro a seis semanas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La mastopexia necesita implantes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No siempre. El levantamiento corrige posición y forma; el implante se suma solo si también quieres más volumen o relleno en la parte superior."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Las cicatrices se notan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Son permanentes, pero suelen aclararse y suavizarse en uno a dos años. Se ubican para que queden cubiertas por el brasier o el vestido de baño."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo después de lactar puedo hacerme un levantamiento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic indica que se suele esperar entre seis meses y un año después de terminar la lactancia, para que el busto alcance un tamaño y una forma estables."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "breast-lift-reduction",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/procedures/breast-lift-reduction/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/procedures/breast-lift-reduction/"
+      }
+    ]
+  },
+  {
+    "route": "/es/ads/breast-lift-reduction/",
+    "file": "dist/es/ads/breast-lift-reduction/index.html",
+    "lang": "es",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "breast-lift-reduction",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/ads/breast-lift-reduction/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/ads/breast-lift-reduction/"
+      }
+    ]
+  },
+  {
+    "route": "/es/procedures/facelift/",
+    "file": "dist/es/procedures/facelift/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Deep Plane Facelift Specialist (Dr Fulvio Correa)",
+        "description": "Presentación del procedimiento por el Dr. Fulvio Correa.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/facelift-video.webp",
+        "uploadDate": "2024-10-05T02:18:56+00:00",
+        "duration": "PT124S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/8e94fb88b6a420579e28d466715d936f260d954a.mp4",
+        "inLanguage": "en",
+        "captionLanguage": [
+          "en",
+          "es"
+        ],
+        "transcript": "Si deseas un aspecto fresco y juvenil, que has perdido por la flacidez de la piel, la pérdida de volumen y la acentuación de las arrugas, un lifting facial es una opción para ti. Te explicaré por qué. Un lifting facial va mucho más allá de levantar la piel. Al realizar este procedimiento también movilizamos la capa de tejido que recubre, envuelve y conecta los músculos del rostro y del cuello, conocida como capa SMAS. Elevar esta capa nos permite lograr una mejora natural y armoniosa en la apariencia de la piel y también en la expresión del rostro. De esta forma, el resultado es más duradero. Además, podemos utilizar técnicas avanzadas de relleno para dar volumen a las zonas que lo han perdido y conseguir un resultado aún mayor en el aspecto juvenil del rostro. La gran mayoría de nuestros pacientes dice que siente que ha rejuvenecido diez años. Es el caso de Caroline, cuyas fotos estás viendo ahora y con quien logramos este resultado. Sin embargo, por la complejidad de los tejidos faciales y la gran cantidad de nervios del rostro, es sumamente importante que este procedimiento lo realice un cirujano plástico certificado. Me presento: soy el doctor Fulvio Correa, cirujano plástico certificado. A través de nuestro programa integral, diseñado especialmente para pacientes que vienen de otros países como tú, mi equipo te acompañará en cada etapa del viaje, resolviendo tus preguntas, ayudándote a planificar el viaje y organizando tu alojamiento en nuestra casa de recuperación, donde tendrás las comodidades y los cuidados necesarios para una recuperación pronta y satisfactoria. Agenda tu evaluación gratuita y comienza tu camino para alcanzar tus objetivos y mejorar tu confianza."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/es/procedures/facelift/",
+        "name": "Lifting facial (ritidoplastia) Cartagena",
+        "inLanguage": "es",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Lifting facial"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Lifting facial",
+        "description": "El lifting facial, también llamado ritidoplastia o estiramiento facial, es la cirugía que reposiciona los tejidos profundos del rostro y retira la piel sobrante para mejorar la flacidez de mejillas, mandíbula y, cuando se asocia a un lifting de cuello, de la zona bajo el mentón. Mayo Clinic aclara sus límites: no elimina líneas finas ni el daño solar, y no detiene el envejecimiento.",
+        "url": "https://fulviocorrea.com.co/es/procedures/facelift/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura el resultado de un lifting facial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El resultado es duradero, pero la cirugía no detiene el envejecimiento: la piel sigue cambiando con los años."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura la recuperación de una ritidoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los morados suelen desaparecer en unas dos semanas y muchas personas retoman su rutina entre los días 10 y 15. La inflamación residual mejora durante meses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre lifting facial y lifting de cuello?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El lifting facial trata la caída de mejillas y mandíbula; el de cuello, la piel y la grasa sobrantes bajo el mentón y en el cuello. Con frecuencia se hacen juntos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Se notan las cicatrices del lifting facial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Se ubican en el cuero cabelludo y alrededor de la oreja, siguiendo pliegues naturales. Son permanentes, pero suelen volverse discretas al madurar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El lifting facial quita las arrugas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mejora la flacidez y los surcos profundos, pero no corrige líneas finas ni el daño solar; para eso existen tratamientos de piel complementarios."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué anestesia se usa en el lifting facial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puede hacerse con sedación y anestesia local o con anestesia general; se define según la extensión de la cirugía y tu estado de salud."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "facelift",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/procedures/facelift/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/procedures/facelift/"
+      }
+    ]
+  },
+  {
+    "route": "/es/ads/facelift/",
+    "file": "dist/es/ads/facelift/index.html",
+    "lang": "es",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "facelift",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/ads/facelift/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/ads/facelift/"
+      }
+    ]
+  },
+  {
+    "route": "/es/procedures/liposuction/",
+    "file": "dist/es/procedures/liposuction/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Renew your figure - Liposuction Expert (Dr Fulvio Correa)",
+        "description": "Video sobre liposucción del consultorio del Dr. Fulvio Correa.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/liposuction-video.webp",
+        "uploadDate": "2024-10-05T02:19:50.000Z",
+        "duration": "PT2M4S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/2dc7351288bbc2cd36511213629a777bcec6bae4.mp4",
+        "isPartOf": {
+          "@id": "https://fulviocorrea.com.co/es/procedures/liposuction/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/es/procedures/liposuction/",
+        "name": "Liposucción y lipoescultura en Cartagena",
+        "inLanguage": "es",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Liposucción"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Liposucción",
+        "description": "La liposucción en Cartagena —también llamada lipoescultura— es una cirugía de contorno corporal que extrae depósitos de grasa localizada mediante pequeñas incisiones y una cánula conectada a succión. Sirve para definir abdomen, cintura, espalda, brazos, muslos o papada cuando la grasa no cede con dieta ni ejercicio.",
+        "url": "https://fulviocorrea.com.co/es/procedures/liposuction/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuál es la diferencia entre liposucción y lipoescultura?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Técnicamente es el mismo procedimiento: la SCCP los trata como sinónimos. Se habla de lipoescultura cuando el objetivo es moldear la silueta; si la grasa se reinyecta en glúteos, se trata de una lipotransferencia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta una lipoescultura en Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del número de zonas, la técnica, la anestesia, la clínica y lo que incluya el posoperatorio. El valor se entrega después de la valoración, con el detalle de lo incluido."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo se usa la faja después de una liposucción?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Por lo general varias semanas, para controlar la inflamación y ayudar a que la piel se adapte. Tu cirujano define el tiempo según las zonas tratadas y tu evolución."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La liposucción sirve para bajar de peso?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. La SCCP insiste en que no es un procedimiento para la obesidad. Sirve para retirar grasa localizada y mejorar el contorno en personas con peso estable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo volver a trabajar después de una lipo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para trabajos de oficina pueden bastar unos días, según Mayo Clinic. Las actividades físicas y el ejercicio vuelven de forma gradual en las semanas siguientes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La grasa vuelve después de una liposucción?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las células extraídas no regresan, pero la grasa que queda puede crecer si subes de peso, incluso en zonas no tratadas. Mantener el peso conserva el resultado."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "liposuction",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/procedures/liposuction/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/procedures/liposuction/"
+      }
+    ]
+  },
+  {
+    "route": "/es/ads/liposuction/",
+    "file": "dist/es/ads/liposuction/index.html",
+    "lang": "es",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "liposuction",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/ads/liposuction/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/ads/liposuction/"
+      }
+    ]
+  },
+  {
+    "route": "/es/procedures/mommy-makeover/",
+    "file": "dist/es/procedures/mommy-makeover/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Mommy Makeover Expert (Dr Fulvio Correa)",
+        "description": "Presentación del procedimiento por el Dr. Fulvio Correa.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mommy-video.webp",
+        "uploadDate": "2024-10-08T20:19:47+00:00",
+        "duration": "PT32S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/4fb54b504958465f5f6595590fa15312fbbb50d3.mp4",
+        "inLanguage": "en",
+        "captionLanguage": [
+          "en",
+          "es"
+        ],
+        "transcript": "Mommy Makeover es la combinación ideal de procedimientos para mujeres que han tenido uno o más hijos y quieren recuperar su figura. Soy el doctor Fulvio Correa, cirujano plástico certificado con más de diez años de experiencia. Hemos desarrollado un programa especializado para pacientes del extranjero que quieren vivir una experiencia de cirugía plástica integral y extraordinaria. Te invito a hacer clic en este video para conocer más."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/es/procedures/mommy-makeover/",
+        "name": "Mommy makeover en Cartagena, Colombia",
+        "inLanguage": "es",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Mommy Makeover"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Mommy Makeover",
+        "description": "El mommy makeover en Cartagena es un plan quirúrgico que reúne, en una misma cirugía o en dos tiempos, los procedimientos que ayudan a recuperar el contorno del cuerpo después del embarazo y la lactancia. Lo más habitual es combinar abdominoplastia, cirugía de mamas (levantamiento, implantes, reducción o una mezcla) y liposucción de cintura y flancos. La Sociedad Estadounidense de Cirujanos Plásticos (ASPS) lo describe como una intervención que suele hacerse en una sola etapa, siempre que la suma de procedimientos sea segura para esa paciente.",
+        "url": "https://fulviocorrea.com.co/es/procedures/mommy-makeover/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta un mommy makeover en Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende de cuántos procedimientos se combinen, del tiempo de cirugía, la clínica, la anestesia y los controles incluidos. Por eso el valor se entrega después de la valoración. Pide siempre el detalle de lo que incluye cada cotización."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué incluye un mommy makeover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Normalmente abdominoplastia, cirugía de mamas (levantamiento, implantes, reducción o levantamiento con implantes) y liposucción de cintura o flancos. La combinación exacta depende de tu cuerpo y de lo que sea seguro hacer en una sola cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura la recuperación de un mommy makeover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Según la ASPS, la recuperación inicial suele durar de dos a tres semanas y el regreso a la rutina es gradual en seis a ocho semanas. El resultado final puede tardar entre seis y doce meses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo después del parto puedo hacerme un mommy makeover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lo recomendable es haber terminado la lactancia, tener un peso estable durante varios meses y no planear más embarazos. Para el levantamiento de senos, Mayo Clinic indica que suele esperarse entre seis meses y un año después de dejar de lactar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Me puedo hacer un mommy makeover si tuve cesárea?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En muchos casos sí. La cicatriz de la cesárea suele incorporarse a la incisión de la abdominoplastia. Si hubo varias cirugías abdominales con mucha fibrosis, se evalúa en consulta."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo volver a cargar a mi bebé?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Después de una abdominoplastia se evita levantar peso y hacer fuerza durante las primeras seis semanas, según Mayo Clinic. El momento exacto lo autoriza tu cirujano en los controles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días debo quedarme en Cartagena si vengo de otra ciudad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende de las cirugías y de tu evolución. Si el plan incluye abdominoplastia y viajas en avión, Avianca permite volar desde los 14 días con certificado médico reciente. Tu cirujano confirma la fecha en los controles."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "mommy-makeover",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/procedures/mommy-makeover/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/procedures/mommy-makeover/"
+      }
+    ]
+  },
+  {
+    "route": "/es/ads/mommy-makeover/",
+    "file": "dist/es/ads/mommy-makeover/index.html",
+    "lang": "es",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "mommy-makeover",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/ads/mommy-makeover/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/ads/mommy-makeover/"
+      }
+    ]
+  },
+  {
+    "route": "/es/procedures/rhinoplasty/",
+    "file": "dist/es/procedures/rhinoplasty/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "The nose of your dreams with Dr Fulvio Correa",
+        "description": "Presentación del procedimiento por el Dr. Fulvio Correa.",
+        "thumbnailUrl": "https://fulviocorrea.com.co/assets/rhinoplasty-video.webp",
+        "uploadDate": "2024-10-05T02:20:14+00:00",
+        "duration": "PT76S",
+        "contentUrl": "https://embed-ssl.wistia.com/deliveries/b1f864765ffbaa4b84bb83b6025da33231fb6f9e.mp4",
+        "inLanguage": "en",
+        "captionLanguage": [
+          "en",
+          "es"
+        ],
+        "transcript": "La nariz es el rasgo más prominente del rostro. Es el punto central del rostro y el rasgo que más puede influir en las demás zonas de la cara. Por eso, cualquier cambio que hagamos en la nariz, por pequeño que sea, afectará la apariencia de tu rostro. Por eso, al elegir al profesional que realizará una rinoplastia, es muy importante asegurarte de que esté cualificado y tenga la experiencia necesaria para comprender lo que quieres lograr y ofrecerte un resultado seguro y satisfactorio. Permíteme presentarme. Soy el doctor Fulvio Correa, cirujano plástico certificado. A través de nuestro programa integral, que diseñamos especialmente para pacientes que vienen de otros países como tú, mi equipo te acompañará en cada etapa del viaje, resolviendo todas tus preguntas, ayudándote a planificar el viaje, organizando tu alojamiento en nuestra casa de recuperación, donde tendrás las comodidades y los cuidados necesarios para una recuperación pronta y satisfactoria. Agenda tu evaluación gratuita ahora y comienza tu camino para alcanzar tus objetivos y mejorar tu confianza."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/es/procedures/rhinoplasty/",
+        "name": "Rinoplastia en Cartagena, Colombia",
+        "inLanguage": "es",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Rinoplastia"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Rinoplastia",
+        "description": "La rinoplastia es la cirugía que modifica la forma de la nariz, su función o ambas. Puede actuar sobre el hueso, el cartílago y la piel para disminuir una giba, afinar o sostener la punta, estrechar el dorso o corregir una desviación tras un golpe. Cuando en la misma cirugía se endereza el tabique para mejorar el paso del aire se habla de septorrinoplastia.",
+        "url": "https://fulviocorrea.com.co/es/procedures/rhinoplasty/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura la recuperación de una rinoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Muchas personas vuelven a actividades tranquilas en una semana y a casi todo en dos a cuatro semanas. La inflamación de la punta puede tardar hasta un año en desaparecer por completo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo se quita la férula de la rinoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La férula externa suele llevarse alrededor de una semana. Las férulas o el taponamiento interno, si se usan, permanecen entre uno y siete días."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La rinoplastia mejora la respiración?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, cuando la obstrucción viene del tabique o de la estructura nasal; en ese caso se hace una septorrinoplastia. Si la causa es alérgica, requiere otro tratamiento."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre rinoplastia abierta y cerrada?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En la cerrada todas las incisiones son internas. La abierta añade una pequeña incisión en la columela para ver mejor los cartílagos de la punta. Se elige según los cambios planeados."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo usar gafas después de la rinoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic recomienda no apoyar gafas sobre la nariz durante al menos cuatro semanas. Mientras tanto se pueden sujetar con cinta a la frente."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto hay que esperar para un retoque de rinoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Se recomienda esperar al menos un año, porque la nariz sigue cambiando mientras baja la inflamación. El retoque se planea cuando la forma ya se estabilizó."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "rhinoplasty",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/procedures/rhinoplasty/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/procedures/rhinoplasty/"
+      }
+    ]
+  },
+  {
+    "route": "/es/ads/rhinoplasty/",
+    "file": "dist/es/ads/rhinoplasty/index.html",
+    "lang": "es",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "rhinoplasty",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/ads/rhinoplasty/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/ads/rhinoplasty/"
+      }
+    ]
+  },
+  {
+    "route": "/es/procedures/tummy-tuck/",
+    "file": "dist/es/procedures/tummy-tuck/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com.co/es/procedures/tummy-tuck/",
+        "name": "Abdominoplastia en Cartagena, Colombia",
+        "inLanguage": "es",
+        "lastReviewed": "2026-09-26",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Abdominoplastia"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Abdominoplastia",
+        "description": "La abdominoplastia en Cartagena es la cirugía que retira el exceso de piel y grasa del abdomen inferior y tensa la pared abdominal cuando los músculos rectos se han separado (diástasis). La Sociedad Colombiana de Cirugía Plástica (SCCP) explica que se retira la piel sobrante y se tratan los músculos para mejorar el contorno, dejando una cicatriz baja que puede ir de cadera a cadera y queda escondida bajo el vestido de baño; algunas estrías por debajo del ombligo desaparecen con la piel que se elimina.",
+        "url": "https://fulviocorrea.com.co/es/procedures/tummy-tuck/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura la recuperación de una abdominoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las actividades cotidianas se retoman poco a poco desde la primera o segunda semana, pero cargar peso y hacer ejercicio fuerte suelen esperar entre seis y ocho semanas. El resultado final se aprecia alrededor de los seis meses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre mini abdominoplastia y abdominoplastia completa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La completa retira piel de cadera a cadera, reubica el ombligo y normalmente corrige la diástasis. La mini usa una incisión más corta y trata solo la zona por debajo del ombligo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta una abdominoplastia en Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende de la técnica, el tiempo quirúrgico, la clínica, la anestesia y los controles incluidos. El valor se entrega después de la valoración, con el detalle de lo que incluye."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días después de una abdominoplastia puedo viajar en avión?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avianca permite volar a partir de los 14 días después de una abdominoplastia, con certificado médico expedido máximo 10 días antes del vuelo. Además, tu cirujano debe autorizarlo en el control."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo se usa la faja después de una abdominoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Suele usarse durante varias semanas; Mayo Clinic menciona alrededor de seis a ocho semanas para la faja abdominal. El tiempo exacto lo indica tu cirujano según tu evolución."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La abdominoplastia quita las estrías?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Retira las estrías que están en la piel que se extirpa, sobre todo por debajo del ombligo. Las que están más arriba pueden quedar, aunque se desplazan hacia abajo."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "tummy-tuck",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/procedures/tummy-tuck/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/procedures/tummy-tuck/"
+      }
+    ]
+  },
+  {
+    "route": "/es/ads/tummy-tuck/",
+    "file": "dist/es/ads/tummy-tuck/index.html",
+    "lang": "es",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "tummy-tuck",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/ads/tummy-tuck/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/ads/tummy-tuck/"
+      }
+    ]
+  },
+  {
+    "route": "/es/about/",
+    "file": "dist\\es\\about\\index.html",
+    "ads": false,
+    "lang": "es",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/about/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/about/"
+      }
+    ]
+  },
+  {
+    "route": "/es/international-patients/",
+    "file": "dist/es/international-patients/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Puedo comenzar sin viajar a Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. El programa describe una valoración virtual inicial para conversar sobre objetivos, historia clínica y expectativas. Contacta al consultorio para coordinar la evaluación y confirmar los siguientes pasos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo debo permanecer en Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No existe un itinerario único para todos los procedimientos y pacientes. Pide al equipo tratante que confirme la estancia prevista y las condiciones del regreso después de valorar tu plan individual y tu evolución."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué ocurre cuando llego?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El programa incluye una evaluación médica presencial en Cartagena. Es un espacio para revisar con el doctor el plan y la preparación antes de la cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué apoyo hay durante la recuperación?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El programa describe recuperación supervisada, seguimiento y asistencia profesional. Confirma el alojamiento y los servicios incluidos en tu cotización individual, además de los acuerdos que debas organizar por separado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Debo viajar con acompañante?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Convérsalo con el equipo durante la valoración. La organización adecuada depende del procedimiento y de tus circunstancias; no asumas que la misma recomendación aplica a todos los pacientes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hay seguimiento después de regresar a mi país?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El consultorio describe seguimiento remoto después del regreso. Confirma el canal de contacto, las citas y cómo comunicar inquietudes antes de salir de Cartagena."
+            }
+          }
+        ]
+      }
+    ],
+    "cover": "/assets/blog-cartagena-medical-tourism.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/international-patients/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/international-patients/"
+      }
+    ]
+  },
+  {
+    "route": "/es/before-after/",
+    "file": "dist/es/before-after/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": true,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/before-after/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/before-after/"
+      }
+    ]
+  },
+  {
+    "route": "/es/resources/",
+    "file": "dist\\es\\resources\\index.html",
+    "ads": false,
+    "lang": "es",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/resources/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/resources/"
+      }
+    ]
+  },
+  {
+    "route": "/es/resources/your-consultation/",
+    "file": "dist\\es\\resources\\your-consultation\\index.html",
+    "ads": false,
+    "lang": "es",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/resources/your-consultation/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/resources/your-consultation/"
+      }
+    ]
+  },
+  {
+    "route": "/es/faq/",
+    "file": "dist\\es\\faq\\index.html",
+    "ads": false,
+    "lang": "es",
+    "noindex": false,
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/faq/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/faq/"
+      }
+    ]
+  },
+  {
+    "route": "/es/book-consultation/",
+    "file": "dist\\es\\book-consultation\\index.html",
+    "ads": false,
+    "lang": "es",
+    "noindex": true,
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/book-consultation/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/book-consultation/"
+      }
+    ]
+  },
+  {
+    "route": "/es/image-sources/",
+    "file": "dist\\es\\image-sources\\index.html",
+    "ads": false,
+    "lang": "es",
+    "noindex": true,
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/image-sources/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/image-sources/"
+      }
+    ]
+  },
+  {
+    "route": "/es/404/",
+    "file": "dist\\es\\404\\index.html",
+    "ads": false,
+    "lang": "es",
+    "noindex": true,
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/404/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/404/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/",
+    "file": "dist/en/blog/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/category/mommy-makeover/",
+    "file": "dist/en/blog/category/mommy-makeover/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": true,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/category/mommy-makeover/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/category/mommy-makeover/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/category/breast-surgery/",
+    "file": "dist/en/blog/category/breast-surgery/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/category/breast-surgery/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/category/breast-surgery/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/category/body-contouring/",
+    "file": "dist/en/blog/category/body-contouring/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/category/body-contouring/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/category/body-contouring/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/category/recovery/",
+    "file": "dist/en/blog/category/recovery/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/category/recovery/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/category/recovery/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/category/medical-tourism/",
+    "file": "dist/en/blog/category/medical-tourism/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/category/medical-tourism/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/category/medical-tourism/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/category/plastic-surgery-in-colombia/",
+    "file": "dist/en/blog/category/plastic-surgery-in-colombia/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": true,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/category/plastic-surgery-in-colombia/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/category/plastic-surgery-in-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
+    "file": "dist/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Cartagena Plastic Surgery and Medical Tourism: 2026 Report",
+        "datePublished": "2026-09-26",
+        "dateModified": "2026-09-26",
+        "inLanguage": "en",
+        "image": "https://fulviocorrea.com.co/assets/blog-cartagena-medical-tourism.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        }
+      }
+    ],
+    "alternate": "/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",
+    "cover": "/assets/blog-cartagena-medical-tourism.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/mommy-makeover-recovery-time/",
+    "file": "dist/en/blog/mommy-makeover-recovery-time/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Mommy Makeover Recovery Time: What to Expect Week by Week",
+        "datePublished": "2026-09-24",
+        "dateModified": "2026-09-25",
+        "inLanguage": "en",
+        "image": "https://fulviocorrea.com.co/assets/blog-mommy-makeover-recovery.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/mommy-makeover-recovery-time/",
+        "author": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        }
+      }
+    ],
+    "alternate": "/es/blog/tiempo-recuperacion-mommy-makeover/",
+    "cover": "/assets/blog-mommy-makeover-recovery.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/mommy-makeover-recovery-time/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/tiempo-recuperacion-mommy-makeover/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/bbl-colombia/",
+    "file": "dist/en/blog/bbl-colombia/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "BBL Colombia: What U.S. Patients Should Decide Before Travel",
+        "datePublished": "2026-09-23",
+        "dateModified": "2026-09-25",
+        "inLanguage": "en",
+        "image": "https://fulviocorrea.com.co/assets/blog-bbl-body-contour.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/bbl-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        }
+      }
+    ],
+    "alternate": null,
+    "cover": "/assets/blog-bbl-body-contour.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/bbl-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/breast-augmentation-colombia/",
+    "file": "dist/en/blog/breast-augmentation-colombia/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Breast Augmentation Colombia: A Practical Guide for U.S. Patients",
+        "datePublished": "2026-09-23",
+        "dateModified": "2026-09-25",
+        "inLanguage": "en",
+        "image": "https://fulviocorrea.com.co/assets/blog-breast-augmentation.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/breast-augmentation-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        }
+      }
+    ],
+    "alternate": null,
+    "cover": "/assets/blog-breast-augmentation.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/breast-augmentation-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/how-long-to-stay-after-mommy-makeover/",
+    "file": "dist/en/blog/how-long-to-stay-after-mommy-makeover/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How Long to Stay After a Mommy Makeover (Especially Abroad)",
+        "datePublished": "2026-09-23",
+        "dateModified": "2026-09-25",
+        "inLanguage": "en",
+        "image": "https://fulviocorrea.com.co/assets/blog-cartagena-stay.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/how-long-to-stay-after-mommy-makeover/",
+        "author": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        }
+      }
+    ],
+    "alternate": null,
+    "cover": "/assets/blog-cartagena-stay.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/how-long-to-stay-after-mommy-makeover/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/liposuction-cartagena/",
+    "file": "dist/en/blog/liposuction-cartagena/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Liposuction in Cartagena: Consultation, Travel & Recovery Guide",
+        "datePublished": "2026-09-23",
+        "dateModified": "2026-09-25",
+        "inLanguage": "en",
+        "image": "https://fulviocorrea.com.co/assets/blog-liposuction-measurement.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/liposuction-cartagena/",
+        "author": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        }
+      }
+    ],
+    "alternate": null,
+    "cover": "/assets/blog-liposuction-measurement.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/liposuction-cartagena/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/tummy-tuck-colombia/",
+    "file": "dist/en/blog/tummy-tuck-colombia/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Tummy Tuck in Colombia: How U.S. Patients Choose a Surgeon",
+        "datePublished": "2026-09-23",
+        "dateModified": "2026-09-25",
+        "inLanguage": "en",
+        "image": "https://fulviocorrea.com.co/assets/blog-tummy-tuck-consultation.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/tummy-tuck-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        }
+      }
+    ],
+    "alternate": "/es/blog/abdominoplastia-colombia/",
+    "cover": "/assets/blog-tummy-tuck-consultation.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/tummy-tuck-colombia/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/abdominoplastia-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/privacy/",
+    "file": "dist/en/privacy/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/privacy/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/privacy/"
+      }
+    ]
+  },
+  {
+    "route": "/en/terms/",
+    "file": "dist/en/terms/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/terms/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/terms/"
+      }
+    ]
+  },
+  {
+    "route": "/en/sms/",
+    "file": "dist/en/sms/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/sms/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/sms/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/",
+    "file": "dist/es/blog/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/category/mommy-makeover/",
+    "file": "dist/es/blog/category/mommy-makeover/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": true,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/category/mommy-makeover/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/category/mommy-makeover/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/category/breast-surgery/",
+    "file": "dist/es/blog/category/breast-surgery/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": true,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/category/breast-surgery/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/category/breast-surgery/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/category/body-contouring/",
+    "file": "dist/es/blog/category/body-contouring/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/category/body-contouring/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/category/body-contouring/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/category/recovery/",
+    "file": "dist/es/blog/category/recovery/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/category/recovery/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/category/recovery/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/category/medical-tourism/",
+    "file": "dist/es/blog/category/medical-tourism/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/category/medical-tourism/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/category/medical-tourism/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/category/plastic-surgery-in-colombia/",
+    "file": "dist/es/blog/category/plastic-surgery-in-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": true,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/category/plastic-surgery-in-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/category/plastic-surgery-in-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",
+    "file": "dist/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Cirugía plástica y turismo médico en Cartagena: informe 2026",
+        "datePublished": "2026-09-26",
+        "dateModified": "2026-09-26",
+        "inLanguage": "es",
+        "image": "https://fulviocorrea.com.co/assets/blog-cartagena-medical-tourism.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com.co/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        }
+      }
+    ],
+    "alternate": "/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
+    "cover": "/assets/blog-cartagena-medical-tourism.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/abdominoplastia-colombia/",
+    "file": "dist/es/blog/abdominoplastia-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Abdominoplastia en Colombia: qué verificar antes de viajar",
+        "datePublished": "2026-09-25",
+        "dateModified": "2026-09-25",
+        "inLanguage": "es",
+        "image": "https://fulviocorrea.com.co/assets/blog-tummy-tuck-consultation.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com.co/es/blog/abdominoplastia-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        }
+      }
+    ],
+    "alternate": "/en/blog/tummy-tuck-colombia/",
+    "cover": "/assets/blog-tummy-tuck-consultation.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/abdominoplastia-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/tummy-tuck-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/tiempo-recuperacion-mommy-makeover/",
+    "file": "dist/es/blog/tiempo-recuperacion-mommy-makeover/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Tiempo de recuperación mommy makeover: qué esperar semana a semana",
+        "datePublished": "2026-09-24",
+        "dateModified": "2026-09-25",
+        "inLanguage": "es",
+        "image": "https://fulviocorrea.com.co/assets/blog-mommy-makeover-recovery.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com.co/es/blog/tiempo-recuperacion-mommy-makeover/",
+        "author": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        }
+      }
+    ],
+    "alternate": "/en/blog/mommy-makeover-recovery-time/",
+    "cover": "/assets/blog-mommy-makeover-recovery.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/tiempo-recuperacion-mommy-makeover/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/mommy-makeover-recovery-time/"
+      }
+    ]
+  },
+  {
+    "route": "/es/privacy/",
+    "file": "dist/es/privacy/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/privacy/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/privacy/"
+      }
+    ]
+  },
+  {
+    "route": "/es/terms/",
+    "file": "dist/es/terms/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/terms/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/terms/"
+      }
+    ]
+  },
+  {
+    "route": "/es/sms/",
+    "file": "dist/es/sms/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/sms/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/sms/"
+      }
+    ]
+  },
+  {
+    "route": "/en/thank-you/",
+    "file": "dist/en/thank-you/index.html",
+    "lang": "en",
+    "noindex": true,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "alternate": "/es/gracias/",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/thank-you/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/gracias/"
+      }
+    ]
+  },
+  {
+    "route": "/es/gracias/",
+    "file": "dist/es/gracias/index.html",
+    "lang": "es",
+    "noindex": true,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "alternate": "/en/thank-you/",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/gracias/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/thank-you/"
+      }
+    ]
+  },
+  {
+    "route": "/en/capri-clinic/",
+    "file": "dist/en/capri-clinic/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "@id": "https://fulviocorrea.com.co/#capri-clinic",
+        "name": "Clínica CAPRI",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cartagena de Indias",
+          "addressCountry": "CO"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://fulviocorrea.com.co/en/capri-clinic/#webpage",
+        "url": "https://fulviocorrea.com.co/en/capri-clinic/",
+        "name": "CAPRI Clinic in Cartagena | Dr. Fulvio Correa",
+        "description": "Learn where Dr. Fulvio Correa performs surgery in Cartagena. Explore CAPRI Clinic, distinguish your consultation location and prepare questions for your visit.",
+        "inLanguage": "en",
+        "about": {
+          "@id": "https://fulviocorrea.com.co/#capri-clinic"
+        },
+        "mentions": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "dateModified": "2026-09-26"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where does Dr. Fulvio Correa perform surgery in Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dr. Fulvio Correa performs surgery at CAPRI Clinic in Cartagena. The practice confirms the arrangements for your individual procedure during planning."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is CAPRI the same location as the Las Ramblas office?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. CAPRI is the surgical clinic; the consultation office is at CC Ramblas, local 23, Manzanillo del Mar. Confirm the destination for each appointment with the team."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I receive directions to the clinic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Contact the practice through Sofía to confirm the exact arrival point for your scheduled procedure. The team should confirm the destination before you travel to the appointment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are accommodation and recovery services included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ask the practice for the inclusions and exclusions in your individual quotation. A surgery location alone does not establish that lodging, transport or recovery services are included."
+            }
+          }
+        ]
+      }
+    ],
+    "cover": "/assets/logo.png",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/capri-clinic/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/capri-clinic/"
+      }
+    ]
+  },
+  {
+    "route": "/es/capri-clinic/",
+    "file": "dist/es/capri-clinic/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "@id": "https://fulviocorrea.com.co/#capri-clinic",
+        "name": "Clínica CAPRI",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cartagena de Indias",
+          "addressCountry": "CO"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://fulviocorrea.com.co/es/capri-clinic/#webpage",
+        "url": "https://fulviocorrea.com.co/es/capri-clinic/",
+        "name": "Clínica CAPRI en Cartagena | Dr. Fulvio Correa",
+        "description": "Conoce dónde opera el Dr. Fulvio Correa en Cartagena: Clínica CAPRI. Diferencia la clínica del consultorio y prepara tus preguntas antes de programar tu cirugía.",
+        "inLanguage": "es",
+        "about": {
+          "@id": "https://fulviocorrea.com.co/#capri-clinic"
+        },
+        "mentions": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "dateModified": "2026-09-26"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Dónde opera el Dr. Fulvio Correa en Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El Dr. Fulvio Correa opera en la Clínica CAPRI de Cartagena. El consultorio confirma la organización de tu procedimiento individual durante la planificación."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿CAPRI está en el mismo lugar que el consultorio de Las Ramblas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. CAPRI es la clínica quirúrgica; el consultorio está en CC Ramblas, local 23, Manzanillo del Mar. Confirma con el equipo el destino de cada cita."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo recibo las indicaciones para llegar a la clínica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Contacta al consultorio a través de Sofía para confirmar el punto exacto de llegada de tu procedimiento programado. El equipo debe confirmar el destino antes de que te desplaces a la cita."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Están incluidos el alojamiento y los servicios de recuperación?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pide al consultorio las inclusiones y exclusiones de tu cotización individual. El lugar de la cirugía por sí solo no establece que estén incluidos el alojamiento, transporte o servicios de recuperación."
+            }
+          }
+        ]
+      }
+    ],
+    "cover": "/assets/logo.png",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/capri-clinic/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/capri-clinic/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,387 @@
+{
+  "active": false,
+  "productionHostingConfirmed": false,
+  "adapter": "netlify",
+  "redirects": [
+    {
+      "from": "/",
+      "to": "/en/",
+      "status": 301
+    },
+    {
+      "from": "/home-plastic-surgery-colombia-cartagena",
+      "to": "/en/",
+      "status": 301
+    },
+    {
+      "from": "/home-plastic-surgery-colombia-cartagena/",
+      "to": "/en/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia",
+      "to": "/en/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia/",
+      "to": "/en/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-staff",
+      "to": "/en/about/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-staff/",
+      "to": "/en/about/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-travel",
+      "to": "/en/international-patients/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-travel/",
+      "to": "/en/international-patients/",
+      "status": 301
+    },
+    {
+      "from": "/draft-travel-es",
+      "to": "/es/international-patients/",
+      "status": 301
+    },
+    {
+      "from": "/draft-travel-es/",
+      "to": "/es/international-patients/",
+      "status": 301
+    },
+    {
+      "from": "/blog",
+      "to": "/en/blog/",
+      "status": 301
+    },
+    {
+      "from": "/blog/",
+      "to": "/en/blog/",
+      "status": 301
+    },
+    {
+      "from": "/blog/tag/*",
+      "to": "/en/blog/",
+      "status": 301
+    },
+    {
+      "from": "/blog/category/*",
+      "to": "/en/blog/",
+      "status": 301
+    },
+    {
+      "from": "/blog/author/*",
+      "to": "/en/blog/",
+      "status": 301
+    },
+    {
+      "from": "/privacy-policy-1485",
+      "to": "/en/privacy/",
+      "status": 301
+    },
+    {
+      "from": "/privacy-policy-1485/",
+      "to": "/en/privacy/",
+      "status": 301
+    },
+    {
+      "from": "/terms--conditions-5647",
+      "to": "/en/terms/",
+      "status": 301
+    },
+    {
+      "from": "/terms--conditions-5647/",
+      "to": "/en/terms/",
+      "status": 301
+    },
+    {
+      "from": "/sms-concent-4396",
+      "to": "/en/sms/",
+      "status": 301
+    },
+    {
+      "from": "/sms-concent-4396/",
+      "to": "/en/sms/",
+      "status": 301
+    },
+    {
+      "from": "/terms-and-conditions",
+      "to": "/en/terms/",
+      "status": 301
+    },
+    {
+      "from": "/terms-and-conditions/",
+      "to": "/en/terms/",
+      "status": 301
+    },
+    {
+      "from": "/privacy-policies",
+      "to": "/en/privacy/",
+      "status": 301
+    },
+    {
+      "from": "/privacy-policies/",
+      "to": "/en/privacy/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-bbl",
+      "to": "/en/procedures/bbl/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-bbl/",
+      "to": "/en/procedures/bbl/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-breast-augmentation",
+      "to": "/en/procedures/breast-augmentation/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-breast-augmentation/",
+      "to": "/en/procedures/breast-augmentation/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-facelift",
+      "to": "/en/procedures/facelift/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-facelift/",
+      "to": "/en/procedures/facelift/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-liposuction",
+      "to": "/en/procedures/liposuction/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-liposuction/",
+      "to": "/en/procedures/liposuction/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-mommy-makeover",
+      "to": "/en/procedures/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-mommy-makeover/",
+      "to": "/en/procedures/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-rhinoplasty",
+      "to": "/en/procedures/rhinoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-rhinoplasty/",
+      "to": "/en/procedures/rhinoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-tummy-tuck",
+      "to": "/en/procedures/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-tummy-tuck/",
+      "to": "/en/procedures/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-abdominoplasty",
+      "to": "/en/procedures/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-abdominoplasty/",
+      "to": "/en/procedures/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-mammoplasty",
+      "to": "/en/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-mammoplasty/",
+      "to": "/en/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/mammoplasty",
+      "to": "/en/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/mammoplasty/",
+      "to": "/en/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/mammoplasty",
+      "to": "/es/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/mammoplasty/",
+      "to": "/es/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/procedures/mammoplasty",
+      "to": "/en/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/procedures/mammoplasty/",
+      "to": "/en/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/mammoplasty",
+      "to": "/en/ads/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/mammoplasty/",
+      "to": "/en/ads/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/es/ads/mammoplasty",
+      "to": "/es/ads/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/es/ads/mammoplasty/",
+      "to": "/es/ads/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/ads/mammoplasty",
+      "to": "/en/ads/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/ads/mammoplasty/",
+      "to": "/en/ads/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/post/bbl-colombia",
+      "to": "/en/blog/bbl-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/bbl-colombia/",
+      "to": "/en/blog/bbl-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/breast-augmentation-colombia",
+      "to": "/en/blog/breast-augmentation-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/breast-augmentation-colombia/",
+      "to": "/en/blog/breast-augmentation-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/how-long-to-stay-after-mommy-makeover",
+      "to": "/en/blog/how-long-to-stay-after-mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/post/how-long-to-stay-after-mommy-makeover/",
+      "to": "/en/blog/how-long-to-stay-after-mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/post/liposuction-cartagena",
+      "to": "/en/blog/liposuction-cartagena/",
+      "status": 301
+    },
+    {
+      "from": "/post/liposuction-cartagena/",
+      "to": "/en/blog/liposuction-cartagena/",
+      "status": 301
+    },
+    {
+      "from": "/post/mommy-makeover-recovery-time",
+      "to": "/en/blog/mommy-makeover-recovery-time/",
+      "status": 301
+    },
+    {
+      "from": "/post/mommy-makeover-recovery-time/",
+      "to": "/en/blog/mommy-makeover-recovery-time/",
+      "status": 301
+    },
+    {
+      "from": "/post/plastic-surgery-medical-tourism-cartagena-colombia",
+      "to": "/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/plastic-surgery-medical-tourism-cartagena-colombia/",
+      "to": "/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/tummy-tuck-colombia",
+      "to": "/en/blog/tummy-tuck-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/tummy-tuck-colombia/",
+      "to": "/en/blog/tummy-tuck-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/abdominoplastia-colombia",
+      "to": "/es/blog/abdominoplastia-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/abdominoplastia-colombia/",
+      "to": "/es/blog/abdominoplastia-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/cirugia-plastica-turismo-medico-cartagena-colombia",
+      "to": "/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/cirugia-plastica-turismo-medico-cartagena-colombia/",
+      "to": "/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/tiempo-recuperacion-mommy-makeover",
+      "to": "/es/blog/tiempo-recuperacion-mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/post/tiempo-recuperacion-mommy-makeover/",
+      "to": "/es/blog/tiempo-recuperacion-mommy-makeover/",
+      "status": 301
+    }
+  ]
+}

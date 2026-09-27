@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+
+# Local runtime
+.sites-runtime/
+
+# Logs
+*.log
+server-error.log
+server-output.log
+
+# Backups / temporary files
+backups/
+*.tar.gz
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+*.backup-*.json

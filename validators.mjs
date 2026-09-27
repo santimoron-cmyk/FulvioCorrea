@@ -1,0 +1,3 @@
+export const text=html=>html.replace(/<script\b[\s\S]*?<\/script>/gi,'').replace(/<style\b[\s\S]*?<\/style>/gi,'').replace(/<[^>]+>/g,' ').replace(/&(?:amp|quot|lt|gt|nbsp);/g,' ').replace(/\s+/g,' ').trim();
+export function sentenceSet(html){const plain=text(html.replace(/<\/(?:p|li|h[1-6]|summary)>/g,'. '));return new Set([...new Intl.Segmenter('en',{granularity:'sentence'}).segment(plain)].map(x=>x.segment.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}\s]/gu,'').replace(/\s+/g,' ').trim()).filter(x=>x.split(' ').length>=3));}
+export function similarity(a,b){if(!a.size||!b.size)return 0;return [...a].filter(x=>b.has(x)).length/Math.min(a.size,b.size);}

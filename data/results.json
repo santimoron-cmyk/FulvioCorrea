@@ -1,0 +1,35 @@
+{
+  "authorized": false,
+  "items": [],
+  "_todo": "Añadir pares de fotos de pacientes con autorización para publicación. before/after son archivos en dist/assets y deben registrarse en data/images.json. title: procedimiento; caption: qué se hizo; details: información adicional aprobada; interval: tiempo desde cirugía hasta foto posterior. authorized:true tanto en el conjunto como en cada caso. La demostración de paneles sin fotos solo aparece en preview y nunca se publica en production.",
+  "_itemSchema": {
+    "authorized": false,
+    "before": "archivo-antes.webp",
+    "after": "archivo-despues.webp",
+    "procedure": "liposuction",
+    "title": {
+      "en": "",
+      "es": ""
+    },
+    "caption": {
+      "en": "",
+      "es": ""
+    },
+    "interval": {
+      "en": "",
+      "es": ""
+    },
+    "altBefore": {
+      "en": "",
+      "es": ""
+    },
+    "altAfter": {
+      "en": "",
+      "es": ""
+    },
+    "details": {
+      "en": "",
+      "es": ""
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Clínica CAPRI",
+  "city": "Cartagena de Indias",
+  "country": "CO",
+  "website": "https://capriclinica.com/",
+  "confirmedByPractice": "Santiago confirmed that Dr. Fulvio Correa operates at CAPRI on 2026-09-26.",
+  "checked": "2026-09-26",
+  "sources": [
+    {"url":"https://capriclinica.com/","status":"Indexed official content accessible; live request failed on 2026-09-26."},
+    {"url":"https://capriclinica.com/about-us/","status":"Indexed official content accessible; live request failed on 2026-09-26."}
+  ],
+  "_todo": [
+    "Confirm exact clinic address, current REPS record, services and authorizations before adding them. Do not use the Las Ramblas office address for CAPRI.",
+    "Obtain authorized facility photographs. Do not illustrate CAPRI with stock clinic images.",
+    "Do not import mortality statistics, absolute safety claims, VIP inclusions, accreditation claims or staffing promises from marketing copy.",
+    "Official website is unavailable: retain source URLs here, but do not send patients to a broken site."
+  ],
+  "en": {
+    "title": "CAPRI Clinic in Cartagena | Dr. Fulvio Correa",
+    "description": "Learn where Dr. Fulvio Correa performs surgery in Cartagena. Explore CAPRI Clinic, distinguish your consultation location and prepare questions for your visit.",
+    "eyebrow": "Your surgical setting · Cartagena, Colombia",
+    "heading": "Surgery at<br><em>CAPRI Clinic.</em>",
+    "intro": "Dr. Fulvio Correa performs surgery at CAPRI Clinic in Cartagena. Knowing where your operation takes place is part of preparing for your care, whether you live nearby or travel to Colombia.",
+    "settingTitle": "A place for your surgical care.",
+    "settingText": "CAPRI describes itself as a surgical clinic in Cartagena serving local and international patients. Its published information describes a model in which independent surgeons use its facilities and the clinic provides anesthesia services through its own team.",
+    "distinctionTitle": "Your consultation and your surgery.<br><em>Two different locations.</em>",
+    "distinctionIntro": "The practice address is not the clinic address. Before attending any appointment, ask the team to confirm the location and arrival instructions for that visit.",
+    "officeTitle": "Dr. Correa’s consultation office",
+    "officeText": "For your consultation, follow the location confirmed by the practice when booking.",
+    "clinicTitle": "Your surgical clinic",
+    "clinicText": "For surgery at CAPRI, request the exact arrival point and the instructions for your scheduled procedure. Do not use the consultation office address as your surgery destination.",
+    "planningTitle": "Before you confirm your surgery.",
+    "planningIntro": "Use your consultation to understand the people, location and arrangements involved in your individual plan. These questions can help you prepare a clear conversation with the team.",
+    "questions": [
+      ["Your surgical plan", "Ask which procedures are being considered, who will participate in your care and which preoperative assessments are required for your case."],
+      ["Your arrival", "Confirm the clinic address, appointment time, companion arrangements and what documents you should bring. Follow the instructions provided for your own procedure."],
+      ["Your recovery", "Ask where you will recover after discharge, where follow-up visits will take place and how to contact the team with a concern. Confirm what is included in your quotation."]
+    ],
+    "travelTitle": "Coming to Cartagena for surgery?",
+    "travelText": "Plan your consultation, surgery and recovery as separate stages. Before reserving travel or accommodation, discuss your proposed dates and support needs with the practice. Your own assessment determines the plan.",
+    "travelLink": "Explore care for international patients",
+    "faqTitle": "Questions about CAPRI and your visit",
+    "faqs": [
+      ["Where does Dr. Fulvio Correa perform surgery in Cartagena?", "Dr. Fulvio Correa performs surgery at CAPRI Clinic in Cartagena. The practice confirms the arrangements for your individual procedure during planning."],
+      ["Is CAPRI the same location as the Las Ramblas office?", "No. CAPRI is the surgical clinic; the consultation office is at CC Ramblas, local 23, Manzanillo del Mar. Confirm the destination for each appointment with the team."],
+      ["How do I receive directions to the clinic?", "Contact the practice through Sofía to confirm the exact arrival point for your scheduled procedure. The team should confirm the destination before you travel to the appointment."],
+      ["Are accommodation and recovery services included?", "Ask the practice for the inclusions and exclusions in your individual quotation. A surgery location alone does not establish that lodging, transport or recovery services are included."]
+    ],
+    "cta": "Plan my consultation",
+    "closingTitle": "Start with a conversation.",
+    "closingText": "Speak with Sofía to contact the practice about your consultation, your procedure or the location of your care."
+  },
+  "es": {
+    "title": "Clínica CAPRI en Cartagena | Dr. Fulvio Correa",
+    "description": "Conoce dónde opera el Dr. Fulvio Correa en Cartagena: Clínica CAPRI. Diferencia la clínica del consultorio y prepara tus preguntas antes de programar tu cirugía.",
+    "eyebrow": "Tu centro quirúrgico · Cartagena, Colombia",
+    "heading": "Tu cirugía en<br><em>Clínica CAPRI.</em>",
+    "intro": "El Dr. Fulvio Correa opera en la Clínica CAPRI de Cartagena. Conocer el lugar de tu cirugía forma parte de la preparación de tu atención, tanto si vives cerca como si viajas a Colombia.",
+    "settingTitle": "El lugar de tu atención quirúrgica.",
+    "settingText": "CAPRI se presenta como una clínica quirúrgica en Cartagena que atiende a pacientes locales e internacionales. Su información publicada describe un modelo en el que cirujanos independientes utilizan sus instalaciones y la clínica presta anestesia mediante su propio equipo.",
+    "distinctionTitle": "Tu valoración y tu cirugía.<br><em>Dos lugares diferentes.</em>",
+    "distinctionIntro": "La dirección del consultorio no es la dirección de la clínica. Antes de asistir a cualquier cita, pide al equipo que confirme el lugar y las indicaciones de llegada para esa visita.",
+    "officeTitle": "Consultorio del Dr. Correa",
+    "officeText": "Para tu valoración, sigue la ubicación que confirme el consultorio al agendar.",
+    "clinicTitle": "Tu clínica quirúrgica",
+    "clinicText": "Para tu cirugía en CAPRI, solicita el punto exacto de llegada y las indicaciones de tu procedimiento programado. No utilices la dirección del consultorio como destino de tu cirugía.",
+    "planningTitle": "Antes de confirmar tu cirugía.",
+    "planningIntro": "Aprovecha tu valoración para conocer las personas, los lugares y la organización de tu plan individual. Estas preguntas te ayudarán a preparar una conversación clara con el equipo.",
+    "questions": [
+      ["Tu plan quirúrgico", "Pregunta qué procedimientos se están considerando, quiénes participarán en tu atención y qué valoraciones preoperatorias requiere tu caso."],
+      ["Tu llegada", "Confirma la dirección de la clínica, la hora, la organización de tu acompañante y los documentos que debes llevar. Sigue las indicaciones de tu propio procedimiento."],
+      ["Tu recuperación", "Pregunta dónde te recuperarás después del alta, dónde serán los controles y cómo contactar al equipo ante una inquietud. Confirma qué incluye tu cotización."]
+    ],
+    "travelTitle": "¿Viajas a Cartagena para operarte?",
+    "travelText": "Organiza tu valoración, cirugía y recuperación como etapas diferentes. Antes de reservar el viaje o alojamiento, conversa con el consultorio sobre las fechas propuestas y el apoyo que necesitas. Tu valoración individual define el plan.",
+    "travelLink": "Conoce la atención para pacientes internacionales",
+    "faqTitle": "Preguntas sobre CAPRI y tu visita",
+    "faqs": [
+      ["¿Dónde opera el Dr. Fulvio Correa en Cartagena?", "El Dr. Fulvio Correa opera en la Clínica CAPRI de Cartagena. El consultorio confirma la organización de tu procedimiento individual durante la planificación."],
+      ["¿CAPRI está en el mismo lugar que el consultorio de Las Ramblas?", "No. CAPRI es la clínica quirúrgica; el consultorio está en CC Ramblas, local 23, Manzanillo del Mar. Confirma con el equipo el destino de cada cita."],
+      ["¿Cómo recibo las indicaciones para llegar a la clínica?", "Contacta al consultorio a través de Sofía para confirmar el punto exacto de llegada de tu procedimiento programado. El equipo debe confirmar el destino antes de que te desplaces a la cita."],
+      ["¿Están incluidos el alojamiento y los servicios de recuperación?", "Pide al consultorio las inclusiones y exclusiones de tu cotización individual. El lugar de la cirugía por sí solo no establece que estén incluidos el alojamiento, transporte o servicios de recuperación."]
+    ],
+    "cta": "Planear mi valoración",
+    "closingTitle": "Comienza con una conversación.",
+    "closingText": "Habla con Sofía para contactar al consultorio sobre tu valoración, tu procedimiento o el lugar de tu atención."
+  }
+}

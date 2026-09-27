@@ -1,0 +1,47 @@
+{
+  "source": "https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff",
+  "members": [
+    {
+      "name": "Dr. Fulvio Correa",
+      "image": "doctor.webp",
+      "role": {
+        "en": "Plastic surgeon",
+        "es": "Cirujano plástico"
+      },
+      "about": true
+    },
+    {
+      "name": "Dra. Jennifer Mendoza",
+      "image": "team-jennifer.webp",
+      "role": {
+        "en": "CEO",
+        "es": "Directora ejecutiva"
+      }
+    },
+    {
+      "name": "Adriana Rojas",
+      "image": "team-adriana.webp",
+      "role": {
+        "en": "Aesthetic doctor",
+        "es": "Médica estética"
+      }
+    },
+    {
+      "name": "Sofía",
+      "image": "team-sofia.webp",
+      "role": {
+        "en": "Assistant",
+        "es": "Asistente"
+      },
+      "source": "Photo, name and role supplied by owner, 2026-09-27"
+    },
+    {
+      "name": "Eileen",
+      "image": "team-eileen.webp",
+      "role": {
+        "en": "Experiences Coach",
+        "es": "Asesora de experiencia del paciente"
+      }
+    }
+  ]
+}

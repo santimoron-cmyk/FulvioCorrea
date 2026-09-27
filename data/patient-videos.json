@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "natalia-vega",
+    "name": "Natalia Vega",
+    "youtubeId": "PWAER6uQfs4",
+    "originalTitle": "EXPERIENCIA NATALIA VEGA",
+    "duration": 331,
+    "uploadDate": "2023-09-26T00:00:00Z",
+    "poster": "/assets/natalia-vega.webp",
+    "file": "/assets/natalia-vega.mp4",
+    "width": 480,
+    "height": 854,
+    "summary": {
+      "es": "Natalia Vega comparte su experiencia de cirugía de senos y atención con el Dr. Fulvio Correa. Video original con transcripción y subtítulos bilingües.",
+      "en": "Natalia Vega shares her breast surgery and care experience with Dr. Fulvio Correa. Original patient video with a transcript and bilingual subtitles."
+    }
+  },
+  {
+    "slug": "kary-alejandre",
+    "name": "Kary Alejandre",
+    "youtubeId": "yEKYR6g_0bc",
+    "originalTitle": "Kary Alejandre Experiencia Fulvio Correa",
+    "duration": 377,
+    "uploadDate": "2023-09-19T00:00:00Z",
+    "poster": "/assets/kary-alejandre.webp",
+    "file": "/assets/kary-alejandre.mp4",
+    "width": 480,
+    "height": 854,
+    "summary": {
+      "es": "Kary Alejandre relata su viaje desde México, su valoración y recuperación inicial tras liposculptura con el Dr. Fulvio Correa. Testimonio en video.",
+      "en": "Kary Alejandre shares her journey from Mexico, consultation and early recovery after liposculpture with Dr. Fulvio Correa. Watch her patient story."
+    }
+  },
+  {
+    "slug": "thaily-amezcua",
+    "name": "Thaily Amezcua",
+    "youtubeId": "pCsiR6UYbdI",
+    "originalTitle": "Thaily Amezcua Experiencia Fulvio Correa",
+    "duration": 1006,
+    "uploadDate": "2023-07-28T00:00:00Z",
+    "poster": "/assets/thaily-amezcua.webp",
+    "file": "/assets/thaily-amezcua.mp4",
+    "width": 480,
+    "height": 854,
+    "summary": {
+      "es": "Thaily Amezcua comparte su viaje, cambio de implantes, levantamiento de senos y controles con el Dr. Fulvio Correa. Experiencia personal en video.",
+      "en": "Thaily Amezcua shares her journey, breast implant replacement, lift and follow-up visits with Dr. Fulvio Correa. Watch her personal experience."
+    }
+  }
+]

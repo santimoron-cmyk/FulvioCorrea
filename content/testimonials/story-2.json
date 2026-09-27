@@ -1,0 +1,39 @@
+{
+  "id": "story-2",
+  "language": "en",
+  "duration": 53.2906875,
+  "status": "draft-editorial-review",
+  "method": "Automatic speech recognition, with targeted corrections checked against burned-in source captions. Not a complete audio verification.",
+  "segments": [
+    {
+      "start": 0.34,
+      "end": 8.4,
+      "text": "Hello, my name is Judice. I'm from London. I've been asked to speak about my work that"
+    },
+    {
+      "start": 8.4,
+      "end": 18.16,
+      "text": "I had done with Dr. Fulvio Correa. It was amazing. I had body 360. I am totally blown"
+    },
+    {
+      "start": 18.16,
+      "end": 26.68,
+      "text": "away with the work. My experience was second to none. The nurses, one-to-one nurses were"
+    },
+    {
+      "start": 26.68,
+      "end": 33.46,
+      "text": "unbelievable, very experienced and very professional. The aftercare was amazing"
+    },
+    {
+      "start": 34.28,
+      "end": 41.78,
+      "text": "and the recovery house also was spotlessly clean and I just couldn't recommend it enough."
+    },
+    {
+      "start": 42.3,
+      "end": 46.6,
+      "text": "Absolutely a perfectionist and I highly recommend him."
+    }
+  ]
+}

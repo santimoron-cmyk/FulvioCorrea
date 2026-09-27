@@ -1,0 +1,57 @@
+{
+  "name": "Dr. Fulvio Correa",
+  "address": {
+    "streetAddress": "Vía Entrada a Manzanillo I-90A #10, CC Ramblas, local 23, Manzanillo del Mar",
+    "addressLocality": "Cartagena de Indias",
+    "addressCountry": "CO"
+  },
+  "phone": "",
+  "phoneDisplay": "",
+  "whatsapp": "16506656265",
+  "phoneSource": "https://wa.link/m7rk1q",
+  "education": [
+    {
+      "en": "Medical degree · University of Cartagena",
+      "es": "Medicina · Universidad de Cartagena",
+      "source": "https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff"
+    },
+    {
+      "en": "Postgraduate training · Ivo Pitanguy Institute, Rio de Janeiro",
+      "es": "Formación de posgrado · Instituto Ivo Pitanguy, Río de Janeiro",
+      "source": "https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff"
+    }
+  ],
+  "societies": [
+    {
+      "name": "Sociedad Colombiana de Cirugía Plástica",
+      "role": "Miembro de Número",
+      "en": "Member of the Colombian Society of Plastic Surgery (SCCP)",
+      "es": "Miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP)",
+      "source": "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"
+    }
+  ],
+  "professionalRegistration": "",
+  "yearsExperience": null,
+  "sameAs": [
+    "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/",
+    "https://www.instagram.com/drfulviocorrea/",
+    "https://www.youtube.com/@dr.fulviocorrea",
+    "https://www.tiktok.com/@drfulviocorrea"
+  ],
+  "authorId": "fulvio-correa",
+  "authorApproved": true,
+  "_todo": [
+    "TODO: confirmar teléfono para llamadas. El número publicado es EXCLUSIVO DE MENSAJERÍA, ver página SMS actual.",
+    "Confirmar registro profesional y años de experiencia antes de completar campos.",
+    "Autoría/revisión aprobada por el doctor (confirmado por Santiago, 2026-09-26) para las 16 páginas de procedimiento; siguen abiertos los TODO factuales (anestesia, centro, duración, precios, protocolos). Confirmar revisión de cualquier texto nuevo futuro.",
+    "La formación procede de la biografía oficial; no constituye verificación registral independiente."
+  ],
+  "messagingDisplay": "+1 650 665 6265",
+  "addressLines": [
+    "Vía Entrada a Manzanillo I-90A #10",
+    "CC Ramblas, local 23",
+    "Manzanillo del Mar",
+    "Cartagena de Indias, Colombia"
+  ],
+  "addressSource": "Dirección exacta y local confirmados por el propietario."
+}
