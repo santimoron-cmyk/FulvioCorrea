@@ -2,6 +2,8 @@
 // Events (see LEAD-WEBHOOK.md): lead_created (visitor taps "Choose how to connect") and channel_selected
 // (visitor picks WhatsApp / call / SMS / Instagram / Facebook). Both carry the same lead_id and phone so the
 // CRM workflow updates one contact. The payload forwarded to LEAD_WEBHOOK_URL is flat JSON (easy to map).
+// Call events add call_due_at / call_due_at_iso / call_window_colombia from the server clock (call-due.mjs).
+import {callSchedule} from './call-due.mjs';
 const sha256=async text=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))].map(b=>b.toString(16).padStart(2,'0')).join('');
 const json=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 export const LEAD_EVENTS=['lead_created','channel_selected'];
@@ -36,15 +38,17 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
  const attribution={};for(const k of ATTRIBUTION){const l=string(k+'_last')||t(last,k);attribution[k]=string(k)||l;attribution[k+'_first']=string(k+'_first')||t(first,k);attribution[k+'_last']=l;}
  const now=clock(),received=new Date(now).toISOString(),[firstName,...rest]=name.split(' '),label=string('procedure_label',100)||procedure;
  const preference=channel||'pending',callLabel=channel==='call'?CALL_TIMES[callTime]:'';
+ const schedule=channel==='call'?callSchedule(now,callTime,timezone):{call_due_at:'',call_due_at_iso:'',call_window_colombia:''};
  const page=cleanUrl(input.page_url)||cleanUrl(input.conversion_page),path=page?new URL(page).pathname:'';
  const source=[attribution.utm_source,attribution.utm_medium,attribution.utm_campaign].filter(Boolean).join(' / ')||(attribution.gclid||attribution.gbraid||attribution.wbraid?'google ads (click id)':attribution.fbclid?'meta (fbclid)':cleanUrl(input.referrer)?'referral: '+new URL(cleanUrl(input.referrer)).hostname:'direct');
  const headline=event==='lead_created'?'Nuevo lead web (canal pendiente)':channel==='call'?'Solicitud de llamada':'Eligió '+CHANNEL_LABELS[channel];
- const summary=[headline,name,phone,'Procedimiento: '+label,channel==='call'?`Horario preferido: ${callLabel}, hora local del paciente${timezone?' ('+timezone+')':''}`:'',timezone&&channel!=='call'?'Zona horaria: '+timezone:'','Idioma: '+input.language.toUpperCase(),'Fuente: '+source,path?'Página: '+path:'','Lead ID: '+id].filter(Boolean).join(' | ');
+ const summary=[headline,name,phone,'Procedimiento: '+label,channel==='call'?`Horario preferido: ${callLabel}, hora local del paciente${timezone?' ('+timezone+')':''}`:'',timezone&&channel!=='call'?'Zona horaria: '+timezone:'','Idioma: '+input.language.toUpperCase(),'Fuente: '+source,path?'Página: '+path:'','Lead ID: '+id,channel==='call'?'Llamar: '+schedule.call_window_colombia:''].filter(Boolean).join(' | ');
  const payload={
   event,event_id:eventId,lead_id:id,received_at:received,client_timestamp:string('client_timestamp',40),
   name,full_name:name,first_name:firstName,last_name:rest.join(' '),phone,phone_country:string('phone_country',2),phone_country_code:string('phone_country_code',6),email,
   procedure,procedure_label:label,language:input.language,
   contact_preference:preference,channel,preferred_call_time:channel==='call'?callTime:'',preferred_call_time_label:callLabel,timezone,
+  call_due_at:schedule.call_due_at,call_due_at_iso:schedule.call_due_at_iso,call_window_colombia:schedule.call_window_colombia,
   summary,
   page_url:page,page_path:path,page_title:string('page_title',200),button_id:string('button_id',60),form_id:string('form_id',60),
   landing_page:cleanUrl(input.landing_page)||cleanUrl(first.landing_page),referrer:cleanUrl(input.referrer)||cleanUrl(first.referrer),
@@ -57,7 +61,9 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
  if(env.LEAD_CAPTURE_ENABLED!=='true'||!env.LEAD_WEBHOOK_URL)return json({accepted:false,error:'not_configured'},503);
  let webhook;try{webhook=new URL(env.LEAD_WEBHOOK_URL);if(webhook.protocol!=='https:')throw Error();}catch{return json({accepted:false,error:'not_configured'},503);}
  for(const[k,v]of receipts)if(v.expires<now)receipts.delete(k);for(const[k,v]of rate)if(v.expires<now)rate.delete(k);
- const fingerprint=await sha256(JSON.stringify({...payload,received_at:'',consent_timestamp:'',client_timestamp:''}));const old=receipts.get(eventId);if(old){if(old.fingerprint!==fingerprint)return json({accepted:false,error:'id_conflict'},409);return (await old.promise).clone();}
+ // Due fields and the "Llamar:" summary suffix follow the server clock, same as received_at: a retry of the same event must not 409 just because a minute passed.
+ const cut=payload.summary.lastIndexOf(' | Llamar: '),stableSummary=channel==='call'&&cut>=0?payload.summary.slice(0,cut):payload.summary;
+ const fingerprint=await sha256(JSON.stringify({...payload,received_at:'',consent_timestamp:'',client_timestamp:'',call_due_at:'',call_due_at_iso:'',call_window_colombia:'',summary:stableSummary}));const old=receipts.get(eventId);if(old){if(old.fingerprint!==fingerprint)return json({accepted:false,error:'id_conflict'},409);return (await old.promise).clone();}
  // Two events per visitor (plus retries/extra channels) fit comfortably in 10 requests/min per IP.
  const bucket=rate.get(ip)||{count:0,expires:now+60000};if(bucket.count>=10)return json({accepted:false,error:'too_many_requests'},429);bucket.count++;rate.set(ip,bucket);
  const operation=(async()=>{const abort=new AbortController(),timeout=setTimeout(()=>abort.abort(),8000);try{const response=await send(webhook.href,{method:'POST',headers:{'Content-Type':'application/json','Idempotency-Key':eventId},body:JSON.stringify(payload),signal:abort.signal,redirect:'manual'});if(!response.ok)throw Error();return json({accepted:true,lead_id:id,event_id:eventId});}catch{receipts.delete(eventId);return json({accepted:false,error:'delivery_unconfirmed'},502);}finally{clearTimeout(timeout);}})();receipts.set(eventId,{fingerprint,promise:operation,expires:now+300000});const result=await operation;return result.clone();
