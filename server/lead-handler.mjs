@@ -1,7 +1,17 @@
 // Runtime-neutral (Node 20+, Cloudflare Workers/Pages Functions): Web Crypto + fetch only, no node: imports.
+// Events (see LEAD-WEBHOOK.md): lead_created (visitor taps "Choose how to connect") and channel_selected
+// (visitor picks WhatsApp / call / SMS / Instagram / Facebook). Both carry the same lead_id and phone so the
+// CRM workflow updates one contact. The payload forwarded to LEAD_WEBHOOK_URL is flat JSON (easy to map).
 const sha256=async text=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))].map(b=>b.toString(16).padStart(2,'0')).join('');
 const json=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
-// Per-instance protections supplement hosting limits; durable contact deduplication belongs in the CRM workflow.
+export const LEAD_EVENTS=['lead_created','channel_selected'];
+export const LEAD_CHANNELS=['whatsapp','call','sms','instagram','facebook'];
+// Labels are bilingual because the CRM task is read by the care team; times are the visitor's local time.
+export const CALL_TIMES={asap:'Lo antes posible / As soon as possible',morning:'Mañana / Morning (8:00–12:00)',afternoon:'Tarde / Afternoon (12:00–17:00)',evening:'Noche / Evening (17:00–20:00)'};
+const CHANNEL_LABELS={whatsapp:'WhatsApp',call:'Llamada / Phone call',sms:'SMS',instagram:'Instagram',facebook:'Facebook'};
+const ATTRIBUTION=['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','fbclid'];
+const cleanUrl=v=>{if(typeof v!=='string'||!v)return '';try{const u=new URL(v);return /^https?:$/.test(u.protocol)?(u.origin+u.pathname).slice(0,1000):'';}catch{return '';}};
+// Per-instance protections supplement hosting limits; durable contact deduplication belongs in the CRM workflow (keyed on phone).
 export function createLeadHandler({env=globalThis.process?.env||{},send=(...args)=>fetch(...args),clock=()=>Date.now(),procedures=[]}={}){
  const rate=new Map(),receipts=new Map();
  return async function handle(request,{ip='unknown'}={}){
@@ -13,16 +23,42 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
  let input;try{input=JSON.parse(raw);}catch{return json({accepted:false,error:'invalid_json'},400);}if(!input||typeof input!=='object'||Array.isArray(input))return json({accepted:false,error:'invalid_data'},400);
  if(input.website)return json({accepted:false,error:'invalid_data'},400);
  const string=(key,max=500)=>typeof input[key]==='string'?input[key].trim().slice(0,max):'';
- const name=string('name',100),phone=string('phone',30).replace(/[\s().-]/g,''),email=string('email',254),procedure=string('procedure',60),id=string('lead_id',100);
  const yes=v=>v===true||v==='true'||v==='on';
- if(!name||!/^\+[1-9]\d{6,14}$/.test(phone)||!yes(input.contact_consent)||!['en','es'].includes(input.language)||!['other','undecided',...procedures].includes(procedure)||!/^[-\w]{8,100}$/.test(id)||request.headers.get('idempotency-key')!==id||email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return json({accepted:false,error:'invalid_fields'},422);
- const touch=v=>{if(typeof v==='string'){try{v=JSON.parse(v);}catch{return {};}}if(!v||typeof v!=='object')return {};return Object.fromEntries(['timestamp','landing_page','referrer','utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid'].filter(k=>typeof v[k]==='string').map(k=>[k,v[k].slice(0,1000)]));};
- const payload={name,phone,email,procedure,language:input.language,lead_id:id,contact_consent:true,sms_consent:yes(input.sms_consent),consent_timestamp:new Date(clock()).toISOString(),first_touch:touch(input.first_touch),last_touch:touch(input.last_touch),crm_operation:'upsert_contact',deduplication_key:phone};
- for(const k of ['country','message','phone_country','phone_country_code','channel','form_id','utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','landing_page','referrer','conversion_page','measurement_consent'])payload[k]=string(k,k==='message'?3000:1000);
+ const name=string('name',100).replace(/\s+/g,' '),phone=string('phone',30).replace(/[\s().-]/g,''),email=string('email',254),procedure=string('procedure',60),id=string('lead_id',100);
+ const event=string('event',40)||'lead_created',eventId=string('event_id',140)||id,channel=string('channel',20),callTime=string('preferred_call_time',20);
+ const timezone=/^(?:UTC|[A-Za-z]+(?:\/[-+\w]+){1,2})$/.test(string('timezone',64))?string('timezone',64):'';
+ const consentVersion=/^[-\w.]{1,60}$/.test(string('consent_version',60))?string('consent_version',60):'';
+ if(!name||!/^\+[1-9]\d{6,14}$/.test(phone)||!yes(input.contact_consent)||!['en','es'].includes(input.language)||!['other','undecided',...procedures].includes(procedure)||!/^[-\w]{8,100}$/.test(id)||!/^[-\w]{8,140}$/.test(eventId)||request.headers.get('idempotency-key')!==eventId||email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+  ||!LEAD_EVENTS.includes(event)||(event==='channel_selected'?!LEAD_CHANNELS.includes(channel):channel&&!LEAD_CHANNELS.includes(channel))||channel==='call'&&!CALL_TIMES[callTime])return json({accepted:false,error:'invalid_fields'},422);
+ // Attribution: flat fields from the widget, or first_touch/last_touch objects (legacy consultation form).
+ const touch=v=>{if(typeof v==='string'){try{v=JSON.parse(v);}catch{return {};}}return v&&typeof v==='object'&&!Array.isArray(v)?v:{};};
+ const first=touch(input.first_touch),last=touch(input.last_touch),t=(o,k)=>typeof o[k]==='string'?o[k].trim().slice(0,500):'';
+ const attribution={};for(const k of ATTRIBUTION){const l=string(k+'_last')||t(last,k);attribution[k]=string(k)||l;attribution[k+'_first']=string(k+'_first')||t(first,k);attribution[k+'_last']=l;}
+ const now=clock(),received=new Date(now).toISOString(),[firstName,...rest]=name.split(' '),label=string('procedure_label',100)||procedure;
+ const preference=channel||'pending',callLabel=channel==='call'?CALL_TIMES[callTime]:'';
+ const page=cleanUrl(input.page_url)||cleanUrl(input.conversion_page),path=page?new URL(page).pathname:'';
+ const source=[attribution.utm_source,attribution.utm_medium,attribution.utm_campaign].filter(Boolean).join(' / ')||(attribution.gclid||attribution.gbraid||attribution.wbraid?'google ads (click id)':attribution.fbclid?'meta (fbclid)':cleanUrl(input.referrer)?'referral: '+new URL(cleanUrl(input.referrer)).hostname:'direct');
+ const headline=event==='lead_created'?'Nuevo lead web (canal pendiente)':channel==='call'?'Solicitud de llamada':'Eligió '+CHANNEL_LABELS[channel];
+ const summary=[headline,name,phone,'Procedimiento: '+label,channel==='call'?`Horario preferido: ${callLabel}, hora local del paciente${timezone?' ('+timezone+')':''}`:'',timezone&&channel!=='call'?'Zona horaria: '+timezone:'','Idioma: '+input.language.toUpperCase(),'Fuente: '+source,path?'Página: '+path:'','Lead ID: '+id].filter(Boolean).join(' | ');
+ const payload={
+  event,event_id:eventId,lead_id:id,received_at:received,client_timestamp:string('client_timestamp',40),
+  name,full_name:name,first_name:firstName,last_name:rest.join(' '),phone,phone_country:string('phone_country',2),phone_country_code:string('phone_country_code',6),email,
+  procedure,procedure_label:label,language:input.language,
+  contact_preference:preference,channel,preferred_call_time:channel==='call'?callTime:'',preferred_call_time_label:callLabel,timezone,
+  summary,
+  page_url:page,page_path:path,page_title:string('page_title',200),button_id:string('button_id',60),form_id:string('form_id',60),
+  landing_page:cleanUrl(input.landing_page)||cleanUrl(first.landing_page),referrer:cleanUrl(input.referrer)||cleanUrl(first.referrer),
+  landing_url_first:cleanUrl(input.landing_url_first)||cleanUrl(first.landing_page),referrer_first:cleanUrl(input.referrer_first)||cleanUrl(first.referrer),attribution_timestamp:string('attribution_timestamp',40)||t(first,'timestamp'),
+  ...attribution,
+  ga_client_id:/^\d{1,12}\.\d{1,12}$/.test(string('ga_client_id',30))?string('ga_client_id',30):'',
+  contact_consent:true,sms_consent:yes(input.sms_consent),consent_version:consentVersion,consent_text:string('consent_text',600),consent_timestamp:received,measurement_consent:string('measurement_consent',20),
+  lead_source:'website',crm_operation:'upsert_contact',deduplication_key:phone};
+ for(const k of ['country','message','conversion_page'])if(string(k))payload[k]=string(k,k==='message'?3000:1000);
  if(env.LEAD_CAPTURE_ENABLED!=='true'||!env.LEAD_WEBHOOK_URL)return json({accepted:false,error:'not_configured'},503);
  let webhook;try{webhook=new URL(env.LEAD_WEBHOOK_URL);if(webhook.protocol!=='https:')throw Error();}catch{return json({accepted:false,error:'not_configured'},503);}
- const now=clock();for(const[k,v]of receipts)if(v.expires<now)receipts.delete(k);for(const[k,v]of rate)if(v.expires<now)rate.delete(k);
- const fingerprint=await sha256(JSON.stringify({...payload,consent_timestamp:''}));const old=receipts.get(id);if(old){if(old.fingerprint!==fingerprint)return json({accepted:false,error:'id_conflict'},409);return (await old.promise).clone();}
- const bucket=rate.get(ip)||{count:0,expires:now+60000};if(bucket.count>=5)return json({accepted:false,error:'too_many_requests'},429);bucket.count++;rate.set(ip,bucket);
- const operation=(async()=>{const abort=new AbortController(),timeout=setTimeout(()=>abort.abort(),8000);try{const response=await send(webhook.href,{method:'POST',headers:{'Content-Type':'application/json','Idempotency-Key':id},body:JSON.stringify(payload),signal:abort.signal,redirect:'manual'});if(!response.ok)throw Error();return json({accepted:true,lead_id:id});}catch{receipts.delete(id);return json({accepted:false,error:'delivery_unconfirmed'},502);}finally{clearTimeout(timeout);}})();receipts.set(id,{fingerprint,promise:operation,expires:now+300000});const result=await operation;return result.clone();
+ for(const[k,v]of receipts)if(v.expires<now)receipts.delete(k);for(const[k,v]of rate)if(v.expires<now)rate.delete(k);
+ const fingerprint=await sha256(JSON.stringify({...payload,received_at:'',consent_timestamp:'',client_timestamp:''}));const old=receipts.get(eventId);if(old){if(old.fingerprint!==fingerprint)return json({accepted:false,error:'id_conflict'},409);return (await old.promise).clone();}
+ // Two events per visitor (plus retries/extra channels) fit comfortably in 10 requests/min per IP.
+ const bucket=rate.get(ip)||{count:0,expires:now+60000};if(bucket.count>=10)return json({accepted:false,error:'too_many_requests'},429);bucket.count++;rate.set(ip,bucket);
+ const operation=(async()=>{const abort=new AbortController(),timeout=setTimeout(()=>abort.abort(),8000);try{const response=await send(webhook.href,{method:'POST',headers:{'Content-Type':'application/json','Idempotency-Key':eventId},body:JSON.stringify(payload),signal:abort.signal,redirect:'manual'});if(!response.ok)throw Error();return json({accepted:true,lead_id:id,event_id:eventId});}catch{receipts.delete(eventId);return json({accepted:false,error:'delivery_unconfirmed'},502);}finally{clearTimeout(timeout);}})();receipts.set(eventId,{fingerprint,promise:operation,expires:now+300000});const result=await operation;return result.clone();
  };}

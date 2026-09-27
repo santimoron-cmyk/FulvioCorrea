@@ -48,6 +48,6 @@ Las variables de build y de Functions son las mismas en Pages; `LEAD_*` solo se 
 
 ## Function `/api/lead` (functions/api/lead.js)
 
-Porte de `netlify/functions/lead.mjs`. Reutiliza `server/lead-handler.mjs` (también usado por `server.mjs` en local): valida origen, JSON ≤ 20 KB, honeypot, teléfono E.164, consentimiento, idioma, procedimiento, `Idempotency-Key`; limita 5 envíos/min por IP (por instancia) y reenvía el lead a `LEAD_WEBHOOK_URL` con `Idempotency-Key`. Responde `{accepted:true}` solo si HighLevel devuelve 2xx.
+Porte de `netlify/functions/lead.mjs`. Reutiliza `server/lead-handler.mjs` (también usado por `server.mjs` en local): valida origen, JSON ≤ 20 KB, honeypot, teléfono E.164, consentimiento, idioma, procedimiento, evento (`lead_created`/`channel_selected`), canal y franja de llamada, `Idempotency-Key` (= `event_id`); limita 10 envíos/min por IP (por instancia) y reenvía un JSON plano a `LEAD_WEBHOOK_URL` con `Idempotency-Key`. Payload y mapeo en NinjaSuite: [LEAD-WEBHOOK.md](LEAD-WEBHOOK.md). Responde `{accepted:true}` solo si HighLevel devuelve 2xx.
 
 Prueba local: `node lead-test.mjs` (mock del webhook). Prueba con runtime real: `npx wrangler pages dev dist` (requiere Node ≥ 22).

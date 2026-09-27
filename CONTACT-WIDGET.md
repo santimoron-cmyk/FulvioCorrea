@@ -1,11 +1,11 @@
 # Contacto con Sofía
 
-El widget valida nombre, teléfono con selector de país y procedimiento, y muestra los canales. Nunca llama al endpoint de leads, aunque esté configurado. No crea contactos ni oportunidades. Los datos permanecen en memoria.
+El widget valida nombre, teléfono con selector de país, procedimiento y consentimiento (llamada, SMS y WhatsApp; versión `contact-consent-2026-09-27`, enlaza privacidad y términos SMS). Al pulsar «Elegir cómo contactar» crea el lead (`POST /api/lead`, evento `lead_created`) sin esperar la respuesta y muestra los canales. Al elegir WhatsApp, SMS, Instagram o Facebook envía `channel_selected` con el mismo `lead_id` y teléfono (keepalive, sin bloquear la apertura de la app).
 
-WhatsApp y SMS reciben un mensaje preparado con nombre, teléfono y procedimiento. El visitante debe enviarlo. Instagram y Facebook abren el perfil configurado; no se transmite el formulario ni se ofrece copiar/pegar. Sofía puede solicitar los datos dentro de la conversación. La conexión y creación del contacto dependen de los canales en NinjaSuite; Facebook sigue pendiente de validar por el propietario.
+«Quiero que me llamen / Call me» no abre chats: pide la franja horaria (lo antes posible, mañana, tarde, noche; hora local del visitante, con la zona horaria visible), envía `channel_selected` con `channel: call` y muestra la confirmación «Nuestro equipo te llamará…» cuando el servidor la confirma.
 
-La atribución first/last touch sigue capturándose en el sitio, pero no se envía al CRM desde el widget. Los mensajes llevan una referencia de procedimiento e idioma, no atribución completa de campaña. Los clics se miden solo con consentimiento y sin datos personales. Un clic no confirma el envío de un mensaje ni un lead.
+WhatsApp y SMS reciben un mensaje preparado con nombre, teléfono y procedimiento. Instagram y Facebook abren el perfil configurado. Facebook sigue pendiente de validar en NinjaSuite.
 
-El formulario antiguo noindex conserva su endpoint independiente. Los países se sugieren según la región del navegador; no se geolocaliza al visitante.
+Datos personales solo en memoria (no en almacenamiento web). La atribución first/last touch (UTM, gclid, gbraid, wbraid, fbclid, landing, referrer) se captura en app.js y viaja en el payload. dataLayer (solo con consentimiento de medición y sin datos personales): `form_start`, `generate_lead` (tras confirmación del servidor; procedure, language), `contact_channel_selected` (channel) y `whatsapp_click`.
 
-Verificación: node contact-test.mjs.
+Payload, campos y configuración de NinjaSuite: [LEAD-WEBHOOK.md](LEAD-WEBHOOK.md). Verificación: `node contact-test.mjs` y `node lead-test.mjs`.

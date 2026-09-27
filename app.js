@@ -3,12 +3,13 @@
  const messages=lang==='es'?{preview:'No pudimos enviar tu solicitud. Contacta al equipo por WhatsApp para continuar.',sending:'Enviando tu solicitud…',received:'Recibimos tu solicitud. El equipo te contactará para conversar sobre la disponibilidad.',done:'Solicitud recibida',error:'No pudimos confirmar la recepción. Intenta de nuevo o contacta al consultorio por WhatsApp.'}:{preview:'We could not send your request. Please contact the team on WhatsApp to continue.',sending:'Sending your request…',received:'Your request has been received. The team will contact you to discuss availability.',done:'Request received',error:'We could not confirm receipt. Please try again or contact the practice on WhatsApp.'};
  const read=k=>{try{return JSON.parse(sessionStorage.getItem(k));}catch{return null;}},save=(k,v)=>{try{sessionStorage.setItem(k,JSON.stringify(v));}catch{}};
  const pathOnly=u=>{try{const x=new URL(u);return x.origin+x.pathname;}catch{return '';}};
- const keys=['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid'],params=new URLSearchParams(location.search),entry=read('fc_entry');
+ const keys=['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','fbclid'],params=new URLSearchParams(location.search),entry=read('fc_entry');
  const touch={timestamp:entry?.timestamp||new Date().toISOString(),landing_page:entry?.landing_page||pathOnly(location.href),referrer:pathOnly(entry?.referrer||document.referrer)};
  try{sessionStorage.removeItem('fc_entry');}catch{}
  keys.forEach(k=>{if(params.has(k))touch[k]=params.get(k).slice(0,500);});
  let durable=null;try{durable=JSON.parse(localStorage.getItem('fc_first_touch'));if(!durable?.expires||durable.expires<=Date.now()){durable=null;localStorage.removeItem('fc_first_touch');}}catch{}
- const stored=read('fc_attribution');let attribution={first_touch:durable?.value||touch,last_touch:stored?.last_touch||touch};
+ const stored=read('fc_attribution');let attribution={first_touch:durable?.value||touch,last_touch:stored?.last_touch||touch,session:stored?.session||{timestamp:touch.timestamp,landing_page:touch.landing_page,referrer:touch.referrer}};
+ // first_touch: localStorage, 90 days. last_touch: changes only with new campaign params. session: first page of this tab session (read by the contact widget).
  if(stored&&keys.some(k=>touch[k])){
   // Switching languages retains the same campaign rather than creating a new touch.
   if(!keys.every(k=>(stored.last_touch[k]||'')===(touch[k]||'')))attribution={...attribution,last_touch:touch};
