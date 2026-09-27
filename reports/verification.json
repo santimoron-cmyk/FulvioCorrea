@@ -1,7 +1,7 @@
 {
   "mode": "preview",
-  "pages": 88,
-  "bytes": 57787,
+  "pages": 96,
+  "bytes": 57896,
   "errors": [],
   "warnings": [
     "/en/procedures/: 114 words (<600; content required before launch).",
@@ -31,6 +31,8 @@
     "/es/sms/: 178 words (<600; content required before launch).",
     "/en/capri-clinic/: 522 words (<600; content required before launch).",
     "/es/capri-clinic/: 555 words (<600; content required before launch).",
+    "/en/testimonials/: 93 words (<600; content required before launch).",
+    "/es/testimonials/: 97 words (<600; content required before launch).",
     "/en/blog/bbl-colombia/: fewer than 2 same-language articles in this cluster; add reviewed articles.",
     "/en/blog/breast-augmentation-colombia/: fewer than 2 same-language articles in this cluster; add reviewed articles.",
     "/en/blog/how-long-to-stay-after-mommy-makeover/: fewer than 2 same-language articles in this cluster; add reviewed articles.",

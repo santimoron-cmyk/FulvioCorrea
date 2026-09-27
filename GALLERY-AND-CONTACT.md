@@ -7,7 +7,7 @@ Actualización: 26 de septiembre de 2026.
 Rutas: /en/before-after/ y /es/before-after/.
 Cada caso admite fotografías de antes y después, un deslizador táctil/ratón/teclado, título del procedimiento, explicación, detalles adicionales y tiempo transcurrido hasta la fotografía posterior.
 
-Editar data/results.json. El esquema _itemSchema describe los campos. Copiar el esquema dentro de items para cada caso, completar los textos EN/ES y los nombres de archivos before/after. Guardar imágenes WebP en dist/assets y registrar sus dimensiones en data/images.json. Las fotos deben corresponder al mismo caso, tener proporciones comparables y contar con autorización de publicación. Activar authorized tanto para el conjunto como para el caso una vez confirmada la autorización.
+Editar data/results.json. El esquema _itemSchema describe los campos. Copiar el esquema dentro de items para cada caso, completar los textos EN/ES y los nombres de archivos before/after. Guardar imágenes WebP en assets/ y registrar sus dimensiones en data/images.json. Las fotos deben corresponder al mismo caso, tener proporciones comparables y contar con autorización de publicación. Activar authorized tanto para el conjunto como para el caso una vez confirmada la autorización.
 
 No hay casos reales cargados actualmente. En preview se muestra un comparador de paneles sin imágenes, identificado como demostración del diseño. En production ese comparador de demostración desaparece; nunca se convierte en un resultado de paciente. La galería permanece noindex mientras no haya casos autorizados. El primer caso autorizado también alimenta el comparador del bloque de filosofía de Home/About.
 

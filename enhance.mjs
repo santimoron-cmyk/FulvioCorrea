@@ -2,8 +2,10 @@ import {physicianNode,membershipView} from './practice-view.mjs';
 import {resultsViews} from './results-view.mjs';
 import {contactWidget} from './contact-widget.mjs';
 import fs from 'node:fs';
+import {imageMeta} from './assets.mjs';
+import {robotsTxt} from './site-env.mjs';
 import {posts,read,esc,markdown,write} from './editorial.mjs';
-const cfg=read('config.json'),practice=read('data/practice.json'),images=read('data/images.json'),categories=read('data/categories.json'),results=read('data/results.json');
+const cfg=read('config.json'),practice=read('data/practice.json'),images=imageMeta(),categories=read('data/categories.json'),results=read('data/results.json');
 const contactChannels={...read('data/contact-channels.json'),whatsapp:practice.whatsapp};
 const origin=cfg.origin,production=process.env.SITE_ENV==='production',allPosts=posts(),published=allPosts.filter(p=>!p.draft),procedures=fs.readdirSync('content/procedures').map(f=>read('content/procedures/'+f));
 const manifest=new Map(read('pages.json').map(p=>[p.route,p]));
@@ -63,7 +65,7 @@ for(const p of manifest.values()){
 for(const p of manifest.values())if(p.lang==='en'){write('dist'+(p.route.slice(3)||'/')+'index.html',fs.readFileSync(p.file,'utf8').replace('<head>','<head><script src="/locale.js"></script>'));}
 const runtime={origin,contactChannels:Object.fromEntries(['whatsapp','instagram','facebook','sms'].map(k=>[k,contactChannels[k]||''])),leadEndpoint:'/api/lead',gtmId:process.env.GTM_ID||'',ga4Id:process.env.GA4_ID||'',whatsapp:practice.whatsapp};
 write('dist/config.js','window.SITE_CONFIG='+JSON.stringify(runtime)+';');
-write('dist/robots.txt',production?`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`:'User-agent: *\nDisallow: /\n');
+write('dist/robots.txt',robotsTxt(production,origin));
 const indexable=[...manifest.values()].filter(p=>!p.ads&&!p.noindex);write('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'+indexable.map(p=>`<url><loc>${origin+p.route}</loc><lastmod>${p.updated||'2026-09-25'}</lastmod>${p.alternates.map(a=>`<xhtml:link rel="alternate" hreflang="${a.lang}" href="${origin+a.route}"/>`).join('')}<xhtml:link rel="alternate" hreflang="x-default" href="${origin+(p.alternates.find(a=>a.lang==='en')||p.alternates[0]).route}"/></url>`).join('')+'</urlset>');
 write('dist/llms.txt',`# ${practice.name}\n\n> Plastic surgery practice in Cartagena de Indias, Colombia. Educational information does not replace individual medical assessment.\n\n${indexable.map(p=>`- [${p.route}](${origin+p.route})`).join('\n')}\n`);
 write('pages.json',JSON.stringify([...manifest.values()],null,2));

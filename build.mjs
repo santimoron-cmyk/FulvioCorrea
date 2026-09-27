@@ -1,8 +1,21 @@
+// Build entry point: `npm run build` (Linux, macOS, Windows, Cloudflare Pages).
+// dist/ is a generated artifact: it is deleted first and rebuilt from versioned sources only.
 import {minify} from 'terser';
 import fs from 'node:fs';
+import {resolveSiteEnv} from './site-env.mjs';
+import {prepareDist,checkSourceAssets,checkDistAssets} from './assets.mjs';
+import {writeCloudflareAdapter} from './cloudflare.mjs';
+// Any failure prints a readable message (no stack noise) and exits with code 1, which fails the Cloudflare build.
+const fail=e=>{console.error('\nBUILD FAILED\n'+(e?.message||e)+'\n');process.exit(1);};process.on('uncaughtException',fail);process.on('unhandledRejection',fail);
 if(process.argv.includes('--production'))process.env.SITE_ENV='production';
 if(process.argv.includes('--preview'))process.env.SITE_ENV='preview';
-if(process.env.SITE_ENV&&!['preview','production'].includes(process.env.SITE_ENV))throw Error('Invalid SITE_ENV');
+const site=resolveSiteEnv();process.env.SITE_ENV=site.mode;
+console.log(`Build mode: ${site.mode.toUpperCase()} (${site.reason})`);
+// 1. Fail early, with a clear list, if any referenced asset is missing from assets/.
+const src=checkSourceAssets();for(const w of src.warnings)console.warn('WARN assets:',w);
+// 2. Fresh dist/ + copy of versioned assets.
+console.log(`Assets: ${prepareDist()} files copied from assets/ to dist/assets/ (${src.references} distinct references checked).`);
+// 3. Render pages.
 await import('./render.mjs');
 await import('./enhance.mjs');
 await import('./audit.mjs');
@@ -14,4 +27,9 @@ for(const [file,sources] of Object.entries({'app.js':['app.js'],'contact.js':['p
 for(const file of fs.readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.html'))){let h=fs.readFileSync('dist/'+file,'utf8');const scripts=(h.includes('id="contact-dialog"')?'<script defer src="/contact.js"></script>':'')+(h.includes('id="thanks-confirmation"')?'<script defer src="/thank-you.js"></script>':'');fs.writeFileSync('dist/'+file,h.replace('</body>',()=>scripts+'</body>'));}
 // The former browser-language redirect is no longer used by any page.
 if(fs.existsSync('dist/locale.js'))fs.unlinkSync('dist/locale.js');
+// 4. Hosting adapter (Cloudflare Pages): _headers, _redirects, robots.txt, Functions config.
+writeCloudflareAdapter(site.mode==='production');
+// 5. Every /assets/ reference in the generated site must resolve (exact case), no file > 25 MiB.
+const out=checkDistAssets();for(const w of out.warnings)console.warn('WARN assets:',w);
+console.log(`Assets OK: ${out.assets} files in dist/assets, ${out.references} referenced; dist/ total ${out.files} files.`);
 await import('./verify.mjs');

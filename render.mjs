@@ -1,10 +1,10 @@
 const team=JSON.parse(fs.readFileSync('data/team.json','utf8'));
-const teamImages=JSON.parse(fs.readFileSync('data/images.json','utf8'));
+const teamImages=imageMeta();
 const homeHero=JSON.parse(fs.readFileSync('data/home-hero.json','utf8'));
 import {physicianNode,membershipView} from './practice-view.mjs';
-import fs from 'node:fs';import path from 'node:path';import {copy,procedures} from './content.mjs';
+import fs from 'node:fs';import path from 'node:path';import {copy,procedures} from './content.mjs';import {imageMeta} from './assets.mjs';import {robotsTxt} from './site-env.mjs';
 const practice=JSON.parse(fs.readFileSync('data/practice.json','utf8'));
-const config=JSON.parse(fs.readFileSync('config.json','utf8')),origin=config.origin,official='https://fulviocorrea.com.co',pages=[];
+const config={...JSON.parse(fs.readFileSync('config.json','utf8')),production:process.env.SITE_ENV==='production'},origin=config.origin,official='https://fulviocorrea.com.co',pages=[];
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
 const image=(file,alt='',cls='',priority=false)=>`<img class="${cls}" src="/assets/${file}" alt="${esc(alt)}" width="${file==='84-home-1-1.webp'?1920:660}" height="${file==='84-home-1-1.webp'?1040:750}" ${priority?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
 for(const lang of ['en','es']){
@@ -57,7 +57,7 @@ for(const lang of ['en','es']){
 }
 for(const p of pages.filter(p=>p.lang==='en')){const oldRoute=p.route.slice(3)||'/',file=path.join('dist',oldRoute,'index.html');fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,fs.readFileSync(p.file,'utf8').replace('<head>','<head><script src="/locale.js"></script>'));}
 fs.writeFileSync('dist/config.js','window.SITE_CONFIG='+JSON.stringify(config)+';');
-fs.writeFileSync('dist/robots.txt',config.production?`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`:'User-agent: *\nDisallow: /\n');
+fs.writeFileSync('dist/robots.txt',robotsTxt(config.production,origin));
 fs.writeFileSync('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+pages.filter(p=>!p.ads&&!p.noindex).map(p=>`<url><loc>${origin+p.route}</loc></url>`).join('')+'</urlset>');
 fs.writeFileSync('dist/_headers','/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n/assets/*\n  Cache-Control: public, max-age=604800\n');
 fs.writeFileSync('pages.json',JSON.stringify(pages,null,2));console.log(`Generated ${pages.length} localized pages plus legacy language entry routes.`);

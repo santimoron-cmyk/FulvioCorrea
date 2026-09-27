@@ -5,9 +5,10 @@ import {internationalView} from './international-view.mjs';
 import {facilityView} from './facility-view.mjs';
 import {physicianNode,membershipView,editorialAuthor,authorView} from './practice-view.mjs';
 import fs from 'node:fs';import {read,write,esc,markdown,posts} from './editorial.mjs';
-const origin=read('config.json').origin,practice=read('data/practice.json'),production=process.env.SITE_ENV==='production',target=process.env.DEPLOY_TARGET||'';
-if(production&&target!=='netlify')throw Error('Production hosting is unconfirmed. Set DEPLOY_TARGET=netlify only when that hosting is selected (or implement its adapter).');
-const data=fs.readdirSync('content/procedures').map(f=>read('content/procedures/'+f)),blog=posts().filter(p=>!p.draft),clusters=read('content/clusters.json'),images=read('data/images.json');
+import {imageMeta} from './assets.mjs';
+const origin=read('config.json').origin,practice=read('data/practice.json'),production=process.env.SITE_ENV==='production';
+// Hosting: Cloudflare Pages (see cloudflare.mjs). Production is selected by site-env.mjs.
+const data=fs.readdirSync('content/procedures').map(f=>read('content/procedures/'+f)),blog=posts().filter(p=>!p.draft),clusters=read('content/clusters.json'),images=imageMeta();
 const pages=new Map(read('pages.json').map(p=>[p.route,p]));const t=(l,a,b)=>l==='en'?a:b;
 const proc=(l,slug)=>data.find(p=>p.lang===l&&p.slug===slug);const route=p=>`/${p.lang}/procedures/${p.slug}/`,postRoute=p=>`/${p.lang}/blog/${p.slug}/`;
 const base=Object.fromEntries(['en','es'].map(l=>[l,fs.readFileSync(`dist/${l}/about/index.html`,'utf8')]));
@@ -84,7 +85,7 @@ write('dist/index.html',fs.readFileSync('dist/en/index.html','utf8'));
 for(const p of pages.values())if(p.lang==='en'){const alias=p.route.slice(3);if(alias&&alias!=='/')write('dist'+alias+'index.html',fs.readFileSync(p.file,'utf8'));}
 write('dist/404.html',fs.readFileSync('dist/en/404/index.html','utf8'));write('dist/en/404.html',fs.readFileSync('dist/en/404/index.html','utf8'));write('dist/es/404.html',fs.readFileSync('dist/es/404/index.html','utf8'));
 const rules=Object.entries(redirects).flatMap(([from,to])=>[{from,to,status:301},...(!from.endsWith('/')&&!from.endsWith('*')?[{from:from+'/',to,status:301}]:[])]);
-write('migration/redirects.json',JSON.stringify({active:production,productionHostingConfirmed:false,adapter:'netlify',redirects:rules},null,2));const text=rules.map(r=>`${r.from} ${r.to} 301!`).join('\n')+'\n';write('migration/_redirects.pending',text);if(production)write('dist/_redirects',text);else if(fs.existsSync('dist/_redirects'))fs.unlinkSync('dist/_redirects');
+write('migration/redirects.json',JSON.stringify({active:production,productionHostingConfirmed:true,adapter:'cloudflare-pages',redirects:rules},null,2));const text=rules.map(r=>`${r.from} ${r.to} 301`).join('\n')+'\n';write('migration/_redirects.pending',text);if(production)write('dist/_redirects',text);else if(fs.existsSync('dist/_redirects'))fs.unlinkSync('dist/_redirects');
 write('migration/redirect-test.txt','# Run after production hostname is selected. Expect one 301, then 200; query strings preserved.\n'+rules.map(r=>`curl -I "${origin+r.from.replace('*','example')}"\n# Expected: 301 Location: ${r.to}\ncurl -I "${origin+r.to}"\n# Expected: 200`).join('\n\n'));
 const indexed=[...pages.values()].filter(p=>!p.noindex&&!p.ads);write('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'+indexed.map(p=>`<url><loc>${origin+p.route}</loc><lastmod>${p.updated||'2026-09-26'}</lastmod>${[...p.alternates,{lang:'x-default',route:(p.alternates.find(a=>a.lang==='en')||p.alternates[0]).route}].map(a=>`<xhtml:link rel="alternate" hreflang="${a.lang}" href="${origin+a.route}"/>`).join('')}</url>`).join('')+'</urlset>');
-write('dist/llms.txt',`# ${practice.name}\n\nCartagena de Indias, Colombia. Medical assessment is required.\n\n`+indexed.map(p=>`- [${p.route}](${origin+p.route})`).join('\n'));write('pages.json',JSON.stringify([...pages.values()],null,2));console.log('Audit architecture generated:',pages.size,'pages. Hosting: preview / Netlify adapter, production selection required.');
+write('dist/llms.txt',`# ${practice.name}\n\nCartagena de Indias, Colombia. Medical assessment is required.\n\n`+indexed.map(p=>`- [${p.route}](${origin+p.route})`).join('\n'));write('pages.json',JSON.stringify([...pages.values()],null,2));console.log('Audit architecture generated:',pages.size,'pages. Hosting: Cloudflare Pages adapter; mode:',production?'production (indexable, _redirects active)':'preview (noindex, no _redirects)');

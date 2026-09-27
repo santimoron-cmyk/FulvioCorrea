@@ -2,10 +2,15 @@
   "name": "fulvio-correa-editorial",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
   "scripts": {
     "build": "node build.mjs",
+    "build:production": "node build.mjs --production",
+    "build:preview": "node build.mjs --preview",
     "start": "node server.mjs",
-    "test": "node verify.mjs && node contact-test.mjs && node results-test.mjs && node membership-test.mjs"
+    "test": "node verify.mjs && node contact-test.mjs && node results-test.mjs && node membership-test.mjs && node lead-test.mjs"
   },
   "devDependencies": {
     "terser": "^5.51.2"

@@ -1,7 +1,8 @@
-import {createHash} from 'node:crypto';
+// Runtime-neutral (Node 20+, Cloudflare Workers/Pages Functions): Web Crypto + fetch only, no node: imports.
+const sha256=async text=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))].map(b=>b.toString(16).padStart(2,'0')).join('');
 const json=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 // Per-instance protections supplement hosting limits; durable contact deduplication belongs in the CRM workflow.
-export function createLeadHandler({env=process.env,send=fetch,clock=()=>Date.now(),procedures=[]}={}){
+export function createLeadHandler({env=globalThis.process?.env||{},send=(...args)=>fetch(...args),clock=()=>Date.now(),procedures=[]}={}){
  const rate=new Map(),receipts=new Map();
  return async function handle(request,{ip='unknown'}={}){
  if(request.method!=='POST')return json({accepted:false,error:'method_not_allowed'},405);
@@ -21,7 +22,7 @@ export function createLeadHandler({env=process.env,send=fetch,clock=()=>Date.now
  if(env.LEAD_CAPTURE_ENABLED!=='true'||!env.LEAD_WEBHOOK_URL)return json({accepted:false,error:'not_configured'},503);
  let webhook;try{webhook=new URL(env.LEAD_WEBHOOK_URL);if(webhook.protocol!=='https:')throw Error();}catch{return json({accepted:false,error:'not_configured'},503);}
  const now=clock();for(const[k,v]of receipts)if(v.expires<now)receipts.delete(k);for(const[k,v]of rate)if(v.expires<now)rate.delete(k);
- const fingerprint=createHash('sha256').update(JSON.stringify({...payload,consent_timestamp:''})).digest('hex');const old=receipts.get(id);if(old){if(old.fingerprint!==fingerprint)return json({accepted:false,error:'id_conflict'},409);return (await old.promise).clone();}
+ const fingerprint=await sha256(JSON.stringify({...payload,consent_timestamp:''}));const old=receipts.get(id);if(old){if(old.fingerprint!==fingerprint)return json({accepted:false,error:'id_conflict'},409);return (await old.promise).clone();}
  const bucket=rate.get(ip)||{count:0,expires:now+60000};if(bucket.count>=5)return json({accepted:false,error:'too_many_requests'},429);bucket.count++;rate.set(ip,bucket);
- const operation=(async()=>{const abort=new AbortController(),timeout=setTimeout(()=>abort.abort(),8000);try{const response=await send(webhook.href,{method:'POST',headers:{'Content-Type':'application/json','Idempotency-Key':id},body:JSON.stringify(payload),signal:abort.signal,redirect:'error'});if(!response.ok)throw Error();return json({accepted:true,lead_id:id});}catch{receipts.delete(id);return json({accepted:false,error:'delivery_unconfirmed'},502);}finally{clearTimeout(timeout);}})();receipts.set(id,{fingerprint,promise:operation,expires:now+300000});const result=await operation;return result.clone();
+ const operation=(async()=>{const abort=new AbortController(),timeout=setTimeout(()=>abort.abort(),8000);try{const response=await send(webhook.href,{method:'POST',headers:{'Content-Type':'application/json','Idempotency-Key':id},body:JSON.stringify(payload),signal:abort.signal,redirect:'manual'});if(!response.ok)throw Error();return json({accepted:true,lead_id:id});}catch{receipts.delete(id);return json({accepted:false,error:'delivery_unconfirmed'},502);}finally{clearTimeout(timeout);}})();receipts.set(id,{fingerprint,promise:operation,expires:now+300000});const result=await operation;return result.clone();
  };}

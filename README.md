@@ -4,7 +4,14 @@ Sitio editorial original en inglés, orientado a pacientes internacionales, sigu
 
 ## Abrir y editar
 
-Requiere Node 20 o superior. Desde esta carpeta: `npm start`. Abrir http://127.0.0.1:4173. Para cambios de contenido, editar `build.mjs` y ejecutar `npm run build`. El estilo está en `dist/style.css`; interacciones en `dist/app.js`. Los HTML de `dist` también son editables directamente, pero una regeneración los reemplaza. `npm test` valida rutas, imágenes, metadatos, IDs y JSON-LD.
+Requiere Node 20.11+ (Cloudflare usa 22, ver `.nvmrc`). Instalar dependencias con `pnpm install` (o `npm install`), generar con `npm run build` y validar con `npm test`; vista local con `npm start` → http://127.0.0.1:4173. `dist/` es un artefacto generado (no versionado): se borra y se reconstruye en cada build a partir de las fuentes (`content/`, `data/`, `assets/`, `*.mjs`, `style.css`, `theme-luxury.css`, `app.js`…). No editar archivos dentro de `dist/`.
+
+## Build, activos y hosting
+
+- `assets/`: fuente versionada de todas las imágenes, vídeos, fuentes y licencias. El build la copia a `dist/assets/` (misma ruta que la URL `/assets/...`). Los subtítulos `.vtt` se generan desde `content/videos/*.json`.
+- El build falla (`BUILD FAILED Missing local assets`) si cualquier referencia `/assets/...` (HTML, CSS `url()`, JSON, Markdown, JSON-LD, OG) no existe en `assets/` con las mismas mayúsculas/minúsculas, o si un archivo supera 25 MiB.
+- Modo preview/production y despliegue en Cloudflare Pages: [CLOUDFLARE.md](CLOUDFLARE.md). Publicación de artículos: [PUBLISHING.md](PUBLISHING.md).
+- `start-preview.ps1` es solo una comodidad local en Windows; no forma parte del build.
 
 ## Arquitectura
 
@@ -33,7 +40,7 @@ GTM carga solo tras aceptar medición. Configurar consentimiento dentro de GTM a
 
 ## Publicación y SEO
 
-`production:false` mantiene todas las páginas en noindex y robots bloqueado para evitar indexar esta prueba. Al publicar en el dominio definitivo, actualizar `origin`, activar production, reconstruir y verificar sitemap/canonical. Ads permanece noindex. No se modificó fulviocorrea.com.co ni su DNS.
+El modo de indexación lo decide `site-env.mjs` (no `config.json`): `npm run build` local = preview (noindex en todas las páginas, robots bloqueado); Cloudflare Pages en la rama `main` = production (indexable) salvo que se defina `SITE_ENV=preview`. Detalles en [CLOUDFLARE.md](CLOUDFLARE.md). `origin` en `config.json` es el dominio canónico (https://fulviocorrea.com.co). Ads permanece noindex. No se modificó fulviocorrea.com.co ni su DNS.
 
 Metadatos y contenido presentes en HTML, breadcrumbs y Physician JSON-LD, FAQ JSON-LD solo donde las preguntas son visibles. La estructura favorece lectura por buscadores y sistemas de IA, pero no garantiza rankings ni inclusión en respuestas de IA.
 
@@ -70,4 +77,4 @@ Disponible en todas las páginas EN/ES: nombre, teléfono internacional, procedi
 
 ## Antes y después
 
-La home y About incorporan un bloque de filosofía de dos columnas; `/en/before-after/` y `/es/before-after/` son las páginas de galería. Los comparadores se activan desde `data/results.json` únicamente con autorización general y por caso. El archivo contiene `_itemSchema` como referencia de edición, nunca se publica como caso. Añadir imágenes a `dist/assets` y sus dimensiones reales a `data/images.json`; usar fotografías alineadas de la misma persona con encuadre y dimensiones compatibles. Completar textos EN/ES, procedimiento y tiempo transcurrido solo con datos confirmados. Sin pares autorizados se muestra el retrato real del doctor en filosofía, y la página de galería ofrece orientación sin inventar resultados; permanece noindex. El deslizador funciona con ratón, tacto y flechas del teclado.
+La home y About incorporan un bloque de filosofía de dos columnas; `/en/before-after/` y `/es/before-after/` son las páginas de galería. Los comparadores se activan desde `data/results.json` únicamente con autorización general y por caso. El archivo contiene `_itemSchema` como referencia de edición, nunca se publica como caso. Añadir imágenes a `assets/` (las dimensiones se leen del archivo; `data/images.json` puede fijarlas explícitamente); usar fotografías alineadas de la misma persona con encuadre y dimensiones compatibles. Completar textos EN/ES, procedimiento y tiempo transcurrido solo con datos confirmados. Sin pares autorizados se muestra el retrato real del doctor en filosofía, y la página de galería ofrece orientación sin inventar resultados; permanece noindex. El deslizador funciona con ratón, tacto y flechas del teclado.

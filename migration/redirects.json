@@ -1,7 +1,7 @@
 {
   "active": false,
-  "productionHostingConfirmed": false,
-  "adapter": "netlify",
+  "productionHostingConfirmed": true,
+  "adapter": "cloudflare-pages",
   "redirects": [
     {
       "from": "/",

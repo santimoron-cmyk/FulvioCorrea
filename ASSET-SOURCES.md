@@ -44,3 +44,6 @@ Heading element 673d05f uses text color #d9c5be. Container 862578e gap 30px. Car
 
 ## Reversible home photo trial
 hero-purple-trial.webp: 1920×755, 53,178 bytes. Source: https://storage.googleapis.com/pilotpractice-wordpress-assets/flourishsurgicalarts.com/2025/10/botox-in-denver-co-scaled.webp . Local visual trial requested by owner; reuse license not confirmed. Decorative image, not a Fulvio patient/result. Original preserved as 84-home-1-1.webp. Switch data/home-hero.json image back to its previousImage and rebuild to revert.
+
+## Patient video: Thaily Amezcua (added 2026-09-27)
+thaily-amezcua.mp4: 480×854, 16:46 min, H.264 ~135 kbps + AAC mono 48 kbps, 23.8 MB (kept under Cloudflare Pages' 25 MiB per-file limit). Re-encoded from the practice's YouTube video pCsiR6UYbdI (local download work/research/youtube/pCsiR6UYbdI-video.mp4, 66.5 MB, too large to publish as-is). thaily-amezcua.webp: 480×854 poster, frame at 15:58 (closing interview). Replace both files with a higher-quality export if available (same names, each file < 25 MiB).
