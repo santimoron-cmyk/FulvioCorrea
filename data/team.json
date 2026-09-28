@@ -3,7 +3,7 @@
   "members": [
     {
       "name": "Dr. Fulvio Correa",
-      "image": "doctor.webp",
+      "image": "dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp",
       "role": {
         "en": "Plastic surgeon",
         "es": "Cirujano plástico"
@@ -12,7 +12,7 @@
     },
     {
       "name": "Dra. Jennifer Mendoza",
-      "image": "team-jennifer.webp",
+      "image": "jennifer-mendoza-ceo-fulvio-correa.webp",
       "role": {
         "en": "CEO",
         "es": "Directora ejecutiva"
@@ -20,20 +20,11 @@
     },
     {
       "name": "Adriana Rojas",
-      "image": "team-adriana.webp",
+      "image": "adriana-rojas-aesthetic-doctor-cartagena.webp",
       "role": {
         "en": "Aesthetic doctor",
         "es": "Médica estética"
       }
-    },
-    {
-      "name": "Sofía",
-      "image": "team-sofia.webp",
-      "role": {
-        "en": "Assistant",
-        "es": "Asistente"
-      },
-      "source": "Photo, name and role supplied by owner, 2026-09-27"
     },
     {
       "name": "Eileen",

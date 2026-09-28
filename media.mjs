@@ -20,6 +20,16 @@ export const IMAGE_RENAMES = {
   '84-treatment-3.webp': 'portrait-woman-pink-background.webp',
   '84-treatment-6.webp': 'abdomen-with-surgical-markings.webp',
   'official-670ff4e2c5bc5e344cbcc3fa.png.webp': 'breast-with-surgical-markings.webp',
+  'doctor.webp': 'dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp',
+  'editorial.webp': 'woman-side-profile-portrait.webp',
+  'facelift-video.webp': 'facelift-video-dr-fulvio-correa.webp',
+  'liposuction-video.webp': 'liposuction-video-dr-fulvio-correa.webp',
+  'mammoplasty-video.webp': 'mammoplasty-video-dr-fulvio-correa.webp',
+  'mommy-video.webp': 'mommy-makeover-video-dr-fulvio-correa.webp',
+  'rhinoplasty-video.webp': 'rhinoplasty-video-dr-fulvio-correa.webp',
+  'team-adriana.webp': 'adriana-rojas-aesthetic-doctor-cartagena.webp',
+  'team-jennifer.webp': 'jennifer-mendoza-ceo-fulvio-correa.webp',
+  'logo.png': 'dr-fulvio-correa-logo.png',
 };
 
 const WIDTHS = [480, 768, 1200, 1600, 1920];
@@ -54,7 +64,7 @@ export async function buildImageDerivatives(dist = 'dist') {
   const files = fs.existsSync(assetDir) ? sourceAssetsIn(assetDir) : [];
   for (const file of files) {
     if (!/\.(webp|png|jpe?g)$/i.test(file)) continue;
-    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'logo.png') continue;
+    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || file.startsWith('breast-lift-reduction-cartagena-colombia') || file.startsWith('hero-dr-fulvio-correa-plastic-surgery-cartagena') || file.startsWith('dr-fulvio-correa-plastic-surgeon-cartagena-')) continue;
     const full = path.join(assetDir, file);
     const size = imageSize(full);
     if (!size || size.width < 480) continue;
@@ -76,6 +86,13 @@ export async function buildImageDerivatives(dist = 'dist') {
     }
     if (variants.length) variantIndex.set(file, {width: size.width, height: size.height, variants});
   }
+  const breastCard = 'breast-lift-reduction-cartagena-colombia.webp';
+  if (fs.existsSync(path.join(assetDir, breastCard))) {
+    variantIndex.set(breastCard, {width: 960, height: 720, variants: [
+      {width: 480, name: 'breast-lift-reduction-cartagena-colombia-480.webp'},
+      {width: 768, name: 'breast-lift-reduction-cartagena-colombia-768.webp'},
+    ]});
+  }
   await buildIcons(dist);
   await buildOgImages(dist);
   return variantIndex;
@@ -88,7 +105,7 @@ function sourceAssetsIn(dir) {
 }
 
 async function emblem() {
-  return sharp('assets/logo.png').extract({left: 46, top: 8, width: 204, height: 186}).png().toBuffer();
+  return sharp('assets/dr-fulvio-correa-logo.png').extract({left: 46, top: 8, width: 204, height: 186}).png().toBuffer();
 }
 
 async function iconPng(size) {
@@ -139,17 +156,17 @@ async function buildIcons(dist) {
   fs.writeFileSync(path.join(dist, 'site.webmanifest'), JSON.stringify(manifest));
 }
 
-async function ogFile(name, input, {position = 'centre'} = {}) {
+async function ogFile(name, input, {position = 'centre', background = '#140e16', fit = ''} = {}) {
   const dir = path.join('dist', 'assets', 'og');
   fs.mkdirSync(dir, {recursive: true});
   const dest = path.join(dir, name);
   const meta = imageSize(input);
   let pipeline;
-  if (meta && meta.width < 1100) {
+  if (!fit && meta && meta.width < 1100) {
     const inner = await sharp(input).resize({height: 590, width: 1160, fit: 'inside', withoutEnlargement: true}).toBuffer();
-    pipeline = sharp({create: {width: 1200, height: 630, channels: 3, background: '#140e16'}}).composite([{input: inner, gravity: 'centre'}]);
+    pipeline = sharp({create: {width: 1200, height: 630, channels: 3, background}}).composite([{input: inner, gravity: 'centre'}]);
   } else {
-    pipeline = sharp(input).resize(1200, 630, {fit: 'cover', position});
+    pipeline = sharp(input).resize(1200, 630, {fit: fit || 'cover', position, background});
   }
   let buf = await pipeline.webp({quality: 76, effort: 4}).toBuffer();
   if (buf.length > 200 * 1024) buf = await sharp(buf).webp({quality: 60, effort: 4}).toBuffer();
@@ -158,20 +175,20 @@ async function ogFile(name, input, {position = 'centre'} = {}) {
 }
 
 export async function buildOgImages() {
-  const hero = 'assets/hero-woman-floral-portrait.webp';
+  const hero = 'assets/hero-dr-fulvio-correa-plastic-surgery-cartagena-1920.webp';
   const face = 'assets/portrait-woman-pink-background.webp';
   const nose = 'assets/nose-with-surgical-markings.webp';
   const breast = 'assets/breast-with-surgical-markings.webp';
-  const breastWide = 'assets/mammoplasty-video.webp';
+  const breastCard = 'breast-lift-reduction-cartagena-colombia.webp';
   const abdomen = 'assets/abdomen-with-surgical-markings.webp';
   const torso = 'assets/torso-black-swimsuit.webp';
   const orange = 'assets/woman-holding-orange-bodysuit.webp';
   const back = 'assets/back-view-white-swimsuit.webp';
-  const doctor = 'assets/doctor.webp';
+  const doctor = 'assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp';
   const map = {
-    home: await ogFile('home.webp', hero, {position: 'centre'}),
+    home: await ogFile('dr-fulvio-correa-plastic-surgery-cartagena.webp', hero, {position: 'north'}),
     'breast-augmentation': await ogFile('breast-augmentation.webp', breast),
-    'breast-lift-reduction': await ogFile('breast-lift-reduction.webp', breastWide, {position: 'centre'}),
+    'breast-lift-reduction': await ogFile('breast-lift-reduction.webp', path.join('assets', breastCard), {position: 'centre', background: '#c5a693'}),
     facelift: await ogFile('facelift.webp', face, {position: 'centre'}),
     rhinoplasty: await ogFile('rhinoplasty.webp', nose, {position: 'centre'}),
     liposuction: await ogFile('liposuction.webp', torso, {position: 'centre'}),
@@ -179,7 +196,7 @@ export async function buildOgImages() {
     'mommy-makeover': await ogFile('mommy-makeover.webp', orange, {position: 'centre'}),
     bbl: await ogFile('bbl.webp', back, {position: 'centre'}),
     capri: await ogFile('capri.webp', doctor, {position: 'north'}),
-    testimonials: await ogFile('testimonials.webp', doctor, {position: 'north'}),
+    testimonials: await ogFile('dr-fulvio-correa-patient-stories-cartagena.webp', doctor, {position: 'north'}),
   };
   for (const poster of ['kary-alejandre.webp', 'natalia-vega.webp', 'thaily-amezcua.webp']) {
     map[poster] = await ogFile(poster, path.join('assets', poster));
@@ -223,22 +240,29 @@ export function decorateHtml(html) {
   return html.replace(re, (tag, offset) => {
     const src = attr(tag, 'src');
     const file = src.replace(/^\/assets\//, '');
-    if (!file || file === 'logo.png' || file.startsWith('og/')) return tag;
+    if (!file || file === 'dr-fulvio-correa-logo.png' || file.startsWith('og/')) return tag;
     const slot = slotFor(tag, html.slice(Math.max(0, offset - 700), offset));
     const meta = variantIndex.get(file);
-    let next = tag.replace(/\s(?:srcset|sizes|loading|fetchpriority|decoding)="[^"]*"/g, '');
-    if (meta) {
+    const fixed = /\sdata-fixed-srcset=/.test(tag);
+    const keep = /\sdata-keep-loading=/.test(tag);
+    let next = tag;
+    if (!fixed) next = next.replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
+    if (!keep) next = next.replace(/\s(?:loading|fetchpriority|decoding)="[^"]*"/g, '');
+    next = next.replace(/\sdata-fixed-srcset="[^"]*"/, '').replace(/\sdata-keep-loading="[^"]*"/, '');
+    if (!fixed && meta) {
       const max = MAX_W[slot] || 1400;
       const parts = meta.variants.filter(v => v.width <= max).map(v => `/assets/${v.name} ${v.width}w`);
       if (meta.width <= max) parts.push(`/assets/${file} ${meta.width}w`);
       if (parts.length) next = next.replace(/\s*\/?>$/, ` srcset="${parts.join(', ')}" sizes="${SIZES[slot] || SIZES.content}"$&`);
     }
-    const budget = eagerLeft[slot] || 0;
-    const eager = slot === 'hero' || budget > 0;
-    if (budget > 0) eagerLeft[slot] = budget - 1;
-    const priority = !usedHigh && (slot === 'hero' || (!hasHero && eager));
-    if (priority) usedHigh = true;
-    next = next.replace(/\s*\/?>$/, priority ? ' fetchpriority="high" decoding="async">' : eager ? ' decoding="async">' : ' loading="lazy" decoding="async">');
+    if (!keep) {
+      const budget = eagerLeft[slot] || 0;
+      const eager = slot === 'hero' || budget > 0;
+      if (budget > 0) eagerLeft[slot] = budget - 1;
+      const priority = !usedHigh && (slot === 'hero' || (!hasHero && eager));
+      if (priority) usedHigh = true;
+      next = next.replace(/\s*\/?>$/, priority ? ' fetchpriority="high" decoding="async">' : eager ? ' decoding="async">' : ' loading="lazy" decoding="async">');
+    }
     if (!attr(next, 'width') || !attr(next, 'height')) return tag;
     return next;
   });
@@ -274,5 +298,11 @@ export function pruneUnreferencedAssets(dist = 'dist') {
 }
 
 export function assetRedirects() {
-  return Object.entries(IMAGE_RENAMES).map(([from, to]) => ({from: '/assets/' + from, to: '/assets/' + to, status: 301}));
+  return [
+    ...Object.entries(IMAGE_RENAMES).map(([from, to]) => ({from: '/assets/' + from, to: '/assets/' + to, status: 301})),
+    // Generated Open Graph crops. Renamed only in dist; the old names were never source files.
+    {from: '/assets/'+'dr-fulvio-correa-plastic-surgeon-cartagena.webp', to: '/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp', status: 301},
+    {from: '/assets/'+'og/home.webp', to: '/assets/'+'og/dr-fulvio-correa-plastic-surgery-cartagena.webp', status: 301},
+    {from: '/assets/'+'og/testimonials.webp', to: '/assets/'+'og/dr-fulvio-correa-patient-stories-cartagena.webp', status: 301},
+  ];
 }

@@ -694,6 +694,71 @@
       "status": 301
     },
     {
+      "from": "/assets/doctor.webp",
+      "to": "/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/editorial.webp",
+      "to": "/assets/woman-side-profile-portrait.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/facelift-video.webp",
+      "to": "/assets/facelift-video-dr-fulvio-correa.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/liposuction-video.webp",
+      "to": "/assets/liposuction-video-dr-fulvio-correa.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/mammoplasty-video.webp",
+      "to": "/assets/mammoplasty-video-dr-fulvio-correa.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/mommy-video.webp",
+      "to": "/assets/mommy-makeover-video-dr-fulvio-correa.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/rhinoplasty-video.webp",
+      "to": "/assets/rhinoplasty-video-dr-fulvio-correa.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/team-adriana.webp",
+      "to": "/assets/adriana-rojas-aesthetic-doctor-cartagena.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/team-jennifer.webp",
+      "to": "/assets/jennifer-mendoza-ceo-fulvio-correa.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/logo.png",
+      "to": "/assets/dr-fulvio-correa-logo.png",
+      "status": 301
+    },
+    {
+      "from": "/assets/dr-fulvio-correa-plastic-surgeon-cartagena.webp",
+      "to": "/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/og/home.webp",
+      "to": "/assets/og/dr-fulvio-correa-plastic-surgery-cartagena.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/og/testimonials.webp",
+      "to": "/assets/og/dr-fulvio-correa-patient-stories-cartagena.webp",
+      "status": 301
+    },
+    {
       "from": "/blog/tag/*",
       "to": "/en/blog/",
       "status": 301

@@ -98,7 +98,7 @@ These sources are general education. They do not replace an individualized asses
 
 ## Message Sofía on WhatsApp
 
-If you want help planning stay length, follow-up timing, or next steps for a mommy makeover evaluation with Dr. Fulvio Correa in Cartagena, message Sofía. She can help with logistics and clinical next steps; this channel does not replace an in-person or formal medical evaluation.
+If you want help planning stay length, follow-up timing, or next steps for a mommy makeover evaluation with Dr. Fulvio Correa in Cartagena, message Sofía, our virtual assistant. She can help with logistics and clinical next steps; this channel does not replace an in-person or formal medical evaluation.
 
 [Message Sofía on WhatsApp about mommy makeover stay length in Cartagena](https://wa.me/16506656265?text=Hi%20Sof%C3%ADa%2C%20I%20want%20information%20about%20recovery%20and%20stay%20length%20after%20a%20mommy%20makeover%20in%20Cartagena)
 

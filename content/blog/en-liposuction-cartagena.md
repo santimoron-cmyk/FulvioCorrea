@@ -63,7 +63,7 @@ Skin care, sun protection, and any adjunct therapies (for example, lymphatic mas
 
 ## Pre-op documents and common planning mistakes
 
-Depending on age and history, labs, an electrocardiogram, or an anesthesia evaluation may be requested. Do not stop medications on your own. Disclose herbal supplements that may increase bleeding. International patients should confirm whether studies from their home country are accepted or should be repeated in Cartagena; coordinating this with Sofía before travel avoids delays.
+Depending on age and history, labs, an electrocardiogram, or an anesthesia evaluation may be requested. Do not stop medications on your own. Disclose herbal supplements that may increase bleeding. International patients should confirm whether studies from their home country are accepted or should be repeated in Cartagena; coordinating this with Sofía, our virtual assistant, before travel avoids delays.
 
 Common mistakes: a return flight too soon, underestimating swelling, traveling without a companion, lodging far away or without an elevator, and comparing options without understanding what clinical follow-up includes. Ask about the scope of follow-up and contact channels. Edited social-media photos are not the average: ask for evolution examples at one, three, and six months when available, and accept your own timeline.
 
@@ -73,7 +73,7 @@ If your contouring plan may include gluteal fat grafting as well as liposuction,
 
 ## Message Sofía on WhatsApp
 
-If you want guidance on **liposuction in Cartagena**, medical travel, or scheduling an evaluation with Dr. Fulvio Correa, message Sofía. She helps with logistics and next clinical steps; this channel does not replace an in-person diagnosis.
+If you want guidance on **liposuction in Cartagena**, medical travel, or scheduling an evaluation with Dr. Fulvio Correa, message Sofía, our virtual assistant. She helps with logistics and next clinical steps; this channel does not replace an in-person diagnosis.
 
 [Message Sofía on WhatsApp about liposuction in Cartagena](https://wa.me/16506656265?text=Hi%20Sof%C3%ADa%2C%20I%20want%20information%20about%20liposuction%20in%20Cartagena)
 

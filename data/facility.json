@@ -43,12 +43,12 @@
     "faqs": [
       ["Where does Dr. Fulvio Correa perform surgery in Cartagena?", "Dr. Fulvio Correa performs surgery at CAPRI Clinic in Cartagena. The practice confirms the arrangements for your individual procedure during planning."],
       ["Is CAPRI the same location as the Las Ramblas office?", "No. CAPRI is the surgical clinic; the consultation office is at CC Ramblas, local 23, Manzanillo del Mar. Confirm the destination for each appointment with the team."],
-      ["How do I receive directions to the clinic?", "Contact the practice through Sofía to confirm the exact arrival point for your scheduled procedure. The team should confirm the destination before you travel to the appointment."],
+      ["How do I receive directions to the clinic?", "Contact the practice through Sofía, our virtual assistant, to confirm the exact arrival point for your scheduled procedure. The team should confirm the destination before you travel to the appointment."],
       ["Are accommodation and recovery services included?", "Ask the practice for the inclusions and exclusions in your individual quotation. A surgery location alone does not establish that lodging, transport or recovery services are included."]
     ],
     "cta": "Plan my consultation",
     "closingTitle": "Start with a conversation.",
-    "closingText": "Speak with Sofía to contact the practice about your consultation, your procedure or the location of your care."
+    "closingText": "Speak with Sofía, our virtual assistant, to contact the practice about your consultation, your procedure or the location of your care."
   },
   "es": {
     "title": "Clínica CAPRI en Cartagena | Dr. Fulvio Correa",
@@ -78,11 +78,11 @@
     "faqs": [
       ["¿Dónde opera el Dr. Fulvio Correa en Cartagena?", "El Dr. Fulvio Correa opera en la Clínica CAPRI de Cartagena. El consultorio confirma la organización de tu procedimiento individual durante la planificación."],
       ["¿CAPRI está en el mismo lugar que el consultorio de Las Ramblas?", "No. CAPRI es la clínica quirúrgica; el consultorio está en CC Ramblas, local 23, Manzanillo del Mar. Confirma con el equipo el destino de cada cita."],
-      ["¿Cómo recibo las indicaciones para llegar a la clínica?", "Contacta al consultorio a través de Sofía para confirmar el punto exacto de llegada de tu procedimiento programado. El equipo debe confirmar el destino antes de que te desplaces a la cita."],
+      ["¿Cómo recibo las indicaciones para llegar a la clínica?", "Contacta al consultorio a través de Sofía, nuestra asistente virtual, para confirmar el punto exacto de llegada de tu procedimiento programado. El equipo debe confirmar el destino antes de que te desplaces a la cita."],
       ["¿Están incluidos el alojamiento y los servicios de recuperación?", "Pide al consultorio las inclusiones y exclusiones de tu cotización individual. El lugar de la cirugía por sí solo no establece que estén incluidos el alojamiento, transporte o servicios de recuperación."]
     ],
     "cta": "Planear mi valoración",
     "closingTitle": "Comienza con una conversación.",
-    "closingText": "Habla con Sofía para contactar al consultorio sobre tu valoración, tu procedimiento o el lugar de tu atención."
+    "closingText": "Habla con Sofía, nuestra asistente virtual, para contactar al consultorio sobre tu valoración, tu procedimiento o el lugar de tu atención."
   }
 }

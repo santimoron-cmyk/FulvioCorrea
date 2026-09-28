@@ -11,7 +11,7 @@
  const read=key=>{try{return JSON.parse(sessionStorage.getItem(key));}catch{return null;}};
  let timezone='';try{timezone=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch{}
  // Anonymous measurement only after cookie consent (same rule as app.js). Never name/phone.
- const track=(event,detail={})=>{if(read('fc_consent')!=='granted')return;const d={...detail,language:lang,page_path:location.pathname};window.dataLayer=window.dataLayer||[];window.dataLayer.push({event,...d});if(config.ga4Id&&!config.gtmId)(function(){window.dataLayer.push(arguments);})('event',event,d);};
+ const track=(event,detail={})=>{if(read('fc_consent')!=='granted')return;const d={...detail,language:lang,page_lang:lang,page_path:location.pathname};window.dataLayer=window.dataLayer||[];window.dataLayer.push({event,...d});if(config.ga4Id&&!config.gtmId)(function(){window.dataLayer.push(arguments);})('event',event,d);};
  const uid=()=>globalThis.crypto?.randomUUID?.()||'l'+Date.now().toString(36)+Math.random().toString(36).slice(2,12);
  const pathOnly=u=>{try{const x=new URL(u);return x.origin+x.pathname;}catch{return '';}};
  const payload=extra=>{const a=read('fc_attribution')||{},f=a.first_touch||{},l=a.last_touch||{},s=a.session||{},p={};
@@ -22,11 +22,11 @@
  // Resolves to the server JSON when accepted, otherwise null. keepalive lets the request finish if the page is left.
  const post=body=>config.leadEndpoint?fetch(config.leadEndpoint,{method:'POST',keepalive:true,credentials:'same-origin',headers:{'Content-Type':'application/json','Idempotency-Key':body.event_id},body:JSON.stringify(body)}).then(r=>r.text().then(x=>{let j={};try{j=JSON.parse(x);}catch{}return r.ok&&j.accepted===true?j:null;})).catch(()=>null):Promise.resolve(null);
  const choose=(channel,extra={})=>{if(!contact)return Promise.resolve(null);const eventId=leadId+'-'+channel+(extra.preferred_call_time?'-'+extra.preferred_call_time:'');
-  if(!sent.has(eventId))track('contact_channel_selected',{channel,procedure:contact.procedure,cta_id:'contact-'+channel});if(channel==='whatsapp'&&!sent.has(eventId))track('whatsapp_click',{channel,cta_id:'contact-whatsapp'});
+  if(!sent.has(eventId))track('contact_channel_selected',{channel,procedure:contact.procedure,cta_id:'contact-'+channel});if(channel==='whatsapp'&&!sent.has(eventId))track('whatsapp_click',{procedure:contact.procedure,link_location:'contact-widget',channel,cta_id:'contact-whatsapp'});
   if(sent.has(eventId)&&channel!=='call')return Promise.resolve(null);sent.add(eventId);
-  return post(payload({...extra,event:'channel_selected',event_id:eventId,channel,contact_preference:channel,button_id:'contact-'+channel})).then(r=>{if(!r)sent.delete(eventId);return r;});};
+  return post(payload({...extra,event:'channel_selected',event_id:eventId,channel,contact_preference:channel,button_id:'contact-'+channel})).then(r=>{if(!r){sent.delete(eventId);return r;}track('lead_submit',{contact_preference:channel,procedure:contact.procedure});return r;});};
  let opener=open;
- const showContact=(trigger)=>{opener=trigger;const procedure=trigger.dataset.procedure;if(procedure&&[...form.elements.procedure.options].some(o=>o.value===procedure)){form.elements.procedure.value=procedure;form.hidden=false;panel.hidden=true;}document.querySelector('.nav')?.classList.remove('open');document.querySelector('.menu-toggle')?.setAttribute('aria-expanded','false');dialog.showModal();open.setAttribute('aria-expanded','true');document.body.classList.add('contact-is-open');(form.hidden?document.getElementById('contact-channel-title'):form.elements.name).focus();};
+ const showContact=(trigger)=>{opener=trigger;track('sofia_open',{link_location:trigger?.dataset?.cta||trigger?.id||'sofia'});const procedure=trigger.dataset.procedure;if(procedure&&[...form.elements.procedure.options].some(o=>o.value===procedure)){form.elements.procedure.value=procedure;form.hidden=false;panel.hidden=true;}document.querySelector('.nav')?.classList.remove('open');document.querySelector('.menu-toggle')?.setAttribute('aria-expanded','false');dialog.showModal();open.setAttribute('aria-expanded','true');document.body.classList.add('contact-is-open');(form.hidden?document.getElementById('contact-channel-title'):form.elements.name).focus();};
  open.onclick=()=>showContact(open);
  document.querySelectorAll('[data-open-contact]').forEach(button=>button.addEventListener('click',()=>showContact(button)));
  document.getElementById('contact-close').onclick=()=>dialog.close();
@@ -43,7 +43,7 @@
   contact={name,phone,phone_country:parsed.country,phone_country_code:parsed.dial,procedure:selected.value,procedure_label:procedure,contact_consent:true,sms_consent:true,language:lang};
   // One lead per set of details: editing name/phone/procedure creates a new lead_id; re-submitting unchanged details does not.
   const key=JSON.stringify([name,phone,selected.value]);
-  if(key!==leadKey){leadKey=key;leadId=uid();sent.clear();post(payload({event:'lead_created',event_id:leadId+'-created',contact_preference:'pending',button_id:opener?.dataset?.cta||'contact-widget-open'})).then(r=>{if(r)track('generate_lead',{form_id:'contact-widget',procedure:selected.value,lead_source:'contact_widget'});});}
+  if(key!==leadKey){leadKey=key;leadId=uid();sent.clear();post(payload({event:'lead_created',event_id:leadId+'-created',contact_preference:'pending',button_id:opener?.dataset?.cta||'contact-widget-open'})).then(r=>{if(r){track('generate_lead',{form_id:'contact-widget',procedure:selected.value,lead_source:'contact_widget'});track('lead_submit',{contact_preference:'pending',procedure:selected.value});}});}
   const message=t(`Hello Sofía, my name is ${name}. My phone number is ${phone}. I am interested in ${procedure}.`,`Hola Sofía, me llamo ${name}. Mi teléfono es ${phone}. Me interesa ${procedure}.`)+` [ref: ${selected.value}-${lang}]`;
   const whatsapp=document.getElementById('contact-whatsapp');if(whatsapp)whatsapp.href='https://wa.me/'+channels.whatsapp+'?text='+encodeURIComponent(message);
   const sms=document.getElementById('contact-sms');if(sms)sms.href='sms:'+channels.sms+(/iPad|iPhone|iPod/.test(navigator.userAgent)?'&':'?')+'body='+encodeURIComponent(message);

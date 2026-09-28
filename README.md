@@ -60,8 +60,8 @@ Consultadas 25 septiembre 2026: https://fulviocorrea.com.co/ y https://fulviocor
 
 ## Activos
 
-- doctor.webp (61.6 KB): retrato publicado junto al perfil del doctor en https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff. Original: https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/66e19cdd9e59f013721af0a9.png
-- editorial.webp (17.2 KB): imagen editorial de perfil femenino del bloque Rhinoplasty en la home oficial. Original: https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/66e056b2e4a0ae38ebafd4ec.jpeg
+- dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp (66.9 KB, with 480 and 768 variants): studio portrait of Dr. Fulvio Correa in black scrubs. Replaces the earlier staff-page portrait from https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff.
+- woman-side-profile-portrait.webp (17.2 KB): imagen editorial de perfil femenino del bloque Rhinoplasty en la home oficial. Original: https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/66e056b2e4a0ae38ebafd4ec.jpeg
 
 Se utilizaron versiones WebP del CDN existente. No se encontró licencia de reutilización explícita; confirmar derechos para la publicación definitiva. No representan resultados clínicos.
 
@@ -71,6 +71,8 @@ La publicación privada no pudo completarse: los scripts site-workflow.mjs y set
 
 
 ## Globo de contacto de Sofía
+
+Sofía es la asistente virtual del chat, no una integrante del equipo. No aparece en la sección de equipo ni en el schema de personas.
 
 Disponible en todas las páginas EN/ES: nombre, teléfono internacional, procedimiento y «Otro»; después WhatsApp, Instagram, SMS y Facebook. Configuración, límites de captura y pruebas en [CONTACT-WIDGET.md](CONTACT-WIDGET.md). Facebook usa el perfil facilitado por el propietario, pero la recepción de conversaciones en NinjaSuite sigue pendiente de revisar en el CRM.
 
