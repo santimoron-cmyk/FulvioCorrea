@@ -7,6 +7,8 @@ import sharp from 'sharp';
 import {imageSize} from './assets.mjs';
 
 // Procedure card photos ship pre-encoded AVIF/WebP sets (data/procedure-cards.json); the build must not re-encode them.
+// Team photos with a `photo` set in data/team.json are pre-encoded the same way.
+const TEAM_PHOTOS = JSON.parse(fs.readFileSync('data/team.json', 'utf8')).members.filter(m => m.photo).map(m => m.photo.base);
 const PROCEDURE_CARDS = Object.entries(JSON.parse(fs.readFileSync('data/procedure-cards.json', 'utf8'))).filter(([k]) => !k.startsWith('_'));
 
 export const IMAGE_RENAMES = {
@@ -67,7 +69,7 @@ export async function buildImageDerivatives(dist = 'dist') {
   const files = fs.existsSync(assetDir) ? sourceAssetsIn(assetDir) : [];
   for (const file of files) {
     if (!/\.(webp|png|jpe?g)$/i.test(file)) continue;
-    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || PROCEDURE_CARDS.some(([, c]) => file.startsWith(c.base)) || file.startsWith('hero-dr-fulvio-correa-plastic-surgery-cartagena') || file.startsWith('dr-fulvio-correa-plastic-surgeon-cartagena-')) continue;
+    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || PROCEDURE_CARDS.some(([, c]) => file.startsWith(c.base)) || TEAM_PHOTOS.some(b => file.startsWith(b)) || file.startsWith('hero-dr-fulvio-correa-plastic-surgery-cartagena') || file.startsWith('dr-fulvio-correa-plastic-surgeon-cartagena-')) continue;
     const full = path.join(assetDir, file);
     const size = imageSize(full);
     if (!size || size.width < 480) continue;
