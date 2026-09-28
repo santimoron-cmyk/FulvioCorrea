@@ -3,7 +3,7 @@ import {procedureVideo} from './procedure-video.mjs';
 import {liposuctionView,liposuctionSchema} from './liposuction-view.mjs';
 import {internationalView} from './international-view.mjs';
 import {facilityView} from './facility-view.mjs';
-import {physicianNode,membershipView,editorialAuthor,authorView} from './practice-view.mjs';
+import {physicianNode,membershipView,editorialAuthor,authorView,profileNode} from './practice-view.mjs';
 import fs from 'node:fs';import {read,write,esc,markdown,posts} from './editorial.mjs';
 import {imageMeta,imageSize} from './assets.mjs';
 import {localizeEsOutput,localizeRedirectRules,localizePath} from './routes.mjs';
@@ -73,7 +73,7 @@ h=h.replace(/<meta name="robots" content="[^"]*">/,`<meta name="robots" content=
 const crumbs=p.route===`/${l}/`?[{name:t(l,'Home','Inicio'),route:p.route}]:[{name:t(l,'Home','Inicio'),route:`/${l}/`},...((procedure||post)?[{name:procedure?t(l,'Procedures','Procedimientos'):'Blog',route:`/${l}/${procedure?'procedures':'blog'}/`}]:[]),{name:procedure?procedure.name:post?post.title:cleanTitle,route:p.route}].filter((c,i,arr)=>arr.findIndex(x=>x.route===c.route)===i);
 const breadcrumb={'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:crumbs.map((c,i)=>({'@type':'ListItem',position:i+1,name:c.name.replace(/ \| Dr\. Fulvio Correa$/,''),item:origin+c.route}))};
 if(procedure||post)h=h.replace('<main id="main">',`<main id="main"><nav class="crumb wrap" aria-label="${t(l,'Breadcrumb','Ruta de navegación')}">${crumbs.map((c,i)=>i===crumbs.length-1?`<span aria-current="page">${esc(c.name)}</span>`:`<a href="${c.route}">${esc(c.name)}</a><span aria-hidden="true">›</span>`).join('')}</nav>`);
-const oldSchemas=JSON.parse(h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1]||'[]');const physician=physicianNode(practice,origin,l);const schema=[...(physician?[physician]:[]),breadcrumb,...(p.schemas||oldSchemas.filter(x=>!['Physician','BreadcrumbList'].includes(x['@type'])))];
+const oldSchemas=JSON.parse(h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1]||'[]');const physician=physicianNode(practice,origin,l);const schema=[...(physician?[physician]:[]),breadcrumb,...(p.route===`/${l}/about/`?[profileNode(practice,origin,l,localizePath(p.route))]:[]),...(p.schemas||oldSchemas.filter(x=>!['Physician','BreadcrumbList'].includes(x['@type'])))];
 h=h.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/,`<script type="application/ld+json">${JSON.stringify(schema).replaceAll('<','\\u003c')}</script>`);
 h=h.replace(/href="(https:\/\/wa\.me\/[^"?]+)(?:\?text=([^"<>]*))?"/g,(full,base,msg)=>{let text='';try{text=decodeURIComponent(msg||'');}catch{}if(!text.includes('[ref:'))text+=' [ref: '+(p.procedure||p.route.split('/').filter(Boolean).slice(1).join('-')||'home')+'-'+l+']';return `href="${base}?text=${encodeURIComponent(text)}"`;});
 if(p.ads)h=h.replace(/<body class="[^"]*"/, '<body class="ads"');
@@ -106,13 +106,19 @@ const proceduresEn=data.filter(p=>p.lang==='en'&&p.offeredConfirmed);
 write('dist/llms.txt',[
  `# ${practice.name}`,
  '',
- '> Dr. Fulvio Correa is a plastic surgeon in Cartagena de Indias, Colombia. He is a member of the Sociedad Colombiana de Cirugía Plástica (SCCP). Pages on this site are educational and do not replace an individual medical assessment.',
+ `> Dr. Fulvio Correa is a plastic surgeon in Cartagena de Indias, Colombia, with ${practice.yearsExperience} years of experience in aesthetic and reconstructive plastic surgery and ${practice.proceduresPerformed} procedures performed. He is a Member (Miembro de Número) of the Sociedad Colombiana de Cirugía Plástica Estética y Reconstructiva (SCCP) and a member of FILACP. Pages on this site are educational and do not replace an individual medical assessment.`,
  '',
  '## Practice',
  `- Name: ${practice.name}`,
  '- Specialty: plastic surgery',
  sccp?`- SCCP: ${sccp.name}, ${sccp.role}. Verify: ${sccp.source}`:'',
  `- Training: ${practice.education.map(e=>e.en).join('; ')}`,
+ `- Experience: ${practice.yearsExperience} years in aesthetic and reconstructive plastic surgery; ${practice.proceduresPerformed} procedures performed (official biography).`,
+ ...(practice.affiliations||[]).map(a=>`- Also member of: ${a.name} (${a.alternateName})`),
+ '- Special interest: breast surgery with tissue-preservation techniques; body contouring.',
+ '- Philosophy: "Transform without losing your identity" (Transformar sin perder la identidad); "Preserve before you alter" (Preservar antes que alterar).',
+ '- Care model: a multidisciplinary team from the first consultation through post-operative recovery; Colombian and international patients in Cartagena de Indias.',
+ `- Biography: ${origin}/en/about/ · ${origin}${localizePath('/es/about/')}`,
  `- Address: ${practice.addressLines.join(', ')}`,
  '- Contact: Sofía, our virtual assistant, can open WhatsApp, Instagram, SMS or Facebook. No Colombian calling number is published here.',
  '- Surgery: CAPRI Clinic in Cartagena, which is not the consultation office at CC Ramblas.',

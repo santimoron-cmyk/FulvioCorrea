@@ -13,25 +13,29 @@
     {
       "en": "Medical degree · University of Cartagena",
       "es": "Medicina · Universidad de Cartagena",
-      "source": "https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff"
+      "source": "Official biography provided by Dr. Fulvio Correa (2026-09-28); https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff",
+      "organization": "Universidad de Cartagena"
     },
     {
       "en": "Postgraduate training · Ivo Pitanguy Institute, Rio de Janeiro",
       "es": "Formación de posgrado · Instituto Ivo Pitanguy, Río de Janeiro",
-      "source": "https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff"
+      "source": "Official biography provided by Dr. Fulvio Correa (2026-09-28); https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff",
+      "organization": "Instituto Ivo Pitanguy",
+      "location": "Rio de Janeiro, Brasil"
     }
   ],
   "societies": [
     {
-      "name": "Sociedad Colombiana de Cirugía Plástica",
+      "name": "Sociedad Colombiana de Cirugía Plástica Estética y Reconstructiva",
       "role": "Miembro de Número",
       "en": "Member of the Colombian Society of Plastic Surgery (SCCP)",
-      "es": "Miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP)",
-      "source": "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"
+      "es": "Miembro de Número de la Sociedad Colombiana de Cirugía Plástica (SCCP)",
+      "source": "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/",
+      "alternateName": "SCCP"
     }
   ],
   "professionalRegistration": "",
-  "yearsExperience": null,
+  "yearsExperience": "15+",
   "sameAs": [
     "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/",
     "https://www.instagram.com/drfulviocorrea/",
@@ -42,7 +46,7 @@
   "authorApproved": true,
   "_todo": [
     "TODO: confirmar teléfono para llamadas. El número publicado es EXCLUSIVO DE MENSAJERÍA, ver página SMS actual.",
-    "Confirmar registro profesional y años de experiencia antes de completar campos.",
+    "Confirmar registro profesional antes de completar el campo. Años de experiencia (15+), procedimientos (3.000+), SCCP, FILACP y formación confirmados en la biografía oficial entregada por el doctor (2026-09-28). No usar «certificado» ni «board-certified».",
     "Autoría/revisión aprobada por el doctor (confirmado por Santiago, 2026-09-26) para las 16 páginas de procedimiento; siguen abiertos los TODO factuales (anestesia, centro, duración, precios, protocolos). Confirmar revisión de cualquier texto nuevo futuro.",
     "La formación procede de la biografía oficial; no constituye verificación registral independiente."
   ],
@@ -53,5 +57,35 @@
     "Manzanillo del Mar",
     "Cartagena de Indias, Colombia"
   ],
-  "addressSource": "Dirección exacta y local confirmados por el propietario."
+  "addressSource": "Dirección exacta y local confirmados por el propietario.",
+  "affiliations": [
+    {
+      "name": "Federación Ibero Latinoamericana de Cirugía Plástica",
+      "alternateName": "FILACP",
+      "source": "Official biography provided by Dr. Fulvio Correa (2026-09-28)"
+    }
+  ],
+  "proceduresPerformed": "3,000+",
+  "description": {
+    "en": "Plastic surgeon in Cartagena de Indias, Colombia, with more than 15 years of experience in aesthetic and reconstructive plastic surgery and over 3,000 procedures performed. Member of the Colombian Society of Plastic Surgery (SCCP) and FILACP. Trained at the University of Cartagena and the Ivo Pitanguy Institute in Rio de Janeiro. Special interest in breast surgery with tissue-preservation techniques and body contouring.",
+    "es": "Cirujano plástico en Cartagena de Indias, Colombia, con más de 15 años de experiencia en cirugía plástica estética y reconstructiva y más de 3.000 procedimientos realizados. Miembro de Número de la Sociedad Colombiana de Cirugía Plástica (SCCP) y miembro de la FILACP. Formado en la Universidad de Cartagena y en el Instituto Ivo Pitanguy de Río de Janeiro. Especial interés en cirugía mamaria con técnicas de preservación y contorno corporal."
+  },
+  "knowsAbout": {
+    "en": [
+      "Plastic surgery",
+      "Aesthetic plastic surgery",
+      "Reconstructive plastic surgery",
+      "Breast surgery",
+      "Tissue-preservation breast surgery",
+      "Body contouring"
+    ],
+    "es": [
+      "Cirugía plástica",
+      "Cirugía plástica estética",
+      "Cirugía plástica reconstructiva",
+      "Cirugía mamaria",
+      "Técnicas de preservación en cirugía mamaria",
+      "Contorno corporal"
+    ]
+  }
 }
