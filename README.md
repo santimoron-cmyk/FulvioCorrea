@@ -60,7 +60,7 @@ Consultadas 25 septiembre 2026: https://fulviocorrea.com.co/ y https://fulviocor
 
 ## Activos
 
-- dr-fulvio-correa-plastic-surgeon-cartagena.webp (61.6 KB): retrato publicado junto al perfil del doctor en https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff. Original: https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/66e19cdd9e59f013721af0a9.png
+- dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp (66.9 KB, with 480 and 768 variants): studio portrait of Dr. Fulvio Correa in black scrubs. Replaces the earlier staff-page portrait from https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff.
 - woman-side-profile-portrait.webp (17.2 KB): imagen editorial de perfil femenino del bloque Rhinoplasty en la home oficial. Original: https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/66e056b2e4a0ae38ebafd4ec.jpeg
 
 Se utilizaron versiones WebP del CDN existente. No se encontró licencia de reutilización explícita; confirmar derechos para la publicación definitiva. No representan resultados clínicos.

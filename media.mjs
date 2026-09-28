@@ -20,7 +20,7 @@ export const IMAGE_RENAMES = {
   '84-treatment-3.webp': 'portrait-woman-pink-background.webp',
   '84-treatment-6.webp': 'abdomen-with-surgical-markings.webp',
   'official-670ff4e2c5bc5e344cbcc3fa.png.webp': 'breast-with-surgical-markings.webp',
-  'doctor.webp': 'dr-fulvio-correa-plastic-surgeon-cartagena.webp',
+  'doctor.webp': 'dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp',
   'editorial.webp': 'woman-side-profile-portrait.webp',
   'facelift-video.webp': 'facelift-video-dr-fulvio-correa.webp',
   'liposuction-video.webp': 'liposuction-video-dr-fulvio-correa.webp',
@@ -64,7 +64,7 @@ export async function buildImageDerivatives(dist = 'dist') {
   const files = fs.existsSync(assetDir) ? sourceAssetsIn(assetDir) : [];
   for (const file of files) {
     if (!/\.(webp|png|jpe?g)$/i.test(file)) continue;
-    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || file.startsWith('breast-lift-reduction-cartagena-colombia') || file.startsWith('hero-dr-fulvio-correa-plastic-surgery-cartagena')) continue;
+    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || file.startsWith('breast-lift-reduction-cartagena-colombia') || file.startsWith('hero-dr-fulvio-correa-plastic-surgery-cartagena') || file.startsWith('dr-fulvio-correa-plastic-surgeon-cartagena-')) continue;
     const full = path.join(assetDir, file);
     const size = imageSize(full);
     if (!size || size.width < 480) continue;
@@ -184,7 +184,7 @@ export async function buildOgImages() {
   const torso = 'assets/torso-black-swimsuit.webp';
   const orange = 'assets/woman-holding-orange-bodysuit.webp';
   const back = 'assets/back-view-white-swimsuit.webp';
-  const doctor = 'assets/dr-fulvio-correa-plastic-surgeon-cartagena.webp';
+  const doctor = 'assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp';
   const map = {
     home: await ogFile('dr-fulvio-correa-plastic-surgery-cartagena.webp', hero, {position: 'north'}),
     'breast-augmentation': await ogFile('breast-augmentation.webp', breast),
@@ -244,20 +244,25 @@ export function decorateHtml(html) {
     const slot = slotFor(tag, html.slice(Math.max(0, offset - 700), offset));
     const meta = variantIndex.get(file);
     const fixed = /\sdata-fixed-srcset=/.test(tag);
-    let next = tag.replace(fixed ? /\s(?:loading|fetchpriority|decoding)="[^"]*"/g : /\s(?:srcset|sizes|loading|fetchpriority|decoding)="[^"]*"/g, '');
-    next = next.replace(/\sdata-fixed-srcset="[^"]*"/, '');
+    const keep = /\sdata-keep-loading=/.test(tag);
+    let next = tag;
+    if (!fixed) next = next.replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
+    if (!keep) next = next.replace(/\s(?:loading|fetchpriority|decoding)="[^"]*"/g, '');
+    next = next.replace(/\sdata-fixed-srcset="[^"]*"/, '').replace(/\sdata-keep-loading="[^"]*"/, '');
     if (!fixed && meta) {
       const max = MAX_W[slot] || 1400;
       const parts = meta.variants.filter(v => v.width <= max).map(v => `/assets/${v.name} ${v.width}w`);
       if (meta.width <= max) parts.push(`/assets/${file} ${meta.width}w`);
       if (parts.length) next = next.replace(/\s*\/?>$/, ` srcset="${parts.join(', ')}" sizes="${SIZES[slot] || SIZES.content}"$&`);
     }
-    const budget = eagerLeft[slot] || 0;
-    const eager = slot === 'hero' || budget > 0;
-    if (budget > 0) eagerLeft[slot] = budget - 1;
-    const priority = !usedHigh && (slot === 'hero' || (!hasHero && eager));
-    if (priority) usedHigh = true;
-    next = next.replace(/\s*\/?>$/, priority ? ' fetchpriority="high" decoding="async">' : eager ? ' decoding="async">' : ' loading="lazy" decoding="async">');
+    if (!keep) {
+      const budget = eagerLeft[slot] || 0;
+      const eager = slot === 'hero' || budget > 0;
+      if (budget > 0) eagerLeft[slot] = budget - 1;
+      const priority = !usedHigh && (slot === 'hero' || (!hasHero && eager));
+      if (priority) usedHigh = true;
+      next = next.replace(/\s*\/?>$/, priority ? ' fetchpriority="high" decoding="async">' : eager ? ' decoding="async">' : ' loading="lazy" decoding="async">');
+    }
     if (!attr(next, 'width') || !attr(next, 'height')) return tag;
     return next;
   });
@@ -296,6 +301,7 @@ export function assetRedirects() {
   return [
     ...Object.entries(IMAGE_RENAMES).map(([from, to]) => ({from: '/assets/' + from, to: '/assets/' + to, status: 301})),
     // Generated Open Graph crops. Renamed only in dist; the old names were never source files.
+    {from: '/assets/'+'dr-fulvio-correa-plastic-surgeon-cartagena.webp', to: '/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp', status: 301},
     {from: '/assets/'+'og/home.webp', to: '/assets/'+'og/dr-fulvio-correa-plastic-surgery-cartagena.webp', status: 301},
     {from: '/assets/'+'og/testimonials.webp', to: '/assets/'+'og/dr-fulvio-correa-patient-stories-cartagena.webp', status: 301},
   ];
