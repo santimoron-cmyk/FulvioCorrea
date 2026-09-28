@@ -65,7 +65,7 @@ export async function buildImageDerivatives(dist = 'dist') {
   const files = fs.existsSync(assetDir) ? sourceAssetsIn(assetDir) : [];
   for (const file of files) {
     if (!/\.(webp|png|jpe?g)$/i.test(file)) continue;
-    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png') continue;
+    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || file.startsWith('breast-lift-reduction-cartagena-colombia')) continue;
     const full = path.join(assetDir, file);
     const size = imageSize(full);
     if (!size || size.width < 480) continue;
@@ -86,6 +86,13 @@ export async function buildImageDerivatives(dist = 'dist') {
       if (buf.length < stat.size) fs.writeFileSync(full, buf);
     }
     if (variants.length) variantIndex.set(file, {width: size.width, height: size.height, variants});
+  }
+  const breastCard = 'breast-lift-reduction-cartagena-colombia.webp';
+  if (fs.existsSync(path.join(assetDir, breastCard))) {
+    variantIndex.set(breastCard, {width: 960, height: 720, variants: [
+      {width: 480, name: 'breast-lift-reduction-cartagena-colombia-480.webp'},
+      {width: 768, name: 'breast-lift-reduction-cartagena-colombia-768.webp'},
+    ]});
   }
   await buildIcons(dist);
   await buildOgImages(dist);
@@ -150,17 +157,17 @@ async function buildIcons(dist) {
   fs.writeFileSync(path.join(dist, 'site.webmanifest'), JSON.stringify(manifest));
 }
 
-async function ogFile(name, input, {position = 'centre'} = {}) {
+async function ogFile(name, input, {position = 'centre', background = '#140e16', fit = ''} = {}) {
   const dir = path.join('dist', 'assets', 'og');
   fs.mkdirSync(dir, {recursive: true});
   const dest = path.join(dir, name);
   const meta = imageSize(input);
   let pipeline;
-  if (meta && meta.width < 1100) {
+  if (!fit && meta && meta.width < 1100) {
     const inner = await sharp(input).resize({height: 590, width: 1160, fit: 'inside', withoutEnlargement: true}).toBuffer();
-    pipeline = sharp({create: {width: 1200, height: 630, channels: 3, background: '#140e16'}}).composite([{input: inner, gravity: 'centre'}]);
+    pipeline = sharp({create: {width: 1200, height: 630, channels: 3, background}}).composite([{input: inner, gravity: 'centre'}]);
   } else {
-    pipeline = sharp(input).resize(1200, 630, {fit: 'cover', position});
+    pipeline = sharp(input).resize(1200, 630, {fit: fit || 'cover', position, background});
   }
   let buf = await pipeline.webp({quality: 76, effort: 4}).toBuffer();
   if (buf.length > 200 * 1024) buf = await sharp(buf).webp({quality: 60, effort: 4}).toBuffer();
@@ -173,7 +180,7 @@ export async function buildOgImages() {
   const face = 'assets/portrait-woman-pink-background.webp';
   const nose = 'assets/nose-with-surgical-markings.webp';
   const breast = 'assets/breast-with-surgical-markings.webp';
-  const breastWide = 'assets/mammoplasty-video-dr-fulvio-correa.webp';
+  const breastCard = 'breast-lift-reduction-cartagena-colombia.webp';
   const abdomen = 'assets/abdomen-with-surgical-markings.webp';
   const torso = 'assets/torso-black-swimsuit.webp';
   const orange = 'assets/woman-holding-orange-bodysuit.webp';
@@ -182,7 +189,7 @@ export async function buildOgImages() {
   const map = {
     home: await ogFile('dr-fulvio-correa-plastic-surgery-cartagena.webp', hero, {position: 'centre'}),
     'breast-augmentation': await ogFile('breast-augmentation.webp', breast),
-    'breast-lift-reduction': await ogFile('breast-lift-reduction.webp', breastWide, {position: 'centre'}),
+    'breast-lift-reduction': await ogFile('breast-lift-reduction.webp', path.join('assets', breastCard), {position: 'centre', background: '#c5a693'}),
     facelift: await ogFile('facelift.webp', face, {position: 'centre'}),
     rhinoplasty: await ogFile('rhinoplasty.webp', nose, {position: 'centre'}),
     liposuction: await ogFile('liposuction.webp', torso, {position: 'centre'}),
@@ -237,8 +244,10 @@ export function decorateHtml(html) {
     if (!file || file === 'dr-fulvio-correa-logo.png' || file.startsWith('og/')) return tag;
     const slot = slotFor(tag, html.slice(Math.max(0, offset - 700), offset));
     const meta = variantIndex.get(file);
-    let next = tag.replace(/\s(?:srcset|sizes|loading|fetchpriority|decoding)="[^"]*"/g, '');
-    if (meta) {
+    const fixed = /\sdata-fixed-srcset=/.test(tag);
+    let next = tag.replace(fixed ? /\s(?:loading|fetchpriority|decoding)="[^"]*"/g : /\s(?:srcset|sizes|loading|fetchpriority|decoding)="[^"]*"/g, '');
+    next = next.replace(/\sdata-fixed-srcset="[^"]*"/, '');
+    if (!fixed && meta) {
       const max = MAX_W[slot] || 1400;
       const parts = meta.variants.filter(v => v.width <= max).map(v => `/assets/${v.name} ${v.width}w`);
       if (meta.width <= max) parts.push(`/assets/${file} ${meta.width}w`);

@@ -41,7 +41,7 @@ for(const p of manifest.values()){
  html=html.replace(/<a class="sticky-mobile"[^>]*>[\s\S]*?<\/a>/,'');
  html=html.replace('<div class="language-picker"',`<a href="/${l}/blog/">Blog</a><div class="language-picker"`);
  html=html.replace('<button class="privacy-button" id="privacy-settings">',`<a href="/${l}/terms/">${pick(l,'Terms','Términos')}</a><a href="/${l}/sms/">SMS</a><button class="privacy-button" id="privacy-settings">`);
- if(practice.phone)html=html.replace('</nav></header>',`<a href="tel:${esc(practice.phone)}" id="header-phone" data-event="phone_click">${esc(practice.phoneDisplay||practice.phone)}</a></nav></header>`).replace('</footer>',`<a href="tel:${esc(practice.phone)}" id="footer-phone" data-event="phone_click">${esc(practice.phoneDisplay||practice.phone)}</a></footer>`);
+ if(practice.phone)html=html.replace('</nav></header>',`<a href="tel:${esc(practice.phone)}" id="header-phone" data-event="phone_click" data-location="header">${esc(practice.phoneDisplay||practice.phone)}</a></nav></header>`).replace('</footer>',`<a href="tel:${esc(practice.phone)}" id="footer-phone" data-event="phone_click" data-location="footer">${esc(practice.phoneDisplay||practice.phone)}</a></footer>`);
  if(p.route===`/${l}/`){html=html.replace(/<section class="results section wrap">[\s\S]*?<\/section>/,'').replace(/<section class="philosophy section">[\s\S]*?<\/section>/,pillars(l)+credentials(l)+resultsViews(l,results,image).philosophy);}
  if(p.route===`/${l}/about/`)html=html.replace('</main>',resultsViews(l,results,image).philosophy+'</main>');
  html=html.replace('<div class="language-picker"',`<a href="/${l}/before-after/">${pick(l,'Before & after','Antes y después')}</a><div class="language-picker"`);

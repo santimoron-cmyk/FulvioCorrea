@@ -17,7 +17,7 @@ let s=setup();s.submit();assert.equal(s.requests.length,0);assert.equal(s.node('
 s=setup();s.elements.phone.value='555';s.submit();assert.ok(s.elements.phone.validation);assert.equal(s.node('contact-whatsapp').href,undefined);s=setup();s.elements.website.value='spam';s.submit();assert.equal(s.node('contact-whatsapp').href,undefined,'Honeypot must block progress');
 // Lead capture: "Choose how to connect" posts lead_created; each channel posts channel_selected with the same lead_id.
 const flush=()=>new Promise(r=>setImmediate(r));
-s=setup({endpoint:'/api/lead',consent:'granted'});s.form.listeners.input();s.submit();assert.equal(s.requests.length,1,'lead_created on "Choose how to connect"');
+s=setup({endpoint:'/api/lead',consent:'granted'});s.node('contact-open').dataset.cta='contact-widget-open';s.node('contact-open').onclick();s.form.listeners.input();s.submit();assert.equal(s.requests.length,1,'lead_created on "Choose how to connect"');
 let created=s.requests[0];assert.equal(created.url,'/api/lead');assert.equal(created.method,'POST');assert.equal(created.keepalive,true);assert.equal(created.body.event,'lead_created');assert.equal(created.headers['Idempotency-Key'],created.body.event_id);
 for(const [k,v] of Object.entries({name:'Test Person',phone:'+12025550100',phone_country:'US',procedure:'other',language:'en',contact_consent:true,contact_preference:'pending',utm_source:'google',utm_source_first:'first',gclid:'test-click',gclid_last:'test-click',landing_page:'https://practice.test/en/',page_url:'https://practice.test/en/',form_id:'contact-widget'}))assert.deepEqual(created.body[k],v,'lead_created.'+k);
 assert.ok(created.body.lead_id&&created.body.timezone!==undefined&&created.body.client_timestamp,'lead id, timezone and timestamp');assert.ok(!created.body.page_url.includes('secret'),'no arbitrary query string');
@@ -27,8 +27,14 @@ s.choose('whatsapp');assert.equal(s.requests.length,2,'a channel is recorded onc
 s.node('contact-call').listeners.click();assert.equal(s.node('contact-call-form').hidden,false,'call form revealed');s.node('contact-call-form').onsubmit({preventDefault(){}});assert.equal(s.requests.length,6);
 chosen=s.requests[5].body;assert.equal(chosen.channel,'call');assert.equal(chosen.contact_preference,'call');assert.equal(chosen.preferred_call_time,'morning');assert.equal(chosen.lead_id,created.body.lead_id);await flush();await flush();
 assert.equal(s.node('contact-call-done').hidden,false);assert.match(s.node('contact-call-done').textContent,/Our team will call you at \+12025550100, morning/);
-const events=s.context.window.dataLayer.map(e=>e.event);for(const e of ['form_start','generate_lead','contact_channel_selected','whatsapp_click'])assert.ok(events.includes(e),'dataLayer '+e);
+const events=s.context.window.dataLayer.map(e=>e.event);for(const e of ['form_start','generate_lead','contact_channel_selected','whatsapp_click','sofia_open','lead_submit'])assert.ok(events.includes(e),'dataLayer '+e);
 assert.equal(s.context.window.dataLayer.find(e=>e.event==='generate_lead').procedure,'other');assert.ok(s.context.window.dataLayer.some(e=>e.event==='contact_channel_selected'&&e.channel==='call'));
+const opened=s.context.window.dataLayer.find(e=>e.event==='sofia_open');assert.equal(opened.link_location,'contact-widget-open');assert.equal(opened.page_lang,'en');
+const wa=s.context.window.dataLayer.find(e=>e.event==='whatsapp_click');assert.equal(wa.procedure,'other');assert.equal(wa.page_lang,'en');assert.equal(wa.link_location,'contact-widget');
+const leads=s.context.window.dataLayer.filter(e=>e.event==='lead_submit');
+assert.ok(leads.some(e=>e.contact_preference==='pending'&&e.procedure==='other'&&e.page_lang==='en'));
+assert.ok(leads.some(e=>e.contact_preference==='whatsapp'&&e.procedure==='other'&&!e.name&&!e.phone&&!e.email));
+assert.ok(leads.some(e=>e.contact_preference==='call'&&e.procedure==='other'));
 assert.ok(!JSON.stringify(s.context.window.dataLayer).includes('Test Person'));assert.ok(!JSON.stringify(s.context.window.dataLayer).includes('12025550100'));
 s.submit();assert.equal(s.requests.length,6,'unchanged details keep the same lead');s.elements.name.value='Other Person';s.submit();assert.equal(s.requests.length,7);assert.notEqual(s.requests[6].body.lead_id,created.body.lead_id,'edited details create a new lead');
 s=setup({endpoint:'/api/lead',response:503,accepted:false});s.submit();s.node('contact-call').listeners.click();s.node('contact-call-form').onsubmit({preventDefault(){}});await flush();await flush();assert.equal(s.node('contact-call-done').hidden,true,'no confirmation when the request fails');assert.match(s.node('contact-status').textContent,/could not send/);assert.equal(s.context.window.dataLayer,undefined,'no events without consent');
