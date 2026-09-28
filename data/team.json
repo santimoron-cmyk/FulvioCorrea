@@ -28,7 +28,30 @@
     },
     {
       "name": "Eileen",
-      "photoPlaceholder": true,
+      "image": "eileen-equipo-dr-fulvio-correa-cartagena.webp",
+      "alt": {
+        "en": "Eileen, Experiences Coach at Dr. Fulvio Correa's practice in Cartagena, smiling in a black top and holding a breast implant sizer",
+        "es": "Eileen, asesora de experiencia del paciente del consultorio del Dr. Fulvio Correa en Cartagena, sonriendo con blusa negra y sosteniendo un medidor de implante mamario"
+      },
+      "photo": {
+        "_note": "Pre-encoded 4:5 AVIF/WebP set (photo provided by Santiago 2026-09-28). files lists every shipped file so the asset copy step includes them.",
+        "base": "eileen-equipo-dr-fulvio-correa-cartagena",
+        "width": 960,
+        "height": 1200,
+        "widths": [
+          480,
+          768,
+          960
+        ],
+        "files": [
+          "eileen-equipo-dr-fulvio-correa-cartagena-480.avif",
+          "eileen-equipo-dr-fulvio-correa-cartagena-480.webp",
+          "eileen-equipo-dr-fulvio-correa-cartagena-768.avif",
+          "eileen-equipo-dr-fulvio-correa-cartagena-768.webp",
+          "eileen-equipo-dr-fulvio-correa-cartagena.avif",
+          "eileen-equipo-dr-fulvio-correa-cartagena.webp"
+        ]
+      },
       "role": {
         "en": "Experiences Coach",
         "es": "Asesora de experiencia del paciente"
