@@ -64,21 +64,6 @@ curl -I "https://fulviocorrea.com.co/blog/"
 curl -I "https://fulviocorrea.com.co/en/blog/"
 # Expected: 200
 
-curl -I "https://fulviocorrea.com.co/blog/tag/example"
-# Expected: 301 Location: /en/blog/
-curl -I "https://fulviocorrea.com.co/en/blog/"
-# Expected: 200
-
-curl -I "https://fulviocorrea.com.co/blog/category/example"
-# Expected: 301 Location: /en/blog/
-curl -I "https://fulviocorrea.com.co/en/blog/"
-# Expected: 200
-
-curl -I "https://fulviocorrea.com.co/blog/author/example"
-# Expected: 301 Location: /en/blog/
-curl -I "https://fulviocorrea.com.co/en/blog/"
-# Expected: 200
-
 curl -I "https://fulviocorrea.com.co/privacy-policy-1485"
 # Expected: 301 Location: /en/privacy/
 curl -I "https://fulviocorrea.com.co/en/privacy/"
@@ -702,4 +687,19 @@ curl -I "https://fulviocorrea.com.co/assets/abdomen-with-surgical-markings.webp"
 curl -I "https://fulviocorrea.com.co/assets/official-670ff4e2c5bc5e344cbcc3fa.png.webp"
 # Expected: 301 Location: /assets/breast-with-surgical-markings.webp
 curl -I "https://fulviocorrea.com.co/assets/breast-with-surgical-markings.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/blog/tag/example"
+# Expected: 301 Location: /en/blog/
+curl -I "https://fulviocorrea.com.co/en/blog/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/blog/category/example"
+# Expected: 301 Location: /en/blog/
+curl -I "https://fulviocorrea.com.co/en/blog/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/blog/author/example"
+# Expected: 301 Location: /en/blog/
+curl -I "https://fulviocorrea.com.co/en/blog/"
 # Expected: 200
