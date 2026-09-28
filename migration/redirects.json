@@ -599,6 +599,16 @@
       "status": 301
     },
     {
+      "from": "/es/contact",
+      "to": "/es/contacto/",
+      "status": 301
+    },
+    {
+      "from": "/es/contact/",
+      "to": "/es/contacto/",
+      "status": 301
+    },
+    {
       "from": "/es/privacy",
       "to": "/es/privacidad/",
       "status": 301
