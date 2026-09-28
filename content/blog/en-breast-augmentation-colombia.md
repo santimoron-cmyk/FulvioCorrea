@@ -6,7 +6,7 @@ lang: "en"
 category: "Breast Surgery"
 tags: ["breast-augmentation-colombia", "breast-surgery", "medical-tourism-colombia", "cartagena"]
 cover: "/assets/blog-breast-augmentation-colombia.webp"
-coverAlt: "White satin bra hanging against a soft neutral background"
+coverAlt: "Woman in a trench coat waiting at an airport gate with a carry-on suitcase before international travel"
 date: "2026-09-23"
 updated: "2026-09-28"
 author: "fulvio-correa"

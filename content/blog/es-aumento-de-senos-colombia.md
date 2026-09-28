@@ -6,7 +6,7 @@ lang: "es"
 category: "Breast Surgery"
 tags: ["aumento-de-senos-colombia", "mamoplastia-de-aumento", "cirugia-de-senos", "turismo-medico-colombia", "cartagena"]
 cover: "/assets/blog-breast-augmentation-colombia.webp"
-coverAlt: "Sostén de satén blanco sobre fondo neutro suave"
+coverAlt: "Mujer con gabardina esperando en la sala de un aeropuerto junto a su maleta de mano antes de un viaje internacional"
 date: "2026-09-28"
 updated: "2026-09-28"
 author: "fulvio-correa"
