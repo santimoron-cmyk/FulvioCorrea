@@ -1,0 +1,155 @@
+{
+  "_note": "Procedure card photos (home + procedures hub). Files: assets/<base>.{webp,avif} 960x720 plus -480/-768; portrait: 4:5 detail set for procedure pages that show a photo. AI-generated editorial images, not patients or results. `files` lists every shipped file so the asset copy step (sourceReferences) includes them.",
+  "bbl": {
+    "base": "brazilian-butt-lift-cartagena-colombia",
+    "ogBackground": "#d1bead",
+    "alt": {
+      "en": "Woman seen from behind in a sand knit top and high-waisted champagne satin trousers, illustrating the Brazilian butt lift with Dr. Fulvio Correa in Cartagena",
+      "es": "Mujer de espaldas con suéter de punto color arena y pantalón de satén champaña de tiro alto, ilustrando el aumento glúteo con grasa con el Dr. Fulvio Correa en Cartagena"
+    },
+    "portrait": {
+      "width": 576,
+      "height": 720,
+      "widths": [
+        480,
+        576
+      ]
+    },
+    "files": [
+      "brazilian-butt-lift-cartagena-colombia-480.avif",
+      "brazilian-butt-lift-cartagena-colombia-480.webp",
+      "brazilian-butt-lift-cartagena-colombia-768.avif",
+      "brazilian-butt-lift-cartagena-colombia-768.webp",
+      "brazilian-butt-lift-cartagena-colombia.avif",
+      "brazilian-butt-lift-cartagena-colombia.webp",
+      "brazilian-butt-lift-cartagena-colombia-portrait-480.avif",
+      "brazilian-butt-lift-cartagena-colombia-portrait-480.webp",
+      "brazilian-butt-lift-cartagena-colombia-portrait-576.avif",
+      "brazilian-butt-lift-cartagena-colombia-portrait-576.webp"
+    ]
+  },
+  "breast-augmentation": {
+    "base": "breast-augmentation-cartagena-colombia",
+    "ogBackground": "#d8c1a9",
+    "alt": {
+      "en": "Woman in a high-neck champagne satin blouse with her hand resting on her chest, illustrating breast augmentation with Dr. Fulvio Correa in Cartagena",
+      "es": "Mujer con blusa de satén color champaña de cuello alto y la mano sobre el pecho, ilustrando el aumento de senos con el Dr. Fulvio Correa en Cartagena"
+    },
+    "files": [
+      "breast-augmentation-cartagena-colombia-480.avif",
+      "breast-augmentation-cartagena-colombia-480.webp",
+      "breast-augmentation-cartagena-colombia-768.avif",
+      "breast-augmentation-cartagena-colombia-768.webp",
+      "breast-augmentation-cartagena-colombia.avif",
+      "breast-augmentation-cartagena-colombia.webp"
+    ]
+  },
+  "breast-lift-reduction": {
+    "base": "breast-lift-reduction-cartagena-colombia",
+    "ogBackground": "#c5a693",
+    "alt": {
+      "en": "Woman in a champagne silk wrap blouse with her hand on her collarbone, illustrating breast lift and breast reduction with Dr. Fulvio Correa in Cartagena",
+      "es": "Mujer con blusa cruzada de seda color champaña y la mano en la clavícula, ilustrando el levantamiento y la reducción de senos con el Dr. Fulvio Correa en Cartagena"
+    },
+    "files": [
+      "breast-lift-reduction-cartagena-colombia-480.avif",
+      "breast-lift-reduction-cartagena-colombia-480.webp",
+      "breast-lift-reduction-cartagena-colombia-768.avif",
+      "breast-lift-reduction-cartagena-colombia-768.webp",
+      "breast-lift-reduction-cartagena-colombia.avif",
+      "breast-lift-reduction-cartagena-colombia.webp"
+    ]
+  },
+  "facelift": {
+    "base": "facelift-cartagena-colombia",
+    "ogBackground": "#d5c0a9",
+    "alt": {
+      "en": "Mature woman in a champagne silk mock-neck blouse touching her neck below the jawline, illustrating facelift surgery with Dr. Fulvio Correa in Cartagena",
+      "es": "Mujer madura con blusa de seda champaña de cuello alto tocando su cuello bajo la mandíbula, ilustrando el lifting facial con el Dr. Fulvio Correa en Cartagena"
+    },
+    "files": [
+      "facelift-cartagena-colombia-480.avif",
+      "facelift-cartagena-colombia-480.webp",
+      "facelift-cartagena-colombia-768.avif",
+      "facelift-cartagena-colombia-768.webp",
+      "facelift-cartagena-colombia.avif",
+      "facelift-cartagena-colombia.webp"
+    ]
+  },
+  "liposuction": {
+    "base": "liposuction-cartagena-colombia",
+    "ogBackground": "#c7b29b",
+    "alt": {
+      "en": "Woman in a ribbed sand turtleneck and belted champagne trousers with her hands on her hips, illustrating liposuction with Dr. Fulvio Correa in Cartagena",
+      "es": "Mujer con suéter de cuello alto color arena y pantalón champaña con cinturón, con las manos en la cintura, ilustrando la liposucción con el Dr. Fulvio Correa en Cartagena"
+    },
+    "files": [
+      "liposuction-cartagena-colombia-480.avif",
+      "liposuction-cartagena-colombia-480.webp",
+      "liposuction-cartagena-colombia-768.avif",
+      "liposuction-cartagena-colombia-768.webp",
+      "liposuction-cartagena-colombia.avif",
+      "liposuction-cartagena-colombia.webp"
+    ]
+  },
+  "mommy-makeover": {
+    "base": "mommy-makeover-cartagena-colombia",
+    "ogBackground": "#e6d4bf",
+    "alt": {
+      "en": "Woman in a champagne satin wrap dress with her hands clasped at the waist, illustrating the mommy makeover with Dr. Fulvio Correa in Cartagena",
+      "es": "Mujer con vestido cruzado de satén champaña y las manos unidas en la cintura, ilustrando el mommy makeover con el Dr. Fulvio Correa en Cartagena"
+    },
+    "files": [
+      "mommy-makeover-cartagena-colombia-480.avif",
+      "mommy-makeover-cartagena-colombia-480.webp",
+      "mommy-makeover-cartagena-colombia-768.avif",
+      "mommy-makeover-cartagena-colombia-768.webp",
+      "mommy-makeover-cartagena-colombia.avif",
+      "mommy-makeover-cartagena-colombia.webp"
+    ]
+  },
+  "rhinoplasty": {
+    "base": "rhinoplasty-cartagena-colombia",
+    "ogBackground": "#edd6bb",
+    "alt": {
+      "en": "Side profile of a woman with eyes closed in a high-neck champagne silk blouse, illustrating rhinoplasty with Dr. Fulvio Correa in Cartagena",
+      "es": "Perfil de una mujer con los ojos cerrados y blusa de seda champaña de cuello alto, ilustrando la rinoplastia con el Dr. Fulvio Correa en Cartagena"
+    },
+    "files": [
+      "rhinoplasty-cartagena-colombia-480.avif",
+      "rhinoplasty-cartagena-colombia-480.webp",
+      "rhinoplasty-cartagena-colombia-768.avif",
+      "rhinoplasty-cartagena-colombia-768.webp",
+      "rhinoplasty-cartagena-colombia.avif",
+      "rhinoplasty-cartagena-colombia.webp"
+    ]
+  },
+  "tummy-tuck": {
+    "base": "tummy-tuck-cartagena-colombia",
+    "ogBackground": "#e9d2b9",
+    "alt": {
+      "en": "Woman in high-waisted champagne satin trousers with her hand resting on her abdomen, illustrating tummy tuck surgery with Dr. Fulvio Correa in Cartagena",
+      "es": "Mujer con pantalón de satén champaña de tiro alto y la mano sobre el abdomen, ilustrando la abdominoplastia con el Dr. Fulvio Correa en Cartagena"
+    },
+    "portrait": {
+      "width": 576,
+      "height": 720,
+      "widths": [
+        480,
+        576
+      ]
+    },
+    "files": [
+      "tummy-tuck-cartagena-colombia-480.avif",
+      "tummy-tuck-cartagena-colombia-480.webp",
+      "tummy-tuck-cartagena-colombia-768.avif",
+      "tummy-tuck-cartagena-colombia-768.webp",
+      "tummy-tuck-cartagena-colombia.avif",
+      "tummy-tuck-cartagena-colombia.webp",
+      "tummy-tuck-cartagena-colombia-portrait-480.avif",
+      "tummy-tuck-cartagena-colombia-portrait-480.webp",
+      "tummy-tuck-cartagena-colombia-portrait-576.avif",
+      "tummy-tuck-cartagena-colombia-portrait-576.webp"
+    ]
+  }
+}

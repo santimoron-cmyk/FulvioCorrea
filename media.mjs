@@ -6,6 +6,9 @@ import path from 'node:path';
 import sharp from 'sharp';
 import {imageSize} from './assets.mjs';
 
+// Procedure card photos ship pre-encoded AVIF/WebP sets (data/procedure-cards.json); the build must not re-encode them.
+const PROCEDURE_CARDS = Object.entries(JSON.parse(fs.readFileSync('data/procedure-cards.json', 'utf8'))).filter(([k]) => !k.startsWith('_'));
+
 export const IMAGE_RENAMES = {
   '84-home-1-11.webp': 'banner-woman-shoulders.webp',
   '84-home-1-10.webp': 'portrait-woman-hands-on-cheeks.webp',
@@ -64,7 +67,7 @@ export async function buildImageDerivatives(dist = 'dist') {
   const files = fs.existsSync(assetDir) ? sourceAssetsIn(assetDir) : [];
   for (const file of files) {
     if (!/\.(webp|png|jpe?g)$/i.test(file)) continue;
-    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || file.startsWith('breast-lift-reduction-cartagena-colombia') || file.startsWith('hero-dr-fulvio-correa-plastic-surgery-cartagena') || file.startsWith('dr-fulvio-correa-plastic-surgeon-cartagena-')) continue;
+    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || PROCEDURE_CARDS.some(([, c]) => file.startsWith(c.base)) || file.startsWith('hero-dr-fulvio-correa-plastic-surgery-cartagena') || file.startsWith('dr-fulvio-correa-plastic-surgeon-cartagena-')) continue;
     const full = path.join(assetDir, file);
     const size = imageSize(full);
     if (!size || size.width < 480) continue;
@@ -86,12 +89,16 @@ export async function buildImageDerivatives(dist = 'dist') {
     }
     if (variants.length) variantIndex.set(file, {width: size.width, height: size.height, variants});
   }
-  const breastCard = 'breast-lift-reduction-cartagena-colombia.webp';
-  if (fs.existsSync(path.join(assetDir, breastCard))) {
-    variantIndex.set(breastCard, {width: 960, height: 720, variants: [
-      {width: 480, name: 'breast-lift-reduction-cartagena-colombia-480.webp'},
-      {width: 768, name: 'breast-lift-reduction-cartagena-colombia-768.webp'},
+  for (const [, c] of PROCEDURE_CARDS) {
+    if (fs.existsSync(path.join(assetDir, `${c.base}.webp`))) variantIndex.set(`${c.base}.webp`, {width: 960, height: 720, variants: [
+      {width: 480, name: `${c.base}-480.webp`},
+      {width: 768, name: `${c.base}-768.webp`},
     ]});
+    if (c.portrait) {
+      const top = c.portrait.widths.at(-1);
+      variantIndex.set(`${c.base}-portrait-${top}.webp`, {width: c.portrait.width, height: c.portrait.height,
+        variants: c.portrait.widths.slice(0, -1).map(w => ({width: w, name: `${c.base}-portrait-${w}.webp`}))});
+    }
   }
   await buildIcons(dist);
   await buildOgImages(dist);
@@ -176,25 +183,19 @@ async function ogFile(name, input, {position = 'centre', background = '#140e16',
 
 export async function buildOgImages() {
   const hero = 'assets/hero-dr-fulvio-correa-plastic-surgery-cartagena-1920.webp';
-  const face = 'assets/portrait-woman-pink-background.webp';
-  const nose = 'assets/nose-with-surgical-markings.webp';
-  const breast = 'assets/breast-with-surgical-markings.webp';
-  const breastCard = 'breast-lift-reduction-cartagena-colombia.webp';
-  const abdomen = 'assets/abdomen-with-surgical-markings.webp';
-  const torso = 'assets/torso-black-swimsuit.webp';
-  const orange = 'assets/woman-holding-orange-bodysuit.webp';
-  const back = 'assets/back-view-white-swimsuit.webp';
+  const cards = Object.fromEntries(PROCEDURE_CARDS);
+  const cardOg = (name, slug) => ogFile(name, path.join('assets', `${cards[slug].base}.webp`), {position: 'centre', background: cards[slug].ogBackground});
   const doctor = 'assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp';
   const map = {
     home: await ogFile('dr-fulvio-correa-plastic-surgery-cartagena.webp', hero, {position: 'north'}),
-    'breast-augmentation': await ogFile('breast-augmentation.webp', breast),
-    'breast-lift-reduction': await ogFile('breast-lift-reduction.webp', path.join('assets', breastCard), {position: 'centre', background: '#c5a693'}),
-    facelift: await ogFile('facelift.webp', face, {position: 'centre'}),
-    rhinoplasty: await ogFile('rhinoplasty.webp', nose, {position: 'centre'}),
-    liposuction: await ogFile('liposuction.webp', torso, {position: 'centre'}),
-    'tummy-tuck': await ogFile('tummy-tuck.webp', abdomen, {position: 'centre'}),
-    'mommy-makeover': await ogFile('mommy-makeover.webp', orange, {position: 'centre'}),
-    bbl: await ogFile('bbl.webp', back, {position: 'centre'}),
+    'breast-augmentation': await cardOg('breast-augmentation.webp', 'breast-augmentation'),
+    'breast-lift-reduction': await cardOg('breast-lift-reduction.webp', 'breast-lift-reduction'),
+    facelift: await cardOg('facelift.webp', 'facelift'),
+    rhinoplasty: await cardOg('rhinoplasty.webp', 'rhinoplasty'),
+    liposuction: await cardOg('liposuction.webp', 'liposuction'),
+    'tummy-tuck': await cardOg('tummy-tuck.webp', 'tummy-tuck'),
+    'mommy-makeover': await cardOg('mommy-makeover.webp', 'mommy-makeover'),
+    bbl: await cardOg('bbl.webp', 'bbl'),
     capri: await ogFile('capri.webp', doctor, {position: 'north'}),
     testimonials: await ogFile('dr-fulvio-correa-patient-stories-cartagena.webp', doctor, {position: 'north'}),
   };

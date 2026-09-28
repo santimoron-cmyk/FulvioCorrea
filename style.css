@@ -20,5 +20,5 @@
 .team-placeholder{display:grid;place-items:center;border-radius:14px;background:#2a1c2c;color:#d4b478}.team-placeholder span{font:italic 72px Georgia,serif}
 @media(max-width:700px){.doctor-section,.detail-grid:has(.doctor-photo){grid-template-columns:1fr;gap:28px}.doctor-photo{width:100%}.doctor-photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top}}
 @media(max-width:600px){.team-placeholder span{font-size:56px}}
-.card-image picture{display:contents}.card-image img{object-position:center}
+.card-image picture,.detail-image picture,.featured-image picture{display:contents}.card-image img{object-position:center}
 
