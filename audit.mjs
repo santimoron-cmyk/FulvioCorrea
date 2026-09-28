@@ -2,7 +2,7 @@ import {patientVideos,patientCards,patientWatch} from './patient-videos.mjs';
 import {procedureVideo} from './procedure-video.mjs';
 import {liposuctionView,liposuctionSchema} from './liposuction-view.mjs';
 import {internationalView} from './international-view.mjs';
-import {facilityView,clinicContact} from './facility-view.mjs';import {contactView,officePhones} from './contact-view.mjs';
+import {facilityView,clinicContact} from './facility-view.mjs';import {contactView,officePhones,officeHours} from './contact-view.mjs';
 import {physicianNode,membershipView,editorialAuthor,authorView,profileNode} from './practice-view.mjs';
 import fs from 'node:fs';import {read,write,esc,markdown,posts} from './editorial.mjs';
 import {imageMeta,imageSize} from './assets.mjs';
@@ -43,7 +43,7 @@ if(p.route===`/${l}/book-consultation/`)p.noindex=true;
 if(p.route===`/${l}/`){h=h.replace(/(<section class="testimonials section wrap"[\s\S]*?<\/section>)/,`$1<section class="section wrap" data-surface="charcoal"><h2>${t(l,'Their experience, in their words.','Su experiencia, en sus palabras.')}</h2>${patientCards(l)}<a class="textlink" href="/${l}/testimonials/">${t(l,'Explore patient experiences','Explorar experiencias')} ↗</a></section>`);}
 if(p.route===`/${l}/international-patients/`)h=h.replace('</main>',`<section class="section wrap" data-surface="charcoal"><h2>${t(l,'Patient experiences','Experiencias de pacientes')}</h2>${patientCards(l)}<a href="/${l}/testimonials/">${t(l,'All patient stories','Todas las experiencias')} ↗</a></section></main>`);
 // Clinic and consultation office are distinct places. Share a discoverable facility page.
-h=h.replace('</div></div><div class="footer-bottom wrap">',()=>`<p>${officePhones(practice,l,'footer')}<br><a href="/${l}/contact/">${t(l,'All contact details','Todos los datos de contacto')}</a></p></div></div><div class="footer-bottom wrap">`);
+h=h.replace('</div></div><div class="footer-bottom wrap">',()=>`<p>${officePhones(practice,l,'footer')}${practice.hoursBrief?.[l]?'<br>'+officeHours(practice,l,true):''}<br><a href="/${l}/contact/">${t(l,'All contact details','Todos los datos de contacto')}</a></p></div></div><div class="footer-bottom wrap">`);
 if(!p.ads){h=h.replace(`<a href="/${l}/faq/">`,`<a href="/${l}/capri-clinic/">${t(l,'Surgical clinic · CAPRI','Clínica quirúrgica · CAPRI')}</a><a href="/${l}/faq/">`);}
 if(procedure||p.route===`/${l}/about/`||p.route===`/${l}/international-patients/`){h=h.replace('</main>',`<section class="section" data-surface="charcoal" data-shared><div class="wrap"><p class="eyebrow">${t(l,'Your surgical setting','Tu centro quirúrgico')}</p><h2>${t(l,'Surgery at CAPRI Clinic','Tu cirugía en Clínica CAPRI')}</h2><p>${t(l,'Dr. Fulvio Correa performs surgery at CAPRI Clinic in Cartagena. Learn how the surgical clinic differs from your consultation location.','El Dr. Fulvio Correa opera en la Clínica CAPRI de Cartagena. Conoce la diferencia entre la clínica quirúrgica y el lugar de tu valoración.')}</p>${clinicContact(l,read('data/facility.json'))}<a class="textlink" href="/${l}/capri-clinic/">${t(l,'Explore the surgical clinic','Conoce la clínica quirúrgica')} ↗</a></div></section></main>`);}
 if(post){if(!proc(l,post.procedure))throw Error('Post missing pillar: '+post.slug);const pillar=proc(l,post.procedure);const related=post.related.map(slug=>blog.find(x=>x.lang===l&&x.slug===slug)).filter(Boolean).slice(0,4);const coverName=post.cover.replace('/assets/','');const coverAvif=coverName.replace(/\.webp$/i,'.avif');const coverImg=image({image:coverName,imageAlt:post.coverAlt});const coverHtml=fs.existsSync('assets/'+coverAvif)?`<picture><source type="image/avif" srcset="/assets/${coverAvif}">${coverImg}</picture>`:coverImg;const coverExtras=['.avif','-og.webp','-og.avif'].map(s=>coverName.replace(/\.webp$/i,s)).filter(n=>fs.existsSync('assets/'+n));const twin=blog.find(x=>x.lang===other&&x.slug===post.twin);p.alternate=twin?postRoute(twin):null;
@@ -123,6 +123,7 @@ write('dist/llms.txt',[
  `- Biography: ${origin}/en/about/ · ${origin}${localizePath('/es/about/')}`,
  `- Address: ${practice.addressLines.join(', ')}`,
  `- Contact: Sofía, our virtual assistant, can open WhatsApp, Instagram, SMS or Facebook. Phone (Colombia): ${practice.phoneDisplay}. WhatsApp and SMS only (US): ${practice.messagingDisplay}. Contact page: ${origin}/en/contact/ · ${origin}${localizePath('/es/contact/')}`,
+ ...[practice.openingHoursText?.en,practice.consultationHoursText?.en].filter(Boolean).map(x=>`- ${x}`),
  (f=>`- Surgery: ${f.name} (CAPRI Clinic), the surgical clinic where Dr. Correa operates; it is not the consultation office at CC Ramblas. Address: ${f.addressLines.en.join(', ')}. Clinic phone (CAPRI, not the doctor\'s office): ${f.telephoneDisplay}. Clinic hours: ${f.openingHoursText.en} Instagram: ${f.sameAs[0]}`)(read('data/facility.json')),
  '',
  '## Procedures',
