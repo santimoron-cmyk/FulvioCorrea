@@ -695,7 +695,7 @@
     },
     {
       "from": "/assets/doctor.webp",
-      "to": "/assets/dr-fulvio-correa-plastic-surgeon-cartagena.webp",
+      "to": "/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp",
       "status": 301
     },
     {
@@ -741,6 +741,11 @@
     {
       "from": "/assets/logo.png",
       "to": "/assets/dr-fulvio-correa-logo.png",
+      "status": 301
+    },
+    {
+      "from": "/assets/dr-fulvio-correa-plastic-surgeon-cartagena.webp",
+      "to": "/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp",
       "status": 301
     },
     {

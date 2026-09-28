@@ -690,8 +690,8 @@ curl -I "https://fulviocorrea.com.co/assets/breast-with-surgical-markings.webp"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com.co/assets/doctor.webp"
-# Expected: 301 Location: /assets/dr-fulvio-correa-plastic-surgeon-cartagena.webp
-curl -I "https://fulviocorrea.com.co/assets/dr-fulvio-correa-plastic-surgeon-cartagena.webp"
+# Expected: 301 Location: /assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp
+curl -I "https://fulviocorrea.com.co/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com.co/assets/editorial.webp"
@@ -737,6 +737,11 @@ curl -I "https://fulviocorrea.com.co/assets/jennifer-mendoza-ceo-fulvio-correa.w
 curl -I "https://fulviocorrea.com.co/assets/logo.png"
 # Expected: 301 Location: /assets/dr-fulvio-correa-logo.png
 curl -I "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/dr-fulvio-correa-plastic-surgeon-cartagena.webp"
+# Expected: 301 Location: /assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp
+curl -I "https://fulviocorrea.com.co/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com.co/assets/og/home.webp"
