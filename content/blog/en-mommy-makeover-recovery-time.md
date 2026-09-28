@@ -81,7 +81,7 @@ Dr. Fulvio Correa is a plastic surgeon practicing in Cartagena who evaluates pat
 
 ## Message Sofía on WhatsApp
 
-If you want help coordinating a mommy makeover evaluation with Dr. Fulvio Correa in Cartagena—consult scheduling, document prep, or recovery-planning questions before travel—message Sofía. Logistics support is not a diagnosis or a surgical recovery plan.
+If you want help coordinating a mommy makeover evaluation with Dr. Fulvio Correa in Cartagena—consult scheduling, document prep, or recovery-planning questions before travel—message Sofía, our virtual assistant. Logistics support is not a diagnosis or a surgical recovery plan.
 
 [Message Sofía on WhatsApp about mommy makeover recovery / Cartagena evaluation](https://wa.me/16506656265?text=Hi%20Sof%C3%ADa%2C%20I%20want%20information%20about%20mommy%20makeover%20recovery%20and%20evaluation%20in%20Cartagena)
 

@@ -739,11 +739,6 @@
       "status": 301
     },
     {
-      "from": "/assets/team-sofia.webp",
-      "to": "/assets/sofia-clinic-assistant-fulvio-correa.webp",
-      "status": 301
-    },
-    {
       "from": "/assets/logo.png",
       "to": "/assets/dr-fulvio-correa-logo.png",
       "status": 301

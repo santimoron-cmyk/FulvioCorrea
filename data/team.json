@@ -27,15 +27,6 @@
       }
     },
     {
-      "name": "Sofía",
-      "image": "sofia-clinic-assistant-fulvio-correa.webp",
-      "role": {
-        "en": "Assistant",
-        "es": "Asistente"
-      },
-      "source": "Photo, name and role supplied by owner, 2026-09-27"
-    },
-    {
       "name": "Eileen",
       "photoPlaceholder": true,
       "role": {

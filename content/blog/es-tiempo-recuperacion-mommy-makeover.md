@@ -85,7 +85,7 @@ El Dr. Fulvio Correa es cirujano plástico que ejerce en Cartagena y valora paci
 
 ## Escribe a Sofía por WhatsApp
 
-Si quieres ayuda para coordinar una valoración de mommy makeover con el Dr. Fulvio Correa en Cartagena—agenda, documentos o preguntas de planificación de recuperación antes de viajar—escribe a Sofía. El apoyo logístico no es un diagnóstico ni un plan quirúrgico de recuperación.
+Si quieres ayuda para coordinar una valoración de mommy makeover con el Dr. Fulvio Correa en Cartagena—agenda, documentos o preguntas de planificación de recuperación antes de viajar—escribe a Sofía, nuestra asistente virtual. El apoyo logístico no es un diagnóstico ni un plan quirúrgico de recuperación.
 
 [Escribe a Sofía por WhatsApp sobre recuperación de mommy makeover / valoración en Cartagena](https://wa.me/16506656265?text=Hola%20Sof%C3%ADa%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20recuperaci%C3%B3n%20del%20mommy%20makeover%20y%20una%20valoraci%C3%B3n%20en%20Cartagena)
 

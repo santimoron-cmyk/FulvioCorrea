@@ -29,7 +29,6 @@ export const IMAGE_RENAMES = {
   'rhinoplasty-video.webp': 'rhinoplasty-video-dr-fulvio-correa.webp',
   'team-adriana.webp': 'adriana-rojas-aesthetic-doctor-cartagena.webp',
   'team-jennifer.webp': 'jennifer-mendoza-ceo-fulvio-correa.webp',
-  'team-sofia.webp': 'sofia-clinic-assistant-fulvio-correa.webp',
   'logo.png': 'dr-fulvio-correa-logo.png',
 };
 

@@ -734,11 +734,6 @@ curl -I "https://fulviocorrea.com.co/assets/team-jennifer.webp"
 curl -I "https://fulviocorrea.com.co/assets/jennifer-mendoza-ceo-fulvio-correa.webp"
 # Expected: 200
 
-curl -I "https://fulviocorrea.com.co/assets/team-sofia.webp"
-# Expected: 301 Location: /assets/sofia-clinic-assistant-fulvio-correa.webp
-curl -I "https://fulviocorrea.com.co/assets/sofia-clinic-assistant-fulvio-correa.webp"
-# Expected: 200
-
 curl -I "https://fulviocorrea.com.co/assets/logo.png"
 # Expected: 301 Location: /assets/dr-fulvio-correa-logo.png
 curl -I "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"

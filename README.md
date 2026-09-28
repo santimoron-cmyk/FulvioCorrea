@@ -72,6 +72,8 @@ La publicación privada no pudo completarse: los scripts site-workflow.mjs y set
 
 ## Globo de contacto de Sofía
 
+Sofía es la asistente virtual del chat, no una integrante del equipo. No aparece en la sección de equipo ni en el schema de personas.
+
 Disponible en todas las páginas EN/ES: nombre, teléfono internacional, procedimiento y «Otro»; después WhatsApp, Instagram, SMS y Facebook. Configuración, límites de captura y pruebas en [CONTACT-WIDGET.md](CONTACT-WIDGET.md). Facebook usa el perfil facilitado por el propietario, pero la recepción de conversaciones en NinjaSuite sigue pendiente de revisar en el CRM.
 
 
