@@ -1,5 +1,6 @@
 {
   "name": "Dr. Fulvio Correa",
+  "legalName": "Fulvio Alexander Correa Vitola",
   "address": {
     "streetAddress": "Vía Entrada a Manzanillo I-90A #10, CC Ramblas, local 23, Manzanillo del Mar",
     "addressLocality": "Cartagena de Indias",
@@ -24,6 +25,53 @@
       "location": "Rio de Janeiro, Brasil"
     }
   ],
+  "credentials": [
+    {
+      "id": "medical-degree",
+      "credentialCategory": "degree",
+      "name": {
+        "en": "Medical degree (Médico)",
+        "es": "Título de Médico"
+      },
+      "en": "Physician (Médico), University of Cartagena, 2003",
+      "es": "Médico, Universidad de Cartagena, 2003",
+      "recognizedBy": {
+        "name": "Universidad de Cartagena",
+        "type": "CollegeOrUniversity"
+      },
+      "dateCreated": "2003-07-18",
+      "source": "ReTHUS card (Registro Único Nacional del Talento Humano en Salud, Minsalud) sent by Santiago 2026-09-28. The ID number and card image are intentionally not published."
+    },
+    {
+      "id": "specialization",
+      "credentialCategory": "specialization",
+      "name": {
+        "en": "Specialization in Plastic, Reconstructive and Aesthetic Surgery",
+        "es": "Especialización en Cirugía Plástica, Reconstructiva y Estética"
+      },
+      "en": "Specialization in Plastic, Reconstructive and Aesthetic Surgery",
+      "es": "Especialización en Cirugía Plástica, Reconstructiva y Estética",
+      "source": "ReTHUS card (Registro Único Nacional del Talento Humano en Salud, Minsalud) sent by Santiago 2026-09-28. The ID number and card image are intentionally not published."
+    },
+    {
+      "id": "rethus",
+      "credentialCategory": "professional registration",
+      "name": {
+        "en": "Registration in ReTHUS (Registro Único Nacional del Talento Humano en Salud)",
+        "es": "Inscripción en el ReTHUS (Registro Único Nacional del Talento Humano en Salud)"
+      },
+      "en": "Registered in ReTHUS (Registro Único Nacional del Talento Humano en Salud), Colombia's national health workforce registry, since 2004",
+      "es": "Inscrito en ReTHUS (Registro Único Nacional del Talento Humano en Salud) desde 2004",
+      "recognizedBy": {
+        "name": "Ministerio de Salud y Protección Social",
+        "type": "GovernmentOrganization",
+        "url": "https://www.minsalud.gov.co/"
+      },
+      "dateCreated": "2004-08-05",
+      "verificationUrl": "https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx",
+      "source": "ReTHUS card (Registro Único Nacional del Talento Humano en Salud, Minsalud) sent by Santiago 2026-09-28. The ID number and card image are intentionally not published."
+    }
+  ],
   "societies": [
     {
       "name": "Sociedad Colombiana de Cirugía Plástica Estética y Reconstructiva",
@@ -34,7 +82,7 @@
       "alternateName": "SCCP"
     }
   ],
-  "professionalRegistration": "",
+  "professionalRegistration": "ReTHUS (Minsalud), registered 2004-08-05. Registry ID number intentionally not published.",
   "yearsExperience": "15+",
   "sameAs": [
     "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/",
@@ -46,7 +94,7 @@
   "authorApproved": true,
   "_todo": [
     "Teléfono colombiano del consultorio (+57 318 351 6267) confirmado por Santiago el 2026-09-28. El número de EE. UU. (+1 650 665 6265) sigue siendo EXCLUSIVO DE MENSAJERÍA (WhatsApp/SMS). El +57 304 480 5692 es de la Clínica CAPRI, no del consultorio.",
-    "Confirmar registro profesional antes de completar el campo. Años de experiencia (15+), procedimientos (3.000+), SCCP, FILACP y formación confirmados en la biografía oficial entregada por el doctor (2026-09-28). No usar «certificado» ni «board-certified».",
+    "Registro profesional confirmado con la tarjeta ReTHUS enviada por Santiago (2026-09-28): Médico (U. de Cartagena, 18-07-2003), Especialización en Cirugía Plástica, Reconstructiva y Estética, inscripción ReTHUS 05-08-2004. NO publicar el número de cédula ni la imagen de la tarjeta. Años de experiencia (15+), procedimientos (3.000+), SCCP, FILACP y formación confirmados en la biografía oficial (2026-09-28). No usar «certificado» ni «board-certified».",
     "Autoría/revisión aprobada por el doctor (confirmado por Santiago, 2026-09-26) para las 16 páginas de procedimiento; siguen abiertos los TODO factuales (anestesia, centro, duración, precios, protocolos). Confirmar revisión de cualquier texto nuevo futuro.",
     "La formación procede de la biografía oficial; no constituye verificación registral independiente."
   ],

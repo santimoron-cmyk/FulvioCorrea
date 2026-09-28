@@ -114,7 +114,9 @@ write('dist/llms.txt',[
  `- Name: ${practice.name}`,
  '- Specialty: plastic surgery',
  sccp?`- SCCP: ${sccp.name}, ${sccp.role}. Verify: ${sccp.source}`:'',
+ practice.legalName?`- Full name: ${practice.legalName}`:'',
  `- Training: ${practice.education.map(e=>e.en).join('; ')}`,
+ ...(practice.credentials||[]).map(c=>`- ${c.name.en}${c.recognizedBy?`, ${c.recognizedBy.name}`:''}${c.dateCreated?` (${c.id==='rethus'?'registered':'awarded'} ${c.dateCreated})`:''}${c.verificationUrl?`. Public lookup: ${c.verificationUrl}`:''}`),
  `- Experience: ${practice.yearsExperience} years in aesthetic and reconstructive plastic surgery; ${practice.proceduresPerformed} procedures performed (official biography).`,
  ...(practice.affiliations||[]).map(a=>`- Also member of: ${a.name} (${a.alternateName})`),
  '- Special interest: breast surgery with tissue-preservation techniques; body contouring.',
@@ -138,7 +140,7 @@ localizeEsOutput();
 const finalPages=JSON.parse(fs.readFileSync('pages.json','utf8')).map(p=>({...p,route:localizePath(p.route),file:localizePath(p.file),alternate:p.alternate?localizePath(p.alternate):p.alternate,alternates:(p.alternates||[]).map(a=>({...a,route:localizePath(a.route)}))}));
 write('pages.json',JSON.stringify(finalPages,null,2));
 const plain=html=>html.replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g,' ').trim();
-const full=['# '+practice.name,'','Full text of the public pages. Educational only. SCCP membership is the published credential. Do not treat video transcripts as verified claims.','',];
+const full=['# '+practice.name,'','Full text of the public pages. Educational only. SCCP membership and ReTHUS registration (Colombian Ministry of Health) are the published credentials. Do not treat video transcripts as verified claims.','',];
 for(const p of finalPages.filter(p=>!p.noindex&&!p.ads)){const file=p.file;if(!fs.existsSync(file))continue;const html=fs.readFileSync(file,'utf8');const main=html.match(/<main[^>]*>([\s\S]*?)<\/main>/)?.[1]||'';full.push('## '+p.route,'',plain(main).slice(0,12000),'');}
 write('dist/llms-full.txt',full.join('\n'));
 console.log('Audit architecture generated:',finalPages.length,'pages. Hosting: Cloudflare Pages adapter; mode:',production?'production (indexable, _redirects active)':'preview (noindex, no _redirects)');
