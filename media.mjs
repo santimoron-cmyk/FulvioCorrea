@@ -20,6 +20,17 @@ export const IMAGE_RENAMES = {
   '84-treatment-3.webp': 'portrait-woman-pink-background.webp',
   '84-treatment-6.webp': 'abdomen-with-surgical-markings.webp',
   'official-670ff4e2c5bc5e344cbcc3fa.png.webp': 'breast-with-surgical-markings.webp',
+  'doctor.webp': 'dr-fulvio-correa-plastic-surgeon-cartagena.webp',
+  'editorial.webp': 'woman-side-profile-portrait.webp',
+  'facelift-video.webp': 'facelift-video-dr-fulvio-correa.webp',
+  'liposuction-video.webp': 'liposuction-video-dr-fulvio-correa.webp',
+  'mammoplasty-video.webp': 'mammoplasty-video-dr-fulvio-correa.webp',
+  'mommy-video.webp': 'mommy-makeover-video-dr-fulvio-correa.webp',
+  'rhinoplasty-video.webp': 'rhinoplasty-video-dr-fulvio-correa.webp',
+  'team-adriana.webp': 'adriana-rojas-aesthetic-doctor-cartagena.webp',
+  'team-jennifer.webp': 'jennifer-mendoza-ceo-fulvio-correa.webp',
+  'team-sofia.webp': 'sofia-clinic-assistant-fulvio-correa.webp',
+  'logo.png': 'dr-fulvio-correa-logo.png',
 };
 
 const WIDTHS = [480, 768, 1200, 1600, 1920];
@@ -54,7 +65,7 @@ export async function buildImageDerivatives(dist = 'dist') {
   const files = fs.existsSync(assetDir) ? sourceAssetsIn(assetDir) : [];
   for (const file of files) {
     if (!/\.(webp|png|jpe?g)$/i.test(file)) continue;
-    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'logo.png') continue;
+    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png') continue;
     const full = path.join(assetDir, file);
     const size = imageSize(full);
     if (!size || size.width < 480) continue;
@@ -88,7 +99,7 @@ function sourceAssetsIn(dir) {
 }
 
 async function emblem() {
-  return sharp('assets/logo.png').extract({left: 46, top: 8, width: 204, height: 186}).png().toBuffer();
+  return sharp('assets/dr-fulvio-correa-logo.png').extract({left: 46, top: 8, width: 204, height: 186}).png().toBuffer();
 }
 
 async function iconPng(size) {
@@ -162,14 +173,14 @@ export async function buildOgImages() {
   const face = 'assets/portrait-woman-pink-background.webp';
   const nose = 'assets/nose-with-surgical-markings.webp';
   const breast = 'assets/breast-with-surgical-markings.webp';
-  const breastWide = 'assets/mammoplasty-video.webp';
+  const breastWide = 'assets/mammoplasty-video-dr-fulvio-correa.webp';
   const abdomen = 'assets/abdomen-with-surgical-markings.webp';
   const torso = 'assets/torso-black-swimsuit.webp';
   const orange = 'assets/woman-holding-orange-bodysuit.webp';
   const back = 'assets/back-view-white-swimsuit.webp';
-  const doctor = 'assets/doctor.webp';
+  const doctor = 'assets/dr-fulvio-correa-plastic-surgeon-cartagena.webp';
   const map = {
-    home: await ogFile('home.webp', hero, {position: 'centre'}),
+    home: await ogFile('dr-fulvio-correa-plastic-surgery-cartagena.webp', hero, {position: 'centre'}),
     'breast-augmentation': await ogFile('breast-augmentation.webp', breast),
     'breast-lift-reduction': await ogFile('breast-lift-reduction.webp', breastWide, {position: 'centre'}),
     facelift: await ogFile('facelift.webp', face, {position: 'centre'}),
@@ -179,7 +190,7 @@ export async function buildOgImages() {
     'mommy-makeover': await ogFile('mommy-makeover.webp', orange, {position: 'centre'}),
     bbl: await ogFile('bbl.webp', back, {position: 'centre'}),
     capri: await ogFile('capri.webp', doctor, {position: 'north'}),
-    testimonials: await ogFile('testimonials.webp', doctor, {position: 'north'}),
+    testimonials: await ogFile('dr-fulvio-correa-patient-stories-cartagena.webp', doctor, {position: 'north'}),
   };
   for (const poster of ['kary-alejandre.webp', 'natalia-vega.webp', 'thaily-amezcua.webp']) {
     map[poster] = await ogFile(poster, path.join('assets', poster));
@@ -223,7 +234,7 @@ export function decorateHtml(html) {
   return html.replace(re, (tag, offset) => {
     const src = attr(tag, 'src');
     const file = src.replace(/^\/assets\//, '');
-    if (!file || file === 'logo.png' || file.startsWith('og/')) return tag;
+    if (!file || file === 'dr-fulvio-correa-logo.png' || file.startsWith('og/')) return tag;
     const slot = slotFor(tag, html.slice(Math.max(0, offset - 700), offset));
     const meta = variantIndex.get(file);
     let next = tag.replace(/\s(?:srcset|sizes|loading|fetchpriority|decoding)="[^"]*"/g, '');
@@ -274,5 +285,10 @@ export function pruneUnreferencedAssets(dist = 'dist') {
 }
 
 export function assetRedirects() {
-  return Object.entries(IMAGE_RENAMES).map(([from, to]) => ({from: '/assets/' + from, to: '/assets/' + to, status: 301}));
+  return [
+    ...Object.entries(IMAGE_RENAMES).map(([from, to]) => ({from: '/assets/' + from, to: '/assets/' + to, status: 301})),
+    // Generated Open Graph crops. Renamed only in dist; the old names were never source files.
+    {from: '/assets/'+'og/home.webp', to: '/assets/'+'og/dr-fulvio-correa-plastic-surgery-cartagena.webp', status: 301},
+    {from: '/assets/'+'og/testimonials.webp', to: '/assets/'+'og/dr-fulvio-correa-patient-stories-cartagena.webp', status: 301},
+  ];
 }

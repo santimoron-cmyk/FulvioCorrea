@@ -689,6 +689,71 @@ curl -I "https://fulviocorrea.com.co/assets/official-670ff4e2c5bc5e344cbcc3fa.pn
 curl -I "https://fulviocorrea.com.co/assets/breast-with-surgical-markings.webp"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com.co/assets/doctor.webp"
+# Expected: 301 Location: /assets/dr-fulvio-correa-plastic-surgeon-cartagena.webp
+curl -I "https://fulviocorrea.com.co/assets/dr-fulvio-correa-plastic-surgeon-cartagena.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/editorial.webp"
+# Expected: 301 Location: /assets/woman-side-profile-portrait.webp
+curl -I "https://fulviocorrea.com.co/assets/woman-side-profile-portrait.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/facelift-video.webp"
+# Expected: 301 Location: /assets/facelift-video-dr-fulvio-correa.webp
+curl -I "https://fulviocorrea.com.co/assets/facelift-video-dr-fulvio-correa.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/liposuction-video.webp"
+# Expected: 301 Location: /assets/liposuction-video-dr-fulvio-correa.webp
+curl -I "https://fulviocorrea.com.co/assets/liposuction-video-dr-fulvio-correa.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/mammoplasty-video.webp"
+# Expected: 301 Location: /assets/mammoplasty-video-dr-fulvio-correa.webp
+curl -I "https://fulviocorrea.com.co/assets/mammoplasty-video-dr-fulvio-correa.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/mommy-video.webp"
+# Expected: 301 Location: /assets/mommy-makeover-video-dr-fulvio-correa.webp
+curl -I "https://fulviocorrea.com.co/assets/mommy-makeover-video-dr-fulvio-correa.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/rhinoplasty-video.webp"
+# Expected: 301 Location: /assets/rhinoplasty-video-dr-fulvio-correa.webp
+curl -I "https://fulviocorrea.com.co/assets/rhinoplasty-video-dr-fulvio-correa.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/team-adriana.webp"
+# Expected: 301 Location: /assets/adriana-rojas-aesthetic-doctor-cartagena.webp
+curl -I "https://fulviocorrea.com.co/assets/adriana-rojas-aesthetic-doctor-cartagena.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/team-jennifer.webp"
+# Expected: 301 Location: /assets/jennifer-mendoza-ceo-fulvio-correa.webp
+curl -I "https://fulviocorrea.com.co/assets/jennifer-mendoza-ceo-fulvio-correa.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/team-sofia.webp"
+# Expected: 301 Location: /assets/sofia-clinic-assistant-fulvio-correa.webp
+curl -I "https://fulviocorrea.com.co/assets/sofia-clinic-assistant-fulvio-correa.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/logo.png"
+# Expected: 301 Location: /assets/dr-fulvio-correa-logo.png
+curl -I "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/og/home.webp"
+# Expected: 301 Location: /assets/og/dr-fulvio-correa-plastic-surgery-cartagena.webp
+curl -I "https://fulviocorrea.com.co/assets/og/dr-fulvio-correa-plastic-surgery-cartagena.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/og/testimonials.webp"
+# Expected: 301 Location: /assets/og/dr-fulvio-correa-patient-stories-cartagena.webp
+curl -I "https://fulviocorrea.com.co/assets/og/dr-fulvio-correa-patient-stories-cartagena.webp"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com.co/blog/tag/example"
 # Expected: 301 Location: /en/blog/
 curl -I "https://fulviocorrea.com.co/en/blog/"
