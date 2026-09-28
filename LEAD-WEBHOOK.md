@@ -13,6 +13,8 @@ Editar los datos crea un `lead_id` nuevo; reenviar los mismos datos no duplica. 
 
 Protecciones: mismo origen, JSON ≤ 20 KB, honeypot `website`, teléfono E.164, consentimiento obligatorio, idioma/procedimiento/evento/canal/franja en listas permitidas, `Idempotency-Key` = `event_id`, 10 peticiones/min por IP (por instancia), 503 `not_configured` si `LEAD_CAPTURE_ENABLED` ≠ `true` o falta `LEAD_WEBHOOK_URL` (https). Las URLs se guardan sin query string (origen + ruta) para no reenviar datos personales accidentales; UTM y click IDs van en campos propios.
 
+Recorrido (app.js, `localStorage` `fc_journey`, mismo criterio que el first touch: dato propio del sitio, sin datos personales): número de visitas (cada sesión de pestaña nueva cuenta como visita), primera visita y las últimas 30 páginas de los últimos 90 días como `[ruta, título corto, hora]` (ruta sin query string; título = parte antes de « | »). El widget lo envía como `journey` y la Function lo valida y lo convierte en `journey_*` (el JSON crudo no se reenvía).
+
 Atribución (app.js): first touch en `localStorage` 90 días con fecha; last touch en la sesión (cambia solo con nuevos parámetros de campaña); `session.landing_page` = primera página de la sesión. Parámetros: utm_source, utm_medium, utm_campaign, utm_term, utm_content, gclid, gbraid, wbraid, fbclid.
 
 ## Ejemplos exactos (lo que recibe el webhook)
@@ -288,6 +290,9 @@ Atribución (app.js): first touch en `localStorage` 90 días con fecha; last tou
 | `consent_version`, `consent_text`, `consent_timestamp` | Versión y texto exacto mostrado; hora del servidor. |
 | `measurement_consent` | `granted` / `denied` (banner de cookies). |
 | `lead_source`, `crm_operation`, `deduplication_key` | `website`, `upsert_contact`, teléfono. |
+| `journey_visits`, `journey_first_visit` | Visitas al sitio y primera visita (`DD/MM/AAAA HH:MM`, hora Colombia). Vacíos si el navegador no guardó recorrido. |
+| `journey_pages_count`, `journey_pages` | Páginas registradas (máx. 30) y rutas en orden (`/es/ > /es/procedimientos/bbl/ > …`). |
+| `journey_note` | Nota lista para el contacto (varias líneas, hora Colombia), p. ej.:<br>`Recorrido en el sitio (hora Colombia) — visitas: 3, primera visita: 25/09/2026 10:12, páginas vistas: 3`<br>`• 25/09 10:12 · Cirugía plástica en Cartagena (ES) · /es/`<br>`• 28/09 17:30 · Aumento glúteo con grasa (ES) · /es/procedimientos/bbl/`<br>`• 28/09 17:35 · Brazilian Butt Lift in Cartagena (EN) · /en/procedures/bbl/` |
 
 ## Mapeo a campos personalizados existentes en NinjaSuite
 
@@ -321,6 +326,7 @@ Campos que **no existen** y conviene crear (texto): `contact_preference`, `prefe
 3. **If/Else `event`**:
    - `lead_created` → etiqueta `web-lead` (+ `web-lead-en`/`web-lead-es` según `language`); crear/actualizar oportunidad en el pipeline (etapa «Nuevo lead web»), sin permitir duplicados.
    - `channel_selected` → actualizar `contact_preference`; etiqueta `canal-<channel>`.
+   - **Recorrido en el sitio**: en la rama `lead_created`, acción *Add To Notes* con el cuerpo `{{inboundWebhookRequest.journey_note}}` (opcional: If/Else «journey_note no está vacío»). HighLevel no ofrece una API pública para escribir actividades propias en la línea de tiempo del contacto; la nota del contacto es lo que corresponde (con API sería `POST /contacts/{contactId}/notes`, que exige un token con `contacts.write`; este sitio solo usa el Inbound Webhook y no guarda tokens). Si se prefiere una sola nota, se puede escribir `{{inboundWebhookRequest.summary}}` y debajo `{{inboundWebhookRequest.journey_note}}` en la misma acción.
 4. **Si `contact_preference` = `call`** → *Add Task* asignada a Eileen:
    - Título: «Llamar a {{inboundWebhookRequest.first_name}} – {{inboundWebhookRequest.preferred_call_time_label}}».
    - Descripción: `{{inboundWebhookRequest.summary}}` (incluye la franja ya en hora Colombia). En acciones posteriores a «Crear contacto» también sirven los campos del contacto.

@@ -4,6 +4,7 @@
 // CRM workflow updates one contact. The payload forwarded to LEAD_WEBHOOK_URL is flat JSON (easy to map).
 // Call events add call_due_at / call_due_at_iso / call_window_colombia from the server clock (call-due.mjs).
 import {callSchedule} from './call-due.mjs';
+import {journeyFields} from './journey.mjs';
 const sha256=async text=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))].map(b=>b.toString(16).padStart(2,'0')).join('');
 const json=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 export const LEAD_EVENTS=['lead_created','channel_selected'];
@@ -56,14 +57,16 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
   ...attribution,
   ga_client_id:/^\d{1,12}\.\d{1,12}$/.test(string('ga_client_id',30))?string('ga_client_id',30):'',
   contact_consent:true,sms_consent:yes(input.sms_consent),consent_version:consentVersion,consent_text:string('consent_text',600),consent_timestamp:received,measurement_consent:string('measurement_consent',20),
-  lead_source:'website',crm_operation:'upsert_contact',deduplication_key:phone};
+  lead_source:'website',crm_operation:'upsert_contact',deduplication_key:phone,
+  // Browsing journey (server/journey.mjs): journey_note is the text for the NinjaSuite "Add To Notes" action.
+  ...journeyFields(input.journey,now)};
  for(const k of ['country','message','conversion_page'])if(string(k))payload[k]=string(k,k==='message'?3000:1000);
  if(env.LEAD_CAPTURE_ENABLED!=='true'||!env.LEAD_WEBHOOK_URL)return json({accepted:false,error:'not_configured'},503);
  let webhook;try{webhook=new URL(env.LEAD_WEBHOOK_URL);if(webhook.protocol!=='https:')throw Error();}catch{return json({accepted:false,error:'not_configured'},503);}
  for(const[k,v]of receipts)if(v.expires<now)receipts.delete(k);for(const[k,v]of rate)if(v.expires<now)rate.delete(k);
  // Due fields and the "Llamar:" summary suffix follow the server clock, same as received_at: a retry of the same event must not 409 just because a minute passed.
  const cut=payload.summary.lastIndexOf(' | Llamar: '),stableSummary=channel==='call'&&cut>=0?payload.summary.slice(0,cut):payload.summary;
- const fingerprint=await sha256(JSON.stringify({...payload,received_at:'',consent_timestamp:'',client_timestamp:'',call_due_at:'',call_due_at_iso:'',call_window_colombia:'',summary:stableSummary}));const old=receipts.get(eventId);if(old){if(old.fingerprint!==fingerprint)return json({accepted:false,error:'id_conflict'},409);return (await old.promise).clone();}
+ const fingerprint=await sha256(JSON.stringify({...payload,received_at:'',consent_timestamp:'',client_timestamp:'',call_due_at:'',call_due_at_iso:'',call_window_colombia:'',summary:stableSummary,journey_visits:'',journey_first_visit:'',journey_pages_count:'',journey_pages:'',journey_note:''}));const old=receipts.get(eventId);if(old){if(old.fingerprint!==fingerprint)return json({accepted:false,error:'id_conflict'},409);return (await old.promise).clone();}
  // Two events per visitor (plus retries/extra channels) fit comfortably in 10 requests/min per IP.
  const bucket=rate.get(ip)||{count:0,expires:now+60000};if(bucket.count>=10)return json({accepted:false,error:'too_many_requests'},429);bucket.count++;rate.set(ip,bucket);
  const operation=(async()=>{const abort=new AbortController(),timeout=setTimeout(()=>abort.abort(),8000);try{const response=await send(webhook.href,{method:'POST',headers:{'Content-Type':'application/json','Idempotency-Key':eventId},body:JSON.stringify(payload),signal:abort.signal,redirect:'manual'});if(!response.ok)throw Error();return json({accepted:true,lead_id:id,event_id:eventId});}catch{receipts.delete(eventId);return json({accepted:false,error:'delivery_unconfirmed'},502);}finally{clearTimeout(timeout);}})();receipts.set(eventId,{fingerprint,promise:operation,expires:now+300000});const result=await operation;return result.clone();

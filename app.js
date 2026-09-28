@@ -14,6 +14,9 @@
   // Switching languages retains the same campaign rather than creating a new touch.
   if(!keys.every(k=>(stored.last_touch[k]||'')===(touch[k]||'')))attribution={...attribution,last_touch:touch};
  }
+ // Journey (first-party, no personal data): visit count (new tab session = new visit), first visit and the last 30 pages
+ // of the past 90 days as [path, short title, time]. Sent with Sofía leads (contact-widget.js) so the team sees the path.
+ try{const n=Date.now(),j=JSON.parse(localStorage.getItem('fc_journey'))||{v:0,f:n,p:[]};stored||j.v++;j.p=[...j.p.filter(e=>n-e[2]<7776e6),[location.pathname,document.title.split(' | ')[0].slice(0,60),n]].slice(-30);localStorage.setItem('fc_journey',JSON.stringify(j));}catch{}
  save('fc_attribution',attribution);try{if(!durable)localStorage.setItem('fc_first_touch',JSON.stringify({value:attribution.first_touch,expires:Date.now()+90*86400000}));}catch{}
  document.querySelectorAll('a[data-language]').forEach(a=>{
   const target=new URL(a.href,location.origin);target.search=location.search;target.hash=location.hash;a.href=target.href;
