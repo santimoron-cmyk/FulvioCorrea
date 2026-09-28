@@ -5,8 +5,8 @@
     "addressLocality": "Cartagena de Indias",
     "addressCountry": "CO"
   },
-  "phone": "",
-  "phoneDisplay": "",
+  "phone": "+573183516267",
+  "phoneDisplay": "+57 318 351 6267",
   "whatsapp": "16506656265",
   "phoneSource": "https://wa.link/m7rk1q",
   "education": [
@@ -45,7 +45,7 @@
   "authorId": "fulvio-correa",
   "authorApproved": true,
   "_todo": [
-    "TODO: confirmar teléfono para llamadas. El número publicado es EXCLUSIVO DE MENSAJERÍA, ver página SMS actual.",
+    "Teléfono colombiano del consultorio (+57 318 351 6267) confirmado por Santiago el 2026-09-28. El número de EE. UU. (+1 650 665 6265) sigue siendo EXCLUSIVO DE MENSAJERÍA (WhatsApp/SMS). El +57 304 480 5692 es de la Clínica CAPRI, no del consultorio.",
     "Confirmar registro profesional antes de completar el campo. Años de experiencia (15+), procedimientos (3.000+), SCCP, FILACP y formación confirmados en la biografía oficial entregada por el doctor (2026-09-28). No usar «certificado» ni «board-certified».",
     "Autoría/revisión aprobada por el doctor (confirmado por Santiago, 2026-09-26) para las 16 páginas de procedimiento; siguen abiertos los TODO factuales (anestesia, centro, duración, precios, protocolos). Confirmar revisión de cualquier texto nuevo futuro.",
     "La formación procede de la biografía oficial; no constituye verificación registral independiente."
@@ -87,5 +87,7 @@
       "Técnicas de preservación en cirugía mamaria",
       "Contorno corporal"
     ]
-  }
+  },
+  "knowsLanguage": ["es", "en"],
+  "knowsLanguageSource": "Verified on the site: Dr. Correa addresses patients in English in his procedure videos (content/videos/*.json, language en, e.g. mommy.json 'I'm doctor Fulvio Correa'), and Spanish-speaking patients describe their care with him in Spanish (data/patient-videos.json testimonials). Spanish and English are both used for patient care."
 }

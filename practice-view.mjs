@@ -1,14 +1,17 @@
 import {esc} from './editorial.mjs';
+import fs from 'node:fs';
+// Surgical clinic where Dr. Correa operates (data/facility.json); referenced from the Physician node as hospitalAffiliation.
+function clinicData(){try{return JSON.parse(fs.readFileSync('data/facility.json','utf8'));}catch{return null;}}
 export function membershipNodes(practice){
  return [...(practice.societies||[]).map(s=>{
   const organization={'@type':'MedicalOrganization',name:s.name,...(s.alternateName?{alternateName:s.alternateName}:{}),url:s.url||new URL(s.source).origin+'/',sameAs:s.source};
   return s.role?{'@type':'OrganizationRole',roleName:s.role,memberOf:organization}:organization;
  }),...(practice.affiliations||[]).map(a=>({'@type':'MedicalOrganization',name:a.name,...(a.alternateName?{alternateName:a.alternateName}:{})}))];
 }
-export function physicianNode(practice,origin,lang='en'){
+export function physicianNode(practice,origin,lang='en',facility=clinicData()){
  const memberOf=membershipNodes(practice);
  const alumniOf=(practice.education||[]).filter(e=>e.en&&e.es).map(e=>({'@type':/university|universidad/i.test(e.en+' '+e.es)?'CollegeOrUniversity':'EducationalOrganization',name:e.organization||(lang==='es'?e.es:e.en).split('·').pop().trim(),...(e.location?{address:e.location}:{})}));
- return {'@context':'https://schema.org','@type':'Physician','@id':origin+'/#physician',name:practice.name,url:origin+`/${lang}/`,image:origin+'/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp',medicalSpecialty:'https://schema.org/PlasticSurgery',address:{'@type':'PostalAddress',...practice.address,addressRegion:'Bolívar'},...(practice.description?.[lang]?{description:practice.description[lang]}:{}),...(alumniOf.length?{alumniOf}:{}),...(practice.knowsAbout?.[lang]?{knowsAbout:practice.knowsAbout[lang]}:{}),...(practice.phone?{telephone:practice.phone}:{}),...(practice.sameAs?.length?{sameAs:practice.sameAs}:{}),...(memberOf.length?{memberOf}:{})};
+ return {'@context':'https://schema.org','@type':'Physician','@id':origin+'/#physician',name:practice.name,url:origin+`/${lang}/`,image:origin+'/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp',medicalSpecialty:'https://schema.org/PlasticSurgery',address:{'@type':'PostalAddress',...practice.address,addressRegion:'Bolívar'},...(practice.description?.[lang]?{description:practice.description[lang]}:{}),...(alumniOf.length?{alumniOf}:{}),...(practice.knowsAbout?.[lang]?{knowsAbout:practice.knowsAbout[lang]}:{}),...(practice.phone?{telephone:practice.phone}:{}),...(practice.sameAs?.length?{sameAs:practice.sameAs}:{}),...(memberOf.length?{memberOf}:{}),...(practice.knowsLanguage?.length?{knowsLanguage:practice.knowsLanguage}:{}),...(facility?.name?{hospitalAffiliation:{'@type':'MedicalClinic','@id':origin+'/#capri-clinic',name:facility.name}}:{})};
 }
 export function membershipView(practice,lang){
  return (practice.societies||[]).map(s=>`<p class="membership">${esc(s[lang]||s.name)}<br><a href="${esc(s.source)}" target="_blank" rel="noopener">${lang==='es'?'Verificar membresía':'Verify membership'} ↗</a></p>`).join('');
@@ -29,5 +32,5 @@ export function bioView(bio,lang){
 // ProfilePage + Person for the doctor page; the Person points to the Physician (practice) node.
 export function profileNode(practice,origin,lang,route){
  const doc=physicianNode(practice,origin,lang);
- return {'@context':'https://schema.org','@type':'ProfilePage','@id':origin+route+'#profile',url:origin+route,inLanguage:lang,mainEntity:{'@type':'Person','@id':origin+'/#dr-fulvio-correa',name:practice.name,jobTitle:lang==='es'?'Cirujano plástico':'Plastic surgeon',image:doc.image,description:doc.description,...(doc.alumniOf?{alumniOf:doc.alumniOf}:{}),...(doc.memberOf?{memberOf:doc.memberOf}:{}),...(doc.knowsAbout?{knowsAbout:doc.knowsAbout}:{}),...(doc.sameAs?{sameAs:doc.sameAs}:{}),worksFor:{'@id':origin+'/#physician'},workLocation:{'@type':'Place',address:doc.address}}};
+ return {'@context':'https://schema.org','@type':'ProfilePage','@id':origin+route+'#profile',url:origin+route,inLanguage:lang,mainEntity:{'@type':'Person','@id':origin+'/#dr-fulvio-correa',name:practice.name,jobTitle:lang==='es'?'Cirujano plástico':'Plastic surgeon',image:doc.image,description:doc.description,...(doc.alumniOf?{alumniOf:doc.alumniOf}:{}),...(doc.memberOf?{memberOf:doc.memberOf}:{}),...(doc.knowsAbout?{knowsAbout:doc.knowsAbout}:{}),...(doc.knowsLanguage?{knowsLanguage:doc.knowsLanguage}:{}),...(doc.sameAs?{sameAs:doc.sameAs}:{}),worksFor:{'@id':origin+'/#physician'},workLocation:{'@type':'Place',address:doc.address}}};
 }

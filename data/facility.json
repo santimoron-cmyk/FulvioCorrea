@@ -2,6 +2,17 @@
   "name": "Clínica CAPRI",
   "city": "Cartagena de Indias",
   "country": "CO",
+  "address": {"streetAddress": "Anillo Vial Km 12, Edificio Génesis, Pisos 1 y 2, Puerta de las Américas / Pontezuela", "addressLocality": "Cartagena de Indias", "addressRegion": "Bolívar", "addressCountry": "CO"},
+  "addressLines": {
+    "en": ["Anillo Vial Km 12, Edificio Génesis, Floors 1 and 2", "Puerta de las Américas / Pontezuela", "Cartagena de Indias, Bolívar, Colombia"],
+    "es": ["Anillo Vial Km 12, Edificio Génesis, pisos 1 y 2", "Puerta de las Américas / Pontezuela", "Cartagena de Indias, Bolívar, Colombia"]
+  },
+  "telephone": "+573044805692",
+  "telephoneDisplay": "+57 304 480 5692",
+  "openingHours": [{"days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "21:00"}],
+  "openingHoursText": {"en": "Monday to Friday, 7:00 a.m. to 9:00 p.m. Closed Saturday and Sunday.", "es": "lunes a viernes, de 7:00 a. m. a 9:00 p. m. Sábados y domingos cerrado."},
+  "sameAs": ["https://www.instagram.com/capriclinica/"],
+  "detailsConfirmed": "Santiago confirmed the CAPRI address, clinic phone, opening hours and Instagram on 2026-09-28. The phone and hours belong to CAPRI Clinic, not to Dr. Correa's office. No postal code or coordinates were provided; do not add them.",
   "website": "https://capriclinica.com/",
   "confirmedByPractice": "Santiago confirmed that Dr. Fulvio Correa operates at CAPRI on 2026-09-26.",
   "checked": "2026-09-26",
@@ -10,7 +21,7 @@
     {"url":"https://capriclinica.com/about-us/","status":"Indexed official content accessible; live request failed on 2026-09-26."}
   ],
   "_todo": [
-    "Confirm exact clinic address, current REPS record, services and authorizations before adding them. Do not use the Las Ramblas office address for CAPRI.",
+    "Address, clinic phone and hours confirmed 2026-09-28. Still confirm the current REPS record, services and authorizations before adding them. Do not use the Las Ramblas office address for CAPRI.",
     "Obtain authorized facility photographs. Do not illustrate CAPRI with stock clinic images.",
     "Do not import mortality statistics, absolute safety claims, VIP inclusions, accreditation claims or staffing promises from marketing copy.",
     "Official website is unavailable: retain source URLs here, but do not send patients to a broken site."

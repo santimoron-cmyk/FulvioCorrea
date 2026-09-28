@@ -594,6 +594,16 @@ curl -I "https://fulviocorrea.com.co/es/resources/"
 curl -I "https://fulviocorrea.com.co/es/recursos/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com.co/es/contact"
+# Expected: 301 Location: /es/contacto/
+curl -I "https://fulviocorrea.com.co/es/contacto/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/contact/"
+# Expected: 301 Location: /es/contacto/
+curl -I "https://fulviocorrea.com.co/es/contacto/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com.co/es/privacy"
 # Expected: 301 Location: /es/privacidad/
 curl -I "https://fulviocorrea.com.co/es/privacidad/"

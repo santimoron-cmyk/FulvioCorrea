@@ -39,7 +39,7 @@ const SIZES = {
   hero: '100vw',
   banner: '100vw',
   thumb: '(max-width: 600px) 46vw, (max-width: 1000px) 31vw, 280px',
-  pillar: '(max-width: 650px) 92vw, 680px',
+  pillar: '(max-width: 650px) 88vw, (max-width: 1600px) 47vw, 750px',
   portrait: '(max-width: 700px) 88vw, 560px',
   content: '(max-width: 900px) 92vw, 840px',
 };

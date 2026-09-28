@@ -1182,10 +1182,6 @@
       {
         "lang": "en",
         "route": "/en/book-consultation/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/agendar-valoracion/"
       }
     ]
   },
@@ -2955,10 +2951,6 @@
       {
         "lang": "es",
         "route": "/es/blog/categoria/contorno-corporal/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/blog/category/body-contouring/"
       }
     ]
   },
@@ -3292,9 +3284,29 @@
         "name": "Clínica CAPRI",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Anillo Vial Km 12, Edificio Génesis, Pisos 1 y 2, Puerta de las Américas / Pontezuela",
           "addressLocality": "Cartagena de Indias",
+          "addressRegion": "Bolívar",
           "addressCountry": "CO"
-        }
+        },
+        "telephone": "+573044805692",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "07:00",
+            "closes": "21:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/capriclinica/"
+        ]
       },
       {
         "@context": "https://schema.org",
@@ -3379,9 +3391,29 @@
         "name": "Clínica CAPRI",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Anillo Vial Km 12, Edificio Génesis, Pisos 1 y 2, Puerta de las Américas / Pontezuela",
           "addressLocality": "Cartagena de Indias",
+          "addressRegion": "Bolívar",
           "addressCountry": "CO"
-        }
+        },
+        "telephone": "+573044805692",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "07:00",
+            "closes": "21:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/capriclinica/"
+        ]
       },
       {
         "@context": "https://schema.org",
@@ -3448,6 +3480,138 @@
       {
         "lang": "en",
         "route": "/en/capri-clinic/"
+      }
+    ]
+  },
+  {
+    "route": "/en/contact/",
+    "file": "dist/en/contact/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-28",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "@id": "https://fulviocorrea.com.co/en/contact/#webpage",
+        "url": "https://fulviocorrea.com.co/en/contact/",
+        "name": "Contact the Practice in Cartagena",
+        "description": "Phone, WhatsApp and address for Dr. Fulvio Correa’s consultation office in Cartagena, Colombia, plus the address and hours of CAPRI, his surgical clinic.",
+        "inLanguage": "en",
+        "about": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "mentions": {
+          "@id": "https://fulviocorrea.com.co/#capri-clinic"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "@id": "https://fulviocorrea.com.co/#capri-clinic",
+        "name": "Clínica CAPRI",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Anillo Vial Km 12, Edificio Génesis, Pisos 1 y 2, Puerta de las Américas / Pontezuela",
+          "addressLocality": "Cartagena de Indias",
+          "addressRegion": "Bolívar",
+          "addressCountry": "CO"
+        },
+        "telephone": "+573044805692",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "07:00",
+            "closes": "21:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/capriclinica/"
+        ]
+      }
+    ],
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/contact/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/contacto/"
+      }
+    ]
+  },
+  {
+    "route": "/es/contacto/",
+    "file": "dist/es/contacto/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-09-28",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "@id": "https://fulviocorrea.com.co/es/contact/#webpage",
+        "url": "https://fulviocorrea.com.co/es/contact/",
+        "name": "Contacto del consultorio en Cartagena",
+        "description": "Teléfono, WhatsApp y dirección del consultorio del Dr. Fulvio Correa en Cartagena, Colombia, y dirección y horario de CAPRI, su clínica quirúrgica.",
+        "inLanguage": "es",
+        "about": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "mentions": {
+          "@id": "https://fulviocorrea.com.co/#capri-clinic"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "@id": "https://fulviocorrea.com.co/#capri-clinic",
+        "name": "Clínica CAPRI",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Anillo Vial Km 12, Edificio Génesis, Pisos 1 y 2, Puerta de las Américas / Pontezuela",
+          "addressLocality": "Cartagena de Indias",
+          "addressRegion": "Bolívar",
+          "addressCountry": "CO"
+        },
+        "telephone": "+573044805692",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "07:00",
+            "closes": "21:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/capriclinica/"
+        ]
+      }
+    ],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/contacto/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/contact/"
       }
     ]
   },

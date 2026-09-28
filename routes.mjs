@@ -30,6 +30,7 @@ const topEs = [
   ['before-after/', 'antes-y-despues/'],
   ['book-consultation/', 'agendar-valoracion/'],
   ['capri-clinic/', 'clinica-capri/'],
+  ['contact/', 'contacto/'],
   ['privacy/', 'privacidad/'],
   ['terms/', 'terminos/'],
   ['testimonials/', 'testimonios/'],
