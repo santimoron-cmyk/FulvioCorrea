@@ -90,6 +90,12 @@ let rules=Object.entries(redirects).flatMap(([from,to])=>[{from,to,status:301},.
 rules=localizeRedirectRules(rules);
 const seenFrom=new Set(rules.map(r=>r.from));
 for(const extra of assetRedirects())if(!seenFrom.has(extra.from)){rules.push(extra);seenFrom.add(extra.from);}
+// Cloudflare Pages classifies rules in file order (workers-sdk #14694): the first
+// splat (*) or placeholder (:name) switches the parser to dynamic mode for good.
+// Every later line, including an exact path, counts against the 100-dynamic budget,
+// and rules past that budget are silently dropped. Exact paths must come first.
+const dynamicFrom=r=>/[*:]/.test(r.from);
+rules=[...rules.filter(r=>!dynamicFrom(r)),...rules.filter(dynamicFrom)];
 write('migration/redirects.json',JSON.stringify({active:production,productionHostingConfirmed:true,adapter:'cloudflare-pages',redirects:rules},null,2));const text=rules.map(r=>`${r.from} ${r.to} 301`).join('\n')+'\n';write('migration/_redirects.pending',text);if(production)write('dist/_redirects',text);else if(fs.existsSync('dist/_redirects'))fs.unlinkSync('dist/_redirects');
 write('migration/redirect-test.txt','# Run after production hostname is selected. Expect one 301, then 200; query strings preserved.\n'+rules.map(r=>`curl -I "${origin+r.from.replace('*','example')}"\n# Expected: 301 Location: ${r.to}\ncurl -I "${origin+r.to.split('?')[0]}"\n# Expected: 200`).join('\n\n'));
 const indexed=[...pages.values()].filter(p=>!p.noindex&&!p.ads);

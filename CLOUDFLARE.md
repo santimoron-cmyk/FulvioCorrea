@@ -42,7 +42,7 @@ Las variables de build y de Functions son las mismas en Pages; `LEAD_*` solo se 
 ## Qué genera el adaptador (cloudflare.mjs)
 
 - `dist/_headers`: seguridad (nosniff, referrer, permissions, X-Frame-Options), caché `/assets/*` 7 días, noindex en pages.dev.
-- `dist/_redirects` (solo production): reglas `origen destino 301` desde `audit.mjs` (formato Cloudflare, sin `!`). Se valida: ≤ 2.000 estáticas, ≤ 100 dinámicas, ≤ 1.000 caracteres.
+- `dist/_redirects` (solo production): reglas `origen destino 301` desde `audit.mjs` (formato Cloudflare, sin `!`). Se valida: ≤ 2.000 estáticas, ≤ 100 dinámicas, ≤ 1.000 caracteres. Las rutas exactas van antes que cualquier splat (`*`) o placeholder (`:nombre`): Cloudflare cuenta como dinámica toda regla que sigue a la primera de ese tipo y descarta en silencio el resto del archivo al pasar de 100 (workers-sdk #14694).
 - `functions/_shared/lead-procedures.js`: lista de procedimientos permitidos para `/api/lead` (regenerada en cada build; se versiona).
 - 404: `dist/404.html` y `dist/es/404.html` (Cloudflare sirve el 404.html más cercano, así `/es/...` inexistente muestra el 404 en español).
 

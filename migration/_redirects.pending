@@ -11,9 +11,6 @@
 /draft-travel-es/ /es/pacientes-internacionales/ 301
 /blog /en/blog/ 301
 /blog/ /en/blog/ 301
-/blog/tag/* /en/blog/ 301
-/blog/category/* /en/blog/ 301
-/blog/author/* /en/blog/ 301
 /privacy-policy-1485 /en/privacy/ 301
 /privacy-policy-1485/ /en/privacy/ 301
 /terms--conditions-5647 /en/terms/ 301
@@ -139,3 +136,6 @@
 /assets/84-treatment-3.webp /assets/portrait-woman-pink-background.webp 301
 /assets/84-treatment-6.webp /assets/abdomen-with-surgical-markings.webp 301
 /assets/official-670ff4e2c5bc5e344cbcc3fa.png.webp /assets/breast-with-surgical-markings.webp 301
+/blog/tag/* /en/blog/ 301
+/blog/category/* /en/blog/ 301
+/blog/author/* /en/blog/ 301

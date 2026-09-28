@@ -19,13 +19,27 @@ export function writeCloudflareAdapter(production){
   ''].join('\n');
  fs.writeFileSync('dist/_headers',headers);
  fs.writeFileSync('dist/robots.txt',robotsTxt(production,origin));
- // _redirects: Cloudflare limits are 2,000 static + 100 dynamic rules, 1,000 chars per rule.
+ // _redirects: 2,000 static + 100 dynamic rules, 1,000 chars per rule.
+ // Classification is order-dependent (workers-sdk #14694): the first source with
+ // * or :name makes every following line dynamic, and Cloudflare silently drops
+ // the file once the dynamic count passes 100. Exact rules after a splat fail
+ // the build even when the count is still under 100.
  if(production){
   const lines=fs.readFileSync('dist/_redirects','utf8').split('\n').filter(l=>l.trim()&&!l.startsWith('#'));
-  const dynamic=lines.filter(l=>/[*:]/.test(l.split(/\s+/)[0])),errors=[];
-  if(lines.length-dynamic.length>2000)errors.push('more than 2,000 static redirects');
-  if(dynamic.length>100)errors.push('more than 100 dynamic redirects');
-  for(const l of lines){const [from,to,code,...rest]=l.split(/\s+/);if(!from?.startsWith('/')||!to||!/^30[12378]$/.test(code||'')||rest.length||l.length>1000)errors.push('invalid rule: '+l);}
+  const errors=[];
+  let dynamicMode=false,staticCount=0,dynamicCount=0,firstDropped=null,staticAfterDynamic=null;
+  for(const l of lines){
+   const [from,to,code,...rest]=l.split(/\s+/);
+   if(!from?.startsWith('/')||!to||!/^30[12378]$/.test(code||'')||rest.length||l.length>1000){errors.push('invalid rule: '+l);continue;}
+   const splat=/[*:]/.test(from);
+   if(dynamicMode&&!splat&&!staticAfterDynamic)staticAfterDynamic=l;
+   if(splat)dynamicMode=true;
+   if(dynamicMode){dynamicCount++;if(dynamicCount>100&&!firstDropped)firstDropped=l;}
+   else staticCount++;
+  }
+  if(staticCount>2000)errors.push('more than 2,000 static redirects');
+  if(staticAfterDynamic)errors.push('exact redirect after a splat or placeholder (Cloudflare counts it as dynamic and may drop the tail): '+staticAfterDynamic);
+  if(dynamicCount>100)errors.push('more than 100 dynamic redirects; first dropped: '+firstDropped);
   if(errors.length)throw Error('dist/_redirects is not valid for Cloudflare Pages:\n'+errors.join('\n'));
  }else if(fs.existsSync('dist/_redirects'))throw Error('Preview builds must not publish _redirects.');
  // Allow-list for the lead Function (bundled by Cloudflare from functions/, no fs at runtime).

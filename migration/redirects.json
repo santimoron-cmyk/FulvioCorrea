@@ -69,21 +69,6 @@
       "status": 301
     },
     {
-      "from": "/blog/tag/*",
-      "to": "/en/blog/",
-      "status": 301
-    },
-    {
-      "from": "/blog/category/*",
-      "to": "/en/blog/",
-      "status": 301
-    },
-    {
-      "from": "/blog/author/*",
-      "to": "/en/blog/",
-      "status": 301
-    },
-    {
       "from": "/privacy-policy-1485",
       "to": "/en/privacy/",
       "status": 301
@@ -706,6 +691,21 @@
     {
       "from": "/assets/official-670ff4e2c5bc5e344cbcc3fa.png.webp",
       "to": "/assets/breast-with-surgical-markings.webp",
+      "status": 301
+    },
+    {
+      "from": "/blog/tag/*",
+      "to": "/en/blog/",
+      "status": 301
+    },
+    {
+      "from": "/blog/category/*",
+      "to": "/en/blog/",
+      "status": 301
+    },
+    {
+      "from": "/blog/author/*",
+      "to": "/en/blog/",
       "status": 301
     }
   ]
