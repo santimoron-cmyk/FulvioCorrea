@@ -30,10 +30,11 @@ export function sourceAssets() {
   return walk(ASSET_SRC).filter(f => !IGNORED_SOURCE_FILES.test(f));
 }
 
-// 1) Start from an empty dist/ and copy the versioned assets into dist/assets/.
-export function prepareDist() {
+// 1) Start from an empty dist/ and copy referenced assets into dist/assets/.
+// Unreferenced files stay in the repo (assets/) and are left out of the deploy.
+export function prepareDist(referenced) {
   fs.rmSync(DIST, { recursive: true, force: true });
-  const files = sourceAssets();
+  const files = sourceAssets().filter(f => !referenced || referenced.has(f) || f.startsWith('fonts/'));
   for (const f of files) {
     const to = path.join(DIST, 'assets', ...f.split('/'));
     fs.mkdirSync(path.dirname(to), { recursive: true });
@@ -90,6 +91,7 @@ function jsonBareNames(value, out, key = '') {
   else if (value && typeof value === 'object') for (const [k, v] of Object.entries(value)) jsonBareNames(v, out, k);
 }
 export function sourceReferences() {
+  const present = new Set(sourceAssets());
   const files = [
     ...walk('data').map(f => 'data/' + f),
     ...walk('content').map(f => 'content/' + f),
@@ -102,6 +104,8 @@ export function sourceReferences() {
     const text = fs.readFileSync(file, 'utf8');
     const draft = file.startsWith('content/blog/') && /^draft:\s*true\s*$/m.test(text);
     for (const m of text.matchAll(refRe)) { const asset = clean(m[0]); if (/\.[a-z0-9]+$/i.test(asset)) refs.push({ asset, from: file, draft }); }
+    // image('editorial.webp') has no /assets/ prefix until render. The image catalog is not usage.
+    if (file !== 'data/images.json') for (const m of text.matchAll(/['"`]([A-Za-z0-9._~%+@-]+\.(?:webp|png|jpe?g|gif|avif|svg|ico|mp4|webm|woff2?|ttf|otf|pdf))['"`]/gi)) if (present.has(m[1])) refs.push({ asset: m[1], from: file, draft });
     if (file.endsWith('.json') && !file.endsWith('data/images.json')) {
       const names = []; jsonBareNames(JSON.parse(text), names);
       for (const n of names) refs.push({ asset: n, from: file, draft });
@@ -139,7 +143,8 @@ export function checkSourceAssets() {
 // 3) After rendering: scan the whole generated site.
 export function checkDistAssets() {
   const files = walk(DIST), have = new Set(files), missing = [], warnings = [];
-  const textFiles = files.filter(f => /\.(html|css|js|xml|txt|json|webmanifest|vtt)$/.test(f) || /(^|\/)_(headers|redirects)$/.test(f));
+  // _redirects names old URLs on purpose; those files are not copied. Targets are checked via the pages that use them.
+  const textFiles = files.filter(f => /\.(html|css|js|xml|txt|json|webmanifest|vtt)$/.test(f) || /(^|\/)_headers$/.test(f));
   const used = new Set();
   for (const f of textFiles) {
     const text = fs.readFileSync(path.join(DIST, f), 'utf8');

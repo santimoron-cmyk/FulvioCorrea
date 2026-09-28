@@ -4,14 +4,14 @@ Found the actual footer link on https://rejuvita.cmsmasters.studio/main/ to http
 
 Exact demo asset prefix: https://rejuvita.cmsmasters.studio/main/wp-content/uploads/sites/2/2026/03/
 
-- 84-home-1-1.webp: exact floral-woman hero, 1920x1040. Decorative stock. Credits include https://www.freepik.com/free-ai-image/spring-portrait-young-woman-with-flowers_414994740.htm and https://www.freepik.com/free-ai-image/blooming-spring-portrait-beautiful-woman_415119051.htm; exact one-to-one source mapping is not labeled by the credits page.
-- 84-home-1-2.webp: beauty portrait, 580x685. Decorative/editorial stock woman, not a patient or team member.
+- hero-woman-floral-portrait.webp: exact floral-woman hero, 1920x1040. Decorative stock. Credits include https://www.freepik.com/free-ai-image/spring-portrait-young-woman-with-flowers_414994740.htm and https://www.freepik.com/free-ai-image/blooming-spring-portrait-beautiful-woman_415119051.htm; exact one-to-one source mapping is not labeled by the credits page.
+- portrait-woman-hand-on-neck.webp: beauty portrait, 580x685. Decorative/editorial stock woman, not a patient or team member.
 - 84-home-1-3.webp: beige interior, 260x290. Decorative stock atmosphere, not actual clinic. Credits include https://www.freepik.com/free-ai-image/ai-generated-modern-styled-entryway_58598638.htm (likely corresponding AI source; not explicitly mapped).
-- 84-home-1-7.webp: black underwear body cutout, 660x750. Stock treatment-category illustration, not actual result.
-- 84-home-1-8.webp: face-marking portrait, 250x524. Stock treatment-category illustration. Credits include https://www.freepik.com/free-photo/side-view-woman-with-marker-traces-face_25106490.htm and https://www.freepik.com/free-photo/close-up-woman-with-marker-traces-face_25106417.htm.
-- 84-home-1-9.webp: beige swimsuit model, 250x524. Stock body-procedure category. Visually matches descriptive source https://www.freepik.com/free-photo/sporty-curly-haired-woman-good-shape-has-thin-body-covers-eyes-with-arm-dressed-bodysuit-has-smooth-healthy-skin-slender-legs-demonstrates-perfect-figure-isolated-beige-background_23128007.htm .
-- 84-home-1-10.webp: close face resting on hands, 960x920. Decorative stock editorial image.
-- 84-home-1-11.webp: wide lips/shoulders portrait, 1920x764. Decorative stock editorial banner.
+- torso-black-swimsuit.webp: black underwear body cutout, 660x750. Stock treatment-category illustration, not actual result.
+- face-with-eyelid-markings.webp: face-marking portrait, 250x524. Stock treatment-category illustration. Credits include https://www.freepik.com/free-photo/side-view-woman-with-marker-traces-face_25106490.htm and https://www.freepik.com/free-photo/close-up-woman-with-marker-traces-face_25106417.htm.
+- back-view-beige-bodysuit.webp: beige swimsuit model, 250x524. Stock body-procedure category. Visually matches descriptive source https://www.freepik.com/free-photo/sporty-curly-haired-woman-good-shape-has-thin-body-covers-eyes-with-arm-dressed-bodysuit-has-smooth-healthy-skin-slender-legs-demonstrates-perfect-figure-isolated-beige-background_23128007.htm .
+- portrait-woman-hands-on-cheeks.webp: close face resting on hands, 960x920. Decorative stock editorial image.
+- banner-woman-shoulders.webp: wide lips/shoulders portrait, 1920x764. Decorative stock editorial banner.
 
 ## Actual Fulvio brand and team
 
@@ -23,27 +23,27 @@ Exact demo asset prefix: https://rejuvita.cmsmasters.studio/main/wp-content/uplo
 
 All downloaded from the actual template services page or the official Fulvio mammoplasty page. Reviewed visually: no before/after pairs.
 
-- 84-treatment-1.webp: stock rhinoplasty illustration with white nose markings, 1180x1620. Exact source https://rejuvita.cmsmasters.studio/main/wp-content/uploads/sites/2/2026/03/84-treatment-1.webp .
-- 84-treatment-2.webp: stock model in beige bodysuit holding orange, 1180x1620; body or mommy category. Exact source uses same prefix + filename.
-- 84-treatment-6.webp: stock abdomen with white markings, 1180x1620; tummy tuck category. Exact source uses same prefix + filename.
-- 84-home-1-5-2.webp: stock model back in white swimsuit, 840x680; BBL category. Exact source uses same prefix + filename.
-- official-670ff4e2c5bc5e344cbcc3fa.png.webp: existing official mammoplasty page decorative white-bra model, 640x426. Source https://images.leadconnectorhq.com/image/f_webp/q_80/r_640/u_https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/670ff4e2c5bc5e344cbcc3fa.png . Suitable mammoplasty or augmentation category; no evidence it is an actual patient, so retain decorative classification.
+- nose-with-surgical-markings.webp: stock rhinoplasty illustration with white nose markings, 1180x1620. Exact source https://rejuvita.cmsmasters.studio/main/wp-content/uploads/sites/2/2026/03/nose-with-surgical-markings.webp .
+- woman-holding-orange-bodysuit.webp: stock model in beige bodysuit holding orange, 1180x1620; body or mommy category. Exact source uses same prefix + filename.
+- abdomen-with-surgical-markings.webp: stock abdomen with white markings, 1180x1620; tummy tuck category. Exact source uses same prefix + filename.
+- back-view-white-swimsuit.webp: stock model back in white swimsuit, 840x680; BBL category. Exact source uses same prefix + filename.
+- breast-with-surgical-markings.webp: existing official mammoplasty page decorative white-bra model, 640x426. Source https://images.leadconnectorhq.com/image/f_webp/q_80/r_640/u_https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/670ff4e2c5bc5e344cbcc3fa.png . Suitable mammoplasty or augmentation category; no evidence it is an actual patient, so retain decorative classification.
 - official-6647dc6066dd915a236f87f5.png.webp: actual Dr. Fulvio in black scrubs, 640x966, alternate real portrait.
 - official-66b4db37292edfad546732bf.webp.webp: Colombian flag (not a procedure image).
-- 84-treatment-3.webp: pink-background face model; decorative facial category.
+- portrait-woman-pink-background.webp: pink-background face model; decorative facial category.
 - 84-treatment-4.webp: male skincare model; not needed for current categories.
 - 84-treatment-5.webp: filler injection stock; not needed for surgical categories.
 
 ## Core Treatment Pillars reference HTML/CSS
 
-Main section element c2f9634; centered heading b09a4a3; tabs 992a5e5. Header is cream (#FAF3EC), Treatment word gold (#e4c98a). Page backdrop #221a19. Three horizontal rounded 7px tabs: Facial Refinement (section 142), Sculpted Silhouette (146), Regenerative Aesthetics (150); active background pink #d98391, inactive near-black #0b0b0d. 18px 30px tab padding. Accordion on smaller screens. Main section desktop padding 180px 40px, 80px vertical gap. Tab panel desktop min-height 640px: left content panel width 50%, right image width 60%. Left card has 20px corner radius, 80px padding, vertical margin 50px, right margin -120px to overlap photo. Right photo also 20px radius. Panel backgrounds: 84-background-2-2.webp. Photos: 84-home-1-4-2.webp (facial), 84-home-1-5-2.webp (body), 84-home-1-6-2.webp (regenerative). Tablet stacks panels; mobile image min-height 250px.
+Main section element c2f9634; centered heading b09a4a3; tabs 992a5e5. Header is cream (#FAF3EC), Treatment word gold (#e4c98a). Page backdrop #221a19. Three horizontal rounded 7px tabs: Facial Refinement (section 142), Sculpted Silhouette (146), Regenerative Aesthetics (150); active background pink #d98391, inactive near-black #0b0b0d. 18px 30px tab padding. Accordion on smaller screens. Main section desktop padding 180px 40px, 80px vertical gap. Tab panel desktop min-height 640px: left content panel width 50%, right image width 60%. Left card has 20px corner radius, 80px padding, vertical margin 50px, right margin -120px to overlap photo. Right photo also 20px radius. Panel backgrounds: 84-background-2-2.webp. Photos: 84-home-1-4-2.webp (facial), back-view-white-swimsuit.webp (body), 84-home-1-6-2.webp (regenerative). Tablet stacks panels; mobile image min-height 250px.
 
 ## Credentials You Can Trust reference HTML/CSS
 
 Heading element 673d05f uses text color #d9c5be. Container 862578e gap 30px. Carousel f477042 is a horizontal logo strip with 6 visible desktop / 4 tablet / 2 mobile; gap 70px / 40px / 20px. No arrows or dots. Infinite autoplay, 1000ms delay and 3500ms transition; pause on hover and interaction. Swiper vertically centers logos. Asset IDs 84-credentials-1.webp through 84-credentials-6.webp at the same template uploads prefix. These are demo institution logos, not verified Fulvio affiliations; use only their layout pattern with truthful Fulvio credentials.
 
 ## Reversible home photo trial
-hero-purple-trial.webp: 1920×755, 53,178 bytes. Source: https://storage.googleapis.com/pilotpractice-wordpress-assets/flourishsurgicalarts.com/2025/10/botox-in-denver-co-scaled.webp . Local visual trial requested by owner; reuse license not confirmed. Decorative image, not a Fulvio patient/result. Original preserved as 84-home-1-1.webp. Switch data/home-hero.json image back to its previousImage and rebuild to revert.
+hero-purple-trial.webp: 1920×755, 53,178 bytes. Source: https://storage.googleapis.com/pilotpractice-wordpress-assets/flourishsurgicalarts.com/2025/10/botox-in-denver-co-scaled.webp . Local visual trial requested by owner; reuse license not confirmed. Decorative image, not a Fulvio patient/result. Original preserved as hero-woman-floral-portrait.webp. Switch data/home-hero.json image back to its previousImage and rebuild to revert.
 
 ## Patient video: Thaily Amezcua (added 2026-09-27)
 thaily-amezcua.mp4: 480×854, 16:46 min, H.264 ~135 kbps + AAC mono 48 kbps, 23.8 MB (kept under Cloudflare Pages' 25 MiB per-file limit). Re-encoded from the practice's YouTube video pCsiR6UYbdI (local download work/research/youtube/pCsiR6UYbdI-video.mp4, 66.5 MB, too large to publish as-is). thaily-amezcua.webp: 480×854 poster, frame at 15:58 (closing interview). Replace both files with a higher-quality export if available (same names, each file < 25 MiB).

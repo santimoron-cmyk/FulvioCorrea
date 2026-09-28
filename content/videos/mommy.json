@@ -6,7 +6,11 @@
   "duration": 32.129,
   "uploadDate": "2024-10-08T20:19:47+00:00",
   "language": "en",
-  "_editorial": "Original practice video. English captions edited for recognition errors; Spanish editorial translation. Original promotional statements are attributed to the video, not new clinical guidance.",
+  "_editorial": "Original practice video. On-page text is a summary, not a word-for-word transcript. Timed captions drop credential and marketing claims that the audio may still say.",
+  "summary": {
+    "en": "Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP), introduces mommy makeover surgery in Cartagena, Colombia for women who want to address changes after pregnancy. The video points to the team’s help for patients traveling from abroad. Which procedures are combined is decided only after an individual consultation.",
+    "es": "El Dr. Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP), presenta el mommy makeover en Cartagena, Colombia para mujeres que quieren atender cambios después del embarazo. El video señala el apoyo del equipo a pacientes que viajan desde el exterior. Qué cirugías se combinan se decide solo después de una valoración individual."
+  },
   "cues": [
     {
       "start": 0.08,
@@ -29,8 +33,8 @@
     {
       "start": 9.44,
       "end": 13.345,
-      "en": "board certified plastic surgeon with more than ten years experience.",
-      "es": "cirujano plástico certificado con más de diez años de experiencia."
+      "en": "a member of the Colombian Society of Plastic Surgery (SCCP).",
+      "es": "miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP)."
     },
     {
       "start": 13.345,
@@ -41,14 +45,14 @@
     {
       "start": 16.705,
       "end": 20.785,
-      "en": "abroad who wants to live an amazing all inclusive plastic",
-      "es": "del extranjero que quieren vivir una experiencia de cirugía plástica"
+      "en": "abroad who wants to learn about mommy makeover surgery in",
+      "es": "del extranjero que quieren conocer el mommy makeover en"
     },
     {
       "start": 20.785,
       "end": 22.545,
-      "en": "surgery experience.",
-      "es": "integral y extraordinaria."
+      "en": "Cartagena, Colombia.",
+      "es": "Cartagena, Colombia."
     },
     {
       "start": 22.545,

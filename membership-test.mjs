@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import {spawnSync} from 'node:child_process';
 import {physicianNode,editorialAuthor,membershipView} from './practice-view.mjs';
+import {localizePath} from './routes.mjs';
 const practice=JSON.parse(fs.readFileSync('data/practice.json'));
 const origin=JSON.parse(fs.readFileSync('config.json')).origin;
 const doctor=physicianNode(practice,origin);
@@ -22,7 +23,7 @@ for(const page of JSON.parse(fs.readFileSync('pages.json'))){const h=fs.readFile
  assert.match(h,/<\/dialog><script defer src="\/contact.js"><\/script>/,page.route+' widget script must be outside form attributes');
  assert.equal(h.includes('src="/contact.js"'),h.includes('id="contact-dialog"'));
  assert.equal(h.includes('src="/thank-you.js"'),h.includes('id="thanks-confirmation"'));
- if(page.route===`/${page.lang}/`||page.route===`/${page.lang}/about/`||page.route===`/${page.lang}/international-patients/`||page.procedure&&!page.ads||/\/blog\/[^/]+\/$/.test(page.route)){
+ if(page.route===`/${page.lang}/`||page.route===localizePath(`/${page.lang}/about/`)||page.route===localizePath(`/${page.lang}/international-patients/`)||page.procedure&&!page.ads||/\/blog\/[^/]+\/$/.test(page.route)){
   const main=h.split('<main id="main">')[1].split('</main>')[0];for(const s of practice.societies)assert.ok(main.includes('href="'+s.source+'"'),page.route+' missing visible membership');
  }
 }

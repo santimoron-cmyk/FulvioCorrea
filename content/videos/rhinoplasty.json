@@ -6,7 +6,11 @@
   "duration": 76.8,
   "uploadDate": "2024-10-05T02:20:14+00:00",
   "language": "en",
-  "_editorial": "Original practice video. English captions edited for recognition errors; Spanish editorial translation. Original promotional statements are attributed to the video, not new clinical guidance.",
+  "_editorial": "Original practice video. On-page text is a summary, not a word-for-word transcript. Timed captions drop credential and marketing claims that the audio may still say.",
+  "summary": {
+    "en": "Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP), explains rhinoplasty in Cartagena, Colombia. He describes the nose as a central facial feature, so a small change can affect the whole face, and why the surgeon should understand the goal first. The video also covers help for patients traveling from other countries: questions, the trip and the recovery house.",
+    "es": "El Dr. Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP), explica la rinoplastia en Cartagena, Colombia. Describe la nariz como un rasgo central del rostro, de modo que un cambio pequeño puede afectar toda la cara, y por qué el cirujano debe entender primero el objetivo. El video también habla del apoyo a quien viaja desde otro país: preguntas, viaje y casa de recuperación."
+  },
   "cues": [
     {
       "start": 0.0,
@@ -107,26 +111,26 @@
     {
       "start": 37.64,
       "end": 39.8,
-      "en": "a board certified plastic surgeon.",
-      "es": "cirujano plástico certificado."
+      "en": "a member of the Colombian Society of Plastic Surgery (SCCP).",
+      "es": "miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP)."
     },
     {
       "start": 39.8,
       "end": 41.64,
-      "en": "Through our all-inclusive program",
-      "es": "A través de nuestro programa integral,"
+      "en": "If you travel for rhinoplasty,",
+      "es": "Si viajas para una rinoplastia,"
     },
     {
       "start": 41.64,
       "end": 44.52,
-      "en": "that we have designed especially for patients,",
-      "es": "que diseñamos especialmente para pacientes"
+      "en": "the team can help with the plans,",
+      "es": "el equipo puede ayudarte con la organización,"
     },
     {
       "start": 44.52,
       "end": 46.96,
-      "en": "come from other countries like you.",
-      "es": "que vienen de otros países como tú,"
+      "en": "especially if you are coming from another country.",
+      "es": "especialmente si vienes de otro país."
     },
     {
       "start": 46.96,

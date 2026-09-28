@@ -5,9 +5,10 @@ export function membershipNodes(practice){
   return s.role?{'@type':'OrganizationRole',roleName:s.role,memberOf:organization}:organization;
  });
 }
-export function physicianNode(practice,origin){
+export function physicianNode(practice,origin,lang='en'){
  const memberOf=membershipNodes(practice);
- return {'@context':'https://schema.org','@type':'Physician','@id':origin+'/#physician',name:practice.name,url:origin+'/en/',address:{'@type':'PostalAddress',...practice.address},...(practice.phone?{telephone:practice.phone}:{}),...(practice.sameAs?.length?{sameAs:practice.sameAs}:{}),...(memberOf.length?{memberOf}:{})};
+ const alumniOf=(practice.education||[]).filter(e=>e.en&&e.es).map(e=>({'@type':/university|universidad/i.test(e.en+' '+e.es)?'CollegeOrUniversity':'EducationalOrganization',name:(lang==='es'?e.es:e.en).split('·').pop().trim()}));
+ return {'@context':'https://schema.org','@type':'Physician','@id':origin+'/#physician',name:practice.name,url:origin+`/${lang}/`,image:origin+'/assets/doctor.webp',medicalSpecialty:'https://schema.org/PlasticSurgery',address:{'@type':'PostalAddress',...practice.address,addressRegion:'Bolívar'},...(alumniOf.length?{alumniOf}:{}),...(practice.phone?{telephone:practice.phone}:{}),...(practice.sameAs?.length?{sameAs:practice.sameAs}:{}),...(memberOf.length?{memberOf}:{})};
 }
 export function membershipView(practice,lang){
  return (practice.societies||[]).map(s=>`<p class="membership">${esc(s[lang]||s.name)}<br><a href="${esc(s.source)}" target="_blank" rel="noopener">${lang==='es'?'Verificar membresía':'Verify membership'} ↗</a></p>`).join('');

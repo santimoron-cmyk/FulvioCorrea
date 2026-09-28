@@ -6,7 +6,11 @@
   "duration": 141.744,
   "uploadDate": "2024-10-05T02:18:04+00:00",
   "language": "en",
-  "_editorial": "Original practice video. English captions edited for recognition errors; Spanish editorial translation. Original promotional statements are attributed to the video, not new clinical guidance.",
+  "_editorial": "Original practice video. On-page text is a summary, not a word-for-word transcript. Timed captions drop credential and marketing claims that the audio may still say.",
+  "summary": {
+    "en": "Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP), explains breast augmentation, breast lift and breast reduction in Cartagena, Colombia. He describes plans for size, projection or heaviness, and how the team helps patients who travel with questions, the trip and a stay in the recovery house. Results are individual and depend on a consultation.",
+    "es": "El Dr. Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP), explica el aumento de senos, el levantamiento y la reducción mamaria en Cartagena, Colombia. Describe planes según el tamaño, la proyección o el peso, y cómo el equipo acompaña a quien viaja con las preguntas, el viaje y la casa de recuperación. Los resultados son individuales y dependen de la valoración."
+  },
   "cues": [
     {
       "start": 0.05,
@@ -71,8 +75,8 @@
     {
       "start": 70.05,
       "end": 75.97,
-      "en": "Fulvio Correa, a board certified plastic surgeon. For more than 10 years, I have helped women",
-      "es": "Fulvio Correa, cirujano plástico certificado. Durante más de diez años he ayudado a mujeres"
+      "en": "Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP). I have helped women",
+      "es": "Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP). He ayudado a mujeres"
     },
     {
       "start": 75.97,
@@ -101,8 +105,8 @@
     {
       "start": 101.49,
       "end": 106.85,
-      "en": "best part. Through our all-inclusive program that we have designed specifically for",
-      "es": "la mejor parte. A través de nuestro programa integral, diseñado específicamente para"
+      "en": "next step. In Cartagena, support is arranged specifically for",
+      "es": "el siguiente paso. En Cartagena, el acompañamiento está pensado para"
     },
     {
       "start": 106.85,

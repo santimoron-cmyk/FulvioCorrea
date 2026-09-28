@@ -41,7 +41,7 @@ Red flags: a surgery date offered before anyone reviews your history, guaranteed
 
 A tummy tuck (abdominoplasty) is a body-contouring procedure that removes excess abdominal skin and can repair separated abdominal muscles when clinically indicated. It is not a weight-loss operation and does not replace nutrition or exercise. Candidates are often people near a stable weight who still have loose skin or muscle separation after pregnancy, major weight change, or aging.
 
-In consultation, a board-trained plastic surgeon assesses skin quality, fat distribution, muscle wall integrity, scars, medical history, and lifestyle. That evaluation—not a blog article—determines whether a full, mini, or extended approach is appropriate, whether liposuction is discussed as an adjunct, or whether waiting is wiser.
+In consultation, Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP), assesses skin quality, fat distribution, muscle wall integrity, scars, medical history, and lifestyle. That evaluation—not a blog article—determines whether a full, mini, or extended approach is appropriate, whether liposuction is discussed as an adjunct, or whether waiting is wiser.
 
 ## Who is usually a candidate—and who should wait
 

@@ -37,7 +37,7 @@
     },
     {
       "name": "Eileen",
-      "image": "team-eileen.webp",
+      "photoPlaceholder": true,
       "role": {
         "en": "Experiences Coach",
         "es": "Asesora de experiencia del paciente"

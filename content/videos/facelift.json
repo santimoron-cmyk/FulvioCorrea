@@ -6,7 +6,11 @@
   "duration": 124.353,
   "uploadDate": "2024-10-05T02:18:56+00:00",
   "language": "en",
-  "_editorial": "Original practice video. English captions edited for recognition errors; Spanish editorial translation. Original promotional statements are attributed to the video, not new clinical guidance.",
+  "_editorial": "Original practice video. On-page text is a summary, not a word-for-word transcript. Timed captions drop credential and marketing claims that the audio may still say.",
+  "summary": {
+    "en": "Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP), explains facelift surgery in Cartagena, Colombia. The video describes moving the SMAS layer as well as the skin, and adding volume where the face has lost it. It also shows how the team helps travelers with questions, the trip and the recovery house. The plan is confirmed in consultation.",
+    "es": "El Dr. Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP), explica el lifting facial en Cartagena, Colombia. El video describe movilizar la capa SMAS además de la piel, y devolver volumen donde el rostro lo ha perdido. También cuenta cómo el equipo ayuda a quien viaja con las preguntas, el viaje y la casa de recuperación. El plan se confirma en la valoración."
+  },
   "cues": [
     {
       "start": 0.0,
@@ -65,14 +69,14 @@
     {
       "start": 48.08,
       "end": 54.48,
-      "en": "result in the youthfulness that the face reflects. The vast majority of our patients",
-      "es": "en el aspecto juvenil del rostro. La gran mayoría de nuestros pacientes"
+      "en": "result in the youthfulness that the face reflects.",
+      "es": "en el aspecto juvenil del rostro."
     },
     {
       "start": 54.48,
       "end": 61.44,
-      "en": "says that they feel that they have rejuvenated ten years in time. That is the case of Caroline,",
-      "es": "dice que siente que ha rejuvenecido diez años. Es el caso de Caroline,"
+      "en": "The video includes photographs of Caroline,",
+      "es": "El video incluye fotografías de Caroline,"
     },
     {
       "start": 61.44,
@@ -89,20 +93,20 @@
     {
       "start": 73.76,
       "end": 80.16,
-      "en": "face has, it is extremely important that this procedure will be performed by a board-certified",
-      "es": "del rostro, es sumamente importante que este procedimiento lo realice un cirujano plástico"
+      "en": "face has, it is important that this procedure be performed by a",
+      "es": "del rostro, es importante que este procedimiento lo realice un miembro"
     },
     {
       "start": 80.16,
       "end": 86.88,
-      "en": "plastic surgeon. Let me introduce myself. I'm Dr. Fulvio Correa, a board-certified plastic surgeon.",
-      "es": "certificado. Me presento: soy el doctor Fulvio Correa, cirujano plástico certificado."
+      "en": "member of the Colombian Society of Plastic Surgery (SCCP). I'm Dr. Fulvio Correa, a member of the SCCP.",
+      "es": "de la Sociedad Colombiana de Cirugía Plástica (SCCP). Me presento: soy el doctor Fulvio Correa, miembro de la SCCP."
     },
     {
       "start": 86.88,
       "end": 91.6,
-      "en": "Through our all-inclusive program that we have designed especially for patients",
-      "es": "A través de nuestro programa integral, diseñado especialmente para pacientes"
+      "en": "Support is arranged for patients who",
+      "es": "El acompañamiento está pensado para pacientes que"
     },
     {
       "start": 91.6,
