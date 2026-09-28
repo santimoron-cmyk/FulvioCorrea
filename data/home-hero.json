@@ -1,7 +1,6 @@
 {
-  "image": "hero-woman-floral-portrait.webp",
+  "image": "hero-plastic-surgery-cartagena-colombia-1920.webp",
   "previousImage": "hero-woman-floral-portrait.webp",
-  "_note": "Prueba local reversible. Cambiar image a previousImage y ejecutar node build.mjs para restaurar. No se borró ni modificó el original.",
-  "source": "https://storage.googleapis.com/pilotpractice-wordpress-assets/flourishsurgicalarts.com/2025/10/botox-in-denver-co-scaled.webp",
+  "_note": "Home hero is the Cartagena balcony photograph. The previous floral portrait stays in assets because the legacy filename redirect and the image-sources page still point at it.",
   "publicationLicenseConfirmed": false
 }
