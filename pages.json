@@ -2670,16 +2670,21 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-25",
+    "updated": "2026-09-28",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Breast Augmentation Colombia: A Practical Guide for U.S. Patients",
+        "headline": "Breast Augmentation Colombia: How U.S. Patients Verify Surgeons",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-09-25",
+        "dateModified": "2026-09-28",
         "inLanguage": "en",
-        "image": "https://fulviocorrea.com.co/assets/blog-breast-augmentation.webp",
+        "image": [
+          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia.webp",
+          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia.avif",
+          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia-og.webp",
+          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia-og.avif"
+        ],
         "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/breast-augmentation-colombia/",
         "author": {
           "@id": "https://fulviocorrea.com.co/#physician"
@@ -2695,12 +2700,16 @@
         }
       }
     ],
-    "alternate": null,
-    "cover": "/assets/blog-breast-augmentation.webp",
+    "alternate": "/es/blog/aumento-de-senos-colombia/",
+    "cover": "/assets/blog-breast-augmentation-colombia.webp",
     "alternates": [
       {
         "lang": "en",
         "route": "/en/blog/breast-augmentation-colombia/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/aumento-de-senos-colombia/"
       }
     ]
   },
@@ -2995,6 +3004,55 @@
       {
         "lang": "es",
         "route": "/es/blog/categoria/cirugia-plastica-en-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/aumento-de-senos-colombia/",
+    "file": "dist/es/blog/aumento-de-senos-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-28",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Aumento de senos en Colombia: qué verificar antes de viajar",
+        "datePublished": "2026-09-28",
+        "dateModified": "2026-09-28",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia.webp",
+          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia.avif",
+          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia-og.webp",
+          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com.co/es/blog/aumento-de-senos-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com.co/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      }
+    ],
+    "alternate": "/en/blog/breast-augmentation-colombia/",
+    "cover": "/assets/blog-breast-augmentation-colombia.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/aumento-de-senos-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/breast-augmentation-colombia/"
       }
     ]
   },

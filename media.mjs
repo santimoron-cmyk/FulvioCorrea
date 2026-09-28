@@ -289,6 +289,13 @@ export function pruneUnreferencedAssets(dist = 'dist') {
     const text = fs.readFileSync(path.join(dist, relPath), 'utf8');
     for (const m of text.matchAll(/\/assets\/[A-Za-z0-9._~%+@/-]+/g)) used.add(decodeURIComponent(m[0].replace(/^\/assets\//, '').split(/[?#]/)[0]));
   }
+  try {
+    const rules = JSON.parse(fs.readFileSync('migration/redirects.json', 'utf8')).redirects || [];
+    for (const rule of rules) {
+      const target = String(rule.to || '').split(/[?#]/)[0];
+      if (target.startsWith('/assets/')) used.add(decodeURIComponent(target.slice('/assets/'.length)));
+    }
+  } catch { /* redirects are written before prune; missing file means nothing to preserve */ }
   for (const d of files) {
     const relPath = path.relative(dist, path.join(d.parentPath ?? d.path, d.name)).split(path.sep).join('/');
     if (!relPath.startsWith('assets/') || relPath.startsWith('assets/fonts/')) continue;
