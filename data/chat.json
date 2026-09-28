@@ -1,0 +1,9 @@
+{
+  "_note": "Chat provider for the floating 'Talk to Sofía / Habla con Sofía' button. \"native\" = in-page Sofía widget (contact-widget.js + dialog). \"ghl\" = GoHighLevel/LeadConnector chat widget, loaded only on the first click (ghl-chat.js). Revert the trial by setting provider to \"native\". Widget colors/texts are set in the GHL dashboard; ghl-chat.js overrides the colors to the site palette. See CONTACT-WIDGET.md.",
+  "provider": "ghl",
+  "ghl": {
+    "loader": "https://widgets.leadconnectorhq.com/loader.js",
+    "resourcesUrl": "https://widgets.leadconnectorhq.com/chat-widget/loader.js",
+    "widgetId": "6a48065dc4ca16b4ab897879"
+  }
+}
