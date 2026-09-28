@@ -19,10 +19,12 @@ assert.deepEqual(editorialAuthor({...practice,authorApproved:true},'en',origin),
 assert.equal(editorialAuthor({...practice,authorApproved:false},'en',origin)['@type'],'Organization');
 vm.runInNewContext(fs.readFileSync('contact-widget.js','utf8'),{});
 vm.runInNewContext(fs.readFileSync('thank-you.js','utf8'),{});
+const ghlChat=JSON.parse(fs.readFileSync('data/chat.json','utf8')).provider==='ghl';vm.runInNewContext(fs.readFileSync('ghl-chat.js','utf8'),{document:{getElementById:()=>null}});
 for(const page of JSON.parse(fs.readFileSync('pages.json'))){const h=fs.readFileSync(page.file,'utf8');
  assert.equal((h.match(/<\/body>/g)||[]).length,1,page.route+' corrupt body insertion');
- assert.match(h,/<\/dialog><script defer src="\/contact.js"><\/script>/,page.route+' widget script must be outside form attributes');
- assert.equal(h.includes('src="/contact.js"'),h.includes('id="contact-dialog"'));
+ // Chat provider (data/chat.json): native = launcher + Sofía dialog; ghl = launcher only (GHL loads on first click).
+ assert.match(h,ghlChat?/<\/button><\/div><script defer src="\/contact.js"><\/script>/:/<\/dialog><script defer src="\/contact.js"><\/script>/,page.route+' widget script must be outside form attributes');
+ assert.equal(h.includes('src="/contact.js"'),h.includes('id="contact-open"'));assert.equal(h.includes('id="contact-dialog"'),!ghlChat&&h.includes('id="contact-open"'));
  assert.equal(h.includes('src="/thank-you.js"'),h.includes('id="thanks-confirmation"'));
  if(page.route===`/${page.lang}/`||page.route===localizePath(`/${page.lang}/about/`)||page.route===localizePath(`/${page.lang}/international-patients/`)||page.procedure&&!page.ads||/\/blog\/[^/]+\/$/.test(page.route)){
   const main=h.split('<main id="main">')[1].split('</main>')[0];for(const s of practice.societies)assert.ok(main.includes('href="'+s.source+'"'),page.route+' missing visible membership');
