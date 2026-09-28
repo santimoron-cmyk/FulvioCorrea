@@ -8,7 +8,8 @@ const practice=JSON.parse(fs.readFileSync('data/practice.json'));
 const origin=JSON.parse(fs.readFileSync('config.json')).origin;
 const doctor=physicianNode(practice,origin);
 assert.deepEqual(doctor.sameAs,practice.sameAs);
-assert.equal(physicianNode({...practice,societies:[]},origin).memberOf,undefined);
+assert.equal(physicianNode({...practice,societies:[],affiliations:[]},origin).memberOf,undefined);
+assert.ok(physicianNode(practice,origin).memberOf.some(m=>m.alternateName==='FILACP'));
 for(const [i,s] of practice.societies.entries()){
  const m=doctor.memberOf[i];assert.equal(m.roleName,s.role);assert.equal(m.memberOf.name,s.name);assert.equal(m.memberOf.sameAs,s.source);
  const noRole=physicianNode({...practice,societies:[{...s,role:''}]},origin);assert.equal(noRole.memberOf[0]['@type'],'MedicalOrganization');

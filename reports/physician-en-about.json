@@ -4,12 +4,35 @@
   "@id": "https://fulviocorrea.com.co/#physician",
   "name": "Dr. Fulvio Correa",
   "url": "https://fulviocorrea.com.co/en/",
+  "image": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp",
+  "medicalSpecialty": "https://schema.org/PlasticSurgery",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Vía Entrada a Manzanillo I-90A #10, CC Ramblas, local 23, Manzanillo del Mar",
     "addressLocality": "Cartagena de Indias",
-    "addressCountry": "CO"
+    "addressCountry": "CO",
+    "addressRegion": "Bolívar"
   },
+  "description": "Plastic surgeon in Cartagena de Indias, Colombia, with more than 15 years of experience in aesthetic and reconstructive plastic surgery and over 3,000 procedures performed. Member of the Colombian Society of Plastic Surgery (SCCP) and FILACP. Trained at the University of Cartagena and the Ivo Pitanguy Institute in Rio de Janeiro. Special interest in breast surgery with tissue-preservation techniques and body contouring.",
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad de Cartagena"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Instituto Ivo Pitanguy",
+      "address": "Rio de Janeiro, Brasil"
+    }
+  ],
+  "knowsAbout": [
+    "Plastic surgery",
+    "Aesthetic plastic surgery",
+    "Reconstructive plastic surgery",
+    "Breast surgery",
+    "Tissue-preservation breast surgery",
+    "Body contouring"
+  ],
   "sameAs": [
     "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/",
     "https://www.instagram.com/drfulviocorrea/",
@@ -22,10 +45,16 @@
       "roleName": "Miembro de Número",
       "memberOf": {
         "@type": "MedicalOrganization",
-        "name": "Sociedad Colombiana de Cirugía Plástica",
+        "name": "Sociedad Colombiana de Cirugía Plástica Estética y Reconstructiva",
+        "alternateName": "SCCP",
         "url": "https://cirugiaplastica.org.co/",
         "sameAs": "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"
       }
+    },
+    {
+      "@type": "MedicalOrganization",
+      "name": "Federación Ibero Latinoamericana de Cirugía Plástica",
+      "alternateName": "FILACP"
     }
   ]
 }
