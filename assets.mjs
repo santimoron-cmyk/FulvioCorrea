@@ -91,6 +91,7 @@ function jsonBareNames(value, out, key = '') {
   else if (value && typeof value === 'object') for (const [k, v] of Object.entries(value)) jsonBareNames(v, out, k);
 }
 export function sourceReferences() {
+  const present = new Set(sourceAssets());
   const files = [
     ...walk('data').map(f => 'data/' + f),
     ...walk('content').map(f => 'content/' + f),
@@ -103,6 +104,8 @@ export function sourceReferences() {
     const text = fs.readFileSync(file, 'utf8');
     const draft = file.startsWith('content/blog/') && /^draft:\s*true\s*$/m.test(text);
     for (const m of text.matchAll(refRe)) { const asset = clean(m[0]); if (/\.[a-z0-9]+$/i.test(asset)) refs.push({ asset, from: file, draft }); }
+    // image('editorial.webp') has no /assets/ prefix until render. The image catalog is not usage.
+    if (file !== 'data/images.json') for (const m of text.matchAll(/['"`]([A-Za-z0-9._~%+@-]+\.(?:webp|png|jpe?g|gif|avif|svg|ico|mp4|webm|woff2?|ttf|otf|pdf))['"`]/gi)) if (present.has(m[1])) refs.push({ asset: m[1], from: file, draft });
     if (file.endsWith('.json') && !file.endsWith('data/images.json')) {
       const names = []; jsonBareNames(JSON.parse(text), names);
       for (const n of names) refs.push({ asset: n, from: file, draft });
