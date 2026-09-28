@@ -64,7 +64,7 @@ export async function buildImageDerivatives(dist = 'dist') {
   const files = fs.existsSync(assetDir) ? sourceAssetsIn(assetDir) : [];
   for (const file of files) {
     if (!/\.(webp|png|jpe?g)$/i.test(file)) continue;
-    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || file.startsWith('breast-lift-reduction-cartagena-colombia') || file.startsWith('hero-plastic-surgery-cartagena-colombia')) continue;
+    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || file.startsWith('breast-lift-reduction-cartagena-colombia') || file.startsWith('hero-dr-fulvio-correa-plastic-surgery-cartagena')) continue;
     const full = path.join(assetDir, file);
     const size = imageSize(full);
     if (!size || size.width < 480) continue;
@@ -175,7 +175,7 @@ async function ogFile(name, input, {position = 'centre', background = '#140e16',
 }
 
 export async function buildOgImages() {
-  const hero = 'assets/hero-plastic-surgery-cartagena-colombia-1920.webp';
+  const hero = 'assets/hero-dr-fulvio-correa-plastic-surgery-cartagena-1920.webp';
   const face = 'assets/portrait-woman-pink-background.webp';
   const nose = 'assets/nose-with-surgical-markings.webp';
   const breast = 'assets/breast-with-surgical-markings.webp';
