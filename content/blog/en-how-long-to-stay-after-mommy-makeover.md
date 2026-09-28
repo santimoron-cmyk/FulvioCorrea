@@ -48,6 +48,8 @@ Stay plans often extend when:
 
 Shorter stays may be more realistic for narrower procedure sets and short flights—but a full mommy makeover is rarely a “weekend recovery” trip. If your schedule only allows a few days after surgery, discuss whether staging procedures or adjusting travel dates is safer than compressing everything.
 
+A breast-only plan is a different stay than a combined mommy makeover. For the checks and travel questions that apply when the trip is breast surgery alone, see [breast augmentation in Colombia](/en/blog/breast-augmentation-colombia/).
+
 ## A practical way to build your calendar
 
 **Before surgery:** Ask your surgical team how early you should arrive so you can rest, complete any pending labs or evaluations, and settle into lodging close to follow-up care. Rushing from airport to OR the same day is a common planning mistake—confirm the preferred arrival window with the clinic rather than assuming a fixed number of days.

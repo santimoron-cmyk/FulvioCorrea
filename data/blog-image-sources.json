@@ -47,9 +47,21 @@
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "verified": "2026-09-26",
-    "usage": "Editorial illustration; not a Fulvio patient, result, staff member or recommended accommodation.",
+    "usage": "Earlier cover of the same Pexels photograph. Superseded by blog-breast-augmentation-colombia.webp; file retained. Editorial illustration; not a Fulvio patient, result, staff member or recommended accommodation.",
+    "slugs": []
+  },
+  {
+    "file": "blog-breast-augmentation-colombia.webp",
+    "photoId": "15176435",
+    "source": "https://www.pexels.com/photo/bra-on-clothes-hanger-15176435/",
+    "author": "Eugenia Remark",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "verified": "2026-09-28",
+    "usage": "Editorial illustration; not a Fulvio patient, result, staff member or recommended accommodation. Cover WebP 1400×788 plus AVIF and 1200×630 Open Graph crops.",
     "slugs": [
-      "breast-augmentation-colombia"
+      "breast-augmentation-colombia",
+      "aumento-de-senos-colombia"
     ]
   },
   {

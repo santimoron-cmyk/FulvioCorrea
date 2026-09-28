@@ -349,6 +349,16 @@
       "status": 301
     },
     {
+      "from": "/post/aumento-de-senos-colombia",
+      "to": "/es/blog/aumento-de-senos-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/aumento-de-senos-colombia/",
+      "to": "/es/blog/aumento-de-senos-colombia/",
+      "status": 301
+    },
+    {
       "from": "/post/cirugia-plastica-turismo-medico-cartagena-colombia",
       "to": "/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",
       "status": 301

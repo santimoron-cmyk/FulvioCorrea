@@ -122,7 +122,7 @@ How long you stay depends on the procedure, whether procedures are combined, you
 
 Sources: Cleveland Clinic on [liposuction](https://my.clevelandclinic.org/health/treatments/11009-liposuction), [breast augmentation](https://my.clevelandclinic.org/health/treatments/11024-breast-augmentation), [tummy tuck](https://my.clevelandclinic.org/health/procedures/11017-tummy-tuck), [BBL](https://my.clevelandclinic.org/health/treatments/23308-brazilian-butt-lift) and [mommy makeover](https://health.clevelandclinic.org/mommy-makeovers); [ASPS briefing paper](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism); [ASPS on BBL travel](https://www.plasticsurgery.org/news/articles/boarding-groups-added-complications-from-traveling-after-a-brazilian-butt-lift); [CDC](https://wwwnc.cdc.gov/travel/page/medical-tourism).
 
-For procedure-specific detail, see our guides to [liposuction in Cartagena](https://fulviocorrea.com.co/post/liposuction-cartagena), [breast augmentation in Colombia](https://fulviocorrea.com.co/post/breast-augmentation-colombia), [tummy tuck in Colombia](https://fulviocorrea.com.co/post/tummy-tuck-colombia), [BBL in Colombia](https://fulviocorrea.com.co/post/bbl-colombia) and [how long to stay after a mommy makeover](https://fulviocorrea.com.co/post/how-long-to-stay-after-mommy-makeover).
+For procedure-specific detail, see our guides to [liposuction in Cartagena](/en/blog/liposuction-cartagena/), [breast augmentation in Colombia](/en/blog/breast-augmentation-colombia/), [tummy tuck in Colombia](/en/blog/tummy-tuck-colombia/), [BBL in Colombia](/en/blog/bbl-colombia/) and [how long to stay after a mommy makeover](/en/blog/how-long-to-stay-after-mommy-makeover/).
 
 ## Safety and patient selection
 
@@ -154,7 +154,7 @@ ASPS recommends documenting these arrangements in writing, and the CDC recommend
 
 ## Considering surgery in Cartagena?
 
-Dr. Fulvio Correa is a plastic surgeon in Cartagena, Colombia, and an SCCP member. Explore the procedure pages for [liposuction](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-liposuction), [breast augmentation](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-breast-augmentation) and the [mommy makeover](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-mommy-makeover), or learn more [about the practice](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-staff). If you would like an in-person or virtual assessment, you can [message the team on WhatsApp](https://wa.me/16506656265?text=Hi%2C%20I%20read%20the%20Cartagena%20medical%20tourism%20report%20and%20would%20like%20to%20request%20an%20assessment).
+Dr. Fulvio Correa is a plastic surgeon in Cartagena, Colombia, and an SCCP member. Explore the procedure pages for [liposuction](/en/procedures/liposuction/), [breast augmentation](/en/procedures/breast-augmentation/) and the [mommy makeover](/en/procedures/mommy-makeover/), or learn more [about the practice](/en/about/). If you would like an in-person or virtual assessment, you can [message the team on WhatsApp](https://wa.me/16506656265?text=Hi%2C%20I%20read%20the%20Cartagena%20medical%20tourism%20report%20and%20would%20like%20to%20request%20an%20assessment).
 
 <p><em>Leer en español: <a href="https://fulviocorrea.com.co/post/cirugia-plastica-turismo-medico-cartagena-colombia" data-language="es" hreflang="es" lang="es">Cirugía plástica y turismo médico en Cartagena, Colombia: informe 2026</a>.</em></p>
 

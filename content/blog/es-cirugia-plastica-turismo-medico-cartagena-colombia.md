@@ -120,7 +120,7 @@ El tiempo de estadía depende del procedimiento, de si se combinan varios, de tu
 
 Fuentes: Cleveland Clinic sobre [liposucción](https://my.clevelandclinic.org/health/treatments/11009-liposuction), [aumento de senos](https://my.clevelandclinic.org/health/treatments/11024-breast-augmentation), [abdominoplastia](https://my.clevelandclinic.org/health/procedures/11017-tummy-tuck), [BBL](https://my.clevelandclinic.org/health/treatments/23308-brazilian-butt-lift) y [mommy makeover](https://health.clevelandclinic.org/mommy-makeovers); [documento informativo de la ASPS](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism); [ASPS sobre viajar después de un BBL](https://www.plasticsurgery.org/news/articles/boarding-groups-added-complications-from-traveling-after-a-brazilian-butt-lift); [CDC](https://wwwnc.cdc.gov/travel/page/medical-tourism) (todas en inglés).
 
-Si quieres más detalle, lee nuestras guías sobre [abdominoplastia en Colombia](https://fulviocorrea.com.co/post/abdominoplastia-colombia) y el [tiempo de recuperación de un mommy makeover](https://fulviocorrea.com.co/post/tiempo-recuperacion-mommy-makeover).
+Si quieres más detalle, lee nuestras guías sobre [aumento de senos en Colombia](/es/blog/aumento-de-senos-colombia/), [abdominoplastia en Colombia](/es/blog/abdominoplastia-colombia/) y el [tiempo de recuperación de un mommy makeover](/es/blog/tiempo-recuperacion-mommy-makeover/).
 
 ## Seguridad y selección del paciente
 
@@ -152,7 +152,7 @@ La ASPS recomienda dejar estos acuerdos por escrito y los CDC sugieren llevar co
 
 ## ¿Piensas operarte en Cartagena?
 
-El Dr. Fulvio Correa es cirujano plástico en Cartagena, Colombia, y miembro de la SCCP. Puedes conocer más sobre la [liposucción](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-liposuction), el [aumento de senos](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-breast-augmentation) y el [mommy makeover](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-mommy-makeover), o leer la [guía de viaje para pacientes internacionales](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-travel). Si quieres una valoración presencial o virtual, puedes [escribirle al equipo por WhatsApp](https://wa.me/16506656265?text=Hola%2C%20le%C3%AD%20el%20informe%20de%20turismo%20m%C3%A9dico%20en%20Cartagena%20y%20quiero%20solicitar%20una%20valoraci%C3%B3n).
+El Dr. Fulvio Correa es cirujano plástico en Cartagena, Colombia, y miembro de la SCCP. Puedes conocer más sobre la [liposucción](/es/procedimientos/liposuccion/), el [aumento de senos](/es/procedimientos/aumento-de-senos/) y el [mommy makeover](/es/procedimientos/mommy-makeover/), o leer la [guía de viaje para pacientes internacionales](/es/pacientes-internacionales/). Si quieres una valoración presencial o virtual, puedes [escribirle al equipo por WhatsApp](https://wa.me/16506656265?text=Hola%2C%20le%C3%AD%20el%20informe%20de%20turismo%20m%C3%A9dico%20en%20Cartagena%20y%20quiero%20solicitar%20una%20valoraci%C3%B3n).
 
 <p><em>Read in English: <a href="https://fulviocorrea.com.co/post/plastic-surgery-medical-tourism-cartagena-colombia" data-language="en" hreflang="en" lang="en">Plastic Surgery & Medical Tourism in Cartagena, Colombia: 2026 Report</a>.</em></p>
 

@@ -47,7 +47,7 @@ Cuerpo en Markdown. Usar `##` para secciones (un `#` se convierte en `##`; el H1
 | `category` | Debe coincidir con un valor `en` de `data/categories.json`: Mommy Makeover, Breast Surgery, Body Contouring, Recovery, Medical Tourism, Plastic Surgery in Colombia. |
 | `cover` | Ruta pública `/assets/...` de un archivo que **exista** en `assets/` con las mismas mayúsculas/minúsculas. Recomendado WebP 1200×800 (< 200 KB). Si existe `<nombre>-600.webp`, se usa como `srcset` en tarjetas. Las dimensiones se leen del archivo automáticamente (no hace falta tocar `data/images.json`). |
 | `procedure` | Slug de un procedimiento con página pilar en ese idioma (`content/procedures/<procedure>.<lang>.json`): bbl, breast-augmentation, breast-lift-reduction, facelift, liposuction, mommy-makeover, rhinoplasty, tummy-tuck. |
-| `related` | 0–4 slugs publicados del **mismo idioma y mismo procedure**. |
+| `related` | 0–4 slugs publicados del **mismo idioma** (pueden ser de otro procedimiento). |
 | `translationOf` / `twin` | Slug del artículo equivalente en el otro idioma (activa el enlace de idioma y hreflang). `""` si no existe. |
 | `sources` | Lista de URLs citadas (se muestran como Fuentes). |
 | `draft` | `true` = no se publica ni entra en el sitemap (sus imágenes pueden faltar todavía). `false` o ausente = se publica. |

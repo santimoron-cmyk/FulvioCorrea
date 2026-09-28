@@ -344,6 +344,16 @@ curl -I "https://fulviocorrea.com.co/post/abdominoplastia-colombia/"
 curl -I "https://fulviocorrea.com.co/es/blog/abdominoplastia-colombia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com.co/post/aumento-de-senos-colombia"
+# Expected: 301 Location: /es/blog/aumento-de-senos-colombia/
+curl -I "https://fulviocorrea.com.co/es/blog/aumento-de-senos-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/post/aumento-de-senos-colombia/"
+# Expected: 301 Location: /es/blog/aumento-de-senos-colombia/
+curl -I "https://fulviocorrea.com.co/es/blog/aumento-de-senos-colombia/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com.co/post/cirugia-plastica-turismo-medico-cartagena-colombia"
 # Expected: 301 Location: /es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/
 curl -I "https://fulviocorrea.com.co/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/"
