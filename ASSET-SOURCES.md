@@ -47,3 +47,11 @@ hero-purple-trial.webp: 1920×755, 53,178 bytes. Source: https://storage.googlea
 
 ## Patient video: Thaily Amezcua (added 2026-09-27)
 thaily-amezcua.mp4: 480×854, 16:46 min, H.264 ~135 kbps + AAC mono 48 kbps, 23.8 MB (kept under Cloudflare Pages' 25 MiB per-file limit). Re-encoded from the practice's YouTube video pCsiR6UYbdI (local download work/research/youtube/pCsiR6UYbdI-video.mp4, 66.5 MB, too large to publish as-is). thaily-amezcua.webp: 480×854 poster, frame at 15:58 (closing interview). Replace both files with a higher-quality export if available (same names, each file < 25 MiB).
+
+## Procedure card photos (AI-generated, 2026-09-28)
+Original editorial images generated for this site in one style set (warm beige/champagne studio, modest champagne satin and sand knit clothing). Not patients, results, staff or facilities. No nudity, underwear, surgical markings or medical elements. Approved by Santiago before publishing. Metadata and alt text (EN/ES) live in `data/procedure-cards.json`.
+- `<base>.{webp,avif}` 960x720 plus `-768` and `-480`: home and procedures-hub cards (01–08). Card 03 `breast-lift-reduction-cartagena-colombia` is the style reference.
+- Bases: brazilian-butt-lift-, breast-augmentation-, breast-lift-reduction-, facelift-, liposuction-, mommy-makeover-, rhinoplasty-, tummy-tuck-cartagena-colombia.
+- `brazilian-butt-lift-cartagena-colombia-portrait-{480,576}` and `tummy-tuck-cartagena-colombia-portrait-{480,576}` (4:5, AVIF+WebP): procedure-page detail photo for BBL and tummy tuck.
+- Also reused: liposuction card in the home featured section; tummy-tuck and breast-augmentation cards in the home "Core Treatment Pillars"; every card as the procedure's Open Graph image.
+- The earlier stock files (back-view-white-swimsuit, breast-with-surgical-markings, portrait-woman-pink-background, torso-black-swimsuit, woman-holding-orange-bodysuit, nose-with-surgical-markings, abdomen-with-surgical-markings) are no longer used by procedure cards, pages or share images; they stay in assets/ because migration/redirects.json points legacy URLs at them (portrait-woman-pink-background still backs the "Facial Refinement" pillar; torso-black-swimsuit is still listed on the image-sources credits page).
