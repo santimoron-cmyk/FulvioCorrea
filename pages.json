@@ -1,7 +1,7 @@
 [
   {
     "route": "/en/",
-    "file": "dist\\en\\index.html",
+    "file": "dist/en/index.html",
     "ads": false,
     "lang": "en",
     "noindex": false,
@@ -18,7 +18,7 @@
   },
   {
     "route": "/en/procedures/",
-    "file": "dist\\en\\procedures\\index.html",
+    "file": "dist/en/procedures/index.html",
     "ads": false,
     "lang": "en",
     "noindex": false,
@@ -29,7 +29,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/procedures/"
+        "route": "/es/procedimientos/"
       }
     ]
   },
@@ -126,7 +126,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/procedures/bbl/"
+        "route": "/es/procedimientos/aumento-de-gluteos/"
       }
     ]
   },
@@ -143,10 +143,6 @@
       {
         "lang": "en",
         "route": "/en/ads/bbl/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/ads/bbl/"
       }
     ]
   },
@@ -161,7 +157,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Breast Expert (Dr Fulvio Correa)",
+        "name": "Breast augmentation with Dr. Fulvio Correa (video)",
         "description": "An introduction to the procedure by Dr. Fulvio Correa.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video.webp",
         "uploadDate": "2024-10-05T02:18:04+00:00",
@@ -255,7 +251,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/procedures/breast-augmentation/"
+        "route": "/es/procedimientos/aumento-de-senos/"
       }
     ]
   },
@@ -272,10 +268,6 @@
       {
         "lang": "en",
         "route": "/en/ads/breast-augmentation/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/ads/breast-augmentation/"
       }
     ]
   },
@@ -290,7 +282,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Breast Expert (Dr Fulvio Correa)",
+        "name": "Breast reduction & lift with Dr. Fulvio Correa (video)",
         "description": "An introduction to the procedure by Dr. Fulvio Correa.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video.webp",
         "uploadDate": "2024-10-05T02:18:04+00:00",
@@ -384,7 +376,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/procedures/breast-lift-reduction/"
+        "route": "/es/procedimientos/reduccion-y-levantamiento-de-senos/"
       }
     ]
   },
@@ -401,10 +393,6 @@
       {
         "lang": "en",
         "route": "/en/ads/breast-lift-reduction/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/ads/breast-lift-reduction/"
       }
     ]
   },
@@ -419,7 +407,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Deep Plane Facelift Specialist (Dr Fulvio Correa)",
+        "name": "Facelift with Dr. Fulvio Correa (video)",
         "description": "An introduction to the procedure by Dr. Fulvio Correa.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/facelift-video.webp",
         "uploadDate": "2024-10-05T02:18:56+00:00",
@@ -513,7 +501,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/procedures/facelift/"
+        "route": "/es/procedimientos/lifting-facial/"
       }
     ]
   },
@@ -530,10 +518,6 @@
       {
         "lang": "en",
         "route": "/en/ads/facelift/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/ads/facelift/"
       }
     ]
   },
@@ -548,7 +532,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Renew your figure - Liposuction Expert (Dr Fulvio Correa)",
+        "name": "Liposuction with Dr. Fulvio Correa (video)",
         "description": "Liposuction video from Dr. Fulvio Correa’s practice.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/liposuction-video.webp",
         "uploadDate": "2024-10-05T02:19:50.000Z",
@@ -643,7 +627,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/procedures/liposuction/"
+        "route": "/es/procedimientos/liposuccion/"
       }
     ]
   },
@@ -660,10 +644,6 @@
       {
         "lang": "en",
         "route": "/en/ads/liposuction/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/ads/liposuction/"
       }
     ]
   },
@@ -678,7 +658,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Mommy Makeover Expert (Dr Fulvio Correa)",
+        "name": "Mommy Makeover with Dr. Fulvio Correa (video)",
         "description": "An introduction to the procedure by Dr. Fulvio Correa.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/mommy-video.webp",
         "uploadDate": "2024-10-08T20:19:47+00:00",
@@ -780,7 +760,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/procedures/mommy-makeover/"
+        "route": "/es/procedimientos/mommy-makeover/"
       }
     ]
   },
@@ -797,10 +777,6 @@
       {
         "lang": "en",
         "route": "/en/ads/mommy-makeover/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/ads/mommy-makeover/"
       }
     ]
   },
@@ -815,7 +791,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "The nose of your dreams with Dr Fulvio Correa",
+        "name": "Rhinoplasty with Dr. Fulvio Correa (video)",
         "description": "An introduction to the procedure by Dr. Fulvio Correa.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/rhinoplasty-video.webp",
         "uploadDate": "2024-10-05T02:20:14+00:00",
@@ -909,7 +885,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/procedures/rhinoplasty/"
+        "route": "/es/procedimientos/rinoplastia/"
       }
     ]
   },
@@ -926,10 +902,6 @@
       {
         "lang": "en",
         "route": "/en/ads/rhinoplasty/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/ads/rhinoplasty/"
       }
     ]
   },
@@ -1026,7 +998,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/procedures/tummy-tuck/"
+        "route": "/es/procedimientos/abdominoplastia/"
       }
     ]
   },
@@ -1043,16 +1015,12 @@
       {
         "lang": "en",
         "route": "/en/ads/tummy-tuck/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/ads/tummy-tuck/"
       }
     ]
   },
   {
     "route": "/en/about/",
-    "file": "dist\\en\\about\\index.html",
+    "file": "dist/en/about/index.html",
     "ads": false,
     "lang": "en",
     "noindex": false,
@@ -1063,7 +1031,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/about/"
+        "route": "/es/sobre-el-doctor/"
       }
     ]
   },
@@ -1139,7 +1107,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/international-patients/"
+        "route": "/es/pacientes-internacionales/"
       }
     ]
   },
@@ -1155,16 +1123,12 @@
       {
         "lang": "en",
         "route": "/en/before-after/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/before-after/"
       }
     ]
   },
   {
     "route": "/en/resources/",
-    "file": "dist\\en\\resources\\index.html",
+    "file": "dist/en/resources/index.html",
     "ads": false,
     "lang": "en",
     "noindex": false,
@@ -1175,13 +1139,13 @@
       },
       {
         "lang": "es",
-        "route": "/es/resources/"
+        "route": "/es/recursos/"
       }
     ]
   },
   {
     "route": "/en/resources/your-consultation/",
-    "file": "dist\\en\\resources\\your-consultation\\index.html",
+    "file": "dist/en/resources/your-consultation/index.html",
     "ads": false,
     "lang": "en",
     "noindex": false,
@@ -1192,13 +1156,13 @@
       },
       {
         "lang": "es",
-        "route": "/es/resources/your-consultation/"
+        "route": "/es/recursos/tu-valoracion/"
       }
     ]
   },
   {
     "route": "/en/faq/",
-    "file": "dist\\en\\faq\\index.html",
+    "file": "dist/en/faq/index.html",
     "ads": false,
     "lang": "en",
     "noindex": false,
@@ -1209,13 +1173,13 @@
       },
       {
         "lang": "es",
-        "route": "/es/faq/"
+        "route": "/es/preguntas-frecuentes/"
       }
     ]
   },
   {
     "route": "/en/book-consultation/",
-    "file": "dist\\en\\book-consultation\\index.html",
+    "file": "dist/en/book-consultation/index.html",
     "ads": false,
     "lang": "en",
     "noindex": true,
@@ -1226,13 +1190,13 @@
       },
       {
         "lang": "es",
-        "route": "/es/book-consultation/"
+        "route": "/es/agendar-valoracion/"
       }
     ]
   },
   {
     "route": "/en/image-sources/",
-    "file": "dist\\en\\image-sources\\index.html",
+    "file": "dist/en/image-sources/index.html",
     "ads": false,
     "lang": "en",
     "noindex": true,
@@ -1240,16 +1204,12 @@
       {
         "lang": "en",
         "route": "/en/image-sources/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/image-sources/"
       }
     ]
   },
   {
     "route": "/en/404/",
-    "file": "dist\\en\\404\\index.html",
+    "file": "dist/en/404/index.html",
     "ads": false,
     "lang": "en",
     "noindex": true,
@@ -1257,16 +1217,12 @@
       {
         "lang": "en",
         "route": "/en/404/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/404/"
       }
     ]
   },
   {
     "route": "/es/",
-    "file": "dist\\es\\index.html",
+    "file": "dist/es/index.html",
     "ads": false,
     "lang": "es",
     "noindex": false,
@@ -1282,15 +1238,15 @@
     ]
   },
   {
-    "route": "/es/procedures/",
-    "file": "dist\\es\\procedures\\index.html",
+    "route": "/es/procedimientos/",
+    "file": "dist/es/procedimientos/index.html",
     "ads": false,
     "lang": "es",
     "noindex": false,
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/procedures/"
+        "route": "/es/procedimientos/"
       },
       {
         "lang": "en",
@@ -1299,8 +1255,8 @@
     ]
   },
   {
-    "route": "/es/procedures/bbl/",
-    "file": "dist/es/procedures/bbl/index.html",
+    "route": "/es/procedimientos/aumento-de-gluteos/",
+    "file": "dist/es/procedimientos/aumento-de-gluteos/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -1387,7 +1343,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/procedures/bbl/"
+        "route": "/es/procedimientos/aumento-de-gluteos/"
       },
       {
         "lang": "en",
@@ -1408,16 +1364,12 @@
       {
         "lang": "es",
         "route": "/es/ads/bbl/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/ads/bbl/"
       }
     ]
   },
   {
-    "route": "/es/procedures/breast-augmentation/",
-    "file": "dist/es/procedures/breast-augmentation/index.html",
+    "route": "/es/procedimientos/aumento-de-senos/",
+    "file": "dist/es/procedimientos/aumento-de-senos/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -1426,7 +1378,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Breast Expert (Dr Fulvio Correa)",
+        "name": "Aumento de senos con el Dr. Fulvio Correa (video)",
         "description": "Presentación del procedimiento por el Dr. Fulvio Correa.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video.webp",
         "uploadDate": "2024-10-05T02:18:04+00:00",
@@ -1516,7 +1468,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/procedures/breast-augmentation/"
+        "route": "/es/procedimientos/aumento-de-senos/"
       },
       {
         "lang": "en",
@@ -1537,16 +1489,12 @@
       {
         "lang": "es",
         "route": "/es/ads/breast-augmentation/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/ads/breast-augmentation/"
       }
     ]
   },
   {
-    "route": "/es/procedures/breast-lift-reduction/",
-    "file": "dist/es/procedures/breast-lift-reduction/index.html",
+    "route": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
+    "file": "dist/es/procedimientos/reduccion-y-levantamiento-de-senos/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -1555,7 +1503,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Breast Expert (Dr Fulvio Correa)",
+        "name": "Reducción y levantamiento de senos con el Dr. Fulvio Correa (video)",
         "description": "Presentación del procedimiento por el Dr. Fulvio Correa.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video.webp",
         "uploadDate": "2024-10-05T02:18:04+00:00",
@@ -1645,7 +1593,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/procedures/breast-lift-reduction/"
+        "route": "/es/procedimientos/reduccion-y-levantamiento-de-senos/"
       },
       {
         "lang": "en",
@@ -1666,16 +1614,12 @@
       {
         "lang": "es",
         "route": "/es/ads/breast-lift-reduction/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/ads/breast-lift-reduction/"
       }
     ]
   },
   {
-    "route": "/es/procedures/facelift/",
-    "file": "dist/es/procedures/facelift/index.html",
+    "route": "/es/procedimientos/lifting-facial/",
+    "file": "dist/es/procedimientos/lifting-facial/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -1684,7 +1628,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Deep Plane Facelift Specialist (Dr Fulvio Correa)",
+        "name": "Lifting facial con el Dr. Fulvio Correa (video)",
         "description": "Presentación del procedimiento por el Dr. Fulvio Correa.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/facelift-video.webp",
         "uploadDate": "2024-10-05T02:18:56+00:00",
@@ -1774,7 +1718,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/procedures/facelift/"
+        "route": "/es/procedimientos/lifting-facial/"
       },
       {
         "lang": "en",
@@ -1795,16 +1739,12 @@
       {
         "lang": "es",
         "route": "/es/ads/facelift/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/ads/facelift/"
       }
     ]
   },
   {
-    "route": "/es/procedures/liposuction/",
-    "file": "dist/es/procedures/liposuction/index.html",
+    "route": "/es/procedimientos/liposuccion/",
+    "file": "dist/es/procedimientos/liposuccion/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -1813,7 +1753,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Renew your figure - Liposuction Expert (Dr Fulvio Correa)",
+        "name": "Liposucción con el Dr. Fulvio Correa (video)",
         "description": "Video sobre liposucción del consultorio del Dr. Fulvio Correa.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/liposuction-video.webp",
         "uploadDate": "2024-10-05T02:19:50.000Z",
@@ -1904,7 +1844,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/procedures/liposuction/"
+        "route": "/es/procedimientos/liposuccion/"
       },
       {
         "lang": "en",
@@ -1925,16 +1865,12 @@
       {
         "lang": "es",
         "route": "/es/ads/liposuction/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/ads/liposuction/"
       }
     ]
   },
   {
-    "route": "/es/procedures/mommy-makeover/",
-    "file": "dist/es/procedures/mommy-makeover/index.html",
+    "route": "/es/procedimientos/mommy-makeover/",
+    "file": "dist/es/procedimientos/mommy-makeover/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -1943,7 +1879,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Mommy Makeover Expert (Dr Fulvio Correa)",
+        "name": "Mommy Makeover con el Dr. Fulvio Correa (video)",
         "description": "Presentación del procedimiento por el Dr. Fulvio Correa.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/mommy-video.webp",
         "uploadDate": "2024-10-08T20:19:47+00:00",
@@ -2041,7 +1977,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/procedures/mommy-makeover/"
+        "route": "/es/procedimientos/mommy-makeover/"
       },
       {
         "lang": "en",
@@ -2062,16 +1998,12 @@
       {
         "lang": "es",
         "route": "/es/ads/mommy-makeover/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/ads/mommy-makeover/"
       }
     ]
   },
   {
-    "route": "/es/procedures/rhinoplasty/",
-    "file": "dist/es/procedures/rhinoplasty/index.html",
+    "route": "/es/procedimientos/rinoplastia/",
+    "file": "dist/es/procedimientos/rinoplastia/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -2080,7 +2012,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "The nose of your dreams with Dr Fulvio Correa",
+        "name": "Rinoplastia con el Dr. Fulvio Correa (video)",
         "description": "Presentación del procedimiento por el Dr. Fulvio Correa.",
         "thumbnailUrl": "https://fulviocorrea.com.co/assets/rhinoplasty-video.webp",
         "uploadDate": "2024-10-05T02:20:14+00:00",
@@ -2170,7 +2102,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/procedures/rhinoplasty/"
+        "route": "/es/procedimientos/rinoplastia/"
       },
       {
         "lang": "en",
@@ -2191,16 +2123,12 @@
       {
         "lang": "es",
         "route": "/es/ads/rhinoplasty/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/ads/rhinoplasty/"
       }
     ]
   },
   {
-    "route": "/es/procedures/tummy-tuck/",
-    "file": "dist/es/procedures/tummy-tuck/index.html",
+    "route": "/es/procedimientos/abdominoplastia/",
+    "file": "dist/es/procedimientos/abdominoplastia/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -2287,7 +2215,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/procedures/tummy-tuck/"
+        "route": "/es/procedimientos/abdominoplastia/"
       },
       {
         "lang": "en",
@@ -2308,23 +2236,19 @@
       {
         "lang": "es",
         "route": "/es/ads/tummy-tuck/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/ads/tummy-tuck/"
       }
     ]
   },
   {
-    "route": "/es/about/",
-    "file": "dist\\es\\about\\index.html",
+    "route": "/es/sobre-el-doctor/",
+    "file": "dist/es/sobre-el-doctor/index.html",
     "ads": false,
     "lang": "es",
     "noindex": false,
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/about/"
+        "route": "/es/sobre-el-doctor/"
       },
       {
         "lang": "en",
@@ -2333,8 +2257,8 @@
     ]
   },
   {
-    "route": "/es/international-patients/",
-    "file": "dist/es/international-patients/index.html",
+    "route": "/es/pacientes-internacionales/",
+    "file": "dist/es/pacientes-internacionales/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -2400,7 +2324,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/international-patients/"
+        "route": "/es/pacientes-internacionales/"
       },
       {
         "lang": "en",
@@ -2409,8 +2333,8 @@
     ]
   },
   {
-    "route": "/es/before-after/",
-    "file": "dist/es/before-after/index.html",
+    "route": "/es/antes-y-despues/",
+    "file": "dist/es/antes-y-despues/index.html",
     "lang": "es",
     "ads": false,
     "noindex": true,
@@ -2419,24 +2343,20 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/before-after/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/before-after/"
+        "route": "/es/antes-y-despues/"
       }
     ]
   },
   {
-    "route": "/es/resources/",
-    "file": "dist\\es\\resources\\index.html",
+    "route": "/es/recursos/",
+    "file": "dist/es/recursos/index.html",
     "ads": false,
     "lang": "es",
     "noindex": false,
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/resources/"
+        "route": "/es/recursos/"
       },
       {
         "lang": "en",
@@ -2445,15 +2365,15 @@
     ]
   },
   {
-    "route": "/es/resources/your-consultation/",
-    "file": "dist\\es\\resources\\your-consultation\\index.html",
+    "route": "/es/recursos/tu-valoracion/",
+    "file": "dist/es/recursos/tu-valoracion/index.html",
     "ads": false,
     "lang": "es",
     "noindex": false,
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/resources/your-consultation/"
+        "route": "/es/recursos/tu-valoracion/"
       },
       {
         "lang": "en",
@@ -2462,15 +2382,15 @@
     ]
   },
   {
-    "route": "/es/faq/",
-    "file": "dist\\es\\faq\\index.html",
+    "route": "/es/preguntas-frecuentes/",
+    "file": "dist/es/preguntas-frecuentes/index.html",
     "ads": false,
     "lang": "es",
     "noindex": false,
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/faq/"
+        "route": "/es/preguntas-frecuentes/"
       },
       {
         "lang": "en",
@@ -2479,25 +2399,21 @@
     ]
   },
   {
-    "route": "/es/book-consultation/",
-    "file": "dist\\es\\book-consultation\\index.html",
+    "route": "/es/agendar-valoracion/",
+    "file": "dist/es/agendar-valoracion/index.html",
     "ads": false,
     "lang": "es",
     "noindex": true,
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/book-consultation/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/book-consultation/"
+        "route": "/es/agendar-valoracion/"
       }
     ]
   },
   {
     "route": "/es/image-sources/",
-    "file": "dist\\es\\image-sources\\index.html",
+    "file": "dist/es/image-sources/index.html",
     "ads": false,
     "lang": "es",
     "noindex": true,
@@ -2505,16 +2421,12 @@
       {
         "lang": "es",
         "route": "/es/image-sources/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/image-sources/"
       }
     ]
   },
   {
     "route": "/es/404/",
-    "file": "dist\\es\\404\\index.html",
+    "file": "dist/es/404/index.html",
     "ads": false,
     "lang": "es",
     "noindex": true,
@@ -2522,10 +2434,6 @@
       {
         "lang": "es",
         "route": "/es/404/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/404/"
       }
     ]
   },
@@ -2560,10 +2468,6 @@
       {
         "lang": "en",
         "route": "/en/blog/category/mommy-makeover/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/blog/category/mommy-makeover/"
       }
     ]
   },
@@ -2572,17 +2476,13 @@
     "file": "dist/en/blog/category/breast-surgery/index.html",
     "lang": "en",
     "ads": false,
-    "noindex": false,
+    "noindex": true,
     "updated": "2026-09-25",
     "schemas": [],
     "alternates": [
       {
         "lang": "en",
         "route": "/en/blog/category/breast-surgery/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/blog/category/breast-surgery/"
       }
     ]
   },
@@ -2598,10 +2498,6 @@
       {
         "lang": "en",
         "route": "/en/blog/category/body-contouring/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/blog/category/body-contouring/"
       }
     ]
   },
@@ -2610,17 +2506,13 @@
     "file": "dist/en/blog/category/recovery/index.html",
     "lang": "en",
     "ads": false,
-    "noindex": false,
+    "noindex": true,
     "updated": "2026-09-25",
     "schemas": [],
     "alternates": [
       {
         "lang": "en",
         "route": "/en/blog/category/recovery/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/blog/category/recovery/"
       }
     ]
   },
@@ -2629,17 +2521,13 @@
     "file": "dist/en/blog/category/medical-tourism/index.html",
     "lang": "en",
     "ads": false,
-    "noindex": false,
+    "noindex": true,
     "updated": "2026-09-25",
     "schemas": [],
     "alternates": [
       {
         "lang": "en",
         "route": "/en/blog/category/medical-tourism/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/blog/category/medical-tourism/"
       }
     ]
   },
@@ -2655,10 +2543,6 @@
       {
         "lang": "en",
         "route": "/en/blog/category/plastic-surgery-in-colombia/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/blog/category/plastic-surgery-in-colombia/"
       }
     ]
   },
@@ -2681,6 +2565,15 @@
         "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
         "author": {
           "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com.co/en/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com.co/assets/logo.png"
+          }
         }
       }
     ],
@@ -2716,6 +2609,15 @@
         "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/mommy-makeover-recovery-time/",
         "author": {
           "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com.co/en/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com.co/assets/logo.png"
+          }
         }
       }
     ],
@@ -2751,6 +2653,15 @@
         "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/bbl-colombia/",
         "author": {
           "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com.co/en/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com.co/assets/logo.png"
+          }
         }
       }
     ],
@@ -2782,6 +2693,15 @@
         "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/breast-augmentation-colombia/",
         "author": {
           "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com.co/en/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com.co/assets/logo.png"
+          }
         }
       }
     ],
@@ -2813,6 +2733,15 @@
         "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/how-long-to-stay-after-mommy-makeover/",
         "author": {
           "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com.co/en/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com.co/assets/logo.png"
+          }
         }
       }
     ],
@@ -2844,6 +2773,15 @@
         "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/liposuction-cartagena/",
         "author": {
           "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com.co/en/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com.co/assets/logo.png"
+          }
         }
       }
     ],
@@ -2875,6 +2813,15 @@
         "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/tummy-tuck-colombia/",
         "author": {
           "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com.co/en/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com.co/assets/logo.png"
+          }
         }
       }
     ],
@@ -2906,7 +2853,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/privacy/"
+        "route": "/es/privacidad/"
       }
     ]
   },
@@ -2925,7 +2872,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/terms/"
+        "route": "/es/terminos/"
       }
     ]
   },
@@ -2968,8 +2915,8 @@
     ]
   },
   {
-    "route": "/es/blog/category/mommy-makeover/",
-    "file": "dist/es/blog/category/mommy-makeover/index.html",
+    "route": "/es/blog/categoria/mommy-makeover/",
+    "file": "dist/es/blog/categoria/mommy-makeover/index.html",
     "lang": "es",
     "ads": false,
     "noindex": true,
@@ -2978,17 +2925,13 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/blog/category/mommy-makeover/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/blog/category/mommy-makeover/"
+        "route": "/es/blog/categoria/mommy-makeover/"
       }
     ]
   },
   {
-    "route": "/es/blog/category/breast-surgery/",
-    "file": "dist/es/blog/category/breast-surgery/index.html",
+    "route": "/es/blog/categoria/cirugia-mamaria/",
+    "file": "dist/es/blog/categoria/cirugia-mamaria/index.html",
     "lang": "es",
     "ads": false,
     "noindex": true,
@@ -2997,26 +2940,22 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/blog/category/breast-surgery/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/blog/category/breast-surgery/"
+        "route": "/es/blog/categoria/cirugia-mamaria/"
       }
     ]
   },
   {
-    "route": "/es/blog/category/body-contouring/",
-    "file": "dist/es/blog/category/body-contouring/index.html",
+    "route": "/es/blog/categoria/contorno-corporal/",
+    "file": "dist/es/blog/categoria/contorno-corporal/index.html",
     "lang": "es",
     "ads": false,
-    "noindex": false,
+    "noindex": true,
     "updated": "2026-09-25",
     "schemas": [],
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/blog/category/body-contouring/"
+        "route": "/es/blog/categoria/contorno-corporal/"
       },
       {
         "lang": "en",
@@ -3025,46 +2964,8 @@
     ]
   },
   {
-    "route": "/es/blog/category/recovery/",
-    "file": "dist/es/blog/category/recovery/index.html",
-    "lang": "es",
-    "ads": false,
-    "noindex": false,
-    "updated": "2026-09-25",
-    "schemas": [],
-    "alternates": [
-      {
-        "lang": "es",
-        "route": "/es/blog/category/recovery/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/blog/category/recovery/"
-      }
-    ]
-  },
-  {
-    "route": "/es/blog/category/medical-tourism/",
-    "file": "dist/es/blog/category/medical-tourism/index.html",
-    "lang": "es",
-    "ads": false,
-    "noindex": false,
-    "updated": "2026-09-25",
-    "schemas": [],
-    "alternates": [
-      {
-        "lang": "es",
-        "route": "/es/blog/category/medical-tourism/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/blog/category/medical-tourism/"
-      }
-    ]
-  },
-  {
-    "route": "/es/blog/category/plastic-surgery-in-colombia/",
-    "file": "dist/es/blog/category/plastic-surgery-in-colombia/index.html",
+    "route": "/es/blog/categoria/recuperacion/",
+    "file": "dist/es/blog/categoria/recuperacion/index.html",
     "lang": "es",
     "ads": false,
     "noindex": true,
@@ -3073,11 +2974,37 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/blog/category/plastic-surgery-in-colombia/"
-      },
+        "route": "/es/blog/categoria/recuperacion/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/categoria/turismo-medico/",
+    "file": "dist/es/blog/categoria/turismo-medico/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": true,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
       {
-        "lang": "en",
-        "route": "/en/blog/category/plastic-surgery-in-colombia/"
+        "lang": "es",
+        "route": "/es/blog/categoria/turismo-medico/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/categoria/cirugia-plastica-en-colombia/",
+    "file": "dist/es/blog/categoria/cirugia-plastica-en-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": true,
+    "updated": "2026-09-25",
+    "schemas": [],
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/categoria/cirugia-plastica-en-colombia/"
       }
     ]
   },
@@ -3100,6 +3027,15 @@
         "mainEntityOfPage": "https://fulviocorrea.com.co/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",
         "author": {
           "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com.co/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com.co/assets/logo.png"
+          }
         }
       }
     ],
@@ -3135,6 +3071,15 @@
         "mainEntityOfPage": "https://fulviocorrea.com.co/es/blog/abdominoplastia-colombia/",
         "author": {
           "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com.co/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com.co/assets/logo.png"
+          }
         }
       }
     ],
@@ -3170,6 +3115,15 @@
         "mainEntityOfPage": "https://fulviocorrea.com.co/es/blog/tiempo-recuperacion-mommy-makeover/",
         "author": {
           "@id": "https://fulviocorrea.com.co/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com.co/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com.co/assets/logo.png"
+          }
         }
       }
     ],
@@ -3187,8 +3141,8 @@
     ]
   },
   {
-    "route": "/es/privacy/",
-    "file": "dist/es/privacy/index.html",
+    "route": "/es/privacidad/",
+    "file": "dist/es/privacidad/index.html",
     "lang": "es",
     "ads": false,
     "noindex": false,
@@ -3197,7 +3151,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/privacy/"
+        "route": "/es/privacidad/"
       },
       {
         "lang": "en",
@@ -3206,8 +3160,8 @@
     ]
   },
   {
-    "route": "/es/terms/",
-    "file": "dist/es/terms/index.html",
+    "route": "/es/terminos/",
+    "file": "dist/es/terminos/index.html",
     "lang": "es",
     "ads": false,
     "noindex": false,
@@ -3216,7 +3170,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/terms/"
+        "route": "/es/terminos/"
       },
       {
         "lang": "en",
@@ -3256,10 +3210,6 @@
       {
         "lang": "en",
         "route": "/en/thank-you/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/gracias/"
       }
     ]
   },
@@ -3276,10 +3226,6 @@
       {
         "lang": "es",
         "route": "/es/gracias/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/thank-you/"
       }
     ]
   },
@@ -3308,7 +3254,7 @@
         "@id": "https://fulviocorrea.com.co/en/capri-clinic/#webpage",
         "url": "https://fulviocorrea.com.co/en/capri-clinic/",
         "name": "CAPRI Clinic in Cartagena | Dr. Fulvio Correa",
-        "description": "Learn where Dr. Fulvio Correa performs surgery in Cartagena. Explore CAPRI Clinic, distinguish your consultation location and prepare questions for your visit.",
+        "description": "Where Dr. Fulvio Correa operates in Cartagena: CAPRI Clinic. See how the surgical clinic differs from the consultation office and what to ask.",
         "inLanguage": "en",
         "about": {
           "@id": "https://fulviocorrea.com.co/#capri-clinic"
@@ -3366,13 +3312,13 @@
       },
       {
         "lang": "es",
-        "route": "/es/capri-clinic/"
+        "route": "/es/clinica-capri/"
       }
     ]
   },
   {
-    "route": "/es/capri-clinic/",
-    "file": "dist/es/capri-clinic/index.html",
+    "route": "/es/clinica-capri/",
+    "file": "dist/es/clinica-capri/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -3395,7 +3341,7 @@
         "@id": "https://fulviocorrea.com.co/es/capri-clinic/#webpage",
         "url": "https://fulviocorrea.com.co/es/capri-clinic/",
         "name": "Clínica CAPRI en Cartagena | Dr. Fulvio Correa",
-        "description": "Conoce dónde opera el Dr. Fulvio Correa en Cartagena: Clínica CAPRI. Diferencia la clínica del consultorio y prepara tus preguntas antes de programar tu cirugía.",
+        "description": "Dónde opera el Dr. Fulvio Correa en Cartagena: Clínica CAPRI. Diferencia la clínica del consultorio y prepara tus preguntas antes de la cirugía.",
         "inLanguage": "es",
         "about": {
           "@id": "https://fulviocorrea.com.co/#capri-clinic"
@@ -3449,7 +3395,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/capri-clinic/"
+        "route": "/es/clinica-capri/"
       },
       {
         "lang": "en",
@@ -3472,7 +3418,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/testimonials/"
+        "route": "/es/testimonios/"
       }
     ]
   },
@@ -3510,7 +3456,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/testimonials/natalia-vega/"
+        "route": "/es/testimonios/natalia-vega/"
       }
     ]
   },
@@ -3548,7 +3494,7 @@
       },
       {
         "lang": "es",
-        "route": "/es/testimonials/kary-alejandre/"
+        "route": "/es/testimonios/kary-alejandre/"
       }
     ]
   },
@@ -3586,13 +3532,13 @@
       },
       {
         "lang": "es",
-        "route": "/es/testimonials/thaily-amezcua/"
+        "route": "/es/testimonios/thaily-amezcua/"
       }
     ]
   },
   {
-    "route": "/es/testimonials/",
-    "file": "dist/es/testimonials/index.html",
+    "route": "/es/testimonios/",
+    "file": "dist/es/testimonios/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -3601,7 +3547,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/testimonials/"
+        "route": "/es/testimonios/"
       },
       {
         "lang": "en",
@@ -3610,8 +3556,8 @@
     ]
   },
   {
-    "route": "/es/testimonials/natalia-vega/",
-    "file": "dist/es/testimonials/natalia-vega/index.html",
+    "route": "/es/testimonios/natalia-vega/",
+    "file": "dist/es/testimonios/natalia-vega/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -3639,7 +3585,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/testimonials/natalia-vega/"
+        "route": "/es/testimonios/natalia-vega/"
       },
       {
         "lang": "en",
@@ -3648,8 +3594,8 @@
     ]
   },
   {
-    "route": "/es/testimonials/kary-alejandre/",
-    "file": "dist/es/testimonials/kary-alejandre/index.html",
+    "route": "/es/testimonios/kary-alejandre/",
+    "file": "dist/es/testimonios/kary-alejandre/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -3677,7 +3623,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/testimonials/kary-alejandre/"
+        "route": "/es/testimonios/kary-alejandre/"
       },
       {
         "lang": "en",
@@ -3686,8 +3632,8 @@
     ]
   },
   {
-    "route": "/es/testimonials/thaily-amezcua/",
-    "file": "dist/es/testimonials/thaily-amezcua/index.html",
+    "route": "/es/testimonios/thaily-amezcua/",
+    "file": "dist/es/testimonios/thaily-amezcua/index.html",
     "lang": "es",
     "noindex": false,
     "ads": false,
@@ -3715,7 +3661,7 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/testimonials/thaily-amezcua/"
+        "route": "/es/testimonios/thaily-amezcua/"
       },
       {
         "lang": "en",

@@ -5,7 +5,7 @@ slug: "example-draft"
 lang: "en"
 category: "Recovery"
 tags: ["internal-example"]
-cover: "/assets/84-home-1-2.webp"
+cover: "/assets/portrait-woman-hand-on-neck.webp"
 coverAlt: "Editorial portrait"
 date: "2026-09-25"
 updated: "2026-09-25"

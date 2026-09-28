@@ -3,7 +3,8 @@
 import {minify} from 'terser';
 import fs from 'node:fs';
 import {resolveSiteEnv} from './site-env.mjs';
-import {prepareDist,checkSourceAssets,checkDistAssets} from './assets.mjs';
+import {prepareDist,checkSourceAssets,checkDistAssets,sourceReferences,sourceAssets} from './assets.mjs';
+import {IMAGE_RENAMES,buildImageDerivatives,decorateDistImages,pruneUnreferencedAssets} from './media.mjs';
 import {writeCloudflareAdapter} from './cloudflare.mjs';
 // Any failure prints a readable message (no stack noise) and exits with code 1, which fails the Cloudflare build.
 const fail=e=>{console.error('\nBUILD FAILED\n'+(e?.message||e)+'\n');process.exit(1);};process.on('uncaughtException',fail);process.on('unhandledRejection',fail);
@@ -13,8 +14,14 @@ const site=resolveSiteEnv();process.env.SITE_ENV=site.mode;
 console.log(`Build mode: ${site.mode.toUpperCase()} (${site.reason})`);
 // 1. Fail early, with a clear list, if any referenced asset is missing from assets/.
 const src=checkSourceAssets();for(const w of src.warnings)console.warn('WARN assets:',w);
-// 2. Fresh dist/ + copy of versioned assets.
-console.log(`Assets: ${prepareDist()} files copied from assets/ to dist/assets/ (${src.references} distinct references checked).`);
+const referenced=new Set(sourceReferences().filter(r=>!r.draft).map(r=>r.asset));
+for(const name of Object.values(IMAGE_RENAMES))referenced.add(name);
+for(const name of Object.keys(IMAGE_RENAMES))referenced.delete(name);
+const skipped=sourceAssets().filter(f=>!referenced.has(f)&&!f.startsWith('fonts/'));
+if(skipped.length)console.warn('Excluded from deploy (kept in assets/): '+skipped.join(', '));
+// 2. Fresh dist/ + copy of referenced assets, then responsive/OG/icon derivatives.
+console.log(`Assets: ${prepareDist(referenced)} files copied from assets/ to dist/assets/ (${src.references} distinct references checked).`);
+await buildImageDerivatives();
 // 3. Render pages.
 await import('./render.mjs');
 await import('./enhance.mjs');
@@ -25,6 +32,8 @@ for(const [file,sources] of Object.entries({'app.js':['app.js'],'contact.js':['p
 }
 // Widget code is included only with its dialog; confirmation code only on confirmation pages.
 for(const file of fs.readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.html'))){let h=fs.readFileSync('dist/'+file,'utf8');const scripts=(h.includes('id="contact-dialog"')?'<script defer src="/contact.js"></script>':'')+(h.includes('id="thanks-confirmation"')?'<script defer src="/thank-you.js"></script>':'');fs.writeFileSync('dist/'+file,h.replace('</body>',()=>scripts+'</body>'));}
+decorateDistImages();
+pruneUnreferencedAssets();
 // The former browser-language redirect is no longer used by any page.
 if(fs.existsSync('dist/locale.js'))fs.unlinkSync('dist/locale.js');
 // 4. Hosting adapter (Cloudflare Pages): _headers, _redirects, robots.txt, Functions config.

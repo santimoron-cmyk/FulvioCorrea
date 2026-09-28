@@ -1,5 +1,5 @@
 {
-  "active": false,
+  "active": true,
   "productionHostingConfirmed": true,
   "adapter": "cloudflare-pages",
   "redirects": [
@@ -50,12 +50,12 @@
     },
     {
       "from": "/draft-travel-es",
-      "to": "/es/international-patients/",
+      "to": "/es/pacientes-internacionales/",
       "status": 301
     },
     {
       "from": "/draft-travel-es/",
-      "to": "/es/international-patients/",
+      "to": "/es/pacientes-internacionales/",
       "status": 301
     },
     {
@@ -235,12 +235,12 @@
     },
     {
       "from": "/es/procedures/mammoplasty",
-      "to": "/es/procedures/breast-lift-reduction/",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
       "status": 301
     },
     {
       "from": "/es/procedures/mammoplasty/",
-      "to": "/es/procedures/breast-lift-reduction/",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
       "status": 301
     },
     {
@@ -381,6 +381,331 @@
     {
       "from": "/post/tiempo-recuperacion-mommy-makeover/",
       "to": "/es/blog/tiempo-recuperacion-mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/plastic-surgery-in-colombia",
+      "to": "/es/blog/categoria/cirugia-plastica-en-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/plastic-surgery-in-colombia/",
+      "to": "/es/blog/categoria/cirugia-plastica-en-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/breast-lift-reduction",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/breast-lift-reduction/",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/breast-augmentation",
+      "to": "/es/procedimientos/aumento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/breast-augmentation/",
+      "to": "/es/procedimientos/aumento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/body-contouring",
+      "to": "/es/blog/categoria/contorno-corporal/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/body-contouring/",
+      "to": "/es/blog/categoria/contorno-corporal/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/medical-tourism",
+      "to": "/es/blog/categoria/turismo-medico/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/medical-tourism/",
+      "to": "/es/blog/categoria/turismo-medico/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/mommy-makeover",
+      "to": "/es/blog/categoria/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/mommy-makeover/",
+      "to": "/es/blog/categoria/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/breast-surgery",
+      "to": "/es/blog/categoria/cirugia-mamaria/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/breast-surgery/",
+      "to": "/es/blog/categoria/cirugia-mamaria/",
+      "status": 301
+    },
+    {
+      "from": "/es/resources/your-consultation",
+      "to": "/es/recursos/tu-valoracion/",
+      "status": 301
+    },
+    {
+      "from": "/es/resources/your-consultation/",
+      "to": "/es/recursos/tu-valoracion/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/mommy-makeover",
+      "to": "/es/procedimientos/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/mommy-makeover/",
+      "to": "/es/procedimientos/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/liposuction",
+      "to": "/es/procedimientos/liposuccion/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/liposuction/",
+      "to": "/es/procedimientos/liposuccion/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/rhinoplasty",
+      "to": "/es/procedimientos/rinoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/rhinoplasty/",
+      "to": "/es/procedimientos/rinoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/recovery",
+      "to": "/es/blog/categoria/recuperacion/",
+      "status": 301
+    },
+    {
+      "from": "/es/blog/category/recovery/",
+      "to": "/es/blog/categoria/recuperacion/",
+      "status": 301
+    },
+    {
+      "from": "/es/international-patients",
+      "to": "/es/pacientes-internacionales/",
+      "status": 301
+    },
+    {
+      "from": "/es/international-patients/",
+      "to": "/es/pacientes-internacionales/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/tummy-tuck",
+      "to": "/es/procedimientos/abdominoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/tummy-tuck/",
+      "to": "/es/procedimientos/abdominoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/facelift",
+      "to": "/es/procedimientos/lifting-facial/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/facelift/",
+      "to": "/es/procedimientos/lifting-facial/",
+      "status": 301
+    },
+    {
+      "from": "/es/book-consultation",
+      "to": "/es/agendar-valoracion/",
+      "status": 301
+    },
+    {
+      "from": "/es/book-consultation/",
+      "to": "/es/agendar-valoracion/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/bbl",
+      "to": "/es/procedimientos/aumento-de-gluteos/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/bbl/",
+      "to": "/es/procedimientos/aumento-de-gluteos/",
+      "status": 301
+    },
+    {
+      "from": "/es/before-after",
+      "to": "/es/antes-y-despues/",
+      "status": 301
+    },
+    {
+      "from": "/es/before-after/",
+      "to": "/es/antes-y-despues/",
+      "status": 301
+    },
+    {
+      "from": "/es/capri-clinic",
+      "to": "/es/clinica-capri/",
+      "status": 301
+    },
+    {
+      "from": "/es/capri-clinic/",
+      "to": "/es/clinica-capri/",
+      "status": 301
+    },
+    {
+      "from": "/es/testimonials",
+      "to": "/es/testimonios/",
+      "status": 301
+    },
+    {
+      "from": "/es/testimonials/",
+      "to": "/es/testimonios/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures",
+      "to": "/es/procedimientos/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/",
+      "to": "/es/procedimientos/",
+      "status": 301
+    },
+    {
+      "from": "/es/resources",
+      "to": "/es/recursos/",
+      "status": 301
+    },
+    {
+      "from": "/es/resources/",
+      "to": "/es/recursos/",
+      "status": 301
+    },
+    {
+      "from": "/es/privacy",
+      "to": "/es/privacidad/",
+      "status": 301
+    },
+    {
+      "from": "/es/privacy/",
+      "to": "/es/privacidad/",
+      "status": 301
+    },
+    {
+      "from": "/es/about",
+      "to": "/es/sobre-el-doctor/",
+      "status": 301
+    },
+    {
+      "from": "/es/about/",
+      "to": "/es/sobre-el-doctor/",
+      "status": 301
+    },
+    {
+      "from": "/es/terms",
+      "to": "/es/terminos/",
+      "status": 301
+    },
+    {
+      "from": "/es/terms/",
+      "to": "/es/terminos/",
+      "status": 301
+    },
+    {
+      "from": "/es/faq",
+      "to": "/es/preguntas-frecuentes/",
+      "status": 301
+    },
+    {
+      "from": "/es/faq/",
+      "to": "/es/preguntas-frecuentes/",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-home-1-11.webp",
+      "to": "/assets/banner-woman-shoulders.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-home-1-10.webp",
+      "to": "/assets/portrait-woman-hands-on-cheeks.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-home-1-5-2.webp",
+      "to": "/assets/back-view-white-swimsuit.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-home-1-1.webp",
+      "to": "/assets/hero-woman-floral-portrait.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-home-1-2.webp",
+      "to": "/assets/portrait-woman-hand-on-neck.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-home-1-7.webp",
+      "to": "/assets/torso-black-swimsuit.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-home-1-8.webp",
+      "to": "/assets/face-with-eyelid-markings.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-home-1-9.webp",
+      "to": "/assets/back-view-beige-bodysuit.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-treatment-1.webp",
+      "to": "/assets/nose-with-surgical-markings.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-treatment-2.webp",
+      "to": "/assets/woman-holding-orange-bodysuit.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-treatment-3.webp",
+      "to": "/assets/portrait-woman-pink-background.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/84-treatment-6.webp",
+      "to": "/assets/abdomen-with-surgical-markings.webp",
+      "status": 301
+    },
+    {
+      "from": "/assets/official-670ff4e2c5bc5e344cbcc3fa.png.webp",
+      "to": "/assets/breast-with-surgical-markings.webp",
       "status": 301
     }
   ]

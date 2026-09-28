@@ -45,13 +45,13 @@ curl -I "https://fulviocorrea.com.co/en/international-patients/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com.co/draft-travel-es"
-# Expected: 301 Location: /es/international-patients/
-curl -I "https://fulviocorrea.com.co/es/international-patients/"
+# Expected: 301 Location: /es/pacientes-internacionales/
+curl -I "https://fulviocorrea.com.co/es/pacientes-internacionales/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com.co/draft-travel-es/"
-# Expected: 301 Location: /es/international-patients/
-curl -I "https://fulviocorrea.com.co/es/international-patients/"
+# Expected: 301 Location: /es/pacientes-internacionales/
+curl -I "https://fulviocorrea.com.co/es/pacientes-internacionales/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com.co/blog"
@@ -230,13 +230,13 @@ curl -I "https://fulviocorrea.com.co/en/procedures/breast-lift-reduction/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com.co/es/procedures/mammoplasty"
-# Expected: 301 Location: /es/procedures/breast-lift-reduction/
-curl -I "https://fulviocorrea.com.co/es/procedures/breast-lift-reduction/"
+# Expected: 301 Location: /es/procedimientos/reduccion-y-levantamiento-de-senos/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/reduccion-y-levantamiento-de-senos/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com.co/es/procedures/mammoplasty/"
-# Expected: 301 Location: /es/procedures/breast-lift-reduction/
-curl -I "https://fulviocorrea.com.co/es/procedures/breast-lift-reduction/"
+# Expected: 301 Location: /es/procedimientos/reduccion-y-levantamiento-de-senos/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/reduccion-y-levantamiento-de-senos/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com.co/procedures/mammoplasty"
@@ -377,4 +377,329 @@ curl -I "https://fulviocorrea.com.co/es/blog/tiempo-recuperacion-mommy-makeover/
 curl -I "https://fulviocorrea.com.co/post/tiempo-recuperacion-mommy-makeover/"
 # Expected: 301 Location: /es/blog/tiempo-recuperacion-mommy-makeover/
 curl -I "https://fulviocorrea.com.co/es/blog/tiempo-recuperacion-mommy-makeover/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/plastic-surgery-in-colombia"
+# Expected: 301 Location: /es/blog/categoria/cirugia-plastica-en-colombia/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/cirugia-plastica-en-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/plastic-surgery-in-colombia/"
+# Expected: 301 Location: /es/blog/categoria/cirugia-plastica-en-colombia/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/cirugia-plastica-en-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/breast-lift-reduction"
+# Expected: 301 Location: /es/procedimientos/reduccion-y-levantamiento-de-senos/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/reduccion-y-levantamiento-de-senos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/breast-lift-reduction/"
+# Expected: 301 Location: /es/procedimientos/reduccion-y-levantamiento-de-senos/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/reduccion-y-levantamiento-de-senos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/breast-augmentation"
+# Expected: 301 Location: /es/procedimientos/aumento-de-senos/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/aumento-de-senos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/breast-augmentation/"
+# Expected: 301 Location: /es/procedimientos/aumento-de-senos/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/aumento-de-senos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/body-contouring"
+# Expected: 301 Location: /es/blog/categoria/contorno-corporal/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/contorno-corporal/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/body-contouring/"
+# Expected: 301 Location: /es/blog/categoria/contorno-corporal/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/contorno-corporal/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/medical-tourism"
+# Expected: 301 Location: /es/blog/categoria/turismo-medico/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/turismo-medico/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/medical-tourism/"
+# Expected: 301 Location: /es/blog/categoria/turismo-medico/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/turismo-medico/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/mommy-makeover"
+# Expected: 301 Location: /es/blog/categoria/mommy-makeover/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/mommy-makeover/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/mommy-makeover/"
+# Expected: 301 Location: /es/blog/categoria/mommy-makeover/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/mommy-makeover/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/breast-surgery"
+# Expected: 301 Location: /es/blog/categoria/cirugia-mamaria/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/cirugia-mamaria/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/breast-surgery/"
+# Expected: 301 Location: /es/blog/categoria/cirugia-mamaria/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/cirugia-mamaria/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/resources/your-consultation"
+# Expected: 301 Location: /es/recursos/tu-valoracion/
+curl -I "https://fulviocorrea.com.co/es/recursos/tu-valoracion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/resources/your-consultation/"
+# Expected: 301 Location: /es/recursos/tu-valoracion/
+curl -I "https://fulviocorrea.com.co/es/recursos/tu-valoracion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/mommy-makeover"
+# Expected: 301 Location: /es/procedimientos/mommy-makeover/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/mommy-makeover/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/mommy-makeover/"
+# Expected: 301 Location: /es/procedimientos/mommy-makeover/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/mommy-makeover/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/liposuction"
+# Expected: 301 Location: /es/procedimientos/liposuccion/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/liposuccion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/liposuction/"
+# Expected: 301 Location: /es/procedimientos/liposuccion/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/liposuccion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/rhinoplasty"
+# Expected: 301 Location: /es/procedimientos/rinoplastia/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/rinoplastia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/rhinoplasty/"
+# Expected: 301 Location: /es/procedimientos/rinoplastia/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/rinoplastia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/recovery"
+# Expected: 301 Location: /es/blog/categoria/recuperacion/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/recuperacion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/blog/category/recovery/"
+# Expected: 301 Location: /es/blog/categoria/recuperacion/
+curl -I "https://fulviocorrea.com.co/es/blog/categoria/recuperacion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/international-patients"
+# Expected: 301 Location: /es/pacientes-internacionales/
+curl -I "https://fulviocorrea.com.co/es/pacientes-internacionales/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/international-patients/"
+# Expected: 301 Location: /es/pacientes-internacionales/
+curl -I "https://fulviocorrea.com.co/es/pacientes-internacionales/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/tummy-tuck"
+# Expected: 301 Location: /es/procedimientos/abdominoplastia/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/abdominoplastia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/tummy-tuck/"
+# Expected: 301 Location: /es/procedimientos/abdominoplastia/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/abdominoplastia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/facelift"
+# Expected: 301 Location: /es/procedimientos/lifting-facial/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/lifting-facial/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/facelift/"
+# Expected: 301 Location: /es/procedimientos/lifting-facial/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/lifting-facial/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/book-consultation"
+# Expected: 301 Location: /es/agendar-valoracion/
+curl -I "https://fulviocorrea.com.co/es/agendar-valoracion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/book-consultation/"
+# Expected: 301 Location: /es/agendar-valoracion/
+curl -I "https://fulviocorrea.com.co/es/agendar-valoracion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/bbl"
+# Expected: 301 Location: /es/procedimientos/aumento-de-gluteos/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/aumento-de-gluteos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/bbl/"
+# Expected: 301 Location: /es/procedimientos/aumento-de-gluteos/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/aumento-de-gluteos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/before-after"
+# Expected: 301 Location: /es/antes-y-despues/
+curl -I "https://fulviocorrea.com.co/es/antes-y-despues/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/before-after/"
+# Expected: 301 Location: /es/antes-y-despues/
+curl -I "https://fulviocorrea.com.co/es/antes-y-despues/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/capri-clinic"
+# Expected: 301 Location: /es/clinica-capri/
+curl -I "https://fulviocorrea.com.co/es/clinica-capri/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/capri-clinic/"
+# Expected: 301 Location: /es/clinica-capri/
+curl -I "https://fulviocorrea.com.co/es/clinica-capri/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/testimonials"
+# Expected: 301 Location: /es/testimonios/
+curl -I "https://fulviocorrea.com.co/es/testimonios/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/testimonials/"
+# Expected: 301 Location: /es/testimonios/
+curl -I "https://fulviocorrea.com.co/es/testimonios/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures"
+# Expected: 301 Location: /es/procedimientos/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/procedures/"
+# Expected: 301 Location: /es/procedimientos/
+curl -I "https://fulviocorrea.com.co/es/procedimientos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/resources"
+# Expected: 301 Location: /es/recursos/
+curl -I "https://fulviocorrea.com.co/es/recursos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/resources/"
+# Expected: 301 Location: /es/recursos/
+curl -I "https://fulviocorrea.com.co/es/recursos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/privacy"
+# Expected: 301 Location: /es/privacidad/
+curl -I "https://fulviocorrea.com.co/es/privacidad/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/privacy/"
+# Expected: 301 Location: /es/privacidad/
+curl -I "https://fulviocorrea.com.co/es/privacidad/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/about"
+# Expected: 301 Location: /es/sobre-el-doctor/
+curl -I "https://fulviocorrea.com.co/es/sobre-el-doctor/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/about/"
+# Expected: 301 Location: /es/sobre-el-doctor/
+curl -I "https://fulviocorrea.com.co/es/sobre-el-doctor/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/terms"
+# Expected: 301 Location: /es/terminos/
+curl -I "https://fulviocorrea.com.co/es/terminos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/terms/"
+# Expected: 301 Location: /es/terminos/
+curl -I "https://fulviocorrea.com.co/es/terminos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/faq"
+# Expected: 301 Location: /es/preguntas-frecuentes/
+curl -I "https://fulviocorrea.com.co/es/preguntas-frecuentes/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/es/faq/"
+# Expected: 301 Location: /es/preguntas-frecuentes/
+curl -I "https://fulviocorrea.com.co/es/preguntas-frecuentes/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-home-1-11.webp"
+# Expected: 301 Location: /assets/banner-woman-shoulders.webp
+curl -I "https://fulviocorrea.com.co/assets/banner-woman-shoulders.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-home-1-10.webp"
+# Expected: 301 Location: /assets/portrait-woman-hands-on-cheeks.webp
+curl -I "https://fulviocorrea.com.co/assets/portrait-woman-hands-on-cheeks.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-home-1-5-2.webp"
+# Expected: 301 Location: /assets/back-view-white-swimsuit.webp
+curl -I "https://fulviocorrea.com.co/assets/back-view-white-swimsuit.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-home-1-1.webp"
+# Expected: 301 Location: /assets/hero-woman-floral-portrait.webp
+curl -I "https://fulviocorrea.com.co/assets/hero-woman-floral-portrait.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-home-1-2.webp"
+# Expected: 301 Location: /assets/portrait-woman-hand-on-neck.webp
+curl -I "https://fulviocorrea.com.co/assets/portrait-woman-hand-on-neck.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-home-1-7.webp"
+# Expected: 301 Location: /assets/torso-black-swimsuit.webp
+curl -I "https://fulviocorrea.com.co/assets/torso-black-swimsuit.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-home-1-8.webp"
+# Expected: 301 Location: /assets/face-with-eyelid-markings.webp
+curl -I "https://fulviocorrea.com.co/assets/face-with-eyelid-markings.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-home-1-9.webp"
+# Expected: 301 Location: /assets/back-view-beige-bodysuit.webp
+curl -I "https://fulviocorrea.com.co/assets/back-view-beige-bodysuit.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-treatment-1.webp"
+# Expected: 301 Location: /assets/nose-with-surgical-markings.webp
+curl -I "https://fulviocorrea.com.co/assets/nose-with-surgical-markings.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-treatment-2.webp"
+# Expected: 301 Location: /assets/woman-holding-orange-bodysuit.webp
+curl -I "https://fulviocorrea.com.co/assets/woman-holding-orange-bodysuit.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-treatment-3.webp"
+# Expected: 301 Location: /assets/portrait-woman-pink-background.webp
+curl -I "https://fulviocorrea.com.co/assets/portrait-woman-pink-background.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/84-treatment-6.webp"
+# Expected: 301 Location: /assets/abdomen-with-surgical-markings.webp
+curl -I "https://fulviocorrea.com.co/assets/abdomen-with-surgical-markings.webp"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com.co/assets/official-670ff4e2c5bc5e344cbcc3fa.png.webp"
+# Expected: 301 Location: /assets/breast-with-surgical-markings.webp
+curl -I "https://fulviocorrea.com.co/assets/breast-with-surgical-markings.webp"
 # Expected: 200
