@@ -100,7 +100,7 @@ export function localizeEsOutput(dist = 'dist') {
   }
 }
 
-// English public URLs live at the site root. /en/about/ is still the file route; canonicals use /about/.
+// English public URLs live at the site root. /en/about/ is still a build route; the served URL is /about/.
 export function publicPath(route) {
   if (typeof route !== 'string') return route;
   if (route === '/en' || route === '/en/') return '/';
@@ -108,16 +108,19 @@ export function publicPath(route) {
   return route;
 }
 
-// Absolute self-URLs only. Relative /en/ links and emails are left alone.
+// Absolute self-URLs and relative /en/ links become root English paths.
+// pages.json keeps its /en/ build routes (passed in extras) so verifiers can still find source files.
 export function publishEnglishAtRoot(dist = 'dist', origin = 'https://fulviocorrea.com', extras = []) {
   const needle = origin + '/en/';
   const repl = origin + '/';
+  const skipRelative = new Set(extras.map(f => path.resolve(f)));
   const files = [...walk(dist).filter(f => /\.(html|xml|txt|json|webmanifest|js|css)$/.test(f)).map(f => path.join(dist, f)), ...extras];
   for (const file of files) {
     if (!fs.existsSync(file)) continue;
     const raw = fs.readFileSync(file, 'utf8');
-    if (!raw.includes(needle)) continue;
-    fs.writeFileSync(file, raw.split(needle).join(repl));
+    let next = raw.split(needle).join(repl);
+    if (!skipRelative.has(path.resolve(file))) next = next.replaceAll('"/en/', '"/').replaceAll("'/en/", "'/").replaceAll('"/en"', '"/"').replaceAll("'/en'", "'/'");
+    if (next !== raw) fs.writeFileSync(file, next);
   }
 }
 

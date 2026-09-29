@@ -1,7 +1,7 @@
 {
   "mode": "production",
   "pages": 99,
-  "bytes": 63853,
+  "bytes": 59619,
   "errors": [],
   "warnings": [
     "/en/procedures/: 123 words (<600; content required before launch).",
@@ -21,9 +21,10 @@
     "/es/privacidad/: 212 words (<600; content required before launch).",
     "/es/terminos/: 223 words (<600; content required before launch).",
     "/es/sms/: 178 words (<600; content required before launch).",
-    "/en/capri-clinic/: 565 words (<600; content required before launch).",
-    "/en/contact/: 219 words (<600; content required before launch).",
-    "/es/contacto/: 238 words (<600; content required before launch).",
+    "/en/capri-clinic/: 559 words (<600; content required before launch).",
+    "/es/clinica-capri/: 599 words (<600; content required before launch).",
+    "/en/contact/: 210 words (<600; content required before launch).",
+    "/es/contacto/: 229 words (<600; content required before launch).",
     "/en/testimonials/: 98 words (<600; content required before launch).",
     "/en/testimonials/thaily-amezcua/: 120 words (<600; content required before launch).",
     "/es/testimonios/: 103 words (<600; content required before launch).",
