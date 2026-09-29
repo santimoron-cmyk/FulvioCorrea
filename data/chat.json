@@ -1,0 +1,90 @@
+{
+  "_note": "Chat provider for the floating 'Talk to Sofía / Habla con Sofía' button. \"native\" = in-page Sofía widget (contact-widget.js + dialog). \"ghl\" = GoHighLevel/LeadConnector chat widget, loaded only on the first click (ghl-chat.js). Revert the trial by setting provider to \"native\". Widget colors/texts are set in the GHL dashboard; ghl-chat.js restyles the widget like the native Sofía dialog (palette variables + a sheet in its open shadow roots) and overrides the agent (Sofía, \"S\" avatar, name only; an optional `subtitle` of ours would show under the name) and every text below per page language (`texts.shared` + `texts.en|es`; `fields` = form labels by GHL fieldKey; `labels` = GHL built-in labels via its documented localizeWidget(labels, locale); `options` = display labels for the procedure picklist, whose submitted values stay the CRM values). See CONTACT-WIDGET.md.",
+  "provider": "ghl",
+  "ghl": {
+    "loader": "https://widgets.leadconnectorhq.com/loader.js",
+    "resourcesUrl": "https://widgets.leadconnectorhq.com/chat-widget/loader.js",
+    "widgetId": "6a48065dc4ca16b4ab897879"
+  },
+  "texts": {
+    "shared": {
+      "promptAvatar": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%23d4b478'/%3E%3Ctext x='40' y='54' font-family='Georgia,serif' font-size='44' text-anchor='middle' fill='%23211320'%3ES%3C/text%3E%3C/svg%3E",
+      "promptAvatarAltText": "Sofía",
+      "isPromptAvatarImageOptimize": false
+    },
+    "en": {
+      "heading": "Sofía",
+      "allInOneInitialMsg": "Hello! Welcome to Dr. Fulvio Correa’s practice. How can we help you? Choose where you’d like to start your conversation with Sofía.",
+      "subHeading": "Share your name and phone number and Sofía will reply right away.",
+      "contactFormIntroMessage": "Share your name and phone number to start chatting with Sofía right now.",
+      "contactFormSystemMessage": "Share your name and phone number to start chatting with Sofía right now.",
+      "promptMsg": "Hello! Welcome to Dr. Fulvio Correa’s practice. How can we help you?",
+      "revisitPromptMsg": "Welcome back! How can we help you today?",
+      "legalMsg": "By submitting, you agree to receive SMS or emails through the channel you provided. Message and data rates may apply.",
+      "sendLabel": "Send",
+      "thankYouMsg": "Thank you!",
+      "successMsg": "Got it! Sofía will reply right away through the channel you provided.",
+      "prefilledMessageText": "Hello! I would like more information.",
+      "liveChatIntroMsg": "Sofía is here. Write your message and she’ll reply right away.",
+      "liveChatUserInactiveMsg": "No one is available right now. Please leave your contact details and we will get back to you shortly.",
+      "liveChatVisitorInactiveMsg": "The chat was closed due to inactivity.",
+      "liveChatAckMsg": "Your chat has ended.",
+      "liveChatEndMsg": "To start a new chat,",
+      "liveChatFeedbackMsg": "Please rate your experience.",
+      "liveChatFeedbackNote": "Thank you for taking the time.",
+      "fields": {
+        "contact.name": "Your name",
+        "contact.phone": "Phone number",
+        "contact.which_procedure_are_you_interested_in": "Procedure of interest"
+      },
+      "options": {
+        "Combining more than one": "More than one procedure"
+      }
+    },
+    "es": {
+      "heading": "Sofía",
+      "allInOneInitialMsg": "¡Hola! Bienvenido al consultorio del Dr. Fulvio Correa. ¿Cómo podemos ayudarte? Elige dónde iniciar tu conversación con Sofía.",
+      "subHeading": "Déjanos tu nombre y teléfono y Sofía te responde enseguida.",
+      "contactFormIntroMessage": "Déjanos tu nombre y teléfono para empezar a conversar con Sofía ahora mismo.",
+      "contactFormSystemMessage": "Déjanos tu nombre y teléfono para empezar a conversar con Sofía ahora mismo.",
+      "promptMsg": "¡Hola! Bienvenido al consultorio del Dr. Fulvio Correa. ¿Cómo podemos ayudarte?",
+      "revisitPromptMsg": "¡Bienvenido de nuevo! ¿Cómo podemos ayudarte hoy?",
+      "legalMsg": "Al enviar, aceptas recibir SMS o correos electrónicos por el canal que indicaste. Pueden aplicar tarifas de mensajes y datos.",
+      "sendLabel": "Enviar",
+      "thankYouMsg": "¡Gracias!",
+      "successMsg": "¡Listo! Sofía te responde enseguida por el canal que indicaste.",
+      "prefilledMessageText": "¡Hola! Quiero más información.",
+      "liveChatIntroMsg": "Sofía ya está contigo. Escribe tu mensaje y te responde enseguida.",
+      "liveChatUserInactiveMsg": "En este momento no hay nadie disponible. Déjanos tus datos de contacto y te responderemos en breve.",
+      "liveChatVisitorInactiveMsg": "El chat se cerró por inactividad.",
+      "liveChatAckMsg": "Tu chat ha finalizado.",
+      "liveChatEndMsg": "Para iniciar un nuevo chat,",
+      "liveChatFeedbackMsg": "Califica tu experiencia, por favor.",
+      "liveChatFeedbackNote": "Gracias por tu tiempo.",
+      "fields": {
+        "contact.name": "Tu nombre",
+        "contact.phone": "Número de teléfono",
+        "contact.which_procedure_are_you_interested_in": "Procedimiento de interés"
+      },
+      "options": {
+        "Mommy Makeover": "Mommy Makeover",
+        "Liposuction": "Liposucción",
+        "Breast Surgery": "Cirugía de senos",
+        "Combining more than one": "Más de un procedimiento",
+        "Facelift": "Lifting facial",
+        "Rhinoplasty": "Rinoplastia",
+        "Other": "Otro"
+      },
+      "labels": {
+        "chatViaSmsEmail": "Chatear por SMS o correo",
+        "chatWithAnAgent": "Chatear en vivo",
+        "chatWithWhatsapp": "Chatear por WhatsApp",
+        "chatWithFacebook": "Chatear por Facebook",
+        "chatWithInstagram": "Chatear por Instagram",
+        "chat_with_us": "Escríbenos",
+        "phone_verification_failed": "No pudimos verificar tu número de teléfono. Revísalo e inténtalo de nuevo.",
+        "security_check_required": "Se requiere una verificación de seguridad. Inténtalo de nuevo."
+      }
+    }
+  }
+}

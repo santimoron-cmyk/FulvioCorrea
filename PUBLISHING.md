@@ -75,3 +75,5 @@ Advertencias no bloqueantes: artículos con < 600 palabras o con < 2 artículos 
 ## Reglas editoriales
 
 No inventar estadísticas, acreditaciones ni afirmaciones del tipo "board-certified". Las imágenes de stock deben tener licencia verificada (registrar en `data/blog-image-sources.json` y `BLOG-IMAGE-SOURCES.md`). No usar fotos de pacientes sin autorización.
+
+Al mencionar a Sofía (por ejemplo en el párrafo de cierre), decir solo «Sofía»: nunca «asistente virtual» / «virtual assistant» (p. ej. «escríbele a Sofía.» / «message Sofía.»). `npm test` falla si alguna página generada lo contiene.

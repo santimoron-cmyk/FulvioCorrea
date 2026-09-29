@@ -28,11 +28,13 @@ await import('./render.mjs');
 await import('./enhance.mjs');
 await import('./audit.mjs');
 fs.writeFileSync('dist/style.css',(fs.readFileSync('style.css','utf8')+'\n'+fs.readFileSync('theme-luxury.css','utf8')).replace(/\/\*[\s\S]*?\*\//g,'').replace(/\s*([{}:;,])\s*/g,'$1').trim());
-for(const [file,sources] of Object.entries({'app.js':['app.js'],'contact.js':['phone-country.js','contact-widget.js'],'thank-you.js':['thank-you.js']})){
+// contact.js is the chat-provider bundle (data/chat.json): the native Sofía widget or the lazy GHL loader.
+const chatProvider=JSON.parse(fs.readFileSync('data/chat.json','utf8')).provider;
+for(const [file,sources] of Object.entries({'app.js':['app.js'],'contact.js':chatProvider==='ghl'?['ghl-chat.js']:['phone-country.js','contact-widget.js'],'thank-you.js':['thank-you.js']})){
  const compact=await minify(sources.map(f=>fs.readFileSync(f,'utf8')).join('\n'),{compress:true,mangle:true,format:{comments:false}});fs.writeFileSync('dist/'+file,compact.code);
 }
 // Widget code is included only with its dialog; confirmation code only on confirmation pages.
-for(const file of fs.readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.html'))){let h=fs.readFileSync('dist/'+file,'utf8');const scripts=(h.includes('id="contact-dialog"')?'<script defer src="/contact.js"></script>':'')+(h.includes('id="thanks-confirmation"')?'<script defer src="/thank-you.js"></script>':'');fs.writeFileSync('dist/'+file,h.replace('</body>',()=>scripts+'</body>'));}
+for(const file of fs.readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.html'))){let h=fs.readFileSync('dist/'+file,'utf8');const scripts=(h.includes('id="contact-open"')?'<script defer src="/contact.js"></script>':'')+(h.includes('id="thanks-confirmation"')?'<script defer src="/thank-you.js"></script>':'');fs.writeFileSync('dist/'+file,h.replace('</body>',()=>scripts+'</body>'));}
 decorateDistImages();
 pruneUnreferencedAssets();
 // The former browser-language redirect is no longer used by any page.

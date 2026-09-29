@@ -13,7 +13,8 @@ assert.ok(live.hasCases);
 for(const token of ['fixture-before.webp','fixture-after.webp','data-result-slider','Approved explanation','Additional approved detail','Recorded follow-up interval'])assert.ok(live.gallery.includes(token),token);
 assert.doesNotMatch(live.gallery,/result-demo/);
 process.env.SITE_ENV='preview';
-assert.match(resultsViews('es',{authorized:false,items:[]},image).gallery,/data-result-slider/);
+assert.doesNotMatch(resultsViews('es',{authorized:false,items:[]},image).gallery,/data-result-slider|result-demo/,'preview content matches production');
+process.env.RESULTS_DEMO='1';assert.match(resultsViews('es',{authorized:false,items:[]},image).gallery,/result-demo/);delete process.env.RESULTS_DEMO;
 if(saved===undefined)delete process.env.SITE_ENV;else process.env.SITE_ENV=saved;
 const pages=JSON.parse(fs.readFileSync('pages.json'));
 for(const page of pages){const html=fs.readFileSync(page.file,'utf8');
@@ -25,4 +26,4 @@ for(const page of pages){const html=fs.readFileSync(page.file,'utf8');
 for(const lang of ['en','es']){const hub=fs.readFileSync('dist'+localizePath(`/${lang}/procedures/`)+'index.html','utf8').split('<main id="main">')[1].split('</main>')[0];
  for(const file of fs.readdirSync('content/procedures').filter(f=>f.endsWith('.'+lang+'.json'))){const p=JSON.parse(fs.readFileSync('content/procedures/'+file));if(p.offeredConfirmed)assert.ok(hub.includes(`href="${procedureRoute(lang,p.slug)}"`),file+' missing from hub');}
 }
-console.log('PASS: case authorization, before/after images and clinical captions, preview-only demonstration, Sofia CTA routing, private noindex forms, complete bilingual procedure hubs.');
+console.log('PASS: case authorization, before/after images and clinical captions, preview matches production (demo only with RESULTS_DEMO=1), Sofia CTA routing, private noindex forms, complete bilingual procedure hubs.');
