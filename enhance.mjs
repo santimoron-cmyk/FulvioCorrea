@@ -1,7 +1,7 @@
 import {physicianNode,membershipView} from './practice-view.mjs';
 import {seo} from './seo-copy.mjs';
 import {resultsViews} from './results-view.mjs';
-import {contactWidget} from './contact-widget.mjs';
+import {contactWidget,contactLauncher} from './contact-widget.mjs';
 import fs from 'node:fs';
 import {imageMeta} from './assets.mjs';
 import {robotsTxt} from './site-env.mjs';
@@ -59,7 +59,9 @@ for(const p of manifest.values()){
  // Distinct, full-width section surfaces; nested content keeps its own styling.
  const homeSurfaces=['photo','black','charcoal','plum','black','plum','charcoal','black','plum','charcoal','black','plum','charcoal','photo'];
  html=html.replace(/(<main id="main">)([\s\S]*?)(<\/main>)/,(all,start,body,end)=>{let depth=0,index=0;return start+body.replace(/<section\b[^>]*>|<\/section>/g,tag=>{if(tag.startsWith('</')){depth--;return tag;}const top=depth++===0;if(!top)return tag;const slot=index++;const surface=p.route===`/${l}/`?homeSurfaces[slot]||'black':/class="[^"]*(?:closing|ads-hero)/.test(tag)?'photo':/result-philosophy/.test(tag)?'plum':['charcoal','black','plum'][slot%3];return tag.replace('<section',`<section data-surface="${surface}"`);})+end;});
- html=html.replace('</body>',()=>contactWidget(l,procedures,contactChannels)+'</body>');
+ // Chat provider (data/chat.json): the GHL trial ships only the launcher; its loader URL/ID travel as data attributes.
+ const chat=read('data/chat.json'),ghl=chat.provider==='ghl'?chat.ghl:null;
+ html=html.replace('</body>',()=>(ghl?contactLauncher(l,`data-chat="ghl" data-src="${ghl.loader}" data-resources-url="${ghl.resourcesUrl}" data-widget-id="${ghl.widgetId}" data-texts="${esc(JSON.stringify({...chat.texts.shared,...chat.texts[l]}))}"`):contactWidget(l,procedures,contactChannels))+'</body>');
  write(p.file,html);
 }
 // Update language-entry documents from the final English pages, never stale preview text.

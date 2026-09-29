@@ -19,15 +19,23 @@ assert.deepEqual(editorialAuthor({...practice,authorApproved:true},'en',origin),
 assert.equal(editorialAuthor({...practice,authorApproved:false},'en',origin)['@type'],'Organization');
 vm.runInNewContext(fs.readFileSync('contact-widget.js','utf8'),{});
 vm.runInNewContext(fs.readFileSync('thank-you.js','utf8'),{});
+const ghlChat=JSON.parse(fs.readFileSync('data/chat.json','utf8')).provider==='ghl';vm.runInNewContext(fs.readFileSync('ghl-chat.js','utf8'),{document:{getElementById:()=>null}});
 for(const page of JSON.parse(fs.readFileSync('pages.json'))){const h=fs.readFileSync(page.file,'utf8');
  assert.equal((h.match(/<\/body>/g)||[]).length,1,page.route+' corrupt body insertion');
- assert.match(h,/<\/dialog><script defer src="\/contact.js"><\/script>/,page.route+' widget script must be outside form attributes');
- assert.equal(h.includes('src="/contact.js"'),h.includes('id="contact-dialog"'));
+ // Chat provider (data/chat.json): native = launcher + Sofía dialog; ghl = launcher only (GHL loads on first click).
+ assert.match(h,ghlChat?/<\/button><\/div><script defer src="\/contact.js"><\/script>/:/<\/dialog><script defer src="\/contact.js"><\/script>/,page.route+' widget script must be outside form attributes');
+ assert.equal(h.includes('src="/contact.js"'),h.includes('id="contact-open"'));assert.equal(h.includes('id="contact-dialog"'),!ghlChat&&h.includes('id="contact-open"'));
  assert.equal(h.includes('src="/thank-you.js"'),h.includes('id="thanks-confirmation"'));
+ if(ghlChat&&h.includes('id="contact-open"')){const t=JSON.parse(h.match(/data-texts="([^"]*)"/)[1].replaceAll('&quot;','"').replaceAll('&amp;','&').replaceAll('&#39;',"'").replaceAll('&lt;','<').replaceAll('&gt;','>'));
+  // GHL texts follow the page language, name Sofía (never the dashboard's Eileen) and use the S avatar, not a photo.
+  assert.equal(t.heading,'Sofía',page.route);assert.equal(t.subtitle,page.lang==='es'?'Sofía, nuestra asistente virtual':'Sofía, our virtual assistant',page.route);assert.match(t.promptAvatar,/^data:image\/svg\+xml/);assert.doesNotMatch(JSON.stringify(t),/Eileen|Enter your question|Ingresa una pregunta/i,page.route);
+  assert.match(t.legalMsg,page.lang==='es'?/SMS.*correos.*tarifas/:/SMS.*emails.*rates/,page.route+' consent meaning');assert.equal(!!t.labels,page.lang==='es');}
  if(page.route===`/${page.lang}/`||page.route===localizePath(`/${page.lang}/about/`)||page.route===localizePath(`/${page.lang}/international-patients/`)||page.procedure&&!page.ads||/\/blog\/[^/]+\/$/.test(page.route)){
   const main=h.split('<main id="main">')[1].split('</main>')[0];for(const s of practice.societies)assert.ok(main.includes('href="'+s.source+'"'),page.route+' missing visible membership');
  }
 }
+// The launcher is visible on load everywhere, including home (no parked/hidden state).
+assert.doesNotMatch(fs.readFileSync('dist/app.js','utf8')+fs.readFileSync('dist/style.css','utf8'),/parked/);
 // The new verifier must actually reject missing structured membership and visible proof links.
 const file='dist/en/about/index.html',original=fs.readFileSync(file,'utf8');
 try{
@@ -35,4 +43,4 @@ try{
  fs.writeFileSync(file,missing);let result=spawnSync(process.execPath,['verify.mjs'],{encoding:'utf8'});assert.notEqual(result.status,0);assert.match(result.stderr,/physician missing memberOf/);
  fs.writeFileSync(file,original.replaceAll('href="'+practice.societies[0].source+'"','href="#main"'));result=spawnSync(process.execPath,['verify.mjs'],{encoding:'utf8'});assert.notEqual(result.status,0);assert.match(result.stderr,/about missing visible membership/);
 }finally{fs.writeFileSync(file,original);const result=spawnSync(process.execPath,['verify.mjs'],{encoding:'utf8'});assert.equal(result.status,0,result.stderr);process.stdout.write(result.stdout);}
-console.log('PASS: society roles/empty data, unchanged sameAs, both author approval states, visible membership, conditional scripts, DOM guards and negative verifier tests.');
+console.log('PASS: society roles/empty data, unchanged sameAs, both author approval states, visible membership, conditional scripts, per-language chat texts, visible launcher, DOM guards and negative verifier tests.');
