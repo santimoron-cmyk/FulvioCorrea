@@ -154,7 +154,7 @@ La ASPS recomienda dejar estos acuerdos por escrito y los CDC sugieren llevar co
 
 El Dr. Fulvio Correa es cirujano plástico en Cartagena, Colombia, y miembro de la SCCP. Puedes conocer más sobre la [liposucción](/es/procedimientos/liposuccion/), el [aumento de senos](/es/procedimientos/aumento-de-senos/) y el [mommy makeover](/es/procedimientos/mommy-makeover/), o leer la [guía de viaje para pacientes internacionales](/es/pacientes-internacionales/). Si quieres una valoración presencial o virtual, puedes [escribirle al equipo por WhatsApp](https://wa.me/16506656265?text=Hola%2C%20le%C3%AD%20el%20informe%20de%20turismo%20m%C3%A9dico%20en%20Cartagena%20y%20quiero%20solicitar%20una%20valoraci%C3%B3n).
 
-<p><em>Read in English: <a href="https://fulviocorrea.com.co/post/plastic-surgery-medical-tourism-cartagena-colombia" data-language="en" hreflang="en" lang="en">Plastic Surgery & Medical Tourism in Cartagena, Colombia: 2026 Report</a>.</em></p>
+<p><em>Read in English: <a href="https://fulviocorrea.com/blog/plastic-surgery-medical-tourism-cartagena-colombia/" data-language="en" hreflang="en" lang="en">Plastic Surgery & Medical Tourism in Cartagena, Colombia: 2026 Report</a>.</em></p>
 
 ## Metodología y fuentes
 
@@ -172,7 +172,7 @@ Las gráficas fueron elaboradas por el equipo editorial del Dr. Fulvio Correa co
 
 Puedes reutilizar las gráficas y cifras citando la fuente con un enlace a esta página:
 
-> Dr. Fulvio Correa, Cirugía Plástica (2026). *Cirugía plástica y turismo médico en Cartagena, Colombia: informe 2026*. https://fulviocorrea.com.co/post/cirugia-plastica-turismo-medico-cartagena-colombia
+> Dr. Fulvio Correa, Cirugía Plástica (2026). *Cirugía plástica y turismo médico en Cartagena, Colombia: informe 2026*. https://fulviocorrea.com/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/
 
 ## Registro de actualizaciones
 

@@ -44,12 +44,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/en/procedures/bbl/",
+        "url": "https://fulviocorrea.com/procedures/bbl/",
         "name": "Brazilian Butt Lift (BBL) in Cartagena",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -61,7 +61,7 @@
         "@type": "MedicalProcedure",
         "name": "Brazilian butt lift",
         "description": "A Brazilian butt lift (BBL) is gluteal fat grafting: fat is removed by liposuction from areas such as the abdomen, flanks or back, purified, and injected into the buttocks and hips to change their shape and projection. No implant is used. ASPS explains that surgeons often harvest up to three times more fat than they finally inject, and that on average about 60–80% of the transferred fat survives long term.",
-        "url": "https://fulviocorrea.com.co/en/procedures/bbl/"
+        "url": "https://fulviocorrea.com/procedures/bbl/"
       },
       {
         "@context": "https://schema.org",
@@ -159,7 +159,7 @@
         "@type": "VideoObject",
         "name": "Breast augmentation in Cartagena with Dr. Fulvio Correa",
         "description": "Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP), explains breast augmentation, breast lift and breast reduction in Cartagena, Colombia. He describes plans for size, projection or heaviness, and how the team helps patients who travel with questions, the trip and a stay in the recovery house. Results are individual and depend on a consultation.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/mammoplasty-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-05T02:18:04+00:00",
         "duration": "PT141S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/5a704bd1570ab497567659041b09d526a78e49bb.mp4",
@@ -168,12 +168,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/en/procedures/breast-augmentation/",
+        "url": "https://fulviocorrea.com/procedures/breast-augmentation/",
         "name": "Breast Augmentation Cartagena, Colombia",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -185,7 +185,7 @@
         "@type": "MedicalProcedure",
         "name": "Breast augmentation",
         "description": "Breast augmentation in Colombia—augmentation mammoplasty, or a \"boob job\" in everyday language—is surgery that increases breast size or restores volume by placing a breast implant either behind the breast tissue or behind the chest muscle. Mayo Clinic notes that people choose it to enlarge small breasts, balance asymmetry or restore volume lost after pregnancy or weight loss.",
-        "url": "https://fulviocorrea.com.co/en/procedures/breast-augmentation/"
+        "url": "https://fulviocorrea.com/procedures/breast-augmentation/"
       },
       {
         "@context": "https://schema.org",
@@ -283,7 +283,7 @@
         "@type": "VideoObject",
         "name": "Breast reduction & lift in Cartagena with Dr. Fulvio Correa",
         "description": "Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP), explains breast augmentation, breast lift and breast reduction in Cartagena, Colombia. He describes plans for size, projection or heaviness, and how the team helps patients who travel with questions, the trip and a stay in the recovery house. Results are individual and depend on a consultation.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/mammoplasty-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-05T02:18:04+00:00",
         "duration": "PT141S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/5a704bd1570ab497567659041b09d526a78e49bb.mp4",
@@ -292,12 +292,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/en/procedures/breast-lift-reduction/",
+        "url": "https://fulviocorrea.com/procedures/breast-lift-reduction/",
         "name": "Breast Lift & Reduction in Cartagena",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -309,7 +309,7 @@
         "@type": "MedicalProcedure",
         "name": "Breast reduction & lift",
         "description": "This page covers two related operations. A breast lift (mastopexy) removes excess skin and reshapes breast tissue so that the breasts and nipples sit higher; it does not significantly change size. A breast reduction (reduction mammoplasty) removes fat, glandular tissue and skin to make heavy breasts smaller and lighter, and it lifts them in the process. Both are common reasons U.S. and Colombian patients look for breast lift in Colombia or breast reduction in Cartagena.",
-        "url": "https://fulviocorrea.com.co/en/procedures/breast-lift-reduction/"
+        "url": "https://fulviocorrea.com/procedures/breast-lift-reduction/"
       },
       {
         "@context": "https://schema.org",
@@ -407,7 +407,7 @@
         "@type": "VideoObject",
         "name": "Facelift in Cartagena with Dr. Fulvio Correa",
         "description": "Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP), explains facelift surgery in Cartagena, Colombia. The video describes moving the SMAS layer as well as the skin, and adding volume where the face has lost it. It also shows how the team helps travelers with questions, the trip and the recovery house. The plan is confirmed in consultation.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/facelift-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/facelift-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-05T02:18:56+00:00",
         "duration": "PT124S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/8e94fb88b6a420579e28d466715d936f260d954a.mp4",
@@ -416,12 +416,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/en/procedures/facelift/",
+        "url": "https://fulviocorrea.com/procedures/facelift/",
         "name": "Facelift in Cartagena, Colombia",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -433,7 +433,7 @@
         "@type": "MedicalProcedure",
         "name": "Facelift",
         "description": "A facelift, or rhytidectomy, is surgery that lifts and tightens the deeper tissues of the face and removes excess skin to reduce sagging of the lower face and jawline. It is often combined with a neck lift to address loose skin and fat under the chin. Mayo Clinic is clear about its limits: a facelift does not remove fine lines and wrinkles or sun damage, and it does not stop the aging process.",
-        "url": "https://fulviocorrea.com.co/en/procedures/facelift/"
+        "url": "https://fulviocorrea.com/procedures/facelift/"
       },
       {
         "@context": "https://schema.org",
@@ -531,23 +531,23 @@
         "@type": "VideoObject",
         "name": "Liposuction with Dr. Fulvio Correa (video)",
         "description": "Liposuction video from Dr. Fulvio Correa’s practice.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/liposuction-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/liposuction-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-05T02:19:50.000Z",
         "duration": "PT2M4S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/2dc7351288bbc2cd36511213629a777bcec6bae4.mp4",
         "isPartOf": {
-          "@id": "https://fulviocorrea.com.co/en/procedures/liposuction/"
+          "@id": "https://fulviocorrea.com/procedures/liposuction/"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/en/procedures/liposuction/",
+        "url": "https://fulviocorrea.com/procedures/liposuction/",
         "name": "Liposuction in Cartagena, Colombia",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -559,7 +559,7 @@
         "@type": "MedicalProcedure",
         "name": "Liposuction",
         "description": "Liposuction in Cartagena is body-contouring surgery that removes stubborn fat deposits through small incisions using a thin tube (cannula) connected to suction. Mayo Clinic describes it as a way to reshape areas such as the abdomen, flanks, back, arms, thighs or under the chin that have not responded to diet and exercise. It is not a weight-loss method: it works best in people who are close to a stable weight and have localized fat.",
-        "url": "https://fulviocorrea.com.co/en/procedures/liposuction/"
+        "url": "https://fulviocorrea.com/procedures/liposuction/"
       },
       {
         "@context": "https://schema.org",
@@ -657,7 +657,7 @@
         "@type": "VideoObject",
         "name": "Mommy Makeover in Cartagena with Dr. Fulvio Correa",
         "description": "Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP), introduces mommy makeover surgery in Cartagena, Colombia for women who want to address changes after pregnancy. The video points to the team’s help for patients traveling from abroad. Which procedures are combined is decided only after an individual consultation.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mommy-makeover-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/mommy-makeover-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-08T20:19:47+00:00",
         "duration": "PT32S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/4fb54b504958465f5f6595590fa15312fbbb50d3.mp4",
@@ -666,12 +666,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/en/procedures/mommy-makeover/",
+        "url": "https://fulviocorrea.com/procedures/mommy-makeover/",
         "name": "Mommy Makeover in Cartagena, Colombia",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -683,7 +683,7 @@
         "@type": "MedicalProcedure",
         "name": "Mommy Makeover",
         "description": "A mommy makeover in Colombia is a personalized combination of body procedures—most often a tummy tuck, breast surgery (lift, implants, reduction or a mix) and liposuction—planned to address the changes that pregnancy, childbirth and breastfeeding leave behind. The American Society of Plastic Surgeons (ASPS) notes that it is typically performed as a single-stage operation, with the number of procedures limited to what is safe for each patient.",
-        "url": "https://fulviocorrea.com.co/en/procedures/mommy-makeover/"
+        "url": "https://fulviocorrea.com/procedures/mommy-makeover/"
       },
       {
         "@context": "https://schema.org",
@@ -789,7 +789,7 @@
         "@type": "VideoObject",
         "name": "Rhinoplasty in Cartagena with Dr. Fulvio Correa",
         "description": "Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP), explains rhinoplasty in Cartagena, Colombia. He describes the nose as a central facial feature, so a small change can affect the whole face, and why the surgeon should understand the goal first. The video also covers help for patients traveling from other countries: questions, the trip and the recovery house.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/rhinoplasty-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/rhinoplasty-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-05T02:20:14+00:00",
         "duration": "PT76S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/b1f864765ffbaa4b84bb83b6025da33231fb6f9e.mp4",
@@ -798,12 +798,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/en/procedures/rhinoplasty/",
+        "url": "https://fulviocorrea.com/procedures/rhinoplasty/",
         "name": "Rhinoplasty in Cartagena, Colombia",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -815,7 +815,7 @@
         "@type": "MedicalProcedure",
         "name": "Rhinoplasty",
         "description": "Rhinoplasty is surgery that changes the shape of the nose, its function, or both. It can modify the bone, the cartilage and the skin: narrowing a wide bridge, reducing a hump, refining or supporting the tip, or correcting a nose that is crooked after an injury. When the septum—the wall that divides the nostrils—is straightened in the same operation to improve airflow, it is often called septorhinoplasty.",
-        "url": "https://fulviocorrea.com.co/en/procedures/rhinoplasty/"
+        "url": "https://fulviocorrea.com/procedures/rhinoplasty/"
       },
       {
         "@context": "https://schema.org",
@@ -911,12 +911,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/en/procedures/tummy-tuck/",
+        "url": "https://fulviocorrea.com/procedures/tummy-tuck/",
         "name": "Tummy Tuck in Cartagena, Colombia",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -928,7 +928,7 @@
         "@type": "MedicalProcedure",
         "name": "Tummy tuck",
         "description": "A tummy tuck in Colombia—medically, an abdominoplasty—is surgery that removes loose skin and fat from the lower abdomen and tightens the connective tissue (fascia) over the abdominal muscles. When pregnancy has separated those muscles, a condition called rectus diastasis, the repair narrows the waist and flattens the bulge that exercise alone rarely fixes. Mayo Clinic adds that liposuction is often done at the same time to contour the whole abdominal area.",
-        "url": "https://fulviocorrea.com.co/en/procedures/tummy-tuck/"
+        "url": "https://fulviocorrea.com/procedures/tummy-tuck/"
       },
       {
         "@context": "https://schema.org",
@@ -1256,12 +1256,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/es/procedures/bbl/",
+        "url": "https://fulviocorrea.com/es/procedures/bbl/",
         "name": "Lipotransferencia glútea (BBL) Cartagena",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -1273,7 +1273,7 @@
         "@type": "MedicalProcedure",
         "name": "Aumento glúteo con grasa",
         "description": "La lipotransferencia glútea, conocida como BBL (Brazilian butt lift) o aumento de glúteos con grasa propia, consiste en extraer grasa con liposucción de zonas como abdomen, flancos o espalda, procesarla e inyectarla en glúteos y caderas para mejorar su forma y proyección, sin implantes. La ASPS explica que suele extraerse hasta tres veces más grasa de la que finalmente se inyecta y que, en promedio, sobrevive entre el 60 % y el 80 % de la grasa transferida.",
-        "url": "https://fulviocorrea.com.co/es/procedures/bbl/"
+        "url": "https://fulviocorrea.com/es/procedures/bbl/"
       },
       {
         "@context": "https://schema.org",
@@ -1371,7 +1371,7 @@
         "@type": "VideoObject",
         "name": "Aumento de senos en Cartagena con el Dr. Fulvio Correa",
         "description": "El Dr. Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP), explica el aumento de senos, el levantamiento y la reducción mamaria en Cartagena, Colombia. Describe planes según el tamaño, la proyección o el peso, y cómo el equipo acompaña a quien viaja con las preguntas, el viaje y la casa de recuperación. Los resultados son individuales y dependen de la valoración.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/mammoplasty-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-05T02:18:04+00:00",
         "duration": "PT141S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/5a704bd1570ab497567659041b09d526a78e49bb.mp4",
@@ -1380,12 +1380,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/es/procedures/breast-augmentation/",
+        "url": "https://fulviocorrea.com/es/procedures/breast-augmentation/",
         "name": "Aumento de senos en Cartagena, Colombia",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -1397,7 +1397,7 @@
         "@type": "MedicalProcedure",
         "name": "Aumento de senos",
         "description": "El aumento de senos en Cartagena, o mamoplastia de aumento, es la cirugía que incrementa el volumen del busto mediante un implante mamario ubicado detrás de la glándula o detrás del músculo pectoral. Se busca tanto para aumentar un busto pequeño como para corregir asimetrías o recuperar el volumen perdido después de la lactancia o de bajar de peso.",
-        "url": "https://fulviocorrea.com.co/es/procedures/breast-augmentation/"
+        "url": "https://fulviocorrea.com/es/procedures/breast-augmentation/"
       },
       {
         "@context": "https://schema.org",
@@ -1495,7 +1495,7 @@
         "@type": "VideoObject",
         "name": "Reducción y levantamiento de senos en Cartagena con el Dr. Fulvio Correa",
         "description": "El Dr. Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP), explica el aumento de senos, el levantamiento y la reducción mamaria en Cartagena, Colombia. Describe planes según el tamaño, la proyección o el peso, y cómo el equipo acompaña a quien viaja con las preguntas, el viaje y la casa de recuperación. Los resultados son individuales y dependen de la valoración.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mammoplasty-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/mammoplasty-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-05T02:18:04+00:00",
         "duration": "PT141S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/5a704bd1570ab497567659041b09d526a78e49bb.mp4",
@@ -1504,12 +1504,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/es/procedures/breast-lift-reduction/",
+        "url": "https://fulviocorrea.com/es/procedures/breast-lift-reduction/",
         "name": "Reducción y mastopexia en Cartagena",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -1521,7 +1521,7 @@
         "@type": "MedicalProcedure",
         "name": "Reducción y levantamiento de senos",
         "description": "En esta página reunimos dos cirugías de mama relacionadas. La reducción de senos (mamoplastia de reducción) retira glándula, grasa y piel para disminuir el tamaño y el peso del busto, y al mismo tiempo lo eleva. El levantamiento de senos o mastopexia retira piel sobrante y remodela la mama para subirla, sin cambiar mucho su volumen. La Sociedad Colombiana de Cirugía Plástica (SCCP) las describe como procedimientos distintos, cada uno con su propia indicación.",
-        "url": "https://fulviocorrea.com.co/es/procedures/breast-lift-reduction/"
+        "url": "https://fulviocorrea.com/es/procedures/breast-lift-reduction/"
       },
       {
         "@context": "https://schema.org",
@@ -1619,7 +1619,7 @@
         "@type": "VideoObject",
         "name": "Lifting facial en Cartagena con el Dr. Fulvio Correa",
         "description": "El Dr. Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP), explica el lifting facial en Cartagena, Colombia. El video describe movilizar la capa SMAS además de la piel, y devolver volumen donde el rostro lo ha perdido. También cuenta cómo el equipo ayuda a quien viaja con las preguntas, el viaje y la casa de recuperación. El plan se confirma en la valoración.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/facelift-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/facelift-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-05T02:18:56+00:00",
         "duration": "PT124S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/8e94fb88b6a420579e28d466715d936f260d954a.mp4",
@@ -1628,12 +1628,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/es/procedures/facelift/",
+        "url": "https://fulviocorrea.com/es/procedures/facelift/",
         "name": "Lifting facial (ritidoplastia) Cartagena",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -1645,7 +1645,7 @@
         "@type": "MedicalProcedure",
         "name": "Lifting facial",
         "description": "El lifting facial, también llamado ritidoplastia o estiramiento facial, es la cirugía que reposiciona los tejidos profundos del rostro y retira la piel sobrante para mejorar la flacidez de mejillas, mandíbula y, cuando se asocia a un lifting de cuello, de la zona bajo el mentón. Mayo Clinic aclara sus límites: no elimina líneas finas ni el daño solar, y no detiene el envejecimiento.",
-        "url": "https://fulviocorrea.com.co/es/procedures/facelift/"
+        "url": "https://fulviocorrea.com/es/procedures/facelift/"
       },
       {
         "@context": "https://schema.org",
@@ -1743,23 +1743,23 @@
         "@type": "VideoObject",
         "name": "Liposucción con el Dr. Fulvio Correa (video)",
         "description": "Video sobre liposucción del consultorio del Dr. Fulvio Correa.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/liposuction-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/liposuction-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-05T02:19:50.000Z",
         "duration": "PT2M4S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/2dc7351288bbc2cd36511213629a777bcec6bae4.mp4",
         "isPartOf": {
-          "@id": "https://fulviocorrea.com.co/es/procedures/liposuction/"
+          "@id": "https://fulviocorrea.com/es/procedures/liposuction/"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/es/procedures/liposuction/",
+        "url": "https://fulviocorrea.com/es/procedures/liposuction/",
         "name": "Liposucción y lipoescultura en Cartagena",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -1771,7 +1771,7 @@
         "@type": "MedicalProcedure",
         "name": "Liposucción",
         "description": "La liposucción en Cartagena —también llamada lipoescultura— es una cirugía de contorno corporal que extrae depósitos de grasa localizada mediante pequeñas incisiones y una cánula conectada a succión. Sirve para definir abdomen, cintura, espalda, brazos, muslos o papada cuando la grasa no cede con dieta ni ejercicio.",
-        "url": "https://fulviocorrea.com.co/es/procedures/liposuction/"
+        "url": "https://fulviocorrea.com/es/procedures/liposuction/"
       },
       {
         "@context": "https://schema.org",
@@ -1869,7 +1869,7 @@
         "@type": "VideoObject",
         "name": "Mommy Makeover en Cartagena con el Dr. Fulvio Correa",
         "description": "El Dr. Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP), presenta el mommy makeover en Cartagena, Colombia para mujeres que quieren atender cambios después del embarazo. El video señala el apoyo del equipo a pacientes que viajan desde el exterior. Qué cirugías se combinan se decide solo después de una valoración individual.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/mommy-makeover-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/mommy-makeover-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-08T20:19:47+00:00",
         "duration": "PT32S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/4fb54b504958465f5f6595590fa15312fbbb50d3.mp4",
@@ -1878,12 +1878,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/es/procedures/mommy-makeover/",
+        "url": "https://fulviocorrea.com/es/procedures/mommy-makeover/",
         "name": "Mommy makeover en Cartagena, Colombia",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -1895,7 +1895,7 @@
         "@type": "MedicalProcedure",
         "name": "Mommy Makeover",
         "description": "El mommy makeover en Cartagena es un plan quirúrgico que reúne, en una misma cirugía o en dos tiempos, los procedimientos que ayudan a recuperar el contorno del cuerpo después del embarazo y la lactancia. Lo más habitual es combinar abdominoplastia, cirugía de mamas (levantamiento, implantes, reducción o una mezcla) y liposucción de cintura y flancos. La Sociedad Estadounidense de Cirujanos Plásticos (ASPS) lo describe como una intervención que suele hacerse en una sola etapa, siempre que la suma de procedimientos sea segura para esa paciente.",
-        "url": "https://fulviocorrea.com.co/es/procedures/mommy-makeover/"
+        "url": "https://fulviocorrea.com/es/procedures/mommy-makeover/"
       },
       {
         "@context": "https://schema.org",
@@ -2001,7 +2001,7 @@
         "@type": "VideoObject",
         "name": "Rinoplastia en Cartagena con el Dr. Fulvio Correa",
         "description": "El Dr. Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP), explica la rinoplastia en Cartagena, Colombia. Describe la nariz como un rasgo central del rostro, de modo que un cambio pequeño puede afectar toda la cara, y por qué el cirujano debe entender primero el objetivo. El video también habla del apoyo a quien viaja desde otro país: preguntas, viaje y casa de recuperación.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/rhinoplasty-video-dr-fulvio-correa.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/rhinoplasty-video-dr-fulvio-correa.webp",
         "uploadDate": "2024-10-05T02:20:14+00:00",
         "duration": "PT76S",
         "contentUrl": "https://embed-ssl.wistia.com/deliveries/b1f864765ffbaa4b84bb83b6025da33231fb6f9e.mp4",
@@ -2010,12 +2010,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/es/procedures/rhinoplasty/",
+        "url": "https://fulviocorrea.com/es/procedures/rhinoplasty/",
         "name": "Rinoplastia en Cartagena, Colombia",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -2027,7 +2027,7 @@
         "@type": "MedicalProcedure",
         "name": "Rinoplastia",
         "description": "La rinoplastia es la cirugía que modifica la forma de la nariz, su función o ambas. Puede actuar sobre el hueso, el cartílago y la piel para disminuir una giba, afinar o sostener la punta, estrechar el dorso o corregir una desviación tras un golpe. Cuando en la misma cirugía se endereza el tabique para mejorar el paso del aire se habla de septorrinoplastia.",
-        "url": "https://fulviocorrea.com.co/es/procedures/rhinoplasty/"
+        "url": "https://fulviocorrea.com/es/procedures/rhinoplasty/"
       },
       {
         "@context": "https://schema.org",
@@ -2123,12 +2123,12 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com.co/es/procedures/tummy-tuck/",
+        "url": "https://fulviocorrea.com/es/procedures/tummy-tuck/",
         "name": "Abdominoplastia en Cartagena, Colombia",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "about": {
           "@type": "MedicalProcedure",
@@ -2140,7 +2140,7 @@
         "@type": "MedicalProcedure",
         "name": "Abdominoplastia",
         "description": "La abdominoplastia en Cartagena es la cirugía que retira el exceso de piel y grasa del abdomen inferior y tensa la pared abdominal cuando los músculos rectos se han separado (diástasis). La Sociedad Colombiana de Cirugía Plástica (SCCP) explica que se retira la piel sobrante y se tratan los músculos para mejorar el contorno, dejando una cicatriz baja que puede ir de cadera a cadera y queda escondida bajo el vestido de baño; algunas estrías por debajo del ombligo desaparecen con la piel que se elimina.",
-        "url": "https://fulviocorrea.com.co/es/procedures/tummy-tuck/"
+        "url": "https://fulviocorrea.com/es/procedures/tummy-tuck/"
       },
       {
         "@context": "https://schema.org",
@@ -2547,18 +2547,18 @@
         "datePublished": "2026-09-26",
         "dateModified": "2026-09-26",
         "inLanguage": "en",
-        "image": "https://fulviocorrea.com.co/assets/blog-cartagena-medical-tourism.webp",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
+        "image": "https://fulviocorrea.com/assets/blog-cartagena-medical-tourism.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
         "author": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
-          "url": "https://fulviocorrea.com.co/en/",
+          "url": "https://fulviocorrea.com/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
       }
@@ -2591,18 +2591,18 @@
         "datePublished": "2026-09-24",
         "dateModified": "2026-09-25",
         "inLanguage": "en",
-        "image": "https://fulviocorrea.com.co/assets/blog-mommy-makeover-recovery.webp",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/mommy-makeover-recovery-time/",
+        "image": "https://fulviocorrea.com/assets/blog-mommy-makeover-recovery.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/mommy-makeover-recovery-time/",
         "author": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
-          "url": "https://fulviocorrea.com.co/en/",
+          "url": "https://fulviocorrea.com/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
       }
@@ -2635,18 +2635,18 @@
         "datePublished": "2026-09-23",
         "dateModified": "2026-09-25",
         "inLanguage": "en",
-        "image": "https://fulviocorrea.com.co/assets/blog-bbl-body-contour.webp",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/bbl-colombia/",
+        "image": "https://fulviocorrea.com/assets/blog-bbl-body-contour.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/bbl-colombia/",
         "author": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
-          "url": "https://fulviocorrea.com.co/en/",
+          "url": "https://fulviocorrea.com/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
       }
@@ -2676,22 +2676,22 @@
         "dateModified": "2026-09-28",
         "inLanguage": "en",
         "image": [
-          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia.webp",
-          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia.avif",
-          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia-og.webp",
-          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia-og.avif"
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia.webp",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia.avif",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia-og.webp",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia-og.avif"
         ],
-        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/breast-augmentation-colombia/",
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/breast-augmentation-colombia/",
         "author": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
-          "url": "https://fulviocorrea.com.co/en/",
+          "url": "https://fulviocorrea.com/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
       }
@@ -2724,18 +2724,18 @@
         "datePublished": "2026-09-23",
         "dateModified": "2026-09-25",
         "inLanguage": "en",
-        "image": "https://fulviocorrea.com.co/assets/blog-cartagena-stay.webp",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/how-long-to-stay-after-mommy-makeover/",
+        "image": "https://fulviocorrea.com/assets/blog-cartagena-stay.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/",
         "author": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
-          "url": "https://fulviocorrea.com.co/en/",
+          "url": "https://fulviocorrea.com/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
       }
@@ -2764,18 +2764,18 @@
         "datePublished": "2026-09-23",
         "dateModified": "2026-09-25",
         "inLanguage": "en",
-        "image": "https://fulviocorrea.com.co/assets/blog-liposuction-measurement.webp",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/liposuction-cartagena/",
+        "image": "https://fulviocorrea.com/assets/blog-liposuction-measurement.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/liposuction-cartagena/",
         "author": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
-          "url": "https://fulviocorrea.com.co/en/",
+          "url": "https://fulviocorrea.com/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
       }
@@ -2804,18 +2804,18 @@
         "datePublished": "2026-09-23",
         "dateModified": "2026-09-25",
         "inLanguage": "en",
-        "image": "https://fulviocorrea.com.co/assets/blog-tummy-tuck-consultation.webp",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/en/blog/tummy-tuck-colombia/",
+        "image": "https://fulviocorrea.com/assets/blog-tummy-tuck-consultation.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/tummy-tuck-colombia/",
         "author": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
-          "url": "https://fulviocorrea.com.co/en/",
+          "url": "https://fulviocorrea.com/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
       }
@@ -3015,22 +3015,22 @@
         "dateModified": "2026-09-28",
         "inLanguage": "es",
         "image": [
-          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia.webp",
-          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia.avif",
-          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia-og.webp",
-          "https://fulviocorrea.com.co/assets/blog-breast-augmentation-colombia-og.avif"
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia.webp",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia.avif",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia-og.webp",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia-og.avif"
         ],
-        "mainEntityOfPage": "https://fulviocorrea.com.co/es/blog/aumento-de-senos-colombia/",
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/aumento-de-senos-colombia/",
         "author": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
-          "url": "https://fulviocorrea.com.co/es/",
+          "url": "https://fulviocorrea.com/es/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
       }
@@ -3063,18 +3063,18 @@
         "datePublished": "2026-09-26",
         "dateModified": "2026-09-26",
         "inLanguage": "es",
-        "image": "https://fulviocorrea.com.co/assets/blog-cartagena-medical-tourism.webp",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",
+        "image": "https://fulviocorrea.com/assets/blog-cartagena-medical-tourism.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",
         "author": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
-          "url": "https://fulviocorrea.com.co/es/",
+          "url": "https://fulviocorrea.com/es/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
       }
@@ -3107,18 +3107,18 @@
         "datePublished": "2026-09-25",
         "dateModified": "2026-09-25",
         "inLanguage": "es",
-        "image": "https://fulviocorrea.com.co/assets/blog-tummy-tuck-consultation.webp",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/es/blog/abdominoplastia-colombia/",
+        "image": "https://fulviocorrea.com/assets/blog-tummy-tuck-consultation.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/abdominoplastia-colombia/",
         "author": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
-          "url": "https://fulviocorrea.com.co/es/",
+          "url": "https://fulviocorrea.com/es/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
       }
@@ -3151,18 +3151,18 @@
         "datePublished": "2026-09-24",
         "dateModified": "2026-09-25",
         "inLanguage": "es",
-        "image": "https://fulviocorrea.com.co/assets/blog-mommy-makeover-recovery.webp",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/es/blog/tiempo-recuperacion-mommy-makeover/",
+        "image": "https://fulviocorrea.com/assets/blog-mommy-makeover-recovery.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/tiempo-recuperacion-mommy-makeover/",
         "author": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
-          "url": "https://fulviocorrea.com.co/es/",
+          "url": "https://fulviocorrea.com/es/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fulviocorrea.com.co/assets/dr-fulvio-correa-logo.png"
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
       }
@@ -3280,7 +3280,7 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
-        "@id": "https://fulviocorrea.com.co/#capri-clinic",
+        "@id": "https://fulviocorrea.com/#capri-clinic",
         "name": "Clínica CAPRI",
         "address": {
           "@type": "PostalAddress",
@@ -3311,16 +3311,16 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "@id": "https://fulviocorrea.com.co/en/capri-clinic/#webpage",
-        "url": "https://fulviocorrea.com.co/en/capri-clinic/",
+        "@id": "https://fulviocorrea.com/capri-clinic/#webpage",
+        "url": "https://fulviocorrea.com/capri-clinic/",
         "name": "CAPRI Clinic in Cartagena | Dr. Fulvio Correa",
         "description": "Where Dr. Fulvio Correa operates in Cartagena: CAPRI Clinic. See how the surgical clinic differs from the consultation office and what to ask.",
         "inLanguage": "en",
         "about": {
-          "@id": "https://fulviocorrea.com.co/#capri-clinic"
+          "@id": "https://fulviocorrea.com/#capri-clinic"
         },
         "mentions": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "dateModified": "2026-09-26"
       },
@@ -3387,7 +3387,7 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
-        "@id": "https://fulviocorrea.com.co/#capri-clinic",
+        "@id": "https://fulviocorrea.com/#capri-clinic",
         "name": "Clínica CAPRI",
         "address": {
           "@type": "PostalAddress",
@@ -3418,16 +3418,16 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "@id": "https://fulviocorrea.com.co/es/capri-clinic/#webpage",
-        "url": "https://fulviocorrea.com.co/es/capri-clinic/",
+        "@id": "https://fulviocorrea.com/es/capri-clinic/#webpage",
+        "url": "https://fulviocorrea.com/es/capri-clinic/",
         "name": "Clínica CAPRI en Cartagena | Dr. Fulvio Correa",
         "description": "Dónde opera el Dr. Fulvio Correa en Cartagena: Clínica CAPRI. Diferencia la clínica del consultorio y prepara tus preguntas antes de la cirugía.",
         "inLanguage": "es",
         "about": {
-          "@id": "https://fulviocorrea.com.co/#capri-clinic"
+          "@id": "https://fulviocorrea.com/#capri-clinic"
         },
         "mentions": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "dateModified": "2026-09-26"
       },
@@ -3494,22 +3494,22 @@
       {
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        "@id": "https://fulviocorrea.com.co/en/contact/#webpage",
-        "url": "https://fulviocorrea.com.co/en/contact/",
+        "@id": "https://fulviocorrea.com/contact/#webpage",
+        "url": "https://fulviocorrea.com/contact/",
         "name": "Contact the Practice in Cartagena",
         "description": "Phone, WhatsApp and address for Dr. Fulvio Correa’s consultation office in Cartagena, Colombia, plus the address and hours of CAPRI, his surgical clinic.",
         "inLanguage": "en",
         "about": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "mentions": {
-          "@id": "https://fulviocorrea.com.co/#capri-clinic"
+          "@id": "https://fulviocorrea.com/#capri-clinic"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
-        "@id": "https://fulviocorrea.com.co/#capri-clinic",
+        "@id": "https://fulviocorrea.com/#capri-clinic",
         "name": "Clínica CAPRI",
         "address": {
           "@type": "PostalAddress",
@@ -3560,22 +3560,22 @@
       {
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        "@id": "https://fulviocorrea.com.co/es/contact/#webpage",
-        "url": "https://fulviocorrea.com.co/es/contact/",
+        "@id": "https://fulviocorrea.com/es/contact/#webpage",
+        "url": "https://fulviocorrea.com/es/contact/",
         "name": "Contacto del consultorio en Cartagena",
         "description": "Teléfono, WhatsApp y dirección del consultorio del Dr. Fulvio Correa en Cartagena, Colombia, y dirección y horario de CAPRI, su clínica quirúrgica.",
         "inLanguage": "es",
         "about": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         },
         "mentions": {
-          "@id": "https://fulviocorrea.com.co/#capri-clinic"
+          "@id": "https://fulviocorrea.com/#capri-clinic"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
-        "@id": "https://fulviocorrea.com.co/#capri-clinic",
+        "@id": "https://fulviocorrea.com/#capri-clinic",
         "name": "Clínica CAPRI",
         "address": {
           "@type": "PostalAddress",
@@ -3645,18 +3645,18 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "@id": "https://fulviocorrea.com.co/en/testimonials/natalia-vega/#video",
+        "@id": "https://fulviocorrea.com/testimonials/natalia-vega/#video",
         "name": "EXPERIENCIA NATALIA VEGA",
         "description": "Natalia Vega shares her breast surgery and care experience with Dr. Fulvio Correa. Original patient video with a transcript and bilingual subtitles.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/natalia-vega.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/natalia-vega.webp",
         "uploadDate": "2023-09-26T00:00:00Z",
         "duration": "PT331S",
-        "contentUrl": "https://fulviocorrea.com.co/assets/natalia-vega.mp4",
+        "contentUrl": "https://fulviocorrea.com/assets/natalia-vega.mp4",
         "inLanguage": "es",
         "transcript": "Hello, my name is Natalia Vega. I had a periareolar breast lift with Dr. Fulvio Correa. In my world as an influencer, our image is our calling card. Every detail, every aspect of who we are contributes to the story we share with our followers. And when it comes to personal image, one decision can make a difference. Today I want to share an important part of my journey as an influencer: my breast surgery. I know some people may see it as a superficial change, but for me it was a choice that deeply affected my self-esteem and my career. Here we are with Tiki. We are going to begin her surgery today. [Indistinct speech] A size that is not exaggerated and suits her body. We will use an incision around the areola, which you will not see, of course. [Indistinct speech] We want better projection than she currently has. [Indistinct speech] [Indistinct speech] [Indistinct speech] We have finished the surgery. We performed a lift around the areola. That gave us a nice cleavage and good projection. Her breast folds were asymmetric; this one was higher. We were able to make them much more symmetrical. We always make sure the breast will not move out to the sides by restricting the pocket to the axillary line, the anterior axillary line. And we performed the lift around the areola. We will not show that out of respect for the patient, but we made the areola smaller, rounder and more proportionate to her. What she wanted most was pronounced cleavage, without too much projection, with a natural shape. I think we achieved that, so I think she will be very happy. We are here waiting until we can go in to see Nati. At first, I thought I was nervous, but I was excited. I remember some time ago when we were joking about this whole thing, and now seeing it become real is amazing. It is great to see someone set goals and achieve them, whatever they may be. I am excited because I know she will be excited. And if she is happy, I am happier than anyone here. Continuing what I was saying earlier, when we talked about all of this, honestly, Nati only talked to me about Dr. Fulvio. And that makes me even more excited, because everything worked out with him. To be honest, before this I knew very little about the subject. But she showed me his work and I thought, if they are going to look like that, wonderful. We liked him and met him. He seems like an excellent person, with wonderful charisma. He works magic with his hands, and has a lot of knowledge and experience. So this is definitely the best choice we could have made. Dr. Fulvio Correa and his entire team gave me excellent care, and that is why I recommend him.",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/en/testimonials/natalia-vega/",
+        "mainEntityOfPage": "https://fulviocorrea.com/testimonials/natalia-vega/",
         "publisher": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         }
       }
     ],
@@ -3683,18 +3683,18 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "@id": "https://fulviocorrea.com.co/en/testimonials/kary-alejandre/#video",
+        "@id": "https://fulviocorrea.com/testimonials/kary-alejandre/#video",
         "name": "Kary Alejandre Experiencia Fulvio Correa",
         "description": "Kary Alejandre shares her journey from Mexico, consultation and early recovery after liposculpture with Dr. Fulvio Correa. Watch her patient story.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/kary-alejandre.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/kary-alejandre.webp",
         "uploadDate": "2023-09-19T00:00:00Z",
         "duration": "PT377S",
-        "contentUrl": "https://fulviocorrea.com.co/assets/kary-alejandre.mp4",
+        "contentUrl": "https://fulviocorrea.com/assets/kary-alejandre.mp4",
         "inLanguage": "es",
         "transcript": "Hello, how are you? I am Karina Alejandra. I came from Mexico and had liposculpture with Retraction technology. Let me tell you about my experience. I am Karina Alejandra, from Guadalajara, Mexico. I am here in Cartagena, and I am very excited about my upcoming surgery with Dr. Fulvio Correa. Come along with me. How are you? I am Karina, nice to meet you. Nice to meet you, Karina. Thank you. I love everything about Cartagena. I love the people; they are very kind. I love the monuments, the food and the history. I am in love with Cartagena. How are you? Welcome. Thank you very much. [Indistinct speech] Thank you. Make yourself at home. Everyone has been very kind. Thank you. The team is very kind, and above all they have human warmth. Yes, that is the most important thing, and they have treated me very well. Which areas of your body would you like to address? I would like to focus more on my waist, my abdomen, and define the buttocks a little with liposuction. I am not sure how. With fat transfer. What we will do is look for a slightly more harmonious waist, a curvier body, and also define the lower back so the contour looks nicer. And, of course, if you want, we can add a little abdominal definition. We can do that subtly because we have the technology, as I mentioned during our preliminary consultation by video call. I told you we have an interesting technology that can help create very subtle abdominal definition that looks good. We are ready. Our lovely patient Kary is in the operating room. We will perform 360 high-definition liposculpture using Retraction technology. She has loose skin and an indication for a tummy tuck, but we have decided, because she is young and has not yet had children, to perform high-definition liposculpture. We are finishing the front, the abdomen. We first used Retraction technology in [mode name indistinct], which helps dissolve the fat. Then we performed liposuction throughout the abdomen, and lastly we are using the Retraction technology again in skin-retraction mode. This stimulates the production of new collagen. Through radiofrequency and heat, it helps the skin retract a little, both in the immediate and later postoperative periods, through collagen regeneration in the months following surgery. Here we are with our lovely Kary. We operated on her just three days ago, right? Yes, three days. Only three days, and you can see how well she is doing. We performed 360 high-definition liposculpture. We treated some of that skin laxity with Retraction technology, and I think we achieved an interesting result. It has only been a few days. Her swelling is going down and she is in the early stages of recovery, but she is very happy. As you can see, she looks radiant and is doing very well. I thank the whole team, especially the doctor with the magic hands, Dr. Fulvio Correa, for this experience, which you can also have here.",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/en/testimonials/kary-alejandre/",
+        "mainEntityOfPage": "https://fulviocorrea.com/testimonials/kary-alejandre/",
         "publisher": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         }
       }
     ],
@@ -3721,17 +3721,17 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "@id": "https://fulviocorrea.com.co/en/testimonials/thaily-amezcua/#video",
+        "@id": "https://fulviocorrea.com/testimonials/thaily-amezcua/#video",
         "name": "Thaily Amezcua Experiencia Fulvio Correa",
         "description": "Summary of Thaily Amezcua’s video in Cartagena, Colombia: her arrival, the recovery house, and breast implant replacement with a lift by Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP). She describes the team’s support and follow-up visits. It is her own experience and does not describe anyone else’s result.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/thaily-amezcua.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/thaily-amezcua.webp",
         "uploadDate": "2023-07-28T00:00:00Z",
         "duration": "PT1006S",
-        "contentUrl": "https://fulviocorrea.com.co/assets/thaily-amezcua.mp4",
+        "contentUrl": "https://fulviocorrea.com/assets/thaily-amezcua.mp4",
         "inLanguage": "es",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/en/testimonials/thaily-amezcua/",
+        "mainEntityOfPage": "https://fulviocorrea.com/testimonials/thaily-amezcua/",
         "publisher": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         }
       }
     ],
@@ -3777,18 +3777,18 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "@id": "https://fulviocorrea.com.co/es/testimonials/natalia-vega/#video",
+        "@id": "https://fulviocorrea.com/es/testimonials/natalia-vega/#video",
         "name": "EXPERIENCIA NATALIA VEGA",
         "description": "Natalia Vega comparte su experiencia de cirugía de senos y atención con el Dr. Fulvio Correa. Video original con transcripción y subtítulos bilingües.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/natalia-vega.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/natalia-vega.webp",
         "uploadDate": "2023-09-26T00:00:00Z",
         "duration": "PT331S",
-        "contentUrl": "https://fulviocorrea.com.co/assets/natalia-vega.mp4",
+        "contentUrl": "https://fulviocorrea.com/assets/natalia-vega.mp4",
         "inLanguage": "es",
         "transcript": "Hola, mi nombre es Natalia Vega y me realicé una pexia periareolar con el Dr. Fulvio Correa. En mi mundo como Influencer nuestra imagen es nuestra carta de presentación. Cada detalle, cada aspecto de nuestro ser contribuye a la narrativa que compartimos con nuestro seguidor. Y cuando se trata de la imagen personal, una decisión puede marcar la diferencia. Hoy quiero compartir una parte importante de mi viaje como Influencer, Mi cirugía de mamoplastia. Sé que algunos pueden verlo como un cambio superficial, pero para mí, fue una elección que tuvo un impacto profundo en mi autoestima y en mi carrera. Aquí estamos con Tiki. Vamos a iniciar su cirugía el día de hoy. [Fragmento no inteligible] un tamaño no exagerado, que se vea acorde con su cuerpo, Vamos a utilizar una incisión por la areola que ustedes no van a ver, por supuesto. [Fragmento no inteligible] y hay que tener la proyección mejor que la que tienen en este momento, [Fragmento no inteligible] [Fragmento no inteligible] [Fragmento no inteligible] Ya terminamos la cirugía. Hicimos una pexia alrededor de la areola. Con eso conseguimos un bonito escote, una buena proyección. Los surcos de ella estaban asimétricos, este estaba más alto. Logramos simetrizarlos bastante. Siempre nos cercioramos de que la mama no se vaya a desplazar hacia los laterales haciendo un bolsillo restringido a la línea de la axila, a la línea axila anterior. Y hicimos la pexia alrededor de la areola, pues aquí nos vamos a mostrar por respeto a las pacientes, pero conseguimos dejar una areola más pequeñita, más redonda y más acorde a ella. Lo más bonito que ella quería era que fuera un escote bien pronunciado y que no se viera demasiado proyectada, sino que se viera con un formato natural, que yo creo que lo logramos, entonces creo que va a estar bastante contento. Bueno ya nos encontramos acá esperando de que poder pasar para ver a Nati, en un principio pensé que estaba nervioso pero no estaba nervioso, sino emocionado, sabe emocionado porque recuerdo hace un tiempo atrás cuando hablamos de todo este tema, muy bien chiste y ahora ver como que se está haciendo es realidad, es como wow, súper bacano, como que se poner unos metas, las cumple, sea lo que sea entonces. Yo estoy emocionado porque sé que ya estaré emocionada. Y si ya está feliz, estoy más feliz que todo el mundo aquí. Y bueno, continuando lo que comentaba ahorita, cuando hablábamos de todo este tema, sin mentirles, Nati solo me hablaba del doctor Fulvio. Y como que me da aún más emoción, pues porque todo se dio justamente con él. Y es que, pues claro, yo antes, para serle sincero, Tenía muy poco conocimiento de todo este tema. Pero me mostraba todos los trabajos y decía: wow, si van a quedar así, Bellísimo. Entonces nos gustó, lo conocí. me parece de una persona excelente, un carisma excelente y además, pues hace magia con esas manos, tiene mucho conocimiento, mucha experiencia entonces definitivamente la mejor elección que hemos podido hacer. El doctor Fulvio Correa, junto con todo su equipo me brindaron la mejor de las atenciones y por eso lo recomiendo.",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/es/testimonials/natalia-vega/",
+        "mainEntityOfPage": "https://fulviocorrea.com/es/testimonials/natalia-vega/",
         "publisher": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         }
       }
     ],
@@ -3815,18 +3815,18 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "@id": "https://fulviocorrea.com.co/es/testimonials/kary-alejandre/#video",
+        "@id": "https://fulviocorrea.com/es/testimonials/kary-alejandre/#video",
         "name": "Kary Alejandre Experiencia Fulvio Correa",
         "description": "Kary Alejandre relata su viaje desde México, su valoración y recuperación inicial tras liposculptura con el Dr. Fulvio Correa. Testimonio en video.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/kary-alejandre.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/kary-alejandre.webp",
         "uploadDate": "2023-09-19T00:00:00Z",
         "duration": "PT377S",
-        "contentUrl": "https://fulviocorrea.com.co/assets/kary-alejandre.mp4",
+        "contentUrl": "https://fulviocorrea.com/assets/kary-alejandre.mp4",
         "inLanguage": "es",
         "transcript": "Hola, ¿cómo están? Yo soy Karina Alejandra, vengo desde México y me realicé una lipo escultura con tecnología Retraction. Pues les voy a contar mi experiencia. Soy Karina Alejandra, vengo desde Guadalajara, México. Yo estoy aquí en Cartagena, estoy súper emocionada por mi próxima cirugía con el doctor Fulvio Correa. Acompáñenme para ver. ¿Cómo están? Soy Karina, mucho gusto. Mucho gusto Karina, muchas gracias. Todo de Cartagena estoy enamorada, me encanta su gente, es súper amable, me encanta los monumentos, la gastronomía, la historia, todo, estoy enamorada de Cartagena. ¿Cómo es todo? Bienvenido. Muchas gracias. [Fragmento no inteligible] Gracias. Siéntete como en casa. Han estado súper amables, muchas gracias. El equipo es muy amable, sobre todo con calor humano. Sí, eso es lo más importante y me han tratado muy lindo. ¿Qué área de tu cuerpo te gustaría tratar? Me gustaría tratar como más la cintura, el abdomen Y como definir un poco el glúteo con la lipo, no sé cómo. Ok, con la lipo transferencia. Con lo que vamos a hacer es buscar, tener una cintura un poquito más armoniosa, un cuerpo con más curvas, definir la parte también de la espalda baja Para que se vea un contorno más bonito. Y nos vamos a ir, obviamente, si tú lo deseas, de pronto con un poquito de definición abdominal. Eso lo podemos hacer sutil, ya que contamos con la tecnología para ello, que te comentaba cuando habíamos hecho la pre-consulta vía el videollamada, te dije que contábamos con una tecnología bien interesante que nos pueda ayudar a hacer una marcación abdominal o una definición abdominal muy sutil que se vea bonito. Ok, estamos listos, tenemos a nuestra hermosa paciente y en el quirófano a Cari le vamos a hacer una lipo escultura alta de definición 360 con la tecnología retraction, ella tiene Flacidez en la piel. De hecho tiene una indicación de abdominoplastia, pero hemos decidido, porque es una persona joven que aún no tiene sus hijos, hacerle una lipo escultura de alta definición. Estamos finalizando la parte anterior, el abdomen, ya hemos pasado inicialmente en esta tecnología Retraction en un modo [nombre no inteligible], que nos ayuda a disolver la grasa. Luego hemos hecho la lipo succión en toda la parte del abdomen y por último estamos pasando nuevamente en Esta tecnología de retracción en un modo de retracción de piel. Aquí lo que hace es que estimula la producción de nuevo colágeno y nos va a lograr mediante La radiofrecuencia y el calor van a lograr que la piel se retraiga un poco, tanto en el Posoperatorio inmediato como en el posoperatorio tardío, por la regeneración del colágeno que se va a ir dando en los meses subsecuentes a la cirugía. Bueno, aquí estamos con esta bella Kary. la operamos hace que nada, tres días, ¿no? Sí, tres días, ¿no? Tan solo tres días y se pueden ver cómo está súper, súper bien. En ella hicimos una liposculptura de alta definición 360. Tratamos un poco esa flacidez que tenías con tecnología Retraction, pero creo que conseguimos un resultado bastante interesante, tan solo. Llevo unos cuantos días, está en proceso de desinflamación, de recuperación inicial, pero de verdad ella está muy contenta, como la pueden ver está radiante, está súper bien. Agradezco a todo el equipo y más al doctor de las manos mágicas, el doctor Fulvio Correa por esta gran experiencia y ustedes también pueden vivir aquí.",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/es/testimonials/kary-alejandre/",
+        "mainEntityOfPage": "https://fulviocorrea.com/es/testimonials/kary-alejandre/",
         "publisher": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         }
       }
     ],
@@ -3853,17 +3853,17 @@
       {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "@id": "https://fulviocorrea.com.co/es/testimonials/thaily-amezcua/#video",
+        "@id": "https://fulviocorrea.com/es/testimonials/thaily-amezcua/#video",
         "name": "Thaily Amezcua Experiencia Fulvio Correa",
         "description": "Resumen del video de Thaily Amezcua en Cartagena, Colombia: su llegada, la casa de recuperación y el cambio de implantes con levantamiento de senos junto al Dr. Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP). Cuenta el acompañamiento del equipo y los controles. Es su experiencia personal; no describe el resultado de otra persona.",
-        "thumbnailUrl": "https://fulviocorrea.com.co/assets/thaily-amezcua.webp",
+        "thumbnailUrl": "https://fulviocorrea.com/assets/thaily-amezcua.webp",
         "uploadDate": "2023-07-28T00:00:00Z",
         "duration": "PT1006S",
-        "contentUrl": "https://fulviocorrea.com.co/assets/thaily-amezcua.mp4",
+        "contentUrl": "https://fulviocorrea.com/assets/thaily-amezcua.mp4",
         "inLanguage": "es",
-        "mainEntityOfPage": "https://fulviocorrea.com.co/es/testimonials/thaily-amezcua/",
+        "mainEntityOfPage": "https://fulviocorrea.com/es/testimonials/thaily-amezcua/",
         "publisher": {
-          "@id": "https://fulviocorrea.com.co/#physician"
+          "@id": "https://fulviocorrea.com/#physician"
         }
       }
     ],

@@ -69,7 +69,7 @@ Common mistakes: a return flight too soon, underestimating swelling, traveling w
 
 It also helps to define your main aesthetic goal clearly, share realistic reference photos, and ask what technical limitations apply in your specific case. That conversation reduces surprises and aligns expectations with what surgery can and cannot change.
 
-If your contouring plan may include gluteal fat grafting as well as liposuction, also read [BBL Colombia for U.S. patients](https://fulviocorrea.com.co/post/bbl-colombia) for safety questions and travel decision points specific to Brazilian butt lift.
+If your contouring plan may include gluteal fat grafting as well as liposuction, also read [BBL Colombia for U.S. patients](https://fulviocorrea.com/blog/bbl-colombia/) for safety questions and travel decision points specific to Brazilian butt lift.
 
 ## Message Sofía on WhatsApp
 

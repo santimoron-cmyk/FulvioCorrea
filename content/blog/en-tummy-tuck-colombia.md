@@ -74,13 +74,13 @@ Build your itinerary around clinical milestones, not vacation days. Ask how earl
 
 Airlines add their own rules on top of medical clearance. [Avianca’s help center](https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales), for example, lists travel from 14 days after an abdominoplasty, mini abdominoplasty, or lipoabdominoplasty, and asks for a medical certificate issued no more than 10 days before the flight. Check your own carrier’s policy before booking. For general recovery ranges, [MedlinePlus](https://medlineplus.gov/ency/article/002978.htm) notes an elastic support garment for about 2 to 3 weeks, avoiding strenuous activity for 4 to 6 weeks, and a return to work in roughly 2 to 4 weeks—your surgeon sets your actual timeline.
 
-A companion helps with walking, meals, garments, and clinic visits in the first days. Choose lodging with an elevator when possible, reliable air conditioning, and a quiet room. For Cartagena-specific travel context, see the clinic’s [travel and recovery guidance](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-travel). If your plan may combine abdominal and breast procedures, also review [mommy makeover in Cartagena](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-mommy-makeover) and the related stay-length article [how long to stay after a mommy makeover](https://fulviocorrea.com.co/post/how-long-to-stay-after-mommy-makeover).
+A companion helps with walking, meals, garments, and clinic visits in the first days. Choose lodging with an elevator when possible, reliable air conditioning, and a quiet room. For Cartagena-specific travel context, see the clinic’s [travel and recovery guidance](https://fulviocorrea.com/international-patients/). If your plan may combine abdominal and breast procedures, also review [mommy makeover in Cartagena](https://fulviocorrea.com/procedures/mommy-makeover/) and the related stay-length article [how long to stay after a mommy makeover](https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/).
 
 ## Recovery themes to confirm with your surgeon
 
 Early recovery after a tummy tuck commonly involves limited upright posture changes, compression garments as directed, short walks to support circulation, and help with daily tasks. Swelling and tightness can last weeks; final contour continues to evolve for months. Desk work often returns sooner than core exercise, heavy lifting, or childcare duties.
 
-Do not use social-media timelines as medical clearance. When abdominal work is part of a broader mommy makeover plan, the separate guide on [mommy makeover recovery time](https://fulviocorrea.com.co/post/mommy-makeover-recovery-time) explains general week-by-week recovery ranges and consult questions without treating stay length as the same decision. Confirm with your surgeon when you may fly, lift a suitcase or child, drive, and resume workouts. If liposuction is part of your plan, the separate guide [Liposuction in Cartagena](https://fulviocorrea.com.co/post/liposuction-cartagena) covers contouring logistics that differ from a full abdominoplasty.
+Do not use social-media timelines as medical clearance. When abdominal work is part of a broader mommy makeover plan, the separate guide on [mommy makeover recovery time](https://fulviocorrea.com/blog/mommy-makeover-recovery-time/) explains general week-by-week recovery ranges and consult questions without treating stay length as the same decision. Confirm with your surgeon when you may fly, lift a suitcase or child, drive, and resume workouts. If liposuction is part of your plan, the separate guide [Liposuction in Cartagena](https://fulviocorrea.com/blog/liposuction-cartagena/) covers contouring logistics that differ from a full abdominoplasty.
 
 ## Questions worth bringing to a virtual or in-person consult
 
@@ -91,9 +91,9 @@ Do not use social-media timelines as medical clearance. When abdominal work is p
 • What symptoms mean I should delay travel or seek urgent care?
 • Who do I contact after I am back in the United States?
 
-Patients comparing multiple body-contouring procedures sometimes evaluate gluteal fat grafting alongside abdominoplasty; see [what U.S. patients should decide before a BBL in Colombia](https://fulviocorrea.com.co/post/bbl-colombia) for safety criteria and Cartagena travel questions that differ from a tummy tuck plan.
+Patients comparing multiple body-contouring procedures sometimes evaluate gluteal fat grafting alongside abdominoplasty; see [what U.S. patients should decide before a BBL in Colombia](https://fulviocorrea.com/blog/bbl-colombia/) for safety criteria and Cartagena travel questions that differ from a tummy tuck plan.
 
-Prefer to read this in Spanish? The Spanish-language guide covers the same topic for Spanish-speaking patients: [abdominoplastia en Colombia](https://fulviocorrea.com.co/post/abdominoplastia-colombia).
+Prefer to read this in Spanish? The Spanish-language guide covers the same topic for Spanish-speaking patients: [abdominoplastia en Colombia](https://fulviocorrea.com/es/blog/abdominoplastia-colombia/).
 
 ## Message Sofía on WhatsApp
 

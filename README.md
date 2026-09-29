@@ -26,7 +26,7 @@ Before/after no muestra fotografías clínicas ni testimonios. La estructura per
 
 ## Conectar NinjaSuite / HighLevel
 
-`config.json` contiene `leadEndpoint` y `gtmId`, vacíos deliberadamente. No hay acceso a la cuenta CRM ni credenciales. El formulario valida y comunica claramente que esta vista previa NO envía solicitudes. WhatsApp utiliza el enlace verificado en la web oficial. Un clic no constituye una reserva confirmada.
+`config.json` contiene `leadEndpoint` (vacío) y `gtmId` (`GTM-THZVNS9B`). No hay acceso a la cuenta CRM ni credenciales. El formulario valida y comunica claramente que esta vista previa NO envía solicitudes. WhatsApp utiliza el enlace verificado en la web oficial. Un clic no constituye una reserva confirmada.
 
 Configurar `leadEndpoint` como endpoint HTTPS propio, nunca un webhook secreto ni token privado en el navegador. El endpoint debe validar entradas, verificar consentimiento, limitar frecuencia, aceptar `Idempotency-Key`, guardar el lead en HighLevel y devolver `{ "accepted": true, "lead_id": "id-real" }` solo tras aceptación durable. Errores deben devolver 4xx/5xx. Mantener secretos de HighLevel en el servidor. Si se utiliza otro origen, configurar CORS para el dominio final.
 
@@ -36,17 +36,17 @@ La atribución persiste durante la sesión y navegación en esta pestaña; la ú
 
 El widget de Sofía crea leads vía `/api/lead` (eventos `lead_created` y `channel_selected`, opción «Quiero que me llamen»): ver [LEAD-WEBHOOK.md](LEAD-WEBHOOK.md). Eventos dataLayer: consultation_click, whatsapp_click, form_start, form_preview_valid, form_error, generate_lead y contact_channel_selected. generate_lead solo se dispara tras confirmación real del servidor y consentimiento de medición. IDs/data-cta identifican ubicación. No se envían datos de contacto al dataLayer. No hay teléfono verificado ni agenda integrada; eventos phone_click y booking_complete deben añadirse únicamente cuando esas acciones existan. El clic de WhatsApp no permite recuperar atribución completa dentro del CRM: para ello se requiere un canal WhatsApp integrado y un identificador correlacionable del lado servidor.
 
-GTM carga solo tras aceptar medición. Configurar consentimiento dentro de GTM a partir de consent_update; personalización publicitaria permanece denegada. No hay GA4 ni Google Ads activos. Revisar el tratamiento de datos y la política real del consultorio antes de habilitar recepción. Medición de conversiones offline requiere estado real del lead en CRM y una integración posterior con Google Ads.
+GTM `GTM-THZVNS9B` carga en cada página. Consent Mode v2 queda en `denied` antes del snippet; el banner actualiza el consentimiento al aceptar. No hay etiqueta gtag.js ni GA4 directa (GA4 se configura dentro de GTM). Configurar consentimiento dentro de GTM a partir de consent_update; personalización publicitaria permanece denegada hasta ese update. Revisar el tratamiento de datos y la política real del consultorio antes de habilitar recepción. Medición de conversiones offline requiere estado real del lead en CRM y una integración posterior con Google Ads.
 
 ## Publicación y SEO
 
-El modo de indexación lo decide `site-env.mjs` (no `config.json`): `npm run build` local = preview (noindex en todas las páginas, robots bloqueado); Cloudflare Pages en la rama `main` = production (indexable) salvo que se defina `SITE_ENV=preview`. Detalles en [CLOUDFLARE.md](CLOUDFLARE.md). `origin` en `config.json` es el dominio canónico (https://fulviocorrea.com.co). Ads permanece noindex. No se modificó fulviocorrea.com.co ni su DNS.
+El modo de indexación lo decide `site-env.mjs` (no `config.json`): `npm run build` local = preview (noindex en todas las páginas, robots bloqueado); Cloudflare Pages en la rama `main` = production (indexable) salvo que se defina `SITE_ENV=preview`. Detalles en [CLOUDFLARE.md](CLOUDFLARE.md). `origin` en `config.json` es el dominio canónico (https://fulviocorrea.com, sin www). Ads permanece noindex. No se modificó fulviocorrea.com.co ni su DNS.
 
 Metadatos y contenido presentes en HTML, breadcrumbs y Physician JSON-LD, FAQ JSON-LD solo donde las preguntas son visibles. La estructura favorece lectura por buscadores y sistemas de IA, pero no garantiza rankings ni inclusión en respuestas de IA.
 
 ## Performance y aceptación
 
-CSS/JS pequeños; imágenes locales con dimensiones reservadas; hero prioritario; imagen inferior lazy; fuentes del sistema; sin trackers por defecto; movimiento reducido respetado. Esto es una base de performance, no una certificación Core Web Vitals. Medir en el dominio final con PageSpeed/Lighthouse móvil y CrUX cuando haya tráfico. Objetivos p75: LCP ≤2.5 s, INP ≤200 ms, CLS ≤0.1. Repetir medición al activar GTM y CRM.
+CSS/JS pequeños; imágenes locales con dimensiones reservadas; hero prioritario; imagen inferior lazy; fuentes del sistema; GTM con consentimiento denegado hasta que el banner lo conceda; movimiento reducido respetado. Esto es una base de performance, no una certificación Core Web Vitals. Medir en el dominio final con PageSpeed/Lighthouse móvil y CrUX cuando haya tráfico. Objetivos p75: LCP ≤2.5 s, INP ≤200 ms, CLS ≤0.1. Repetir medición con GTM y CRM activos.
 
 Antes de campañas: probar envío real con una cuenta autorizada, comprobar un único lead por solicitud y deduplicación de reintentos, campos first/last touch, consentimiento, fallos y conversiones; revisar copy clínico, activos y política de privacidad con el consultorio.
 

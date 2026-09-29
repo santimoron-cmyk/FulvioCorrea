@@ -100,7 +100,7 @@ A practical planning checklist:
 4. **Book flexible return flights** in case your surgeon asks you to stay longer.
 5. **Line up care at home** before you leave: a primary-care doctor or local surgeon who knows you had surgery abroad.
 
-For logistics specific to our practice, see the [travel guide for international patients](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-travel).
+For logistics specific to our practice, see the [travel guide for international patients](https://fulviocorrea.com/international-patients/).
 
 ## Pre-assessment: in person or virtual
 
@@ -156,7 +156,7 @@ ASPS recommends documenting these arrangements in writing, and the CDC recommend
 
 Dr. Fulvio Correa is a plastic surgeon in Cartagena, Colombia, and an SCCP member. Explore the procedure pages for [liposuction](/en/procedures/liposuction/), [breast augmentation](/en/procedures/breast-augmentation/) and the [mommy makeover](/en/procedures/mommy-makeover/), or learn more [about the practice](/en/about/). If you would like an in-person or virtual assessment, you can [message the team on WhatsApp](https://wa.me/16506656265?text=Hi%2C%20I%20read%20the%20Cartagena%20medical%20tourism%20report%20and%20would%20like%20to%20request%20an%20assessment).
 
-<p><em>Leer en español: <a href="https://fulviocorrea.com.co/post/cirugia-plastica-turismo-medico-cartagena-colombia" data-language="es" hreflang="es" lang="es">Cirugía plástica y turismo médico en Cartagena, Colombia: informe 2026</a>.</em></p>
+<p><em>Leer en español: <a href="https://fulviocorrea.com/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/" data-language="es" hreflang="es" lang="es">Cirugía plástica y turismo médico en Cartagena, Colombia: informe 2026</a>.</em></p>
 
 ## Methodology and sources
 
@@ -174,7 +174,7 @@ Charts were produced by Dr. Fulvio Correa's editorial team from the sources list
 
 You may reuse the charts and figures with attribution and a link to this page:
 
-> Dr. Fulvio Correa, Plastic Surgery (2026). *Plastic Surgery & Medical Tourism in Cartagena, Colombia: 2026 Report*. https://fulviocorrea.com.co/post/plastic-surgery-medical-tourism-cartagena-colombia
+> Dr. Fulvio Correa, Plastic Surgery (2026). *Plastic Surgery & Medical Tourism in Cartagena, Colombia: 2026 Report*. https://fulviocorrea.com/blog/plastic-surgery-medical-tourism-cartagena-colombia/
 
 ## Update log
 

@@ -65,13 +65,13 @@ Aquí se mezclan dos relojes distintos: el de tu recuperación y el de la aerol�
 
 **El reloj del vuelo.** El [centro de ayuda de Avianca](https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) indica que después de una abdominoplastia se permite viajar a partir de los 14 días y que toda condición médica especial requiere un certificado médico expedido como máximo 10 días antes del vuelo. Otras aerolíneas pueden tener sus propias reglas, así que revisa la tuya antes de comprar.
 
-En la práctica, esto significa reservar alojamiento con margen y dejar el vuelo de regreso flexible hasta que tu equipo quirúrgico te dé el alta para viajar. Si tu plan incluye también cirugía de senos o liposucción, el tiempo puede cambiar; la guía de [tiempo de recuperación del mommy makeover](https://fulviocorrea.com.co/post/tiempo-recuperacion-mommy-makeover) explica cómo se suman esas piezas.
+En la práctica, esto significa reservar alojamiento con margen y dejar el vuelo de regreso flexible hasta que tu equipo quirúrgico te dé el alta para viajar. Si tu plan incluye también cirugía de senos o liposucción, el tiempo puede cambiar; la guía de [tiempo de recuperación del mommy makeover](https://fulviocorrea.com/es/blog/tiempo-recuperacion-mommy-makeover/) explica cómo se suman esas piezas.
 
 ## Si eliges Cartagena para operarte y recuperarte
 
 Cartagena tiene aeropuerto internacional con vuelos directos desde varias ciudades de Estados Unidos, y una oferta amplia de hoteles y apartamentos. Para la recuperación, lo importante no es la vista: busca alojamiento cerca de la clínica, con ascensor, aire acondicionado confiable y una habitación tranquila. El calor y la humedad del Caribe hacen que la hidratación y la comodidad de la faja merezcan atención extra.
 
-La ciudad amurallada puede esperar. Los primeros días son de reposo relativo y caminatas cortas dentro del alojamiento; el paseo turístico, si llega, llega al final y con autorización. La página de [viaje y recuperación en Cartagena](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-travel) (en inglés) resume la logística que suele coordinar el equipo.
+La ciudad amurallada puede esperar. Los primeros días son de reposo relativo y caminatas cortas dentro del alojamiento; el paseo turístico, si llega, llega al final y con autorización. La página de [viaje y recuperación en Cartagena](https://fulviocorrea.com/international-patients/) (en inglés) resume la logística que suele coordinar el equipo.
 
 ## Preguntas para llevar a la valoración
 
@@ -85,7 +85,7 @@ La ciudad amurallada puede esperar. Los primeros días son de reposo relativo y 
 
 ## Dónde encaja el Dr. Fulvio Correa
 
-El Dr. Fulvio Correa es cirujano plástico y ejerce en Cartagena, donde valora pacientes para abdominoplastia y otros procedimientos de contorno corporal, incluidos pacientes que viajan desde el exterior. En esa valoración se define si la cirugía es adecuada para ti, qué técnica corresponde y cuál sería el calendario de controles. Si prefieres leer sobre este mismo tema en inglés, está la versión hermana: [Tummy Tuck in Colombia](https://fulviocorrea.com.co/post/tummy-tuck-colombia). Si estás comparando con liposucción, puede servirte la guía de [liposucción en Cartagena](https://fulviocorrea.com.co/post/liposuction-cartagena) (en inglés).
+El Dr. Fulvio Correa es cirujano plástico y ejerce en Cartagena, donde valora pacientes para abdominoplastia y otros procedimientos de contorno corporal, incluidos pacientes que viajan desde el exterior. En esa valoración se define si la cirugía es adecuada para ti, qué técnica corresponde y cuál sería el calendario de controles. Si prefieres leer sobre este mismo tema en inglés, está la versión hermana: [Tummy Tuck in Colombia](https://fulviocorrea.com/blog/tummy-tuck-colombia/). Si estás comparando con liposucción, puede servirte la guía de [liposucción en Cartagena](https://fulviocorrea.com/blog/liposuction-cartagena/) (en inglés).
 
 ## Escribe a Sofía por WhatsApp
 

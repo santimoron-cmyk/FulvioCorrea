@@ -69,11 +69,11 @@ Use this checklist in the evaluation—not as DIY aftercare:
 
 ## If you are traveling for surgery: recovery time ≠ stay length
 
-Recovery time describes how your body heals over weeks and months. Stay length is a separate travel decision: how long to remain near the surgical team before a cleared flight home. Mixing those two questions is how calendars get over-optimistic. For the abroad stay-length decision—flight clearance themes, lodging, and companion logistics—read the clinic’s guide on [how long to stay after a mommy makeover](https://fulviocorrea.com.co/post/how-long-to-stay-after-mommy-makeover). Use this article for the week-by-week recovery map; use that one for in-country stay planning.
+Recovery time describes how your body heals over weeks and months. Stay length is a separate travel decision: how long to remain near the surgical team before a cleared flight home. Mixing those two questions is how calendars get over-optimistic. For the abroad stay-length decision—flight clearance themes, lodging, and companion logistics—read the clinic’s guide on [how long to stay after a mommy makeover](https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/). Use this article for the week-by-week recovery map; use that one for in-country stay planning.
 
-When a tummy tuck or breast surgery is part of your combination, procedure-level context also helps you ask better recovery questions: see [tummy tuck Colombia for U.S. patients](https://fulviocorrea.com.co/post/tummy-tuck-colombia) and [breast augmentation Colombia](https://fulviocorrea.com.co/post/breast-augmentation-colombia). For an overview of how the clinic frames mommy makeover planning in Cartagena, visit the page on [mommy makeover surgery in Cartagena](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-mommy-makeover).
+When a tummy tuck or breast surgery is part of your combination, procedure-level context also helps you ask better recovery questions: see [tummy tuck Colombia for U.S. patients](https://fulviocorrea.com/blog/tummy-tuck-colombia/) and [breast augmentation Colombia](https://fulviocorrea.com/blog/breast-augmentation-colombia/). For an overview of how the clinic frames mommy makeover planning in Cartagena, visit the page on [mommy makeover surgery in Cartagena](https://fulviocorrea.com/procedures/mommy-makeover/).
 
-Prefer to read this recovery map in Spanish? See the companion guide [tiempo de recuperación mommy makeover](https://fulviocorrea.com.co/post/tiempo-recuperacion-mommy-makeover) (same clinical topic, written for Spanish-language searchers—not a machine translation of this page).
+Prefer to read this recovery map in Spanish? See the companion guide [tiempo de recuperación mommy makeover](https://fulviocorrea.com/es/blog/tiempo-recuperacion-mommy-makeover/) (same clinical topic, written for Spanish-language searchers—not a machine translation of this page).
 
 ## Where Dr. Fulvio Correa fits
 

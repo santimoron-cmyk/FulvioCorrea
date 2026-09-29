@@ -25,6 +25,21 @@ export function resolveSiteEnv(env = process.env) {
 }
 export const isProduction = (env = process.env) => resolveSiteEnv(env).mode === 'production';
 
+export const CANONICAL_HOST = 'fulviocorrea.com';
+export const CANONICAL_ORIGIN = 'https://fulviocorrea.com';
+export function isPagesDevHost(host = '') {
+  const name = String(host).toLowerCase().replace(/:\d+$/, '');
+  return name === 'pages.dev' || name.endsWith('.pages.dev');
+}
+// www.fulviocorrea.com -> https://fulviocorrea.com (path and query preserved). Null when no redirect is needed.
+export function apexRedirect(href) {
+  const url = new URL(href);
+  if (url.hostname.toLowerCase() !== 'www.' + CANONICAL_HOST) return null;
+  url.hostname = CANONICAL_HOST;
+  url.protocol = 'https:';
+  return url.toString();
+}
+
 // Crawlers explicitly welcomed in production (search + AI answer engines).
 export const AI_CRAWLERS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'PerplexityBot', 'ClaudeBot', 'Google-Extended'];
 export function robotsTxt(production, origin) {

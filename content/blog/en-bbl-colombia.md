@@ -47,7 +47,7 @@ Treat vague answers, pressure to book immediately, or guaranteed “Instagram re
 
 Strong candidacy conversations usually cover stable weight, realistic goals, enough donor fat for the intended transfer, smoking status, clotting history, medications, and prior surgeries. If major weight change is still underway, or if you cannot arrange help during early recovery, many surgeons prefer to wait rather than rush a travel date.
 
-Also discuss whether your goals are better served by fat grafting alone, liposuction-focused contouring, or a staged plan. For contouring context that often overlaps donor-area planning, see the clinic’s guide to [liposuction in Cartagena](https://fulviocorrea.com.co/post/liposuction-cartagena). If abdominal skin or muscle repair is part of a broader body plan, also read [tummy tuck Colombia for U.S. patients](https://fulviocorrea.com.co/post/tummy-tuck-colombia).
+Also discuss whether your goals are better served by fat grafting alone, liposuction-focused contouring, or a staged plan. For contouring context that often overlaps donor-area planning, see the clinic’s guide to [liposuction in Cartagena](https://fulviocorrea.com/blog/liposuction-cartagena/). If abdominal skin or muscle repair is part of a broader body plan, also read [tummy tuck Colombia for U.S. patients](https://fulviocorrea.com/blog/tummy-tuck-colombia/).
 
 ## Travel logistics to confirm—not invent—before you fly
 
@@ -61,7 +61,7 @@ Bring these travel themes to the consult as questions:
 • Should return tickets stay changeable until you clear air travel?
 • What lodging features matter most near follow-up care (elevator, quiet room, companion space)?
 
-Cartagena can be a comfortable recovery base when your calendar prioritizes clinic access over tourism. For destination logistics—flights, lodging patterns, and how international patients usually organize the trip—use the clinic’s [plastic surgery travel guidance for Cartagena](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-travel).
+Cartagena can be a comfortable recovery base when your calendar prioritizes clinic access over tourism. For destination logistics—flights, lodging patterns, and how international patients usually organize the trip—use the clinic’s [plastic surgery travel guidance for Cartagena](https://fulviocorrea.com/international-patients/).
 
 ## How to evaluate a destination surgeon without guessing
 

@@ -100,6 +100,27 @@ export function localizeEsOutput(dist = 'dist') {
   }
 }
 
+// English public URLs live at the site root. /en/about/ is still the file route; canonicals use /about/.
+export function publicPath(route) {
+  if (typeof route !== 'string') return route;
+  if (route === '/en' || route === '/en/') return '/';
+  if (route.startsWith('/en/')) return '/' + route.slice(4);
+  return route;
+}
+
+// Absolute self-URLs only. Relative /en/ links and emails are left alone.
+export function publishEnglishAtRoot(dist = 'dist', origin = 'https://fulviocorrea.com', extras = []) {
+  const needle = origin + '/en/';
+  const repl = origin + '/';
+  const files = [...walk(dist).filter(f => /\.(html|xml|txt|json|webmanifest|js|css)$/.test(f)).map(f => path.join(dist, f)), ...extras];
+  for (const file of files) {
+    if (!fs.existsSync(file)) continue;
+    const raw = fs.readFileSync(file, 'utf8');
+    if (!raw.includes(needle)) continue;
+    fs.writeFileSync(file, raw.split(needle).join(repl));
+  }
+}
+
 export function localizeRedirectRules(rules) {
   const localized = rules.map(r => ({...r, to: localizePath(r.to)}));
   const have = new Set(localized.map(r => r.from));

@@ -11,16 +11,16 @@ function visit(url,title,session){const el={hidden:false,onclick:null,getAttribu
   document:{title,documentElement:{lang:'es'},referrer:'',getElementById:id=>id==='consultation-form'?null:el,querySelector:s=>s==='.menu-toggle'||s==='.nav'?el:null,querySelectorAll:()=>[],addEventListener(){}}});
  return JSON.parse(local.get('fc_journey'));}
 const tab1=new Map();
-let j=visit('https://fulviocorrea.com.co/es/?utm_source=ig','Cirugía plástica en Cartagena | Dr. Fulvio Correa',tab1);
+let j=visit('https://fulviocorrea.com/es/?utm_source=ig','Cirugía plástica en Cartagena | Dr. Fulvio Correa',tab1);
 assert.equal(j.v,1);assert.deepEqual(j.p,[['/es/','Cirugía plástica en Cartagena',clock]]);assert.equal(j.f,clock);
-clock+=60000;j=visit('https://fulviocorrea.com.co/es/procedimientos/bbl/?email=x@y.z','Aumento glúteo con grasa | Dr. Fulvio Correa',tab1);
+clock+=60000;j=visit('https://fulviocorrea.com/es/procedimientos/bbl/?email=x@y.z','Aumento glúteo con grasa | Dr. Fulvio Correa',tab1);
 assert.equal(j.v,1,'same tab session is the same visit');assert.equal(j.p.length,2);assert.equal(j.p[1][0],'/es/procedimientos/bbl/','path only, never the query string');
 assert.ok(!JSON.stringify(j).includes('x@y.z')&&!JSON.stringify(j).includes('utm_source'),'no personal data or campaign params in the journey');
-clock+=86400000;j=visit('https://fulviocorrea.com.co/en/procedures/bbl/','Brazilian Butt Lift in Cartagena | Dr. Fulvio Correa',new Map());
+clock+=86400000;j=visit('https://fulviocorrea.com/en/procedures/bbl/','Brazilian Butt Lift in Cartagena | Dr. Fulvio Correa',new Map());
 assert.equal(j.v,2,'a new tab session counts as a return visit');assert.equal(j.p.length,3);
-for(let i=0;i<40;i++){clock+=1000;j=visit('https://fulviocorrea.com.co/en/blog/','Blog',new Map());}
+for(let i=0;i<40;i++){clock+=1000;j=visit('https://fulviocorrea.com/en/blog/','Blog',new Map());}
 assert.equal(j.p.length,30,'capped at 30 entries');assert.equal(j.v,42);
-clock+=91*86400000;j=visit('https://fulviocorrea.com.co/en/','Home',tab1);assert.deepEqual(j.p.map(e=>e[0]),['/en/'],'entries older than 90 days are dropped');
+clock+=91*86400000;j=visit('https://fulviocorrea.com/en/','Home',tab1);assert.deepEqual(j.p.map(e=>e[0]),['/en/'],'entries older than 90 days are dropped');
 // 2. Server formatting (Colombia time = UTC-5, no DST).
 assert.equal(colombiaTime(Date.UTC(2026,8,28,22,30)),'28/09 17:30');assert.equal(colombiaTime(Date.UTC(2026,8,29,3,5),true),'28/09/2026 22:05');
 const now=Date.UTC(2026,8,28,22,40),t=(d,h,m)=>Date.UTC(2026,8,d,h,m);
@@ -37,7 +37,7 @@ assert.equal(parseJourney(JSON.stringify({v:2,p:Array.from({length:50},(_,i)=>['
 // 3. Through the lead Function with a mocked HighLevel webhook (no real requests).
 const {onRequest}=await import('./functions/api/lead.js');const procedures=(await import('./functions/_shared/lead-procedures.js')).default;
 const sent=[];globalThis.fetch=async(url,init)=>{sent.push(JSON.parse(init.body));return new Response('{}',{status:200});};
-const site='https://fulviocorrea.com.co',env={LEAD_CAPTURE_ENABLED:'true',LEAD_WEBHOOK_URL:'https://services.leadconnectorhq.com/hooks/EXAMPLE/webhook-trigger/EXAMPLE'};
+const site='https://fulviocorrea.com',env={LEAD_CAPTURE_ENABLED:'true',LEAD_WEBHOOK_URL:'https://services.leadconnectorhq.com/hooks/EXAMPLE/webhook-trigger/EXAMPLE'};
 const body={event:'lead_created',lead_id:'lead-journey-0001',event_id:'lead-journey-0001-created',name:'Ana Prueba',phone:'+573001112233',procedure:procedures[0],language:'es',contact_consent:true,journey:JSON.stringify({v:2,f:Date.now()-3600000,p:[['/es/','Inicio',Date.now()-60000]]})};
 const res=await onRequest({request:new Request(site+'/api/lead',{method:'POST',headers:{'content-type':'application/json',origin:site,'idempotency-key':body.event_id},body:JSON.stringify(body)}),env});
 assert.equal(res.status,200);assert.equal(sent.length,1);assert.equal(sent[0].journey_visits,2);assert.match(sent[0].journey_note,/^Recorrido en el sitio \(hora Colombia\) — visitas: 2, primera visita: \d{2}\/\d{2}\/\d{4} \d{2}:\d{2}, páginas vistas: 1\n• \d{2}\/\d{2} \d{2}:\d{2} · Inicio \(ES\) · \/es\/$/);
