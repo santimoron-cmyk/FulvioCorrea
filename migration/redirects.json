@@ -259,6 +259,56 @@
       "status": 301
     },
     {
+      "from": "/plastic-surgery-colombia-cartagena-evaluation-agenda",
+      "to": "/book-consultation/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-evaluation-agenda/",
+      "to": "/book-consultation/",
+      "status": 301
+    },
+    {
+      "from": "/mammoplasty-es",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/mammoplasty-es/",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/facelift-es",
+      "to": "/es/procedimientos/lifting-facial/",
+      "status": 301
+    },
+    {
+      "from": "/facelift-es/",
+      "to": "/es/procedimientos/lifting-facial/",
+      "status": 301
+    },
+    {
+      "from": "/draft-home-es",
+      "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/draft-home-es/",
+      "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/home-plastic-surgery-colombia-cartagena-es",
+      "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/home-plastic-surgery-colombia-cartagena-es/",
+      "to": "/es/",
+      "status": 301
+    },
+    {
       "from": "/post/bbl-colombia",
       "to": "/blog/bbl-colombia/",
       "status": 301

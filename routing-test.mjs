@@ -66,6 +66,19 @@ assert.equal(redirectTo('/en/about/', rules), '/about/');
 assert.equal(redirectTo('/en/procedures/bbl/', rules), '/procedures/bbl/');
 assert.equal(redirectTo('/en/blog/', rules), '/blog/');
 assert.notEqual(redirectTo('/about/', rules), '/en/about/');
+assert.ok(rules.every(r => r.to !== '/en' && !String(r.to).startsWith('/en/')), 'a redirect still targets /en/');
+for (const [from, to] of [
+  ['/plastic-surgery-colombia-cartagena-evaluation-agenda', '/book-consultation/'],
+  ['/plastic-surgery-colombia-cartagena-evaluation-agenda/', '/book-consultation/'],
+  ['/mammoplasty-es', '/es/procedimientos/reduccion-y-levantamiento-de-senos/'],
+  ['/mammoplasty-es/', '/es/procedimientos/reduccion-y-levantamiento-de-senos/'],
+  ['/facelift-es', '/es/procedimientos/lifting-facial/'],
+  ['/facelift-es/', '/es/procedimientos/lifting-facial/'],
+  ['/draft-home-es', '/es/'],
+  ['/draft-home-es/', '/es/'],
+  ['/home-plastic-surgery-colombia-cartagena-es', '/es/'],
+  ['/home-plastic-surgery-colombia-cartagena-es/', '/es/'],
+]) assert.equal(redirectTo(from, rules), to, from);
 
 const files = htmlFiles('dist');
 assert.ok(files.length > 0);
@@ -103,7 +116,7 @@ assert.match(home, new RegExp('hreflang="x-default" href="' + origin + '/"'));
 assert.match(fs.readFileSync('dist/404.html', 'utf8'), /href="\/"/);
 assert.doesNotMatch(fs.readFileSync('dist/404.html', 'utf8'), /href="\/en/);
 
-const samples = ['/', '/about/', '/procedures/bbl/', '/blog/', '/es/', '/es/contacto/', '/en/', '/en/about/', '/en/procedures/bbl/', '/en/blog/', '/en/404/'];
+const samples = ['/', '/about/', '/procedures/bbl/', '/blog/', '/book-consultation/', '/es/', '/es/contacto/', '/en/', '/en/about/', '/en/procedures/bbl/', '/en/blog/', '/en/404/', '/plastic-surgery-colombia-cartagena-evaluation-agenda', '/plastic-surgery-colombia-cartagena-evaluation-agenda/', '/mammoplasty-es', '/mammoplasty-es/', '/facelift-es', '/facelift-es/', '/draft-home-es', '/draft-home-es/', '/home-plastic-surgery-colombia-cartagena-es', '/home-plastic-surgery-colombia-cartagena-es/', '/draft-travel-es', '/draft-travel-es/'];
 for (const sample of samples) {
   const result = status(sample, rules);
   const follow = result.location ? status(result.location, rules) : null;

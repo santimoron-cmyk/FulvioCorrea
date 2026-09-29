@@ -254,6 +254,56 @@ curl -I "https://fulviocorrea.com/ads/mammoplasty/"
 curl -I "https://fulviocorrea.com/ads/breast-lift-reduction/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/plastic-surgery-colombia-cartagena-evaluation-agenda"
+# Expected: 301 Location: /book-consultation/
+curl -I "https://fulviocorrea.com/book-consultation/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/plastic-surgery-colombia-cartagena-evaluation-agenda/"
+# Expected: 301 Location: /book-consultation/
+curl -I "https://fulviocorrea.com/book-consultation/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/mammoplasty-es"
+# Expected: 301 Location: /es/procedimientos/reduccion-y-levantamiento-de-senos/
+curl -I "https://fulviocorrea.com/es/procedimientos/reduccion-y-levantamiento-de-senos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/mammoplasty-es/"
+# Expected: 301 Location: /es/procedimientos/reduccion-y-levantamiento-de-senos/
+curl -I "https://fulviocorrea.com/es/procedimientos/reduccion-y-levantamiento-de-senos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/facelift-es"
+# Expected: 301 Location: /es/procedimientos/lifting-facial/
+curl -I "https://fulviocorrea.com/es/procedimientos/lifting-facial/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/facelift-es/"
+# Expected: 301 Location: /es/procedimientos/lifting-facial/
+curl -I "https://fulviocorrea.com/es/procedimientos/lifting-facial/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/draft-home-es"
+# Expected: 301 Location: /es/
+curl -I "https://fulviocorrea.com/es/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/draft-home-es/"
+# Expected: 301 Location: /es/
+curl -I "https://fulviocorrea.com/es/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/home-plastic-surgery-colombia-cartagena-es"
+# Expected: 301 Location: /es/
+curl -I "https://fulviocorrea.com/es/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/home-plastic-surgery-colombia-cartagena-es/"
+# Expected: 301 Location: /es/
+curl -I "https://fulviocorrea.com/es/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/bbl-colombia"
 # Expected: 301 Location: /blog/bbl-colombia/
 curl -I "https://fulviocorrea.com/blog/bbl-colombia/"
