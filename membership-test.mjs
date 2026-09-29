@@ -29,7 +29,10 @@ for(const page of JSON.parse(fs.readFileSync('pages.json'))){const h=fs.readFile
  if(ghlChat&&h.includes('id="contact-open"')){const t=JSON.parse(h.match(/data-texts="([^"]*)"/)[1].replaceAll('&quot;','"').replaceAll('&amp;','&').replaceAll('&#39;',"'").replaceAll('&lt;','<').replaceAll('&gt;','>'));
   // GHL texts follow the page language, name Sofía (never the dashboard's Eileen) and use the S avatar, not a photo.
   assert.equal(t.heading,'Sofía',page.route);assert.equal(t.subtitle,page.lang==='es'?'Sofía, nuestra asistente virtual':'Sofía, our virtual assistant',page.route);assert.match(t.promptAvatar,/^data:image\/svg\+xml/);assert.doesNotMatch(JSON.stringify(t),/Eileen|Enter your question|Ingresa una pregunta/i,page.route);
-  assert.match(t.legalMsg,page.lang==='es'?/SMS.*correos.*tarifas/:/SMS.*emails.*rates/,page.route+' consent meaning');assert.equal(!!t.labels,page.lang==='es');}
+  assert.match(t.legalMsg,page.lang==='es'?/SMS.*correos.*tarifas/:/SMS.*emails.*rates/,page.route+' consent meaning');assert.equal(!!t.labels,page.lang==='es');
+  // The conversation starts right away: no text promises a later callback (only the "nobody available" fallback may).
+  assert.equal(t.subHeading,page.lang==='es'?'Déjanos tu nombre y teléfono y Sofía te responde enseguida.':'Share your name and phone number and Sofía will reply right away.',page.route);
+  const {liveChatUserInactiveMsg,...now}=t;assert.doesNotMatch(JSON.stringify(now),/contactar|will contact|en breve|shortly|get back to you|Danos un momento|Give us a moment|later|más tarde/i,page.route+' callback tone');}
  if(page.route===`/${page.lang}/`||page.route===localizePath(`/${page.lang}/about/`)||page.route===localizePath(`/${page.lang}/international-patients/`)||page.procedure&&!page.ads||/\/blog\/[^/]+\/$/.test(page.route)){
   const main=h.split('<main id="main">')[1].split('</main>')[0];for(const s of practice.societies)assert.ok(main.includes('href="'+s.source+'"'),page.route+' missing visible membership');
  }
