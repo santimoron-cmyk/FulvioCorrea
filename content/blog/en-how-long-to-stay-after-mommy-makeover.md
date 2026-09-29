@@ -83,9 +83,9 @@ After you land in the U.S., recovery continues. Desk work may return sooner than
 
 If you are comparing Cartagena for a mommy makeover, use this article for the stay-length decision, then review procedure details and candidacy on the clinic’s mommy makeover information page and travel guidance. Logistics and clinical evaluation belong together: a beautiful destination does not replace follow-up access or clearance criteria.
 
-Internal references for readers continuing research: the mommy makeover overview at [Mommy Makeover in Cartagena](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-mommy-makeover) and travel/recovery context at [travel and recovery guidance](https://fulviocorrea.com.co/plastic-surgery-colombia-cartagena-travel). For liposuction-specific travel notes, see [Liposuction in Cartagena](https://fulviocorrea.com.co/post/liposuction-cartagena)—that topic is separate from a full mommy makeover stay plan.
+Internal references for readers continuing research: the mommy makeover overview at [Mommy Makeover in Cartagena](https://fulviocorrea.com/procedures/mommy-makeover/) and travel/recovery context at [travel and recovery guidance](https://fulviocorrea.com/international-patients/). For liposuction-specific travel notes, see [Liposuction in Cartagena](https://fulviocorrea.com/blog/liposuction-cartagena/)—that topic is separate from a full mommy makeover stay plan.
 
-If you are still mapping what recovery feels like over the weeks—not only how long to remain near the clinic—read the companion guide on [mommy makeover recovery time week by week](https://fulviocorrea.com.co/post/mommy-makeover-recovery-time). That article covers general recovery ranges and consult questions; this one stays focused on in-country stay length and flight-clearance planning.
+If you are still mapping what recovery feels like over the weeks—not only how long to remain near the clinic—read the companion guide on [mommy makeover recovery time week by week](https://fulviocorrea.com/blog/mommy-makeover-recovery-time/). That article covers general recovery ranges and consult questions; this one stays focused on in-country stay length and flight-clearance planning.
 
 ## Sources / Medical references
 

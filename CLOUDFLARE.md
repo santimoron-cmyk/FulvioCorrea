@@ -36,7 +36,8 @@ Las variables de build y de Functions son las mismas en Pages; `LEAD_*` solo se 
 
 - **preview**: todas las páginas `noindex, nofollow`, `robots.txt` = `Disallow: /`, cabecera `X-Robots-Tag: noindex, nofollow`, sin `_redirects`.
 - **production**: páginas indexables (excepto `/ads/`, gracias, 404 y páginas marcadas `noindex`), `robots.txt` con `Allow: /`, grupos explícitos para GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended y `Sitemap:`; `_redirects` (301 de URLs antiguas) activo.
-- En ambos modos, las URLs `*.pages.dev` reciben `X-Robots-Tag: noindex` vía `_headers` para no competir con `https://fulviocorrea.com.co` (canonical fijo en `config.json`).
+- En ambos modos, las URLs `*.pages.dev` reciben `X-Robots-Tag: noindex` vía `_headers` y `functions/_middleware.js` (también los alias de rama, como `staging.fulviocorrea.pages.dev`) para no competir con `https://fulviocorrea.com`. El HTML de producción no lleva noindex global: el apex es indexable y pages.dev no. `www.fulviocorrea.com` responde 301 al apex (misma ruta y query) desde el middleware. `functions/robots.txt.js` permite el rastreo solo en el apex y apunta a `https://fulviocorrea.com/sitemap.xml`; en `*.pages.dev` responde `Disallow: /`.
+- GTM `GTM-THZVNS9B` está en cada página (consentimiento denegado por defecto antes del snippet). `_headers` no define Content-Security-Policy, así que no hace falta ampliarla para `googletagmanager.com` ni `google-analytics.com`.
 - Cloudflare → dominio → *Security / Bots*: revisar que "Block AI bots" / "Manage robots.txt (AI)" no contradiga el `robots.txt` si se quiere permitir crawlers de IA.
 
 ## Qué genera el adaptador (cloudflare.mjs)

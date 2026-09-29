@@ -11,7 +11,7 @@
  const read=key=>{try{return JSON.parse(sessionStorage.getItem(key));}catch{return null;}};
  let timezone='';try{timezone=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch{}
  // Anonymous measurement only after cookie consent (same rule as app.js). Never name/phone.
- const track=(event,detail={})=>{if(read('fc_consent')!=='granted')return;const d={...detail,language:lang,page_lang:lang,page_path:location.pathname};window.dataLayer=window.dataLayer||[];window.dataLayer.push({event,...d});if(config.ga4Id&&!config.gtmId)(function(){window.dataLayer.push(arguments);})('event',event,d);};
+ const track=(event,detail={})=>{if(read('fc_consent')!=='granted')return;const d={...detail,language:lang,page_lang:lang,page_path:location.pathname};window.dataLayer=window.dataLayer||[];window.dataLayer.push({event,...d});};
  const uid=()=>globalThis.crypto?.randomUUID?.()||'l'+Date.now().toString(36)+Math.random().toString(36).slice(2,12);
  const pathOnly=u=>{try{const x=new URL(u);return x.origin+x.pathname;}catch{return '';}};
  const payload=extra=>{const a=read('fc_attribution')||{},f=a.first_touch||{},l=a.last_touch||{},s=a.session||{},p={};

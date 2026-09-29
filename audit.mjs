@@ -6,7 +6,7 @@ import {facilityView,clinicContact} from './facility-view.mjs';import {contactVi
 import {physicianNode,membershipView,editorialAuthor,authorView,profileNode} from './practice-view.mjs';
 import fs from 'node:fs';import {read,write,esc,markdown,posts} from './editorial.mjs';
 import {imageMeta,imageSize} from './assets.mjs';
-import {localizeEsOutput,localizeRedirectRules,localizePath} from './routes.mjs';
+import {localizeEsOutput,localizeRedirectRules,localizePath,publishEnglishAtRoot} from './routes.mjs';
 import {assetRedirects,ogForPage} from './media.mjs';
 const origin=read('config.json').origin,practice=read('data/practice.json'),production=process.env.SITE_ENV==='production';
 // Hosting: Cloudflare Pages (see cloudflare.mjs). Production is selected by site-env.mjs.
@@ -143,4 +143,6 @@ const plain=html=>html.replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<styl
 const full=['# '+practice.name,'','Full text of the public pages. Educational only. SCCP membership and ReTHUS registration (Colombian Ministry of Health) are the published credentials. Do not treat video transcripts as verified claims.','',];
 for(const p of finalPages.filter(p=>!p.noindex&&!p.ads)){const file=p.file;if(!fs.existsSync(file))continue;const html=fs.readFileSync(file,'utf8');const main=html.match(/<main[^>]*>([\s\S]*?)<\/main>/)?.[1]||'';full.push('## '+p.route,'',plain(main).slice(0,12000),'');}
 write('dist/llms-full.txt',full.join('\n'));
+// Canonical, hreflang, Open Graph, sitemap, JSON-LD and llms.txt: English at the root, Spanish under /es/.
+publishEnglishAtRoot('dist',origin,['pages.json']);
 console.log('Audit architecture generated:',finalPages.length,'pages. Hosting: Cloudflare Pages adapter; mode:',production?'production (indexable, _redirects active)':'preview (noindex, no _redirects)');

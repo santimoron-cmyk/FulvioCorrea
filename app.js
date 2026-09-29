@@ -30,7 +30,7 @@
  document.getElementById('privacy-settings').onclick=()=>{banner.hidden=false;};
  let sawProcedure=false;
  function procedureView(){const procedure=document.querySelector('main[data-procedure]')?.dataset.procedure;if(!procedure||sawProcedure)return;sawProcedure=true;event('procedure_view',{procedure});}
- function choose(v){const prev=consent;consent=v;save('fc_consent',v);banner.hidden=true;gtag('consent','update',consentFlags(v));if(v==='granted')procedureView();else if(prev==='granted'&&document.getElementById('gtm-script'))location.reload();}
+ function choose(v){const prev=consent;consent=v;save('fc_consent',v);banner.hidden=true;gtag('consent','update',consentFlags(v));if(v==='granted')procedureView();else if(prev==='granted'&&document.querySelector('script[src*="googletagmanager.com/gtm.js"]'))location.reload();}
  document.getElementById('accept-analytics').onclick=()=>choose('granted');document.getElementById('reject-analytics').onclick=()=>choose('denied');if(consent==='granted')procedureView();
  const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');menu.onclick=()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);};
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){menu.setAttribute('aria-expanded','false');nav.classList.remove('open');}});

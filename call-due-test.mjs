@@ -62,7 +62,7 @@ expect('2026-03-29T04:00:00.000Z', 'morning', 'Europe/Madrid', '03-29-2026 01:00
 expect('2026-09-28T01:00:00.000Z', 'morning', 'Asia/Kolkata', '09-27-2026 09:30 PM', '2026-09-28T02:30:00.000Z', 'dom 27 sep, 9:30 p. m.–lun 28 sep, 1:30 a. m. (hora Colombia)');
 
 // The Pages Function uses the server clock, ignores client_timestamp, and leaves the fields blank unless this is a call.
-const site = 'https://fulviocorrea.com.co';
+const site = 'https://fulviocorrea.com';
 const env = {LEAD_CAPTURE_ENABLED: 'true', LEAD_WEBHOOK_URL: 'https://services.leadconnectorhq.com/hooks/EXAMPLE/webhook-trigger/EXAMPLE'};
 const posted = [];
 let now = at('2026-09-27T21:05:31.790Z');

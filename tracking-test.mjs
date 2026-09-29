@@ -1,4 +1,5 @@
 import vm from 'node:vm';import fs from 'node:fs';import assert from 'node:assert/strict';
+import {apexRedirect,isPagesDevHost} from './site-env.mjs';
 const source=fs.readFileSync('dist/app.js','utf8');
 const memory=new Map();
 function visit(url,{consent,procedure,lang='en',store=memory,lead=false}={}){
@@ -26,27 +27,29 @@ console.log('Attribution passes: capture, persistence, first/last touch, clean r
 
 function boot(url,{consent}={}){
  const html=fs.readFileSync('dist/en/index.html','utf8');
- const snippet=html.match(/<head><script>([\s\S]*?)<\/script>/)[1];
+ const head=html.slice(html.indexOf('<head>')+6,html.indexOf('</head>'));
+ const snippets=[...head.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m=>m[1]);
  const scripts=[];const location=new URL(url);
  const session=new Map();if(consent)session.set('fc_consent',JSON.stringify(consent));
- const context={window:{},URL,JSON,Date,location,sessionStorage:{getItem:k=>session.get(k)||null},document:{head:{appendChild(n){scripts.push(n);}},createElement:()=>({id:'',async:false,src:''})}};
- context.window=context;vm.runInNewContext(snippet,context);
+ const first={parentNode:{insertBefore(n){scripts.push(n);}}};
+ const context={window:{},URL,JSON,Date,location,sessionStorage:{getItem:k=>session.get(k)||null},document:{getElementsByTagName:()=>[first],createElement:()=>({id:'',async:false,src:''}),head:{appendChild(n){scripts.push(n);}}}};
+ context.window=context;
+ for(const snippet of snippets)vm.runInNewContext(snippet,context);
  return {dataLayer:context.dataLayer,scripts};
 }
-const off=['https://fulviocorrea.pages.dev/en/','https://localhost/en/','https://127.0.0.1/en/','https://preview.example/en/'];
-for(const url of off){const run=boot(url);assert.equal(gtmScript(run.scripts),undefined,'GTM loaded on '+url);const denied=consentEntries(run.dataLayer);assert.equal(denied[0][1],'default');for(const key of ['ad_storage','ad_user_data','ad_personalization','analytics_storage'])assert.equal(denied[0][2][key],'denied');}
-for(const url of ['https://fulviocorrea.com.co/en/','https://www.fulviocorrea.com.co/es/','https://localhost/en/?gtm_debug=1','https://preview.example/en/?gtm_preview=env-1']){
- const run=boot(url);const script=gtmScript(run.scripts);assert.ok(script,'GTM missing on '+url);assert.match(script.src,/id=GTM-K837M7Q6$/);
+for(const url of ['https://fulviocorrea.com/','https://www.fulviocorrea.com/es/','https://fulviocorrea.pages.dev/en/','https://staging.fulviocorrea.pages.dev/es/','https://localhost/en/']){
+ const run=boot(url);const script=gtmScript(run.scripts);assert.ok(script,'GTM missing on '+url);assert.match(script.src,/id=GTM-THZVNS9B$/);
  const layer=run.dataLayer;const def=layer.findIndex(x=>x&&x[0]==='consent'&&x[1]==='default');const start=layer.findIndex(x=>x&&x.event==='gtm.js');
  assert.ok(def>=0&&def<start,'consent default must precede GTM on '+url);
+ const denied=consentEntries(run.dataLayer);assert.equal(denied[0][1],'default');for(const key of ['ad_storage','ad_user_data','ad_personalization','analytics_storage'])assert.equal(denied[0][2][key],'denied');
 }
-const prior=boot('https://fulviocorrea.com.co/en/',{consent:'granted'});
+const prior=boot('https://fulviocorrea.com/',{consent:'granted'});
 const priorFlags=consentEntries(prior.dataLayer);assert.equal(priorFlags[1][1],'update');assert.equal(priorFlags[1][2].analytics_storage,'granted');assert.equal(priorFlags[1][2].ad_personalization,'granted');
 assert.ok(prior.dataLayer.findIndex(x=>x&&x[1]==='update')<prior.dataLayer.findIndex(x=>x&&x.event==='gtm.js'),'stored consent updates before GTM');
-const granted=visit('https://fulviocorrea.com.co/en/procedures/breast-lift-reduction/',{consent:'granted',procedure:'breast-lift-reduction',store:new Map()});
+const granted=visit('https://fulviocorrea.com/en/procedures/breast-lift-reduction/',{consent:'granted',procedure:'breast-lift-reduction',store:new Map()});
 assert.equal(granted.dataLayer.find(x=>x&&x.event==='procedure_view').procedure,'breast-lift-reduction');
 assert.equal(granted.dataLayer.find(x=>x&&x.event==='procedure_view').page_lang,'en');
-const fresh=visit('https://fulviocorrea.com.co/en/procedures/rhinoplasty/',{procedure:'rhinoplasty',store:new Map()});
+const fresh=visit('https://fulviocorrea.com/en/procedures/rhinoplasty/',{procedure:'rhinoplasty',store:new Map()});
 assert.equal(fresh.dataLayer.find(x=>x&&x.event==='procedure_view'),undefined,'procedure_view waits for consent');
 fresh.accept.onclick();
 assert.equal(fresh.dataLayer.find(x=>x&&x.event==='procedure_view').procedure,'rhinoplasty');
@@ -56,12 +59,17 @@ fresh.listeners.click({target:{closest:()=>link('whatsapp_click',{id:'footer-wha
 fresh.listeners.click({target:{closest:()=>link('phone_click',{id:'header-phone',location:'header'})}});
 const wa=fresh.dataLayer.find(x=>x&&x.event==='whatsapp_click');assert.equal(wa.procedure,'rhinoplasty');assert.equal(wa.page_lang,'en');assert.equal(wa.link_location,'footer');
 const phone=fresh.dataLayer.find(x=>x&&x.event==='phone_click');assert.equal(phone.link_location,'header');assert.equal(phone.page_lang,'en');
-const lead=visit('https://fulviocorrea.com.co/en/book-consultation/',{consent:'granted',store:new Map(),lead:true});
+const lead=visit('https://fulviocorrea.com/en/book-consultation/',{consent:'granted',store:new Map(),lead:true});
 await lead.form.onsubmit({preventDefault(){}});
 const submitted=lead.dataLayer.find(x=>x&&x.event==='lead_submit');
 assert.equal(submitted.contact_preference,'consultation');assert.equal(submitted.procedure,'breast-lift-reduction');assert.equal(submitted.page_lang,'en');
 assert.equal(submitted.name,undefined);assert.equal(submitted.email,undefined);assert.equal(submitted.phone,undefined);
 assert.ok(!JSON.stringify(lead.dataLayer).includes('Ada Lovelace'));assert.ok(!JSON.stringify(lead.dataLayer).includes('ada@example.com'));
 const html=fs.readFileSync('dist/en/index.html','utf8');
-assert.match(html,/<noscript><iframe src="https:\/\/www\.googletagmanager\.com\/ns\.html\?id=GTM-K837M7Q6" height="0" width="0" style="display:none;visibility:hidden"><\/iframe><\/noscript>/);
-console.log('GTM passes: hostname gate, debug override, consent default before the container, banner update, procedure_view, whatsapp_click, phone_click, lead_submit without PII, noscript iframe.');
+assert.match(html,/<body[^>]*><noscript><iframe src="https:\/\/www\.googletagmanager\.com\/ns\.html\?id=GTM-THZVNS9B" height="0" width="0" style="display:none;visibility:hidden"><\/iframe><\/noscript>/);
+assert.equal((html.match(/GTM-THZVNS9B/g)||[]).length,2,'one head container and one noscript');
+assert.equal(apexRedirect('https://www.fulviocorrea.com/es/contacto/?q=1'),'https://fulviocorrea.com/es/contacto/?q=1');
+assert.equal(apexRedirect('https://fulviocorrea.com/es/'),null);
+assert.equal(isPagesDevHost('staging.fulviocorrea.pages.dev'),true);
+assert.equal(isPagesDevHost('fulviocorrea.com'),false);
+console.log('GTM passes: container on every host, consent default before the container, banner update, procedure_view, whatsapp_click, phone_click, lead_submit without PII, noscript iframe.');
