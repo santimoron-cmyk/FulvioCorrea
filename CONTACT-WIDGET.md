@@ -1,6 +1,6 @@
 # Contacto con Sofía
 
-Sofía es la asistente virtual del chat, no una persona del equipo. El botón se mantiene corto («Habla con Sofía» / «Talk to Sofía», también como nombre accesible). El diálogo nativo aún muestra el subtítulo «Sofía, nuestra asistente virtual» / «Sofía, our virtual assistant»; el widget de GHL dice solo «Sofía», sin «asistente virtual» / «virtual assistant» en ningún texto (lo verifica `membership-test.mjs`).
+Sofía es la asistente virtual del chat, no una persona del equipo. El botón se mantiene corto («Habla con Sofía» / «Talk to Sofía», también como nombre accesible). En todo texto visible para pacientes (widget de GHL, diálogo nativo, botones, páginas, anuncios y blog) se dice solo «Sofía», nunca «asistente virtual» / «virtual assistant»; esa descripción queda solo en documentos internos y en `llms.txt`. `membership-test.mjs` revisa todas las páginas generadas.
 
 El widget valida nombre, teléfono con selector de país, procedimiento y consentimiento (llamada, SMS y WhatsApp; versión `contact-consent-2026-09-27`, enlaza privacidad y términos SMS). Al pulsar «Elegir cómo contactar» crea el lead (`POST /api/lead`, evento `lead_created`) sin esperar la respuesta y muestra los canales. Al elegir WhatsApp, SMS, Instagram o Facebook envía `channel_selected` con el mismo `lead_id` y teléfono (keepalive, sin bloquear la apertura de la app).
 

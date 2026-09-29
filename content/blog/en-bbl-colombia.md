@@ -75,7 +75,7 @@ Dr. Fulvio Correa is a plastic surgeon practicing in Cartagena who evaluates pat
 
 ## Message Sofía on WhatsApp
 
-If you want help coordinating a BBL / Brazilian butt lift evaluation with Dr. Fulvio Correa in Cartagena—consult scheduling, document prep, or travel timing questions—message Sofía, our virtual assistant. Logistics support is not a diagnosis or a surgical plan.
+If you want help coordinating a BBL / Brazilian butt lift evaluation with Dr. Fulvio Correa in Cartagena—consult scheduling, document prep, or travel timing questions—message Sofía. Logistics support is not a diagnosis or a surgical plan.
 
 [Message Sofía on WhatsApp about BBL in Colombia / Cartagena](https://wa.me/16506656265?text=Hi%20Sof%C3%ADa%2C%20I%20want%20information%20about%20BBL%20/%20Brazilian%20Butt%20Lift%20in%20Colombia%20/%20Cartagena)
 

@@ -97,7 +97,7 @@ Prefer to read this in Spanish? The Spanish-language guide covers the same topic
 
 ## Message Sofía on WhatsApp
 
-If you want help planning next steps for a tummy tuck evaluation with Dr. Fulvio Correa in Cartagena—including travel timing and consult logistics—message Sofía, our virtual assistant. She can help with coordination; this channel does not replace a medical evaluation.
+If you want help planning next steps for a tummy tuck evaluation with Dr. Fulvio Correa in Cartagena—including travel timing and consult logistics—message Sofía. She can help with coordination; this channel does not replace a medical evaluation.
 
 [Message Sofía on WhatsApp about tummy tuck in Colombia](https://wa.me/16506656265?text=Hi%20Sof%C3%ADa%2C%20I%20want%20information%20about%20tummy%20tuck%20in%20Colombia%20/%20Cartagena)
 

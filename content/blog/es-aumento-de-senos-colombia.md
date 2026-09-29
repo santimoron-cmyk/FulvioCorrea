@@ -90,7 +90,7 @@ El Dr. Fulvio Correa es cirujano plástico y ejerce en Cartagena (Manzanillo del
 
 ## Escribe a Sofía por WhatsApp
 
-Si quieres coordinar una valoración de aumento de senos con el Dr. Fulvio Correa en Cartagena —agenda, documentos o dudas de logística antes de viajar—, escríbele a Sofía, nuestra asistente virtual. Ella te ayuda con la coordinación; este canal no reemplaza una evaluación médica.
+Si quieres coordinar una valoración de aumento de senos con el Dr. Fulvio Correa en Cartagena —agenda, documentos o dudas de logística antes de viajar—, escríbele a Sofía. Ella te ayuda con la coordinación; este canal no reemplaza una evaluación médica.
 
 [Escribe a Sofía por WhatsApp sobre aumento de senos en Cartagena](https://wa.me/16506656265?text=Hola%20Sof%C3%ADa%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20valoraci%C3%B3n%20de%20aumento%20de%20senos%20en%20Cartagena)
 

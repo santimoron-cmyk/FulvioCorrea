@@ -100,7 +100,7 @@ Prefer to read this in Spanish? The Spanish-language guide covers the same topic
 
 ## Message Sofía on WhatsApp
 
-If you want help coordinating a breast augmentation evaluation with Dr. Fulvio Correa in Cartagena—consult scheduling, travel timing, or document prep—message Sofía, our virtual assistant. Logistics support is not a diagnosis or a surgical plan.
+If you want help coordinating a breast augmentation evaluation with Dr. Fulvio Correa in Cartagena—consult scheduling, travel timing, or document prep—message Sofía. Logistics support is not a diagnosis or a surgical plan.
 
 [Message Sofía on WhatsApp about breast augmentation in Colombia](https://wa.me/16506656265?text=Hi%20Sof%C3%ADa%2C%20I%20want%20information%20about%20breast%20augmentation%20in%20Colombia%20/%20Cartagena)
 

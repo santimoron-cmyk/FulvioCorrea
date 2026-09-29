@@ -39,6 +39,11 @@ for(const page of JSON.parse(fs.readFileSync('pages.json'))){const h=fs.readFile
   const main=h.split('<main id="main">')[1].split('</main>')[0];for(const s of practice.societies)assert.ok(main.includes('href="'+s.source+'"'),page.route+' missing visible membership');
  }
 }
+// Patient-visible copy just says "Sofía": no built HTML page (text, attributes, schema) calls her a virtual assistant.
+// Internal files keep the description on purpose: llms.txt / llms-full.txt (AI summary), README.md, CONTACT-WIDGET.md.
+const virtual=/virtual assistant|asistente virtual/i,htmlFiles=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?htmlFiles(d+'/'+e.name):e.name.endsWith('.html')?[d+'/'+e.name]:[]);
+for(const f of htmlFiles('dist'))assert.doesNotMatch(fs.readFileSync(f,'utf8'),virtual,f+' says "virtual assistant"');
+assert.match(fs.readFileSync('dist/llms.txt','utf8'),virtual,'llms.txt keeps the internal description');
 // The launcher is visible on load everywhere, including home (no parked/hidden state).
 assert.doesNotMatch(fs.readFileSync('dist/app.js','utf8')+fs.readFileSync('dist/style.css','utf8'),/parked/);
 // The new verifier must actually reject missing structured membership and visible proof links.
@@ -48,4 +53,4 @@ try{
  fs.writeFileSync(file,missing);let result=spawnSync(process.execPath,['verify.mjs'],{encoding:'utf8'});assert.notEqual(result.status,0);assert.match(result.stderr,/physician missing memberOf/);
  fs.writeFileSync(file,original.replaceAll('href="'+practice.societies[0].source+'"','href="#main"'));result=spawnSync(process.execPath,['verify.mjs'],{encoding:'utf8'});assert.notEqual(result.status,0);assert.match(result.stderr,/about missing visible membership/);
 }finally{fs.writeFileSync(file,original);const result=spawnSync(process.execPath,['verify.mjs'],{encoding:'utf8'});assert.equal(result.status,0,result.stderr);process.stdout.write(result.stdout);}
-console.log('PASS: society roles/empty data, unchanged sameAs, both author approval states, visible membership, conditional scripts, per-language chat texts, visible launcher, DOM guards and negative verifier tests.');
+console.log('PASS: society roles/empty data, unchanged sameAs, both author approval states, visible membership, conditional scripts, per-language chat texts, visible launcher, no \"virtual assistant\" in page copy, DOM guards and negative verifier tests.');

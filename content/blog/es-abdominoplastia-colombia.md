@@ -89,7 +89,7 @@ El Dr. Fulvio Correa es cirujano plástico y ejerce en Cartagena, donde valora p
 
 ## Escribe a Sofía por WhatsApp
 
-Si quieres coordinar una valoración de abdominoplastia con el Dr. Fulvio Correa en Cartagena —agenda, documentos que conviene tener a mano o dudas de logística antes de viajar—, escríbele a Sofía, nuestra asistente virtual. Ella te ayuda con la coordinación; este canal no reemplaza una evaluación médica.
+Si quieres coordinar una valoración de abdominoplastia con el Dr. Fulvio Correa en Cartagena —agenda, documentos que conviene tener a mano o dudas de logística antes de viajar—, escríbele a Sofía. Ella te ayuda con la coordinación; este canal no reemplaza una evaluación médica.
 
 [Escribe a Sofía por WhatsApp sobre abdominoplastia en Cartagena](https://wa.me/16506656265?text=Hola%20Sof%C3%ADa%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20valoraci%C3%B3n%20de%20abdominoplastia%20en%20Cartagena)
 

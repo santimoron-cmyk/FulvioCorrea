@@ -60,7 +60,7 @@
       ]
     ],
     "supportTitle": "More than an itinerary.<br><em>A coordinated plan.</em>",
-    "supportText": "The international program presents preparation, recovery support and continued communication as parts of the international-patient experience. Ask Sofía, our virtual assistant, to help coordinate your initial enquiry and explain the next step. Medical decisions remain with the treating team.",
+    "supportText": "The international program presents preparation, recovery support and continued communication as parts of the international-patient experience. Ask Sofía to help coordinate your initial enquiry and explain the next step. Medical decisions remain with the treating team.",
     "checkTitle": "Before confirming your trip",
     "checklist": [
       "Request a written breakdown of the proposed care and services.",
@@ -105,7 +105,7 @@
     "readingTitle": "Continue planning your consultation",
     "sourceLabel": "Source: the practice’s international-patient program",
     "closingTitle": "Begin with a conversation.",
-    "closing": "Tell Sofía, our virtual assistant, what you would like to discuss and choose your preferred contact channel. The team can guide you toward your virtual assessment."
+    "closing": "Tell Sofía what you would like to discuss and choose your preferred contact channel. The team can guide you toward your virtual assessment."
   },
   "es": {
     "title": "Cirugía plástica en Cartagena para pacientes internacionales",
@@ -143,7 +143,7 @@
       ]
     ],
     "supportTitle": "Más que un itinerario.<br><em>Un plan coordinado.</em>",
-    "supportText": "La preparación, el apoyo durante la recuperación y la comunicación posterior forman parte de la experiencia del programa internacional. Sofía, nuestra asistente virtual, puede ayudarte a coordinar tu consulta inicial y explicarte el siguiente paso. Las decisiones médicas corresponden al equipo tratante.",
+    "supportText": "La preparación, el apoyo durante la recuperación y la comunicación posterior forman parte de la experiencia del programa internacional. Sofía puede ayudarte a coordinar tu consulta inicial y explicarte el siguiente paso. Las decisiones médicas corresponden al equipo tratante.",
     "checkTitle": "Antes de confirmar tu viaje",
     "checklist": [
       "Solicita un desglose escrito de la atención y los servicios propuestos.",
@@ -188,6 +188,6 @@
     "readingTitle": "Sigue preparando tu valoración",
     "sourceLabel": "Fuente: programa del consultorio para pacientes internacionales",
     "closingTitle": "Comienza con una conversación.",
-    "closing": "Cuéntale a Sofía, nuestra asistente virtual, qué deseas consultar y elige tu canal de contacto. El equipo puede orientarte sobre cómo comenzar tu valoración virtual."
+    "closing": "Cuéntale a Sofía qué deseas consultar y elige tu canal de contacto. El equipo puede orientarte sobre cómo comenzar tu valoración virtual."
   }
 }
