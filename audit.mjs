@@ -6,7 +6,7 @@ import {facilityView,clinicContact} from './facility-view.mjs';import {contactVi
 import {physicianNode,membershipView,editorialAuthor,authorView,profileNode} from './practice-view.mjs';
 import fs from 'node:fs';import {read,write,esc,markdown,posts} from './editorial.mjs';
 import {imageMeta,imageSize} from './assets.mjs';
-import {localizeEsOutput,localizeRedirectRules,localizePath,publishEnglishAtRoot} from './routes.mjs';
+import {localizeEsOutput,localizeRedirectRules,localizePath,publishEnglishAtRoot,publicPath} from './routes.mjs';
 import {assetRedirects,ogForPage} from './media.mjs';
 const origin=read('config.json').origin,practice=read('data/practice.json'),production=process.env.SITE_ENV==='production';
 // Hosting: Cloudflare Pages (see cloudflare.mjs). Production is selected by site-env.mjs.
@@ -33,10 +33,12 @@ for(const lang of ['en','es']){const v=internationalView(lang,read('data/interna
 for(const lang of ['en','es']){const v=facilityView(lang,read('data/facility.json'),practice,origin);create(lang,'capri-clinic/',v.title,v.description,v.body,{schemas:v.schemas,cover:'/assets/dr-fulvio-correa-logo.png'});}
 for(const lang of ['en','es']){const v=contactView(lang,practice,read('data/facility.json'),origin);create(lang,'contact/',v.title,v.description,v.body,{schemas:v.schemas,updated:'2026-09-28'});}
 for(const lang of ['en','es']){const title=t(lang,'Patient Stories, Cartagena','Experiencias en Cartagena');const h1=t(lang,'Patient stories from Cartagena','Experiencias de pacientes en Cartagena');create(lang,'testimonials/',title,t(lang,'Watch patient experiences shared on Dr. Fulvio Correa’s channel, with English and Spanish subtitles and readable transcripts.','Conoce experiencias del canal del Dr. Fulvio Correa, con subtítulos en español e inglés y transcripciones para leer.'),`<section class="page-hero wrap"><h1>${h1}</h1><p>${t(lang,'Personal stories. Individual experiences and results vary.','Historias personales. Las experiencias y los resultados son individuales.')}</p></section><section class="section wrap no-top"><h2>${t(lang,'Watch patient experiences','Ver experiencias de pacientes')}</h2>${patientCards(lang)}</section>`);for(const video of patientVideos()){const v=patientWatch(video,lang,origin);create(lang,`testimonials/${video.slug}/`,v.title,v.description,v.body,{schemas:v.schemas,cover:video.poster,updated:video.uploadDate.slice(0,10)});}}
-const redirects={'/':'/en/','/home-plastic-surgery-colombia-cartagena':'/en/','/plastic-surgery-colombia':'/en/','/plastic-surgery-colombia-cartagena-staff':'/en/about/','/plastic-surgery-colombia-cartagena-travel':'/en/international-patients/','/draft-travel-es':'/es/international-patients/','/blog':'/en/blog/','/blog/tag/*':'/en/blog/','/blog/category/*':'/en/blog/','/blog/author/*':'/en/blog/','/privacy-policy-1485':'/en/privacy/','/terms--conditions-5647':'/en/terms/','/sms-concent-4396':'/en/sms/','/terms-and-conditions':'/en/terms/','/privacy-policies':'/en/privacy/'};
-for(const p of data.filter(p=>p.lang==='en'))redirects['/plastic-surgery-colombia-cartagena-'+p.slug]=route(p);redirects['/plastic-surgery-colombia-cartagena-abdominoplasty']='/en/procedures/tummy-tuck/';delete redirects['/plastic-surgery-colombia-cartagena-breast-lift-reduction'];Object.assign(redirects,{'/plastic-surgery-colombia-cartagena-mammoplasty':'/en/procedures/breast-lift-reduction/','/en/procedures/mammoplasty':'/en/procedures/breast-lift-reduction/','/es/procedures/mammoplasty':'/es/procedures/breast-lift-reduction/','/procedures/mammoplasty':'/en/procedures/breast-lift-reduction/','/en/ads/mammoplasty':'/en/ads/breast-lift-reduction/','/es/ads/mammoplasty':'/es/ads/breast-lift-reduction/','/ads/mammoplasty':'/en/ads/breast-lift-reduction/'});
+// English is served at the root. Legacy /en/* paths redirect forward; nothing redirects back to /en/.
+// /blog/category/* is not a catch-all: those paths are the live English category pages.
+const redirects={'/home-plastic-surgery-colombia-cartagena':'/','/plastic-surgery-colombia':'/','/plastic-surgery-colombia-cartagena-staff':'/about/','/plastic-surgery-colombia-cartagena-travel':'/international-patients/','/draft-travel-es':'/es/international-patients/','/blog':'/blog/','/blog/tag/*':'/blog/','/blog/author/*':'/blog/','/privacy-policy-1485':'/privacy/','/terms--conditions-5647':'/terms/','/sms-concent-4396':'/sms/','/terms-and-conditions':'/terms/','/privacy-policies':'/privacy/'};
+for(const p of data.filter(p=>p.lang==='en'))redirects['/plastic-surgery-colombia-cartagena-'+p.slug]=publicPath(route(p));redirects['/plastic-surgery-colombia-cartagena-abdominoplasty']='/procedures/tummy-tuck/';delete redirects['/plastic-surgery-colombia-cartagena-breast-lift-reduction'];Object.assign(redirects,{'/plastic-surgery-colombia-cartagena-mammoplasty':'/procedures/breast-lift-reduction/','/en/procedures/mammoplasty':'/procedures/breast-lift-reduction/','/es/procedures/mammoplasty':'/es/procedures/breast-lift-reduction/','/procedures/mammoplasty':'/procedures/breast-lift-reduction/','/en/ads/mammoplasty':'/ads/breast-lift-reduction/','/es/ads/mammoplasty':'/es/ads/breast-lift-reduction/','/ads/mammoplasty':'/ads/breast-lift-reduction/'});
 for(const p of blog)redirects['/post/'+p.slug]=postRoute(p);
-const localize=(r,l)=>{if(!r.startsWith('/en/'))return r;const other=r.replace('/en/',`/${l}/`);return pages.has(other)?other:r;};
+const enBuildRoute=r=>{if(r.startsWith('/es/'))return null;if(r==='/'||r==='/en'||r==='/en/')return '/en/';if(r.startsWith('/en/'))return r.endsWith('/')?r:r+'/';return '/en'+(r.endsWith('/')?r:r+'/');};const localize=(r,l)=>{const en=enBuildRoute(r);if(!en)return r;if(l==='en')return publicPath(en);const other=en.replace('/en/','/es/');return pages.has(other)?other:publicPath(en);};
 const authorName=l=>practice.authorApproved?practice.name:t(l,'Editorial team · Dr. Fulvio Correa’s practice','Equipo editorial · Consultorio Dr. Fulvio Correa');
 for(const p of pages.values()){let h=fs.readFileSync(p.file,'utf8'),l=p.lang,other=l==='en'?'es':'en';const post=blog.find(x=>postRoute(x)===p.route),procedure=p.procedure&&!p.ads?proc(l,p.procedure):null;
 if(p.route===`/${l}/book-consultation/`)p.noindex=true;
@@ -88,18 +90,21 @@ write(p.file,h);}
 write('dist/index.html',fs.readFileSync('dist/en/index.html','utf8'));
 for(const p of pages.values())if(p.lang==='en'){const alias=p.route.slice(3);if(alias&&alias!=='/')write('dist'+alias+'index.html',fs.readFileSync(p.file,'utf8'));}
 write('dist/404.html',fs.readFileSync('dist/en/404/index.html','utf8'));write('dist/en/404.html',fs.readFileSync('dist/en/404/index.html','utf8'));write('dist/es/404.html',fs.readFileSync('dist/es/404/index.html','utf8'));
-let rules=Object.entries(redirects).flatMap(([from,to])=>[{from,to,status:301},...(!from.endsWith('/')&&!from.endsWith('*')?[{from:from+'/',to,status:301}]:[])]);
+let rules=Object.entries(redirects).flatMap(([from,to])=>{const dest=publicPath(to);return [{from,to:dest,status:301},...(!from.endsWith('/')&&!from.endsWith('*')&&from+'/'!==dest?[{from:from+'/',to:dest,status:301}]:[])];});
 rules=localizeRedirectRules(rules);
 const seenFrom=new Set(rules.map(r=>r.from));
 for(const extra of assetRedirects())if(!seenFrom.has(extra.from)){rules.push(extra);seenFrom.add(extra.from);}
+for(const p of pages.values())if(p.lang==='en'){const dest=publicPath(p.route);for(const from of [p.route,p.route.replace(/\/$/,'')]){if(!from||from===dest||seenFrom.has(from))continue;rules.push({from,to:dest,status:301});seenFrom.add(from);}}
+if(!seenFrom.has('/en')){rules.push({from:'/en',to:'/',status:301});seenFrom.add('/en');}
+rules.push({from:'/en/*',to:'/:splat',status:301});
 // Cloudflare Pages classifies rules in file order (workers-sdk #14694): the first
 // splat (*) or placeholder (:name) switches the parser to dynamic mode for good.
 // Every later line, including an exact path, counts against the 100-dynamic budget,
 // and rules past that budget are silently dropped. Exact paths must come first.
 const dynamicFrom=r=>/[*:]/.test(r.from);
 rules=[...rules.filter(r=>!dynamicFrom(r)),...rules.filter(dynamicFrom)];
-write('migration/redirects.json',JSON.stringify({active:production,productionHostingConfirmed:true,adapter:'cloudflare-pages',redirects:rules},null,2));const text=rules.map(r=>`${r.from} ${r.to} 301`).join('\n')+'\n';write('migration/_redirects.pending',text);if(production)write('dist/_redirects',text);else if(fs.existsSync('dist/_redirects'))fs.unlinkSync('dist/_redirects');
-write('migration/redirect-test.txt','# Run after production hostname is selected. Expect one 301, then 200; query strings preserved.\n'+rules.map(r=>`curl -I "${origin+r.from.replace('*','example')}"\n# Expected: 301 Location: ${r.to}\ncurl -I "${origin+r.to.split('?')[0]}"\n# Expected: 200`).join('\n\n'));
+write('migration/redirects.json',JSON.stringify({active:production,productionHostingConfirmed:true,adapter:'cloudflare-pages',redirects:rules},null,2));const text=rules.map(r=>`${r.from} ${r.to} 301`).join('\n')+'\n';write('migration/_redirects.pending',text);write('dist/_redirects',text);
+write('migration/redirect-test.txt','# Run after production hostname is selected. Expect one 301, then 200; query strings preserved.\n'+rules.filter(r=>!r.to.includes(':')).map(r=>`curl -I "${origin+r.from.replace('*','example')}"\n# Expected: 301 Location: ${r.to}\ncurl -I "${origin+r.to.split('?')[0]}"\n# Expected: 200`).join('\n\n'));
 const indexed=[...pages.values()].filter(p=>!p.noindex&&!p.ads);
 const xroute=p=>p.alternates.find(a=>a.lang==='en'&&!(pages.get(a.route)?.noindex))||p.alternates.find(a=>!(pages.get(a.route)?.noindex))||p.alternates[0];
 write('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'+indexed.map(p=>`<url><loc>${origin+p.route}</loc><lastmod>${p.updated||'2026-09-26'}</lastmod>${[...p.alternates,{lang:'x-default',route:xroute(p).route}].map(a=>`<xhtml:link rel="alternate" hreflang="${a.lang}" href="${origin+a.route}"/>`).join('')}</url>`).join('')+'</urlset>');
@@ -145,4 +150,4 @@ for(const p of finalPages.filter(p=>!p.noindex&&!p.ads)){const file=p.file;if(!f
 write('dist/llms-full.txt',full.join('\n'));
 // Canonical, hreflang, Open Graph, sitemap, JSON-LD and llms.txt: English at the root, Spanish under /es/.
 publishEnglishAtRoot('dist',origin,['pages.json']);
-console.log('Audit architecture generated:',finalPages.length,'pages. Hosting: Cloudflare Pages adapter; mode:',production?'production (indexable, _redirects active)':'preview (noindex, no _redirects)');
+console.log('Audit architecture generated:',finalPages.length,'pages. Hosting: Cloudflare Pages adapter; mode:',production?'production (indexable)':'preview (noindex)','— same routes and _redirects');

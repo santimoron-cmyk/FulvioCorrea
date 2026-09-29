@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {resultsViews} from './results-view.mjs';
-import {localizePath,procedureRoute} from './routes.mjs';
+import {localizePath,procedureRoute,publicPath} from './routes.mjs';
 const saved=process.env.SITE_ENV;
 const image=(file,alt)=>`<img src="/assets/${file}" alt="${alt}">`;
 const specimen={authorized:true,before:'fixture-before.webp',after:'fixture-after.webp',procedure:'liposuction',title:{en:'Test case'},caption:{en:'Approved explanation'},details:{en:'Additional approved detail'},interval:{en:'Recorded follow-up interval'}};
@@ -24,6 +24,6 @@ for(const page of pages){const html=fs.readFileSync(page.file,'utf8');
  for(const a of html.matchAll(/<a\b[^>]*href="https:\/\/wa\.me\/[^>]*>/g))assert.match(a[0],/data-contact-channel/,page.route+' bypasses intake');
 }
 for(const lang of ['en','es']){const hub=fs.readFileSync('dist'+localizePath(`/${lang}/procedures/`)+'index.html','utf8').split('<main id="main">')[1].split('</main>')[0];
- for(const file of fs.readdirSync('content/procedures').filter(f=>f.endsWith('.'+lang+'.json'))){const p=JSON.parse(fs.readFileSync('content/procedures/'+file));if(p.offeredConfirmed)assert.ok(hub.includes(`href="${procedureRoute(lang,p.slug)}"`),file+' missing from hub');}
+ for(const file of fs.readdirSync('content/procedures').filter(f=>f.endsWith('.'+lang+'.json'))){const p=JSON.parse(fs.readFileSync('content/procedures/'+file));if(p.offeredConfirmed)assert.ok(hub.includes(`href="${publicPath(procedureRoute(lang,p.slug))}"`),file+' missing from hub');}
 }
 console.log('PASS: case authorization, before/after images and clinical captions, preview matches production (demo only with RESULTS_DEMO=1), Sofia CTA routing, private noindex forms, complete bilingual procedure hubs.');

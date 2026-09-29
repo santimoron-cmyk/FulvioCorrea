@@ -160,7 +160,7 @@ async function buildIcons(dist) {
     theme_color: '#1c2523',
     background_color: '#100c12',
     display: 'browser',
-    start_url: '/en/',
+    start_url: '/',
   };
   fs.writeFileSync(path.join(dist, 'site.webmanifest'), JSON.stringify(manifest));
 }

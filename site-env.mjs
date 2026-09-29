@@ -6,8 +6,8 @@
 //   2. Cloudflare Pages: CF_PAGES=1 and CF_PAGES_BRANCH=main  -> production.
 //      Any other Cloudflare branch (preview deployments)      -> preview.
 //   3. Anything else (local `npm run build`, CI, other hosts)  -> preview.
-// Preview = noindex,nofollow on every page, robots.txt "Disallow: /", no _redirects,
-// plus an X-Robots-Tag header. Production = indexable pages (except ads/noindex pages).
+// Preview = noindex,nofollow on every page, robots.txt "Disallow: /", plus an X-Robots-Tag header.
+// Production = indexable pages (except ads/noindex pages). Routing and _redirects are the same in both modes.
 export const PRODUCTION_BRANCH = 'main';
 export function resolveSiteEnv(env = process.env) {
   const explicit = (env.SITE_ENV || '').trim();

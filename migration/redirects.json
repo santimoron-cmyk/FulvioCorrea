@@ -4,48 +4,43 @@
   "adapter": "cloudflare-pages",
   "redirects": [
     {
-      "from": "/",
-      "to": "/en/",
-      "status": 301
-    },
-    {
       "from": "/home-plastic-surgery-colombia-cartagena",
-      "to": "/en/",
+      "to": "/",
       "status": 301
     },
     {
       "from": "/home-plastic-surgery-colombia-cartagena/",
-      "to": "/en/",
+      "to": "/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia",
-      "to": "/en/",
+      "to": "/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia/",
-      "to": "/en/",
+      "to": "/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-staff",
-      "to": "/en/about/",
+      "to": "/about/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-staff/",
-      "to": "/en/about/",
+      "to": "/about/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-travel",
-      "to": "/en/international-patients/",
+      "to": "/international-patients/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-travel/",
-      "to": "/en/international-patients/",
+      "to": "/international-patients/",
       "status": 301
     },
     {
@@ -60,162 +55,157 @@
     },
     {
       "from": "/blog",
-      "to": "/en/blog/",
-      "status": 301
-    },
-    {
-      "from": "/blog/",
-      "to": "/en/blog/",
+      "to": "/blog/",
       "status": 301
     },
     {
       "from": "/privacy-policy-1485",
-      "to": "/en/privacy/",
+      "to": "/privacy/",
       "status": 301
     },
     {
       "from": "/privacy-policy-1485/",
-      "to": "/en/privacy/",
+      "to": "/privacy/",
       "status": 301
     },
     {
       "from": "/terms--conditions-5647",
-      "to": "/en/terms/",
+      "to": "/terms/",
       "status": 301
     },
     {
       "from": "/terms--conditions-5647/",
-      "to": "/en/terms/",
+      "to": "/terms/",
       "status": 301
     },
     {
       "from": "/sms-concent-4396",
-      "to": "/en/sms/",
+      "to": "/sms/",
       "status": 301
     },
     {
       "from": "/sms-concent-4396/",
-      "to": "/en/sms/",
+      "to": "/sms/",
       "status": 301
     },
     {
       "from": "/terms-and-conditions",
-      "to": "/en/terms/",
+      "to": "/terms/",
       "status": 301
     },
     {
       "from": "/terms-and-conditions/",
-      "to": "/en/terms/",
+      "to": "/terms/",
       "status": 301
     },
     {
       "from": "/privacy-policies",
-      "to": "/en/privacy/",
+      "to": "/privacy/",
       "status": 301
     },
     {
       "from": "/privacy-policies/",
-      "to": "/en/privacy/",
+      "to": "/privacy/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-bbl",
-      "to": "/en/procedures/bbl/",
+      "to": "/procedures/bbl/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-bbl/",
-      "to": "/en/procedures/bbl/",
+      "to": "/procedures/bbl/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-breast-augmentation",
-      "to": "/en/procedures/breast-augmentation/",
+      "to": "/procedures/breast-augmentation/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-breast-augmentation/",
-      "to": "/en/procedures/breast-augmentation/",
+      "to": "/procedures/breast-augmentation/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-facelift",
-      "to": "/en/procedures/facelift/",
+      "to": "/procedures/facelift/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-facelift/",
-      "to": "/en/procedures/facelift/",
+      "to": "/procedures/facelift/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-liposuction",
-      "to": "/en/procedures/liposuction/",
+      "to": "/procedures/liposuction/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-liposuction/",
-      "to": "/en/procedures/liposuction/",
+      "to": "/procedures/liposuction/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-mommy-makeover",
-      "to": "/en/procedures/mommy-makeover/",
+      "to": "/procedures/mommy-makeover/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-mommy-makeover/",
-      "to": "/en/procedures/mommy-makeover/",
+      "to": "/procedures/mommy-makeover/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-rhinoplasty",
-      "to": "/en/procedures/rhinoplasty/",
+      "to": "/procedures/rhinoplasty/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-rhinoplasty/",
-      "to": "/en/procedures/rhinoplasty/",
+      "to": "/procedures/rhinoplasty/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-tummy-tuck",
-      "to": "/en/procedures/tummy-tuck/",
+      "to": "/procedures/tummy-tuck/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-tummy-tuck/",
-      "to": "/en/procedures/tummy-tuck/",
+      "to": "/procedures/tummy-tuck/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-abdominoplasty",
-      "to": "/en/procedures/tummy-tuck/",
+      "to": "/procedures/tummy-tuck/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-abdominoplasty/",
-      "to": "/en/procedures/tummy-tuck/",
+      "to": "/procedures/tummy-tuck/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-mammoplasty",
-      "to": "/en/procedures/breast-lift-reduction/",
+      "to": "/procedures/breast-lift-reduction/",
       "status": 301
     },
     {
       "from": "/plastic-surgery-colombia-cartagena-mammoplasty/",
-      "to": "/en/procedures/breast-lift-reduction/",
+      "to": "/procedures/breast-lift-reduction/",
       "status": 301
     },
     {
       "from": "/en/procedures/mammoplasty",
-      "to": "/en/procedures/breast-lift-reduction/",
+      "to": "/procedures/breast-lift-reduction/",
       "status": 301
     },
     {
       "from": "/en/procedures/mammoplasty/",
-      "to": "/en/procedures/breast-lift-reduction/",
+      "to": "/procedures/breast-lift-reduction/",
       "status": 301
     },
     {
@@ -230,22 +220,22 @@
     },
     {
       "from": "/procedures/mammoplasty",
-      "to": "/en/procedures/breast-lift-reduction/",
+      "to": "/procedures/breast-lift-reduction/",
       "status": 301
     },
     {
       "from": "/procedures/mammoplasty/",
-      "to": "/en/procedures/breast-lift-reduction/",
+      "to": "/procedures/breast-lift-reduction/",
       "status": 301
     },
     {
       "from": "/en/ads/mammoplasty",
-      "to": "/en/ads/breast-lift-reduction/",
+      "to": "/ads/breast-lift-reduction/",
       "status": 301
     },
     {
       "from": "/en/ads/mammoplasty/",
-      "to": "/en/ads/breast-lift-reduction/",
+      "to": "/ads/breast-lift-reduction/",
       "status": 301
     },
     {
@@ -260,82 +250,82 @@
     },
     {
       "from": "/ads/mammoplasty",
-      "to": "/en/ads/breast-lift-reduction/",
+      "to": "/ads/breast-lift-reduction/",
       "status": 301
     },
     {
       "from": "/ads/mammoplasty/",
-      "to": "/en/ads/breast-lift-reduction/",
+      "to": "/ads/breast-lift-reduction/",
       "status": 301
     },
     {
       "from": "/post/bbl-colombia",
-      "to": "/en/blog/bbl-colombia/",
+      "to": "/blog/bbl-colombia/",
       "status": 301
     },
     {
       "from": "/post/bbl-colombia/",
-      "to": "/en/blog/bbl-colombia/",
+      "to": "/blog/bbl-colombia/",
       "status": 301
     },
     {
       "from": "/post/breast-augmentation-colombia",
-      "to": "/en/blog/breast-augmentation-colombia/",
+      "to": "/blog/breast-augmentation-colombia/",
       "status": 301
     },
     {
       "from": "/post/breast-augmentation-colombia/",
-      "to": "/en/blog/breast-augmentation-colombia/",
+      "to": "/blog/breast-augmentation-colombia/",
       "status": 301
     },
     {
       "from": "/post/how-long-to-stay-after-mommy-makeover",
-      "to": "/en/blog/how-long-to-stay-after-mommy-makeover/",
+      "to": "/blog/how-long-to-stay-after-mommy-makeover/",
       "status": 301
     },
     {
       "from": "/post/how-long-to-stay-after-mommy-makeover/",
-      "to": "/en/blog/how-long-to-stay-after-mommy-makeover/",
+      "to": "/blog/how-long-to-stay-after-mommy-makeover/",
       "status": 301
     },
     {
       "from": "/post/liposuction-cartagena",
-      "to": "/en/blog/liposuction-cartagena/",
+      "to": "/blog/liposuction-cartagena/",
       "status": 301
     },
     {
       "from": "/post/liposuction-cartagena/",
-      "to": "/en/blog/liposuction-cartagena/",
+      "to": "/blog/liposuction-cartagena/",
       "status": 301
     },
     {
       "from": "/post/mommy-makeover-recovery-time",
-      "to": "/en/blog/mommy-makeover-recovery-time/",
+      "to": "/blog/mommy-makeover-recovery-time/",
       "status": 301
     },
     {
       "from": "/post/mommy-makeover-recovery-time/",
-      "to": "/en/blog/mommy-makeover-recovery-time/",
+      "to": "/blog/mommy-makeover-recovery-time/",
       "status": 301
     },
     {
       "from": "/post/plastic-surgery-medical-tourism-cartagena-colombia",
-      "to": "/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
+      "to": "/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
       "status": 301
     },
     {
       "from": "/post/plastic-surgery-medical-tourism-cartagena-colombia/",
-      "to": "/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
+      "to": "/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
       "status": 301
     },
     {
       "from": "/post/tummy-tuck-colombia",
-      "to": "/en/blog/tummy-tuck-colombia/",
+      "to": "/blog/tummy-tuck-colombia/",
       "status": 301
     },
     {
       "from": "/post/tummy-tuck-colombia/",
-      "to": "/en/blog/tummy-tuck-colombia/",
+      "to": "/blog/tummy-tuck-colombia/",
       "status": 301
     },
     {
@@ -779,18 +769,528 @@
       "status": 301
     },
     {
-      "from": "/blog/tag/*",
-      "to": "/en/blog/",
+      "from": "/en/",
+      "to": "/",
       "status": 301
     },
     {
-      "from": "/blog/category/*",
-      "to": "/en/blog/",
+      "from": "/en",
+      "to": "/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/",
+      "to": "/procedures/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures",
+      "to": "/procedures/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/bbl/",
+      "to": "/procedures/bbl/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/bbl",
+      "to": "/procedures/bbl/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/bbl/",
+      "to": "/ads/bbl/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/bbl",
+      "to": "/ads/bbl/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/breast-augmentation/",
+      "to": "/procedures/breast-augmentation/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/breast-augmentation",
+      "to": "/procedures/breast-augmentation/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/breast-augmentation/",
+      "to": "/ads/breast-augmentation/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/breast-augmentation",
+      "to": "/ads/breast-augmentation/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/breast-lift-reduction/",
+      "to": "/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/breast-lift-reduction",
+      "to": "/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/breast-lift-reduction/",
+      "to": "/ads/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/breast-lift-reduction",
+      "to": "/ads/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/facelift/",
+      "to": "/procedures/facelift/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/facelift",
+      "to": "/procedures/facelift/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/facelift/",
+      "to": "/ads/facelift/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/facelift",
+      "to": "/ads/facelift/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/liposuction/",
+      "to": "/procedures/liposuction/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/liposuction",
+      "to": "/procedures/liposuction/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/liposuction/",
+      "to": "/ads/liposuction/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/liposuction",
+      "to": "/ads/liposuction/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/mommy-makeover/",
+      "to": "/procedures/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/mommy-makeover",
+      "to": "/procedures/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/mommy-makeover/",
+      "to": "/ads/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/mommy-makeover",
+      "to": "/ads/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/rhinoplasty/",
+      "to": "/procedures/rhinoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/rhinoplasty",
+      "to": "/procedures/rhinoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/rhinoplasty/",
+      "to": "/ads/rhinoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/rhinoplasty",
+      "to": "/ads/rhinoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/tummy-tuck/",
+      "to": "/procedures/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/tummy-tuck",
+      "to": "/procedures/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/tummy-tuck/",
+      "to": "/ads/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/tummy-tuck",
+      "to": "/ads/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/en/about/",
+      "to": "/about/",
+      "status": 301
+    },
+    {
+      "from": "/en/about",
+      "to": "/about/",
+      "status": 301
+    },
+    {
+      "from": "/en/international-patients/",
+      "to": "/international-patients/",
+      "status": 301
+    },
+    {
+      "from": "/en/international-patients",
+      "to": "/international-patients/",
+      "status": 301
+    },
+    {
+      "from": "/en/before-after/",
+      "to": "/before-after/",
+      "status": 301
+    },
+    {
+      "from": "/en/before-after",
+      "to": "/before-after/",
+      "status": 301
+    },
+    {
+      "from": "/en/resources/",
+      "to": "/resources/",
+      "status": 301
+    },
+    {
+      "from": "/en/resources",
+      "to": "/resources/",
+      "status": 301
+    },
+    {
+      "from": "/en/resources/your-consultation/",
+      "to": "/resources/your-consultation/",
+      "status": 301
+    },
+    {
+      "from": "/en/resources/your-consultation",
+      "to": "/resources/your-consultation/",
+      "status": 301
+    },
+    {
+      "from": "/en/faq/",
+      "to": "/faq/",
+      "status": 301
+    },
+    {
+      "from": "/en/faq",
+      "to": "/faq/",
+      "status": 301
+    },
+    {
+      "from": "/en/book-consultation/",
+      "to": "/book-consultation/",
+      "status": 301
+    },
+    {
+      "from": "/en/book-consultation",
+      "to": "/book-consultation/",
+      "status": 301
+    },
+    {
+      "from": "/en/image-sources/",
+      "to": "/image-sources/",
+      "status": 301
+    },
+    {
+      "from": "/en/image-sources",
+      "to": "/image-sources/",
+      "status": 301
+    },
+    {
+      "from": "/en/404/",
+      "to": "/404/",
+      "status": 301
+    },
+    {
+      "from": "/en/404",
+      "to": "/404/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/",
+      "to": "/blog/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog",
+      "to": "/blog/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/mommy-makeover/",
+      "to": "/blog/category/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/mommy-makeover",
+      "to": "/blog/category/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/breast-surgery/",
+      "to": "/blog/category/breast-surgery/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/breast-surgery",
+      "to": "/blog/category/breast-surgery/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/body-contouring/",
+      "to": "/blog/category/body-contouring/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/body-contouring",
+      "to": "/blog/category/body-contouring/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/recovery/",
+      "to": "/blog/category/recovery/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/recovery",
+      "to": "/blog/category/recovery/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/medical-tourism/",
+      "to": "/blog/category/medical-tourism/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/medical-tourism",
+      "to": "/blog/category/medical-tourism/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/plastic-surgery-in-colombia/",
+      "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/category/plastic-surgery-in-colombia",
+      "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
+      "to": "/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/plastic-surgery-medical-tourism-cartagena-colombia",
+      "to": "/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/mommy-makeover-recovery-time/",
+      "to": "/blog/mommy-makeover-recovery-time/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/mommy-makeover-recovery-time",
+      "to": "/blog/mommy-makeover-recovery-time/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/bbl-colombia/",
+      "to": "/blog/bbl-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/bbl-colombia",
+      "to": "/blog/bbl-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/breast-augmentation-colombia/",
+      "to": "/blog/breast-augmentation-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/breast-augmentation-colombia",
+      "to": "/blog/breast-augmentation-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/how-long-to-stay-after-mommy-makeover/",
+      "to": "/blog/how-long-to-stay-after-mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/how-long-to-stay-after-mommy-makeover",
+      "to": "/blog/how-long-to-stay-after-mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/liposuction-cartagena/",
+      "to": "/blog/liposuction-cartagena/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/liposuction-cartagena",
+      "to": "/blog/liposuction-cartagena/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/tummy-tuck-colombia/",
+      "to": "/blog/tummy-tuck-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/tummy-tuck-colombia",
+      "to": "/blog/tummy-tuck-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/privacy/",
+      "to": "/privacy/",
+      "status": 301
+    },
+    {
+      "from": "/en/privacy",
+      "to": "/privacy/",
+      "status": 301
+    },
+    {
+      "from": "/en/terms/",
+      "to": "/terms/",
+      "status": 301
+    },
+    {
+      "from": "/en/terms",
+      "to": "/terms/",
+      "status": 301
+    },
+    {
+      "from": "/en/sms/",
+      "to": "/sms/",
+      "status": 301
+    },
+    {
+      "from": "/en/sms",
+      "to": "/sms/",
+      "status": 301
+    },
+    {
+      "from": "/en/thank-you/",
+      "to": "/thank-you/",
+      "status": 301
+    },
+    {
+      "from": "/en/thank-you",
+      "to": "/thank-you/",
+      "status": 301
+    },
+    {
+      "from": "/en/capri-clinic/",
+      "to": "/capri-clinic/",
+      "status": 301
+    },
+    {
+      "from": "/en/capri-clinic",
+      "to": "/capri-clinic/",
+      "status": 301
+    },
+    {
+      "from": "/en/contact/",
+      "to": "/contact/",
+      "status": 301
+    },
+    {
+      "from": "/en/contact",
+      "to": "/contact/",
+      "status": 301
+    },
+    {
+      "from": "/en/testimonials/",
+      "to": "/testimonials/",
+      "status": 301
+    },
+    {
+      "from": "/en/testimonials",
+      "to": "/testimonials/",
+      "status": 301
+    },
+    {
+      "from": "/en/testimonials/natalia-vega/",
+      "to": "/testimonials/natalia-vega/",
+      "status": 301
+    },
+    {
+      "from": "/en/testimonials/natalia-vega",
+      "to": "/testimonials/natalia-vega/",
+      "status": 301
+    },
+    {
+      "from": "/en/testimonials/kary-alejandre/",
+      "to": "/testimonials/kary-alejandre/",
+      "status": 301
+    },
+    {
+      "from": "/en/testimonials/kary-alejandre",
+      "to": "/testimonials/kary-alejandre/",
+      "status": 301
+    },
+    {
+      "from": "/en/testimonials/thaily-amezcua/",
+      "to": "/testimonials/thaily-amezcua/",
+      "status": 301
+    },
+    {
+      "from": "/en/testimonials/thaily-amezcua",
+      "to": "/testimonials/thaily-amezcua/",
+      "status": 301
+    },
+    {
+      "from": "/blog/tag/*",
+      "to": "/blog/",
       "status": 301
     },
     {
       "from": "/blog/author/*",
-      "to": "/en/blog/",
+      "to": "/blog/",
+      "status": 301
+    },
+    {
+      "from": "/en/*",
+      "to": "/:splat",
       "status": 301
     }
   ]

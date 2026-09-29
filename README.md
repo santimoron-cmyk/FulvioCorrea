@@ -40,7 +40,7 @@ GTM `GTM-THZVNS9B` carga en cada página. Consent Mode v2 queda en `denied` ante
 
 ## Publicación y SEO
 
-El modo de indexación lo decide `site-env.mjs` (no `config.json`): `npm run build` local = preview (noindex en todas las páginas, robots bloqueado); Cloudflare Pages en la rama `main` = production (indexable) salvo que se defina `SITE_ENV=preview`. Detalles en [CLOUDFLARE.md](CLOUDFLARE.md). `origin` en `config.json` es el dominio canónico (https://fulviocorrea.com, sin www). Ads permanece noindex. No se modificó fulviocorrea.com.co ni su DNS.
+El modo de indexación lo decide `site-env.mjs` (no `config.json`): `npm run build` local = preview (noindex en todas las páginas, robots bloqueado); Cloudflare Pages en la rama `main` = production (indexable) salvo que se defina `SITE_ENV=preview`. Las rutas son las mismas en los dos modos. Detalles en [CLOUDFLARE.md](CLOUDFLARE.md). `origin` en `config.json` es el dominio canónico (https://fulviocorrea.com, sin www). El inglés se sirve en la raíz (`/`, `/about/`, `/blog/`); `/en/...` responde 301 a esa ruta. El español sigue en `/es/`. Ads permanece noindex. No se modificó fulviocorrea.com.co ni su DNS.
 
 Metadatos y contenido presentes en HTML, breadcrumbs y Physician JSON-LD, FAQ JSON-LD solo donde las preguntas son visibles. La estructura favorece lectura por buscadores y sistemas de IA, pero no garantiza rankings ni inclusión en respuestas de IA.
 

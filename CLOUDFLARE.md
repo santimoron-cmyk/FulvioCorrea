@@ -34,8 +34,8 @@ Las variables de build y de Functions son las mismas en Pages; `LEAD_*` solo se 
 | Cloudflare, cualquier otra rama / PR | preview |
 | `SITE_ENV=preview` en cualquier sitio | preview (tiene prioridad) |
 
-- **preview**: todas las páginas `noindex, nofollow`, `robots.txt` = `Disallow: /`, cabecera `X-Robots-Tag: noindex, nofollow`, sin `_redirects`.
-- **production**: páginas indexables (excepto `/ads/`, gracias, 404 y páginas marcadas `noindex`), `robots.txt` con `Allow: /`, grupos explícitos para GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended y `Sitemap:`; `_redirects` (301 de URLs antiguas) activo.
+- **preview**: todas las páginas `noindex, nofollow`, `robots.txt` = `Disallow: /`, cabecera `X-Robots-Tag: noindex, nofollow`. Las rutas y `_redirects` son los mismos que en production.
+- **production**: páginas indexables (excepto `/ads/`, gracias, 404 y páginas marcadas `noindex`), `robots.txt` con `Allow: /`, grupos explícitos para GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended y `Sitemap:`. `_redirects` (301 de URLs antiguas, y de `/en/*` a la raíz) está activo en los dos modos.
 - En ambos modos, las URLs `*.pages.dev` reciben `X-Robots-Tag: noindex` vía `_headers` y `functions/_middleware.js` (también los alias de rama, como `staging.fulviocorrea.pages.dev`) para no competir con `https://fulviocorrea.com`. El HTML de producción no lleva noindex global: el apex es indexable y pages.dev no. `www.fulviocorrea.com` responde 301 al apex (misma ruta y query) desde el middleware. `functions/robots.txt.js` permite el rastreo solo en el apex y apunta a `https://fulviocorrea.com/sitemap.xml`; en `*.pages.dev` responde `Disallow: /`.
 - GTM `GTM-THZVNS9B` está en cada página (consentimiento denegado por defecto antes del snippet). `_headers` no define Content-Security-Policy, así que no hace falta ampliarla para `googletagmanager.com` ni `google-analytics.com`.
 - Cloudflare → dominio → *Security / Bots*: revisar que "Block AI bots" / "Manage robots.txt (AI)" no contradiga el `robots.txt` si se quiere permitir crawlers de IA.
@@ -43,7 +43,7 @@ Las variables de build y de Functions son las mismas en Pages; `LEAD_*` solo se 
 ## Qué genera el adaptador (cloudflare.mjs)
 
 - `dist/_headers`: seguridad (nosniff, referrer, permissions, X-Frame-Options), caché `/assets/*` 7 días, noindex en pages.dev.
-- `dist/_redirects` (solo production): reglas `origen destino 301` desde `audit.mjs` (formato Cloudflare, sin `!`). Se valida: ≤ 2.000 estáticas, ≤ 100 dinámicas, ≤ 1.000 caracteres. Las rutas exactas van antes que cualquier splat (`*`) o placeholder (`:nombre`): Cloudflare cuenta como dinámica toda regla que sigue a la primera de ese tipo y descarta en silencio el resto del archivo al pasar de 100 (workers-sdk #14694).
+- `dist/_redirects` (preview y production): reglas `origen destino 301` desde `audit.mjs` (formato Cloudflare, sin `!`). El inglés vive en la raíz; `/en/` y `/en/*` redirigen ahí, nunca al revés. Se valida: ≤ 2.000 estáticas, ≤ 100 dinámicas, ≤ 1.000 caracteres. Las rutas exactas van antes que cualquier splat (`*`) o placeholder (`:nombre`): Cloudflare cuenta como dinámica toda regla que sigue a la primera de ese tipo y descarta en silencio el resto del archivo al pasar de 100 (workers-sdk #14694).
 - `functions/_shared/lead-procedures.js`: lista de procedimientos permitidos para `/api/lead` (regenerada en cada build; se versiona).
 - 404: `dist/404.html` y `dist/es/404.html` (Cloudflare sirve el 404.html más cercano, así `/es/...` inexistente muestra el 404 en español).
 
