@@ -24,11 +24,13 @@ for(const page of JSON.parse(fs.readFileSync('pages.json'))){const h=fs.readFile
  assert.equal((h.match(/<\/body>/g)||[]).length,1,page.route+' corrupt body insertion');
  // Chat provider (data/chat.json): native = launcher + Sofía dialog; ghl = launcher only (GHL loads on first click).
  assert.match(h,ghlChat?/<\/button><\/div><script defer src="\/contact.js"><\/script>/:/<\/dialog><script defer src="\/contact.js"><\/script>/,page.route+' widget script must be outside form attributes');
- assert.equal(h.includes('src="/contact.js"'),h.includes('id="contact-open"'));assert.equal(h.includes('id="contact-dialog"'),!ghlChat&&h.includes('id="contact-open"'));
+ assert.equal(h.includes('src="/contact.js"'),h.includes('id="contact-open"'));
+ // The launcher is just "Sofía": no "virtual assistant" label, visible or accessible.
+ assert.doesNotMatch(h.match(/<div class="contact-launcher"><button[^>]*>/)?.[0]||'',/virtual assistant|asistente virtual/i,page.route);assert.equal(h.includes('id="contact-dialog"'),!ghlChat&&h.includes('id="contact-open"'));
  assert.equal(h.includes('src="/thank-you.js"'),h.includes('id="thanks-confirmation"'));
  if(ghlChat&&h.includes('id="contact-open"')){const t=JSON.parse(h.match(/data-texts="([^"]*)"/)[1].replaceAll('&quot;','"').replaceAll('&amp;','&').replaceAll('&#39;',"'").replaceAll('&lt;','<').replaceAll('&gt;','>'));
   // GHL texts follow the page language, name Sofía (never the dashboard's Eileen) and use the S avatar, not a photo.
-  assert.equal(t.heading,'Sofía',page.route);assert.equal(t.subtitle,page.lang==='es'?'Sofía, nuestra asistente virtual':'Sofía, our virtual assistant',page.route);assert.match(t.promptAvatar,/^data:image\/svg\+xml/);assert.doesNotMatch(JSON.stringify(t),/Eileen|Enter your question|Ingresa una pregunta/i,page.route);
+  assert.equal(t.heading,'Sofía',page.route);assert.equal(t.subtitle,undefined,page.route);assert.match(t.promptAvatar,/^data:image\/svg\+xml/);assert.doesNotMatch(JSON.stringify(t),/Eileen|Enter your question|Ingresa una pregunta|virtual assistant|asistente virtual/i,page.route);
   assert.match(t.legalMsg,page.lang==='es'?/SMS.*correos.*tarifas/:/SMS.*emails.*rates/,page.route+' consent meaning');assert.equal(!!t.labels,page.lang==='es');
   // The conversation starts right away: no text promises a later callback (only the "nobody available" fallback may).
   assert.equal(t.subHeading,page.lang==='es'?'Déjanos tu nombre y teléfono y Sofía te responde enseguida.':'Share your name and phone number and Sofía will reply right away.',page.route);

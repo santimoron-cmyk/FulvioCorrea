@@ -1,5 +1,5 @@
 {
-  "_note": "Chat provider for the floating 'Talk to Sofía / Habla con Sofía' button. \"native\" = in-page Sofía widget (contact-widget.js + dialog). \"ghl\" = GoHighLevel/LeadConnector chat widget, loaded only on the first click (ghl-chat.js). Revert the trial by setting provider to \"native\". Widget colors/texts are set in the GHL dashboard; ghl-chat.js restyles the widget like the native Sofía dialog (palette variables + a sheet in its open shadow roots) and overrides the agent (Sofía, \"S\" avatar; `subtitle` is ours, shown under the name) and every text below per page language (`texts.shared` + `texts.en|es`; `fields` = form labels by GHL fieldKey; `labels` = GHL built-in labels via its documented localizeWidget(labels, locale); `options` = display labels for the procedure picklist, whose submitted values stay the CRM values). See CONTACT-WIDGET.md.",
+  "_note": "Chat provider for the floating 'Talk to Sofía / Habla con Sofía' button. \"native\" = in-page Sofía widget (contact-widget.js + dialog). \"ghl\" = GoHighLevel/LeadConnector chat widget, loaded only on the first click (ghl-chat.js). Revert the trial by setting provider to \"native\". Widget colors/texts are set in the GHL dashboard; ghl-chat.js restyles the widget like the native Sofía dialog (palette variables + a sheet in its open shadow roots) and overrides the agent (Sofía, \"S\" avatar, name only; an optional `subtitle` of ours would show under the name) and every text below per page language (`texts.shared` + `texts.en|es`; `fields` = form labels by GHL fieldKey; `labels` = GHL built-in labels via its documented localizeWidget(labels, locale); `options` = display labels for the procedure picklist, whose submitted values stay the CRM values). See CONTACT-WIDGET.md.",
   "provider": "ghl",
   "ghl": {
     "loader": "https://widgets.leadconnectorhq.com/loader.js",
@@ -14,8 +14,7 @@
     },
     "en": {
       "heading": "Sofía",
-      "subtitle": "Sofía, our virtual assistant",
-      "allInOneInitialMsg": "Hello! Welcome to Dr. Fulvio Correa’s practice. How can we help you? Choose where you’d like to start your conversation with Sofía, our virtual assistant.",
+      "allInOneInitialMsg": "Hello! Welcome to Dr. Fulvio Correa’s practice. How can we help you? Choose where you’d like to start your conversation with Sofía.",
       "subHeading": "Share your name and phone number and Sofía will reply right away.",
       "contactFormIntroMessage": "Share your name and phone number to start chatting with Sofía right now.",
       "contactFormSystemMessage": "Share your name and phone number to start chatting with Sofía right now.",
@@ -44,8 +43,7 @@
     },
     "es": {
       "heading": "Sofía",
-      "subtitle": "Sofía, nuestra asistente virtual",
-      "allInOneInitialMsg": "¡Hola! Bienvenido al consultorio del Dr. Fulvio Correa. ¿Cómo podemos ayudarte? Elige dónde iniciar tu conversación con Sofía, nuestra asistente virtual.",
+      "allInOneInitialMsg": "¡Hola! Bienvenido al consultorio del Dr. Fulvio Correa. ¿Cómo podemos ayudarte? Elige dónde iniciar tu conversación con Sofía.",
       "subHeading": "Déjanos tu nombre y teléfono y Sofía te responde enseguida.",
       "contactFormIntroMessage": "Déjanos tu nombre y teléfono para empezar a conversar con Sofía ahora mismo.",
       "contactFormSystemMessage": "Déjanos tu nombre y teléfono para empezar a conversar con Sofía ahora mismo.",

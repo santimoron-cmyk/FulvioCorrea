@@ -3,7 +3,7 @@ const phoneCountries=JSON.parse(fs.readFileSync('data/phone-countries.json','utf
 import {esc} from './editorial.mjs';
 // Floating launcher shared by both chat providers (data/chat.json): the native Sofía dialog or the GHL trial.
 const chatIcon='<svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l-2 2v-10A9.5 9.5 0 0 1 11.5 2 9.5 9.5 0 0 1 21 11.5Z"/><path d="M7 9h10M7 13h7"/></svg>';
-export function contactLauncher(lang,attrs){const es=lang==='es';return `<div class="contact-launcher"><button type="button" id="contact-open" ${attrs} aria-expanded="false" aria-label="${es?'Habla con Sofía, asistente virtual':'Talk to Sofía, virtual assistant'}" data-cta="contact-widget-open">${chatIcon}<span>${es?'Habla con Sofía':'Talk to Sofía'}</span></button></div>`;}
+export function contactLauncher(lang,attrs){const es=lang==='es';return `<div class="contact-launcher"><button type="button" id="contact-open" ${attrs} aria-expanded="false" aria-label="${es?'Habla con Sofía':'Talk to Sofía'}" data-cta="contact-widget-open">${chatIcon}<span>${es?'Habla con Sofía':'Talk to Sofía'}</span></button></div>`;}
 export function contactWidget(lang,procedures,channels){
  const es=lang==='es',t=(en,esText)=>es?esText:en;
  const names=new Intl.DisplayNames([lang],{type:'region'});const countries=phoneCountries.map(c=>({...c,label:names.of(c.iso)})).sort((a,b)=>a.label.localeCompare(b.label,lang));
