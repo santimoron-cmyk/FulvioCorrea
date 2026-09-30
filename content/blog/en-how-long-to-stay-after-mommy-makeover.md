@@ -8,14 +8,14 @@ tags: ["how-long-to-stay-after-mommy-makeover"]
 cover: "/assets/blog-cartagena-stay.webp"
 coverAlt: "Yellow colonial facade and wooden balconies in Cartagena"
 date: "2026-09-23"
-updated: "2026-09-25"
+updated: "2026-09-30"
 author: "fulvio-correa"
 translationOf: ""
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/mommy-makeover/recovery","https://www.plasticsurgery.org/news/blog/how-will-your-body-change-after-a-mommy-makeover","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/make-a-plan/","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/post-surgery-considerations-abroad/"]
 draft: false
 originalUrl: "https://fulviocorrea.com.co/post/how-long-to-stay-after-mommy-makeover"
 procedure: "mommy-makeover"
-twin: ""
+twin: "cuantos-dias-quedarse-despues-mommy-makeover"
 related: ["mommy-makeover-recovery-time"]
 reviewed_by: ""
 review_date: ""
@@ -48,7 +48,7 @@ Stay plans often extend when:
 
 Shorter stays may be more realistic for narrower procedure sets and short flights—but a full mommy makeover is rarely a “weekend recovery” trip. If your schedule only allows a few days after surgery, discuss whether staging procedures or adjusting travel dates is safer than compressing everything.
 
-A breast-only plan is a different stay than a combined mommy makeover. For the checks and travel questions that apply when the trip is breast surgery alone, see [breast augmentation in Colombia](/en/blog/breast-augmentation-colombia/).
+A breast-only plan is a different stay than a combined mommy makeover. For the checks and travel questions that apply when the trip is breast surgery alone, see [breast augmentation in Colombia](/blog/breast-augmentation-colombia/).
 
 ## A practical way to build your calendar
 
@@ -97,6 +97,8 @@ The stay-length ranges and travel cautions in this article draw on publicly avai
 • [ISAPS — Post Surgery Considerations Abroad](https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/post-surgery-considerations-abroad/) (flight-related clot risk; follow surgeon clearance)
 
 These sources are general education. They do not replace an individualized assessment by your operating surgeon.
+
+Spanish-language readers can use the twin guide: [cuántos días quedarse después de un mommy makeover](https://fulviocorrea.com/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/).
 
 ## Message Sofía on WhatsApp
 

@@ -8,15 +8,15 @@ tags: ["bbl-colombia"]
 cover: "/assets/blog-bbl-body-contour.webp"
 coverAlt: "Back view of a woman wearing black sportswear"
 date: "2026-09-23"
-updated: "2026-09-25"
+updated: "2026-09-30"
 author: "fulvio-correa"
 translationOf: ""
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/safety","https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement","https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf"]
 draft: false
 originalUrl: "https://fulviocorrea.com.co/post/bbl-colombia"
 procedure: "bbl"
-twin: ""
-related: []
+twin: "bbl-colombia"
+related: ["liposuction-cartagena", "tummy-tuck-colombia"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -72,6 +72,8 @@ General risks discussed with gluteal fat grafting and liposuction can include bl
 ## Where Dr. Fulvio Correa fits in this decision
 
 Dr. Fulvio Correa is a plastic surgeon practicing in Cartagena who evaluates patients for body-contouring procedures including Brazilian butt lift when clinically appropriate. An evaluation with his team is the place to match anatomy, goals, and travel timing—not a substitute for reading society safety guidance or verifying facility standards on your own.
+
+Spanish-language readers can use the twin guide: [BBL Colombia / aumento de glúteos](https://fulviocorrea.com/es/blog/bbl-colombia/).
 
 ## Message Sofía on WhatsApp
 

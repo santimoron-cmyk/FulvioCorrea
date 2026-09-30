@@ -8,7 +8,7 @@ tags: ["aumento-de-senos-colombia", "mamoplastia-de-aumento", "cirugia-de-senos"
 cover: "/assets/blog-breast-augmentation-colombia.webp"
 coverAlt: "Mujer con gabardina esperando en la sala de un aeropuerto junto a su maleta de mano antes de un viaje internacional"
 date: "2026-09-28"
-updated: "2026-09-28"
+updated: "2026-09-30"
 author: "fulvio-correa"
 translationOf: "breast-augmentation-colombia"
 sources: ["https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/","https://www.cirugiaplastica.org.co/","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety","https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales"]
@@ -87,6 +87,8 @@ La ciudad amurallada puede esperar. Los primeros días son de reposo relativo y 
 ## Dónde encaja el Dr. Fulvio Correa
 
 El Dr. Fulvio Correa es cirujano plástico y ejerce en Cartagena (Manzanillo del Mar / Centro Comercial Ramblas, local 23), donde valora pacientes para aumento de senos y otros procedimientos de mama, incluidos quienes viajan desde el exterior. En esa valoración se define si la cirugía es adecuada para ti, qué técnica corresponde y cuál sería el calendario de controles. Detalle del procedimiento en la práctica: [aumento de senos](/es/procedimientos/aumento-de-senos/). Si prefieres leer este mismo tema en inglés: <a href="/en/blog/breast-augmentation-colombia/" data-language="en" hreflang="en" lang="en">Breast Augmentation Colombia</a>.
+
+Si tu plan es un mommy makeover combinado y la pregunta es cuántos días quedarte cerca del equipo antes de volar, usa [cuántos días quedarse después de un mommy makeover](/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/).
 
 ## Escribe a Sofía por WhatsApp
 

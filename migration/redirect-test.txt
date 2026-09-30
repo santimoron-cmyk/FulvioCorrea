@@ -404,6 +404,26 @@ curl -I "https://fulviocorrea.com/post/cirugia-plastica-turismo-medico-cartagena
 curl -I "https://fulviocorrea.com/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/cuantos-dias-quedarse-despues-mommy-makeover"
+# Expected: 301 Location: /es/blog/cuantos-dias-quedarse-despues-mommy-makeover/
+curl -I "https://fulviocorrea.com/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/cuantos-dias-quedarse-despues-mommy-makeover/"
+# Expected: 301 Location: /es/blog/cuantos-dias-quedarse-despues-mommy-makeover/
+curl -I "https://fulviocorrea.com/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/liposuccion-colombia"
+# Expected: 301 Location: /es/blog/liposuccion-colombia/
+curl -I "https://fulviocorrea.com/es/blog/liposuccion-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/liposuccion-colombia/"
+# Expected: 301 Location: /es/blog/liposuccion-colombia/
+curl -I "https://fulviocorrea.com/es/blog/liposuccion-colombia/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/tiempo-recuperacion-mommy-makeover"
 # Expected: 301 Location: /es/blog/tiempo-recuperacion-mommy-makeover/
 curl -I "https://fulviocorrea.com/es/blog/tiempo-recuperacion-mommy-makeover/"
