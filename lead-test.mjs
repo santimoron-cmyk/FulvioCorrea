@@ -42,6 +42,14 @@ r=await call(request({...retry,name:'Someone Else'}),env);assert.equal(r.status,
 // Legacy consultation form (no event, first_touch/last_touch JSON strings) keeps working
 const legacyId=newId();r=await call(request({name:'Test Person',phone:'+15555550123',email:'t@example.com',procedure:procedures[0],language:'en',contact_consent:true,lead_id:legacyId,first_touch:JSON.stringify({utm_source:'first',landing_page:site+'/en/',timestamp:'2026-09-01T00:00:00.000Z'}),last_touch:JSON.stringify({utm_source:'bing',gclid:'g1'})}),env);
 assert.equal(r.status,200);sent=calls.at(-1).body;assert.equal(sent.event,'lead_created');assert.equal(sent.event_id,legacyId);assert.equal(sent.utm_source_first,'first');assert.equal(sent.utm_source,'bing');assert.equal(sent.gclid_last,'g1');assert.equal(sent.landing_url_first,site+'/en/');assert.equal(sent.attribution_timestamp,'2026-09-01T00:00:00.000Z');
+// Event sign-up (event-view.mjs / event-signup.js): allow-listed event_tag, city and companion reach the webhook flat, with a readable summary.
+{const tag='charla-mommy-makeover-doral-oct2026';const ev=o=>created({procedure:'mommy-makeover',email:'test@example.com',city:'Doral',companion:'yes',event_tag:tag,form_id:'event-signup',...o});
+ const before=calls.length;r=await call(request(ev()),env);assert.equal(r.status,200);sent=calls.at(-1).body;assert.equal(calls.length,before+1);
+ for(const [k,v] of Object.entries({event_tag:tag,tags:tag,city:'Doral',companion:'yes',lead_source_detail:'event_signup',email:'test@example.com',lead_source:'website'}))assert.equal(sent[k],v,'event '+k);
+ assert.match(sent.summary,/^Registro evento: .*Doral/);assert.match(sent.summary,/Ciudad: Doral \| Acompañante: Sí/);assert.match(sent.summary,/Tag: charla-mommy-makeover-doral-oct2026/);
+ for(const bad of [{event_tag:'other-tag'},{email:''},{city:''},{companion:'maybe'},{companion:''}]){r=await call(request(ev(bad)),env);assert.equal(r.status,422,'event '+JSON.stringify(bad));}
+ r=await call(request(created({companion:'yes'})),env);assert.equal(r.status,422,'companion without event_tag');
+ r=await call(request(created()),env);assert.equal(r.status,200);assert.equal(calls.at(-1).body.event_tag,undefined,'regular leads unchanged');}
 // Protections
 r=await call(request(created({website:'spam'})),env);assert.equal(r.status,400,'honeypot');
 r=await call(request(created(),{headers:{origin:'https://evil.example'}}),env);assert.equal(r.status,403);
@@ -51,4 +59,4 @@ r=await call(request(created()),{...env,LEAD_CAPTURE_ENABLED:'false'});assert.eq
 const statuses=[];for(let i=0;i<11;i++)statuses.push((await call(request(created(),{ip:'198.51.100.7'}),env)).status);assert.deepEqual(statuses,[...Array(10).fill(200),429],'10 requests/min per IP');
 globalThis.fetch=async()=>new Response('',{status:500});r=await call(request(created()),env);assert.equal(r.status,502);assert.equal(r.body.error,'delivery_unconfirmed');
 globalThis.fetch=realFetch;
-console.log('PASS: Cloudflare /api/lead function: lead_created, channel_selected (WhatsApp, call with time window), flat payload with summary, attribution first/last, legacy form, idempotency, validation, honeypot, origin, rate limit, 503 when disabled, non-HTTPS webhook and upstream failures.');
+console.log('PASS: Cloudflare /api/lead function: lead_created, channel_selected (WhatsApp, call with time window), flat payload with summary, attribution first/last, legacy form, idempotency, validation, honeypot, origin, rate limit, 503 when disabled, non-HTTPS webhook and upstream failures, event sign-ups (event_tag/city/companion).');

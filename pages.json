@@ -1199,6 +1199,24 @@
     ]
   },
   {
+    "route": "/en/mommy-makeover-talk-doral/",
+    "file": "dist/en/mommy-makeover-talk-doral/index.html",
+    "ads": false,
+    "lang": "en",
+    "noindex": true,
+    "pairNoindex": true,
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/mommy-makeover-talk-doral/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/charla-mommy-makeover-doral/"
+      }
+    ]
+  },
+  {
     "route": "/en/404/",
     "file": "dist/en/404/index.html",
     "ads": false,
@@ -2407,6 +2425,24 @@
       {
         "lang": "es",
         "route": "/es/image-sources/"
+      }
+    ]
+  },
+  {
+    "route": "/es/charla-mommy-makeover-doral/",
+    "file": "dist/es/charla-mommy-makeover-doral/index.html",
+    "ads": false,
+    "lang": "es",
+    "noindex": true,
+    "pairNoindex": true,
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/charla-mommy-makeover-doral/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/mommy-makeover-talk-doral/"
       }
     ]
   },

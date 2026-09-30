@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "productionHostingConfirmed": true,
   "adapter": "cloudflare-pages",
   "redirects": [
@@ -506,6 +506,16 @@
     {
       "from": "/es/procedures/mommy-makeover/",
       "to": "/es/procedimientos/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/es/mommy-makeover-talk-doral",
+      "to": "/es/charla-mommy-makeover-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/mommy-makeover-talk-doral/",
+      "to": "/es/charla-mommy-makeover-doral/",
       "status": 301
     },
     {
@@ -1076,6 +1086,16 @@
     {
       "from": "/en/image-sources",
       "to": "/image-sources/",
+      "status": 301
+    },
+    {
+      "from": "/en/mommy-makeover-talk-doral/",
+      "to": "/mommy-makeover-talk-doral/",
+      "status": 301
+    },
+    {
+      "from": "/en/mommy-makeover-talk-doral",
+      "to": "/mommy-makeover-talk-doral/",
       "status": 301
     },
     {
