@@ -8,7 +8,7 @@ tags: ["tiempo-recuperacion-mommy-makeover"]
 cover: "/assets/blog-mommy-makeover-recovery.webp"
 coverAlt: "Almohadas y ropa de cama en una habitación con luz suave"
 date: "2026-09-24"
-updated: "2026-09-25"
+updated: "2026-09-30"
 author: "fulvio-correa"
 translationOf: "mommy-makeover-recovery-time"
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/mommy-makeover/recovery","https://www.plasticsurgery.org/news/blog/what-to-expect-during-your-mommy-makeover-recovery","https://www.plasticsurgery.org/news/blog/how-will-your-body-change-after-a-mommy-makeover"]
@@ -27,7 +27,7 @@ Quien busca el **tiempo de recuperación mommy makeover** suele querer un rango 
 
 En la práctica, muchas pacientes planifican un tramo de reposo relativo más intenso al inicio y una ampliación progresiva de la rutina en el primer o segundo mes. Eso no significa que a las ocho semanas “todo esté terminado”: la ASPS recuerda que la mejoría continúa mientras se resuelve la inflamación y los tejidos se asientan; el resultado más estable suele verse a lo largo de varios meses—a veces hasta cerca de un año—según el plan quirúrgico.
 
-Si tu pregunta real es “¿cuántos días me quedo cerca del equipo quirúrgico antes de volar?”, eso es *estadía*, no el mapa completo de recuperación. Más abajo lo separamos a propósito.
+Si tu pregunta real es “¿cuántos días me quedo cerca del equipo quirúrgico antes de volar?”, eso es *estadía*, no el mapa completo de recuperación. Para esa decisión de calendario y autorización de vuelo, lee [cuántos días quedarse después de un mommy makeover](/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/). Más abajo lo separamos a propósito.
 
 ## Por qué el tiempo es un rango y no un día fijo
 

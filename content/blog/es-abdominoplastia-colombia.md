@@ -8,7 +8,7 @@ tags: ["abdominoplastia-colombia"]
 cover: "/assets/blog-tummy-tuck-consultation.webp"
 coverAlt: "Manos de un profesional de salud revisando documentos en una carpeta"
 date: "2026-09-25"
-updated: "2026-09-25"
+updated: "2026-09-30"
 author: "fulvio-correa"
 translationOf: "tummy-tuck-colombia"
 sources: ["https://www.cirugiaplastica.org.co/","https://medlineplus.gov/spanish/ency/article/002978.htm","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/recovery","https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck"]
@@ -86,6 +86,8 @@ La ciudad amurallada puede esperar. Los primeros días son de reposo relativo y 
 ## Dónde encaja el Dr. Fulvio Correa
 
 El Dr. Fulvio Correa es cirujano plástico y ejerce en Cartagena, donde valora pacientes para abdominoplastia y otros procedimientos de contorno corporal, incluidos pacientes que viajan desde el exterior. En esa valoración se define si la cirugía es adecuada para ti, qué técnica corresponde y cuál sería el calendario de controles. Si prefieres leer sobre este mismo tema en inglés, está la versión hermana: [Tummy Tuck in Colombia](https://fulviocorrea.com/blog/tummy-tuck-colombia/). Si estás comparando con liposucción, puede servirte la guía de [liposucción en Cartagena](https://fulviocorrea.com/blog/liposuction-cartagena/) (en inglés).
+
+Si tu plan incluye contorno por liposucción más que resección de piel, continúa con [liposucción en Colombia](/es/blog/liposuccion-colombia/). Si también evalúas injerto graso glúteo, lee [BBL Colombia](/es/blog/bbl-colombia/).
 
 ## Escribe a Sofía por WhatsApp
 

@@ -2484,6 +2484,10 @@
       {
         "lang": "en",
         "route": "/en/blog/category/body-contouring/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/categoria/contorno-corporal/"
       }
     ]
   },
@@ -2626,14 +2630,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-25",
+    "updated": "2026-09-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "BBL Colombia: What U.S. Patients Should Decide Before Travel",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-09-25",
+        "dateModified": "2026-09-30",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-bbl-body-contour.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/bbl-colombia/",
@@ -2651,12 +2655,16 @@
         }
       }
     ],
-    "alternate": null,
+    "alternate": "/es/blog/bbl-colombia/",
     "cover": "/assets/blog-bbl-body-contour.webp",
     "alternates": [
       {
         "lang": "en",
         "route": "/en/blog/bbl-colombia/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/bbl-colombia/"
       }
     ]
   },
@@ -2715,14 +2723,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-25",
+    "updated": "2026-09-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "How Long to Stay After a Mommy Makeover (Especially Abroad)",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-09-25",
+        "dateModified": "2026-09-30",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-stay.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/",
@@ -2740,12 +2748,16 @@
         }
       }
     ],
-    "alternate": null,
+    "alternate": "/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/",
     "cover": "/assets/blog-cartagena-stay.webp",
     "alternates": [
       {
         "lang": "en",
         "route": "/en/blog/how-long-to-stay-after-mommy-makeover/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/"
       }
     ]
   },
@@ -2755,14 +2767,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-25",
+    "updated": "2026-09-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Liposuction in Cartagena: Consultation, Travel & Recovery Guide",
+        "headline": "Liposuction in Colombia (Cartagena): Consultation, Travel & Recovery",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-09-25",
+        "dateModified": "2026-09-30",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-liposuction-measurement.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/liposuction-cartagena/",
@@ -2780,12 +2792,16 @@
         }
       }
     ],
-    "alternate": null,
+    "alternate": "/es/blog/liposuccion-colombia/",
     "cover": "/assets/blog-liposuction-measurement.webp",
     "alternates": [
       {
         "lang": "en",
         "route": "/en/blog/liposuction-cartagena/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/liposuccion-colombia/"
       }
     ]
   },
@@ -2944,13 +2960,17 @@
     "file": "dist/es/blog/categoria/contorno-corporal/index.html",
     "lang": "es",
     "ads": false,
-    "noindex": true,
+    "noindex": false,
     "updated": "2026-09-25",
     "schemas": [],
     "alternates": [
       {
         "lang": "es",
         "route": "/es/blog/categoria/contorno-corporal/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/category/body-contouring/"
       }
     ]
   },
@@ -3000,19 +3020,151 @@
     ]
   },
   {
+    "route": "/es/blog/bbl-colombia/",
+    "file": "dist/es/blog/bbl-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-30",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "BBL Colombia: qué decidir antes de viajar por un aumento de glúteos",
+        "datePublished": "2026-09-30",
+        "dateModified": "2026-09-30",
+        "inLanguage": "es",
+        "image": "https://fulviocorrea.com/assets/blog-bbl-body-contour.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/bbl-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      }
+    ],
+    "alternate": "/en/blog/bbl-colombia/",
+    "cover": "/assets/blog-bbl-body-contour.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/bbl-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/bbl-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/",
+    "file": "dist/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-30",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Cuántos días quedarse después de un mommy makeover (sobre todo si viajas)",
+        "datePublished": "2026-09-30",
+        "dateModified": "2026-09-30",
+        "inLanguage": "es",
+        "image": "https://fulviocorrea.com/assets/blog-cartagena-stay.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      }
+    ],
+    "alternate": "/en/blog/how-long-to-stay-after-mommy-makeover/",
+    "cover": "/assets/blog-cartagena-stay.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/how-long-to-stay-after-mommy-makeover/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/liposuccion-colombia/",
+    "file": "dist/es/blog/liposuccion-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-09-30",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Liposucción en Colombia: valoración, viaje y recuperación",
+        "datePublished": "2026-09-30",
+        "dateModified": "2026-09-30",
+        "inLanguage": "es",
+        "image": "https://fulviocorrea.com/assets/blog-liposuction-measurement.webp",
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/liposuccion-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      }
+    ],
+    "alternate": "/en/blog/liposuction-cartagena/",
+    "cover": "/assets/blog-liposuction-measurement.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/liposuccion-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/liposuction-cartagena/"
+      }
+    ]
+  },
+  {
     "route": "/es/blog/aumento-de-senos-colombia/",
     "file": "dist/es/blog/aumento-de-senos-colombia/index.html",
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-28",
+    "updated": "2026-09-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Aumento de senos en Colombia: qué verificar antes de viajar",
         "datePublished": "2026-09-28",
-        "dateModified": "2026-09-28",
+        "dateModified": "2026-09-30",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia.webp",
@@ -3098,14 +3250,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-25",
+    "updated": "2026-09-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Abdominoplastia en Colombia: qué verificar antes de viajar",
         "datePublished": "2026-09-25",
-        "dateModified": "2026-09-25",
+        "dateModified": "2026-09-30",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-tummy-tuck-consultation.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/abdominoplastia-colombia/",
@@ -3142,14 +3294,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-25",
+    "updated": "2026-09-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Tiempo de recuperación mommy makeover: qué esperar semana a semana",
         "datePublished": "2026-09-24",
-        "dateModified": "2026-09-25",
+        "dateModified": "2026-09-30",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-mommy-makeover-recovery.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/tiempo-recuperacion-mommy-makeover/",

@@ -1,27 +1,27 @@
 ---
-title: "Liposuction in Cartagena: Consultation, Travel & Recovery Guide"
-description: "Practical guide to liposuction in Cartagena for U.S. and international patients: consultation, medical travel logistics, and recovery planning."
+title: "Liposuction in Colombia (Cartagena): Consultation, Travel & Recovery"
+description: "Considering liposuction in Colombia? Practical guide for U.S. and international patients: consultation prep, Cartagena travel logistics, and recovery planning."
 slug: "liposuction-cartagena"
 lang: "en"
 category: "Body Contouring"
-tags: ["liposuction-cartagena"]
+tags: ["liposuction-colombia", "liposuction-cartagena", "lipo-colombia", "body-contouring", "medical-tourism-colombia"]
 cover: "/assets/blog-liposuction-measurement.webp"
 coverAlt: "Close-up of a waist being measured with a tape measure"
 date: "2026-09-23"
-updated: "2026-09-25"
+updated: "2026-09-30"
 author: "fulvio-correa"
 translationOf: ""
-sources: []
+sources: ["https://www.plasticsurgery.org/cosmetic-procedures/liposuction","https://www.plasticsurgery.org/cosmetic-procedures/liposuction/recovery","https://www.plasticsurgery.org/cosmetic-procedures/liposuction/safety","https://www.cirugiaplastica.org.co/"]
 draft: false
 originalUrl: "https://fulviocorrea.com.co/post/liposuction-cartagena"
 procedure: "liposuction"
-twin: ""
-related: []
+twin: "liposuccion-colombia"
+related: ["bbl-colombia", "tummy-tuck-colombia", "plastic-surgery-medical-tourism-cartagena-colombia"]
 reviewed_by: ""
 review_date: ""
 ---
 
-**Liposuction in Cartagena** attracts patients from Colombia and abroad who want a clear clinical setting, solid travel connections, and a realistic recovery plan. This guide covers how to prepare for a consultation, organize medical travel, and think through aftercare so you arrive with better questions—not a fixed outcome script.
+**Liposuction in Colombia**—often searched as lipo in Colombia or liposuction in Cartagena—attracts patients who want a clear clinical setting, solid travel connections, and a realistic recovery plan. This guide covers how to prepare for a consultation, organize medical travel to Cartagena, and think through aftercare so you arrive with better questions—not a fixed outcome script.
 
 ## What liposuction is—and which expectations are realistic
 
@@ -29,11 +29,23 @@ Liposuction removes localized fat deposits in areas such as the abdomen, flanks,
 
 In consultation, the surgeon assesses fat distribution, skin quality, medical history, and lifestyle. Then you discuss whether the procedure is appropriate, whether combining procedures makes sense, or whether waiting is better. A healthy expectation includes minor asymmetries, prolonged swelling, and gradual contour changes as part of the process.
 
-## Why Cartagena is a frequent destination
+Patient-education pages from the American Society of Plastic Surgeons (ASPS) describe liposuction as a body-contouring procedure with a recovery that varies by treated areas and technique; swelling and gradual contour change are expected parts of healing, not signs that “nothing happened.” Use those general references as orientation—your surgeon sets your personal plan.
 
-Cartagena offers an international airport, serviced lodging, and professionals experienced with medical tourism. For travelers, logistics matter as much as technique: flights, nearby lodging, a companion, and a schedule that allows real rest.
+## Why Colombia—and why Cartagena shows up in the search
+
+Colombia is a frequent destination for aesthetic surgery among international patients. Cartagena adds an international airport, serviced lodging, and teams experienced with medical tourism. For travelers, logistics matter as much as technique: flights, nearby lodging, a companion, and a schedule that allows real rest.
 
 Treat the trip as a medical project, not a vacation. Plan free days before and after, avoid intense sightseeing in the early recovery window, and confirm how you will reach follow-up visits. A quiet setting with air conditioning and help getting around supports recovery better than a noisy hotel far from the care team.
+
+### Credentials to verify before you book travel
+
+Before committing to **liposuction in Colombia**:
+
+1. Confirm the surgeon’s plastic surgery specialty registration (in Colombia, ReTHUS is the national health-professional registry).
+2. If SCCP membership is claimed, verify it in the [SCCP directory](https://www.cirugiaplastica.org.co/).
+3. Ask for the exact facility name and check that surgical services are authorized for that site (Colombia’s REPS registry).
+4. Confirm anesthesiologist coverage and that surgery is performed in an operating room—not an improvised office.
+5. Get a written outline of in-person checks before flight clearance and how remote follow-up works after you return home.
 
 ## How to prepare for the consultation
 
@@ -48,6 +60,8 @@ Also discuss general risks (hematoma, seroma, infection, contour irregularities,
 Book your flight with margin. Ask your surgical team how early you should arrive so you can settle in, complete any missing labs if needed, and rest before surgery—arrival timing varies by case and should not be assumed from a blog. Confirm fasting rules, medications to pause only under medical direction, and comfortable clothing. A companion helps with walking, medication, light meals, and contacting the clinic.
 
 Avoid excessive stairs, heavy luggage, and long trips without breaks in the first days after surgery, as advised by your team. If you are coming from abroad, check documents, travel insurance when applicable, and a local phone or eSIM. Choose lodging with easy clinic access and an elevator if possible, and ask about follow-up and travel-clearance criteria before locking a rigid return ticket: clearance to travel depends on clinical progress.
+
+For broader destination planning—flights, lodging patterns, and how international patients usually organize the trip—see the clinic’s [international patients guidance](https://fulviocorrea.com/international-patients/).
 
 ## Surgery day and the early recovery window
 
@@ -69,13 +83,26 @@ Common mistakes: a return flight too soon, underestimating swelling, traveling w
 
 It also helps to define your main aesthetic goal clearly, share realistic reference photos, and ask what technical limitations apply in your specific case. That conversation reduces surprises and aligns expectations with what surgery can and cannot change.
 
-If your contouring plan may include gluteal fat grafting as well as liposuction, also read [BBL Colombia for U.S. patients](https://fulviocorrea.com/blog/bbl-colombia/) for safety questions and travel decision points specific to Brazilian butt lift.
+If your contouring plan may include gluteal fat grafting as well as liposuction, also read [BBL Colombia for U.S. patients](https://fulviocorrea.com/blog/bbl-colombia/) for safety questions and travel decision points specific to Brazilian butt lift. If abdominal skin or muscle repair is the primary concern, see [tummy tuck Colombia](https://fulviocorrea.com/blog/tummy-tuck-colombia/).
+
+Spanish-language readers can use the twin guide: [liposucción en Colombia](https://fulviocorrea.com/es/blog/liposuccion-colombia/).
+
+## Where Dr. Fulvio Correa fits
+
+Dr. Fulvio Correa is a plastic surgeon in Cartagena and a full member (Miembro de Número) of the Colombian Society of Plastic, Aesthetic and Reconstructive Surgery (SCCP). He evaluates patients for liposuction and body contouring when clinically appropriate. An evaluation with his team is where anatomy, goals, and travel timing should be matched—not a substitute for verifying facility standards on your own.
 
 ## Message Sofía on WhatsApp
 
-If you want guidance on **liposuction in Cartagena**, medical travel, or scheduling an evaluation with Dr. Fulvio Correa, message Sofía. She helps with logistics and next clinical steps; this channel does not replace an in-person diagnosis.
+If you want guidance on **liposuction in Colombia** or Cartagena, medical travel, or scheduling an evaluation with Dr. Fulvio Correa, message Sofía. She helps with logistics and next clinical steps; this channel does not replace an in-person diagnosis.
 
-[Message Sofía on WhatsApp about liposuction in Cartagena](https://wa.me/16506656265?text=Hi%20Sof%C3%ADa%2C%20I%20want%20information%20about%20liposuction%20in%20Cartagena)
+[Message Sofía on WhatsApp about liposuction in Colombia / Cartagena](https://wa.me/16506656265?text=Hi%20Sof%C3%ADa%2C%20I%20want%20information%20about%20liposuction%20in%20Colombia%20/%20Cartagena)
+
+## Sources / Medical references
+
+• ASPS — [Liposuction](https://www.plasticsurgery.org/cosmetic-procedures/liposuction)
+• ASPS — [Liposuction Recovery](https://www.plasticsurgery.org/cosmetic-procedures/liposuction/recovery)
+• ASPS — [Liposuction Safety](https://www.plasticsurgery.org/cosmetic-procedures/liposuction/safety)
+• [SCCP directory](https://www.cirugiaplastica.org.co/)
 
 ## Medical Information Disclaimer
 
