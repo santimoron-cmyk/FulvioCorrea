@@ -1,5 +1,6 @@
 import {patientVideos,patientCards,patientWatch} from './patient-videos.mjs';
 import {procedureVideo} from './procedure-video.mjs';
+import {trackingAttrs,pageType} from './tracking-attrs.mjs';
 import {liposuctionView,liposuctionSchema} from './liposuction-view.mjs';
 import {internationalView} from './international-view.mjs';
 import {facilityView,clinicContact} from './facility-view.mjs';import {contactView,officePhones,officeHours} from './contact-view.mjs';
@@ -106,6 +107,7 @@ h=h.replace(/Allow measurement to help us understand visits and consultation req
 // All consultation entry points use Sofia; the legacy form remains only at its noindex URL.
 h=h.replace(/<a\b([^>]*?)href="([^"]+)"([^>]*)>([\s\S]*?)<\/a>/g,(full,before,href,after,label)=>{if(/data-contact-channel/.test(before+after)||!(/\/(?:en|es)\/book-consultation\//.test(href)||/^https:\/\/wa\.me\//.test(href)))return full;let selected=p.procedure||post?.procedure||'';try{selected=new URL(href,origin).searchParams.get('procedure')||selected;}catch{}const attrs=(before+after).replace(/\s+(?:target|rel|data-event)="[^"]*"/g,'');return `<button type="button" ${attrs} data-open-contact aria-haspopup="dialog" aria-controls="contact-dialog"${selected?` data-procedure="${esc(selected)}"`:''}>${/WhatsApp/.test(label)?t(l,'Chat with Sofía','Hablar con Sofía'):label}</button>`;});
 if(p.ads)h=h.replace(/<form id="consultation-form"[\s\S]*?<\/form>/,`<div class="ads-chat"><p>${t(l,'Speak with Sofía about your consultation. Choose your preferred messaging channel.','Habla con Sofía sobre tu valoración y elige tu canal de contacto preferido.')}</p><button type="button" class="button" data-open-contact data-procedure="${p.procedure}" aria-haspopup="dialog" aria-controls="contact-dialog">${t(l,'Chat with Sofía','Hablar con Sofía')}</button></div>`);
+h=trackingAttrs(h,{type:pageType({route:p.route,ads:p.ads,procedure:!!p.procedure,post:!!post})});
 write(p.file,h);}
 // Root is English HTML with its EN canonical, with no browser redirect.
 write('dist/index.html',fs.readFileSync('dist/en/index.html','utf8'));
