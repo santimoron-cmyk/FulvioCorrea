@@ -78,7 +78,42 @@ for (const [from, to] of [
   ['/draft-home-es/', '/es/'],
   ['/home-plastic-surgery-colombia-cartagena-es', '/es/'],
   ['/home-plastic-surgery-colombia-cartagena-es/', '/es/'],
+  ['/privacy-policy', '/privacy/'],
+  ['/privacy-policy/', '/privacy/'],
+  ['/privacy-policies', '/privacy/'],
+  ['/polticas-de-privacidad-1485', '/privacy/'],
+  ['/polticas-de-privacidad-1485/', '/privacy/'],
+  ['/trminos-y-condiciones-5647', '/terms/'],
+  ['/trminos-y-condiciones-5647/', '/terms/'],
+  ['/liposuction-es', '/es/procedimientos/liposuccion/'],
+  ['/liposuction-es/', '/es/procedimientos/liposuccion/'],
+  ['/mommy-makeover-es', '/es/procedimientos/mommy-makeover/'],
+  ['/mommy-makeover-es/', '/es/procedimientos/mommy-makeover/'],
+  ['/rhinoplasty-es', '/es/procedimientos/rinoplastia/'],
+  ['/rhinoplasty-es/', '/es/procedimientos/rinoplastia/'],
+  ['/staff-es', '/es/sobre-el-doctor/'],
+  ['/staff-es/', '/es/sobre-el-doctor/'],
+  ['/travel-es', '/es/pacientes-internacionales/'],
+  ['/travel-es/', '/es/pacientes-internacionales/'],
+  ['/plastic-surgery-colombia-cartagena-evaluation-agenda-es', '/es/contacto/'],
+  ['/plastic-surgery-colombia-cartagena-evaluation-agenda-es/', '/es/contacto/'],
+  ['/appointment-scheduled', '/'],
+  ['/appointment-scheduled/', '/'],
+  ['/appointment-scheduled-es', '/es/'],
+  ['/appointment-scheduled-es/', '/es/'],
+  ['/tummy-tuck-gracias', '/es/'],
+  ['/tummy-tuck-gracias/', '/es/'],
+  ['/lander', '/'],
+  ['/lander/', '/'],
+  ['/es-gracias-7148-6046', '/es/'],
+  ['/es-gracias-7148-6046/', '/es/'],
+  ['/evaluacin-gratis-por-fotos-2729-9735-3835', '/es/'],
+  ['/evaluacin-gratis-por-fotos-2729-9735-3835/', '/es/'],
+  ['/mmthankyoupage-3410-1108-9453', '/'],
+  ['/mmthankyoupage-3410-1108-9453/', '/'],
 ]) assert.equal(redirectTo(from, rules), to, from);
+assert.equal(redirectTo('/gracias/', rules), null);
+assert.equal(redirectTo('/es/gracias/', rules), null);
 
 const files = htmlFiles('dist');
 assert.ok(files.length > 0);
@@ -116,7 +151,7 @@ assert.match(home, new RegExp('hreflang="x-default" href="' + origin + '/"'));
 assert.match(fs.readFileSync('dist/404.html', 'utf8'), /href="\/"/);
 assert.doesNotMatch(fs.readFileSync('dist/404.html', 'utf8'), /href="\/en/);
 
-const samples = ['/', '/about/', '/procedures/bbl/', '/blog/', '/book-consultation/', '/es/', '/es/contacto/', '/en/', '/en/about/', '/en/procedures/bbl/', '/en/blog/', '/en/404/', '/plastic-surgery-colombia-cartagena-evaluation-agenda', '/plastic-surgery-colombia-cartagena-evaluation-agenda/', '/mammoplasty-es', '/mammoplasty-es/', '/facelift-es', '/facelift-es/', '/draft-home-es', '/draft-home-es/', '/home-plastic-surgery-colombia-cartagena-es', '/home-plastic-surgery-colombia-cartagena-es/', '/draft-travel-es', '/draft-travel-es/'];
+const samples = ['/', '/about/', '/procedures/bbl/', '/blog/', '/book-consultation/', '/es/', '/es/contacto/', '/en/', '/en/about/', '/en/procedures/bbl/', '/en/blog/', '/en/404/', '/plastic-surgery-colombia-cartagena-evaluation-agenda', '/plastic-surgery-colombia-cartagena-evaluation-agenda/', '/mammoplasty-es', '/mammoplasty-es/', '/facelift-es', '/facelift-es/', '/draft-home-es', '/draft-home-es/', '/home-plastic-surgery-colombia-cartagena-es', '/home-plastic-surgery-colombia-cartagena-es/', '/draft-travel-es', '/draft-travel-es/', '/privacy-policy', '/polticas-de-privacidad-1485', '/trminos-y-condiciones-1', '/liposuction-es', '/mommy-makeover-es', '/rhinoplasty-es', '/staff-es', '/travel-es', '/plastic-surgery-colombia-cartagena-evaluation-agenda-es', '/appointment-scheduled', '/appointment-scheduled-es', '/tummy-tuck-gracias', '/lander', '/es-gracias-7148-6046', '/evaluacin-gratis-por-fotos-2729-9735-3835', '/mmthankyoupage-3410-1108-9453', '/gracias/', '/es/gracias/'];
 for (const sample of samples) {
   const result = status(sample, rules);
   const follow = result.location ? status(result.location, rules) : null;

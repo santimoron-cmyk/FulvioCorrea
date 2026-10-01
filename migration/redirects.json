@@ -1,5 +1,5 @@
 {
-  "active": false,
+  "active": true,
   "productionHostingConfirmed": true,
   "adapter": "cloudflare-pages",
   "redirects": [
@@ -306,6 +306,146 @@
     {
       "from": "/home-plastic-surgery-colombia-cartagena-es/",
       "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/privacy-policy",
+      "to": "/privacy/",
+      "status": 301
+    },
+    {
+      "from": "/privacy-policy/",
+      "to": "/privacy/",
+      "status": 301
+    },
+    {
+      "from": "/liposuction-es",
+      "to": "/es/procedimientos/liposuccion/",
+      "status": 301
+    },
+    {
+      "from": "/liposuction-es/",
+      "to": "/es/procedimientos/liposuccion/",
+      "status": 301
+    },
+    {
+      "from": "/mommy-makeover-es",
+      "to": "/es/procedimientos/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/mommy-makeover-es/",
+      "to": "/es/procedimientos/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/rhinoplasty-es",
+      "to": "/es/procedimientos/rinoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/rhinoplasty-es/",
+      "to": "/es/procedimientos/rinoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/staff-es",
+      "to": "/es/sobre-el-doctor/",
+      "status": 301
+    },
+    {
+      "from": "/staff-es/",
+      "to": "/es/sobre-el-doctor/",
+      "status": 301
+    },
+    {
+      "from": "/travel-es",
+      "to": "/es/pacientes-internacionales/",
+      "status": 301
+    },
+    {
+      "from": "/travel-es/",
+      "to": "/es/pacientes-internacionales/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-evaluation-agenda-es",
+      "to": "/es/contacto/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-evaluation-agenda-es/",
+      "to": "/es/contacto/",
+      "status": 301
+    },
+    {
+      "from": "/appointment-scheduled",
+      "to": "/",
+      "status": 301
+    },
+    {
+      "from": "/appointment-scheduled/",
+      "to": "/",
+      "status": 301
+    },
+    {
+      "from": "/appointment-scheduled-es",
+      "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/appointment-scheduled-es/",
+      "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/tummy-tuck-gracias",
+      "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/tummy-tuck-gracias/",
+      "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/lander",
+      "to": "/",
+      "status": 301
+    },
+    {
+      "from": "/lander/",
+      "to": "/",
+      "status": 301
+    },
+    {
+      "from": "/es-gracias-7148-6046",
+      "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/es-gracias-7148-6046/",
+      "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/evaluacin-gratis-por-fotos-2729-9735-3835",
+      "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/evaluacin-gratis-por-fotos-2729-9735-3835/",
+      "to": "/es/",
+      "status": 301
+    },
+    {
+      "from": "/mmthankyoupage-3410-1108-9453",
+      "to": "/",
+      "status": 301
+    },
+    {
+      "from": "/mmthankyoupage-3410-1108-9453/",
+      "to": "/",
       "status": 301
     },
     {
@@ -1356,6 +1496,16 @@
     {
       "from": "/blog/author/*",
       "to": "/blog/",
+      "status": 301
+    },
+    {
+      "from": "/polticas-de-privacidad-*",
+      "to": "/privacy/",
+      "status": 301
+    },
+    {
+      "from": "/trminos-y-condiciones-*",
+      "to": "/terms/",
       "status": 301
     },
     {

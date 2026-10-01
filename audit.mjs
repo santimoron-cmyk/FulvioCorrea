@@ -37,6 +37,25 @@ for(const lang of ['en','es']){const title=t(lang,'Patient Stories, Cartagena','
 // /blog/category/* is not a catch-all: those paths are the live English category pages.
 const redirects={'/home-plastic-surgery-colombia-cartagena':'/','/plastic-surgery-colombia':'/','/plastic-surgery-colombia-cartagena-staff':'/about/','/plastic-surgery-colombia-cartagena-travel':'/international-patients/','/draft-travel-es':'/es/international-patients/','/blog':'/blog/','/blog/tag/*':'/blog/','/blog/author/*':'/blog/','/privacy-policy-1485':'/privacy/','/terms--conditions-5647':'/terms/','/sms-concent-4396':'/sms/','/terms-and-conditions':'/terms/','/privacy-policies':'/privacy/'};
 for(const p of data.filter(p=>p.lang==='en'))redirects['/plastic-surgery-colombia-cartagena-'+p.slug]=publicPath(route(p));redirects['/plastic-surgery-colombia-cartagena-abdominoplasty']='/procedures/tummy-tuck/';delete redirects['/plastic-surgery-colombia-cartagena-breast-lift-reduction'];Object.assign(redirects,{'/plastic-surgery-colombia-cartagena-mammoplasty':'/procedures/breast-lift-reduction/','/en/procedures/mammoplasty':'/procedures/breast-lift-reduction/','/es/procedures/mammoplasty':'/es/procedures/breast-lift-reduction/','/procedures/mammoplasty':'/procedures/breast-lift-reduction/','/en/ads/mammoplasty':'/ads/breast-lift-reduction/','/es/ads/mammoplasty':'/es/ads/breast-lift-reduction/','/ads/mammoplasty':'/ads/breast-lift-reduction/','/plastic-surgery-colombia-cartagena-evaluation-agenda':'/book-consultation/','/mammoplasty-es':'/es/procedimientos/reduccion-y-levantamiento-de-senos/','/facelift-es':'/es/procedimientos/lifting-facial/','/draft-home-es':'/es/','/home-plastic-surgery-colombia-cartagena-es':'/es/'});
+// Legacy GHL and SMS A2P paths. Splats are sorted after exact rules, ahead of /en/*.
+Object.assign(redirects,{
+  '/privacy-policy':'/privacy/',
+  '/polticas-de-privacidad-*':'/privacy/',
+  '/trminos-y-condiciones-*':'/terms/',
+  '/liposuction-es':'/es/procedimientos/liposuccion/',
+  '/mommy-makeover-es':'/es/procedimientos/mommy-makeover/',
+  '/rhinoplasty-es':'/es/procedimientos/rinoplastia/',
+  '/staff-es':'/es/sobre-el-doctor/',
+  '/travel-es':'/es/pacientes-internacionales/',
+  '/plastic-surgery-colombia-cartagena-evaluation-agenda-es':'/es/contacto/',
+  '/appointment-scheduled':'/',
+  '/appointment-scheduled-es':'/es/',
+  '/tummy-tuck-gracias':'/es/',
+  '/lander':'/',
+  '/es-gracias-7148-6046':'/es/',
+  '/evaluacin-gratis-por-fotos-2729-9735-3835':'/es/',
+  '/mmthankyoupage-3410-1108-9453':'/',
+});
 // Same slug in both languages (bbl-colombia) must not retarget the legacy NinjaSuite
 // /post/ URL. English keeps the existing redirect; a new Spanish slug still gets one.
 for(const p of blog){const key='/post/'+p.slug;if(redirects[key]&&p.lang!=='en')continue;redirects[key]=publicPath(postRoute(p));}
