@@ -1,7 +1,7 @@
 {
-  "mode": "preview",
+  "mode": "production",
   "pages": 102,
-  "bytes": 60681,
+  "bytes": 61823,
   "errors": [],
   "warnings": [
     "/en/procedures/: 123 words (<600; content required before launch).",
