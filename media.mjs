@@ -9,7 +9,7 @@ import {imageSize} from './assets.mjs';
 // Procedure card photos ship pre-encoded AVIF/WebP sets (data/procedure-cards.json); the build must not re-encode them.
 // Team photos with a `photo` set in data/team.json are pre-encoded the same way.
 const TEAM_PHOTOS = JSON.parse(fs.readFileSync('data/team.json', 'utf8')).members.filter(m => m.photo).map(m => m.photo.base);
-const OFFICE_PHOTOS = JSON.parse(fs.readFileSync('data/office-photos.json', 'utf8')).items.map(item => item.base);
+const OFFICE_PHOTOS = JSON.parse(fs.readFileSync('data/office-photos.json', 'utf8')).items.flatMap(item => [item.base, item.baseEs]);
 const PROCEDURE_CARDS = Object.entries(JSON.parse(fs.readFileSync('data/procedure-cards.json', 'utf8'))).filter(([k]) => !k.startsWith('_'));
 
 export const IMAGE_RENAMES = {

@@ -1,5 +1,5 @@
 {
-  "_note": "Real photographs of Dr. Fulvio Correa's consultation office in Cartagena (CC Ramblas), provided 2026-10-01. Not CAPRI Clinic. Pre-encoded AVIF and WebP at 1400, 1200, 768 and 480. EXIF and GPS stripped. files lists every shipped file so the asset copy step includes them.",
+  "_note": "Real photographs of Dr. Fulvio Correa's consultation office in Cartagena (CC Ramblas), provided 2026-10-01. Not CAPRI Clinic. Pre-encoded AVIF and WebP at 1400, 1200, 768 and 480. EXIF and GPS stripped. English filenames serve the EN page; Spanish filenames are byte copies for the ES page. files lists every shipped file so the asset copy step includes them.",
   "width": 1400,
   "height": 788,
   "widths": [
@@ -16,15 +16,24 @@
         "es": "Recepción del consultorio del Dr. Fulvio Correa en Cartagena, con un mostrador de mármol, sillas negras y un muro de mármol con las letras FULVIO CORREA"
       },
       "files": [
-        "plastic-surgery-office-reception-cartagena-1200.avif",
-        "plastic-surgery-office-reception-cartagena-1200.webp",
-        "plastic-surgery-office-reception-cartagena-480.avif",
         "plastic-surgery-office-reception-cartagena-480.webp",
-        "plastic-surgery-office-reception-cartagena-768.avif",
         "plastic-surgery-office-reception-cartagena-768.webp",
+        "plastic-surgery-office-reception-cartagena-1200.webp",
+        "plastic-surgery-office-reception-cartagena.webp",
+        "plastic-surgery-office-reception-cartagena-480.avif",
+        "plastic-surgery-office-reception-cartagena-768.avif",
+        "plastic-surgery-office-reception-cartagena-1200.avif",
         "plastic-surgery-office-reception-cartagena.avif",
-        "plastic-surgery-office-reception-cartagena.webp"
-      ]
+        "consultorio-cirugia-plastica-recepcion-cartagena-480.webp",
+        "consultorio-cirugia-plastica-recepcion-cartagena-768.webp",
+        "consultorio-cirugia-plastica-recepcion-cartagena-1200.webp",
+        "consultorio-cirugia-plastica-recepcion-cartagena.webp",
+        "consultorio-cirugia-plastica-recepcion-cartagena-480.avif",
+        "consultorio-cirugia-plastica-recepcion-cartagena-768.avif",
+        "consultorio-cirugia-plastica-recepcion-cartagena-1200.avif",
+        "consultorio-cirugia-plastica-recepcion-cartagena.avif"
+      ],
+      "baseEs": "consultorio-cirugia-plastica-recepcion-cartagena"
     },
     {
       "base": "plastic-surgery-office-waiting-lounge-cartagena",
@@ -33,15 +42,24 @@
         "es": "Sala de espera del consultorio en Cartagena, con un sofá claro, una mesa de centro redonda y un cuadro enmarcado"
       },
       "files": [
-        "plastic-surgery-office-waiting-lounge-cartagena-1200.avif",
-        "plastic-surgery-office-waiting-lounge-cartagena-1200.webp",
-        "plastic-surgery-office-waiting-lounge-cartagena-480.avif",
         "plastic-surgery-office-waiting-lounge-cartagena-480.webp",
-        "plastic-surgery-office-waiting-lounge-cartagena-768.avif",
         "plastic-surgery-office-waiting-lounge-cartagena-768.webp",
+        "plastic-surgery-office-waiting-lounge-cartagena-1200.webp",
+        "plastic-surgery-office-waiting-lounge-cartagena.webp",
+        "plastic-surgery-office-waiting-lounge-cartagena-480.avif",
+        "plastic-surgery-office-waiting-lounge-cartagena-768.avif",
+        "plastic-surgery-office-waiting-lounge-cartagena-1200.avif",
         "plastic-surgery-office-waiting-lounge-cartagena.avif",
-        "plastic-surgery-office-waiting-lounge-cartagena.webp"
-      ]
+        "consultorio-cirugia-plastica-sala-de-espera-cartagena-480.webp",
+        "consultorio-cirugia-plastica-sala-de-espera-cartagena-768.webp",
+        "consultorio-cirugia-plastica-sala-de-espera-cartagena-1200.webp",
+        "consultorio-cirugia-plastica-sala-de-espera-cartagena.webp",
+        "consultorio-cirugia-plastica-sala-de-espera-cartagena-480.avif",
+        "consultorio-cirugia-plastica-sala-de-espera-cartagena-768.avif",
+        "consultorio-cirugia-plastica-sala-de-espera-cartagena-1200.avif",
+        "consultorio-cirugia-plastica-sala-de-espera-cartagena.avif"
+      ],
+      "baseEs": "consultorio-cirugia-plastica-sala-de-espera-cartagena"
     },
     {
       "base": "plastic-surgery-office-consultation-desk-cartagena",
@@ -50,15 +68,24 @@
         "es": "Sala de consulta del consultorio en Cartagena, con un escritorio oscuro, una silla de oficina negra y una silla de procedimientos beige"
       },
       "files": [
-        "plastic-surgery-office-consultation-desk-cartagena-1200.avif",
-        "plastic-surgery-office-consultation-desk-cartagena-1200.webp",
-        "plastic-surgery-office-consultation-desk-cartagena-480.avif",
         "plastic-surgery-office-consultation-desk-cartagena-480.webp",
-        "plastic-surgery-office-consultation-desk-cartagena-768.avif",
         "plastic-surgery-office-consultation-desk-cartagena-768.webp",
+        "plastic-surgery-office-consultation-desk-cartagena-1200.webp",
+        "plastic-surgery-office-consultation-desk-cartagena.webp",
+        "plastic-surgery-office-consultation-desk-cartagena-480.avif",
+        "plastic-surgery-office-consultation-desk-cartagena-768.avif",
+        "plastic-surgery-office-consultation-desk-cartagena-1200.avif",
         "plastic-surgery-office-consultation-desk-cartagena.avif",
-        "plastic-surgery-office-consultation-desk-cartagena.webp"
-      ]
+        "consultorio-cirugia-plastica-escritorio-consulta-cartagena-480.webp",
+        "consultorio-cirugia-plastica-escritorio-consulta-cartagena-768.webp",
+        "consultorio-cirugia-plastica-escritorio-consulta-cartagena-1200.webp",
+        "consultorio-cirugia-plastica-escritorio-consulta-cartagena.webp",
+        "consultorio-cirugia-plastica-escritorio-consulta-cartagena-480.avif",
+        "consultorio-cirugia-plastica-escritorio-consulta-cartagena-768.avif",
+        "consultorio-cirugia-plastica-escritorio-consulta-cartagena-1200.avif",
+        "consultorio-cirugia-plastica-escritorio-consulta-cartagena.avif"
+      ],
+      "baseEs": "consultorio-cirugia-plastica-escritorio-consulta-cartagena"
     },
     {
       "base": "plastic-surgery-office-consultation-shelves-cartagena",
@@ -67,15 +94,24 @@
         "es": "Sala de consulta del consultorio en Cartagena, con estantes en la pared, un escritorio oscuro y una silla de procedimientos beige"
       },
       "files": [
-        "plastic-surgery-office-consultation-shelves-cartagena-1200.avif",
-        "plastic-surgery-office-consultation-shelves-cartagena-1200.webp",
-        "plastic-surgery-office-consultation-shelves-cartagena-480.avif",
         "plastic-surgery-office-consultation-shelves-cartagena-480.webp",
-        "plastic-surgery-office-consultation-shelves-cartagena-768.avif",
         "plastic-surgery-office-consultation-shelves-cartagena-768.webp",
+        "plastic-surgery-office-consultation-shelves-cartagena-1200.webp",
+        "plastic-surgery-office-consultation-shelves-cartagena.webp",
+        "plastic-surgery-office-consultation-shelves-cartagena-480.avif",
+        "plastic-surgery-office-consultation-shelves-cartagena-768.avif",
+        "plastic-surgery-office-consultation-shelves-cartagena-1200.avif",
         "plastic-surgery-office-consultation-shelves-cartagena.avif",
-        "plastic-surgery-office-consultation-shelves-cartagena.webp"
-      ]
+        "consultorio-cirugia-plastica-estantes-consulta-cartagena-480.webp",
+        "consultorio-cirugia-plastica-estantes-consulta-cartagena-768.webp",
+        "consultorio-cirugia-plastica-estantes-consulta-cartagena-1200.webp",
+        "consultorio-cirugia-plastica-estantes-consulta-cartagena.webp",
+        "consultorio-cirugia-plastica-estantes-consulta-cartagena-480.avif",
+        "consultorio-cirugia-plastica-estantes-consulta-cartagena-768.avif",
+        "consultorio-cirugia-plastica-estantes-consulta-cartagena-1200.avif",
+        "consultorio-cirugia-plastica-estantes-consulta-cartagena.avif"
+      ],
+      "baseEs": "consultorio-cirugia-plastica-estantes-consulta-cartagena"
     },
     {
       "base": "plastic-surgery-office-private-lounge-cartagena",
@@ -84,15 +120,24 @@
         "es": "Sala privada del consultorio en Cartagena, con dos sillones, una mesa pequeña y plantas en macetas"
       },
       "files": [
-        "plastic-surgery-office-private-lounge-cartagena-1200.avif",
-        "plastic-surgery-office-private-lounge-cartagena-1200.webp",
-        "plastic-surgery-office-private-lounge-cartagena-480.avif",
         "plastic-surgery-office-private-lounge-cartagena-480.webp",
-        "plastic-surgery-office-private-lounge-cartagena-768.avif",
         "plastic-surgery-office-private-lounge-cartagena-768.webp",
+        "plastic-surgery-office-private-lounge-cartagena-1200.webp",
+        "plastic-surgery-office-private-lounge-cartagena.webp",
+        "plastic-surgery-office-private-lounge-cartagena-480.avif",
+        "plastic-surgery-office-private-lounge-cartagena-768.avif",
+        "plastic-surgery-office-private-lounge-cartagena-1200.avif",
         "plastic-surgery-office-private-lounge-cartagena.avif",
-        "plastic-surgery-office-private-lounge-cartagena.webp"
-      ]
+        "consultorio-cirugia-plastica-sala-privada-cartagena-480.webp",
+        "consultorio-cirugia-plastica-sala-privada-cartagena-768.webp",
+        "consultorio-cirugia-plastica-sala-privada-cartagena-1200.webp",
+        "consultorio-cirugia-plastica-sala-privada-cartagena.webp",
+        "consultorio-cirugia-plastica-sala-privada-cartagena-480.avif",
+        "consultorio-cirugia-plastica-sala-privada-cartagena-768.avif",
+        "consultorio-cirugia-plastica-sala-privada-cartagena-1200.avif",
+        "consultorio-cirugia-plastica-sala-privada-cartagena.avif"
+      ],
+      "baseEs": "consultorio-cirugia-plastica-sala-privada-cartagena"
     }
   ]
 }

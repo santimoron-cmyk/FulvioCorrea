@@ -5,9 +5,10 @@ const officePhotos=JSON.parse(fs.readFileSync('data/office-photos.json','utf8'))
 function officeGallery(lang){
  const {width,height,widths}=officePhotos;
  const set=(base,ext)=>widths.map(w=>`/assets/${base}${w===width?'':'-'+w}.${ext} ${w}w`).join(', ');
+ const sizesFor=i=>i===0?'(max-width: 700px) 88vw, (max-width: 1100px) 58vw, 840px':i<3?'(max-width: 700px) 88vw, (max-width: 1100px) 28vw, 420px':'(max-width: 700px) 88vw, (max-width: 1100px) 44vw, 630px';
  return officePhotos.items.map((item,i)=>{
-  const sizes=i===0?'(max-width: 900px) 88vw, 930px':'(max-width: 700px) 88vw, (max-width: 900px) 42vw, 460px';
-  return `<figure><picture><source type="image/avif" srcset="${set(item.base,'avif')}" sizes="${sizes}"><img src="/assets/${item.base}.webp" alt="${esc(item.alt[lang])}" width="${width}" height="${height}" srcset="${set(item.base,'webp')}" sizes="${sizes}" data-fixed-srcset="1" data-keep-loading="1" loading="lazy" decoding="async"></picture></figure>`;
+  const base=lang==='es'?item.baseEs:item.base,sizes=sizesFor(i);
+  return `<figure><picture><source type="image/avif" srcset="${set(base,'avif')}" sizes="${sizes}"><img src="/assets/${base}.webp" alt="${esc(item.alt[lang])}" width="${width}" height="${height}" srcset="${set(base,'webp')}" sizes="${sizes}" data-fixed-srcset="1" data-keep-loading="1" loading="lazy" decoding="async"></picture></figure>`;
  }).join('');
 }
 export function internationalView(lang,data,practice,procedures,posts){
