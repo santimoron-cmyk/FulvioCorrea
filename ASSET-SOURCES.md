@@ -59,6 +59,14 @@ Original editorial images generated for this site in one style set (warm beige/c
 ## Team photo: Eileen (added 2026-09-28)
 - eileen-equipo-dr-fulvio-correa-cartagena{,-480,-768}.{avif,webp}: real photo of Eileen (Experiences Coach, handles patient callbacks), smiling in a black top and holding a breast implant sizer in front of beige curtains. Source: provided by Santiago 2026-09-28 (original 1200x1600 PNG). Cropped to the 4:5 team portrait aspect (980x1225 region centred on face and upper body), encoded at 960x1200 / 768x960 / 480x600 without upscaling, metadata stripped. Shown in the team section (EN/ES home, testimonials, international patients). Alt text (EN/ES) lives in `data/team.json`. Replaces the initial placeholder; the older unused `eileen-experiences-coach-fulvio-correa.webp` stays in assets/ and is not deployed.
 
+## Consultation office, Cartagena (added 2026-10-01)
+Real photographs of Dr. Fulvio Correa's consultation office (CC Ramblas, Manzanillo del Mar). Not the surgical clinic (CAPRI) and not patients or results. Original camera JPGs were auto-oriented, resized, and saved without EXIF or GPS. Each base is 1400×788 plus `-1200`, `-768` and `-480`, in AVIF and WebP. Alt text (EN/ES) lives in `data/office-photos.json`. Shown below the fold on the international patients pages.
+- plastic-surgery-office-reception-cartagena: reception desk and the FULVIO CORREA marble wall.
+- plastic-surgery-office-waiting-lounge-cartagena: waiting lounge with a sofa and a framed painting.
+- plastic-surgery-office-consultation-desk-cartagena: consultation room with a desk and a procedure chair.
+- plastic-surgery-office-consultation-shelves-cartagena: consultation room with wall shelves.
+- plastic-surgery-office-private-lounge-cartagena: private lounge with armchairs and plants.
+
 ## Event landing: Aromas Med Spa Doral talk (added 2026-09-30)
 - alberto-nader-aromas-med-spa-doral{,-480}.{avif,webp}: portrait of Alberto Nader (Founder and Clinical Director, Aromas Med Spa) in black Aromas scrubs on a light studio background. Source: https://aromaslaser.com/storage/2026/01/Alberto-Nader.webp (1200x1800, Aromas Med Spa home page "Alberto Nader · Clinical Director and Founder"). Used with Aromas's permission as host of the event. Cropped to the 4:5 portrait aspect (720x900 region on face and upper body), encoded at 720x900 / 480x600 without upscaling, metadata stripped. Alt text (EN/ES) lives in `event-view.mjs`.
 - aromas-med-spa-doral-logo-white.webp: Aromas Med Spa logo (white version for the dark theme), rasterized to 600x186 from https://aromaslaser.com/storage/2025/11/Aromas-Logo-White.svg. Used with permission.
