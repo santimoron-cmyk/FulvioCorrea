@@ -1,5 +1,4 @@
 {
-  "source": "https://healthtourism.fulviocorrea.com/travel-for-surgery-colombia-en688663",
   "checked": "2026-09-26",
   "_notes": [
     "Adapted from the public international-patient page supplied by the owner. No guarantee, new credential, price or fixed clinical travel interval added.",
@@ -10,18 +9,15 @@
   "videos": [
     {
       "id": "story-1",
-      "url": "https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/69b5bfd3302795b415dee4f8.mp4",
-      "source": "https://healthtourism.fulviocorrea.com/travel-for-surgery-colombia-en688663"
+      "url": "https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/69b5bfd3302795b415dee4f8.mp4"
     },
     {
       "id": "story-2",
-      "url": "https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/69b5bf7e3027955097ded79c.mp4",
-      "source": "https://healthtourism.fulviocorrea.com/travel-for-surgery-colombia-en688663"
+      "url": "https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/69b5bf7e3027955097ded79c.mp4"
     },
     {
       "id": "story-3",
-      "url": "https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/69b5bf853027951f01ded864.mp4",
-      "source": "https://healthtourism.fulviocorrea.com/travel-for-surgery-colombia-en688663"
+      "url": "https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/69b5bf853027951f01ded864.mp4"
     }
   ],
   "en": {
@@ -103,7 +99,6 @@
       ]
     ],
     "readingTitle": "Continue planning your consultation",
-    "sourceLabel": "Source: the practice’s international-patient program",
     "closingTitle": "Begin with a conversation.",
     "closing": "Tell Sofía what you would like to discuss and choose your preferred contact channel. The team can guide you toward your virtual assessment."
   },
@@ -186,7 +181,6 @@
       ]
     ],
     "readingTitle": "Sigue preparando tu valoración",
-    "sourceLabel": "Fuente: programa del consultorio para pacientes internacionales",
     "closingTitle": "Comienza con una conversación.",
     "closing": "Cuéntale a Sofía qué deseas consultar y elige tu canal de contacto. El equipo puede orientarte sobre cómo comenzar tu valoración virtual."
   }
