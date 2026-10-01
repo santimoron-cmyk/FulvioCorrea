@@ -11,15 +11,15 @@ assert.doesNotMatch(resultsViews('en',{authorized:true,items:[{...specimen,autho
 const live=resultsViews('en',{authorized:true,items:[specimen]},image);
 assert.ok(live.hasCases);
 for(const token of ['fixture-before.webp','fixture-after.webp','data-result-slider','Approved explanation','Additional approved detail','Recorded follow-up interval'])assert.ok(live.gallery.includes(token),token);
-assert.doesNotMatch(live.gallery,/result-demo/);
+assert.match(live.gallery,/data-gallery="before-after"/);assert.match(live.gallery,/data-gallery-item="1"/);assert.doesNotMatch(live.gallery,/result-demo/);
 process.env.SITE_ENV='preview';
 assert.doesNotMatch(resultsViews('es',{authorized:false,items:[]},image).gallery,/data-result-slider|result-demo/,'preview content matches production');
 process.env.RESULTS_DEMO='1';assert.match(resultsViews('es',{authorized:false,items:[]},image).gallery,/result-demo/);delete process.env.RESULTS_DEMO;
 if(saved===undefined)delete process.env.SITE_ENV;else process.env.SITE_ENV=saved;
 const pages=JSON.parse(fs.readFileSync('pages.json'));
 for(const page of pages){const html=fs.readFileSync(page.file,'utf8');
- assert.doesNotMatch(html,/<a\b[^>]*href="\/(?:en\/book-consultation|es\/agendar-valoracion)\//,page.route+' exposes legacy form');
- if(/\/(?:book-consultation|agendar-valoracion)\//.test(page.route)){assert.ok(page.noindex);assert.match(html,/name="robots" content="noindex, nofollow"/);}
+ assert.doesNotMatch(html,/<a\b(?![^>]*\bdata-language=)[^>]*href="\/(?:en\/book-consultation|es\/agendar-valoracion)\//,page.route+' exposes legacy form');
+ if(/\/(?:book-consultation|agendar-valoracion)\//.test(page.route)){assert.ok(page.noindex);assert.match(html,/name="robots" content="noindex, nofollow"/);const picker=html.match(/<div class="language-picker"[\s\S]*?<\/div>/);assert.ok(picker,page.route+' missing language switch');assert.match(picker[0],/<a\b[^>]*data-language="en"/);assert.match(picker[0],/<a\b[^>]*data-language="es"/);assert.doesNotMatch(picker[0],/<button/);assert.match(html,/data-open-contact/);}
  if(page.ads)assert.doesNotMatch(html,/<form id="consultation-form"/);
  for(const a of html.matchAll(/<a\b[^>]*href="https:\/\/wa\.me\/[^>]*>/g))assert.match(a[0],/data-contact-channel/,page.route+' bypasses intake');
 }
