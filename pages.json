@@ -1048,7 +1048,7 @@
             "name": "Can I start without traveling to Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. The international-patient program describes an initial virtual consultation to discuss your goals, medical history and expectations. Contact the practice to arrange an assessment and confirm the next steps."
+              "text": "Yes. You can start with a virtual consultation to discuss your goals, medical history and expectations. Contact our team to arrange an assessment and confirm the next steps."
             }
           },
           {
@@ -1072,7 +1072,7 @@
             "name": "What recovery support is available?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The program describes supervised recovery, follow-up and professional assistance. Confirm the accommodation and services included in your individual quotation, as well as any arrangements you need to make separately."
+              "text": "Supervised recovery, follow-up and professional assistance are part of your plan. Confirm the accommodation and services included in your individual quotation, as well as any arrangements you need to make separately."
             }
           },
           {
@@ -1088,7 +1088,7 @@
             "name": "Is there follow-up after I return home?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The practice describes remote follow-up after returning home. Confirm the contact channel, appointment arrangements and how to raise concerns before leaving Cartagena."
+              "text": "Our team coordinates remote follow-up after you return home. Confirm the contact channel, appointment arrangements and how to raise concerns before leaving Cartagena."
             }
           }
         ]
@@ -2278,7 +2278,7 @@
             "name": "¿Puedo comenzar sin viajar a Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. El programa describe una valoración virtual inicial para conversar sobre objetivos, historia clínica y expectativas. Contacta al consultorio para coordinar la evaluación y confirmar los siguientes pasos."
+              "text": "Sí. Puedes comenzar con una valoración virtual para conversar sobre objetivos, historia clínica y expectativas. Contacta a nuestro equipo para coordinar la evaluación y confirmar los siguientes pasos."
             }
           },
           {
@@ -2302,7 +2302,7 @@
             "name": "¿Qué apoyo hay durante la recuperación?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "El programa describe recuperación supervisada, seguimiento y asistencia profesional. Confirma el alojamiento y los servicios incluidos en tu cotización individual, además de los acuerdos que debas organizar por separado."
+              "text": "La recuperación supervisada, el seguimiento y la asistencia profesional forman parte de tu plan. Confirma el alojamiento y los servicios incluidos en tu cotización individual, además de los acuerdos que debas organizar por separado."
             }
           },
           {
@@ -2318,7 +2318,7 @@
             "name": "¿Hay seguimiento después de regresar a mi país?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "El consultorio describe seguimiento remoto después del regreso. Confirma el canal de contacto, las citas y cómo comunicar inquietudes antes de salir de Cartagena."
+              "text": "Nuestro equipo coordina el seguimiento remoto después del regreso. Confirma el canal de contacto, las citas y cómo comunicar inquietudes antes de salir de Cartagena."
             }
           }
         ]

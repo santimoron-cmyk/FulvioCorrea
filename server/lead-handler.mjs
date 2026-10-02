@@ -64,7 +64,8 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
   contact_consent:true,sms_consent:yes(input.sms_consent),consent_version:consentVersion,consent_text:string('consent_text',600),consent_timestamp:received,measurement_consent:string('measurement_consent',20),
   lead_source:'website',crm_operation:'upsert_contact',deduplication_key:phone,
   // Browsing journey (server/journey.mjs): journey_note is the text for the NinjaSuite "Add To Notes" action.
-  ...journeyFields(input.journey,now)};
+  ...journeyFields(input.journey,now),
+  ...( /^[ABCDEFGHJKMNPQRSTUVWXYZ23456789]{5}$/.test(string('ref',5)) ? {ref:string('ref',5)} : {})};
  // Event sign-up: flat fields for the GHL workflow (Add Tag from event_tag/tags; city and companion to custom fields).
  if(eventTag)Object.assign(payload,{event_tag:eventTag,event_label:EVENT_TAGS[eventTag],tags:eventTag,city,companion,companion_label:COMPANION[companion],lead_source_detail:'event_signup'});
  for(const k of ['country','message','conversion_page'])if(string(k))payload[k]=string(k,k==='message'?3000:1000);
