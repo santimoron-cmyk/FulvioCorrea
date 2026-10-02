@@ -15,7 +15,7 @@ const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceA
 const image=(file,alt='',cls='',priority=false,opts={})=>{const w=opts.width||(file==='hero-woman-floral-portrait.webp'?1920:660),h=opts.height||(file==='hero-woman-floral-portrait.webp'?1040:750);const extra=`${opts.srcset?` srcset="${opts.srcset}"`:''}${opts.sizes?` sizes="${opts.sizes}"`:''}${opts.lock?' data-fixed-srcset="1"':''}${opts.keep?' data-keep-loading="1"':''}${opts.style?` style="${opts.style}"`:''}`;const img=`<img class="${cls}" src="/assets/${file}" alt="${esc(alt)}" width="${w}" height="${h}"${extra} ${priority?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;if(!opts.avif)return img;return `<picture><source type="image/avif" srcset="${opts.avif}"${opts.sizes?` sizes="${opts.sizes}"`:''}>${img}</picture>`;};
 for(const lang of ['en','es']){
  const t=copy[lang],i=lang==='en'?0:1,url=(slug='')=>`/${lang}/${slug}`,tag=text=>`<p class="eyebrow">${text}</p>`;
- const button=(id,label=t.consult,href=url('book-consultation/'),light=false)=>`<a class="button${light?' light':''}" id="${id}" data-cta="${id}" data-event="${href.includes('book-consultation')?'consultation_click':'navigation_click'}" href="${href}">${label}<span aria-hidden="true">↗</span></a>`;
+ const button=(id,label=t.consult,href=url('book-consultation/'),light=false)=>`<a class="button${light?' light':''}" id="${id}" data-cta="${id}" data-event="${href.includes('book-consultation')?'consultation_click':'navigation_click'}" href="${href}">${label}</a>`;
  const link=(text,href)=>`<a class="textlink" href="${href}">${text}<span aria-hidden="true">↗</span></a>`;
  const faq=()=>t.faqs.map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join('');
  const s=seo[lang];
