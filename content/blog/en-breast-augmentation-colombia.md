@@ -8,7 +8,7 @@ tags: ["breast-augmentation-colombia", "breast-surgery", "medical-tourism-colomb
 cover: "/assets/blog-breast-augmentation-colombia.webp"
 coverAlt: "Woman in a trench coat waiting at an airport gate with a carry-on suitcase before international travel"
 date: "2026-09-23"
-updated: "2026-09-28"
+updated: "2026-10-02"
 author: "fulvio-correa"
 translationOf: "aumento-de-senos-colombia"
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety","https://www.cirugiaplastica.org.co/","https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions"]
@@ -16,7 +16,7 @@ draft: false
 originalUrl: "https://fulviocorrea.com.co/post/breast-augmentation-colombia"
 procedure: "breast-augmentation"
 twin: "aumento-de-senos-colombia"
-related: ["plastic-surgery-medical-tourism-cartagena-colombia", "how-long-to-stay-after-mommy-makeover"]
+related: ["plastic-surgery-medical-tourism-cartagena-colombia", "how-long-to-stay-after-mommy-makeover", "breast-lift-colombia"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -95,6 +95,8 @@ Ask how mammograms and future breast imaging are handled after implants, and how
 • How many nights near the clinic should I plan before considering a return flight?
 • What is the plan if a complication appears after I fly home?
 • Who is my after-hours contact while I am still in Colombia?
+
+If your concern is mainly drooping or low nipple position rather than volume, see the companion guide on [breast lift in Colombia](/en/blog/breast-lift-colombia/) (mastopexy), including when a lift alone or lift with implants may fit better.
 
 Prefer to read this in Spanish? The Spanish-language guide covers the same topic: <a href="/es/blog/aumento-de-senos-colombia/" data-language="es" hreflang="es" lang="es">aumento de senos en Colombia</a>.
 

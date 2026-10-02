@@ -464,6 +464,16 @@ curl -I "https://fulviocorrea.com/post/breast-augmentation-colombia/"
 curl -I "https://fulviocorrea.com/blog/breast-augmentation-colombia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/breast-lift-colombia"
+# Expected: 301 Location: /blog/breast-lift-colombia/
+curl -I "https://fulviocorrea.com/blog/breast-lift-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/breast-lift-colombia/"
+# Expected: 301 Location: /blog/breast-lift-colombia/
+curl -I "https://fulviocorrea.com/blog/breast-lift-colombia/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/how-long-to-stay-after-mommy-makeover"
 # Expected: 301 Location: /blog/how-long-to-stay-after-mommy-makeover/
 curl -I "https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/"
@@ -552,6 +562,16 @@ curl -I "https://fulviocorrea.com/es/blog/cuantos-dias-quedarse-despues-mommy-ma
 curl -I "https://fulviocorrea.com/post/cuantos-dias-quedarse-despues-mommy-makeover/"
 # Expected: 301 Location: /es/blog/cuantos-dias-quedarse-despues-mommy-makeover/
 curl -I "https://fulviocorrea.com/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/levantamiento-de-senos-colombia"
+# Expected: 301 Location: /es/blog/levantamiento-de-senos-colombia/
+curl -I "https://fulviocorrea.com/es/blog/levantamiento-de-senos-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/levantamiento-de-senos-colombia/"
+# Expected: 301 Location: /es/blog/levantamiento-de-senos-colombia/
+curl -I "https://fulviocorrea.com/es/blog/levantamiento-de-senos-colombia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/post/liposuccion-colombia"
@@ -1332,6 +1352,16 @@ curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
 curl -I "https://fulviocorrea.com/en/blog/category/plastic-surgery-in-colombia"
 # Expected: 301 Location: /blog/category/plastic-surgery-in-colombia/
 curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/breast-lift-colombia/"
+# Expected: 301 Location: /blog/breast-lift-colombia/
+curl -I "https://fulviocorrea.com/blog/breast-lift-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/breast-lift-colombia"
+# Expected: 301 Location: /blog/breast-lift-colombia/
+curl -I "https://fulviocorrea.com/blog/breast-lift-colombia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/"

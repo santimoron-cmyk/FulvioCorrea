@@ -469,6 +469,16 @@
       "status": 301
     },
     {
+      "from": "/post/breast-lift-colombia",
+      "to": "/blog/breast-lift-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/breast-lift-colombia/",
+      "to": "/blog/breast-lift-colombia/",
+      "status": 301
+    },
+    {
       "from": "/post/how-long-to-stay-after-mommy-makeover",
       "to": "/blog/how-long-to-stay-after-mommy-makeover/",
       "status": 301
@@ -556,6 +566,16 @@
     {
       "from": "/post/cuantos-dias-quedarse-despues-mommy-makeover/",
       "to": "/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/post/levantamiento-de-senos-colombia",
+      "to": "/es/blog/levantamiento-de-senos-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/levantamiento-de-senos-colombia/",
+      "to": "/es/blog/levantamiento-de-senos-colombia/",
       "status": 301
     },
     {
@@ -1336,6 +1356,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/breast-lift-colombia/",
+      "to": "/blog/breast-lift-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/breast-lift-colombia",
+      "to": "/blog/breast-lift-colombia/",
       "status": 301
     },
     {

@@ -2573,6 +2573,55 @@
     ]
   },
   {
+    "route": "/en/blog/breast-lift-colombia/",
+    "file": "dist/en/blog/breast-lift-colombia/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-02",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Breast Lift Colombia: Lift vs Implants and How to Verify",
+        "datePublished": "2026-10-02",
+        "dateModified": "2026-10-02",
+        "inLanguage": "en",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-breast-lift-colombia.webp",
+          "https://fulviocorrea.com/assets/blog-breast-lift-colombia.avif",
+          "https://fulviocorrea.com/assets/blog-breast-lift-colombia-og.webp",
+          "https://fulviocorrea.com/assets/blog-breast-lift-colombia-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/breast-lift-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      }
+    ],
+    "alternate": "/es/blog/levantamiento-de-senos-colombia/",
+    "cover": "/assets/blog-breast-lift-colombia.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/breast-lift-colombia/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/levantamiento-de-senos-colombia/"
+      }
+    ]
+  },
+  {
     "route": "/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
     "file": "dist/en/blog/plastic-surgery-medical-tourism-cartagena-colombia/index.html",
     "lang": "en",
@@ -2710,14 +2759,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-28",
+    "updated": "2026-10-02",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Breast Augmentation Colombia: How U.S. Patients Verify Surgeons",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-09-28",
+        "dateModified": "2026-10-02",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia.webp",
@@ -2759,14 +2808,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-30",
+    "updated": "2026-10-02",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "How Long to Stay After a Mommy Makeover (Especially Abroad)",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-09-30",
+        "dateModified": "2026-10-02",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-stay.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/",
@@ -3056,6 +3105,55 @@
     ]
   },
   {
+    "route": "/es/blog/levantamiento-de-senos-colombia/",
+    "file": "dist/es/blog/levantamiento-de-senos-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-02",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Levantamiento de senos en Colombia: pexia vs implantes",
+        "datePublished": "2026-10-02",
+        "dateModified": "2026-10-02",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-breast-lift-colombia.webp",
+          "https://fulviocorrea.com/assets/blog-breast-lift-colombia.avif",
+          "https://fulviocorrea.com/assets/blog-breast-lift-colombia-og.webp",
+          "https://fulviocorrea.com/assets/blog-breast-lift-colombia-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/levantamiento-de-senos-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      }
+    ],
+    "alternate": "/en/blog/breast-lift-colombia/",
+    "cover": "/assets/blog-breast-lift-colombia.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/levantamiento-de-senos-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/breast-lift-colombia/"
+      }
+    ]
+  },
+  {
     "route": "/es/blog/bbl-colombia/",
     "file": "dist/es/blog/bbl-colombia/index.html",
     "lang": "es",
@@ -3193,14 +3291,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-30",
+    "updated": "2026-10-02",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Aumento de senos en Colombia: qué verificar antes de viajar",
         "datePublished": "2026-09-28",
-        "dateModified": "2026-09-30",
+        "dateModified": "2026-10-02",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia.webp",
