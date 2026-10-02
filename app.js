@@ -18,6 +18,16 @@
  // of the past 90 days as [path, short title, time]. Sent with Sofía leads (contact-widget.js) so the team sees the path.
  try{const n=Date.now(),j=JSON.parse(localStorage.getItem('fc_journey'))||{v:0,f:n,p:[]};stored||j.v++;j.p=[...j.p.filter(e=>n-e[2]<7776e6),[location.pathname,document.title.split(' | ')[0].slice(0,60),n]].slice(-30);localStorage.setItem('fc_journey',JSON.stringify(j));}catch{}
  save('fc_attribution',attribution);try{if(!durable)localStorage.setItem('fc_first_touch',JSON.stringify({value:attribution.first_touch,expires:Date.now()+90*86400000}));}catch{}
+ const A='ABCDEFGHJKMNPQRSTUVWXYZ23456789',refOk=v=>new RegExp('^['+A+']{5}$').test(v||'');
+ let leadRef='';try{const s=JSON.parse(localStorage.getItem('fc_ref'));if(s.expires>Date.now()&&refOk(s.value))leadRef=s.value;}catch{}
+ if(!refOk(leadRef)){try{const s=sessionStorage.getItem('fc_ref');if(refOk(s))leadRef=s;}catch{}}
+ if(!refOk(leadRef)){leadRef='';for(let i=0;i<5;i++)leadRef+=A[Math.random()*32|0];}
+ try{localStorage.setItem('fc_ref',JSON.stringify({value:leadRef,expires:Date.now()+7776e6}));}catch{}
+ try{sessionStorage.setItem('fc_ref',leadRef);}catch{}
+ window.FCRef=leadRef;
+ const beacon=()=>{try{const url=config.waRefEndpoint;if(!url||!navigator.sendBeacon)return;const last=(read('fc_attribution')||{}).last_touch||{},ck=n=>(document.cookie.match('(?:^|; )'+n+'=([^;]*)')||[])[1]||'',body={ref:leadRef,fbc:ck('_fbc'),fbp:ck('_fbp'),page:location.pathname,ts:new Date().toISOString(),lang};for(const k of 'gclid,gbraid,wbraid,fbclid,utm_source,utm_medium,utm_campaign,utm_term,utm_content'.split(','))body[k]=last[k]||'';navigator.sendBeacon(url,new Blob([JSON.stringify(body)],{type:'text/plain'}));}catch{}};
+ const decorateWa=a=>{try{const u=new URL(a.href,location.origin);if(!/wa\.me$|api\.whatsapp\.com$/.test(u.hostname))return;let text=(u.searchParams.get('text')||'').replace(new RegExp(' Ref: ['+A+']{5}$'),'').trim();if(!text||text.startsWith('[ref:'))text=(lang==='es'?'Hola, quiero información sobre cirugía con el Dr. Correa.':'Hi, I would like information about surgery with Dr. Correa.')+(text?' '+text:'');text+=' Ref: '+leadRef;if(u.searchParams.get('text')!==text){u.searchParams.set('text',text);a.href=u.href;}}catch{}};
+ document.querySelectorAll?.('a[href*="wa.me"],a[href*="api.whatsapp.com"]')?.forEach(decorateWa);
  document.querySelectorAll('a[data-language]').forEach(a=>{
   const target=new URL(a.href,location.origin);target.search=location.search;target.hash=location.hash;a.href=target.href;
   a.addEventListener('click',()=>{try{localStorage.setItem('fc_language',a.dataset.language);}catch{}});
@@ -34,7 +44,7 @@
  document.getElementById('accept-analytics').onclick=()=>choose('granted');document.getElementById('reject-analytics').onclick=()=>choose('denied');if(consent==='granted')procedureView();
  const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');menu.onclick=()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);};
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){menu.setAttribute('aria-expanded','false');nav.classList.remove('open');}});
- document.addEventListener('click',e=>{const el=e.target.closest('a[data-event]');if(!el)return;const name=el.dataset.event,procedure=el.dataset.procedure||document.querySelector('main[data-procedure]')?.dataset.procedure||'',link_location=el.dataset.location||el.id||'';if(name==='whatsapp_click')event(name,{procedure,link_location,cta_id:el.id});else if(name==='phone_click')event(name,{link_location,cta_id:el.id});else event(name,{cta_id:el.id});});
+ document.addEventListener('click',e=>{const hit=e.target.closest?.('a');if(hit&&/wa\.me|api\.whatsapp\.com/.test(hit.href||''))decorateWa(hit);const channel=hit?.dataset?.contactChannel==='whatsapp'?hit:null;if(channel&&channel.dataset.event!=='whatsapp_click')beacon();const el=e.target.closest('a[data-event]');if(!el)return;const name=el.dataset.event,procedure=el.dataset.procedure||document.querySelector('main[data-procedure]')?.dataset.procedure||'',link_location=el.dataset.location||el.id||'';if(name==='whatsapp_click'){event(name,{procedure,link_location,cta_id:el.id,lead_ref:leadRef});beacon();}else if(name==='phone_click')event(name,{link_location,cta_id:el.id});else event(name,{cta_id:el.id});});
  const tabs=[...document.querySelectorAll('.pillar-tabs [role=tab]')];
  const activate=t=>tabs.forEach(b=>{const active=b===t;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;document.getElementById(b.getAttribute('aria-controls')).hidden=!active;});
  tabs.forEach((t,i)=>{t.onclick=()=>activate(t);t.onkeydown=e=>{let next;if(e.key==='ArrowRight')next=tabs[(i+1)%tabs.length];if(e.key==='ArrowLeft')next=tabs[(i+tabs.length-1)%tabs.length];if(e.key==='Home')next=tabs[0];if(e.key==='End')next=tabs.at(-1);if(next){e.preventDefault();activate(next);next.focus();}};});
@@ -42,7 +52,7 @@
  document.querySelectorAll('[data-result-slider]').forEach(input=>input.addEventListener('input',()=>{input.closest('.result-comparison').style.setProperty('--reveal',input.value+'%');input.setAttribute('aria-valuetext',lang==='es'?input.value+'% antes, '+(100-input.value)+'% después':input.value+'% before, '+(100-input.value)+'% after');}));
  const form=document.getElementById('consultation-form');if(!form)return;
  const leadId=globalThis.crypto?.randomUUID?.()||('lead-'+Date.now()+'-'+Math.random().toString(36).slice(2));
- const flat={...Object.fromEntries(keys.map(k=>[k,attribution.last_touch[k]||''])),landing_page:attribution.first_touch.landing_page,referrer:attribution.first_touch.referrer,first_touch:JSON.stringify(attribution.first_touch),last_touch:JSON.stringify(attribution.last_touch),conversion_page:pathOnly(location.href),lead_id:leadId};
+ const flat={...Object.fromEntries(keys.map(k=>[k,attribution.last_touch[k]||''])),landing_page:attribution.first_touch.landing_page,referrer:attribution.first_touch.referrer,first_touch:JSON.stringify(attribution.first_touch),last_touch:JSON.stringify(attribution.last_touch),conversion_page:pathOnly(location.href),lead_id:leadId,ref:leadRef};
  for(const [k,v]of Object.entries(flat)){const input=form.elements.namedItem(k);if(input){input.value=v;input.setAttribute('value',v);}}
  const requested=params.get('procedure');if(requested&&[...form.elements.procedure.options].some(o=>o.value===requested))form.elements.procedure.value=requested;
  let started=false;form.addEventListener('input',()=>{if(!started){event('form_start',{form_id:form.id});started=true;}});

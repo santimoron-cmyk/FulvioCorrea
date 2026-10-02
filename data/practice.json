@@ -140,17 +140,17 @@
   "knowsLanguageSource": "Verified on the site: Dr. Correa addresses patients in English in his procedure videos (content/videos/*.json, language en, e.g. mommy.json 'I'm doctor Fulvio Correa'), and Spanish-speaking patients describe their care with him in Spanish (data/patient-videos.json testimonials). Spanish and English are both used for patient care.",
   "openingHours": [{"days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00"}],
   "openingHoursText": {
-    "en": "Office hours (team available): Monday to Friday, 8:00 a.m. - 5:00 p.m. Colombia time (COT, UTC-5).",
-    "es": "Horario del consultorio (atención del equipo): lunes a viernes, 8:00 a.m. - 5:00 p.m. (hora de Colombia)."
+    "en": "Office hours (team available): Mon to Fri, 8:00 a.m. to 5:00 p.m. Colombia time (COT, UTC-5).",
+    "es": "Horario del consultorio (atención del equipo): lunes a viernes, 8:00 a.m. a 5:00 p.m. (hora de Colombia)."
   },
   "consultationHours": {"days": ["Tuesday", "Thursday"], "opens": "14:00", "closes": "18:00", "timeZone": "America/Bogota"},
   "consultationHoursText": {
-    "en": "Consultations with Dr. Fulvio Correa: Tuesday and Thursday, 2:00 p.m. - 6:00 p.m. Colombia time (COT, UTC-5).",
-    "es": "Consultas con el Dr. Fulvio Correa: martes y jueves, 2:00 p.m. - 6:00 p.m. (hora de Colombia)."
+    "en": "Consultations with Dr. Fulvio Correa: Tuesday and Thursday, 2:00 p.m. to 6:00 p.m. Colombia time (COT, UTC-5).",
+    "es": "Consultas con el Dr. Fulvio Correa: martes y jueves, 2:00 p.m. a 6:00 p.m. (hora de Colombia)."
   },
   "hoursBrief": {
-    "en": "Office: Mon-Fri, 8:00 a.m. - 5:00 p.m. · Doctor consultations: Tue and Thu, 2:00 - 6:00 p.m. (COT, UTC-5)",
-    "es": "Consultorio: lun. a vie., 8:00 a.m. - 5:00 p.m. · Consultas con el doctor: mar. y jue., 2:00 - 6:00 p.m. (hora de Colombia)"
+    "en": "Office: Mon to Fri, 8:00 a.m. to 5:00 p.m. Doctor consultations: Tue and Thu, 2:00 p.m. to 6:00 p.m. (COT, UTC-5)",
+    "es": "Consultorio: lunes a viernes, 8:00 a.m. a 5:00 p.m. Consultas con el doctor: martes y jueves, 2:00 p.m. a 6:00 p.m. (hora de Colombia)"
   },
   "hoursSource": "Office hours (Mon-Fri 08:00-17:00, staff available) and Dr. Correa's consultation hours (Tue and Thu 14:00-18:00, America/Bogota) confirmed by Santiago on 2026-09-28. CAPRI Clinic hours are separate (data/facility.json)."
 }

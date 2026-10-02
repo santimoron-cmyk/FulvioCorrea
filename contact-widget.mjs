@@ -7,7 +7,7 @@ export function contactLauncher(lang,attrs){const es=lang==='es';return `<div cl
 export function contactWidget(lang,procedures,channels){
  const es=lang==='es',t=(en,esText)=>es?esText:en;
  const names=new Intl.DisplayNames([lang],{type:'region'});const countries=phoneCountries.map(c=>({...c,label:names.of(c.iso)})).sort((a,b)=>a.label.localeCompare(b.label,lang));
- const callTimes=[['asap','As soon as possible','Lo antes posible'],['morning','Morning (8 am – 12 pm)','En la mañana (8 a. m. – 12 m.)'],['afternoon','Afternoon (12 – 5 pm)','En la tarde (12 m. – 5 p. m.)'],['evening','Evening (5 – 8 pm)','En la noche (5 – 8 p. m.)']];
+ const callTimes=[['asap','As soon as possible','Lo antes posible'],['morning','Morning (8 am to 12 pm)','En la mañana (8 a. m. a 12 m.)'],['afternoon','Afternoon (12 to 5 pm)','En la tarde (12 m. a 5 p. m.)'],['evening','Evening (5 to 8 pm)','En la noche (5 a 8 p. m.)']];
  const callButton=`<button type="button" id="contact-call" data-cta="contact-call" aria-controls="contact-call-form" aria-expanded="false"><span class="channel-icon channel-call" aria-hidden="true">☎</span><span>${t('Call me','Quiero que me llamen')}</span><span aria-hidden="true">→</span></button>`;
  return `${contactLauncher(lang,'aria-haspopup="dialog" aria-controls="contact-dialog"')}
  <dialog id="contact-dialog" class="contact-dialog" aria-labelledby="contact-title"><div class="contact-heading"><div class="contact-avatar" aria-hidden="true">S</div><div><p id="contact-title">Sofía</p></div><button type="button" id="contact-close" aria-label="${t('Close contact window','Cerrar ventana de contacto')}">×</button></div>

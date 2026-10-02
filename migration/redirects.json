@@ -669,6 +669,16 @@
       "status": 301
     },
     {
+      "from": "/es/mommy-makeover-talk-doral",
+      "to": "/es/charla-mommy-makeover-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/mommy-makeover-talk-doral/",
+      "to": "/es/charla-mommy-makeover-doral/",
+      "status": 301
+    },
+    {
       "from": "/es/procedures/liposuction",
       "to": "/es/procedimientos/liposuccion/",
       "status": 301
@@ -1236,6 +1246,16 @@
     {
       "from": "/en/image-sources",
       "to": "/image-sources/",
+      "status": 301
+    },
+    {
+      "from": "/en/mommy-makeover-talk-doral/",
+      "to": "/mommy-makeover-talk-doral/",
+      "status": 301
+    },
+    {
+      "from": "/en/mommy-makeover-talk-doral",
+      "to": "/mommy-makeover-talk-doral/",
       "status": 301
     },
     {

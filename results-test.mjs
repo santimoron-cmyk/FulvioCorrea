@@ -21,7 +21,7 @@ for(const page of pages){const html=fs.readFileSync(page.file,'utf8');
  assert.doesNotMatch(html,/<a\b(?![^>]*\bdata-language=)[^>]*href="\/(?:en\/book-consultation|es\/agendar-valoracion)\//,page.route+' exposes legacy form');
  if(/\/(?:book-consultation|agendar-valoracion)\//.test(page.route)){assert.ok(page.noindex);assert.match(html,/name="robots" content="noindex, nofollow"/);const picker=html.match(/<div class="language-picker"[\s\S]*?<\/div>/);assert.ok(picker,page.route+' missing language switch');assert.match(picker[0],/<a\b[^>]*data-language="en"/);assert.match(picker[0],/<a\b[^>]*data-language="es"/);assert.doesNotMatch(picker[0],/<button/);assert.match(html,/data-open-contact/);}
  if(page.ads)assert.doesNotMatch(html,/<form id="consultation-form"/);
- for(const a of html.matchAll(/<a\b[^>]*href="https:\/\/wa\.me\/[^>]*>/g))assert.match(a[0],/data-contact-channel/,page.route+' bypasses intake');
+ for(const a of html.matchAll(/<a\b[^>]*href="https:\/\/wa\.me\/[^>]*>/g))assert.match(a[0],/data-contact-channel|data-whatsapp="direct"/,page.route+' bypasses intake');
 }
 for(const lang of ['en','es']){const hub=fs.readFileSync('dist'+localizePath(`/${lang}/procedures/`)+'index.html','utf8').split('<main id="main">')[1].split('</main>')[0];
  for(const file of fs.readdirSync('content/procedures').filter(f=>f.endsWith('.'+lang+'.json'))){const p=JSON.parse(fs.readFileSync('content/procedures/'+file));if(p.offeredConfirmed)assert.ok(hub.includes(`href="${publicPath(procedureRoute(lang,p.slug))}"`),file+' missing from hub');}

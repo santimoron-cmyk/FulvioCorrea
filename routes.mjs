@@ -35,6 +35,8 @@ const topEs = [
   ['terms/', 'terminos/'],
   ['testimonials/', 'testimonios/'],
   ['procedures/', 'procedimientos/'],
+  // Event landing (event-view.mjs).
+  ['mommy-makeover-talk-doral/', 'charla-mommy-makeover-doral/'],
 ];
 
 // Longest old path first so a hub prefix cannot rewrite a more specific URL first.
