@@ -17,6 +17,18 @@ Recorrido (app.js, `localStorage` `fc_journey`, mismo criterio que el first touc
 
 Atribución (app.js): first touch en `localStorage` 90 días con fecha; last touch en la sesión (cambia solo con nuevos parámetros de campaña); `session.landing_page` = primera página de la sesión. Parámetros: utm_source, utm_medium, utm_campaign, utm_term, utm_content, gclid, gbraid, wbraid, fbclid.
 
+## Registros a eventos (landing de charla)
+
+Páginas: `/es/charla-mommy-makeover-doral/` y `/mommy-makeover-talk-doral/` (`event-view.mjs`, formulario `event-signup.js`). El formulario usa el mismo `POST /api/lead` con `event: "lead_created"`, `procedure: "mommy-makeover"`, `form_id: "event-signup"` y tres campos extra:
+
+- `event_tag` (lista cerrada `EVENT_TAGS` en `server/lead-handler.mjs`; hoy solo `charla-mommy-makeover-doral-oct2026`). Con `event_tag` son obligatorios `email`, `city` y `companion` (`yes`/`no`).
+- El webhook recibe además `tags` (= event_tag), `event_label`, `city`, `companion`, `companion_label` (`Sí / Yes` o `No`) y `lead_source_detail: "event_signup"`. El `summary` empieza con «Registro evento: …» e incluye email, ciudad, acompañante y tag. `lead_source` sigue siendo `website` (no rompe filtros existentes).
+- Consentimiento: `consent_version: "event-doral-consent-2026-09-30"`, texto de contacto por WhatsApp y correo de Aromas Med Spa y del equipo del Dr. Fulvio Correa. `sms_consent` = false.
+
+Pendiente en NinjaSuite/GHL (el webhook por sí solo no crea tags ni campos): en el workflow del Inbound Webhook añadir una rama «si `event_tag` no está vacío» → **Add Contact Tag** con `{{inboundWebhookRequest.event_tag}}` (o el tag fijo `charla-mommy-makeover-doral-oct2026`), mapear `city` y `companion_label` a campos personalizados (p. ej. «Ciudad» y «Viene con acompañante») y, si se desea, crear la tarea/oportunidad para el equipo de Aromas y Sofía. Para un evento nuevo: añadir su tag a `EVENT_TAGS`.
+
+dataLayer (solo con consentimiento de medición, sin datos personales): `form_start`, `event_signup` (con `event_tag`, `lead_id`, `companion`) y `generate_lead` (`lead_type: "event_signup"`) tras la confirmación del servidor; `form_error` si falla.
+
 ## Ejemplos exactos (lo que recibe el webhook)
 
 ### 1. `lead_created`

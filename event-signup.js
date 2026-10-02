@@ -1,0 +1,37 @@
+/* Event sign-up form (event-view.mjs): POST /api/lead as a lead_created with event_tag, city and companion.
+   Same endpoint, attribution and journey fields as the Sofía widget; dataLayer events follow the site's consent rule. */
+(()=>{'use strict';const form=document.getElementById('event-signup-form');if(!form)return;
+ const lang=document.documentElement.lang==='es'?'es':'en',tagName=form.dataset.eventTag||'',status=document.getElementById('event-signup-status'),button=document.getElementById('event-signup-submit');
+ const T=lang==='es'?{sending:'Enviando tu registro…',ok:n=>`¡Listo, ${n}! Recibimos tu registro. El equipo de Aromas Med Spa te contactará por WhatsApp para confirmar la fecha, la hora y tu cupo. Si los 30 cupos ya están completos, quedarás en la lista de espera y te avisaremos si se libera un lugar.`,error:'No pudimos confirmar tu registro. Inténtalo de nuevo en un momento o llama a Aromas Med Spa al (305) 591-3005.',phone:'Escribe tu WhatsApp con código de país, por ejemplo +1 305 555 0123.',required:'Completa los campos marcados para reservar tu cupo.'}
+  :{sending:'Sending your sign-up…',ok:n=>`Thank you, ${n}! We received your sign-up. The Aromas Med Spa team will contact you on WhatsApp to confirm the date, time and your spot. If all 30 spots are taken, you will be on the waitlist and we will let you know if a spot opens up.`,error:'We could not confirm your sign-up. Please try again in a moment or call Aromas Med Spa at (305) 591-3005.',phone:'Enter your WhatsApp number with country code, e.g. +1 305 555 0123.',required:'Please complete the highlighted fields to save your spot.'};
+ const read=k=>{try{return JSON.parse(sessionStorage.getItem(k));}catch{return null;}};
+ const push=(event,extra={})=>{if(read('fc_consent')!=='granted')return;window.dataLayer=window.dataLayer||[];window.dataLayer.push({event,page_path:location.pathname,language:lang,page_lang:lang,form_id:'event-signup',event_tag:tagName,...extra});};
+ const uid=()=>globalThis.crypto?.randomUUID?.()||'l'+Date.now().toString(36)+Math.random().toString(36).slice(2,12);
+ const pathOnly=u=>{try{const x=new URL(u);return x.origin+x.pathname;}catch{return '';}};
+ // WhatsApp → E.164. A bare 10-digit number (or 1 + 10) is taken as US/Canada, since the talk is in Florida.
+ const e164=v=>{let d=String(v||'').trim().replace(/[\s().-]/g,'');if(d.startsWith('00'))d='+'+d.slice(2);if(!d.startsWith('+')){d=d.replace(/\D/g,'');if(d.length===10)d='+1'+d;else if(d.length===11&&d[0]==='1')d='+'+d;else d='+'+d;}return /^\+[1-9]\d{6,14}$/.test(d)?d:'';};
+ const country=p=>p.startsWith('+1')?['US','+1']:p.startsWith('+57')?['CO','+57']:p.startsWith('+58')?['VE','+58']:p.startsWith('+52')?['MX','+52']:['',''];
+ const phoneInput=form.elements.whatsapp;phoneInput.addEventListener('input',()=>phoneInput.setCustomValidity(''));
+ let started=false,leadId=uid(),last='';form.addEventListener('input',()=>{if(!started){started=true;push('form_start');}});
+ form.addEventListener('submit',async e=>{e.preventDefault();if(form.elements.website.value)return;
+  const phone=e164(phoneInput.value);phoneInput.setCustomValidity(phoneInput.value&&!phone?T.phone:'');
+  if(!form.checkValidity()){form.reportValidity();status.textContent=phoneInput.validity.customError?T.phone:T.required;push('form_error',{error:'validation'});return;}
+  const a=read('fc_attribution')||{},f=a.first_touch||{},l=a.last_touch||{},s=a.session||{},attr={};
+  for(const k of ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','fbclid']){attr[k]=l[k]||'';attr[k+'_first']=f[k]||'';attr[k+'_last']=l[k]||'';}
+  const name=form.elements.name.value.trim().replace(/\s+/g,' '),[pc,pcc]=country(phone),consentEl=form.querySelector('[data-consent-version]');
+  const body={event:'lead_created',lead_id:leadId,name,phone,phone_country:pc,phone_country_code:pcc,email:form.elements.email.value.trim(),city:form.elements.city.value.trim(),companion:form.elements.companion.value,
+   event_tag:tagName,procedure:'mommy-makeover',procedure_label:'Mommy Makeover',language:lang,contact_consent:form.elements.contact_consent.checked,sms_consent:false,
+   consent_version:consentEl?.dataset.consentVersion||'',consent_text:(consentEl?.textContent||'').replace(/\s+/g,' ').trim(),measurement_consent:read('fc_consent')||'denied',
+   ...attr,page_url:location.origin+location.pathname,page_title:document.title||'',referrer:s.referrer||f.referrer||pathOnly(document.referrer),landing_page:s.landing_page||f.landing_page||'',landing_url_first:f.landing_page||'',referrer_first:f.referrer||'',attribution_timestamp:f.timestamp||'',
+   timezone:(()=>{try{return Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch{return '';}})(),ga_client_id:(String(document.cookie||'').match(/(?:^|; )_ga=GA\d\.\d\.(\d+\.\d+)/)||[])[1]||'',
+   form_id:'event-signup',button_id:'event-signup-submit',client_timestamp:new Date().toISOString(),journey:(()=>{try{return localStorage.getItem('fc_journey')}catch{}})()||''};
+  // Changed data = new lead id (the server rejects a reused id with different content); a plain retry keeps the id.
+  const key=JSON.stringify([name,phone,body.email,body.city,body.companion]);if(last&&key!==last)leadId=uid();last=key;body.lead_id=leadId;body.event_id=leadId+'-event';
+  button.disabled=true;status.className='form-status';status.textContent=T.sending;const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),15000);
+  try{const r=await fetch('/api/lead',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json','Idempotency-Key':body.event_id},body:JSON.stringify(body),signal:abort.signal});let j={};try{j=JSON.parse(await r.text());}catch{}
+   if(!r.ok||j.accepted!==true)throw Error(j.error||String(r.status));
+   status.className='form-status ok';status.textContent=T.ok(name.split(' ')[0]);form.querySelectorAll('input,button').forEach(x=>{if(x.type!=='hidden')x.disabled=true;});
+   push('event_signup',{lead_id:leadId,companion:body.companion,city:body.city?'provided':'',procedure:'mommy-makeover'});push('generate_lead',{lead_id:leadId,lead_type:'event_signup',procedure:'mommy-makeover'});
+  }catch(err){status.textContent=T.error;button.disabled=false;push('form_error',{error:String(err?.message||'network').slice(0,40)});}finally{clearTimeout(timer);}
+ });
+})();

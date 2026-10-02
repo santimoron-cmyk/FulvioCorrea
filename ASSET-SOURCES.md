@@ -66,3 +66,8 @@ Real photographs of Dr. Fulvio Correa's consultation office (CC Ramblas, Manzani
 - plastic-surgery-office-consultation-desk-cartagena: consultation room with a desk and a procedure chair.
 - plastic-surgery-office-consultation-shelves-cartagena: consultation room with wall shelves.
 - plastic-surgery-office-private-lounge-cartagena: private lounge with armchairs and plants.
+
+## Event landing: Aromas Med Spa Doral talk (added 2026-09-30)
+- alberto-nader-aromas-med-spa-doral{,-480}.{avif,webp}: portrait of Alberto Nader (Founder and Clinical Director, Aromas Med Spa) in black Aromas scrubs on a light studio background. Source: https://aromaslaser.com/storage/2026/01/Alberto-Nader.webp (1200x1800, Aromas Med Spa home page "Alberto Nader · Clinical Director and Founder"). Used with Aromas's permission as host of the event. Cropped to the 4:5 portrait aspect (720x900 region on face and upper body), encoded at 720x900 / 480x600 without upscaling, metadata stripped. Alt text (EN/ES) lives in `event-view.mjs`.
+- aromas-med-spa-doral-logo-white.webp: Aromas Med Spa logo (white version for the dark theme), rasterized to 600x186 from https://aromaslaser.com/storage/2025/11/Aromas-Logo-White.svg. Used with permission.
+- Bio facts for Alberto Nader (Universidad del Norte 1990, founded Aromas Med Spa in Doral in 2008, Clinical Director) restate https://aromaslaser.com/ as checked 2026-09-30; address 9831 NW 58th St #149, Doral, FL 33178 and phone (305) 591-3005 from https://aromaslaser.com/doral-location/.

@@ -684,6 +684,16 @@ curl -I "https://fulviocorrea.com/es/procedures/mommy-makeover/"
 curl -I "https://fulviocorrea.com/es/procedimientos/mommy-makeover/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/es/mommy-makeover-talk-doral"
+# Expected: 301 Location: /es/charla-mommy-makeover-doral/
+curl -I "https://fulviocorrea.com/es/charla-mommy-makeover-doral/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/mommy-makeover-talk-doral/"
+# Expected: 301 Location: /es/charla-mommy-makeover-doral/
+curl -I "https://fulviocorrea.com/es/charla-mommy-makeover-doral/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/es/procedures/liposuction"
 # Expected: 301 Location: /es/procedimientos/liposuccion/
 curl -I "https://fulviocorrea.com/es/procedimientos/liposuccion/"
@@ -1252,6 +1262,16 @@ curl -I "https://fulviocorrea.com/image-sources/"
 curl -I "https://fulviocorrea.com/en/image-sources"
 # Expected: 301 Location: /image-sources/
 curl -I "https://fulviocorrea.com/image-sources/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/mommy-makeover-talk-doral/"
+# Expected: 301 Location: /mommy-makeover-talk-doral/
+curl -I "https://fulviocorrea.com/mommy-makeover-talk-doral/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/mommy-makeover-talk-doral"
+# Expected: 301 Location: /mommy-makeover-talk-doral/
+curl -I "https://fulviocorrea.com/mommy-makeover-talk-doral/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/404/"
