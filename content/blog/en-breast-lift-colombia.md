@@ -8,7 +8,7 @@ tags: ["breast-lift-colombia", "mastopexy", "breast-surgery", "medical-tourism-c
 cover: "/assets/blog-breast-lift-colombia.webp"
 coverAlt: "Hotel balcony lounge chair overlooking Cartagena colonial rooftops and Caribbean sea"
 date: "2026-10-02"
-updated: "2026-10-02"
+updated: "2026-10-05"
 author: "fulvio-correa"
 translationOf: "levantamiento-de-senos-colombia"
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/breast-lift","https://www.plasticsurgery.org/cosmetic-procedures/breast-lift/recovery","https://www.mayoclinic.org/tests-procedures/breast-lift/about/pac-20393218","https://www.cirugiaplastica.org.co/","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions"]
@@ -72,6 +72,8 @@ Scar pattern depends on how much skin must be removed. Mayo Clinic and ASPS desc
 [ASPS breast lift recovery guidance](https://www.plasticsurgery.org/cosmetic-procedures/breast-lift/recovery) and Mayo Clinic materials describe swelling and bruising in the early weeks, support bras as directed, and activity limits that often run several weeks. Exact clearance is individualized.
 
 Airlines add rules on top of medical clearance. [Avianca’s help center](https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions) lists travel from **14 days** after mammoplasty (augmentation or reduction) or breast pexy (with or without implants), and asks for a medical certificate issued no more than 10 days before the flight. Check your own carrier. Keep return tickets flexible until your surgical team clears you.
+
+To compare airline minimums with ASPS and CDC guidance, see [flying after plastic surgery](/blog/flying-after-plastic-surgery/).
 
 If a lift is part of a combined postpartum plan, also read [how long to stay after a mommy makeover](/en/blog/how-long-to-stay-after-mommy-makeover/).
 

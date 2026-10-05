@@ -8,7 +8,7 @@ tags: ["tummy-tuck-colombia"]
 cover: "/assets/blog-tummy-tuck-consultation.webp"
 coverAlt: "Hands of a medical professional reviewing documents on a clipboard"
 date: "2026-09-23"
-updated: "2026-09-25"
+updated: "2026-10-05"
 author: "fulvio-correa"
 translationOf: "abdominoplastia-colombia"
 sources: ["https://www.cirugiaplastica.org.co/","https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://medlineplus.gov/ency/article/002978.htm","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/recovery","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/safety"]
@@ -73,6 +73,8 @@ Ask for a clear explanation of risks that apply to abdominoplasty generally—bl
 Build your itinerary around clinical milestones, not vacation days. Ask how early you should arrive to complete pending labs or evaluations and settle into lodging near follow-up care—timing is case-specific. Keep return flights flexible until your surgical team clears you; clearance depends on healing, drains if used, mobility, and flight length.
 
 Airlines add their own rules on top of medical clearance. [Avianca’s help center](https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales), for example, lists travel from 14 days after an abdominoplasty, mini abdominoplasty, or lipoabdominoplasty, and asks for a medical certificate issued no more than 10 days before the flight. Check your own carrier’s policy before booking. For general recovery ranges, [MedlinePlus](https://medlineplus.gov/ency/article/002978.htm) notes an elastic support garment for about 2 to 3 weeks, avoiding strenuous activity for 4 to 6 weeks, and a return to work in roughly 2 to 4 weeks—your surgeon sets your actual timeline.
+
+For waiting periods after other procedures and in-flight clot precautions, see [when you can fly home after plastic surgery](/blog/flying-after-plastic-surgery/).
 
 A companion helps with walking, meals, garments, and clinic visits in the first days. Choose lodging with an elevator when possible, reliable air conditioning, and a quiet room. For Cartagena-specific travel context, see the clinic’s [travel and recovery guidance](https://fulviocorrea.com/international-patients/). If your plan may combine abdominal and breast procedures, also review [mommy makeover in Cartagena](https://fulviocorrea.com/procedures/mommy-makeover/) and the related stay-length article [how long to stay after a mommy makeover](https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/).
 

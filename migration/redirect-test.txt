@@ -474,6 +474,16 @@ curl -I "https://fulviocorrea.com/post/breast-lift-colombia/"
 curl -I "https://fulviocorrea.com/blog/breast-lift-colombia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/flying-after-plastic-surgery"
+# Expected: 301 Location: /blog/flying-after-plastic-surgery/
+curl -I "https://fulviocorrea.com/blog/flying-after-plastic-surgery/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/flying-after-plastic-surgery/"
+# Expected: 301 Location: /blog/flying-after-plastic-surgery/
+curl -I "https://fulviocorrea.com/blog/flying-after-plastic-surgery/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/how-long-to-stay-after-mommy-makeover"
 # Expected: 301 Location: /blog/how-long-to-stay-after-mommy-makeover/
 curl -I "https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/"
@@ -592,6 +602,16 @@ curl -I "https://fulviocorrea.com/es/blog/tiempo-recuperacion-mommy-makeover/"
 curl -I "https://fulviocorrea.com/post/tiempo-recuperacion-mommy-makeover/"
 # Expected: 301 Location: /es/blog/tiempo-recuperacion-mommy-makeover/
 curl -I "https://fulviocorrea.com/es/blog/tiempo-recuperacion-mommy-makeover/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/viajar-en-avion-despues-de-cirugia-plastica"
+# Expected: 301 Location: /es/blog/viajar-en-avion-despues-de-cirugia-plastica/
+curl -I "https://fulviocorrea.com/es/blog/viajar-en-avion-despues-de-cirugia-plastica/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/viajar-en-avion-despues-de-cirugia-plastica/"
+# Expected: 301 Location: /es/blog/viajar-en-avion-despues-de-cirugia-plastica/
+curl -I "https://fulviocorrea.com/es/blog/viajar-en-avion-despues-de-cirugia-plastica/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/es/blog/category/plastic-surgery-in-colombia"
@@ -1352,6 +1372,16 @@ curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
 curl -I "https://fulviocorrea.com/en/blog/category/plastic-surgery-in-colombia"
 # Expected: 301 Location: /blog/category/plastic-surgery-in-colombia/
 curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/flying-after-plastic-surgery/"
+# Expected: 301 Location: /blog/flying-after-plastic-surgery/
+curl -I "https://fulviocorrea.com/blog/flying-after-plastic-surgery/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/flying-after-plastic-surgery"
+# Expected: 301 Location: /blog/flying-after-plastic-surgery/
+curl -I "https://fulviocorrea.com/blog/flying-after-plastic-surgery/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/blog/breast-lift-colombia/"

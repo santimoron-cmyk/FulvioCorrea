@@ -8,7 +8,7 @@ tags: ["cuantos-dias-quedarse-despues-mommy-makeover", "mommy-makeover", "estadi
 cover: "/assets/blog-cartagena-stay.webp"
 coverAlt: "Fachada colonial amarilla y balcones de madera en Cartagena"
 date: "2026-09-30"
-updated: "2026-09-30"
+updated: "2026-10-05"
 author: "fulvio-correa"
 translationOf: "how-long-to-stay-after-mommy-makeover"
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/mommy-makeover/recovery","https://www.plasticsurgery.org/news/blog/how-will-your-body-change-after-a-mommy-makeover","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/make-a-plan/","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/post-surgery-considerations-abroad/"]
@@ -74,6 +74,8 @@ ISAPS señala que periodos largos sentada—en avión o coche—pueden elevar el
 • Cómo contactar al equipo cuando ya estés en casa (fotos, video, canal de WhatsApp/clínica)
 
 Compra opciones de regreso flexibles cuando sea posible hasta que la autorización esté más clara. Cambiar un tiquete suele ser más fácil que gestionar un vuelo difícil demasiado pronto.
+
+Los días mínimos que publica Avianca para cada procedimiento, incluida la regla de 15 días para procedimientos corporales combinados, están en la guía [viajar en avión después de una cirugía plástica](/es/blog/viajar-en-avion-despues-de-cirugia-plastica/).
 
 ## Acompañante, alojamiento y vida al regresar
 

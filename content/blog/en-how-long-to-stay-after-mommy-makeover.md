@@ -8,7 +8,7 @@ tags: ["how-long-to-stay-after-mommy-makeover"]
 cover: "/assets/blog-cartagena-stay.webp"
 coverAlt: "Yellow colonial facade and wooden balconies in Cartagena"
 date: "2026-09-23"
-updated: "2026-10-02"
+updated: "2026-10-05"
 author: "fulvio-correa"
 translationOf: ""
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/mommy-makeover/recovery","https://www.plasticsurgery.org/news/blog/how-will-your-body-change-after-a-mommy-makeover","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/make-a-plan/","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/post-surgery-considerations-abroad/"]
@@ -72,6 +72,8 @@ ISAPS notes that long periods of sitting—on airplanes or in cars—can raise t
 • How to reach the team after you are back home (photos, video, WhatsApp/clinic channel)
 
 Buy flexible return options when possible until clearance is clearer. Changing a ticket is usually easier than managing a difficult flight too soon.
+
+For airline day counts by procedure, including Avianca's 15-day rule for combined body procedures, see [flying after plastic surgery](/blog/flying-after-plastic-surgery/).
 
 ## Companion, lodging, and return-to-life after the U.S. landing
 
