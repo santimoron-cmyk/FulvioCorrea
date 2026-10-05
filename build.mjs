@@ -17,7 +17,7 @@ const src=checkSourceAssets();for(const w of src.warnings)console.warn('WARN ass
 const referenced=new Set(sourceReferences().filter(r=>!r.draft).map(r=>r.asset));
 for(const name of Object.values(IMAGE_RENAMES))referenced.add(name);
 for(const name of Object.keys(IMAGE_RENAMES))referenced.delete(name);
-for(const asset of [...referenced]){if(!/^blog-.+\.webp$/.test(asset)||asset.includes('-og.')||/-\d+\.webp$/.test(asset))continue;for(const extra of [asset.replace(/\.webp$/,'.avif'),asset.replace(/\.webp$/,'-og.webp'),asset.replace(/\.webp$/,'-og.avif')])if(fs.existsSync('assets/'+extra))referenced.add(extra);}
+for(const asset of [...referenced]){if(!/^blog-.+\.webp$/.test(asset)||asset.includes('-og.')||/-\d+\.webp$/.test(asset))continue;for(const extra of ['.avif','-800.webp','-800.avif','-og.webp','-og.avif','-og.jpg'].map(suffix=>asset.replace(/\.webp$/,suffix)))if(fs.existsSync('assets/'+extra))referenced.add(extra);}
 const skipped=sourceAssets().filter(f=>!referenced.has(f)&&!f.startsWith('fonts/'));
 if(skipped.length)console.warn('Excluded from deploy (kept in assets/): '+skipped.join(', '));
 // 2. Fresh dist/ + copy of referenced assets, then responsive/OG/icon derivatives.

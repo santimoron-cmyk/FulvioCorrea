@@ -479,6 +479,16 @@
       "status": 301
     },
     {
+      "from": "/post/flying-after-plastic-surgery",
+      "to": "/blog/flying-after-plastic-surgery/",
+      "status": 301
+    },
+    {
+      "from": "/post/flying-after-plastic-surgery/",
+      "to": "/blog/flying-after-plastic-surgery/",
+      "status": 301
+    },
+    {
       "from": "/post/how-long-to-stay-after-mommy-makeover",
       "to": "/blog/how-long-to-stay-after-mommy-makeover/",
       "status": 301
@@ -596,6 +606,16 @@
     {
       "from": "/post/tiempo-recuperacion-mommy-makeover/",
       "to": "/es/blog/tiempo-recuperacion-mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/post/viajar-en-avion-despues-de-cirugia-plastica",
+      "to": "/es/blog/viajar-en-avion-despues-de-cirugia-plastica/",
+      "status": 301
+    },
+    {
+      "from": "/post/viajar-en-avion-despues-de-cirugia-plastica/",
+      "to": "/es/blog/viajar-en-avion-despues-de-cirugia-plastica/",
       "status": 301
     },
     {
@@ -1356,6 +1376,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/flying-after-plastic-surgery/",
+      "to": "/blog/flying-after-plastic-surgery/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/flying-after-plastic-surgery",
+      "to": "/blog/flying-after-plastic-surgery/",
       "status": 301
     },
     {

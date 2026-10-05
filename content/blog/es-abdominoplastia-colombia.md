@@ -8,7 +8,7 @@ tags: ["abdominoplastia-colombia"]
 cover: "/assets/blog-tummy-tuck-consultation.webp"
 coverAlt: "Manos de un profesional de salud revisando documentos en una carpeta"
 date: "2026-09-25"
-updated: "2026-09-30"
+updated: "2026-10-05"
 author: "fulvio-correa"
 translationOf: "tummy-tuck-colombia"
 sources: ["https://www.cirugiaplastica.org.co/","https://medlineplus.gov/spanish/ency/article/002978.htm","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/recovery","https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck"]
@@ -64,6 +64,8 @@ Aquí se mezclan dos relojes distintos: el de tu recuperación y el de la aerol�
 **El reloj de la recuperación.** Según la enciclopedia médica MedlinePlus, se suele usar una faja o soporte elástico durante 2 a 3 semanas, evitar el esfuerzo intenso durante 4 a 6 semanas, y muchas personas vuelven al trabajo entre la segunda y la cuarta semana. La [American Society of Plastic Surgeons](https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/recovery) añade que puede haber drenajes temporales y que tu cirujano te dará instrucciones sobre curaciones, medicamentos, baño, prendas de compresión y controles. Son rangos generales; el tuyo lo fija tu cirujano.
 
 **El reloj del vuelo.** El [centro de ayuda de Avianca](https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) indica que después de una abdominoplastia se permite viajar a partir de los 14 días y que toda condición médica especial requiere un certificado médico expedido como máximo 10 días antes del vuelo. Otras aerolíneas pueden tener sus propias reglas, así que revisa la tuya antes de comprar.
+
+Si combinas procedimientos o quieres comparar los plazos de otras cirugías, revisa la guía sobre [viajar en avión después de una cirugía plástica](/es/blog/viajar-en-avion-despues-de-cirugia-plastica/).
 
 En la práctica, esto significa reservar alojamiento con margen y dejar el vuelo de regreso flexible hasta que tu equipo quirúrgico te dé el alta para viajar. Si tu plan incluye también cirugía de senos o liposucción, el tiempo puede cambiar; la guía de [tiempo de recuperación del mommy makeover](https://fulviocorrea.com/es/blog/tiempo-recuperacion-mommy-makeover/) explica cómo se suman esas piezas.
 

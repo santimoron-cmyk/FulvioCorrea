@@ -2532,13 +2532,17 @@
     "file": "dist/en/blog/category/recovery/index.html",
     "lang": "en",
     "ads": false,
-    "noindex": true,
+    "noindex": false,
     "updated": "2026-09-25",
     "schemas": [],
     "alternates": [
       {
         "lang": "en",
         "route": "/en/blog/category/recovery/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/categoria/recuperacion/"
       }
     ]
   },
@@ -2573,19 +2577,126 @@
     ]
   },
   {
+    "route": "/en/blog/flying-after-plastic-surgery/",
+    "file": "dist/en/blog/flying-after-plastic-surgery/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-05",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Flying After Plastic Surgery: When You Can Fly Home From Colombia",
+        "datePublished": "2026-10-05",
+        "dateModified": "2026-10-05",
+        "inLanguage": "en",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.webp",
+          "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.avif",
+          "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery-og.webp",
+          "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/flying-after-plastic-surgery/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How soon can I fly after plastic surgery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the procedure, your recovery, and the airline. On Avianca, the published minimum ranges from 10 days (rhinoplasty, buttock fat injection) to 15 days (facelift or combined procedures), with a medical certificate issued within 10 days of the flight. Your surgeon may ask you to wait longer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I fly 7 days after liposuction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS suggests five to seven days after body procedures such as liposuction, but Avianca lists 14 days after liposuction. If you are flying Avianca from Colombia, plan on at least 14 days and your surgeon's clearance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long after a BBL can I fly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avianca lists 10 days after buttock fat injection and 14 days after liposuction. Because a BBL normally includes liposuction to harvest the fat, and plans combining two or more body procedures fall under Avianca's 15-day line, ask your team which category your certificate will describe. Also ask how you should sit during the flight; that guidance is individual."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long after a tummy tuck can I fly home?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avianca lists 14 days after a tummy tuck, mini tummy tuck, or lipoabdominoplasty, and 15 days when it is combined with other body procedures. CDC advises against flying for 10 days after abdominal surgery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a medical certificate to fly after surgery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For Avianca, yes: any special medical condition requires a certificate issued no earlier than 10 days before travel stating that you are fit to fly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a short flight safer than a long-haul flight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CDC notes that clot risk rises with longer periods of immobility, and that flights over four hours carry a recognized risk. A shorter flight does not remove the airline's waiting period."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/es/blog/viajar-en-avion-despues-de-cirugia-plastica/",
+    "cover": "/assets/blog-flying-after-plastic-surgery.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/flying-after-plastic-surgery/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/viajar-en-avion-despues-de-cirugia-plastica/"
+      }
+    ]
+  },
+  {
     "route": "/en/blog/breast-lift-colombia/",
     "file": "dist/en/blog/breast-lift-colombia/index.html",
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-02",
+    "updated": "2026-10-05",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Breast Lift Colombia: Lift vs Implants and How to Verify",
         "datePublished": "2026-10-02",
-        "dateModified": "2026-10-02",
+        "dateModified": "2026-10-05",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-breast-lift-colombia.webp",
@@ -2595,6 +2706,9 @@
         ],
         "mainEntityOfPage": "https://fulviocorrea.com/blog/breast-lift-colombia/",
         "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
           "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
@@ -2641,6 +2755,9 @@
         "author": {
           "@id": "https://fulviocorrea.com/#physician"
         },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
@@ -2685,6 +2802,9 @@
         "author": {
           "@id": "https://fulviocorrea.com/#physician"
         },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
@@ -2727,6 +2847,9 @@
         "image": "https://fulviocorrea.com/assets/blog-bbl-body-contour.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/bbl-colombia/",
         "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
           "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
@@ -2778,6 +2901,9 @@
         "author": {
           "@id": "https://fulviocorrea.com/#physician"
         },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
@@ -2808,18 +2934,21 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-02",
+    "updated": "2026-10-05",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "How Long to Stay After a Mommy Makeover (Especially Abroad)",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-10-02",
+        "dateModified": "2026-10-05",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-stay.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/",
         "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
           "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
@@ -2866,6 +2995,9 @@
         "author": {
           "@id": "https://fulviocorrea.com/#physician"
         },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
@@ -2896,18 +3028,21 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-25",
+    "updated": "2026-10-05",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Tummy Tuck in Colombia: How U.S. Patients Choose a Surgeon",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-09-25",
+        "dateModified": "2026-10-05",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-tummy-tuck-consultation.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/tummy-tuck-colombia/",
         "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
           "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
@@ -3064,13 +3199,17 @@
     "file": "dist/es/blog/categoria/recuperacion/index.html",
     "lang": "es",
     "ads": false,
-    "noindex": true,
+    "noindex": false,
     "updated": "2026-09-25",
     "schemas": [],
     "alternates": [
       {
         "lang": "es",
         "route": "/es/blog/categoria/recuperacion/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/category/recovery/"
       }
     ]
   },
@@ -3105,6 +3244,105 @@
     ]
   },
   {
+    "route": "/es/blog/viajar-en-avion-despues-de-cirugia-plastica/",
+    "file": "dist/es/blog/viajar-en-avion-despues-de-cirugia-plastica/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-05",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Viajar en avión después de una cirugía plástica: cuántos días esperar",
+        "datePublished": "2026-10-05",
+        "dateModified": "2026-10-05",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.webp",
+          "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.avif",
+          "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery-og.webp",
+          "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/viajar-en-avion-despues-de-cirugia-plastica/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo después de una cirugía plástica puedo viajar en avión?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del procedimiento, de tu evolución y de la aerolínea. En Avianca, el mínimo publicado va de 10 días (rinoplastia, inyección de grasa en glúteos) a 15 días (lifting facial o procedimientos combinados), con certificado médico expedido como máximo 10 días antes del vuelo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días después de una lipo puedo viajar en avión?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avianca lista 14 días después de una liposucción. La guía de la Aerocivil citada en Cirugía Plástica Ibero-Latinoamericana desaconseja volar antes de 7 días, y la ASPS sugiere de cinco a siete. Si vuelas con Avianca desde Colombia, planea al menos 14 días y la autorización de tu cirujano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo viajar después de una abdominoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avianca indica 14 días después de una abdominoplastia, mini abdominoplastia o lipoabdominoplastia, y 15 si se combina con otros procedimientos corporales. Los CDC recomiendan no volar durante 10 días después de una cirugía abdominal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Necesito certificado médico para volar después de operarme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En Avianca, sí. Toda condición médica especial requiere un certificado expedido como máximo 10 días antes del viaje que indique que estás en condiciones de volar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Un vuelo corto es más seguro que uno largo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los CDC señalan que el riesgo de coágulos aumenta con el tiempo de inmovilidad y que los viajes de más de cuatro horas tienen un riesgo reconocido. Un vuelo corto no elimina el plazo de espera de la aerolínea."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/en/blog/flying-after-plastic-surgery/",
+    "cover": "/assets/blog-flying-after-plastic-surgery.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/viajar-en-avion-despues-de-cirugia-plastica/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/flying-after-plastic-surgery/"
+      }
+    ]
+  },
+  {
     "route": "/es/blog/levantamiento-de-senos-colombia/",
     "file": "dist/es/blog/levantamiento-de-senos-colombia/index.html",
     "lang": "es",
@@ -3127,6 +3365,9 @@
         ],
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/levantamiento-de-senos-colombia/",
         "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
           "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
@@ -3173,6 +3414,9 @@
         "author": {
           "@id": "https://fulviocorrea.com/#physician"
         },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
@@ -3203,18 +3447,21 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-30",
+    "updated": "2026-10-05",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Cuántos días quedarse después de un mommy makeover (sobre todo si viajas)",
         "datePublished": "2026-09-30",
-        "dateModified": "2026-09-30",
+        "dateModified": "2026-10-05",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-stay.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/",
         "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
           "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
@@ -3259,6 +3506,9 @@
         "image": "https://fulviocorrea.com/assets/blog-liposuction-measurement.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/liposuccion-colombia/",
         "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
           "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
@@ -3310,6 +3560,9 @@
         "author": {
           "@id": "https://fulviocorrea.com/#physician"
         },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
@@ -3354,6 +3607,9 @@
         "author": {
           "@id": "https://fulviocorrea.com/#physician"
         },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "Dr. Fulvio Correa",
@@ -3384,18 +3640,21 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-30",
+    "updated": "2026-10-05",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Abdominoplastia en Colombia: qué verificar antes de viajar",
         "datePublished": "2026-09-25",
-        "dateModified": "2026-09-30",
+        "dateModified": "2026-10-05",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-tummy-tuck-consultation.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/abdominoplastia-colombia/",
         "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
           "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
@@ -3440,6 +3699,9 @@
         "image": "https://fulviocorrea.com/assets/blog-mommy-makeover-recovery.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/tiempo-recuperacion-mommy-makeover/",
         "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
           "@id": "https://fulviocorrea.com/#physician"
         },
         "publisher": {
