@@ -51,14 +51,4 @@ Las variables de build y de Functions son las mismas en Pages; `LEAD_*` solo se 
 
 Porte de `netlify/functions/lead.mjs`. Reutiliza `server/lead-handler.mjs` (también usado por `server.mjs` en local): valida origen, JSON ≤ 20 KB, honeypot, teléfono E.164, consentimiento, idioma, procedimiento, evento (`lead_created`/`channel_selected`), canal y franja de llamada, `Idempotency-Key` (= `event_id`); limita 10 envíos/min por IP (por instancia) y reenvía un JSON plano a `LEAD_WEBHOOK_URL` con `Idempotency-Key`. Payload y mapeo en NinjaSuite: [LEAD-WEBHOOK.md](LEAD-WEBHOOK.md). Responde `{accepted:true}` solo si HighLevel devuelve 2xx.
 
-Prueba local: `node lead-test.mjs` y `node leads-db-test.mjs` (webhook y D1 simulados). Prueba con runtime real: `npx wrangler pages dev dist` (requiere Node ≥ 22).
-
-## Copia de respaldo en D1
-
-Tras validar, y antes de llamar a NinjaSuite, `/api/lead` guarda el lead en D1 (`LEADS_DB`) si el binding existe. Si D1 falla o no está, el webhook se envía igual. Si NinjaSuite no confirma, la fila queda con `webhook_status=webhook_failed`. No se escribe la IP; solo el país (`CF-IPCountry` / `request.cf.country`) cuando Cloudflare lo envía. No se registra PII en consola.
-
-La tabla se crea sola en el primer uso. El mismo SQL está en `d1/leads.sql`.
-
-Exportación privada (sin enlace en el sitio): `GET /api/leads.csv`, con `?event=doral` y/o `?from=YYYY-MM-DD`. CSV UTF-8 con BOM. Autorización con el secreto `LEADS_EXPORT_TOKEN` en `Authorization: Bearer`, en el header `X-Leads-Export-Token`, o en `?token=`. Sin el secreto, 401. Respuesta `noindex` y `no-store`.
-
-Binding previsto: base `fulvio-leads`, nombre `LEADS_DB`, solo en el entorno **Preview** (staging). Production se deja sin binding hasta que se quiera activar allí: entonces hay que enlazar `LEADS_DB`, definir `LEADS_EXPORT_TOKEN` en Production y volver a desplegar `main`. Hasta ese momento un deploy a producción reenvía a NinjaSuite y no escribe en D1.
+Prueba local: `node lead-test.mjs` (mock del webhook). Prueba con runtime real: `npx wrangler pages dev dist` (requiere Node ≥ 22).
