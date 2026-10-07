@@ -689,6 +689,16 @@
       "status": 301
     },
     {
+      "from": "/es/mommy-makeover-talk-doral-v1",
+      "to": "/es/charla-mommy-makeover-doral-v1/",
+      "status": 301
+    },
+    {
+      "from": "/es/mommy-makeover-talk-doral-v1/",
+      "to": "/es/charla-mommy-makeover-doral-v1/",
+      "status": 301
+    },
+    {
       "from": "/es/resources/your-consultation",
       "to": "/es/recursos/tu-valoracion/",
       "status": 301
@@ -1286,6 +1296,16 @@
     {
       "from": "/en/image-sources",
       "to": "/image-sources/",
+      "status": 301
+    },
+    {
+      "from": "/en/mommy-makeover-talk-doral-v1/",
+      "to": "/mommy-makeover-talk-doral-v1/",
+      "status": 301
+    },
+    {
+      "from": "/en/mommy-makeover-talk-doral-v1",
+      "to": "/mommy-makeover-talk-doral-v1/",
       "status": 301
     },
     {

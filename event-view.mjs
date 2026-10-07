@@ -1,9 +1,12 @@
 // Event landing page: in-person talk "Mommy Makeover · turismo de salud en Colombia" hosted by Aromas Med Spa (Doral, FL).
-// EN build route /en/mommy-makeover-talk-doral/ (served at /mommy-makeover-talk-doral/); ES public path /es/charla-mommy-makeover-doral/ (routes.mjs).
+// Public URLs (Aromas shell, event-aromas-view.mjs): /mommy-makeover-talk-doral/ and /es/charla-mommy-makeover-doral/.
+// This file is the previous Fulvio-branded shell, kept working at the -v1 URLs (noindex, out of the sitemap).
+// To switch the public URLs back, render eventBody here on EVENT_SLUG instead of aromasEventHtml.
 // Always noindex and out of the sitemap until the date is confirmed. Form → /api/lead (event-signup.js) with event_tag below.
 // Copy rules: health-tourism orientation, not a medical consultation; no prices, results, guarantees or clinical detail;
 // Aromas is host and strategic ally and does not perform the procedure. Nader's bio only restates aromaslaser.com.
 export const EVENT_SLUG='mommy-makeover-talk-doral/';
+export const EVENT_SLUG_V1='mommy-makeover-talk-doral-v1/';
 export const EVENT_TAG='charla-mommy-makeover-doral-oct2026';
 export const EVENT_CONSENT_VERSION='event-doral-consent-2026-09-30';
 const HOST={name:'Aromas Med Spa',street:'9831 NW 58th St #149',city:'Doral',region:'FL',zip:'33178',country:'US',phone:'(305) 591-3005',tel:'+13055913005',url:'https://aromaslaser.com/',source:'https://aromaslaser.com/doral-location/'};
@@ -86,8 +89,8 @@ const copy={
   submit:'Save my spot',
  }
 };
-export function eventSchema(lang,origin){
- const c=copy[lang],route=lang==='en'?'/'+EVENT_SLUG:'/es/charla-mommy-makeover-doral/';
+export function eventSchema(lang,origin,paths){
+ const c=copy[lang],route=(paths&&paths[lang])||(lang==='en'?'/'+EVENT_SLUG:'/es/charla-mommy-makeover-doral/');
  return {'@context':'https://schema.org','@type':'Event','@id':origin+route+'#event',name:c.title,description:c.description,url:origin+route,inLanguage:lang,
   // Tentative window (27–29 Oct 2026); replace with the confirmed date and time before indexing.
   startDate:'2026-10-27',endDate:'2026-10-29',eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',

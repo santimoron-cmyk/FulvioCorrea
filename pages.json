@@ -1199,12 +1199,31 @@
     ]
   },
   {
+    "route": "/en/mommy-makeover-talk-doral-v1/",
+    "file": "dist/en/mommy-makeover-talk-doral-v1/index.html",
+    "ads": false,
+    "lang": "en",
+    "noindex": true,
+    "pairNoindex": true,
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/mommy-makeover-talk-doral-v1/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/charla-mommy-makeover-doral-v1/"
+      }
+    ]
+  },
+  {
     "route": "/en/mommy-makeover-talk-doral/",
     "file": "dist/en/mommy-makeover-talk-doral/index.html",
     "ads": false,
     "lang": "en",
     "noindex": true,
     "pairNoindex": true,
+    "cover": "/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp",
     "alternates": [
       {
         "lang": "en",
@@ -2429,12 +2448,31 @@
     ]
   },
   {
+    "route": "/es/charla-mommy-makeover-doral-v1/",
+    "file": "dist/es/charla-mommy-makeover-doral-v1/index.html",
+    "ads": false,
+    "lang": "es",
+    "noindex": true,
+    "pairNoindex": true,
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/charla-mommy-makeover-doral-v1/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/mommy-makeover-talk-doral-v1/"
+      }
+    ]
+  },
+  {
     "route": "/es/charla-mommy-makeover-doral/",
     "file": "dist/es/charla-mommy-makeover-doral/index.html",
     "ads": false,
     "lang": "es",
     "noindex": true,
     "pairNoindex": true,
+    "cover": "/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp",
     "alternates": [
       {
         "lang": "es",
