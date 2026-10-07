@@ -55,10 +55,42 @@ Prueba local: `node lead-test.mjs` y `node leads-db-test.mjs` (webhook y D1 simu
 
 ## Copia de respaldo en D1
 
-Tras validar, y antes de llamar a NinjaSuite, `/api/lead` guarda el lead en D1 (`LEADS_DB`) si el binding existe. Si D1 falla o no está, el webhook se envía igual. Si NinjaSuite no confirma, la fila queda con `webhook_status=webhook_failed`. No se escribe la IP; solo el país (`CF-IPCountry` / `request.cf.country`) cuando Cloudflare lo envía. No se registra PII en consola.
+El código está preparado y **no está activado**. No crear la base, el binding ni el secreto hasta querer usarlo. Sin `LEADS_DB`, `/api/lead` sigue reenviando a NinjaSuite y no guarda copia.
 
-La tabla se crea sola en el primer uso. El mismo SQL está en `d1/leads.sql`.
+Tras validar, y antes de llamar a NinjaSuite, `/api/lead` guarda el lead en D1 si el binding existe. Si D1 falla o no está, el webhook se envía igual. Si NinjaSuite no confirma, la fila queda con `webhook_status=webhook_failed`. No se escribe la IP; solo el país (`CF-IPCountry` / `request.cf.country`) cuando Cloudflare lo envía. No se registra PII en consola.
 
-Exportación privada (sin enlace en el sitio): `GET /api/leads.csv`, con `?event=doral` y/o `?from=YYYY-MM-DD`. CSV UTF-8 con BOM. Autorización con el secreto `LEADS_EXPORT_TOKEN` en `Authorization: Bearer`, en el header `X-Leads-Export-Token`, o en `?token=`. Sin el secreto, 401. Respuesta `noindex` y `no-store`.
+La tabla también se crea sola en el primer uso. El SQL de referencia es `d1/leads.sql` (igual al que ejecuta la función).
 
-Binding previsto: base `fulvio-leads`, nombre `LEADS_DB`, solo en el entorno **Preview** (staging). Production se deja sin binding hasta que se quiera activar allí: entonces hay que enlazar `LEADS_DB`, definir `LEADS_EXPORT_TOKEN` en Production y volver a desplegar `main`. Hasta ese momento un deploy a producción reenvía a NinjaSuite y no escribe en D1.
+Exportación privada, sin enlace en el sitio: `GET /api/leads.csv`. Filtros opcionales `?event=doral` y `?from=YYYY-MM-DD`. CSV UTF-8 con BOM. Secreto `LEADS_EXPORT_TOKEN` en `Authorization: Bearer`, en el header `X-Leads-Export-Token`, o en `?token=`. Sin el secreto, 401. Respuesta `noindex` y `no-store`. El header es preferible: `?token=` puede quedar en logs de acceso.
+
+### Activar en Preview (staging) — no tocar Production
+
+Proyecto Pages: `fulviocorrea`. Hace falta `wrangler login` o `CLOUDFLARE_API_TOKEN` con permiso de D1 y de Pages en la cuenta. Wrangler 4.148 no ofrece un flag Preview en `pages secret put`; el secreto y el binding de Preview se crean en el dashboard para no escribir Production.
+
+1. Crear la base (anotar el `database_id` que imprime):
+
+   ```
+   npx wrangler d1 create fulvio-leads
+   ```
+
+2. Aplicar el esquema en esa base remota:
+
+   ```
+   npx wrangler d1 execute fulvio-leads --remote --file=d1/leads.sql
+   ```
+
+3. Binding, **solo Preview**: Dashboard → Workers & Pages → `fulviocorrea` → Settings → Bindings → entorno **Preview** → Add → D1 database. Variable name: `LEADS_DB`. Database: `fulvio-leads`. No añadir el binding en Production.
+
+4. Secreto, **solo Preview**: el mismo proyecto → Settings → Variables and Secrets → entorno **Preview** → Add → Secret. Name: `LEADS_EXPORT_TOKEN`. Value: un token largo que guardes fuera de Cloudflare (el dashboard no lo vuelve a mostrar). No usar `npx wrangler pages secret put` mientras no se confirme que escribe solo en Preview. No definir el secreto en Production.
+
+5. Volver a desplegar la rama `staging` (Retry deployment). Los bindings entran en el siguiente deploy, no en el que ya está publicado.
+
+6. Probar con un lead de prueba en `https://staging.fulviocorrea.pages.dev/es/charla-mommy-makeover-doral/` y descargar:
+
+   ```
+   curl -H "Authorization: Bearer <LEADS_EXPORT_TOKEN>" "https://staging.fulviocorrea.pages.dev/api/leads.csv?event=doral"
+   ```
+
+### Activar en Production — más adelante, no ahora
+
+Repetir el binding `LEADS_DB` y el secreto `LEADS_EXPORT_TOKEN` en el entorno **Production** del mismo proyecto, luego desplegar `main`. Hasta entonces un deploy a producción reenvía a NinjaSuite y no escribe en D1. Se puede usar la misma base `fulvio-leads` o una base distinta. La URL de exportación en producción sería `https://fulviocorrea.com/api/leads.csv` (sigue siendo privada: 401 sin el token de Production).
