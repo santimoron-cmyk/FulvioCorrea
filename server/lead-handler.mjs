@@ -5,6 +5,7 @@
 // Call events add call_due_at / call_due_at_iso / call_window_colombia from the server clock (call-due.mjs).
 import {callSchedule} from './call-due.mjs';
 import {journeyFields} from './journey.mjs';
+import {storeLead,markLead,leadRecord} from './leads-db.mjs';
 const sha256=async text=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))].map(b=>b.toString(16).padStart(2,'0')).join('');
 const json=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 export const LEAD_EVENTS=['lead_created','channel_selected'];
@@ -22,7 +23,7 @@ const cleanUrl=v=>{if(typeof v!=='string'||!v)return '';try{const u=new URL(v);r
 // Per-instance protections supplement hosting limits; durable contact deduplication belongs in the CRM workflow (keyed on phone).
 export function createLeadHandler({env=globalThis.process?.env||{},send=(...args)=>fetch(...args),clock=()=>Date.now(),procedures=[]}={}){
  const rate=new Map(),receipts=new Map();
- return async function handle(request,{ip='unknown'}={}){
+ return async function handle(request,{ip='unknown',country=''}={}){
  if(request.method!=='POST')return json({accepted:false,error:'method_not_allowed'},405);
  const url=new URL(request.url),origin=request.headers.get('origin');if(!origin||origin!==url.origin||request.headers.get('sec-fetch-site')==='cross-site')return json({accepted:false,error:'origin_not_allowed'},403);
  if(!request.headers.get('content-type')?.startsWith('application/json'))return json({accepted:false,error:'json_required'},415);
@@ -79,5 +80,11 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
  const fingerprint=await sha256(JSON.stringify({...payload,received_at:'',consent_timestamp:'',client_timestamp:'',call_due_at:'',call_due_at_iso:'',call_window_colombia:'',summary:stableSummary,journey_visits:'',journey_first_visit:'',journey_pages_count:'',journey_pages:'',journey_note:''}));const old=receipts.get(eventId);if(old){if(old.fingerprint!==fingerprint)return json({accepted:false,error:'id_conflict'},409);return (await old.promise).clone();}
  // Two events per visitor (plus retries/extra channels) fit comfortably in 10 requests/min per IP.
  const bucket=rate.get(ip)||{count:0,expires:now+60000};if(bucket.count>=10)return json({accepted:false,error:'too_many_requests'},429);bucket.count++;rate.set(ip,bucket);
- const operation=(async()=>{const abort=new AbortController(),timeout=setTimeout(()=>abort.abort(),8000);try{const response=await send(webhook.href,{method:'POST',headers:{'Content-Type':'application/json','Idempotency-Key':eventId},body:JSON.stringify(payload),signal:abort.signal,redirect:'manual'});if(!response.ok)throw Error();return json({accepted:true,lead_id:id,event_id:eventId});}catch{receipts.delete(eventId);return json({accepted:false,error:'delivery_unconfirmed'},502);}finally{clearTimeout(timeout);}})();receipts.set(eventId,{fingerprint,promise:operation,expires:now+300000});const result=await operation;return result.clone();
+ const operation=(async()=>{const abort=new AbortController(),timeout=setTimeout(()=>abort.abort(),8000);
+  // D1 is a backup. A write failure must not stop the webhook, and a webhook failure must still leave the row.
+  const record=leadRecord(payload,{ipCountry:country});let httpStatus=null;
+  await storeLead(env.LEADS_DB,record);
+  try{const response=await send(webhook.href,{method:'POST',headers:{'Content-Type':'application/json','Idempotency-Key':eventId},body:JSON.stringify(payload),signal:abort.signal,redirect:'manual'});httpStatus=response.status;await markLead(env.LEADS_DB,record,response.ok?'forwarded':'webhook_failed',httpStatus);if(!response.ok)throw Error();return json({accepted:true,lead_id:id,event_id:eventId});}
+  catch{await markLead(env.LEADS_DB,record,'webhook_failed',httpStatus);receipts.delete(eventId);return json({accepted:false,error:'delivery_unconfirmed'},502);}
+  finally{clearTimeout(timeout);}})();receipts.set(eventId,{fingerprint,promise:operation,expires:now+300000});const result=await operation;return result.clone();
  };}
