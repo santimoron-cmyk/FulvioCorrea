@@ -524,6 +524,16 @@ curl -I "https://fulviocorrea.com/post/plastic-surgery-medical-tourism-cartagena
 curl -I "https://fulviocorrea.com/blog/plastic-surgery-medical-tourism-cartagena-colombia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/rhinoplasty-colombia"
+# Expected: 301 Location: /blog/rhinoplasty-colombia/
+curl -I "https://fulviocorrea.com/blog/rhinoplasty-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/rhinoplasty-colombia/"
+# Expected: 301 Location: /blog/rhinoplasty-colombia/
+curl -I "https://fulviocorrea.com/blog/rhinoplasty-colombia/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/tummy-tuck-colombia"
 # Expected: 301 Location: /blog/tummy-tuck-colombia/
 curl -I "https://fulviocorrea.com/blog/tummy-tuck-colombia/"
@@ -592,6 +602,16 @@ curl -I "https://fulviocorrea.com/es/blog/liposuccion-colombia/"
 curl -I "https://fulviocorrea.com/post/liposuccion-colombia/"
 # Expected: 301 Location: /es/blog/liposuccion-colombia/
 curl -I "https://fulviocorrea.com/es/blog/liposuccion-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/rinoplastia-colombia"
+# Expected: 301 Location: /es/blog/rinoplastia-colombia/
+curl -I "https://fulviocorrea.com/es/blog/rinoplastia-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/rinoplastia-colombia/"
+# Expected: 301 Location: /es/blog/rinoplastia-colombia/
+curl -I "https://fulviocorrea.com/es/blog/rinoplastia-colombia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/post/tiempo-recuperacion-mommy-makeover"
@@ -1372,6 +1392,16 @@ curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
 curl -I "https://fulviocorrea.com/en/blog/category/plastic-surgery-in-colombia"
 # Expected: 301 Location: /blog/category/plastic-surgery-in-colombia/
 curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/rhinoplasty-colombia/"
+# Expected: 301 Location: /blog/rhinoplasty-colombia/
+curl -I "https://fulviocorrea.com/blog/rhinoplasty-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/rhinoplasty-colombia"
+# Expected: 301 Location: /blog/rhinoplasty-colombia/
+curl -I "https://fulviocorrea.com/blog/rhinoplasty-colombia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/blog/flying-after-plastic-surgery/"
