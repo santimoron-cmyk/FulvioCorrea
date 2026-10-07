@@ -12,6 +12,8 @@ export const LEAD_CHANNELS=['whatsapp','call','sms','instagram','facebook'];
 // Event sign-ups (event landing pages): only these tags are accepted, so GHL tags stay clean and traceable.
 export const EVENT_TAGS={'charla-mommy-makeover-doral-oct2026':'Charla Mommy Makeover · Aromas Med Spa Doral (oct 2026)'};
 export const COMPANION={yes:'Sí / Yes',no:'No'};
+// Optional "procedure of interest" on the Doral talk. The event procedure slug stays mommy-makeover.
+export const PROCEDURE_INTEREST={'mommy-makeover':'Mommy Makeover',breast:'Busto / Breast',abdomen:'Abdomen','lipo-contour':'Liposucción/contorno / Liposuction & contour',face:'Rostro / Face',other:'Otro / Other'};
 // Labels are bilingual because the CRM task is read by the care team; times are the visitor's local time.
 export const CALL_TIMES={asap:'Lo antes posible / As soon as possible',morning:'Mañana / Morning (8:00–12:00)',afternoon:'Tarde / Afternoon (12:00–17:00)',evening:'Noche / Evening (17:00–20:00)'};
 const CHANNEL_LABELS={whatsapp:'WhatsApp',call:'Llamada / Phone call',sms:'SMS',instagram:'Instagram',facebook:'Facebook'};
@@ -34,8 +36,8 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
  const event=string('event',40)||'lead_created',eventId=string('event_id',140)||id,channel=string('channel',20),callTime=string('preferred_call_time',20);
  const timezone=/^(?:UTC|[A-Za-z]+(?:\/[-+\w]+){1,2})$/.test(string('timezone',64))?string('timezone',64):'';
  const consentVersion=/^[-\w.]{1,60}$/.test(string('consent_version',60))?string('consent_version',60):'';
- const eventTag=string('event_tag',80),city=string('city',100).replace(/\s+/g,' '),companion=string('companion',5);
- if(eventTag&&(!EVENT_TAGS[eventTag]||!email||!city||!COMPANION[companion])||!eventTag&&companion)return json({accepted:false,error:'invalid_fields'},422);
+ const eventTag=string('event_tag',80),city=string('city',100).replace(/\s+/g,' '),companion=string('companion',5),interest=string('procedure_interest',40);
+ if(eventTag&&(!EVENT_TAGS[eventTag]||!email||!city||!COMPANION[companion])||!eventTag&&companion||interest&&!PROCEDURE_INTEREST[interest])return json({accepted:false,error:'invalid_fields'},422);
  if(!name||!/^\+[1-9]\d{6,14}$/.test(phone)||!yes(input.contact_consent)||!['en','es'].includes(input.language)||!['other','undecided',...procedures].includes(procedure)||!/^[-\w]{8,100}$/.test(id)||!/^[-\w]{8,140}$/.test(eventId)||request.headers.get('idempotency-key')!==eventId||email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   ||!LEAD_EVENTS.includes(event)||(event==='channel_selected'?!LEAD_CHANNELS.includes(channel):channel&&!LEAD_CHANNELS.includes(channel))||channel==='call'&&!CALL_TIMES[callTime])return json({accepted:false,error:'invalid_fields'},422);
  // Attribution: flat fields from the widget, or first_touch/last_touch objects (legacy consultation form).
@@ -48,7 +50,7 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
  const page=cleanUrl(input.page_url)||cleanUrl(input.conversion_page),path=page?new URL(page).pathname:'';
  const source=[attribution.utm_source,attribution.utm_medium,attribution.utm_campaign].filter(Boolean).join(' / ')||(attribution.gclid||attribution.gbraid||attribution.wbraid?'google ads (click id)':attribution.fbclid?'meta (fbclid)':cleanUrl(input.referrer)?'referral: '+new URL(cleanUrl(input.referrer)).hostname:'direct');
  const headline=eventTag&&event==='lead_created'?'Registro evento: '+EVENT_TAGS[eventTag]:event==='lead_created'?'Nuevo lead web (canal pendiente)':channel==='call'?'Solicitud de llamada':'Eligió '+CHANNEL_LABELS[channel];
- const summary=[headline,name,phone,eventTag&&email?'Email: '+email:'',eventTag?'Ciudad: '+city:'',eventTag?'Acompañante: '+COMPANION[companion]:'',eventTag?'Tag: '+eventTag:'','Procedimiento: '+label,channel==='call'?`Horario preferido: ${callLabel}, hora local del paciente${timezone?' ('+timezone+')':''}`:'',timezone&&channel!=='call'?'Zona horaria: '+timezone:'','Idioma: '+input.language.toUpperCase(),'Fuente: '+source,path?'Página: '+path:'','Lead ID: '+id,channel==='call'?'Llamar: '+schedule.call_window_colombia:''].filter(Boolean).join(' | ');
+ const summary=[headline,name,phone,eventTag&&email?'Email: '+email:'',eventTag?'Ciudad: '+city:'',eventTag?'Acompañante: '+COMPANION[companion]:'',eventTag&&interest?'Interés: '+PROCEDURE_INTEREST[interest]:'',eventTag?'Tag: '+eventTag:'','Procedimiento: '+label,channel==='call'?`Horario preferido: ${callLabel}, hora local del paciente${timezone?' ('+timezone+')':''}`:'',timezone&&channel!=='call'?'Zona horaria: '+timezone:'','Idioma: '+input.language.toUpperCase(),'Fuente: '+source,path?'Página: '+path:'','Lead ID: '+id,channel==='call'?'Llamar: '+schedule.call_window_colombia:''].filter(Boolean).join(' | ');
  const payload={
   event,event_id:eventId,lead_id:id,received_at:received,client_timestamp:string('client_timestamp',40),
   name,full_name:name,first_name:firstName,last_name:rest.join(' '),phone,phone_country:string('phone_country',2),phone_country_code:string('phone_country_code',6),email,
@@ -67,7 +69,7 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
   ...journeyFields(input.journey,now),
   ...( /^[ABCDEFGHJKMNPQRSTUVWXYZ23456789]{5}$/.test(string('ref',5)) ? {ref:string('ref',5)} : {})};
  // Event sign-up: flat fields for the GHL workflow (Add Tag from event_tag/tags; city and companion to custom fields).
- if(eventTag)Object.assign(payload,{event_tag:eventTag,event_label:EVENT_TAGS[eventTag],tags:eventTag,city,companion,companion_label:COMPANION[companion],lead_source_detail:'event_signup'});
+ if(eventTag)Object.assign(payload,{event_tag:eventTag,event_label:EVENT_TAGS[eventTag],tags:eventTag,city,companion,companion_label:COMPANION[companion],lead_source_detail:'event_signup',...(interest?{procedure_interest:interest,procedure_interest_label:PROCEDURE_INTEREST[interest]}:{})});
  for(const k of ['country','message','conversion_page'])if(string(k))payload[k]=string(k,k==='message'?3000:1000);
  if(env.LEAD_CAPTURE_ENABLED!=='true'||!env.LEAD_WEBHOOK_URL)return json({accepted:false,error:'not_configured'},503);
  let webhook;try{webhook=new URL(env.LEAD_WEBHOOK_URL);if(webhook.protocol!=='https:')throw Error();}catch{return json({accepted:false,error:'not_configured'},503);}

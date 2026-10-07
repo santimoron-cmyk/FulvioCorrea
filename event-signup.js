@@ -19,6 +19,7 @@
   const a=read('fc_attribution')||{},f=a.first_touch||{},l=a.last_touch||{},s=a.session||{},attr={};
   for(const k of ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','fbclid']){attr[k]=l[k]||'';attr[k+'_first']=f[k]||'';attr[k+'_last']=l[k]||'';}
   const name=form.elements.name.value.trim().replace(/\s+/g,' '),[pc,pcc]=country(phone),consentEl=form.querySelector('[data-consent-version]');
+  const interestEl=form.elements.procedure_interest,interest=interestEl?String(interestEl.value||'').trim():'';
   const body={event:'lead_created',lead_id:leadId,name,phone,phone_country:pc,phone_country_code:pcc,email:form.elements.email.value.trim(),city:form.elements.city.value.trim(),companion:form.elements.companion.value,
    event_tag:tagName,procedure:'mommy-makeover',procedure_label:'Mommy Makeover',language:lang,contact_consent:form.elements.contact_consent.checked,sms_consent:false,
    consent_version:consentEl?.dataset.consentVersion||'',consent_text:(consentEl?.textContent||'').replace(/\s+/g,' ').trim(),measurement_consent:read('fc_consent')||'denied',
@@ -26,12 +27,13 @@
    timezone:(()=>{try{return Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch{return '';}})(),ga_client_id:(String(document.cookie||'').match(/(?:^|; )_ga=GA\d\.\d\.(\d+\.\d+)/)||[])[1]||'',
    form_id:'event-signup',button_id:'event-signup-submit',client_timestamp:new Date().toISOString(),journey:(()=>{try{return localStorage.getItem('fc_journey')}catch{}})()||''};
   // Changed data = new lead id (the server rejects a reused id with different content); a plain retry keeps the id.
-  const key=JSON.stringify([name,phone,body.email,body.city,body.companion]);if(last&&key!==last)leadId=uid();last=key;body.lead_id=leadId;body.event_id=leadId+'-event';
+  if(interest)body.procedure_interest=interest;
+  const key=JSON.stringify([name,phone,body.email,body.city,body.companion,interest]);if(last&&key!==last)leadId=uid();last=key;body.lead_id=leadId;body.event_id=leadId+'-event';
   button.disabled=true;status.className='form-status';status.textContent=T.sending;const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),15000);
   try{const r=await fetch('/api/lead',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json','Idempotency-Key':body.event_id},body:JSON.stringify(body),signal:abort.signal});let j={};try{j=JSON.parse(await r.text());}catch{}
    if(!r.ok||j.accepted!==true)throw Error(j.error||String(r.status));
-   status.className='form-status ok';status.textContent=T.ok(name.split(' ')[0]);form.querySelectorAll('input,button').forEach(x=>{if(x.type!=='hidden')x.disabled=true;});
-   push('event_signup',{lead_id:leadId,companion:body.companion,city:body.city?'provided':'',procedure:'mommy-makeover'});push('generate_lead',{lead_id:leadId,lead_type:'event_signup',procedure:'mommy-makeover'});
+   status.className='form-status ok';status.textContent=T.ok(name.split(' ')[0]);form.querySelectorAll('input,button,select').forEach(x=>{if(x.type!=='hidden')x.disabled=true;});
+   push('event_signup',{lead_id:leadId,companion:body.companion,city:body.city?'provided':'',procedure:'mommy-makeover',...(interest?{procedure_interest:interest}:{})});push('generate_lead',{lead_id:leadId,lead_type:'event_signup',procedure:'mommy-makeover'});
   }catch(err){status.textContent=T.error;button.disabled=false;push('form_error',{error:String(err?.message||'network').slice(0,40)});}finally{clearTimeout(timer);}
  });
 })();

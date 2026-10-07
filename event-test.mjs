@@ -47,6 +47,11 @@ for(const [lang,p] of Object.entries(live)){
  assert.ok(hero.includes(p.eyebrow)&&hero.includes(p.chosen)&&hero.includes(p.edu)&&hero.includes(p.free)&&hero.includes(p.bites),lang+' preferred-client intro in the hero');
  assert.ok(p.main.includes(lang==='es'?'Cirujano plástico en Cartagena':'Plastic surgeon in Cartagena'),lang+' Fulvio stays in third person');
  assert.ok(p.main.includes('id="que-es"')&&p.main.includes(p.mmh)&&p.main.includes(p.bites)&&p.main.includes(lang==='es'?'embarazo y la lactancia':'pregnancy and breastfeeding')&&p.main.includes(lang==='es'?'no una consulta médica':'not a medical consultation'),lang+' mommy makeover explanation');
+ assert.ok(hero.includes(lang==='es'?'otros procedimientos de cirugía plástica':'other plastic surgery procedures'),lang+' orientation covers plastic surgery in general');
+ assert.ok(p.main.includes('id="otros"')&&p.main.includes(lang==='es'?'¿Te interesa otro procedimiento?':'Interested in another procedure?')&&p.main.includes(lang==='es'?'También te orientamos':'We can guide you on that too'),lang+' other-procedure section');
+ for(const item of (lang==='es'?['Cirugía de busto','Abdominoplastia','Liposucción y contorno corporal','rinoplastia, párpados']:['Breast surgery','Tummy tuck (abdominoplasty)','Liposuction and body contouring','rhinoplasty, eyelids']))assert.ok(p.main.includes(item),lang+' lists '+item);
+ assert.ok(p.main.includes('name="procedure_interest"')&&!/name="procedure_interest"[^>]*required/.test(p.main),lang+' optional interest select');
+ for(const value of ['mommy-makeover','breast','abdomen','lipo-contour','face','other'])assert.ok(p.main.includes(`value="${value}"`),lang+' interest option '+value);
  assert.ok(!hero.includes('bio-photo'),lang+' hero portraits stay arched');
  const bios=p.main.slice(p.main.indexOf('class="bios"'));
  assert.ok(bios.includes('class="bio-photo bio-fulvio"')&&bios.includes('class="bio-photo bio-nader"'),lang+' circular bio frames');
@@ -56,7 +61,7 @@ for(const [lang,p] of Object.entries(live)){
  assert.match(p.html,/\.bio-nader img\{object-position:center 4%\}/,lang+' Nader face position');
 }
 for(const [lang,p] of Object.entries(backup)){
- assert.ok(!p.html.includes('id="que-es"'),lang+' backup keeps the previous copy');
+ assert.ok(!p.html.includes('id="que-es"')&&!p.main.includes('id="otros"')&&!p.main.includes('name="procedure_interest"'),lang+' backup keeps the previous copy');
  assert.ok(p.main.includes('class="event-hero'),lang+' fulvio shell');
  assert.ok(!p.html.includes('data-event-shell="aromas"'),lang+' backup is not the aromas shell');
  for(const href of ['https://www.instagram.com/drfulviocorrea/','https://aromaslaser.com/','https://fulviocorrea.com/'])assert.ok(p.main.includes('href="'+href),lang+' link '+href);

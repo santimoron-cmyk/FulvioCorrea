@@ -47,9 +47,14 @@ assert.equal(r.status,200);sent=calls.at(-1).body;assert.equal(sent.event,'lead_
  const before=calls.length;r=await call(request(ev()),env);assert.equal(r.status,200);sent=calls.at(-1).body;assert.equal(calls.length,before+1);
  for(const [k,v] of Object.entries({event_tag:tag,tags:tag,city:'Doral',companion:'yes',lead_source_detail:'event_signup',email:'test@example.com',lead_source:'website'}))assert.equal(sent[k],v,'event '+k);
  assert.match(sent.summary,/^Registro evento: .*Doral/);assert.match(sent.summary,/Ciudad: Doral \| Acompañante: Sí/);assert.match(sent.summary,/Tag: charla-mommy-makeover-doral-oct2026/);
- for(const bad of [{event_tag:'other-tag'},{email:''},{city:''},{companion:'maybe'},{companion:''}]){r=await call(request(ev(bad)),env);assert.equal(r.status,422,'event '+JSON.stringify(bad));}
+ assert.equal(sent.procedure,'mommy-makeover');assert.equal(sent.procedure_interest,undefined,'interest omitted when blank');
+ r=await call(request(ev({procedure_interest:'breast'})),env);assert.equal(r.status,200);sent=calls.at(-1).body;
+ assert.equal(sent.procedure,'mommy-makeover');assert.equal(sent.procedure_interest,'breast');assert.equal(sent.procedure_interest_label,'Busto / Breast');assert.match(sent.summary,/Interés: Busto \/ Breast/);
+ r=await call(request(ev({procedure_interest:''})),env);assert.equal(r.status,200);assert.equal(calls.at(-1).body.procedure_interest,undefined,'empty interest stays off the payload');
+ for(const bad of [{event_tag:'other-tag'},{email:''},{city:''},{companion:'maybe'},{companion:''},{procedure_interest:'implants'}]){r=await call(request(ev(bad)),env);assert.equal(r.status,422,'event '+JSON.stringify(bad));}
  r=await call(request(created({companion:'yes'})),env);assert.equal(r.status,422,'companion without event_tag');
- r=await call(request(created()),env);assert.equal(r.status,200);assert.equal(calls.at(-1).body.event_tag,undefined,'regular leads unchanged');}
+ r=await call(request(created({procedure_interest:'not-a-procedure'})),env);assert.equal(r.status,422,'invalid interest on a regular lead');
+ r=await call(request(created()),env);assert.equal(r.status,200);assert.equal(calls.at(-1).body.event_tag,undefined,'regular leads unchanged');assert.equal(calls.at(-1).body.procedure_interest,undefined);}
 // Protections
 r=await call(request(created({website:'spam'})),env);assert.equal(r.status,400,'honeypot');
 r=await call(request(created(),{headers:{origin:'https://evil.example'}}),env);assert.equal(r.status,403);
