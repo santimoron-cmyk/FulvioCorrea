@@ -4,12 +4,12 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 const origin=JSON.parse(fs.readFileSync('config.json','utf8')).origin;
 const live={
- es:{file:'dist/es/charla-mommy-makeover-doral/index.html',path:'/es/charla-mommy-makeover-doral/',line:'Cualquier valoración médica se realiza directamente con el cirujano, de forma individual.',host:'no realiza el procedimiento',cta:'Reservar mi cupo',bio:'+15 años de experiencia',chosen:'te eligió para este encuentro exclusivo',mmh:'¿Qué es un Mommy Makeover?',bites:'bebidas y pasabocas',free:'orientación gratuita',edu:'charla educativa'},
- en:{file:'dist/mommy-makeover-talk-doral/index.html',path:'/mommy-makeover-talk-doral/',line:'Any medical evaluation is done directly with the surgeon, individually.',host:'does not perform the Mommy Makeover procedure',cta:'Save my spot',bio:'15+ years of experience',chosen:'chose you for this exclusive gathering',mmh:'What is a Mommy Makeover?',bites:'drinks and light bites',free:'free orientation',edu:'educational talk'}
+ es:{file:'dist/es/charla-mommy-makeover-doral/index.html',path:'/es/charla-mommy-makeover-doral/',line:'Cualquier valoración médica se realiza directamente con el cirujano, de forma individual.',host:'no realizamos el procedimiento',cta:'Reservar mi cupo',bio:'+15 años de experiencia',chosen:'te elegimos para este encuentro exclusivo',eyebrow:'Para nuestras clientas preferidas',mmh:'¿Qué es un Mommy Makeover?',bites:'bebidas y pasabocas',free:'orientación gratuita',edu:'charla educativa'},
+ en:{file:'dist/mommy-makeover-talk-doral/index.html',path:'/mommy-makeover-talk-doral/',line:'Any medical evaluation is done directly with the surgeon, individually.',host:'do not perform the Mommy Makeover procedure',cta:'Save my spot',bio:'15+ years of experience',chosen:'we chose you for this exclusive gathering',eyebrow:'For our preferred clients',mmh:'What is a Mommy Makeover?',bites:'drinks and light bites',free:'free orientation',edu:'educational talk'}
 };
 const backup={
- es:{file:'dist/es/charla-mommy-makeover-doral-v1/index.html',path:'/es/charla-mommy-makeover-doral-v1/',line:live.es.line,host:live.es.host},
- en:{file:'dist/mommy-makeover-talk-doral-v1/index.html',path:'/mommy-makeover-talk-doral-v1/',line:live.en.line,host:live.en.host}
+ es:{file:'dist/es/charla-mommy-makeover-doral-v1/index.html',path:'/es/charla-mommy-makeover-doral-v1/',line:live.es.line,host:'no realiza el procedimiento'},
+ en:{file:'dist/mommy-makeover-talk-doral-v1/index.html',path:'/mommy-makeover-talk-doral-v1/',line:live.en.line,host:'does not perform the Mommy Makeover procedure'}
 };
 const sitemap=fs.readFileSync('dist/sitemap.xml','utf8');
 function pair(pages,label){
@@ -44,7 +44,8 @@ for(const [lang,p] of Object.entries(live)){
  assert.ok(!/no se envió|Concept preview|no data was sent/i.test(p.main),lang+' real form, not the concept preview');
  const hero=p.main.slice(0,p.main.indexOf('id="registro"'));
  assert.ok(hero.includes(p.cta)&&hero.includes('alberto-nader')&&hero.includes('dr-fulvio-correa'),lang+' photos and CTA in the hero');
- assert.ok(hero.includes(p.chosen)&&hero.includes(p.edu)&&hero.includes(p.free)&&hero.includes(p.bites),lang+' preferred-client intro in the hero');
+ assert.ok(hero.includes(p.eyebrow)&&hero.includes(p.chosen)&&hero.includes(p.edu)&&hero.includes(p.free)&&hero.includes(p.bites),lang+' preferred-client intro in the hero');
+ assert.ok(p.main.includes(lang==='es'?'Cirujano plástico en Cartagena':'Plastic surgeon in Cartagena'),lang+' Fulvio stays in third person');
  assert.ok(p.main.includes('id="que-es"')&&p.main.includes(p.mmh)&&p.main.includes(p.bites)&&p.main.includes(lang==='es'?'embarazo y la lactancia':'pregnancy and breastfeeding')&&p.main.includes(lang==='es'?'no una consulta médica':'not a medical consultation'),lang+' mommy makeover explanation');
  assert.ok(!hero.includes('bio-photo'),lang+' hero portraits stay arched');
  const bios=p.main.slice(p.main.indexOf('class="bios"'));
