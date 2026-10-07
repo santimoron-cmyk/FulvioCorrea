@@ -8,7 +8,7 @@ tags: ["medical tourism cartagena", "plastic surgery cartagena", "plastic surger
 cover: "/assets/blog-cartagena-medical-tourism.webp"
 coverAlt: "Historic street and cathedral tower in Cartagena, Colombia"
 date: "2026-09-26"
-updated: "2026-09-26"
+updated: "2026-10-07"
 author: "fulvio-correa"
 translationOf: ""
 sources: ["https://www.isaps.org/media/30xldsyf/isaps-global-survey-2024.pdf", "https://www.datos.gov.co/Comercio-Industria-y-Turismo/Extranjeros-No-Residentes/7wm8-w5ad", "https://www.mincit.gov.co/getattachment/estudios-economicos/estadisticas-e-informes/informes-de-turismo/2026/junio/oee-ec-turismo-junio-2026.pdf.aspx", "https://www.dane.gov.co/files/operaciones/EVI/bol-EVI-ene-mar2025.pdf", "https://www.plasticsurgery.org/news/articles/2025-plastic-surgery-by-the-numbers-what-are-the-trends-in-plastic-surgery-and-what-it-means-for-you", "https://wwwnc.cdc.gov/travel/page/medical-tourism", "https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism", "https://cartagenacomovamos.org/wp-content/uploads/2026/03/Infografia-Turismo-CTG2025.pdf", "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
@@ -16,7 +16,7 @@ draft: false
 originalUrl: "https://fulviocorrea.com.co/post/plastic-surgery-medical-tourism-cartagena-colombia"
 procedure: "liposuction"
 twin: "cirugia-plastica-turismo-medico-cartagena-colombia"
-related: ["liposuction-cartagena"]
+related: ["liposuction-cartagena", "rhinoplasty-colombia"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -123,6 +123,8 @@ How long you stay depends on the procedure, whether procedures are combined, you
 Sources: Cleveland Clinic on [liposuction](https://my.clevelandclinic.org/health/treatments/11009-liposuction), [breast augmentation](https://my.clevelandclinic.org/health/treatments/11024-breast-augmentation), [tummy tuck](https://my.clevelandclinic.org/health/procedures/11017-tummy-tuck), [BBL](https://my.clevelandclinic.org/health/treatments/23308-brazilian-butt-lift) and [mommy makeover](https://health.clevelandclinic.org/mommy-makeovers); [ASPS briefing paper](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism); [ASPS on BBL travel](https://www.plasticsurgery.org/news/articles/boarding-groups-added-complications-from-traveling-after-a-brazilian-butt-lift); [CDC](https://wwwnc.cdc.gov/travel/page/medical-tourism).
 
 For procedure-specific detail, see our guides to [liposuction in Cartagena](/en/blog/liposuction-cartagena/), [breast augmentation in Colombia](/en/blog/breast-augmentation-colombia/), [tummy tuck in Colombia](/en/blog/tummy-tuck-colombia/), [BBL in Colombia](/en/blog/bbl-colombia/) and [how long to stay after a mommy makeover](/en/blog/how-long-to-stay-after-mommy-makeover/).
+
+Facial procedures follow a different flying window from the body procedures in the table: ASPS suggests waiting 7 to 10 days, and Avianca lists 10 days after rhinoplasty or septoplasty. Our guide to [planning rhinoplasty in Colombia](/blog/rhinoplasty-colombia/) covers the stay, sun limits in Cartagena and follow-up from home.
 
 ## Safety and patient selection
 

@@ -8,7 +8,7 @@ tags: ["viajar-en-avion-despues-de-cirugia-plastica", "recuperacion", "turismo-m
 cover: "/assets/blog-flying-after-plastic-surgery.webp"
 coverAlt: "Asiento de ventanilla de avión con una botella de agua y un suéter doblado en la bandeja, con vista a la costa del Caribe y una ciudad colonial amurallada"
 date: "2026-10-05"
-updated: "2026-10-05"
+updated: "2026-10-07"
 author: "fulvio-correa"
 translationOf: "flying-after-plastic-surgery"
 sources: ["https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://scielo.isciii.es/scielo.php?pid=S0376-78922022000400002&script=sci_arttext","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html","https://www.cirugiaplastica.org.co/"]
@@ -39,6 +39,8 @@ Avianca toma sus plazos de la guía de la Aeronáutica Civil de Colombia (Aeroci
 | Cirugía facial estética | 14 días |
 | Ritidoplastia (lifting facial) o combinación de dos o más procedimientos faciales | 15 días, según evolución |
 | Combinación de dos o más procedimientos corporales (por ejemplo, un mommy makeover) | 15 días, según evolución |
+
+Si estás pensando en operarte la nariz, en nuestra guía sobre [rinoplastia en Colombia](/es/blog/rinoplastia-colombia/) explicamos cuándo aplica la línea de 10 días y cuándo la de cirugía facial estética, de 14, y cómo armar la estadía.
 
 Antes de comprar el tiquete, revisa tres reglas que cambian el calendario:
 

@@ -2615,19 +2615,126 @@
     ]
   },
   {
+    "route": "/en/blog/rhinoplasty-colombia/",
+    "file": "dist/en/blog/rhinoplasty-colombia/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-07",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Rhinoplasty in Colombia: What to Decide Before You Travel",
+        "datePublished": "2026-10-07",
+        "dateModified": "2026-10-07",
+        "inLanguage": "en",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia.webp",
+          "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia.avif",
+          "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia-og.webp",
+          "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/rhinoplasty-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long do I need to stay in Colombia after rhinoplasty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plan around two floors: ASPS, the CDC and the NHS suggest waiting 7 to 10 days after facial procedures before flying, and Avianca permits travel 10 days after rhinoplasty or septoplasty, with a medical certificate issued within 10 days of the flight. Add your arrival days for the in-person evaluation, and keep the ticket flexible in case clearance comes later."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I fly 7 days after a nose job?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS guidance starts at 7 days for facial procedures, but Avianca's published minimum after rhinoplasty is 10 days, and its line for cosmetic facial surgery is 14. If you are flying Avianca out of Colombia, plan on at least 10 days, confirm which line applies to you, and wait for your surgeon's clearance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I wear sunglasses after rhinoplasty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic advises not resting eyeglasses or sunglasses on the nose for at least four weeks. Until then, a wide-brimmed hat gives shade, and glasses can be taped to the forehead or supported on cheek rests."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I go to the beach in Cartagena after rhinoplasty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not during early recovery. SCCP advises no sun for 6 weeks and sunscreen for 3 to 6 months, and ASPS tells travelers not to sunbathe, swim or snorkel after cosmetic surgery. Your team will tell you when sun and water are allowed in your case."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long until rhinoplasty swelling goes down?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bruising and swelling around the eyes usually fade in 2 to 3 weeks, according to Mayo Clinic. Cleveland Clinic says about 90% of nasal swelling is gone after three months, and ASPS says the contour can take up to a year to fully refine."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should a plastic surgeon or an ENT do my rhinoplasty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic notes that most rhinoplasties are done by plastic surgeons, facial plastic surgeons or ENTs, and suggests choosing someone with formal training in one of those specialties who performs rhinoplasty often, in an accredited facility. In Colombia, the SCCP also recommends checking the surgeon's ReTHUS registration and that the clinic is authorized by the health authorities."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/es/blog/rinoplastia-colombia/",
+    "cover": "/assets/blog-rhinoplasty-colombia.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/rhinoplasty-colombia/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/rinoplastia-colombia/"
+      }
+    ]
+  },
+  {
     "route": "/en/blog/flying-after-plastic-surgery/",
     "file": "dist/en/blog/flying-after-plastic-surgery/index.html",
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-05",
+    "updated": "2026-10-07",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Flying After Plastic Surgery: When You Can Fly Home From Colombia",
         "datePublished": "2026-10-05",
-        "dateModified": "2026-10-05",
+        "dateModified": "2026-10-07",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.webp",
@@ -2779,14 +2886,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-26",
+    "updated": "2026-10-07",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Cartagena Plastic Surgery and Medical Tourism: 2026 Report",
         "datePublished": "2026-09-26",
-        "dateModified": "2026-09-26",
+        "dateModified": "2026-10-07",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-medical-tourism.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
@@ -3282,19 +3389,126 @@
     ]
   },
   {
+    "route": "/es/blog/rinoplastia-colombia/",
+    "file": "dist/es/blog/rinoplastia-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-07",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Rinoplastia en Colombia: qué decidir antes de viajar",
+        "datePublished": "2026-10-07",
+        "dateModified": "2026-10-07",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia.webp",
+          "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia.avif",
+          "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia-og.webp",
+          "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/rinoplastia-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días debo quedarme en Colombia después de una rinoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Planea alrededor de dos pisos: la ASPS, los CDC y el NHS sugieren esperar de 7 a 10 días tras procedimientos faciales antes de volar, y Avianca permite viajar 10 días después de una rinoplastia o septoplastia, con constancia médica expedida dentro de los 10 días previos al vuelo. Súmale los días de llegada para la valoración presencial y deja el regreso flexible."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo viajar en avión después de una rinoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En Avianca, a partir del día 10 para rinoplastia y/o septoplastia; la misma política pone la cirugía facial estética en 14 días y la combinación de dos o más procedimientos faciales en 15. Confirma con tu equipo qué línea te aplica y espera su autorización."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo usar gafas de sol después de operarme la nariz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic recomienda no apoyar gafas ni gafas de sol sobre la nariz durante al menos cuatro semanas. Mientras tanto, un sombrero de ala ancha da sombra y las gafas se pueden sujetar con cinta a la frente."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo ir a la playa en Cartagena después de una rinoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No durante la primera etapa de la recuperación. La SCCP indica no recibir sol durante 6 semanas y usar protector solar de 3 a 6 meses, y la ASPS desaconseja asolearse, nadar o bucear después de una cirugía estética. Tu equipo te dirá cuándo puedes volver al sol y al mar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tarda en bajar la inflamación de una rinoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los morados y la hinchazón de los párpados suelen durar de 2 a 3 semanas, según Mayo Clinic. Cleveland Clinic indica que cerca del 90 % de la inflamación de la nariz desaparece a los tres meses, y la ASPS explica que el contorno puede tardar hasta un año en afinarse por completo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Me opera un cirujano plástico o un otorrinolaringólogo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic señala que la mayoría de las rinoplastias las hacen cirujanos plásticos, cirujanos plásticos faciales u otorrinolaringólogos, y sugiere elegir a alguien con formación formal en una de esas especialidades que haga rinoplastias con frecuencia. En Colombia, la SCCP recomienda además verificar el registro en el ReTHUS y que la clínica esté habilitada por las autoridades sanitarias."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/en/blog/rhinoplasty-colombia/",
+    "cover": "/assets/blog-rhinoplasty-colombia.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/rinoplastia-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/rhinoplasty-colombia/"
+      }
+    ]
+  },
+  {
     "route": "/es/blog/viajar-en-avion-despues-de-cirugia-plastica/",
     "file": "dist/es/blog/viajar-en-avion-despues-de-cirugia-plastica/index.html",
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-05",
+    "updated": "2026-10-07",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Viajar en avión después de una cirugía plástica: cuántos días esperar",
         "datePublished": "2026-10-05",
-        "dateModified": "2026-10-05",
+        "dateModified": "2026-10-07",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.webp",
@@ -3631,14 +3845,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-26",
+    "updated": "2026-10-07",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Cirugía plástica y turismo médico en Cartagena: informe 2026",
         "datePublished": "2026-09-26",
-        "dateModified": "2026-09-26",
+        "dateModified": "2026-10-07",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-medical-tourism.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",

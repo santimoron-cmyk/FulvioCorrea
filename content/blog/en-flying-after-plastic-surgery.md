@@ -8,7 +8,7 @@ tags: ["flying-after-plastic-surgery", "flying-after-bbl", "flying-after-tummy-t
 cover: "/assets/blog-flying-after-plastic-surgery.webp"
 coverAlt: "Airplane window seat with a water bottle and folded cardigan on the tray, overlooking the Caribbean coast and a walled colonial city"
 date: "2026-10-05"
-updated: "2026-10-05"
+updated: "2026-10-07"
 author: "fulvio-correa"
 translationOf: "viajar-en-avion-despues-de-cirugia-plastica"
 sources: ["https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html","https://www.cirugiaplastica.org.co/"]
@@ -39,6 +39,8 @@ Avianca publishes waiting periods for passengers with medical conditions, based 
 | Cosmetic facial surgery | 14 days |
 | Facelift (rhytidoplasty) or two or more facial procedures combined | 15 days, depending on recovery |
 | Two or more body procedures combined (for example, a mommy makeover) | 15 days, depending on recovery |
+
+Planning a nose job? Our guide to [rhinoplasty in Colombia](/blog/rhinoplasty-colombia/) explains how the 10-day rhinoplasty line and the 14-day cosmetic facial surgery line apply, and how to build the stay around them.
 
 Three details in that policy change real itineraries:
 
