@@ -10,7 +10,7 @@
     "build:production": "node build.mjs --production",
     "build:preview": "node build.mjs --preview",
     "start": "node server.mjs",
-    "test": "node verify.mjs && node contact-test.mjs && node results-test.mjs && node membership-test.mjs && node ghl-chat-test.mjs && node call-due-test.mjs && node lead-test.mjs && node tracking-test.mjs && node journey-test.mjs && node routing-test.mjs && node event-test.mjs"
+    "test": "node verify.mjs && node contact-test.mjs && node results-test.mjs && node membership-test.mjs && node ghl-chat-test.mjs && node call-due-test.mjs && node lead-test.mjs && node leads-db-test.mjs && node tracking-test.mjs && node journey-test.mjs && node routing-test.mjs && node event-test.mjs"
   },
   "devDependencies": {
     "sharp": "^0.35.5",
