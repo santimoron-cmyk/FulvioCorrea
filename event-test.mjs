@@ -44,6 +44,13 @@ for(const [lang,p] of Object.entries(live)){
  assert.ok(!/no se envió|Concept preview|no data was sent/i.test(p.main),lang+' real form, not the concept preview');
  const hero=p.main.slice(0,p.main.indexOf('id="registro"'));
  assert.ok(hero.includes(p.cta)&&hero.includes('alberto-nader')&&hero.includes('dr-fulvio-correa'),lang+' photos and CTA in the hero');
+ assert.ok(!hero.includes('bio-photo'),lang+' hero portraits stay arched');
+ const bios=p.main.slice(p.main.indexOf('class="bios"'));
+ assert.ok(bios.includes('class="bio-photo bio-fulvio"')&&bios.includes('class="bio-photo bio-nader"'),lang+' circular bio frames');
+ assert.match(p.html,/\.bio-photo\{[^}]*width:120px;height:120px;[^}]*border-radius:50%/,lang+' equal circular bio size');
+ assert.match(p.html,/\.bio-photo img\{[^}]*object-fit:cover/,lang+' bio photos cover without stretch');
+ assert.match(p.html,/\.bio-fulvio img\{object-position:center 8%\}/,lang+' Fulvio face position');
+ assert.match(p.html,/\.bio-nader img\{object-position:center 4%\}/,lang+' Nader face position');
 }
 for(const [lang,p] of Object.entries(backup)){
  assert.ok(p.main.includes('class="event-hero'),lang+' fulvio shell');
