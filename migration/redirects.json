@@ -15,12 +15,7 @@
     },
     {
       "from": "/plastic-surgery-colombia",
-      "to": "/",
-      "status": 301
-    },
-    {
-      "from": "/plastic-surgery-colombia/",
-      "to": "/",
+      "to": "/plastic-surgery-colombia/",
       "status": 301
     },
     {
@@ -746,6 +741,16 @@
     {
       "from": "/es/mommy-makeover-talk-doral/",
       "to": "/es/charla-mommy-makeover-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/plastic-surgery-colombia",
+      "to": "/es/cirugia-plastica-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/es/plastic-surgery-colombia/",
+      "to": "/es/cirugia-plastica-colombia/",
       "status": 301
     },
     {
@@ -1556,6 +1561,16 @@
     {
       "from": "/en/thank-you",
       "to": "/thank-you/",
+      "status": 301
+    },
+    {
+      "from": "/en/plastic-surgery-colombia/",
+      "to": "/plastic-surgery-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/plastic-surgery-colombia",
+      "to": "/plastic-surgery-colombia/",
       "status": 301
     },
     {

@@ -1,6 +1,6 @@
 ---
-title: "Cuántos días quedarse después de un mommy makeover (sobre todo si viajas)"
-description: "¿Cuántos días quedarse después de un mommy makeover antes de volar? Guía práctica de estadía para pacientes que se operan fuera de casa, incluida Cartagena."
+title: "Días de estadía tras mommy makeover"
+description: "Cuántos días quedarse en Colombia después de un mommy makeover antes de volar. Guía de estadía en Cartagena, distinta del tiempo de recuperación."
 slug: "cuantos-dias-quedarse-despues-mommy-makeover"
 lang: "es"
 category: "Recovery"
@@ -8,7 +8,7 @@ tags: ["cuantos-dias-quedarse-despues-mommy-makeover", "mommy-makeover", "estadi
 cover: "/assets/blog-cartagena-stay.webp"
 coverAlt: "Fachada colonial amarilla y balcones de madera en Cartagena"
 date: "2026-09-30"
-updated: "2026-10-05"
+updated: "2026-10-08"
 author: "fulvio-correa"
 translationOf: "how-long-to-stay-after-mommy-makeover"
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/mommy-makeover/recovery","https://www.plasticsurgery.org/news/blog/how-will-your-body-change-after-a-mommy-makeover","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/make-a-plan/","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/post-surgery-considerations-abroad/"]
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-Una de las primeras preguntas de planificación cuando el mommy makeover se hace fuera de casa es **cuántos días quedarse después** antes de volar. La respuesta depende de qué procedimientos se combinan, cómo evoluciona la recuperación, la duración del vuelo y cuándo tu equipo quirúrgico te autoriza a viajar. Esta guía explica cómo pensar la estadía, qué suele alargar el calendario y qué confirmar antes de comprar el tiquete de regreso.
+Una de las primeras preguntas de planificación cuando el mommy makeover se hace fuera de casa es **cuántos días quedarse después** antes de volar. Si lo que buscas es el mapa de recuperación semana a semana, y no los días de estadía, lee [tiempo de recuperación del mommy makeover](/es/blog/tiempo-recuperacion-mommy-makeover/). La respuesta depende de qué procedimientos se combinan, cómo evoluciona la recuperación, la duración del vuelo y cuándo tu equipo quirúrgico te autoriza a viajar. Esta guía explica cómo pensar la estadía, qué suele alargar el calendario y qué confirmar antes de comprar el tiquete de regreso.
 
 ## Por qué la estadía importa más que el día de la cirugía sola
 

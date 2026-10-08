@@ -31,6 +31,7 @@ const topEs = [
   ['book-consultation/', 'agendar-valoracion/'],
   ['capri-clinic/', 'clinica-capri/'],
   ['contact/', 'contacto/'],
+  ['plastic-surgery-colombia/', 'cirugia-plastica-colombia/'],
   ['privacy/', 'privacidad/'],
   ['terms/', 'terminos/'],
   ['testimonials/', 'testimonios/'],

@@ -3079,14 +3079,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-05",
+    "updated": "2026-10-08",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "How Long to Stay After a Mommy Makeover (Especially Abroad)",
+        "headline": "How Long to Stay After Mommy Makeover",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-10-05",
+        "dateModified": "2026-10-08",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-stay.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/",
@@ -3173,14 +3173,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-05",
+    "updated": "2026-10-08",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Tummy Tuck in Colombia: How U.S. Patients Choose a Surgeon",
+        "headline": "Tummy Tuck in Colombia: How to Choose",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-10-05",
+        "dateModified": "2026-10-08",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-tummy-tuck-consultation.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/tummy-tuck-colombia/",
@@ -3699,14 +3699,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-05",
+    "updated": "2026-10-08",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Cuántos días quedarse después de un mommy makeover (sobre todo si viajas)",
+        "headline": "Días de estadía tras mommy makeover",
         "datePublished": "2026-09-30",
-        "dateModified": "2026-10-05",
+        "dateModified": "2026-10-08",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-stay.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/",
@@ -3939,14 +3939,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-30",
+    "updated": "2026-10-08",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Tiempo de recuperación mommy makeover: qué esperar semana a semana",
+        "headline": "Recuperación mommy makeover: semanas",
         "datePublished": "2026-09-24",
-        "dateModified": "2026-09-30",
+        "dateModified": "2026-10-08",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-mommy-makeover-recovery.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/tiempo-recuperacion-mommy-makeover/",
@@ -4066,6 +4066,198 @@
       {
         "lang": "es",
         "route": "/es/gracias/"
+      }
+    ]
+  },
+  {
+    "route": "/en/plastic-surgery-colombia/",
+    "file": "dist/en/plastic-surgery-colombia/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-10-08",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "@id": "https://fulviocorrea.com/plastic-surgery-colombia/#webpage",
+        "url": "https://fulviocorrea.com/plastic-surgery-colombia/",
+        "name": "Plastic surgery in Colombia",
+        "description": "How to choose a plastic surgeon in Colombia: credentials, the clinic and the recovery stay in Cartagena. A guide from Dr. Fulvio Correa, SCCP member.",
+        "inLanguage": "en",
+        "lastReviewed": "2026-10-08",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "about": {
+          "@type": "MedicalSpecialty",
+          "name": "Plastic surgery"
+        },
+        "mainEntity": {
+          "@id": "https://fulviocorrea.com/#physician"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is plastic surgery in Colombia safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Safety depends on the surgeon, the facility and the plan for your own case, not on the country. ASPS and ISAPS advise you to verify training, the clinic, anesthesia and follow-up before you travel. Those are the right questions for a consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I check a plastic surgeon in Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Confirm specialist training in plastic surgery, look up membership in the Colombian Society of Plastic Surgery, and use the Ministry of Health ReTHUS registry. A social-media following is not a credential."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a list of the best plastic surgeons in Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. There is no official ranking. “Best” in a search result is not a registry. Use the checks above, then decide after a consultation whether that surgeon is the right one for you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Cartagena after surgery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the procedure, on how you are healing, and on when your surgeon clears you to fly. The practice publishes separate guides for stay length, recovery by week, and flying. None of them is a personal clearance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I start with a virtual consultation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The practice offers a virtual valuation and an in-person consultation in Cartagena. The virtual conversation is a first step. It does not replace the examination before surgery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does Dr. Correa operate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Consultations are at the office in Manzanillo del Mar. Surgery is at CAPRI Clinic, a different address. The team confirms the location for each visit."
+            }
+          }
+        ]
+      }
+    ],
+    "cover": "/assets/plastic-surgery-office-reception-cartagena.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/plastic-surgery-colombia/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/cirugia-plastica-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/cirugia-plastica-colombia/",
+    "file": "dist/es/cirugia-plastica-colombia/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-10-08",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "@id": "https://fulviocorrea.com/es/plastic-surgery-colombia/#webpage",
+        "url": "https://fulviocorrea.com/es/plastic-surgery-colombia/",
+        "name": "Cirugía plástica en Colombia",
+        "description": "Cirujano plástico en Cartagena: cómo revisar credenciales, la clínica y la estadía. Guía de cirugía plástica en Colombia del Dr. Fulvio Correa, SCCP.",
+        "inLanguage": "es",
+        "lastReviewed": "2026-10-08",
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "about": {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía plástica"
+        },
+        "mainEntity": {
+          "@id": "https://fulviocorrea.com/#physician"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Es segura la cirugía plástica en Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La seguridad depende del cirujano, de la clínica y del plan de tu caso, no del país. La ASPS e ISAPS recomiendan verificar la formación, el centro, la anestesia y el seguimiento antes de viajar. Esas son las preguntas de una valoración."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo verifico a un cirujano plástico en Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Confirma la especialización en cirugía plástica, busca la membresía en la Sociedad Colombiana de Cirugía Plástica y consulta el ReTHUS del Ministerio de Salud. Tener seguidores en redes no es una credencial."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hay una lista de los mejores cirujanos plásticos de Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. No existe un ranking oficial. La palabra “mejores” en una búsqueda no es un registro. Usa las verificaciones de arriba y decide en la valoración si ese cirujano es el adecuado para ti."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días hay que quedarse en Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del procedimiento, de cómo evoluciona la recuperación y de cuándo tu cirujano autoriza el vuelo. El consultorio publica guías aparte sobre días de estadía, recuperación por semanas y viaje en avión. Ninguna es una autorización personal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo empezar con una valoración virtual?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. El consultorio ofrece valoración virtual y valoración presencial en Cartagena. La conversación virtual es un primer paso. No reemplaza el examen antes de la cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde opera el Dr. Correa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La valoración es en el consultorio de Manzanillo del Mar. La cirugía es en la Clínica CAPRI, otra dirección. El equipo confirma el lugar de cada cita."
+            }
+          }
+        ]
+      }
+    ],
+    "cover": "/assets/plastic-surgery-office-reception-cartagena.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/cirugia-plastica-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/plastic-surgery-colombia/"
       }
     ]
   },

@@ -1,8 +1,8 @@
 // Keyword headings and meta descriptions. Titles are the text before
 // " | Dr. Fulvio Correa" (20 characters) and must stay within 40 so the
 // suffix fits in 60. Descriptions are 120–155 characters.
-const homeDescEn = 'Plastic surgery in Cartagena with Dr. Fulvio Correa, member of the Colombian Society of Plastic Surgery (SCCP). In-person or virtual consultation.';
-const homeDescEs = 'Cirugía plástica en Cartagena con el Dr. Fulvio Correa, miembro de la Sociedad Colombiana de Cirugía Plástica (SCCP). Valoración presencial o virtual.';
+const homeDescEn = 'Dr. Fulvio Correa, plastic surgeon in Cartagena. 15+ years, 3,000+ procedures, trained at Ivo Pitanguy. Breast surgery focus. Virtual consultation.';
+const homeDescEs = 'Dr. Fulvio Correa, cirujano plástico en Cartagena. Más de 15 años, más de 3.000 procedimientos y formación en Ivo Pitanguy. Enfoque en cirugía mamaria.';
 const proceduresDescEn = 'Plastic surgery procedures in Cartagena with Dr. Fulvio Correa: face, breast and body. Each plan starts with an individual consultation.';
 const proceduresDescEs = 'Procedimientos de cirugía plástica en Cartagena con el Dr. Fulvio Correa: rostro, mamas y cuerpo. El plan empieza en una valoración individual.';
 const aboutDescEn = 'Plastic surgeon in Cartagena, Colombia with 15+ years of experience and 3,000+ procedures. SCCP member focused on breast surgery and body contouring.';
@@ -19,7 +19,7 @@ const intlDescEs = 'Planifica tu cirugía plástica en Cartagena desde otro paí
 export const seo = {
   en: {
     homeH1: 'Plastic surgery in Cartagena, Colombia',
-    homeTitle: 'Plastic Surgery in Cartagena, Colombia',
+    homeTitle: 'Plastic Surgeon in Cartagena, Colombia',
     homeDesc: homeDescEn,
     proceduresH1: 'Plastic surgery procedures in Cartagena',
     proceduresTitle: 'Surgery Procedures in Cartagena',

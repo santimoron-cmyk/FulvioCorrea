@@ -1,6 +1,6 @@
 ---
-title: "How Long to Stay After a Mommy Makeover (Especially Abroad)"
-description: "How long should you stay after a mommy makeover before flying home? A practical timeline for U.S. patients considering surgery abroad, including Cartagena."
+title: "How Long to Stay After Mommy Makeover"
+description: "How many days should you stay in Colombia after a mommy makeover before flying home? A practical Cartagena timeline, and what to confirm first."
 slug: "how-long-to-stay-after-mommy-makeover"
 lang: "en"
 category: "Recovery"
@@ -8,7 +8,7 @@ tags: ["how-long-to-stay-after-mommy-makeover"]
 cover: "/assets/blog-cartagena-stay.webp"
 coverAlt: "Yellow colonial facade and wooden balconies in Cartagena"
 date: "2026-09-23"
-updated: "2026-10-05"
+updated: "2026-10-08"
 author: "fulvio-correa"
 translationOf: ""
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/mommy-makeover/recovery","https://www.plasticsurgery.org/news/blog/how-will-your-body-change-after-a-mommy-makeover","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/make-a-plan/","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/post-surgery-considerations-abroad/"]
