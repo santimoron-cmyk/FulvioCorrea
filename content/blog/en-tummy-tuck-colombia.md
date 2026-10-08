@@ -1,6 +1,6 @@
 ---
-title: "Tummy Tuck in Colombia: How U.S. Patients Choose a Surgeon"
-description: "Looking for the best tummy tuck in Colombia? How U.S. patients verify surgeons and facilities, plan Cartagena travel, and time the flight home."
+title: "Tummy Tuck in Colombia: How to Choose"
+description: "There is no official ranking of tummy tuck surgeons in Colombia. How to verify credentials, the clinic in Cartagena, and when you can fly."
 slug: "tummy-tuck-colombia"
 lang: "en"
 category: "Body Contouring"
@@ -8,7 +8,7 @@ tags: ["tummy-tuck-colombia"]
 cover: "/assets/blog-tummy-tuck-consultation.webp"
 coverAlt: "Hands of a medical professional reviewing documents on a clipboard"
 date: "2026-09-23"
-updated: "2026-10-05"
+updated: "2026-10-08"
 author: "fulvio-correa"
 translationOf: "abdominoplastia-colombia"
 sources: ["https://www.cirugiaplastica.org.co/","https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://medlineplus.gov/ency/article/002978.htm","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/recovery","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/safety"]

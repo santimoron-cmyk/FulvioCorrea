@@ -10,13 +10,8 @@ curl -I "https://fulviocorrea.com/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/plastic-surgery-colombia"
-# Expected: 301 Location: /
-curl -I "https://fulviocorrea.com/"
-# Expected: 200
-
+# Expected: 301 Location: /plastic-surgery-colombia/
 curl -I "https://fulviocorrea.com/plastic-surgery-colombia/"
-# Expected: 301 Location: /
-curl -I "https://fulviocorrea.com/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/plastic-surgery-colombia-cartagena-staff"
@@ -732,6 +727,16 @@ curl -I "https://fulviocorrea.com/es/charla-mommy-makeover-doral/"
 curl -I "https://fulviocorrea.com/es/mommy-makeover-talk-doral/"
 # Expected: 301 Location: /es/charla-mommy-makeover-doral/
 curl -I "https://fulviocorrea.com/es/charla-mommy-makeover-doral/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/plastic-surgery-colombia"
+# Expected: 301 Location: /es/cirugia-plastica-colombia/
+curl -I "https://fulviocorrea.com/es/cirugia-plastica-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/plastic-surgery-colombia/"
+# Expected: 301 Location: /es/cirugia-plastica-colombia/
+curl -I "https://fulviocorrea.com/es/cirugia-plastica-colombia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/es/procedures/liposuction"
@@ -1532,6 +1537,16 @@ curl -I "https://fulviocorrea.com/thank-you/"
 curl -I "https://fulviocorrea.com/en/thank-you"
 # Expected: 301 Location: /thank-you/
 curl -I "https://fulviocorrea.com/thank-you/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/plastic-surgery-colombia/"
+# Expected: 301 Location: /plastic-surgery-colombia/
+curl -I "https://fulviocorrea.com/plastic-surgery-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/plastic-surgery-colombia"
+# Expected: 301 Location: /plastic-surgery-colombia/
+curl -I "https://fulviocorrea.com/plastic-surgery-colombia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/capri-clinic/"

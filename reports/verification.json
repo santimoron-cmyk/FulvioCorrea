@@ -1,26 +1,26 @@
 {
   "mode": "production",
-  "pages": 110,
+  "pages": 112,
   "bytes": 63977,
   "errors": [],
   "warnings": [
-    "/en/procedures/: 122 words (<600; content required before launch).",
+    "/en/procedures/: 149 words (<600; content required before launch).",
     "/en/resources/: 67 words (<600; content required before launch).",
     "/en/resources/your-consultation/: 132 words (<600; content required before launch).",
     "/en/faq/: 136 words (<600; content required before launch).",
-    "/es/procedimientos/: 123 words (<600; content required before launch).",
+    "/es/procedimientos/: 148 words (<600; content required before launch).",
     "/es/recursos/: 76 words (<600; content required before launch).",
     "/es/recursos/tu-valoracion/: 118 words (<600; content required before launch).",
     "/es/preguntas-frecuentes/: 133 words (<600; content required before launch).",
-    "/en/blog/: 434 words (<600; content required before launch).",
-    "/en/blog/category/body-contouring/: 280 words (<600; content required before launch).",
-    "/en/blog/category/recovery/: 141 words (<600; content required before launch).",
+    "/en/blog/: 430 words (<600; content required before launch).",
+    "/en/blog/category/body-contouring/: 278 words (<600; content required before launch).",
+    "/en/blog/category/recovery/: 139 words (<600; content required before launch).",
     "/en/privacy/: 220 words (<600; content required before launch).",
     "/en/terms/: 463 words (<600; content required before launch).",
     "/en/sms/: 350 words (<600; content required before launch).",
-    "/es/blog/: 454 words (<600; content required before launch).",
+    "/es/blog/: 442 words (<600; content required before launch).",
     "/es/blog/categoria/contorno-corporal/: 138 words (<600; content required before launch).",
-    "/es/blog/categoria/recuperacion/: 149 words (<600; content required before launch).",
+    "/es/blog/categoria/recuperacion/: 137 words (<600; content required before launch).",
     "/es/privacidad/: 212 words (<600; content required before launch).",
     "/es/terminos/: 223 words (<600; content required before launch).",
     "/es/sms/: 178 words (<600; content required before launch).",
@@ -35,7 +35,6 @@
     "/en/blog/mommy-makeover-recovery-time/: fewer than 2 same-language articles in this cluster; add reviewed articles.",
     "/en/blog/tummy-tuck-colombia/: fewer than 2 same-language articles in this cluster; add reviewed articles.",
     "/es/blog/abdominoplastia-colombia/: fewer than 2 same-language articles in this cluster; add reviewed articles.",
-    "/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/: fewer than 2 same-language articles in this cluster; add reviewed articles.",
-    "/es/blog/tiempo-recuperacion-mommy-makeover/: fewer than 2 same-language articles in this cluster; add reviewed articles."
+    "/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/: fewer than 2 same-language articles in this cluster; add reviewed articles."
   ]
 }

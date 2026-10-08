@@ -76,4 +76,6 @@ Advertencias no bloqueantes: artículos con < 600 palabras o con < 2 artículos 
 
 No inventar estadísticas, acreditaciones ni afirmaciones del tipo "board-certified". Las imágenes de stock deben tener licencia verificada (registrar en `data/blog-image-sources.json` y `BLOG-IMAGE-SOURCES.md`). No usar fotos de pacientes sin autorización.
 
+Cada artículo publicado debe enlazar, en su idioma, la guía pilar de cirugía plástica en Colombia: inglés `/plastic-surgery-colombia/`, español `/es/cirugia-plastica-colombia/`. El build añade ese enlace al cierre del artículo, junto con enlaces a procedimientos, el doctor, la guía de valoración y contacto. Cuando el texto lo permita, incluye además un enlace contextual en el cuerpo. No conviertas la guía en un post de la categoría «Plastic Surgery in Colombia»: esa categoría es un índice, y la página pilar es la que responde a «plastic surgery in Colombia» / «cirujano plástico en Cartagena».
+
 Al mencionar a Sofía (por ejemplo en el párrafo de cierre), decir solo «Sofía»: nunca «asistente virtual» / «virtual assistant» (p. ej. «escríbele a Sofía.» / «message Sofía.»). `npm test` falla si alguna página generada lo contiene.
