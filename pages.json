@@ -2615,19 +2615,126 @@
     ]
   },
   {
+    "route": "/en/blog/facelift-colombia/",
+    "file": "dist/en/blog/facelift-colombia/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-09",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Facelift in Colombia: Planning the Trip and the Recovery",
+        "datePublished": "2026-10-09",
+        "dateModified": "2026-10-09",
+        "inLanguage": "en",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-facelift-colombia.webp",
+          "https://fulviocorrea.com/assets/blog-facelift-colombia.avif",
+          "https://fulviocorrea.com/assets/blog-facelift-colombia-og.webp",
+          "https://fulviocorrea.com/assets/blog-facelift-colombia-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/facelift-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long do I need to stay in Colombia after a facelift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plan around Avianca's 15-day line for a facelift, plus your arrival days for the in-person evaluation, which comes to roughly two and a half weeks. ASPS suggests 7 to 10 days before flying after facial procedures, but the airline minimum is longer, and your surgeon's clearance comes first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When will I look presentable after a facelift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cleveland Clinic says bruising and swelling last about two to three weeks. The SCCP notes makeup is allowed after the first week and most people return to everyday activities between days 10 and 15. Feeling completely back to normal can take two to three months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a deep plane facelift better than a SMAS facelift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no established consensus. Both move the deeper layer of the face rather than the skin alone, published reviews report similar safety, and the deep plane may give more improvement in the midface. The right choice depends on your anatomy and is made at the consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I go to the beach in Cartagena after a facelift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not during recovery. The SCCP advises avoiding direct sun for at least three months, sunscreen for six months, and no pools or saunas for a month. Shade, a hat and indoor plans are part of the trip."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a facelift last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cleveland Clinic says results usually last around 7 to 10 years. Aging continues, and a facelift does not treat fine lines or sun damage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need someone with me?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, at least for the first day or two. Hematoma, the most common complication, usually appears within 24 hours, and Cleveland Clinic recommends having someone stay with you for at least the first 48 hours."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/es/blog/lifting-facial-colombia/",
+    "cover": "/assets/blog-facelift-colombia.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/facelift-colombia/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/lifting-facial-colombia/"
+      }
+    ]
+  },
+  {
     "route": "/en/blog/rhinoplasty-colombia/",
     "file": "dist/en/blog/rhinoplasty-colombia/index.html",
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-07",
+    "updated": "2026-10-09",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Rhinoplasty in Colombia: What to Decide Before You Travel",
         "datePublished": "2026-10-07",
-        "dateModified": "2026-10-07",
+        "dateModified": "2026-10-09",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia.webp",
@@ -2727,14 +2834,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-07",
+    "updated": "2026-10-09",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Flying After Plastic Surgery: When You Can Fly Home From Colombia",
         "datePublished": "2026-10-05",
-        "dateModified": "2026-10-07",
+        "dateModified": "2026-10-09",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.webp",
@@ -3389,19 +3496,126 @@
     ]
   },
   {
+    "route": "/es/blog/lifting-facial-colombia/",
+    "file": "dist/es/blog/lifting-facial-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-09",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Lifting facial en Colombia: técnica, recuperación y viaje",
+        "datePublished": "2026-10-09",
+        "dateModified": "2026-10-09",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-facelift-colombia.webp",
+          "https://fulviocorrea.com/assets/blog-facelift-colombia.avif",
+          "https://fulviocorrea.com/assets/blog-facelift-colombia-og.webp",
+          "https://fulviocorrea.com/assets/blog-facelift-colombia-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/lifting-facial-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días debo quedarme en Colombia después de un lifting facial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Si vuelas con Avianca, la línea para lifting facial es de 15 días según la evolución, con constancia médica expedida en los 10 días previos. Súmale los días de llegada para la valoración presencial: unas dos semanas y media en total, y siempre con la autorización de tu cirujano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto duran los morados después de un lifting facial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La SCCP indica que hacia las dos semanas han desaparecido en buena parte, y Cleveland Clinic habla de dos a tres semanas de morados e hinchazón. Puedes maquillarte después de la primera semana."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es mejor el lifting de plano profundo que el SMAS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No hay consenso. Las dos técnicas trabajan la capa profunda y no solo la piel, las revisiones publicadas muestran una seguridad parecida y el plano profundo podría mejorar más el tercio medio. La elección depende de tu anatomía y se define en la valoración."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura un lifting facial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cleveland Clinic indica que los resultados suelen durar entre 7 y 10 años. El envejecimiento continúa después de la cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Duele un lifting facial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La SCCP describe el dolor postoperatorio como mínimo. Lo más incómodo suele ser la hinchazón, la tirantez y la sensibilidad disminuida de las primeras semanas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo ir a la playa en Cartagena después del lifting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No durante la recuperación. La SCCP recomienda evitar el sol directo por no menos de tres meses, usar bloqueador seis meses y no ir a piscinas ni saunas durante un mes."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/en/blog/facelift-colombia/",
+    "cover": "/assets/blog-facelift-colombia.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/lifting-facial-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/facelift-colombia/"
+      }
+    ]
+  },
+  {
     "route": "/es/blog/rinoplastia-colombia/",
     "file": "dist/es/blog/rinoplastia-colombia/index.html",
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-07",
+    "updated": "2026-10-09",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Rinoplastia en Colombia: qué decidir antes de viajar",
         "datePublished": "2026-10-07",
-        "dateModified": "2026-10-07",
+        "dateModified": "2026-10-09",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia.webp",
@@ -3501,14 +3715,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-07",
+    "updated": "2026-10-09",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Viajar en avión después de una cirugía plástica: cuántos días esperar",
         "datePublished": "2026-10-05",
-        "dateModified": "2026-10-07",
+        "dateModified": "2026-10-09",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.webp",

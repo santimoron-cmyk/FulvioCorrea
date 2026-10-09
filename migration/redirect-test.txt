@@ -469,6 +469,16 @@ curl -I "https://fulviocorrea.com/post/breast-lift-colombia/"
 curl -I "https://fulviocorrea.com/blog/breast-lift-colombia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/facelift-colombia"
+# Expected: 301 Location: /blog/facelift-colombia/
+curl -I "https://fulviocorrea.com/blog/facelift-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/facelift-colombia/"
+# Expected: 301 Location: /blog/facelift-colombia/
+curl -I "https://fulviocorrea.com/blog/facelift-colombia/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/flying-after-plastic-surgery"
 # Expected: 301 Location: /blog/flying-after-plastic-surgery/
 curl -I "https://fulviocorrea.com/blog/flying-after-plastic-surgery/"
@@ -587,6 +597,16 @@ curl -I "https://fulviocorrea.com/es/blog/levantamiento-de-senos-colombia/"
 curl -I "https://fulviocorrea.com/post/levantamiento-de-senos-colombia/"
 # Expected: 301 Location: /es/blog/levantamiento-de-senos-colombia/
 curl -I "https://fulviocorrea.com/es/blog/levantamiento-de-senos-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/lifting-facial-colombia"
+# Expected: 301 Location: /es/blog/lifting-facial-colombia/
+curl -I "https://fulviocorrea.com/es/blog/lifting-facial-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/lifting-facial-colombia/"
+# Expected: 301 Location: /es/blog/lifting-facial-colombia/
+curl -I "https://fulviocorrea.com/es/blog/lifting-facial-colombia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/post/liposuccion-colombia"
@@ -1417,6 +1437,16 @@ curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
 curl -I "https://fulviocorrea.com/en/blog/category/plastic-surgery-in-colombia"
 # Expected: 301 Location: /blog/category/plastic-surgery-in-colombia/
 curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/facelift-colombia/"
+# Expected: 301 Location: /blog/facelift-colombia/
+curl -I "https://fulviocorrea.com/blog/facelift-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/facelift-colombia"
+# Expected: 301 Location: /blog/facelift-colombia/
+curl -I "https://fulviocorrea.com/blog/facelift-colombia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/blog/rhinoplasty-colombia/"

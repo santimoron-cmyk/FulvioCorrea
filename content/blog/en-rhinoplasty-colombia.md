@@ -8,7 +8,7 @@ tags: ["rhinoplasty-colombia", "nose-job-colombia", "rhinoplasty-recovery", "sep
 cover: "/assets/blog-rhinoplasty-colombia.webp"
 coverAlt: "Wide-brim straw hat, folded sunglasses, sunscreen and a closed notebook on a wooden desk beside green colonial shutters in Cartagena"
 date: "2026-10-07"
-updated: "2026-10-07"
+updated: "2026-10-09"
 author: "fulvio-correa"
 translationOf: "rinoplastia-colombia"
 sources: ["https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.plasticsurgery.org/cosmetic-procedures/rhinoplasty/recovery","https://www.mayoclinic.org/tests-procedures/rhinoplasty/about/pac-20384532","https://my.clevelandclinic.org/health/treatments/11011-rhinoplasty","https://cirugiaplastica.org.co/procedimientos/rinoplastia/","https://www.eltiempo.com/salud/sociedad-de-cirugia-plastica-entrega-cinco-recomendaciones-a-tener-en-cuenta-antes-de-realizarse-una-intervencion-estetico-quirurgica-3556851","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.nhs.uk/conditions/cosmetic-procedures/cosmetic-surgery-abroad/","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/post-surgery-considerations-abroad/","https://cirugiaplastica.org.co/buscar-cirujano/","https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
@@ -66,6 +66,8 @@ No published number fits everyone, but the sources agree on the milestones. Buil
 | Day 14 | Travel permitted after cosmetic facial surgery (a separate line in the same policy) | Avianca |
 | Day 15 | Facelift or two or more facial procedures combined, depending on recovery | Avianca |
 | Last 10 days before the flight | Medical certificate stating you are fit to travel | Avianca |
+
+If a facelift is part of the plan, the 15-day line applies; see our guide to [facelift in Colombia](/blog/facelift-colombia/) for how that changes the stay.
 
 Turn that into a booking rule:
 

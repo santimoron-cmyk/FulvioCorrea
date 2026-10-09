@@ -474,6 +474,16 @@
       "status": 301
     },
     {
+      "from": "/post/facelift-colombia",
+      "to": "/blog/facelift-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/facelift-colombia/",
+      "to": "/blog/facelift-colombia/",
+      "status": 301
+    },
+    {
       "from": "/post/flying-after-plastic-surgery",
       "to": "/blog/flying-after-plastic-surgery/",
       "status": 301
@@ -591,6 +601,16 @@
     {
       "from": "/post/levantamiento-de-senos-colombia/",
       "to": "/es/blog/levantamiento-de-senos-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/lifting-facial-colombia",
+      "to": "/es/blog/lifting-facial-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/lifting-facial-colombia/",
+      "to": "/es/blog/lifting-facial-colombia/",
       "status": 301
     },
     {
@@ -1421,6 +1441,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/facelift-colombia/",
+      "to": "/blog/facelift-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/facelift-colombia",
+      "to": "/blog/facelift-colombia/",
       "status": 301
     },
     {
