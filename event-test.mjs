@@ -5,8 +5,8 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 const origin=JSON.parse(fs.readFileSync('config.json','utf8')).origin;
 const live={
- es:{file:'dist/es/charla-cirugia-cartagena-doral/index.html',path:'/es/charla-cirugia-cartagena-doral/',line:'Cualquier valoración médica se realiza directamente con el cirujano, de forma individual.',host:'no realizamos los procedimientos',cta:'Reservar mi cupo',bio:'+15 años de experiencia',chosen:'te elegimos para este encuentro exclusivo',eyebrow:'Para nuestras clientas preferidas',journey:'Operarte en Cartagena, con calma.',bites:'vino y picadas',free:'orientación educativa y gratuita',date:'viernes 6 de noviembre de 2026, 6:00 p. m.',travel:'Muchos pacientes del Dr. Correa viajan desde Estados Unidos',unsure:'Aún no lo sé',guest:'Invitado especial'},
- en:{file:'dist/plastic-surgery-cartagena-talk-doral/index.html',path:'/plastic-surgery-cartagena-talk-doral/',line:'Any medical evaluation is done directly with the surgeon, individually.',host:'do not perform the plastic surgery procedures',cta:'Save my spot',bio:'15+ years of experience',chosen:'we chose you for this exclusive gathering',eyebrow:'For our preferred clients',journey:'Surgery in Cartagena, calmly explained.',bites:'wine and light bites',free:'free educational orientation',date:'Friday, November 6, 2026, 6:00 PM',travel:'Many of Dr. Correa’s patients travel from the United States',unsure:'Not sure yet',guest:'Special guest'}
+ es:{file:'dist/es/conversatorio-belleza-estetica-doral/index.html',path:'/es/conversatorio-belleza-estetica-doral/',line:'Cualquier valoración médica se realiza directamente con el cirujano, de forma individual.',host:'no realizamos los procedimientos',cta:'Reservar mi cupo',bio:'+15 años de experiencia',chosen:'te elegimos para este encuentro exclusivo',eyebrow:'Para nuestras clientas preferidas',journey:'Aprender y decidir, con calma.',bites:'vino y picadas',free:'orientación educativa y gratuita',date:'viernes 6 de noviembre de 2026, 6:00 p. m.',travel:'Muchos pacientes del Dr. Correa viajan desde Estados Unidos',unsure:'Aún no lo sé',guest:'Invitado especial',access:'Acceso directo',nonsurgical:'tratamientos no quirúrgicos de belleza y estética',cartagena:'Operarte en Cartagena.',title:'Conversatorio de belleza 2026 · Aromas Med Spa Doral'},
+ en:{file:'dist/beauty-aesthetics-talk-doral/index.html',path:'/beauty-aesthetics-talk-doral/',line:'Any medical evaluation is done directly with the surgeon, individually.',host:'do not perform the plastic surgery procedures',cta:'Save my spot',bio:'15+ years of experience',chosen:'we chose you for this exclusive gathering',eyebrow:'For our preferred clients',journey:'Learn and decide, calmly.',bites:'wine and light bites',free:'free educational orientation',date:'Friday, November 6, 2026, 6:00 PM',travel:'Many of Dr. Correa’s patients travel from the United States',unsure:'Not sure yet',guest:'Special guest',access:'Direct access',nonsurgical:'non-surgical beauty and aesthetics treatments',cartagena:'Surgery in Cartagena.',title:'Beauty and aesthetics talk 2026 · Aromas Med Spa Doral'}
 };
 const backup={
  es:{file:'dist/es/charla-mommy-makeover-doral-v1/index.html',path:'/es/charla-mommy-makeover-doral-v1/',line:live.es.line,host:'no realiza el procedimiento'},
@@ -36,7 +36,7 @@ pair(live,'live');
 pair(backup,'backup');
 for(const [lang,p] of Object.entries(live)){
  assert.ok(p.html.includes('data-event-shell="aromas"'),lang+' aromas shell');
- assert.ok(p.main.includes('data-event-tag="charla-cirugia-cartagena-doral-nov2026"'),lang+' event tag');
+ assert.ok(p.main.includes('data-event-tag="conversatorio-belleza-estetica-doral-nov2026"'),lang+' event tag');
  assert.ok(p.main.includes(p.cta)&&p.html.includes(`class="sticky"`),lang+' reserve CTA');
  assert.ok(p.main.includes('/assets/alberto-nader-aromas-med-spa-doral-480.avif')&&p.main.includes('/assets/dr-fulvio-correa-plastic-surgeon-cartagena-768.webp'),lang+' both doctor photos');
  assert.ok(p.html.includes('/assets/aromas-logo-original.svg')&&p.html.includes('/assets/aromas-logo-white.svg'),lang+' aromas logos');
@@ -54,15 +54,20 @@ for(const [lang,p] of Object.entries(live)){
  assert.ok(p.html.includes(`property="og:description" content="${p.event.description.replaceAll('"','&quot;')}"`),lang+' OG description');
  assert.ok(!/jueves 6 de noviembre de 2026|Thursday, November 6, 2026/.test(p.html),lang+' Thursday wording is gone');
  assert.ok(!String(p.event.endDate||'').includes('2026-10'),lang+' October window removed');
- assert.ok(p.event.name=== (lang==='es'?'Cirugía en Cartagena · Aromas Med Spa Doral':'Surgery in Cartagena · Aromas Med Spa Doral'),lang+' schema name');
+ assert.ok(p.event.name===p.title,lang+' schema name');
+ assert.ok(p.html.includes(`<title>${p.title}</title>`),lang+' title');
  assert.ok(p.html.includes(p.date)&&p.html.includes(p.bites),lang+' date and wine in meta or body');
  assert.ok(p.main.includes(lang==='es'?'Cirujano plástico en Cartagena':'Plastic surgeon in Cartagena'),lang+' Fulvio stays in third person');
  assert.ok(p.main.includes(p.guest),lang+' Fulvio is the special guest');
- assert.ok(p.main.includes('id="que-es"')&&p.main.includes(p.journey)&&p.main.includes(p.bites)&&p.main.includes(p.travel)&&p.main.includes(lang==='es'?'No es una consulta médica':'not a medical consultation'),lang+' journey explanation');
- assert.ok(p.main.includes('id="otros"')&&p.main.includes(lang==='es'?'El que tú quieres o necesitas.':'The one you want or need.'),lang+' procedure is whatever each person needs');
- for(const item of (lang==='es'?['Cirugía de busto','Abdominoplastia','Liposucción y contorno corporal','rinoplastia, párpados','Mommy Makeover']:['Breast surgery','Tummy tuck (abdominoplasty)','Liposuction and body contouring','rhinoplasty, eyelids','Mommy Makeover']))assert.ok(p.main.includes(item),lang+' lists '+item);
+ assert.ok(p.main.includes('id="que-es"')&&p.main.includes(p.journey)&&p.main.includes(p.bites)&&p.main.includes(p.nonsurgical)&&p.main.includes(lang==='es'?'No es una consulta médica':'not a medical consultation'),lang+' educational explanation');
+ const heroH1=p.main.slice(0,p.main.indexOf('id="registro"')).match(/<h1>[\s\S]*?<\/h1>/)[0];
+ assert.ok(!/Cartagena/i.test(heroH1),lang+' Cartagena is not the headline');
+ const card=p.main.slice(p.main.indexOf('id="otros"'),p.main.indexOf('id="charla"'));
+ assert.ok(card.includes(p.cartagena)&&card.includes(p.travel),lang+' Cartagena is one short card');
+ assert.ok(p.main.includes(p.access),lang+' direct access');
  assert.ok(p.main.includes('name="procedure_interest"')&&!/name="procedure_interest"[^>]*required/.test(p.main),lang+' optional interest select');
- for(const value of ['mommy-makeover','breast','abdomen','lipo-contour','face','other','undecided'])assert.ok(p.main.includes(`value="${value}"`),lang+' interest option '+value);
+ for(const value of ['non-surgical','breast','abdomen-contour','face','mommy-makeover','undecided'])assert.ok(p.main.includes(`value="${value}"`),lang+' interest option '+value);
+ assert.ok(!/value="lipo-contour"|value="other"|value="abdomen"/.test(p.main),lang+' old interest values are gone');
  assert.ok(p.main.includes(p.unsure),lang+' not sure yet option');
  assert.ok(!hero.includes('bio-photo'),lang+' hero portraits stay arched');
  const bios=p.main.slice(p.main.indexOf('class="bios"'));
@@ -89,10 +94,14 @@ for(const [lang,p] of Object.entries(backup)){
  for(const href of ['https://www.instagram.com/drfulviocorrea/','https://aromaslaser.com/','https://fulviocorrea.com/'])assert.ok(p.main.includes('href="'+href),lang+' link '+href);
  assert.ok(p.main.includes('/assets/aromas-med-spa-doral-logo-white.webp'),lang+' v1 partner logo');
  assert.ok(!fs.existsSync(lang==='es'?'dist/es/charla-mommy-makeover-doral/index.html':'dist/mommy-makeover-talk-doral/index.html'),lang+' old live path is not a page');
+ assert.ok(!fs.existsSync(lang==='es'?'dist/es/charla-cirugia-cartagena-doral/index.html':'dist/plastic-surgery-cartagena-talk-doral/index.html'),lang+' previous staging path is not a page');
 }
 const rules=JSON.parse(fs.readFileSync('migration/redirects.json','utf8')).redirects;
-assert.equal(rules.find(r=>r.from==='/mommy-makeover-talk-doral/')?.to,'/plastic-surgery-cartagena-talk-doral/');
-assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral/')?.to,'/es/charla-cirugia-cartagena-doral/');
+assert.equal(rules.find(r=>r.from==='/mommy-makeover-talk-doral/')?.to,'/beauty-aesthetics-talk-doral/');
+assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral/')?.to,'/es/conversatorio-belleza-estetica-doral/');
+assert.equal(rules.find(r=>r.from==='/plastic-surgery-cartagena-talk-doral/')?.to,'/beauty-aesthetics-talk-doral/');
+assert.equal(rules.find(r=>r.from==='/es/charla-cirugia-cartagena-doral/')?.to,'/es/conversatorio-belleza-estetica-doral/');
+assert.equal(rules.find(r=>r.from==='/en/plastic-surgery-cartagena-talk-doral/')?.to,'/beauty-aesthetics-talk-doral/');
 assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral-v1/')?.to,undefined,'v1 Spanish path is the page, not a redirect away');
 console.log('PASS: Aromas event landing ES/EN and Fulvio v1 backups — noindex, no sitemap, separate hreflang pairs, Event schema, copy rules, live form.');
 
@@ -105,7 +114,7 @@ function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest}={
  const status={textContent:'',className:''};
  const elements={name,whatsapp:phone,email,city,website,companion,contact_consent:consent};
  if(select)elements.procedure_interest=select;
- const form={dataset:{eventTag:shell==='aromas'?'charla-cirugia-cartagena-doral-nov2026':'charla-mommy-makeover-doral-oct2026'},elements,addEventListener(type,fn){listeners[type]=fn;},checkValidity(){return !phone.validation;},reportValidity(){},querySelector(sel){return sel==='[data-consent-version]'?consentSpan:null;},querySelectorAll(){return [name,phone,email,city,button,select].filter(Boolean);}};
+ const form={dataset:{eventTag:shell==='aromas'?'conversatorio-belleza-estetica-doral-nov2026':'charla-mommy-makeover-doral-oct2026'},elements,addEventListener(type,fn){listeners[type]=fn;},checkValidity(){return !phone.validation;},reportValidity(){},querySelector(sel){return sel==='[data-consent-version]'?consentSpan:null;},querySelectorAll(){return [name,phone,email,city,button,select].filter(Boolean);}};
  const sessionStorage={getItem:k=>storage.has(k)?storage.get(k):null,setItem:(k,v)=>storage.set(k,String(v))};
  const location=new URL(href);
  const document={documentElement:{lang},body:{dataset:{eventShell:shell}},title:lang==='es'?'Cirugía en Cartagena':'Surgery in Cartagena',referrer:'',cookie:'',getElementById(id){return id==='event-signup-form'?form:id==='event-signup-status'?status:id==='event-signup-submit'?button:null;}};
@@ -113,30 +122,34 @@ function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest}={
  vm.runInNewContext(fs.readFileSync('event-signup.js','utf8'),context);
  return {requests,status,storage,submit:()=>listeners.submit({preventDefault(){}})};
 }
-const talk='https://fulviocorrea.com/es/charla-cirugia-cartagena-doral/?utm_source=instagram&utm_medium=social&utm_campaign=doral-nov';
+const talk='https://fulviocorrea.com/es/conversatorio-belleza-estetica-doral/?utm_source=instagram&utm_medium=social&utm_campaign=doral-nov';
 let page=bootSignup({href:talk,interest:''});
 assert.deepEqual(JSON.parse(page.storage.get('fc_event_utm')),{utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov'},'landing UTMs stored for the tab');
 await page.submit();
 let body=page.requests[0].body;
-for(const [k,v] of Object.entries({procedure_interest:'undecided',procedure:'undecided',procedure_label:'Aún no lo sé / Not sure yet',language:'es',event_tag:'charla-cirugia-cartagena-doral-nov2026',utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov',utm_source_last:'instagram',utm_medium_last:'social',utm_campaign_last:'doral-nov',form_id:'event-signup',event:'lead_created'}))assert.equal(body[k],v,'signup.'+k);
+for(const [k,v] of Object.entries({procedure_interest:'undecided',procedure:'undecided',procedure_label:'Aún no lo sé / Not sure yet',language:'es',event_tag:'conversatorio-belleza-estetica-doral-nov2026',utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov',utm_source_last:'instagram',utm_medium_last:'social',utm_campaign_last:'doral-nov',form_id:'event-signup',event:'lead_created'}))assert.equal(body[k],v,'signup.'+k);
 assert.match(page.status.textContent,/viernes 6 de noviembre de 2026, 6:00 p\. m\./,'ES confirmation after submit');
 const kept=page.storage;
-page=bootSignup({href:'https://fulviocorrea.com/es/charla-cirugia-cartagena-doral/',storage:kept,interest:''});
+page=bootSignup({href:'https://fulviocorrea.com/es/conversatorio-belleza-estetica-doral/',storage:kept,interest:''});
 await page.submit();
 body=page.requests[0].body;
 assert.equal(body.utm_source,'instagram');assert.equal(body.utm_medium,'social');assert.equal(body.utm_campaign,'doral-nov','UTMs survive a reload without the query string');
 page=bootSignup({href:talk,interest:'breast'});
 await page.submit();
 body=page.requests[0].body;
-assert.equal(body.procedure_interest,'breast');assert.equal(body.procedure,'breast');assert.equal(body.procedure_label,'Busto / Breast');
+assert.equal(body.procedure_interest,'breast');assert.equal(body.procedure,'breast');assert.equal(body.procedure_label,'Cirugía de busto / Breast surgery');
+page=bootSignup({href:talk,interest:'non-surgical'});
+await page.submit();
+body=page.requests[0].body;
+assert.equal(body.procedure_interest,'non-surgical');assert.equal(body.procedure,'non-surgical');assert.equal(body.procedure_label,'Tratamientos no quirúrgicos / Non-surgical treatments');assert.equal(body.event_tag,'conversatorio-belleza-estetica-doral-nov2026');
 const prior=new Map([['fc_attribution',JSON.stringify({last_touch:{utm_source:'google',utm_medium:'cpc',utm_campaign:'search',gclid:'g1'},first_touch:{utm_source:'first'}})]]);
-page=bootSignup({lang:'en',href:'https://fulviocorrea.com/plastic-surgery-cartagena-talk-doral/',interest:'face',storage:prior});
+page=bootSignup({lang:'en',href:'https://fulviocorrea.com/beauty-aesthetics-talk-doral/',interest:'face',storage:prior});
 await page.submit();
 body=page.requests[0].body;
 assert.equal(body.language,'en');assert.equal(body.procedure_interest,'face');assert.equal(body.procedure,'face');assert.equal(body.utm_source,'google');assert.equal(body.utm_medium,'cpc');assert.equal(body.utm_campaign,'search');assert.equal(body.gclid,'g1');assert.equal(body.utm_source_first,'first');
 assert.match(page.status.textContent,/Friday, November 6, 2026, 6:00 PM/,'EN confirmation after submit');
 const override=new Map(prior);
-page=bootSignup({lang:'en',href:'https://fulviocorrea.com/plastic-surgery-cartagena-talk-doral/?utm_source=meta&utm_medium=paid&utm_campaign=talk',interest:'undecided',storage:override});
+page=bootSignup({lang:'en',href:'https://fulviocorrea.com/beauty-aesthetics-talk-doral/?utm_source=meta&utm_medium=paid&utm_campaign=talk',interest:'undecided',storage:override});
 await page.submit();
 body=page.requests[0].body;
 assert.equal(body.procedure_interest,'undecided');assert.equal(body.procedure,'undecided');assert.equal(body.procedure_label,'Aún no lo sé / Not sure yet');

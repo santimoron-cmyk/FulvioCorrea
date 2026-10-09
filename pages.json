@@ -1217,8 +1217,8 @@
     ]
   },
   {
-    "route": "/en/plastic-surgery-cartagena-talk-doral/",
-    "file": "dist/en/plastic-surgery-cartagena-talk-doral/index.html",
+    "route": "/en/beauty-aesthetics-talk-doral/",
+    "file": "dist/en/beauty-aesthetics-talk-doral/index.html",
     "ads": false,
     "lang": "en",
     "noindex": true,
@@ -1227,11 +1227,11 @@
     "alternates": [
       {
         "lang": "en",
-        "route": "/en/plastic-surgery-cartagena-talk-doral/"
+        "route": "/en/beauty-aesthetics-talk-doral/"
       },
       {
         "lang": "es",
-        "route": "/es/charla-cirugia-cartagena-doral/"
+        "route": "/es/conversatorio-belleza-estetica-doral/"
       }
     ]
   },
@@ -2466,8 +2466,8 @@
     ]
   },
   {
-    "route": "/es/charla-cirugia-cartagena-doral/",
-    "file": "dist/es/charla-cirugia-cartagena-doral/index.html",
+    "route": "/es/conversatorio-belleza-estetica-doral/",
+    "file": "dist/es/conversatorio-belleza-estetica-doral/index.html",
     "ads": false,
     "lang": "es",
     "noindex": true,
@@ -2476,11 +2476,11 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/charla-cirugia-cartagena-doral/"
+        "route": "/es/conversatorio-belleza-estetica-doral/"
       },
       {
         "lang": "en",
-        "route": "/en/plastic-surgery-cartagena-talk-doral/"
+        "route": "/en/beauty-aesthetics-talk-doral/"
       }
     ]
   },

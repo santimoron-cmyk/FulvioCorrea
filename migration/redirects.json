@@ -445,42 +445,82 @@
     },
     {
       "from": "/mommy-makeover-talk-doral",
-      "to": "/plastic-surgery-cartagena-talk-doral/",
+      "to": "/beauty-aesthetics-talk-doral/",
       "status": 301
     },
     {
       "from": "/mommy-makeover-talk-doral/",
-      "to": "/plastic-surgery-cartagena-talk-doral/",
+      "to": "/beauty-aesthetics-talk-doral/",
       "status": 301
     },
     {
       "from": "/en/mommy-makeover-talk-doral",
-      "to": "/plastic-surgery-cartagena-talk-doral/",
+      "to": "/beauty-aesthetics-talk-doral/",
       "status": 301
     },
     {
       "from": "/en/mommy-makeover-talk-doral/",
-      "to": "/plastic-surgery-cartagena-talk-doral/",
+      "to": "/beauty-aesthetics-talk-doral/",
       "status": 301
     },
     {
       "from": "/es/mommy-makeover-talk-doral",
-      "to": "/es/charla-cirugia-cartagena-doral/",
+      "to": "/es/conversatorio-belleza-estetica-doral/",
       "status": 301
     },
     {
       "from": "/es/mommy-makeover-talk-doral/",
-      "to": "/es/charla-cirugia-cartagena-doral/",
+      "to": "/es/conversatorio-belleza-estetica-doral/",
       "status": 301
     },
     {
       "from": "/es/charla-mommy-makeover-doral",
-      "to": "/es/charla-cirugia-cartagena-doral/",
+      "to": "/es/conversatorio-belleza-estetica-doral/",
       "status": 301
     },
     {
       "from": "/es/charla-mommy-makeover-doral/",
-      "to": "/es/charla-cirugia-cartagena-doral/",
+      "to": "/es/conversatorio-belleza-estetica-doral/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-cartagena-talk-doral",
+      "to": "/beauty-aesthetics-talk-doral/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-cartagena-talk-doral/",
+      "to": "/beauty-aesthetics-talk-doral/",
+      "status": 301
+    },
+    {
+      "from": "/en/plastic-surgery-cartagena-talk-doral",
+      "to": "/beauty-aesthetics-talk-doral/",
+      "status": 301
+    },
+    {
+      "from": "/en/plastic-surgery-cartagena-talk-doral/",
+      "to": "/beauty-aesthetics-talk-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/plastic-surgery-cartagena-talk-doral",
+      "to": "/es/conversatorio-belleza-estetica-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/plastic-surgery-cartagena-talk-doral/",
+      "to": "/es/conversatorio-belleza-estetica-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/charla-cirugia-cartagena-doral",
+      "to": "/es/conversatorio-belleza-estetica-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/charla-cirugia-cartagena-doral/",
+      "to": "/es/conversatorio-belleza-estetica-doral/",
       "status": 301
     },
     {
@@ -704,16 +744,6 @@
       "status": 301
     },
     {
-      "from": "/es/plastic-surgery-cartagena-talk-doral",
-      "to": "/es/charla-cirugia-cartagena-doral/",
-      "status": 301
-    },
-    {
-      "from": "/es/plastic-surgery-cartagena-talk-doral/",
-      "to": "/es/charla-cirugia-cartagena-doral/",
-      "status": 301
-    },
-    {
       "from": "/es/procedures/breast-lift-reduction",
       "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
       "status": 301
@@ -771,6 +801,16 @@
     {
       "from": "/es/blog/category/breast-surgery/",
       "to": "/es/blog/categoria/cirugia-mamaria/",
+      "status": 301
+    },
+    {
+      "from": "/es/beauty-aesthetics-talk-doral",
+      "to": "/es/conversatorio-belleza-estetica-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/beauty-aesthetics-talk-doral/",
+      "to": "/es/conversatorio-belleza-estetica-doral/",
       "status": 301
     },
     {
@@ -1394,13 +1434,13 @@
       "status": 301
     },
     {
-      "from": "/en/plastic-surgery-cartagena-talk-doral/",
-      "to": "/plastic-surgery-cartagena-talk-doral/",
+      "from": "/en/beauty-aesthetics-talk-doral/",
+      "to": "/beauty-aesthetics-talk-doral/",
       "status": 301
     },
     {
-      "from": "/en/plastic-surgery-cartagena-talk-doral",
-      "to": "/plastic-surgery-cartagena-talk-doral/",
+      "from": "/en/beauty-aesthetics-talk-doral",
+      "to": "/beauty-aesthetics-talk-doral/",
       "status": 301
     },
     {
