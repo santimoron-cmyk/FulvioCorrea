@@ -36,9 +36,8 @@ const topEs = [
   ['terms/', 'terminos/'],
   ['testimonials/', 'testimonios/'],
   ['procedures/', 'procedimientos/'],
-  // Event landing. Public URLs are the Aromas shell; -v1 is the previous Fulvio shell (noindex).
+  // Event landing. Public URLs are the Aromas conversatorio. The Fulvio -v1 backup is not published.
   ['beauty-aesthetics-talk-doral/', 'conversatorio-belleza-estetica-doral/'],
-  ['mommy-makeover-talk-doral-v1/', 'charla-mommy-makeover-doral-v1/'],
 ];
 
 // Longest old path first so a hub prefix cannot rewrite a more specific URL first.

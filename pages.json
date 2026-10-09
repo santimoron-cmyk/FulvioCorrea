@@ -1199,29 +1199,11 @@
     ]
   },
   {
-    "route": "/en/mommy-makeover-talk-doral-v1/",
-    "file": "dist/en/mommy-makeover-talk-doral-v1/index.html",
-    "ads": false,
-    "lang": "en",
-    "noindex": true,
-    "pairNoindex": true,
-    "alternates": [
-      {
-        "lang": "en",
-        "route": "/en/mommy-makeover-talk-doral-v1/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/charla-mommy-makeover-doral-v1/"
-      }
-    ]
-  },
-  {
     "route": "/en/beauty-aesthetics-talk-doral/",
     "file": "dist/en/beauty-aesthetics-talk-doral/index.html",
     "ads": false,
     "lang": "en",
-    "noindex": true,
+    "noindex": false,
     "pairNoindex": true,
     "cover": "/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp",
     "alternates": [
@@ -2448,29 +2430,11 @@
     ]
   },
   {
-    "route": "/es/charla-mommy-makeover-doral-v1/",
-    "file": "dist/es/charla-mommy-makeover-doral-v1/index.html",
-    "ads": false,
-    "lang": "es",
-    "noindex": true,
-    "pairNoindex": true,
-    "alternates": [
-      {
-        "lang": "es",
-        "route": "/es/charla-mommy-makeover-doral-v1/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/mommy-makeover-talk-doral-v1/"
-      }
-    ]
-  },
-  {
     "route": "/es/conversatorio-belleza-estetica-doral/",
     "file": "dist/es/conversatorio-belleza-estetica-doral/index.html",
     "ads": false,
     "lang": "es",
-    "noindex": true,
+    "noindex": false,
     "pairNoindex": true,
     "cover": "/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp",
     "alternates": [

@@ -1,6 +1,6 @@
-// Fulvio-branded backup of the earlier Doral Mommy Makeover talk, kept at the -v1 URLs.
+// Shared event constants and the earlier Fulvio-branded Mommy Makeover copy.
 // Public URLs (Aromas shell, event-aromas-view.mjs): /beauty-aesthetics-talk-doral/ and /es/conversatorio-belleza-estetica-doral/.
-// This file is not the live framing. The -v1 pages stay noindex and out of the sitemap.
+// Production does not publish the Fulvio -v1 backup. eventBody stays here so those URLs can be rendered again later; if they are, they must stay noindex and out of the sitemap.
 // To switch the public URLs back, render eventBody here on EVENT_SLUG instead of aromasEventHtml.
 // Form → /api/lead (event-signup.js). The live tag is EVENT_TAG; this backup still sends EVENT_TAG_V1.
 // Copy rules: health-tourism orientation, not a medical consultation; no prices, results, guarantees or clinical detail;

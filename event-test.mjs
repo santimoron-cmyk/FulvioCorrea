@@ -1,26 +1,28 @@
-// Event landing: Aromas shell on the public URLs, previous Fulvio shell at -v1.
-// Both languages, noindex + out of sitemap, hreflang stays inside each pair.
+// Event landing: Aromas shell on the public URLs. The Fulvio -v1 backup is not published.
+// Both languages are in pages.json and the sitemap. Canonical, hreflang and og:url use the production origin.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 const origin=JSON.parse(fs.readFileSync('config.json','utf8')).origin;
+const production=process.env.SITE_ENV?process.env.SITE_ENV==='production':!/^Disallow: \/\s*$/m.test(fs.readFileSync('dist/robots.txt','utf8'));
 const live={
- es:{file:'dist/es/conversatorio-belleza-estetica-doral/index.html',path:'/es/conversatorio-belleza-estetica-doral/',line:'Cualquier valoración médica se realiza directamente con el cirujano, de forma individual.',host:'no realizamos los procedimientos',cta:'Reservar mi cupo',bio:'+15 años de experiencia',chosen:'te elegimos para este encuentro exclusivo',eyebrow:'Para nuestras clientas preferidas',journey:'Aprender y decidir, con calma.',bites:'vino y picadas',free:'orientación educativa y gratuita',date:'viernes 6 de noviembre de 2026, 6:00 p. m.',travel:'Muchos pacientes del Dr. Correa viajan desde Estados Unidos',unsure:'Aún no lo sé',guest:'Invitado especial',access:'Acceso directo',nonsurgical:'tratamientos no quirúrgicos de belleza y estética',cartagena:'Operarte en Cartagena.',title:'Conversatorio de belleza 2026 · Aromas Med Spa Doral'},
- en:{file:'dist/beauty-aesthetics-talk-doral/index.html',path:'/beauty-aesthetics-talk-doral/',line:'Any medical evaluation is done directly with the surgeon, individually.',host:'do not perform the plastic surgery procedures',cta:'Save my spot',bio:'15+ years of experience',chosen:'we chose you for this exclusive gathering',eyebrow:'For our preferred clients',journey:'Learn and decide, calmly.',bites:'wine and light bites',free:'free educational orientation',date:'Friday, November 6, 2026, 6:00 PM',travel:'Many of Dr. Correa’s patients travel from the United States',unsure:'Not sure yet',guest:'Special guest',access:'Direct access',nonsurgical:'non-surgical beauty and aesthetics treatments',cartagena:'Surgery in Cartagena.',title:'Beauty and aesthetics talk 2026 · Aromas Med Spa Doral'}
-};
-const backup={
- es:{file:'dist/es/charla-mommy-makeover-doral-v1/index.html',path:'/es/charla-mommy-makeover-doral-v1/',line:live.es.line,host:'no realiza el procedimiento'},
- en:{file:'dist/mommy-makeover-talk-doral-v1/index.html',path:'/mommy-makeover-talk-doral-v1/',line:live.en.line,host:'does not perform the Mommy Makeover procedure'}
+ es:{file:'dist/es/conversatorio-belleza-estetica-doral/index.html',path:'/es/conversatorio-belleza-estetica-doral/',route:'/es/conversatorio-belleza-estetica-doral/',line:'Cualquier valoración médica se realiza directamente con el cirujano, de forma individual.',host:'no realizamos los procedimientos',cta:'Reservar mi cupo',bio:'+15 años de experiencia',chosen:'te elegimos para este encuentro exclusivo',eyebrow:'Para nuestras clientas preferidas',journey:'Aprender y decidir, con calma.',bites:'vino y picadas',free:'orientación educativa y gratuita',date:'viernes 6 de noviembre de 2026, 6:00 p. m.',travel:'Muchos pacientes del Dr. Correa viajan desde Estados Unidos',unsure:'Aún no lo sé',guest:'Invitado especial',access:'Acceso directo',nonsurgical:'tratamientos no quirúrgicos de belleza y estética',cartagena:'Operarte en Cartagena.',title:'Conversatorio de belleza 2026 · Aromas Med Spa Doral'},
+ en:{file:'dist/beauty-aesthetics-talk-doral/index.html',path:'/beauty-aesthetics-talk-doral/',route:'/en/beauty-aesthetics-talk-doral/',line:'Any medical evaluation is done directly with the surgeon, individually.',host:'do not perform the plastic surgery procedures',cta:'Save my spot',bio:'15+ years of experience',chosen:'we chose you for this exclusive gathering',eyebrow:'For our preferred clients',journey:'Learn and decide, calmly.',bites:'wine and light bites',free:'free educational orientation',date:'Friday, November 6, 2026, 6:00 PM',travel:'Many of Dr. Correa’s patients travel from the United States',unsure:'Not sure yet',guest:'Special guest',access:'Direct access',nonsurgical:'non-surgical beauty and aesthetics treatments',cartagena:'Surgery in Cartagena.',title:'Beauty and aesthetics talk 2026 · Aromas Med Spa Doral'}
 };
 const sitemap=fs.readFileSync('dist/sitemap.xml','utf8');
+const pagesJson=JSON.parse(fs.readFileSync('pages.json','utf8'));
 function pair(pages,label){
  for(const [lang,p] of Object.entries(pages)){
   const h=fs.readFileSync(p.file,'utf8'),main=h.match(/<main[^>]*>([\s\S]*?)<\/main>/)[1];
-  assert.match(h,/<meta name="robots" content="noindex, nofollow">/,label+' '+lang+' noindex');
-  assert.ok(!sitemap.includes(p.path),label+' '+lang+' not in sitemap');
+  assert.match(h,new RegExp(`<meta name="robots" content="${production?'index, follow':'noindex, nofollow'}">`),label+' '+lang+' robots');
+  assert.ok(sitemap.includes('<loc>'+origin+p.path+'</loc>'),label+' '+lang+' in sitemap');
+  assert.ok(!sitemap.includes('mommy-makeover-talk-doral-v1')&&!sitemap.includes('charla-mommy-makeover-doral-v1'),label+' '+lang+' v1 out of sitemap');
+  const listed=pagesJson.find(x=>x.route===p.route);
+  assert.ok(listed&&listed.noindex===false,label+' '+lang+' pages.json');
+  assert.ok(h.includes(`rel="canonical" href="${origin}${p.path}"`),label+' '+lang+' canonical');
+  assert.ok(h.includes(`property="og:url" content="${origin}${p.path}"`),label+' '+lang+' og:url');
   assert.ok(h.includes(`hreflang="es" href="${origin}${pages.es.path}"`)&&h.includes(`hreflang="en" href="${origin}${pages.en.path}"`)&&h.includes(`hreflang="x-default" href="${origin}${pages.en.path}"`),label+' '+lang+' hreflang pair');
-  const foreign=pages===live?backup:live;
-  assert.ok(!h.includes(`hreflang="en" href="${origin}${foreign.en.path}"`)&&!h.includes(`hreflang="es" href="${origin}${foreign.es.path}"`),label+' '+lang+' hreflang stays in its pair');
+  assert.ok(!h.includes('mommy-makeover-talk-doral-v1')&&!h.includes('charla-mommy-makeover-doral-v1'),label+' '+lang+' hreflang stays off v1');
   const ev=JSON.parse(h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]).find(x=>x['@type']==='Event');
   assert.ok(ev,label+' '+lang+' Event schema');assert.equal(ev.location.name,'Aromas Med Spa Doral');assert.equal(ev.location.address.postalCode,'33178');assert.equal(ev.url,origin+p.path);
   assert.ok(main.includes(p.line),label+' '+lang+' medical-evaluation line');assert.ok(main.includes(p.host),label+' '+lang+' Aromas does not perform the procedure');
@@ -33,7 +35,6 @@ function pair(pages,label){
  }
 }
 pair(live,'live');
-pair(backup,'backup');
 for(const [lang,p] of Object.entries(live)){
  assert.ok(p.html.includes('data-event-shell="aromas"'),lang+' aromas shell');
  assert.ok(p.main.includes('data-event-tag="conversatorio-belleza-estetica-doral-nov2026"'),lang+' event tag');
@@ -84,26 +85,17 @@ assert.ok(signup.includes('Friday, November 6, 2026, 6:00 PM')&&signup.includes(
 assert.ok(!/jueves 6 de noviembre de 2026|Thursday, November 6, 2026/.test(signup),'confirmation weekday is Friday');
 assert.ok(signup.includes("hasInterest?(labels[picked]?picked:'undecided'):''")&&signup.includes("procedure=hasInterest?interest:'mommy-makeover'"),'live procedure follows interest; v1 stays mommy-makeover');
 assert.ok(signup.includes("if(hasInterest)body.procedure_interest=interest")&&signup.includes("UTM_KEY='fc_event_utm'"),'procedure_interest always sent; landing UTMs persist');
-for(const [lang,p] of Object.entries(backup)){
- assert.ok(p.main.includes('data-event-tag="charla-mommy-makeover-doral-oct2026"'),lang+' backup keeps its event tag');
- assert.ok(p.main.includes('27')&&p.main.includes('29')&&/por confirmar|to be confirmed/.test(p.main),lang+' backup keeps tentative dates');
- assert.ok(!p.html.includes('id="que-es"')&&!p.main.includes('id="otros"')&&!p.main.includes('name="procedure_interest"'),lang+' backup keeps the previous copy');
- assert.ok(p.main.includes('class="event-hero'),lang+' fulvio shell');
- assert.ok(!p.html.includes('data-event-shell="aromas"'),lang+' backup is not the aromas shell');
- assert.ok(!p.html.includes('viernes 6 de noviembre de 2026')&&!p.html.includes('Friday, November 6, 2026'),lang+' backup keeps its own dates');
- for(const href of ['https://www.instagram.com/drfulviocorrea/','https://aromaslaser.com/','https://fulviocorrea.com/'])assert.ok(p.main.includes('href="'+href),lang+' link '+href);
- assert.ok(p.main.includes('/assets/aromas-med-spa-doral-logo-white.webp'),lang+' v1 partner logo');
- assert.ok(!fs.existsSync(lang==='es'?'dist/es/charla-mommy-makeover-doral/index.html':'dist/mommy-makeover-talk-doral/index.html'),lang+' old live path is not a page');
- assert.ok(!fs.existsSync(lang==='es'?'dist/es/charla-cirugia-cartagena-doral/index.html':'dist/plastic-surgery-cartagena-talk-doral/index.html'),lang+' previous staging path is not a page');
-}
+for(const file of ['dist/es/charla-mommy-makeover-doral/index.html','dist/mommy-makeover-talk-doral/index.html','dist/es/charla-cirugia-cartagena-doral/index.html','dist/plastic-surgery-cartagena-talk-doral/index.html','dist/es/charla-mommy-makeover-doral-v1/index.html','dist/mommy-makeover-talk-doral-v1/index.html'])assert.ok(!fs.existsSync(file),file+' is not a page');
 const rules=JSON.parse(fs.readFileSync('migration/redirects.json','utf8')).redirects;
 assert.equal(rules.find(r=>r.from==='/mommy-makeover-talk-doral/')?.to,'/beauty-aesthetics-talk-doral/');
+assert.equal(rules.find(r=>r.from==='/en/mommy-makeover-talk-doral/')?.to,'/beauty-aesthetics-talk-doral/');
 assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral/')?.to,'/es/conversatorio-belleza-estetica-doral/');
 assert.equal(rules.find(r=>r.from==='/plastic-surgery-cartagena-talk-doral/')?.to,'/beauty-aesthetics-talk-doral/');
-assert.equal(rules.find(r=>r.from==='/es/charla-cirugia-cartagena-doral/')?.to,'/es/conversatorio-belleza-estetica-doral/');
 assert.equal(rules.find(r=>r.from==='/en/plastic-surgery-cartagena-talk-doral/')?.to,'/beauty-aesthetics-talk-doral/');
-assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral-v1/')?.to,undefined,'v1 Spanish path is the page, not a redirect away');
-console.log('PASS: Aromas event landing ES/EN and Fulvio v1 backups — noindex, no sitemap, separate hreflang pairs, Event schema, copy rules, live form.');
+assert.equal(rules.find(r=>r.from==='/es/charla-cirugia-cartagena-doral/')?.to,'/es/conversatorio-belleza-estetica-doral/');
+assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral-v1/')?.to,undefined,'v1 Spanish path is not published');
+assert.equal(rules.find(r=>r.from==='/mommy-makeover-talk-doral-v1/')?.to,undefined,'v1 English path is not published');
+console.log('PASS: Aromas event landing ES/EN — sitemap, production canonicals, hreflang pair, Event schema, copy rules, live form. Fulvio v1 is not published.');
 
 function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest}={}){
  const requests=[];const listeners={};
