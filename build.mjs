@@ -3,7 +3,7 @@
 import {minify} from 'terser';
 import fs from 'node:fs';
 import {resolveSiteEnv} from './site-env.mjs';
-import {prepareDist,checkSourceAssets,checkDistAssets,sourceReferences,sourceAssets} from './assets.mjs';
+import {prepareDist,checkSourceAssets,checkDistAssets,sourceReferences,sourceAssets,STATIC_DEPLOY} from './assets.mjs';
 import {IMAGE_RENAMES,buildImageDerivatives,decorateDistImages,pruneUnreferencedAssets} from './media.mjs';
 import {writeCloudflareAdapter} from './cloudflare.mjs';
 // Any failure prints a readable message (no stack noise) and exits with code 1, which fails the Cloudflare build.
@@ -18,7 +18,7 @@ const referenced=new Set(sourceReferences().filter(r=>!r.draft).map(r=>r.asset))
 for(const name of Object.values(IMAGE_RENAMES))referenced.add(name);
 for(const name of Object.keys(IMAGE_RENAMES))referenced.delete(name);
 for(const asset of [...referenced]){if(!/^blog-.+\.webp$/.test(asset)||asset.includes('-og.')||/-\d+\.webp$/.test(asset))continue;for(const extra of ['.avif','-800.webp','-800.avif','-og.webp','-og.avif','-og.jpg'].map(suffix=>asset.replace(/\.webp$/,suffix)))if(fs.existsSync('assets/'+extra))referenced.add(extra);}
-const skipped=sourceAssets().filter(f=>!referenced.has(f)&&!f.startsWith('fonts/'));
+const skipped=sourceAssets().filter(f=>!referenced.has(f)&&!f.startsWith('fonts/')&&!STATIC_DEPLOY.has(f));
 if(skipped.length)console.warn('Excluded from deploy (kept in assets/): '+skipped.join(', '));
 // 2. Fresh dist/ + copy of referenced assets, then responsive/OG/icon derivatives.
 console.log(`Assets: ${prepareDist(referenced)} files copied from assets/ to dist/assets/ (${src.references} distinct references checked).`);

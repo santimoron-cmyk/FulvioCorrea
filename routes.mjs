@@ -36,8 +36,8 @@ const topEs = [
   ['terms/', 'terminos/'],
   ['testimonials/', 'testimonios/'],
   ['procedures/', 'procedimientos/'],
-  // Event landing (event-view.mjs).
-  ['mommy-makeover-talk-doral/', 'charla-mommy-makeover-doral/'],
+  // Event landing. Public URLs are the Aromas conversatorio. The Fulvio -v1 backup is not published.
+  ['beauty-aesthetics-talk-doral/', 'conversatorio-belleza-estetica-doral/'],
 ];
 
 // Longest old path first so a hub prefix cannot rewrite a more specific URL first.
