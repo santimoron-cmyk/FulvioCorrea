@@ -8,7 +8,7 @@ tags: ["rinoplastia-colombia", "cirugia-de-nariz", "septorrinoplastia", "recuper
 cover: "/assets/blog-rhinoplasty-colombia.webp"
 coverAlt: "Sombrero de ala ancha, gafas de sol dobladas, protector solar y una libreta cerrada sobre un escritorio de madera junto a postigos coloniales verdes en Cartagena"
 date: "2026-10-07"
-updated: "2026-10-07"
+updated: "2026-10-09"
 author: "fulvio-correa"
 translationOf: "rhinoplasty-colombia"
 sources: ["https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://cirugiaplastica.org.co/procedimientos/rinoplastia/","https://www.eltiempo.com/salud/sociedad-de-cirugia-plastica-entrega-cinco-recomendaciones-a-tener-en-cuenta-antes-de-realizarse-una-intervencion-estetico-quirurgica-3556851","https://medlineplus.gov/spanish/ency/article/002983.htm","https://www.mayoclinic.org/tests-procedures/rhinoplasty/about/pac-20384532","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.plasticsurgery.org/cosmetic-procedures/rhinoplasty/recovery","https://my.clevelandclinic.org/health/treatments/11011-rhinoplasty","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.nhs.uk/conditions/cosmetic-procedures/cosmetic-surgery-abroad/","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/post-surgery-considerations-abroad/","https://cirugiaplastica.org.co/buscar-cirujano/","https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
@@ -67,6 +67,8 @@ No hay una cifra que sirva para todo el mundo, pero las fuentes coinciden en los
 | Día 14 | Avianca permite viajar después de cirugía facial estética (otra línea de la misma política) | Avianca |
 | Día 15 | Lifting facial o combinación de dos o más procedimientos faciales, según evolución | Avianca |
 | Últimos 10 días antes del vuelo | Constancia médica de que estás en condiciones de viajar | Avianca |
+
+Si en el plan entra un lifting facial, aplica la línea de 15 días; en la guía de [lifting facial en Colombia](/es/blog/lifting-facial-colombia/) explicamos cómo cambia la estadía.
 
 Cómo hacer la cuenta:
 
