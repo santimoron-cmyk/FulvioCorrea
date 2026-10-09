@@ -46,16 +46,15 @@ assert.equal(r.status,200);sent=calls.at(-1).body;assert.equal(sent.event,'lead_
 // The live Cartagena tag takes procedure from procedure_interest (default undecided). The -v1 tag keeps the submitted procedure.
 {const tag='charla-cirugia-cartagena-doral-nov2026';const ev=o=>created({procedure:'mommy-makeover',procedure_label:'Mommy Makeover',email:'test@example.com',city:'Doral',companion:'yes',event_tag:tag,form_id:'event-signup',...o});
  const before=calls.length;r=await call(request(ev()),env);assert.equal(r.status,200);sent=calls.at(-1).body;assert.equal(calls.length,before+1);
- for(const [k,v] of Object.entries({event_tag:tag,tags:tag,city:'Doral',companion:'yes',lead_source_detail:'event_signup',email:'test@example.com',lead_source:'website',procedure:'undecided',procedure_label:'Aún no lo sé / Not sure yet'}))assert.equal(sent[k],v,'event '+k);
- assert.match(sent.summary,/^Registro evento: .*Doral/);assert.match(sent.summary,/Ciudad: Doral \| Acompañante: Sí/);assert.match(sent.summary,/Tag: charla-cirugia-cartagena-doral-nov2026/);assert.match(sent.summary,/Procedimiento: Aún no lo sé \/ Not sure yet/);
- assert.equal(sent.procedure_interest,undefined,'interest omitted when blank');
+ for(const [k,v] of Object.entries({event_tag:tag,tags:tag,city:'Doral',companion:'yes',lead_source_detail:'event_signup',email:'test@example.com',lead_source:'website',procedure:'undecided',procedure_label:'Aún no lo sé / Not sure yet',procedure_interest:'undecided',procedure_interest_label:'Aún no lo sé / Not sure yet',language:'es',utm_source:'google',utm_medium:'cpc',utm_campaign:'lipo-es'}))assert.equal(sent[k],v,'event '+k);
+ assert.match(sent.summary,/^Registro evento: .*Doral/);assert.match(sent.summary,/Ciudad: Doral \| Acompañante: Sí/);assert.match(sent.summary,/Tag: charla-cirugia-cartagena-doral-nov2026/);assert.match(sent.summary,/Procedimiento: Aún no lo sé \/ Not sure yet/);assert.match(sent.summary,/Interés: Aún no lo sé \/ Not sure yet/);
  r=await call(request(ev({procedure_interest:'breast'})),env);assert.equal(r.status,200);sent=calls.at(-1).body;
  assert.equal(sent.procedure,'breast');assert.equal(sent.procedure_label,'Busto / Breast');assert.equal(sent.procedure_interest,'breast');assert.equal(sent.procedure_interest_label,'Busto / Breast');assert.match(sent.summary,/Interés: Busto \/ Breast/);assert.match(sent.summary,/Procedimiento: Busto \/ Breast/);
  r=await call(request(ev({procedure_interest:'mommy-makeover'})),env);assert.equal(r.status,200);sent=calls.at(-1).body;
  assert.equal(sent.procedure,'mommy-makeover');assert.equal(sent.procedure_interest,'mommy-makeover');
  r=await call(request(ev({procedure_interest:'undecided'})),env);assert.equal(r.status,200);sent=calls.at(-1).body;
  assert.equal(sent.procedure,'undecided');assert.equal(sent.procedure_interest,'undecided');
- r=await call(request(ev({procedure_interest:''})),env);assert.equal(r.status,200);sent=calls.at(-1).body;assert.equal(sent.procedure,'undecided');assert.equal(sent.procedure_interest,undefined,'empty interest stays off the payload');
+ r=await call(request(ev({procedure_interest:''})),env);assert.equal(r.status,200);sent=calls.at(-1).body;assert.equal(sent.procedure,'undecided');assert.equal(sent.procedure_label,'Aún no lo sé / Not sure yet');assert.equal(sent.procedure_interest,'undecided','blank interest defaults to undecided on the live tag');
  for(const bad of [{event_tag:'other-tag'},{email:''},{city:''},{companion:'maybe'},{companion:''},{procedure_interest:'implants'}]){r=await call(request(ev(bad)),env);assert.equal(r.status,422,'event '+JSON.stringify(bad));}
  const old='charla-mommy-makeover-doral-oct2026';r=await call(request(ev({event_tag:old})),env);assert.equal(r.status,200);sent=calls.at(-1).body;
  assert.equal(sent.event_tag,old);assert.equal(sent.procedure,'mommy-makeover','v1 backup tag keeps the submitted procedure');assert.equal(sent.procedure_interest,undefined);

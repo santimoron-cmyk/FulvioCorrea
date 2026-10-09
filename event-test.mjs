@@ -2,10 +2,11 @@
 // Both languages, noindex + out of sitemap, hreflang stays inside each pair.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import vm from 'node:vm';
 const origin=JSON.parse(fs.readFileSync('config.json','utf8')).origin;
 const live={
- es:{file:'dist/es/charla-cirugia-cartagena-doral/index.html',path:'/es/charla-cirugia-cartagena-doral/',line:'Cualquier valoración médica se realiza directamente con el cirujano, de forma individual.',host:'no realizamos los procedimientos',cta:'Reservar mi cupo',bio:'+15 años de experiencia',chosen:'te elegimos para este encuentro exclusivo',eyebrow:'Para nuestras clientas preferidas',journey:'Operarte en Cartagena, con calma.',bites:'vino y picadas',free:'orientación educativa y gratuita',date:'jueves 6 de noviembre de 2026, 6:00 p. m.',travel:'Muchos pacientes del Dr. Correa viajan desde Estados Unidos',unsure:'Aún no lo sé',guest:'Invitado especial'},
- en:{file:'dist/plastic-surgery-cartagena-talk-doral/index.html',path:'/plastic-surgery-cartagena-talk-doral/',line:'Any medical evaluation is done directly with the surgeon, individually.',host:'do not perform the plastic surgery procedures',cta:'Save my spot',bio:'15+ years of experience',chosen:'we chose you for this exclusive gathering',eyebrow:'For our preferred clients',journey:'Surgery in Cartagena, calmly explained.',bites:'wine and light bites',free:'free educational orientation',date:'Thursday, November 6, 2026, 6:00 PM',travel:'Many of Dr. Correa’s patients travel from the United States',unsure:'Not sure yet',guest:'Special guest'}
+ es:{file:'dist/es/charla-cirugia-cartagena-doral/index.html',path:'/es/charla-cirugia-cartagena-doral/',line:'Cualquier valoración médica se realiza directamente con el cirujano, de forma individual.',host:'no realizamos los procedimientos',cta:'Reservar mi cupo',bio:'+15 años de experiencia',chosen:'te elegimos para este encuentro exclusivo',eyebrow:'Para nuestras clientas preferidas',journey:'Operarte en Cartagena, con calma.',bites:'vino y picadas',free:'orientación educativa y gratuita',date:'viernes 6 de noviembre de 2026, 6:00 p. m.',travel:'Muchos pacientes del Dr. Correa viajan desde Estados Unidos',unsure:'Aún no lo sé',guest:'Invitado especial'},
+ en:{file:'dist/plastic-surgery-cartagena-talk-doral/index.html',path:'/plastic-surgery-cartagena-talk-doral/',line:'Any medical evaluation is done directly with the surgeon, individually.',host:'do not perform the plastic surgery procedures',cta:'Save my spot',bio:'15+ years of experience',chosen:'we chose you for this exclusive gathering',eyebrow:'For our preferred clients',journey:'Surgery in Cartagena, calmly explained.',bites:'wine and light bites',free:'free educational orientation',date:'Friday, November 6, 2026, 6:00 PM',travel:'Many of Dr. Correa’s patients travel from the United States',unsure:'Not sure yet',guest:'Special guest'}
 };
 const backup={
  es:{file:'dist/es/charla-mommy-makeover-doral-v1/index.html',path:'/es/charla-mommy-makeover-doral-v1/',line:live.es.line,host:'no realiza el procedimiento'},
@@ -48,6 +49,10 @@ for(const [lang,p] of Object.entries(live)){
  assert.ok(hero.includes(p.eyebrow)&&hero.includes(p.chosen)&&hero.includes(p.free)&&hero.includes(p.bites)&&hero.includes(p.date),lang+' preferred-client intro and confirmed date in the hero');
  assert.ok(!/27 al 29|October 27|por confirmar|to be confirmed|bebidas y pasabocas|drinks and light bites/i.test(p.html),lang+' old date and drinks wording are gone');
  assert.equal(p.event.startDate,'2026-11-06T18:00:00-05:00',lang+' Event start');
+ assert.ok(p.event.description.includes(p.date),lang+' JSON-LD description uses Friday');
+ assert.ok(p.html.includes(`<meta name="description" content="${p.event.description.replaceAll('"','&quot;')}">`),lang+' meta description');
+ assert.ok(p.html.includes(`property="og:description" content="${p.event.description.replaceAll('"','&quot;')}"`),lang+' OG description');
+ assert.ok(!/jueves 6 de noviembre de 2026|Thursday, November 6, 2026/.test(p.html),lang+' Thursday wording is gone');
  assert.ok(!String(p.event.endDate||'').includes('2026-10'),lang+' October window removed');
  assert.ok(p.event.name=== (lang==='es'?'Cirugía en Cartagena · Aromas Med Spa Doral':'Surgery in Cartagena · Aromas Med Spa Doral'),lang+' schema name');
  assert.ok(p.html.includes(p.date)&&p.html.includes(p.bites),lang+' date and wine in meta or body');
@@ -69,15 +74,18 @@ for(const [lang,p] of Object.entries(live)){
  assert.ok(p.main.includes(lang==='es'?'Te recibimos en Aromas Med Spa, Doral.':'We welcome you at Aromas Med Spa, Doral.'),lang+' Aromas welcomes you in Doral');
 }
 const signup=fs.readFileSync('event-signup.js','utf8');
-assert.ok(signup.includes('jueves 6 de noviembre de 2026, 6:00 p. m.')&&signup.includes('vino y picadas'),'ES confirmation');
-assert.ok(signup.includes('Thursday, November 6, 2026, 6:00 PM')&&signup.includes('wine and light bites'),'EN confirmation');
-assert.ok(signup.includes("hasInterest?(labels[interest]?interest:'undecided'):'mommy-makeover'"),'live procedure follows interest; v1 stays mommy-makeover');
+assert.ok(signup.includes('viernes 6 de noviembre de 2026, 6:00 p. m.')&&signup.includes('vino y picadas'),'ES confirmation');
+assert.ok(signup.includes('Friday, November 6, 2026, 6:00 PM')&&signup.includes('wine and light bites'),'EN confirmation');
+assert.ok(!/jueves 6 de noviembre de 2026|Thursday, November 6, 2026/.test(signup),'confirmation weekday is Friday');
+assert.ok(signup.includes("hasInterest?(labels[picked]?picked:'undecided'):''")&&signup.includes("procedure=hasInterest?interest:'mommy-makeover'"),'live procedure follows interest; v1 stays mommy-makeover');
+assert.ok(signup.includes("if(hasInterest)body.procedure_interest=interest")&&signup.includes("UTM_KEY='fc_event_utm'"),'procedure_interest always sent; landing UTMs persist');
 for(const [lang,p] of Object.entries(backup)){
  assert.ok(p.main.includes('data-event-tag="charla-mommy-makeover-doral-oct2026"'),lang+' backup keeps its event tag');
  assert.ok(p.main.includes('27')&&p.main.includes('29')&&/por confirmar|to be confirmed/.test(p.main),lang+' backup keeps tentative dates');
  assert.ok(!p.html.includes('id="que-es"')&&!p.main.includes('id="otros"')&&!p.main.includes('name="procedure_interest"'),lang+' backup keeps the previous copy');
  assert.ok(p.main.includes('class="event-hero'),lang+' fulvio shell');
  assert.ok(!p.html.includes('data-event-shell="aromas"'),lang+' backup is not the aromas shell');
+ assert.ok(!p.html.includes('viernes 6 de noviembre de 2026')&&!p.html.includes('Friday, November 6, 2026'),lang+' backup keeps its own dates');
  for(const href of ['https://www.instagram.com/drfulviocorrea/','https://aromaslaser.com/','https://fulviocorrea.com/'])assert.ok(p.main.includes('href="'+href),lang+' link '+href);
  assert.ok(p.main.includes('/assets/aromas-med-spa-doral-logo-white.webp'),lang+' v1 partner logo');
  assert.ok(!fs.existsSync(lang==='es'?'dist/es/charla-mommy-makeover-doral/index.html':'dist/mommy-makeover-talk-doral/index.html'),lang+' old live path is not a page');
@@ -87,3 +95,56 @@ assert.equal(rules.find(r=>r.from==='/mommy-makeover-talk-doral/')?.to,'/plastic
 assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral/')?.to,'/es/charla-cirugia-cartagena-doral/');
 assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral-v1/')?.to,undefined,'v1 Spanish path is the page, not a redirect away');
 console.log('PASS: Aromas event landing ES/EN and Fulvio v1 backups — noindex, no sitemap, separate hreflang pairs, Event schema, copy rules, live form.');
+
+function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest}={}){
+ const requests=[];const listeners={};
+ const el=(value,extra={})=>({value,checked:false,disabled:false,type:'text',validation:'',validity:{customError:false},dataset:{},textContent:'',setCustomValidity(v){this.validation=v;this.validity.customError=!!v;},addEventListener(){},...extra});
+ const name=el(lang==='es'?'Ana López':'Ana Lopez'),phone=el('+1 305 555 0123'),email=el('ana@example.com'),city=el('Doral'),website=el(''),companion=el('no'),consent=el('',{checked:true,type:'checkbox'}),button=el('',{type:'submit'});
+ const select=interest===undefined?null:el(interest);
+ const consentSpan={dataset:{consentVersion:'event-doral-consent-2026-09-30'},textContent:'contact consent'};
+ const status={textContent:'',className:''};
+ const elements={name,whatsapp:phone,email,city,website,companion,contact_consent:consent};
+ if(select)elements.procedure_interest=select;
+ const form={dataset:{eventTag:shell==='aromas'?'charla-cirugia-cartagena-doral-nov2026':'charla-mommy-makeover-doral-oct2026'},elements,addEventListener(type,fn){listeners[type]=fn;},checkValidity(){return !phone.validation;},reportValidity(){},querySelector(sel){return sel==='[data-consent-version]'?consentSpan:null;},querySelectorAll(){return [name,phone,email,city,button,select].filter(Boolean);}};
+ const sessionStorage={getItem:k=>storage.has(k)?storage.get(k):null,setItem:(k,v)=>storage.set(k,String(v))};
+ const location=new URL(href);
+ const document={documentElement:{lang},body:{dataset:{eventShell:shell}},title:lang==='es'?'Cirugía en Cartagena':'Surgery in Cartagena',referrer:'',cookie:'',getElementById(id){return id==='event-signup-form'?form:id==='event-signup-status'?status:id==='event-signup-submit'?button:null;}};
+ const context={document,sessionStorage,localStorage:{getItem:()=>null},location,window:{dataLayer:[]},URL,URLSearchParams,fetch:async(url,options)=>{requests.push({url,body:JSON.parse(options.body)});return {ok:true,text:async()=>JSON.stringify({accepted:true})};},AbortController,setTimeout,clearTimeout,crypto:{randomUUID:()=>'11111111-1111-4111-8111-111111111111'},Intl};
+ vm.runInNewContext(fs.readFileSync('event-signup.js','utf8'),context);
+ return {requests,status,storage,submit:()=>listeners.submit({preventDefault(){}})};
+}
+const talk='https://fulviocorrea.com/es/charla-cirugia-cartagena-doral/?utm_source=instagram&utm_medium=social&utm_campaign=doral-nov';
+let page=bootSignup({href:talk,interest:''});
+assert.deepEqual(JSON.parse(page.storage.get('fc_event_utm')),{utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov'},'landing UTMs stored for the tab');
+await page.submit();
+let body=page.requests[0].body;
+for(const [k,v] of Object.entries({procedure_interest:'undecided',procedure:'undecided',procedure_label:'Aún no lo sé / Not sure yet',language:'es',event_tag:'charla-cirugia-cartagena-doral-nov2026',utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov',utm_source_last:'instagram',utm_medium_last:'social',utm_campaign_last:'doral-nov',form_id:'event-signup',event:'lead_created'}))assert.equal(body[k],v,'signup.'+k);
+assert.match(page.status.textContent,/viernes 6 de noviembre de 2026, 6:00 p\. m\./,'ES confirmation after submit');
+const kept=page.storage;
+page=bootSignup({href:'https://fulviocorrea.com/es/charla-cirugia-cartagena-doral/',storage:kept,interest:''});
+await page.submit();
+body=page.requests[0].body;
+assert.equal(body.utm_source,'instagram');assert.equal(body.utm_medium,'social');assert.equal(body.utm_campaign,'doral-nov','UTMs survive a reload without the query string');
+page=bootSignup({href:talk,interest:'breast'});
+await page.submit();
+body=page.requests[0].body;
+assert.equal(body.procedure_interest,'breast');assert.equal(body.procedure,'breast');assert.equal(body.procedure_label,'Busto / Breast');
+const prior=new Map([['fc_attribution',JSON.stringify({last_touch:{utm_source:'google',utm_medium:'cpc',utm_campaign:'search',gclid:'g1'},first_touch:{utm_source:'first'}})]]);
+page=bootSignup({lang:'en',href:'https://fulviocorrea.com/plastic-surgery-cartagena-talk-doral/',interest:'face',storage:prior});
+await page.submit();
+body=page.requests[0].body;
+assert.equal(body.language,'en');assert.equal(body.procedure_interest,'face');assert.equal(body.procedure,'face');assert.equal(body.utm_source,'google');assert.equal(body.utm_medium,'cpc');assert.equal(body.utm_campaign,'search');assert.equal(body.gclid,'g1');assert.equal(body.utm_source_first,'first');
+assert.match(page.status.textContent,/Friday, November 6, 2026, 6:00 PM/,'EN confirmation after submit');
+const override=new Map(prior);
+page=bootSignup({lang:'en',href:'https://fulviocorrea.com/plastic-surgery-cartagena-talk-doral/?utm_source=meta&utm_medium=paid&utm_campaign=talk',interest:'undecided',storage:override});
+await page.submit();
+body=page.requests[0].body;
+assert.equal(body.procedure_interest,'undecided');assert.equal(body.procedure,'undecided');assert.equal(body.procedure_label,'Aún no lo sé / Not sure yet');
+assert.equal(body.utm_source,'meta');assert.equal(body.utm_medium,'paid');assert.equal(body.utm_campaign,'talk','landing query wins over an older last touch');assert.equal(body.utm_source_first,'first');
+page=bootSignup({shell:'fulvio',href:'https://fulviocorrea.com/es/charla-mommy-makeover-doral-v1/'});
+await page.submit();
+body=page.requests[0].body;
+assert.equal(body.procedure,'mommy-makeover');assert.equal(body.procedure_label,'Mommy Makeover');assert.equal(body.procedure_interest,undefined,'v1 form has no interest select');
+assert.equal(body.event_tag,'charla-mommy-makeover-doral-oct2026');
+assert.ok(!page.status.textContent.includes('viernes 6 de noviembre'),'v1 confirmation is unchanged');
+console.log('PASS: event sign-up sends procedure_interest (default undecided), keeps procedure/procedure_label, landing UTMs, language and event_tag.');

@@ -38,9 +38,10 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
  const event=string('event',40)||'lead_created',eventId=string('event_id',140)||id,channel=string('channel',20),callTime=string('preferred_call_time',20);
  const timezone=/^(?:UTC|[A-Za-z]+(?:\/[-+\w]+){1,2})$/.test(string('timezone',64))?string('timezone',64):'';
  const consentVersion=/^[-\w.]{1,60}$/.test(string('consent_version',60))?string('consent_version',60):'';
- const eventTag=string('event_tag',80),city=string('city',100).replace(/\s+/g,' '),companion=string('companion',5),interest=string('procedure_interest',40);
+ const eventTag=string('event_tag',80),city=string('city',100).replace(/\s+/g,' '),companion=string('companion',5),interestRaw=string('procedure_interest',40);
  const cartagena=eventTag===EVENT_TAG_CARTAGENA;
- // Live Cartagena sign-ups take the form's procedure of interest. A blank select is undecided, never a hard-coded mommy-makeover.
+ // Live Cartagena sign-ups take the form's procedure of interest. A blank or missing select is undecided, never a hard-coded mommy-makeover. An unknown value is still rejected below.
+ const interest=cartagena&&!interestRaw?'undecided':interestRaw;
  const procedure=cartagena?(PROCEDURE_INTEREST[interest]?interest:'undecided'):string('procedure',60);
  if(eventTag&&(!EVENT_TAGS[eventTag]||!email||!city||!COMPANION[companion])||!eventTag&&companion||interest&&!PROCEDURE_INTEREST[interest])return json({accepted:false,error:'invalid_fields'},422);
  if(!name||!/^\+[1-9]\d{6,14}$/.test(phone)||!yes(input.contact_consent)||!['en','es'].includes(input.language)||!(['other','undecided',...procedures].includes(procedure)||(cartagena&&!!PROCEDURE_INTEREST[procedure]))||!/^[-\w]{8,100}$/.test(id)||!/^[-\w]{8,140}$/.test(eventId)||request.headers.get('idempotency-key')!==eventId||email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
