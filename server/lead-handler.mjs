@@ -10,8 +10,13 @@ const json=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:
 export const LEAD_EVENTS=['lead_created','channel_selected'];
 export const LEAD_CHANNELS=['whatsapp','call','sms','instagram','facebook'];
 // Event sign-ups (event landing pages): only these tags are accepted, so GHL tags stay clean and traceable.
-export const EVENT_TAGS={'charla-mommy-makeover-doral-oct2026':'Charla Mommy Makeover · Aromas Med Spa Doral (oct 2026)'};
+// The live Doral conversatorio uses the November 2026 tag. The previous Cartagena URL and the untouched Fulvio -v1 backup stay on the allow list.
+export const EVENT_TAG_CONVERSATORIO='conversatorio-belleza-estetica-doral-nov2026';
+export const EVENT_TAG_CARTAGENA='charla-cirugia-cartagena-doral-nov2026';
+export const EVENT_TAGS={[EVENT_TAG_CONVERSATORIO]:'Conversatorio belleza y estética · Aromas Med Spa Doral (nov 2026)',[EVENT_TAG_CARTAGENA]:'Charla cirugía en Cartagena · Aromas Med Spa Doral (nov 2026)','charla-mommy-makeover-doral-oct2026':'Charla Mommy Makeover · Aromas Med Spa Doral (oct 2026)'};
 export const COMPANION={yes:'Sí / Yes',no:'No'};
+// Optional topic of interest. On the live conversatorio (and the previous Cartagena tag) procedure follows this value (default undecided).
+export const PROCEDURE_INTEREST={'non-surgical':'Tratamientos no quirúrgicos / Non-surgical treatments',breast:'Cirugía de busto / Breast surgery','abdomen-contour':'Abdomen y contorno / Abdomen and contour',face:'Rostro / Face','mommy-makeover':'Mommy Makeover',undecided:'Aún no lo sé / Not sure yet',abdomen:'Abdomen','lipo-contour':'Liposucción/contorno / Liposuction & contour',other:'Otro / Other'};
 // Labels are bilingual because the CRM task is read by the care team; times are the visitor's local time.
 export const CALL_TIMES={asap:'Lo antes posible / As soon as possible',morning:'Mañana / Morning (8:00–12:00)',afternoon:'Tarde / Afternoon (12:00–17:00)',evening:'Noche / Evening (17:00–20:00)'};
 const CHANNEL_LABELS={whatsapp:'WhatsApp',call:'Llamada / Phone call',sms:'SMS',instagram:'Instagram',facebook:'Facebook'};
@@ -30,25 +35,29 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
  if(input.website)return json({accepted:false,error:'invalid_data'},400);
  const string=(key,max=500)=>typeof input[key]==='string'?input[key].trim().slice(0,max):'';
  const yes=v=>v===true||v==='true'||v==='on';
- const name=string('name',100).replace(/\s+/g,' '),phone=string('phone',30).replace(/[\s().-]/g,''),email=string('email',254),procedure=string('procedure',60),id=string('lead_id',100);
+ const name=string('name',100).replace(/\s+/g,' '),phone=string('phone',30).replace(/[\s().-]/g,''),email=string('email',254),id=string('lead_id',100);
  const event=string('event',40)||'lead_created',eventId=string('event_id',140)||id,channel=string('channel',20),callTime=string('preferred_call_time',20);
  const timezone=/^(?:UTC|[A-Za-z]+(?:\/[-+\w]+){1,2})$/.test(string('timezone',64))?string('timezone',64):'';
  const consentVersion=/^[-\w.]{1,60}$/.test(string('consent_version',60))?string('consent_version',60):'';
- const eventTag=string('event_tag',80),city=string('city',100).replace(/\s+/g,' '),companion=string('companion',5);
- if(eventTag&&(!EVENT_TAGS[eventTag]||!email||!city||!COMPANION[companion])||!eventTag&&companion)return json({accepted:false,error:'invalid_fields'},422);
- if(!name||!/^\+[1-9]\d{6,14}$/.test(phone)||!yes(input.contact_consent)||!['en','es'].includes(input.language)||!['other','undecided',...procedures].includes(procedure)||!/^[-\w]{8,100}$/.test(id)||!/^[-\w]{8,140}$/.test(eventId)||request.headers.get('idempotency-key')!==eventId||email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+ const eventTag=string('event_tag',80),city=string('city',100).replace(/\s+/g,' '),companion=string('companion',5),interestRaw=string('procedure_interest',40);
+ const talk=eventTag===EVENT_TAG_CONVERSATORIO||eventTag===EVENT_TAG_CARTAGENA;
+ // Live sign-ups take the form's topic of interest. A blank or missing select is undecided, never a hard-coded mommy-makeover. An unknown value is still rejected below.
+ const interest=talk&&!interestRaw?'undecided':interestRaw;
+ const procedure=talk?(PROCEDURE_INTEREST[interest]?interest:'undecided'):string('procedure',60);
+ if(eventTag&&(!EVENT_TAGS[eventTag]||!email||!city||!COMPANION[companion])||!eventTag&&companion||interest&&!PROCEDURE_INTEREST[interest])return json({accepted:false,error:'invalid_fields'},422);
+ if(!name||!/^\+[1-9]\d{6,14}$/.test(phone)||!yes(input.contact_consent)||!['en','es'].includes(input.language)||!(['other','undecided',...procedures].includes(procedure)||(talk&&!!PROCEDURE_INTEREST[procedure]))||!/^[-\w]{8,100}$/.test(id)||!/^[-\w]{8,140}$/.test(eventId)||request.headers.get('idempotency-key')!==eventId||email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   ||!LEAD_EVENTS.includes(event)||(event==='channel_selected'?!LEAD_CHANNELS.includes(channel):channel&&!LEAD_CHANNELS.includes(channel))||channel==='call'&&!CALL_TIMES[callTime])return json({accepted:false,error:'invalid_fields'},422);
  // Attribution: flat fields from the widget, or first_touch/last_touch objects (legacy consultation form).
  const touch=v=>{if(typeof v==='string'){try{v=JSON.parse(v);}catch{return {};}}return v&&typeof v==='object'&&!Array.isArray(v)?v:{};};
  const first=touch(input.first_touch),last=touch(input.last_touch),t=(o,k)=>typeof o[k]==='string'?o[k].trim().slice(0,500):'';
  const attribution={};for(const k of ATTRIBUTION){const l=string(k+'_last')||t(last,k);attribution[k]=string(k)||l;attribution[k+'_first']=string(k+'_first')||t(first,k);attribution[k+'_last']=l;}
- const now=clock(),received=new Date(now).toISOString(),[firstName,...rest]=name.split(' '),label=string('procedure_label',100)||procedure;
+ const now=clock(),received=new Date(now).toISOString(),[firstName,...rest]=name.split(' '),label=talk?(PROCEDURE_INTEREST[procedure]||procedure):(string('procedure_label',100)||procedure);
  const preference=channel||'pending',callLabel=channel==='call'?CALL_TIMES[callTime]:'';
  const schedule=channel==='call'?callSchedule(now,callTime,timezone):{call_due_at:'',call_due_at_iso:'',call_window_colombia:''};
  const page=cleanUrl(input.page_url)||cleanUrl(input.conversion_page),path=page?new URL(page).pathname:'';
  const source=[attribution.utm_source,attribution.utm_medium,attribution.utm_campaign].filter(Boolean).join(' / ')||(attribution.gclid||attribution.gbraid||attribution.wbraid?'google ads (click id)':attribution.fbclid?'meta (fbclid)':cleanUrl(input.referrer)?'referral: '+new URL(cleanUrl(input.referrer)).hostname:'direct');
  const headline=eventTag&&event==='lead_created'?'Registro evento: '+EVENT_TAGS[eventTag]:event==='lead_created'?'Nuevo lead web (canal pendiente)':channel==='call'?'Solicitud de llamada':'Eligió '+CHANNEL_LABELS[channel];
- const summary=[headline,name,phone,eventTag&&email?'Email: '+email:'',eventTag?'Ciudad: '+city:'',eventTag?'Acompañante: '+COMPANION[companion]:'',eventTag?'Tag: '+eventTag:'','Procedimiento: '+label,channel==='call'?`Horario preferido: ${callLabel}, hora local del paciente${timezone?' ('+timezone+')':''}`:'',timezone&&channel!=='call'?'Zona horaria: '+timezone:'','Idioma: '+input.language.toUpperCase(),'Fuente: '+source,path?'Página: '+path:'','Lead ID: '+id,channel==='call'?'Llamar: '+schedule.call_window_colombia:''].filter(Boolean).join(' | ');
+ const summary=[headline,name,phone,eventTag&&email?'Email: '+email:'',eventTag?'Ciudad: '+city:'',eventTag?'Acompañante: '+COMPANION[companion]:'',eventTag&&interest?'Interés: '+PROCEDURE_INTEREST[interest]:'',eventTag?'Tag: '+eventTag:'','Procedimiento: '+label,channel==='call'?`Horario preferido: ${callLabel}, hora local del paciente${timezone?' ('+timezone+')':''}`:'',timezone&&channel!=='call'?'Zona horaria: '+timezone:'','Idioma: '+input.language.toUpperCase(),'Fuente: '+source,path?'Página: '+path:'','Lead ID: '+id,channel==='call'?'Llamar: '+schedule.call_window_colombia:''].filter(Boolean).join(' | ');
  const payload={
   event,event_id:eventId,lead_id:id,received_at:received,client_timestamp:string('client_timestamp',40),
   name,full_name:name,first_name:firstName,last_name:rest.join(' '),phone,phone_country:string('phone_country',2),phone_country_code:string('phone_country_code',6),email,
@@ -67,7 +76,7 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
   ...journeyFields(input.journey,now),
   ...( /^[ABCDEFGHJKMNPQRSTUVWXYZ23456789]{5}$/.test(string('ref',5)) ? {ref:string('ref',5)} : {})};
  // Event sign-up: flat fields for the GHL workflow (Add Tag from event_tag/tags; city and companion to custom fields).
- if(eventTag)Object.assign(payload,{event_tag:eventTag,event_label:EVENT_TAGS[eventTag],tags:eventTag,city,companion,companion_label:COMPANION[companion],lead_source_detail:'event_signup'});
+ if(eventTag)Object.assign(payload,{event_tag:eventTag,event_label:EVENT_TAGS[eventTag],tags:eventTag,city,companion,companion_label:COMPANION[companion],lead_source_detail:'event_signup',...(interest?{procedure_interest:interest,procedure_interest_label:PROCEDURE_INTEREST[interest]}:{})});
  for(const k of ['country','message','conversion_page'])if(string(k))payload[k]=string(k,k==='message'?3000:1000);
  if(env.LEAD_CAPTURE_ENABLED!=='true'||!env.LEAD_WEBHOOK_URL)return json({accepted:false,error:'not_configured'},503);
  let webhook;try{webhook=new URL(env.LEAD_WEBHOOK_URL);if(webhook.protocol!=='https:')throw Error();}catch{return json({accepted:false,error:'not_configured'},503);}
