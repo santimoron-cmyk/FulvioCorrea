@@ -23,7 +23,7 @@ review_date: ""
 
 Un **aumento de senos en Colombia** (mamoplastia de aumento) puede planificarse con más claridad si se hacen tres cosas en orden: verificar al cirujano y la institución en los registros oficiales colombianos, confirmar en una valoración que eres candidata y qué técnica corresponde a tu caso, y armar el viaje alrededor de la recuperación, no al revés. Para quien viaja en avión, una cifra que suele cambiar el calendario es esta: Avianca indica que después de una mamoplastia (aumento o reducción) o una pexia mamaria se permite volar a partir de los **14 días**, con certificado médico.
 
-Lo demás —marca de implante, plano de colocación, cuándo volver al trabajo— se decide con tu cirujano. Esta guía te ayuda a llegar a esa conversación con las preguntas correctas.
+Lo demás —marca de implante, plano de colocación, cuándo volver al trabajo— se decide con tu cirujano. Esta guía te ayuda a llegar a esa conversación con las preguntas correctas. El panorama de costo, seguridad y estadía está en la [guía de cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
 
 ## ¿Cómo saber si un cirujano es “el mejor” para tu aumento mamario?
 
