@@ -10,12 +10,13 @@ const json=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:
 export const LEAD_EVENTS=['lead_created','channel_selected'];
 export const LEAD_CHANNELS=['whatsapp','call','sms','instagram','facebook'];
 // Event sign-ups (event landing pages): only these tags are accepted, so GHL tags stay clean and traceable.
-// The live Cartagena talk uses the November tag. The untouched Fulvio -v1 backup still posts the October tag.
+// The live Doral conversatorio uses the November 2026 tag. The previous Cartagena URL and the untouched Fulvio -v1 backup stay on the allow list.
+export const EVENT_TAG_CONVERSATORIO='conversatorio-belleza-estetica-doral-nov2026';
 export const EVENT_TAG_CARTAGENA='charla-cirugia-cartagena-doral-nov2026';
-export const EVENT_TAGS={[EVENT_TAG_CARTAGENA]:'Charla cirugía en Cartagena · Aromas Med Spa Doral (nov 2026)','charla-mommy-makeover-doral-oct2026':'Charla Mommy Makeover · Aromas Med Spa Doral (oct 2026)'};
+export const EVENT_TAGS={[EVENT_TAG_CONVERSATORIO]:'Conversatorio belleza y estética · Aromas Med Spa Doral (nov 2026)',[EVENT_TAG_CARTAGENA]:'Charla cirugía en Cartagena · Aromas Med Spa Doral (nov 2026)','charla-mommy-makeover-doral-oct2026':'Charla Mommy Makeover · Aromas Med Spa Doral (oct 2026)'};
 export const COMPANION={yes:'Sí / Yes',no:'No'};
-// Optional "procedure of interest" on the Doral talk. On the Cartagena tag, procedure follows this value (default undecided).
-export const PROCEDURE_INTEREST={'mommy-makeover':'Mommy Makeover',breast:'Busto / Breast',abdomen:'Abdomen','lipo-contour':'Liposucción/contorno / Liposuction & contour',face:'Rostro / Face',other:'Otro / Other',undecided:'Aún no lo sé / Not sure yet'};
+// Optional topic of interest. On the live conversatorio (and the previous Cartagena tag) procedure follows this value (default undecided).
+export const PROCEDURE_INTEREST={'non-surgical':'Tratamientos no quirúrgicos / Non-surgical treatments',breast:'Cirugía de busto / Breast surgery','abdomen-contour':'Abdomen y contorno / Abdomen and contour',face:'Rostro / Face','mommy-makeover':'Mommy Makeover',undecided:'Aún no lo sé / Not sure yet',abdomen:'Abdomen','lipo-contour':'Liposucción/contorno / Liposuction & contour',other:'Otro / Other'};
 // Labels are bilingual because the CRM task is read by the care team; times are the visitor's local time.
 export const CALL_TIMES={asap:'Lo antes posible / As soon as possible',morning:'Mañana / Morning (8:00–12:00)',afternoon:'Tarde / Afternoon (12:00–17:00)',evening:'Noche / Evening (17:00–20:00)'};
 const CHANNEL_LABELS={whatsapp:'WhatsApp',call:'Llamada / Phone call',sms:'SMS',instagram:'Instagram',facebook:'Facebook'};
@@ -39,18 +40,18 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
  const timezone=/^(?:UTC|[A-Za-z]+(?:\/[-+\w]+){1,2})$/.test(string('timezone',64))?string('timezone',64):'';
  const consentVersion=/^[-\w.]{1,60}$/.test(string('consent_version',60))?string('consent_version',60):'';
  const eventTag=string('event_tag',80),city=string('city',100).replace(/\s+/g,' '),companion=string('companion',5),interestRaw=string('procedure_interest',40);
- const cartagena=eventTag===EVENT_TAG_CARTAGENA;
- // Live Cartagena sign-ups take the form's procedure of interest. A blank or missing select is undecided, never a hard-coded mommy-makeover. An unknown value is still rejected below.
- const interest=cartagena&&!interestRaw?'undecided':interestRaw;
- const procedure=cartagena?(PROCEDURE_INTEREST[interest]?interest:'undecided'):string('procedure',60);
+ const talk=eventTag===EVENT_TAG_CONVERSATORIO||eventTag===EVENT_TAG_CARTAGENA;
+ // Live sign-ups take the form's topic of interest. A blank or missing select is undecided, never a hard-coded mommy-makeover. An unknown value is still rejected below.
+ const interest=talk&&!interestRaw?'undecided':interestRaw;
+ const procedure=talk?(PROCEDURE_INTEREST[interest]?interest:'undecided'):string('procedure',60);
  if(eventTag&&(!EVENT_TAGS[eventTag]||!email||!city||!COMPANION[companion])||!eventTag&&companion||interest&&!PROCEDURE_INTEREST[interest])return json({accepted:false,error:'invalid_fields'},422);
- if(!name||!/^\+[1-9]\d{6,14}$/.test(phone)||!yes(input.contact_consent)||!['en','es'].includes(input.language)||!(['other','undecided',...procedures].includes(procedure)||(cartagena&&!!PROCEDURE_INTEREST[procedure]))||!/^[-\w]{8,100}$/.test(id)||!/^[-\w]{8,140}$/.test(eventId)||request.headers.get('idempotency-key')!==eventId||email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+ if(!name||!/^\+[1-9]\d{6,14}$/.test(phone)||!yes(input.contact_consent)||!['en','es'].includes(input.language)||!(['other','undecided',...procedures].includes(procedure)||(talk&&!!PROCEDURE_INTEREST[procedure]))||!/^[-\w]{8,100}$/.test(id)||!/^[-\w]{8,140}$/.test(eventId)||request.headers.get('idempotency-key')!==eventId||email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   ||!LEAD_EVENTS.includes(event)||(event==='channel_selected'?!LEAD_CHANNELS.includes(channel):channel&&!LEAD_CHANNELS.includes(channel))||channel==='call'&&!CALL_TIMES[callTime])return json({accepted:false,error:'invalid_fields'},422);
  // Attribution: flat fields from the widget, or first_touch/last_touch objects (legacy consultation form).
  const touch=v=>{if(typeof v==='string'){try{v=JSON.parse(v);}catch{return {};}}return v&&typeof v==='object'&&!Array.isArray(v)?v:{};};
  const first=touch(input.first_touch),last=touch(input.last_touch),t=(o,k)=>typeof o[k]==='string'?o[k].trim().slice(0,500):'';
  const attribution={};for(const k of ATTRIBUTION){const l=string(k+'_last')||t(last,k);attribution[k]=string(k)||l;attribution[k+'_first']=string(k+'_first')||t(first,k);attribution[k+'_last']=l;}
- const now=clock(),received=new Date(now).toISOString(),[firstName,...rest]=name.split(' '),label=cartagena?(PROCEDURE_INTEREST[procedure]||procedure):(string('procedure_label',100)||procedure);
+ const now=clock(),received=new Date(now).toISOString(),[firstName,...rest]=name.split(' '),label=talk?(PROCEDURE_INTEREST[procedure]||procedure):(string('procedure_label',100)||procedure);
  const preference=channel||'pending',callLabel=channel==='call'?CALL_TIMES[callTime]:'';
  const schedule=channel==='call'?callSchedule(now,callTime,timezone):{call_due_at:'',call_due_at_iso:'',call_window_colombia:''};
  const page=cleanUrl(input.page_url)||cleanUrl(input.conversion_page),path=page?new URL(page).pathname:'';
