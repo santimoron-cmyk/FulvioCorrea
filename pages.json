@@ -1217,8 +1217,8 @@
     ]
   },
   {
-    "route": "/en/mommy-makeover-talk-doral/",
-    "file": "dist/en/mommy-makeover-talk-doral/index.html",
+    "route": "/en/plastic-surgery-cartagena-talk-doral/",
+    "file": "dist/en/plastic-surgery-cartagena-talk-doral/index.html",
     "ads": false,
     "lang": "en",
     "noindex": true,
@@ -1227,11 +1227,11 @@
     "alternates": [
       {
         "lang": "en",
-        "route": "/en/mommy-makeover-talk-doral/"
+        "route": "/en/plastic-surgery-cartagena-talk-doral/"
       },
       {
         "lang": "es",
-        "route": "/es/charla-mommy-makeover-doral/"
+        "route": "/es/charla-cirugia-cartagena-doral/"
       }
     ]
   },
@@ -2466,8 +2466,8 @@
     ]
   },
   {
-    "route": "/es/charla-mommy-makeover-doral/",
-    "file": "dist/es/charla-mommy-makeover-doral/index.html",
+    "route": "/es/charla-cirugia-cartagena-doral/",
+    "file": "dist/es/charla-cirugia-cartagena-doral/index.html",
     "ads": false,
     "lang": "es",
     "noindex": true,
@@ -2476,11 +2476,11 @@
     "alternates": [
       {
         "lang": "es",
-        "route": "/es/charla-mommy-makeover-doral/"
+        "route": "/es/charla-cirugia-cartagena-doral/"
       },
       {
         "lang": "en",
-        "route": "/en/mommy-makeover-talk-doral/"
+        "route": "/en/plastic-surgery-cartagena-talk-doral/"
       }
     ]
   },

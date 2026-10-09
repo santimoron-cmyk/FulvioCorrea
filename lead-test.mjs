@@ -42,19 +42,26 @@ r=await call(request({...retry,name:'Someone Else'}),env);assert.equal(r.status,
 // Legacy consultation form (no event, first_touch/last_touch JSON strings) keeps working
 const legacyId=newId();r=await call(request({name:'Test Person',phone:'+15555550123',email:'t@example.com',procedure:procedures[0],language:'en',contact_consent:true,lead_id:legacyId,first_touch:JSON.stringify({utm_source:'first',landing_page:site+'/en/',timestamp:'2026-09-01T00:00:00.000Z'}),last_touch:JSON.stringify({utm_source:'bing',gclid:'g1'})}),env);
 assert.equal(r.status,200);sent=calls.at(-1).body;assert.equal(sent.event,'lead_created');assert.equal(sent.event_id,legacyId);assert.equal(sent.utm_source_first,'first');assert.equal(sent.utm_source,'bing');assert.equal(sent.gclid_last,'g1');assert.equal(sent.landing_url_first,site+'/en/');assert.equal(sent.attribution_timestamp,'2026-09-01T00:00:00.000Z');
-// Event sign-up (event-view.mjs / event-signup.js): allow-listed event_tag, city and companion reach the webhook flat, with a readable summary.
-{const tag='charla-mommy-makeover-doral-oct2026';const ev=o=>created({procedure:'mommy-makeover',email:'test@example.com',city:'Doral',companion:'yes',event_tag:tag,form_id:'event-signup',...o});
+// Event sign-up (event-signup.js): allow-listed event_tag, city and companion reach the webhook flat, with a readable summary.
+// The live Cartagena tag takes procedure from procedure_interest (default undecided). The -v1 tag keeps the submitted procedure.
+{const tag='charla-cirugia-cartagena-doral-nov2026';const ev=o=>created({procedure:'mommy-makeover',procedure_label:'Mommy Makeover',email:'test@example.com',city:'Doral',companion:'yes',event_tag:tag,form_id:'event-signup',...o});
  const before=calls.length;r=await call(request(ev()),env);assert.equal(r.status,200);sent=calls.at(-1).body;assert.equal(calls.length,before+1);
- for(const [k,v] of Object.entries({event_tag:tag,tags:tag,city:'Doral',companion:'yes',lead_source_detail:'event_signup',email:'test@example.com',lead_source:'website'}))assert.equal(sent[k],v,'event '+k);
- assert.match(sent.summary,/^Registro evento: .*Doral/);assert.match(sent.summary,/Ciudad: Doral \| Acompañante: Sí/);assert.match(sent.summary,/Tag: charla-mommy-makeover-doral-oct2026/);
- assert.equal(sent.procedure,'mommy-makeover');assert.equal(sent.procedure_interest,undefined,'interest omitted when blank');
+ for(const [k,v] of Object.entries({event_tag:tag,tags:tag,city:'Doral',companion:'yes',lead_source_detail:'event_signup',email:'test@example.com',lead_source:'website',procedure:'undecided',procedure_label:'Aún no lo sé / Not sure yet'}))assert.equal(sent[k],v,'event '+k);
+ assert.match(sent.summary,/^Registro evento: .*Doral/);assert.match(sent.summary,/Ciudad: Doral \| Acompañante: Sí/);assert.match(sent.summary,/Tag: charla-cirugia-cartagena-doral-nov2026/);assert.match(sent.summary,/Procedimiento: Aún no lo sé \/ Not sure yet/);
+ assert.equal(sent.procedure_interest,undefined,'interest omitted when blank');
  r=await call(request(ev({procedure_interest:'breast'})),env);assert.equal(r.status,200);sent=calls.at(-1).body;
- assert.equal(sent.procedure,'mommy-makeover');assert.equal(sent.procedure_interest,'breast');assert.equal(sent.procedure_interest_label,'Busto / Breast');assert.match(sent.summary,/Interés: Busto \/ Breast/);
- r=await call(request(ev({procedure_interest:''})),env);assert.equal(r.status,200);assert.equal(calls.at(-1).body.procedure_interest,undefined,'empty interest stays off the payload');
+ assert.equal(sent.procedure,'breast');assert.equal(sent.procedure_label,'Busto / Breast');assert.equal(sent.procedure_interest,'breast');assert.equal(sent.procedure_interest_label,'Busto / Breast');assert.match(sent.summary,/Interés: Busto \/ Breast/);assert.match(sent.summary,/Procedimiento: Busto \/ Breast/);
+ r=await call(request(ev({procedure_interest:'mommy-makeover'})),env);assert.equal(r.status,200);sent=calls.at(-1).body;
+ assert.equal(sent.procedure,'mommy-makeover');assert.equal(sent.procedure_interest,'mommy-makeover');
+ r=await call(request(ev({procedure_interest:'undecided'})),env);assert.equal(r.status,200);sent=calls.at(-1).body;
+ assert.equal(sent.procedure,'undecided');assert.equal(sent.procedure_interest,'undecided');
+ r=await call(request(ev({procedure_interest:''})),env);assert.equal(r.status,200);sent=calls.at(-1).body;assert.equal(sent.procedure,'undecided');assert.equal(sent.procedure_interest,undefined,'empty interest stays off the payload');
  for(const bad of [{event_tag:'other-tag'},{email:''},{city:''},{companion:'maybe'},{companion:''},{procedure_interest:'implants'}]){r=await call(request(ev(bad)),env);assert.equal(r.status,422,'event '+JSON.stringify(bad));}
+ const old='charla-mommy-makeover-doral-oct2026';r=await call(request(ev({event_tag:old})),env);assert.equal(r.status,200);sent=calls.at(-1).body;
+ assert.equal(sent.event_tag,old);assert.equal(sent.procedure,'mommy-makeover','v1 backup tag keeps the submitted procedure');assert.equal(sent.procedure_interest,undefined);
  r=await call(request(created({companion:'yes'})),env);assert.equal(r.status,422,'companion without event_tag');
  r=await call(request(created({procedure_interest:'not-a-procedure'})),env);assert.equal(r.status,422,'invalid interest on a regular lead');
- r=await call(request(created()),env);assert.equal(r.status,200);assert.equal(calls.at(-1).body.event_tag,undefined,'regular leads unchanged');assert.equal(calls.at(-1).body.procedure_interest,undefined);}
+ r=await call(request(created()),env);assert.equal(r.status,200);assert.equal(calls.at(-1).body.event_tag,undefined,'regular leads unchanged');assert.equal(calls.at(-1).body.procedure_interest,undefined);assert.equal(calls.at(-1).body.procedure,procedures[0],'regular leads keep their procedure');}
 // Protections
 r=await call(request(created({website:'spam'})),env);assert.equal(r.status,400,'honeypot');
 r=await call(request(created(),{headers:{origin:'https://evil.example'}}),env);assert.equal(r.status,403);

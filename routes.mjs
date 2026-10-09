@@ -37,7 +37,7 @@ const topEs = [
   ['testimonials/', 'testimonios/'],
   ['procedures/', 'procedimientos/'],
   // Event landing. Public URLs are the Aromas shell; -v1 is the previous Fulvio shell (noindex).
-  ['mommy-makeover-talk-doral/', 'charla-mommy-makeover-doral/'],
+  ['plastic-surgery-cartagena-talk-doral/', 'charla-cirugia-cartagena-doral/'],
   ['mommy-makeover-talk-doral-v1/', 'charla-mommy-makeover-doral-v1/'],
 ];
 

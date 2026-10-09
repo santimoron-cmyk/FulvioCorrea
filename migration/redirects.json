@@ -444,6 +444,46 @@
       "status": 301
     },
     {
+      "from": "/mommy-makeover-talk-doral",
+      "to": "/plastic-surgery-cartagena-talk-doral/",
+      "status": 301
+    },
+    {
+      "from": "/mommy-makeover-talk-doral/",
+      "to": "/plastic-surgery-cartagena-talk-doral/",
+      "status": 301
+    },
+    {
+      "from": "/en/mommy-makeover-talk-doral",
+      "to": "/plastic-surgery-cartagena-talk-doral/",
+      "status": 301
+    },
+    {
+      "from": "/en/mommy-makeover-talk-doral/",
+      "to": "/plastic-surgery-cartagena-talk-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/mommy-makeover-talk-doral",
+      "to": "/es/charla-cirugia-cartagena-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/mommy-makeover-talk-doral/",
+      "to": "/es/charla-cirugia-cartagena-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/charla-mommy-makeover-doral",
+      "to": "/es/charla-cirugia-cartagena-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/charla-mommy-makeover-doral/",
+      "to": "/es/charla-cirugia-cartagena-doral/",
+      "status": 301
+    },
+    {
       "from": "/post/bbl-colombia",
       "to": "/blog/bbl-colombia/",
       "status": 301
@@ -664,6 +704,16 @@
       "status": 301
     },
     {
+      "from": "/es/plastic-surgery-cartagena-talk-doral",
+      "to": "/es/charla-cirugia-cartagena-doral/",
+      "status": 301
+    },
+    {
+      "from": "/es/plastic-surgery-cartagena-talk-doral/",
+      "to": "/es/charla-cirugia-cartagena-doral/",
+      "status": 301
+    },
+    {
       "from": "/es/procedures/breast-lift-reduction",
       "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
       "status": 301
@@ -751,16 +801,6 @@
     {
       "from": "/es/procedures/mommy-makeover/",
       "to": "/es/procedimientos/mommy-makeover/",
-      "status": 301
-    },
-    {
-      "from": "/es/mommy-makeover-talk-doral",
-      "to": "/es/charla-mommy-makeover-doral/",
-      "status": 301
-    },
-    {
-      "from": "/es/mommy-makeover-talk-doral/",
-      "to": "/es/charla-mommy-makeover-doral/",
       "status": 301
     },
     {
@@ -1354,13 +1394,13 @@
       "status": 301
     },
     {
-      "from": "/en/mommy-makeover-talk-doral/",
-      "to": "/mommy-makeover-talk-doral/",
+      "from": "/en/plastic-surgery-cartagena-talk-doral/",
+      "to": "/plastic-surgery-cartagena-talk-doral/",
       "status": 301
     },
     {
-      "from": "/en/mommy-makeover-talk-doral",
-      "to": "/mommy-makeover-talk-doral/",
+      "from": "/en/plastic-surgery-cartagena-talk-doral",
+      "to": "/plastic-surgery-cartagena-talk-doral/",
       "status": 301
     },
     {
