@@ -23,7 +23,7 @@ review_date: ""
 
 There is no single safe number of days for **flying after plastic surgery**, but if you are flying home from Colombia there is a firm floor to plan around. Avianca, Colombia's flag carrier, lists **10 to 15 days** after cosmetic surgery depending on the procedure (14 days for breast surgery, liposuction, and tummy tuck; 15 days when two or more body procedures are combined) and requires a medical certificate issued within 10 days of the flight. That airline minimum sits on top of your surgeon's clearance, not in place of it.
 
-So the practical answer to **how long after plastic surgery can you fly** is: the later of two dates, the airline's minimum and the day your surgical team examines you and signs off.
+So the practical answer to **how long after plastic surgery can you fly** is: the later of two dates, the airline's minimum and the day your surgical team examines you and signs off. Credentials, what a quote should include and how Cartagena compares with other cities are in the [2026 guide to plastic surgery in Colombia](/plastic-surgery-colombia/).
 
 ## The airline minimum, procedure by procedure
 

@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-One of the first planning questions U.S. patients ask is **how long to stay after a mommy makeover**—especially when surgery is abroad. The answer depends on which procedures are combined, how recovery is progressing, flight length, and when your surgical team clears you to travel. This guide explains how to think about stay length, what usually shapes the timeline, and what to confirm before you buy a return ticket.
+One of the first planning questions U.S. patients ask is **how long to stay after a mommy makeover**—especially when surgery is abroad. The answer depends on which procedures are combined, how recovery is progressing, flight length, and when your surgical team clears you to travel. This guide explains how to think about stay length, what usually shapes the timeline, and what to confirm before you buy a return ticket. The country guide, including visas and how a quote is built, is [plastic surgery in Colombia](/plastic-surgery-colombia/).
 
 ## Why stay length matters more than the surgery day alone
 

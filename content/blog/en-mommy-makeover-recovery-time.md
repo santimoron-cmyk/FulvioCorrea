@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-Most people asking about **mommy makeover recovery time** want a usable planning range—not a single guaranteed number. In general patient-education materials from the American Society of Plastic Surgeons (ASPS), initial recovery after a mommy makeover typically lasts about **two to three weeks**, with a **gradual return to normal activities over roughly six to eight weeks**. Full recovery still varies with which procedures were combined, and final contour changes can take months as swelling settles. Treat those ranges as orientation for planning childcare, work leave, and follow-up—not as a personal clearance calendar.
+Most people asking about **mommy makeover recovery time** want a usable planning range—not a single guaranteed number. In general patient-education materials from the American Society of Plastic Surgeons (ASPS), initial recovery after a mommy makeover typically lasts about **two to three weeks**, with a **gradual return to normal activities over roughly six to eight weeks**. Full recovery still varies with which procedures were combined, and final contour changes can take months as swelling settles. Treat those ranges as orientation for planning childcare, work leave, and follow-up—not as a personal clearance calendar. How the trip around that recovery is organized is in [planning plastic surgery in Colombia](/plastic-surgery-colombia/).
 
 ## Why recovery time is a range, not a fixed day count
 

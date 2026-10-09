@@ -23,7 +23,7 @@ review_date: ""
 
 Si te operas en Colombia y regresas en avión, la respuesta corta es esta: **Avianca permite volar entre 10 y 15 días después de una cirugía plástica**, según el procedimiento, y exige un certificado médico expedido como máximo 10 días antes del vuelo. Para liposucción, abdominoplastia y cirugías de senos el mínimo es de 14 días; si se combinan dos o más procedimientos corporales, sube a 15. Ese plazo es el piso de la aerolínea. La fecha real la pone tu cirujano cuando te revisa.
 
-Dicho de otra forma: **viajar en avión después de una cirugía** depende de dos fechas, y manda la que llegue más tarde.
+Dicho de otra forma: **viajar en avión después de una cirugía** depende de dos fechas, y manda la que llegue más tarde. Las credenciales, qué debe traer una cotización y cómo se compara Cartagena con otras ciudades están en la [guía 2026 de cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
 
 ## Los días mínimos que publica Avianca
 

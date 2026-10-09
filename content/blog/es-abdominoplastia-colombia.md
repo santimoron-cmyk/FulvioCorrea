@@ -23,7 +23,7 @@ review_date: ""
 
 Una **abdominoplastia en Colombia** puede planificarse con seguridad si se hacen tres cosas en orden: verificar al cirujano y la institución en los registros oficiales colombianos, confirmar en una valoración que eres candidata y qué técnica corresponde a tu caso, y armar el viaje alrededor de la recuperación, no al revés. Para quien viaja en avión, la cifra que más cambia el presupuesto de tiempo es esta: Avianca, la aerolínea bandera de Colombia, indica que después de una abdominoplastia, mini abdominoplastia o lipoabdominoplastia se permite volar a partir de los **14 días**, con certificado médico.
 
-Lo demás —cuánto tiempo de reposo, cuándo volver al trabajo, qué tipo de cirugía— se decide con tu cirujano. Esta guía te ayuda a llegar a esa conversación con las preguntas correctas.
+Lo demás —cuánto tiempo de reposo, cuándo volver al trabajo, qué tipo de cirugía— se decide con tu cirujano. Esta guía te ayuda a llegar a esa conversación con las preguntas correctas. Las decisiones de país están en [cómo elegir una cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
 
 ## ¿Cómo saber si un cirujano es “el mejor” para tu abdominoplastia?
 
