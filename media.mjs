@@ -4,7 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
-import {imageSize} from './assets.mjs';
+import {imageSize,STATIC_DEPLOY} from './assets.mjs';
 
 // Procedure card photos ship pre-encoded AVIF/WebP sets (data/procedure-cards.json); the build must not re-encode them.
 // Team photos with a `photo` set in data/team.json are pre-encoded the same way.
@@ -70,7 +70,7 @@ export async function buildImageDerivatives(dist = 'dist') {
   const files = fs.existsSync(assetDir) ? sourceAssetsIn(assetDir) : [];
   for (const file of files) {
     if (!/\.(webp|png|jpe?g)$/i.test(file)) continue;
-    if (file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || PROCEDURE_CARDS.some(([, c]) => file.startsWith(c.base)) || TEAM_PHOTOS.some(b => file.startsWith(b)) || OFFICE_PHOTOS.some(b => file.startsWith(b)) || file.startsWith('hero-dr-fulvio-correa-plastic-surgery-cartagena') || file.startsWith('dr-fulvio-correa-plastic-surgeon-cartagena-')) continue;
+    if (file.startsWith('email/') || STATIC_DEPLOY.has(file) || file.startsWith('og/') || file.startsWith('icons/') || file === 'dr-fulvio-correa-logo.png' || PROCEDURE_CARDS.some(([, c]) => file.startsWith(c.base)) || TEAM_PHOTOS.some(b => file.startsWith(b)) || OFFICE_PHOTOS.some(b => file.startsWith(b)) || file.startsWith('hero-dr-fulvio-correa-plastic-surgery-cartagena') || file.startsWith('dr-fulvio-correa-plastic-surgeon-cartagena-')) continue;
     const full = path.join(assetDir, file);
     const size = imageSize(full);
     if (!size || size.width < 480) continue;
@@ -304,6 +304,7 @@ export function pruneUnreferencedAssets(dist = 'dist') {
     const relPath = path.relative(dist, path.join(d.parentPath ?? d.path, d.name)).split(path.sep).join('/');
     if (!relPath.startsWith('assets/') || relPath.startsWith('assets/fonts/')) continue;
     const name = relPath.slice('assets/'.length);
+    if (STATIC_DEPLOY.has(name)) continue;
     if (!used.has(name) && !name.endsWith('.txt')) fs.rmSync(path.join(dist, relPath));
   }
 }
