@@ -61,6 +61,11 @@ Object.assign(redirects,{
   '/es-gracias-7148-6046':'/es/',
   '/evaluacin-gratis-por-fotos-2729-9735-3835':'/es/',
   '/mmthankyoupage-3410-1108-9453':'/',
+  // Previous Doral talk URLs, replaced by the Cartagena surgery orientation. -v1 backups stay put.
+  '/mommy-makeover-talk-doral':'/plastic-surgery-cartagena-talk-doral/',
+  '/en/mommy-makeover-talk-doral':'/plastic-surgery-cartagena-talk-doral/',
+  '/es/mommy-makeover-talk-doral':'/es/charla-cirugia-cartagena-doral/',
+  '/es/charla-mommy-makeover-doral':'/es/charla-cirugia-cartagena-doral/',
 });
 // Same slug in both languages (bbl-colombia) must not retarget the legacy NinjaSuite
 // /post/ URL. English keeps the existing redirect; a new Spanish slug still gets one.

@@ -10,10 +10,12 @@ const json=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:
 export const LEAD_EVENTS=['lead_created','channel_selected'];
 export const LEAD_CHANNELS=['whatsapp','call','sms','instagram','facebook'];
 // Event sign-ups (event landing pages): only these tags are accepted, so GHL tags stay clean and traceable.
-export const EVENT_TAGS={'charla-mommy-makeover-doral-oct2026':'Charla Mommy Makeover · Aromas Med Spa Doral (oct 2026)'};
+// The live Cartagena talk uses the November tag. The untouched Fulvio -v1 backup still posts the October tag.
+export const EVENT_TAG_CARTAGENA='charla-cirugia-cartagena-doral-nov2026';
+export const EVENT_TAGS={[EVENT_TAG_CARTAGENA]:'Charla cirugía en Cartagena · Aromas Med Spa Doral (nov 2026)','charla-mommy-makeover-doral-oct2026':'Charla Mommy Makeover · Aromas Med Spa Doral (oct 2026)'};
 export const COMPANION={yes:'Sí / Yes',no:'No'};
-// Optional "procedure of interest" on the Doral talk. The event procedure slug stays mommy-makeover.
-export const PROCEDURE_INTEREST={'mommy-makeover':'Mommy Makeover',breast:'Busto / Breast',abdomen:'Abdomen','lipo-contour':'Liposucción/contorno / Liposuction & contour',face:'Rostro / Face',other:'Otro / Other'};
+// Optional "procedure of interest" on the Doral talk. On the Cartagena tag, procedure follows this value (default undecided).
+export const PROCEDURE_INTEREST={'mommy-makeover':'Mommy Makeover',breast:'Busto / Breast',abdomen:'Abdomen','lipo-contour':'Liposucción/contorno / Liposuction & contour',face:'Rostro / Face',other:'Otro / Other',undecided:'Aún no lo sé / Not sure yet'};
 // Labels are bilingual because the CRM task is read by the care team; times are the visitor's local time.
 export const CALL_TIMES={asap:'Lo antes posible / As soon as possible',morning:'Mañana / Morning (8:00–12:00)',afternoon:'Tarde / Afternoon (12:00–17:00)',evening:'Noche / Evening (17:00–20:00)'};
 const CHANNEL_LABELS={whatsapp:'WhatsApp',call:'Llamada / Phone call',sms:'SMS',instagram:'Instagram',facebook:'Facebook'};
@@ -32,19 +34,22 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
  if(input.website)return json({accepted:false,error:'invalid_data'},400);
  const string=(key,max=500)=>typeof input[key]==='string'?input[key].trim().slice(0,max):'';
  const yes=v=>v===true||v==='true'||v==='on';
- const name=string('name',100).replace(/\s+/g,' '),phone=string('phone',30).replace(/[\s().-]/g,''),email=string('email',254),procedure=string('procedure',60),id=string('lead_id',100);
+ const name=string('name',100).replace(/\s+/g,' '),phone=string('phone',30).replace(/[\s().-]/g,''),email=string('email',254),id=string('lead_id',100);
  const event=string('event',40)||'lead_created',eventId=string('event_id',140)||id,channel=string('channel',20),callTime=string('preferred_call_time',20);
  const timezone=/^(?:UTC|[A-Za-z]+(?:\/[-+\w]+){1,2})$/.test(string('timezone',64))?string('timezone',64):'';
  const consentVersion=/^[-\w.]{1,60}$/.test(string('consent_version',60))?string('consent_version',60):'';
  const eventTag=string('event_tag',80),city=string('city',100).replace(/\s+/g,' '),companion=string('companion',5),interest=string('procedure_interest',40);
+ const cartagena=eventTag===EVENT_TAG_CARTAGENA;
+ // Live Cartagena sign-ups take the form's procedure of interest. A blank select is undecided, never a hard-coded mommy-makeover.
+ const procedure=cartagena?(PROCEDURE_INTEREST[interest]?interest:'undecided'):string('procedure',60);
  if(eventTag&&(!EVENT_TAGS[eventTag]||!email||!city||!COMPANION[companion])||!eventTag&&companion||interest&&!PROCEDURE_INTEREST[interest])return json({accepted:false,error:'invalid_fields'},422);
- if(!name||!/^\+[1-9]\d{6,14}$/.test(phone)||!yes(input.contact_consent)||!['en','es'].includes(input.language)||!['other','undecided',...procedures].includes(procedure)||!/^[-\w]{8,100}$/.test(id)||!/^[-\w]{8,140}$/.test(eventId)||request.headers.get('idempotency-key')!==eventId||email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+ if(!name||!/^\+[1-9]\d{6,14}$/.test(phone)||!yes(input.contact_consent)||!['en','es'].includes(input.language)||!(['other','undecided',...procedures].includes(procedure)||(cartagena&&!!PROCEDURE_INTEREST[procedure]))||!/^[-\w]{8,100}$/.test(id)||!/^[-\w]{8,140}$/.test(eventId)||request.headers.get('idempotency-key')!==eventId||email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   ||!LEAD_EVENTS.includes(event)||(event==='channel_selected'?!LEAD_CHANNELS.includes(channel):channel&&!LEAD_CHANNELS.includes(channel))||channel==='call'&&!CALL_TIMES[callTime])return json({accepted:false,error:'invalid_fields'},422);
  // Attribution: flat fields from the widget, or first_touch/last_touch objects (legacy consultation form).
  const touch=v=>{if(typeof v==='string'){try{v=JSON.parse(v);}catch{return {};}}return v&&typeof v==='object'&&!Array.isArray(v)?v:{};};
  const first=touch(input.first_touch),last=touch(input.last_touch),t=(o,k)=>typeof o[k]==='string'?o[k].trim().slice(0,500):'';
  const attribution={};for(const k of ATTRIBUTION){const l=string(k+'_last')||t(last,k);attribution[k]=string(k)||l;attribution[k+'_first']=string(k+'_first')||t(first,k);attribution[k+'_last']=l;}
- const now=clock(),received=new Date(now).toISOString(),[firstName,...rest]=name.split(' '),label=string('procedure_label',100)||procedure;
+ const now=clock(),received=new Date(now).toISOString(),[firstName,...rest]=name.split(' '),label=cartagena?(PROCEDURE_INTEREST[procedure]||procedure):(string('procedure_label',100)||procedure);
  const preference=channel||'pending',callLabel=channel==='call'?CALL_TIMES[callTime]:'';
  const schedule=channel==='call'?callSchedule(now,callTime,timezone):{call_due_at:'',call_due_at_iso:'',call_window_colombia:''};
  const page=cleanUrl(input.page_url)||cleanUrl(input.conversion_page),path=page?new URL(page).pathname:'';

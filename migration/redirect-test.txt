@@ -439,6 +439,46 @@ curl -I "https://fulviocorrea.com/mmthankyoupage-3410-1108-9453/"
 curl -I "https://fulviocorrea.com/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/mommy-makeover-talk-doral"
+# Expected: 301 Location: /plastic-surgery-cartagena-talk-doral/
+curl -I "https://fulviocorrea.com/plastic-surgery-cartagena-talk-doral/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/mommy-makeover-talk-doral/"
+# Expected: 301 Location: /plastic-surgery-cartagena-talk-doral/
+curl -I "https://fulviocorrea.com/plastic-surgery-cartagena-talk-doral/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/mommy-makeover-talk-doral"
+# Expected: 301 Location: /plastic-surgery-cartagena-talk-doral/
+curl -I "https://fulviocorrea.com/plastic-surgery-cartagena-talk-doral/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/mommy-makeover-talk-doral/"
+# Expected: 301 Location: /plastic-surgery-cartagena-talk-doral/
+curl -I "https://fulviocorrea.com/plastic-surgery-cartagena-talk-doral/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/mommy-makeover-talk-doral"
+# Expected: 301 Location: /es/charla-cirugia-cartagena-doral/
+curl -I "https://fulviocorrea.com/es/charla-cirugia-cartagena-doral/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/mommy-makeover-talk-doral/"
+# Expected: 301 Location: /es/charla-cirugia-cartagena-doral/
+curl -I "https://fulviocorrea.com/es/charla-cirugia-cartagena-doral/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/charla-mommy-makeover-doral"
+# Expected: 301 Location: /es/charla-cirugia-cartagena-doral/
+curl -I "https://fulviocorrea.com/es/charla-cirugia-cartagena-doral/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/charla-mommy-makeover-doral/"
+# Expected: 301 Location: /es/charla-cirugia-cartagena-doral/
+curl -I "https://fulviocorrea.com/es/charla-cirugia-cartagena-doral/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/bbl-colombia"
 # Expected: 301 Location: /blog/bbl-colombia/
 curl -I "https://fulviocorrea.com/blog/bbl-colombia/"
@@ -659,6 +699,16 @@ curl -I "https://fulviocorrea.com/es/blog/category/plastic-surgery-in-colombia/"
 curl -I "https://fulviocorrea.com/es/blog/categoria/cirugia-plastica-en-colombia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/es/plastic-surgery-cartagena-talk-doral"
+# Expected: 301 Location: /es/charla-cirugia-cartagena-doral/
+curl -I "https://fulviocorrea.com/es/charla-cirugia-cartagena-doral/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/plastic-surgery-cartagena-talk-doral/"
+# Expected: 301 Location: /es/charla-cirugia-cartagena-doral/
+curl -I "https://fulviocorrea.com/es/charla-cirugia-cartagena-doral/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/es/procedures/breast-lift-reduction"
 # Expected: 301 Location: /es/procedimientos/reduccion-y-levantamiento-de-senos/
 curl -I "https://fulviocorrea.com/es/procedimientos/reduccion-y-levantamiento-de-senos/"
@@ -747,16 +797,6 @@ curl -I "https://fulviocorrea.com/es/procedimientos/mommy-makeover/"
 curl -I "https://fulviocorrea.com/es/procedures/mommy-makeover/"
 # Expected: 301 Location: /es/procedimientos/mommy-makeover/
 curl -I "https://fulviocorrea.com/es/procedimientos/mommy-makeover/"
-# Expected: 200
-
-curl -I "https://fulviocorrea.com/es/mommy-makeover-talk-doral"
-# Expected: 301 Location: /es/charla-mommy-makeover-doral/
-curl -I "https://fulviocorrea.com/es/charla-mommy-makeover-doral/"
-# Expected: 200
-
-curl -I "https://fulviocorrea.com/es/mommy-makeover-talk-doral/"
-# Expected: 301 Location: /es/charla-mommy-makeover-doral/
-curl -I "https://fulviocorrea.com/es/charla-mommy-makeover-doral/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/es/plastic-surgery-colombia"
@@ -1349,14 +1389,14 @@ curl -I "https://fulviocorrea.com/en/mommy-makeover-talk-doral-v1"
 curl -I "https://fulviocorrea.com/mommy-makeover-talk-doral-v1/"
 # Expected: 200
 
-curl -I "https://fulviocorrea.com/en/mommy-makeover-talk-doral/"
-# Expected: 301 Location: /mommy-makeover-talk-doral/
-curl -I "https://fulviocorrea.com/mommy-makeover-talk-doral/"
+curl -I "https://fulviocorrea.com/en/plastic-surgery-cartagena-talk-doral/"
+# Expected: 301 Location: /plastic-surgery-cartagena-talk-doral/
+curl -I "https://fulviocorrea.com/plastic-surgery-cartagena-talk-doral/"
 # Expected: 200
 
-curl -I "https://fulviocorrea.com/en/mommy-makeover-talk-doral"
-# Expected: 301 Location: /mommy-makeover-talk-doral/
-curl -I "https://fulviocorrea.com/mommy-makeover-talk-doral/"
+curl -I "https://fulviocorrea.com/en/plastic-surgery-cartagena-talk-doral"
+# Expected: 301 Location: /plastic-surgery-cartagena-talk-doral/
+curl -I "https://fulviocorrea.com/plastic-surgery-cartagena-talk-doral/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/404/"
