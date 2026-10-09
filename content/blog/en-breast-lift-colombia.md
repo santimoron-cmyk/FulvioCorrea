@@ -23,7 +23,7 @@ review_date: ""
 
 A **breast lift in Colombia** (mastopexy) raises and reshapes breasts that have lost position after pregnancy, breastfeeding, weight change, or aging. It does not mainly add volume. If your goal is more size, [breast augmentation](/en/blog/breast-augmentation-colombia/) is the closer match; many travelers researching **breast lift colombia** actually need a lift, implants, or both, and that call belongs in consultation, not in a photo gallery.
 
-This guide answers the decision first, then covers verification, scars, travel timing, and questions worth bringing to a Cartagena consult.
+This guide answers the decision first, then covers verification, scars, travel timing, and questions worth bringing to a Cartagena consult. Verifying the surgeon and planning the trip sit in [a guide to surgery in Colombia](/plastic-surgery-colombia/).
 
 ## Lift, implants, or both?
 

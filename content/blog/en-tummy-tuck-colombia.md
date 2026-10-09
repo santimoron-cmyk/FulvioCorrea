@@ -23,7 +23,7 @@ review_date: ""
 
 There is no official ranking of the **best tummy tuck in Colombia**, so the useful question is how to tell a well-qualified surgeon and facility from a well-marketed one. For U.S. patients, that comes down to three checks: verify the surgeon and the facility in Colombia’s official registries, confirm in a consultation that abdominoplasty (full, mini, or combined with liposuction) actually fits your body, and build the trip around recovery. One number shapes the calendar more than any other: Avianca, Colombia’s flag carrier, lists **14 days** after an abdominoplasty before flying, with a medical certificate.
 
-This guide walks through those checks, the logistics that usually matter for a **tummy tuck in Colombia**, and the questions to bring to your consult.
+This guide walks through those checks, the logistics that usually matter for a **tummy tuck in Colombia**, and the questions to bring to your consult. For the country-level decisions, see [how to choose surgery in Colombia](/plastic-surgery-colombia/).
 
 ## What “best tummy tuck in Colombia” should actually mean
 

@@ -23,7 +23,7 @@ review_date: ""
 
 There is no official ranking of the **best breast augmentation in Colombia**, so the useful question is how to tell a well-qualified plastic surgeon and facility from a well-marketed one. For U.S. patients researching **breast augmentation colombia**, three checks usually matter most: verify the surgeon and the facility in Colombia’s official registries, confirm in consultation that implants or fat transfer actually fit your anatomy and goals, and build the trip around recovery—not vacation photos. One number often shapes the calendar: Avianca, Colombia’s flag carrier, lists travel **14 days** after mammoplasty (augmentation or reduction) or breast pexy, with a medical certificate.
 
-This guide walks through those checks, Cartagena logistics, and the questions worth bringing to a consult.
+This guide walks through those checks, Cartagena logistics, and the questions worth bringing to a consult. The wider picture of cost, safety and the stay is in [plastic surgery in Colombia](/plastic-surgery-colombia/).
 
 ## What “best breast augmentation in Colombia” should actually mean
 

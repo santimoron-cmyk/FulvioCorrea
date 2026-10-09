@@ -4251,19 +4251,22 @@
     "lang": "en",
     "noindex": false,
     "ads": false,
-    "updated": "2026-10-08",
+    "updated": "2026-10-09",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "@id": "https://fulviocorrea.com/plastic-surgery-colombia/#webpage",
         "url": "https://fulviocorrea.com/plastic-surgery-colombia/",
-        "name": "Plastic surgery in Colombia",
-        "description": "How to choose a plastic surgeon in Colombia: credentials, the clinic and the recovery stay in Cartagena. A guide from Dr. Fulvio Correa, SCCP member.",
+        "name": "Plastic surgery in Colombia in 2026",
+        "description": "Plastic surgery in Colombia, 2026: what drives cost, how to verify a surgeon and clinic, and how to plan the stay in Cartagena.",
         "inLanguage": "en",
-        "lastReviewed": "2026-10-08",
+        "dateModified": "2026-10-09",
+        "lastReviewed": "2026-10-09",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com/#physician"
+          "@type": "Physician",
+          "@id": "https://fulviocorrea.com/#physician",
+          "name": "Dr. Fulvio Correa"
         },
         "about": {
           "@type": "MedicalSpecialty",
@@ -4283,23 +4286,23 @@
             "name": "Is plastic surgery in Colombia safe?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Safety depends on the surgeon, the facility and the plan for your own case, not on the country. ASPS and ISAPS advise you to verify training, the clinic, anesthesia and follow-up before you travel. Those are the right questions for a consultation."
+              "text": "Safety depends on the surgeon, the facility and the plan for your own case, not on the country. ASPS, ISAPS and the CDC advise you to verify training, the clinic, anesthesia and follow-up before you travel. The CDC notes that accreditation is not a promise of a good outcome, and that infection is the most common complication among people who travel for medical care."
             }
           },
           {
             "@type": "Question",
-            "name": "How do I check a plastic surgeon in Colombia?",
+            "name": "How do I choose a plastic surgeon in Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Confirm specialist training in plastic surgery, look up membership in the Colombian Society of Plastic Surgery, and use the Ministry of Health ReTHUS registry. A social-media following is not a credential."
+              "text": "Confirm specialist training in plastic surgery, look up membership in the Colombian Society of Plastic Surgery, and use the Ministry of Health ReTHUS registry. Then ask where the operation will take place and which services that facility currently has authorized in REPS. A social-media following is not a credential."
             }
           },
           {
             "@type": "Question",
-            "name": "Is there a list of the best plastic surgeons in Colombia?",
+            "name": "Is there an official ranking of plastic surgeons in Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. There is no official ranking. “Best” in a search result is not a registry. Use the checks above, then decide after a consultation whether that surgeon is the right one for you."
+              "text": "No. There is no official ranking. A flattering phrase in a search result is not a registry. Use the checks above, then decide after a consultation whether that surgeon is the right one for you."
             }
           },
           {
@@ -4307,7 +4310,39 @@
             "name": "How long should I stay in Cartagena after surgery?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "It depends on the procedure, on how you are healing, and on when your surgeon clears you to fly. The practice publishes separate guides for stay length, recovery by week, and flying. None of them is a personal clearance."
+              "text": "It depends on the procedure, on how you are healing, and on when your surgeon clears you to fly. Avianca lists 10 days after rhinoplasty, 14 days after breast surgery, liposuction and tummy tuck, and 15 days when two or more body procedures are combined. Those are airline minimums, not a personal clearance. Count the days before surgery as well."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What drives the cost of plastic surgery in Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The procedure, whether procedures are combined, operating time, anesthesia, the facility, any implant, tests, garments, medication and the visits included while you are in Cartagena. Flights, lodging and care after you fly home are separate. This page does not publish prices."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should a quote include?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A written quote should separate the surgeon, the facility and the anesthesia, name the procedures, say what is included, state the currency and how long the figure is valid, and explain follow-up after you go home. It should come after your case has been reviewed, not before anyone has looked at you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do Cartagena, Medellín and Bogotá differ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cartagena is hot, humid and at sea level, and it is where this practice operates. Medellín is inland and milder. Bogotá is the high-altitude capital, which some people feel in the first days. None of that is a ranking of surgeons. Use the same credential checks in any city."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do U.S. or Canadian citizens need a visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For a short tourist stay, both governments say a visa is not required for up to 90 days. You still need a valid passport, Check-Mig before the flight, and a return plan. Canada’s travel advice also describes an entry fee. Confirm the current rule on the official page before you travel."
             }
           },
           {
@@ -4347,19 +4382,22 @@
     "lang": "es",
     "noindex": false,
     "ads": false,
-    "updated": "2026-10-08",
+    "updated": "2026-10-09",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "@id": "https://fulviocorrea.com/es/plastic-surgery-colombia/#webpage",
         "url": "https://fulviocorrea.com/es/plastic-surgery-colombia/",
-        "name": "Cirugía plástica en Colombia",
-        "description": "Cirujano plástico en Cartagena: cómo revisar credenciales, la clínica y la estadía. Guía de cirugía plástica en Colombia del Dr. Fulvio Correa, SCCP.",
+        "name": "Cirugía plástica en Colombia en 2026",
+        "description": "Cirugía plástica en Colombia, 2026: de qué depende el costo, cómo verificar cirujano y clínica, y cómo planear la estadía en Cartagena.",
         "inLanguage": "es",
-        "lastReviewed": "2026-10-08",
+        "dateModified": "2026-10-09",
+        "lastReviewed": "2026-10-09",
         "reviewedBy": {
-          "@id": "https://fulviocorrea.com/#physician"
+          "@type": "Physician",
+          "@id": "https://fulviocorrea.com/#physician",
+          "name": "Dr. Fulvio Correa"
         },
         "about": {
           "@type": "MedicalSpecialty",
@@ -4379,23 +4417,23 @@
             "name": "¿Es segura la cirugía plástica en Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La seguridad depende del cirujano, de la clínica y del plan de tu caso, no del país. La ASPS e ISAPS recomiendan verificar la formación, el centro, la anestesia y el seguimiento antes de viajar. Esas son las preguntas de una valoración."
+              "text": "La seguridad depende del cirujano, de la clínica y del plan de tu caso, no del país. La ASPS, ISAPS y los CDC recomiendan verificar la formación, el centro, la anestesia y el seguimiento antes de viajar. Los CDC aclaran que una acreditación no promete un buen resultado, y que la infección es la complicación más frecuente entre quienes viajan para recibir atención médica."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Cómo verifico a un cirujano plástico en Cartagena?",
+            "name": "¿Cómo elijo un cirujano plástico en Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Confirma la especialización en cirugía plástica, busca la membresía en la Sociedad Colombiana de Cirugía Plástica y consulta el ReTHUS del Ministerio de Salud. Tener seguidores en redes no es una credencial."
+              "text": "Confirma la especialización en cirugía plástica, busca la membresía en la Sociedad Colombiana de Cirugía Plástica y consulta el ReTHUS del Ministerio de Salud. Después pregunta dónde será la cirugía y qué servicios tiene hoy habilitados ese centro en el REPS. Tener seguidores en redes no es una credencial."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Hay una lista de los mejores cirujanos plásticos de Colombia?",
+            "name": "¿Hay un ranking oficial de cirujanos plásticos en Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. No existe un ranking oficial. La palabra “mejores” en una búsqueda no es un registro. Usa las verificaciones de arriba y decide en la valoración si ese cirujano es el adecuado para ti."
+              "text": "No. No existe un ranking oficial. Una frase elogiosa en un buscador no es un registro. Usa las verificaciones de arriba y decide en la valoración si ese cirujano es el adecuado para ti."
             }
           },
           {
@@ -4403,7 +4441,39 @@
             "name": "¿Cuántos días hay que quedarse en Cartagena?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Depende del procedimiento, de cómo evoluciona la recuperación y de cuándo tu cirujano autoriza el vuelo. El consultorio publica guías aparte sobre días de estadía, recuperación por semanas y viaje en avión. Ninguna es una autorización personal."
+              "text": "Depende del procedimiento, de cómo evoluciona la recuperación y de cuándo tu cirujano autoriza el vuelo. Avianca lista 10 días después de una rinoplastia, 14 días después de cirugía de senos, liposucción y abdominoplastia, y 15 días cuando se combinan dos o más procedimientos del cuerpo. Son mínimos de la aerolínea, no una autorización personal. Cuenta también los días previos a la cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿De qué depende el costo de la cirugía plástica en Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Del procedimiento, de si se combinan cirugías, del tiempo de quirófano, de la anestesia, de la clínica, de un implante si lo hay, de los exámenes, de la faja, de los medicamentos y de los controles incluidos mientras estás en Cartagena. Los tiquetes, el alojamiento y la atención después de volar a casa van aparte. Esta página no publica precios."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué debe incluir una cotización?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una cotización por escrito debe separar al cirujano, la clínica y la anestesia, nombrar los procedimientos, decir qué está incluido, indicar la moneda y hasta cuándo vale la cifra, y explicar el seguimiento cuando regresas. Debe llegar después de revisar tu caso, no antes de que alguien te vea."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿En qué se diferencian Cartagena, Medellín y Bogotá?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cartagena es calurosa, húmeda y está a nivel del mar, y es donde opera este consultorio. Medellín está tierra adentro y tiene un clima más suave. Bogotá es la capital en altura, y algunas personas lo sienten los primeros días. Nada de eso es un ranking de cirujanos. Usa las mismas verificaciones en cualquier ciudad."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Los ciudadanos de Estados Unidos o de Canadá necesitan visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para una estadía corta de turismo, ambos gobiernos dicen que no se requiere visa hasta por 90 días. Igual necesitas un pasaporte vigente, el Check-Mig antes del vuelo y un plan de regreso. El aviso de viaje de Canadá también describe una tasa de ingreso. Confirma la regla vigente en la página oficial antes de viajar."
             }
           },
           {

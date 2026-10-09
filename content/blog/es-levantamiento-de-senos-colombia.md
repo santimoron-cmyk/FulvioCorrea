@@ -23,7 +23,7 @@ review_date: ""
 
 Un **levantamiento de senos en Colombia** (mastopexia o pexia mamaria) eleva y remodela senos que perdieron posición después del embarazo, la lactancia, cambios de peso o el paso del tiempo. No busca, por sí solo, aumentar el tamaño. Si lo que quieres es más volumen, el camino suele ser el [aumento de senos](/es/blog/aumento-de-senos-colombia/); muchas personas que buscan **levantamiento de senos colombia** en realidad necesitan pexia, implantes o ambos, y esa decisión se define en consulta, no en una galería de fotos.
 
-Esta guía empieza por la decisión clínica, y luego cubre verificación del cirujano, cicatrices, tiempos de viaje y preguntas útiles para una valoración en Cartagena.
+Esta guía empieza por la decisión clínica, y luego cubre verificación del cirujano, cicatrices, tiempos de viaje y preguntas útiles para una valoración en Cartagena. Verificar al cirujano y armar el viaje está en [qué revisar antes de operarte en Colombia](/es/cirugia-plastica-colombia/).
 
 ## ¿Pexia, implantes o ambos?
 

@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-Una de las primeras preguntas de planificación cuando el mommy makeover se hace fuera de casa es **cuántos días quedarse después** antes de volar. Si lo que buscas es el mapa de recuperación semana a semana, y no los días de estadía, lee [tiempo de recuperación del mommy makeover](/es/blog/tiempo-recuperacion-mommy-makeover/). La respuesta depende de qué procedimientos se combinan, cómo evoluciona la recuperación, la duración del vuelo y cuándo tu equipo quirúrgico te autoriza a viajar. Esta guía explica cómo pensar la estadía, qué suele alargar el calendario y qué confirmar antes de comprar el tiquete de regreso.
+Una de las primeras preguntas de planificación cuando el mommy makeover se hace fuera de casa es **cuántos días quedarse después** antes de volar. Si lo que buscas es el mapa de recuperación semana a semana, y no los días de estadía, lee [tiempo de recuperación del mommy makeover](/es/blog/tiempo-recuperacion-mommy-makeover/). La respuesta depende de qué procedimientos se combinan, cómo evoluciona la recuperación, la duración del vuelo y cuándo tu equipo quirúrgico te autoriza a viajar. Esta guía explica cómo pensar la estadía, qué suele alargar el calendario y qué confirmar antes de comprar el tiquete de regreso. La guía del país, con visa y cotización, es [cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
 
 ## Por qué la estadía importa más que el día de la cirugía sola
 
