@@ -629,6 +629,16 @@ curl -I "https://fulviocorrea.com/post/tummy-tuck-colombia/"
 curl -I "https://fulviocorrea.com/blog/tummy-tuck-colombia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/tummy-tuck-vs-liposuction"
+# Expected: 301 Location: /blog/tummy-tuck-vs-liposuction/
+curl -I "https://fulviocorrea.com/blog/tummy-tuck-vs-liposuction/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/tummy-tuck-vs-liposuction/"
+# Expected: 301 Location: /blog/tummy-tuck-vs-liposuction/
+curl -I "https://fulviocorrea.com/blog/tummy-tuck-vs-liposuction/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/abdominoplastia-colombia"
 # Expected: 301 Location: /es/blog/abdominoplastia-colombia/
 curl -I "https://fulviocorrea.com/es/blog/abdominoplastia-colombia/"
@@ -637,6 +647,16 @@ curl -I "https://fulviocorrea.com/es/blog/abdominoplastia-colombia/"
 curl -I "https://fulviocorrea.com/post/abdominoplastia-colombia/"
 # Expected: 301 Location: /es/blog/abdominoplastia-colombia/
 curl -I "https://fulviocorrea.com/es/blog/abdominoplastia-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/abdominoplastia-o-liposuccion"
+# Expected: 301 Location: /es/blog/abdominoplastia-o-liposuccion/
+curl -I "https://fulviocorrea.com/es/blog/abdominoplastia-o-liposuccion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/abdominoplastia-o-liposuccion/"
+# Expected: 301 Location: /es/blog/abdominoplastia-o-liposuccion/
+curl -I "https://fulviocorrea.com/es/blog/abdominoplastia-o-liposuccion/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/post/aumento-de-senos-colombia"
@@ -1497,6 +1517,16 @@ curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
 curl -I "https://fulviocorrea.com/en/blog/category/plastic-surgery-in-colombia"
 # Expected: 301 Location: /blog/category/plastic-surgery-in-colombia/
 curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/tummy-tuck-vs-liposuction/"
+# Expected: 301 Location: /blog/tummy-tuck-vs-liposuction/
+curl -I "https://fulviocorrea.com/blog/tummy-tuck-vs-liposuction/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/tummy-tuck-vs-liposuction"
+# Expected: 301 Location: /blog/tummy-tuck-vs-liposuction/
+curl -I "https://fulviocorrea.com/blog/tummy-tuck-vs-liposuction/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/blog/facelift-colombia/"
