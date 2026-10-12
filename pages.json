@@ -2579,6 +2579,113 @@
     ]
   },
   {
+    "route": "/en/blog/tummy-tuck-vs-liposuction/",
+    "file": "dist/en/blog/tummy-tuck-vs-liposuction/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-12",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Tummy Tuck vs Liposuction: Which One Do You Need?",
+        "datePublished": "2026-10-12",
+        "dateModified": "2026-10-12",
+        "inLanguage": "en",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-vs-liposuction.webp",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-vs-liposuction.avif",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-vs-liposuction-og.webp",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-vs-liposuction-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/tummy-tuck-vs-liposuction/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is liposuction or a tummy tuck better for a flat stomach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on what is keeping the stomach from looking flat. If it is fat under firm skin, liposuction can do it. If there is loose skin or a bulge from separated muscles, only a tummy tuck addresses those, often with liposuction added to shape the waist."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can liposuction tighten loose skin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Mayo Clinic notes that skin with poor elasticity may look loose after liposuction, and the SCCP advises an excision procedure when the skin is very loose."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a tummy tuck remove fat too?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It removes the skin and fat in the area it excises, mostly between the belly button and the pubic area. Fat on the flanks or upper abdomen is usually treated with liposuction in the same operation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which has the easier recovery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Liposuction, in most cases. Both involve a compression garment and a gradual return to activity, but a tummy tuck adds muscle repair, a longer incision and usually drains. Mayo Clinic says many people return to work about 2 to 4 weeks after a tummy tuck."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Colombia for either one?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you fly Avianca, plan around its 14-day minimum for liposuction or a tummy tuck, or 15 days if two or more body procedures are combined, plus your arrival days for the in-person evaluation. Your surgeon's clearance comes first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I have a tummy tuck if I want more children?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is usually better to wait. The SCCP says a later pregnancy can undo the result, although the surgery does not affect the baby's development."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/es/blog/abdominoplastia-o-liposuccion/",
+    "cover": "/assets/blog-tummy-tuck-vs-liposuction.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/tummy-tuck-vs-liposuction/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/abdominoplastia-o-liposuccion/"
+      }
+    ]
+  },
+  {
     "route": "/en/blog/facelift-colombia/",
     "file": "dist/en/blog/facelift-colombia/index.html",
     "lang": "en",
@@ -3197,14 +3304,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-30",
+    "updated": "2026-10-12",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Liposuction in Colombia (Cartagena): Consultation, Travel & Recovery",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-09-30",
+        "dateModified": "2026-10-12",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-liposuction-measurement.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/liposuction-cartagena/",
@@ -3244,14 +3351,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-08",
+    "updated": "2026-10-12",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Tummy Tuck in Colombia: How to Choose",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-10-08",
+        "dateModified": "2026-10-12",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-tummy-tuck-consultation.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/tummy-tuck-colombia/",
@@ -3456,6 +3563,113 @@
       {
         "lang": "es",
         "route": "/es/blog/categoria/cirugia-plastica-en-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/abdominoplastia-o-liposuccion/",
+    "file": "dist/es/blog/abdominoplastia-o-liposuccion/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-12",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "¿Abdominoplastia o liposucción? Cómo saber cuál necesitas",
+        "datePublished": "2026-10-12",
+        "dateModified": "2026-10-12",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-vs-liposuction.webp",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-vs-liposuction.avif",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-vs-liposuction-og.webp",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-vs-liposuction-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/abdominoplastia-o-liposuccion/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué es mejor para un abdomen plano, la lipo o la abdominoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende de qué impide que el abdomen se vea plano. Si es grasa bajo una piel firme, la liposucción puede lograrlo. Si hay piel sobrante o diástasis de rectos, solo la abdominoplastia lo corrige, muchas veces con lipo para definir la cintura."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La liposucción templa la piel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Mayo Clinic explica que la piel poco elástica puede verse floja después de una lipo, y la SCCP indica una lipectomía cuando la piel está muy flácida."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La lipectomía y la abdominoplastia son lo mismo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Lipectomía abdominal y abdominoplastia son dos nombres para la cirugía que retira la piel sobrante del abdomen y trata los músculos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuál tiene una recuperación más fácil?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En general, la liposucción. Las dos llevan faja y retorno gradual a la actividad, pero la abdominoplastia suma la reparación muscular, una cicatriz más larga y, por lo general, drenes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días debo quedarme en Cartagena si vengo de otro país?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Si vuelas con Avianca, planea sobre su mínimo de 14 días para lipo o abdominoplastia, o 15 si se combinan dos o más procedimientos corporales, más los días de llegada para la valoración presencial. Primero va la autorización de tu cirujano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Me puedo hacer una abdominoplastia si quiero tener más hijos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lo recomendable es esperar. La SCCP advierte que un embarazo posterior puede hacer perder el resultado."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/en/blog/tummy-tuck-vs-liposuction/",
+    "cover": "/assets/blog-tummy-tuck-vs-liposuction.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/abdominoplastia-o-liposuccion/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/tummy-tuck-vs-liposuction/"
       }
     ]
   },
@@ -3924,14 +4138,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-30",
+    "updated": "2026-10-12",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Liposucción en Colombia: valoración, viaje y recuperación",
         "datePublished": "2026-09-30",
-        "dateModified": "2026-09-30",
+        "dateModified": "2026-10-12",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-liposuction-measurement.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/liposuccion-colombia/",
@@ -4070,14 +4284,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-05",
+    "updated": "2026-10-12",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Abdominoplastia en Colombia: qué verificar antes de viajar",
         "datePublished": "2026-09-25",
-        "dateModified": "2026-10-05",
+        "dateModified": "2026-10-12",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-tummy-tuck-consultation.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/abdominoplastia-colombia/",

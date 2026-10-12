@@ -634,6 +634,16 @@
       "status": 301
     },
     {
+      "from": "/post/tummy-tuck-vs-liposuction",
+      "to": "/blog/tummy-tuck-vs-liposuction/",
+      "status": 301
+    },
+    {
+      "from": "/post/tummy-tuck-vs-liposuction/",
+      "to": "/blog/tummy-tuck-vs-liposuction/",
+      "status": 301
+    },
+    {
       "from": "/post/abdominoplastia-colombia",
       "to": "/es/blog/abdominoplastia-colombia/",
       "status": 301
@@ -641,6 +651,16 @@
     {
       "from": "/post/abdominoplastia-colombia/",
       "to": "/es/blog/abdominoplastia-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/abdominoplastia-o-liposuccion",
+      "to": "/es/blog/abdominoplastia-o-liposuccion/",
+      "status": 301
+    },
+    {
+      "from": "/post/abdominoplastia-o-liposuccion/",
+      "to": "/es/blog/abdominoplastia-o-liposuccion/",
       "status": 301
     },
     {
@@ -1501,6 +1521,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/tummy-tuck-vs-liposuction/",
+      "to": "/blog/tummy-tuck-vs-liposuction/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/tummy-tuck-vs-liposuction",
+      "to": "/blog/tummy-tuck-vs-liposuction/",
       "status": 301
     },
     {

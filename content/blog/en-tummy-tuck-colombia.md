@@ -8,7 +8,7 @@ tags: ["tummy-tuck-colombia"]
 cover: "/assets/blog-tummy-tuck-consultation.webp"
 coverAlt: "Hands of a medical professional reviewing documents on a clipboard"
 date: "2026-09-23"
-updated: "2026-10-08"
+updated: "2026-10-12"
 author: "fulvio-correa"
 translationOf: "abdominoplastia-colombia"
 sources: ["https://www.cirugiaplastica.org.co/","https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://medlineplus.gov/ency/article/002978.htm","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/recovery","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/safety"]
@@ -16,7 +16,7 @@ draft: false
 originalUrl: "https://fulviocorrea.com.co/post/tummy-tuck-colombia"
 procedure: "tummy-tuck"
 twin: "abdominoplastia-colombia"
-related: []
+related: ["tummy-tuck-vs-liposuction"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -42,6 +42,8 @@ Red flags: a surgery date offered before anyone reviews your history, guaranteed
 A tummy tuck (abdominoplasty) is a body-contouring procedure that removes excess abdominal skin and can repair separated abdominal muscles when clinically indicated. It is not a weight-loss operation and does not replace nutrition or exercise. Candidates are often people near a stable weight who still have loose skin or muscle separation after pregnancy, major weight change, or aging.
 
 In consultation, Dr. Fulvio Correa, a member of the Colombian Society of Plastic Surgery (SCCP), assesses skin quality, fat distribution, muscle wall integrity, scars, medical history, and lifestyle. That evaluation—not a blog article—determines whether a full, mini, or extended approach is appropriate, whether liposuction is discussed as an adjunct, or whether waiting is wiser.
+
+Not sure your abdomen needs skin removal at all? Our comparison of [tummy tuck vs liposuction](/blog/tummy-tuck-vs-liposuction/) explains how fat, loose skin and separated muscles point to different operations.
 
 ## Who is usually a candidate—and who should wait
 
