@@ -15,6 +15,7 @@ export function writeCloudflareAdapter(production){
   // functions/_middleware.js repeats this by host, including branch aliases such as staging.fulviocorrea.pages.dev.
   'https://:project.pages.dev/*','  X-Robots-Tag: noindex, nofollow',
   'https://:version.:project.pages.dev/*','  X-Robots-Tag: noindex, nofollow',
+  '/api/leads.csv','  Cache-Control: no-store','  X-Robots-Tag: noindex, nofollow',
   '/assets/*','  Cache-Control: public, max-age=604800',
   '/config.js','  Cache-Control: public, max-age=300',
   ''].join('\n');

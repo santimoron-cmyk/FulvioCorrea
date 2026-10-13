@@ -44,5 +44,7 @@ export function apexRedirect(href) {
 export const AI_CRAWLERS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'PerplexityBot', 'ClaudeBot', 'Google-Extended'];
 export function robotsTxt(production, origin) {
   if (!production) return 'User-agent: *\nDisallow: /\n';
-  return ['User-agent: *', 'Allow: /', '', ...AI_CRAWLERS.flatMap(bot => [`User-agent: ${bot}`, 'Allow: /', '']), `Sitemap: ${origin}/sitemap.xml`, ''].join('\n');
+  // /api/leads.csv is a private export. Allow: / would otherwise leave it crawlable.
+  const group = agent => [`User-agent: ${agent}`, 'Allow: /', 'Disallow: /api/leads.csv', ''];
+  return [...group('*'), ...AI_CRAWLERS.flatMap(group), `Sitemap: ${origin}/sitemap.xml`, ''].join('\n');
 }
