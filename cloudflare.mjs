@@ -19,7 +19,13 @@ export function writeCloudflareAdapter(production){
   '/api/leads.csv','  Cache-Control: no-store','  X-Robots-Tag: noindex, nofollow',
   DORAL_ICS_PATH,'  Content-Type: text/calendar; charset=utf-8',
   '/assets/*','  Cache-Control: public, max-age=604800',
-  '/config.js','  Cache-Control: public, max-age=300',
+  // These four (plus thank-you.js) are also referenced as ?v=<sha> from every page.
+  // A positive max-age is shorter than the apex 4-hour browser cache. The query string is the bust.
+  '/app.js','  Cache-Control: public, max-age=300, must-revalidate',
+  '/config.js','  Cache-Control: public, max-age=300, must-revalidate',
+  '/contact.js','  Cache-Control: public, max-age=300, must-revalidate',
+  '/event-signup.js','  Cache-Control: public, max-age=300, must-revalidate',
+  '/thank-you.js','  Cache-Control: public, max-age=300, must-revalidate',
   ''].join('\n');
  fs.writeFileSync('dist/_headers',headers);
  fs.mkdirSync('dist/events',{recursive:true});
