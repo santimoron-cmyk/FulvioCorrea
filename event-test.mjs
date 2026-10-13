@@ -29,7 +29,7 @@ function pair(pages,label){
   assert.ok(main.includes(p.line),label+' '+lang+' medical-evaluation line');assert.ok(main.includes(p.host),label+' '+lang+' Aromas does not perform the procedure');
   const text=main.replace(/<[^>]+>/g,' ');
   assert.doesNotMatch(text,/board[- ]certified|certificad[oa] por la junta|virtual assistant|asistente virtual|\$\s?\d|US\$|USD|COP|garant|guarantee|licen[cs]|antes y después|before[- ]and[- ]after|\bbest\b/i,label+' '+lang+' banned copy');
-  for(const name of ['name','whatsapp','email','city','companion','contact_consent','website'])assert.ok(main.includes(`name="${name}"`),label+' '+lang+' field '+name);
+  for(const name of ['name','whatsapp','email','city','companion','contact_consent','website','phone_country'])assert.ok(main.includes(`name="${name}"`),label+' '+lang+' field '+name);
   assert.ok(h.includes('<script defer src="/event-signup.js"></script></body>'),label+' '+lang+' form script');
   assert.ok(main.includes('data-consent-version="event-doral-consent-2026-09-30"'),label+' '+lang+' consent version');
   p.html=h;p.main=main;p.event=ev;
@@ -69,7 +69,15 @@ for(const [lang,p] of Object.entries(live)){
  assert.ok(p.main.includes(p.access),lang+' direct access');
  assert.ok(p.main.includes('name="procedure_interest"')&&!/name="procedure_interest"[^>]*required/.test(p.main),lang+' optional interest select');
  for(const value of ['non-surgical','breast','abdomen-contour','face','mommy-makeover','undecided'])assert.ok(p.main.includes(`value="${value}"`),lang+' interest option '+value);
- assert.ok(!/value="lipo-contour"|value="other"|value="abdomen"/.test(p.main),lang+' old interest values are gone');
+ const interestSelect=p.main.match(/<select name="procedure_interest">[\s\S]*?<\/select>/)[0];
+ assert.ok(!/value="lipo-contour"|value="other"|value="abdomen"/.test(interestSelect),lang+' old interest values are gone');
+ assert.ok(p.main.includes('<option value="+1" selected>+1 (US)</option>'),lang+' country code defaults to +1 (US)');
+ for(const label of ['+1 (CA)','+57 (CO)','+52 (MX)','+58 (VE)','+54 (AR)','+51 (PE)','+56 (CL)','+593 (EC)','+34 (ES)','+507 (PA)','+506 (CR)','+1 (PR/DO)'])assert.ok(p.main.includes(label),lang+' country option '+label);
+ assert.ok(p.main.includes(lang==='es'?'>Otro</option>':'>Other</option>'),lang+' other country code');
+ assert.match(p.main,/name="whatsapp" type="tel" autocomplete="tel-national" inputmode="tel"/,lang+' national number is a tel field');
+ assert.ok(p.main.includes('placeholder="305 555 0123"')&&!p.main.includes('placeholder="+1 305 555 0123"'),lang+' national number has no country code');
+ assert.ok(p.main.includes('aria-describedby="event-phone-hint"')&&p.main.includes('id="event-phone-other" hidden'),lang+' phone labels and hidden other code');
+ assert.ok(p.main.includes(lang==='es'?'Código de país':'Country code')&&p.main.includes(lang==='es'?'Solo números, sin el código de país':'Digits only, without the country code'),lang+' phone labels');
  assert.ok(p.main.includes(p.unsure),lang+' not sure yet option');
  assert.ok(!hero.includes('bio-photo'),lang+' hero portraits stay arched');
  const bios=p.main.slice(p.main.indexOf('class="bios"'));
@@ -101,6 +109,13 @@ assert.ok(flat.includes(DORAL_LOCATION)&&flat.includes('Vino y picadas, con el D
 assert.ok(flat.includes('https://fulviocorrea.com/es/conversatorio-belleza-estetica-doral/')&&flat.includes('https://fulviocorrea.com/beauty-aesthetics-talk-doral/'),'ics landing links');
 for(const line of ics.split('\r\n'))if(line)assert.ok(Buffer.byteLength(line)<=75,'ics line longer than 75 octets');
 assert.ok(fs.readFileSync('dist/_headers','utf8').includes('/events/doral-2026-11-06.ics\n  Content-Type: text/calendar; charset=utf-8'),'ics content type');
+const icsFn=fs.readFileSync('functions/events/doral-2026-11-06.ics.js','utf8');
+assert.ok(!/from ['"]node:|require\(/.test(icsFn),'ics function must not import node: modules');
+const {onRequest:serveIcs}=await import('./functions/events/doral-2026-11-06.ics.js');
+const icsRes=await serveIcs();
+assert.equal(icsRes.headers.get('content-type'),'text/calendar; charset=utf-8','function content type');
+assert.equal(icsRes.headers.get('x-content-type-options'),'nosniff');
+assert.equal(await icsRes.text(),ics,'function body matches the static file');
 const signup=fs.readFileSync('event-signup.js','utf8');
 assert.ok(signup.includes('viernes 6 de noviembre de 2026, 6:00 p. m.')&&signup.includes('vino y picadas'),'ES confirmation');
 assert.ok(signup.includes('Friday, November 6, 2026, 6:00 PM')&&signup.includes('wine and light bites'),'EN confirmation');
@@ -119,15 +134,18 @@ assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral-v1/')?.to,u
 assert.equal(rules.find(r=>r.from==='/mommy-makeover-talk-doral-v1/')?.to,undefined,'v1 English path is not published');
 console.log('PASS: Aromas event landing ES/EN — sitemap, production canonicals, hreflang pair, Event schema, copy rules, live form. Fulvio v1 is not published.');
 
-function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest,accept=true}={}){
+function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest,accept=true,national,dial='+1',otherDial=''}={}){
  const requests=[];const listeners={};
  const el=(value,extra={})=>({value,checked:false,disabled:false,type:'text',validation:'',validity:{customError:false},dataset:{},textContent:'',setCustomValidity(v){this.validation=v;this.validity.customError=!!v;},addEventListener(){},...extra});
- const name=el(lang==='es'?'Ana López':'Ana Lopez'),phone=el('+1 305 555 0123'),email=el('ana@example.com'),city=el('Doral'),website=el(''),companion=el('no'),consent=el('',{checked:true,type:'checkbox'}),button=el('',{type:'submit'});
+ const split=shell==='aromas';
+ const name=el(lang==='es'?'Ana López':'Ana Lopez'),phone=el(split?(national??'3055550123'):'+1 305 555 0123'),email=el('ana@example.com'),city=el('Doral'),website=el(''),companion=el('no'),consent=el('',{checked:true,type:'checkbox'}),button=el('',{type:'submit'});
  const select=interest===undefined?null:el(interest);
+ const phoneCountry=el(dial),phoneOther=el(otherDial);
  const consentSpan={dataset:{consentVersion:'event-doral-consent-2026-09-30'},textContent:'contact consent'};
  const status={textContent:'',className:''};const calendar={hidden:true};
  const elements={name,whatsapp:phone,email,city,website,companion,contact_consent:consent};
  if(select)elements.procedure_interest=select;
+ if(split){elements.phone_country=phoneCountry;elements.phone_country_other=phoneOther;}
  const form={dataset:{eventTag:shell==='aromas'?'conversatorio-belleza-estetica-doral-nov2026':'charla-mommy-makeover-doral-oct2026'},elements,addEventListener(type,fn){listeners[type]=fn;},checkValidity(){return !phone.validation;},reportValidity(){},querySelector(sel){return sel==='[data-consent-version]'?consentSpan:null;},querySelectorAll(){return [name,phone,email,city,button,select].filter(Boolean);}};
  const sessionStorage={getItem:k=>storage.has(k)?storage.get(k):null,setItem:(k,v)=>storage.set(k,String(v))};
  const location=new URL(href);
@@ -143,7 +161,8 @@ assert.equal(page.calendar.hidden,true,'calendar is hidden before a successful r
 await page.submit();
 assert.equal(page.calendar.hidden,false,'calendar appears after a successful registration');
 let body=page.requests[0].body;
-for(const [k,v] of Object.entries({procedure_interest:'undecided',procedure:'undecided',procedure_label:'Aún no lo sé / Not sure yet',language:'es',event_tag:'conversatorio-belleza-estetica-doral-nov2026',utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov',utm_source_last:'instagram',utm_medium_last:'social',utm_campaign_last:'doral-nov',form_id:'event-signup',event:'lead_created'}))assert.equal(body[k],v,'signup.'+k);
+for(const [k,v] of Object.entries({procedure_interest:'undecided',procedure:'undecided',procedure_label:'Aún no lo sé / Not sure yet',language:'es',event_tag:'conversatorio-belleza-estetica-doral-nov2026',utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov',utm_source_last:'instagram',utm_medium_last:'social',utm_campaign_last:'doral-nov',form_id:'event-signup',event:'lead_created',phone:'+13055550123',phone_country:'US',phone_country_code:'+1'}))assert.equal(body[k],v,'signup.'+k);
+assert.equal(body.phone_country_other,undefined,'country select is not a separate lead field');
 assert.match(page.status.textContent,/viernes 6 de noviembre de 2026, 6:00 p\. m\./,'ES confirmation after submit');
 const kept=page.storage;
 page=bootSignup({href:'https://fulviocorrea.com/es/conversatorio-belleza-estetica-doral/',storage:kept,interest:''});
@@ -174,6 +193,7 @@ page=bootSignup({shell:'fulvio',href:'https://fulviocorrea.com/es/charla-mommy-m
 await page.submit();
 body=page.requests[0].body;
 assert.equal(body.procedure,'mommy-makeover');assert.equal(body.procedure_label,'Mommy Makeover');assert.equal(body.procedure_interest,undefined,'v1 form has no interest select');
+assert.equal(body.phone,'+13055550123','v1 still accepts one field with a country code');
 assert.equal(body.event_tag,'charla-mommy-makeover-doral-oct2026');
 assert.ok(!page.status.textContent.includes('viernes 6 de noviembre'),'v1 confirmation is unchanged');
 assert.equal(page.calendar.hidden,true,'v1 confirmation does not open the Doral calendar');
@@ -181,4 +201,25 @@ page=bootSignup({href:talk,interest:'',accept:false});
 await page.submit();
 assert.equal(page.calendar.hidden,true,'a failed registration does not show the calendar');
 assert.match(page.status.textContent,/No pudimos confirmar/);
+page=bootSignup({href:talk,interest:'',dial:'+57',national:'3001234567'});
+await page.submit();
+body=page.requests[0].body;
+assert.equal(body.phone,'+573001234567');assert.equal(body.phone_country,'CO');assert.equal(body.phone_country_code,'+57','Colombia stays the same phone fields');
+page=bootSignup({href:talk,interest:'',dial:'+57',national:'0300 123 4567'});
+await page.submit();
+assert.equal(page.requests[0].body.phone,'+573001234567','a trunk zero is dropped before E.164');
+page=bootSignup({href:talk,interest:'',national:'305-555-0123'});
+await page.submit();
+assert.equal(page.requests[0].body.phone,'+13055550123','punctuation in the national number is ignored');
+page=bootSignup({href:talk,interest:'',dial:'other',otherDial:'+44',national:'7911123456'});
+await page.submit();
+body=page.requests[0].body;
+assert.equal(body.phone,'+447911123456');assert.equal(body.phone_country,'');assert.equal(body.phone_country_code,'','other codes stay E.164 with the existing country map');
+page=bootSignup({href:talk,interest:'',national:'123456789'});
+await page.submit();
+assert.equal(page.requests.length,0,'a +1 number that is not 10 digits is rejected');
+assert.match(page.status.textContent,/código de país/);
+page=bootSignup({lang:'en',href:'https://fulviocorrea.com/beauty-aesthetics-talk-doral/',interest:'',national:'555'});
+await page.submit();
+assert.equal(page.requests.length,0);assert.match(page.status.textContent,/country code/);
 console.log('PASS: event sign-up sends procedure_interest (default undecided), keeps procedure/procedure_label, landing UTMs, language and event_tag.');
