@@ -97,8 +97,9 @@ for(const [lang,p] of Object.entries(live)){
  assert.match(p.main,/<a href="https:\/\/aromaslaser\.com\/" target="_blank" rel="noopener">Aromas Med Spa<\/a>/,lang+' Aromas site link');
  assert.ok(!p.main.includes('rel="nofollow"'),lang+' site link stays followable');
  assert.match(p.main,/id="event-calendar" class="event-calendar" hidden/,lang+' calendar stays hidden until success');
- assert.ok(p.main.includes(lang==='es'?'Agregar a mi calendario':'Add to my calendar'),lang+' calendar heading');
- assert.ok(p.main.includes('href="/events/doral-2026-11-06.ics" download="doral-2026-11-06.ics"'),lang+' ics download');
+ assert.match(p.main,/id="event-signup-status" class="form-status" role="status"/,lang+' success box');
+ assert.ok(p.main.includes('<a class="btn" href="/events/doral-2026-11-06.ics" download="doral-2026-11-06.ics">'+(lang==='es'?'Agregar al calendario':'Add to calendar')+'</a>'),lang+' calendar download button');
+ assert.ok(!p.main.includes(lang==='es'?'Apple y Outlook':'Apple and Outlook'),lang+' download is not the old tiny label');
  assert.ok(p.main.includes('https://calendar.google.com/calendar/render?')&&p.main.includes('action=TEMPLATE')&&p.main.includes('dates=20261106T230000Z%2F20261107T010000Z')&&p.main.includes('ctz=America%2FNew_York'),lang+' Google Calendar link');
  assert.ok(p.main.includes('https://outlook.live.com/calendar/0/deeplink/compose?')&&p.main.includes('startdt=2026-11-06T23%3A00%3A00Z')&&p.main.includes('enddt=2026-11-07T01%3A00%3A00Z'),lang+' Outlook.com link');
  assert.ok(p.main.includes(encodeURIComponent(DORAL_TITLES[lang]).replaceAll('%20','+')),lang+' calendar title');
@@ -146,7 +147,7 @@ function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest,ac
  const select=interest===undefined?null:el(interest);
  const phoneCountry=el(dial),phoneOther=el(otherDial);
  const consentSpan={dataset:{consentVersion:'event-doral-consent-2026-09-30'},textContent:'contact consent'};
- const status={textContent:'',className:''};const calendar={hidden:true};
+ const status={textContent:'',className:'',kids:[],append(node){this.kids.push(node);}};const calendar={hidden:true};
  const elements={name,whatsapp:phone,email,city,website,companion,contact_consent:consent};
  if(select)elements.procedure_interest=select;
  if(split){elements.phone_country=phoneCountry;elements.phone_country_other=phoneOther;}
@@ -163,9 +164,11 @@ let page=bootSignup({href:talk,interest:''});
 assert.deepEqual(JSON.parse(page.storage.get('fc_event_utm')),{utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov'},'landing UTMs stored for the tab');
 assert.equal(page.calendar.hidden,true,'calendar is hidden before a successful registration');
 await page.submit();
-assert.equal(page.calendar.hidden,false,'calendar appears after a successful registration');
+ assert.equal(page.calendar.hidden,false,'calendar appears after a successful registration');
+ assert.equal(page.status.kids.at(-1),page.calendar,'calendar is placed inside the success box');
 let body=page.requests[0].body;
-for(const [k,v] of Object.entries({procedure_interest:'undecided',procedure:'undecided',procedure_label:'Aún no lo sé / Not sure yet',language:'es',event_tag:'conversatorio-belleza-estetica-doral-nov2026',utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov',utm_source_last:'instagram',utm_medium_last:'social',utm_campaign_last:'doral-nov',form_id:'event-signup',event:'lead_created',phone:'+13055550123',phone_country:'US',phone_country_code:'+1'}))assert.equal(body[k],v,'signup.'+k);
+ for(const [k,v] of Object.entries({procedure_interest:'undecided',procedure:'undecided',procedure_label:'Aún no lo sé / Not sure yet',language:'es',event_tag:'conversatorio-belleza-estetica-doral-nov2026',utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov',utm_source_last:'instagram',utm_medium_last:'social',utm_campaign_last:'doral-nov',form_id:'event-signup',event:'lead_created',email:'ana@example.com',phone:'+13055550123',phone_country:'US',phone_country_code:'+1'}))assert.equal(body[k],v,'signup.'+k);
+ assert.equal(typeof body.email,'string','event signup email stays a top-level string');
 assert.equal(body.phone_country_other,undefined,'country select is not a separate lead field');
 assert.match(page.status.textContent,/viernes 6 de noviembre de 2026, 6:00 p\. m\./,'ES confirmation after submit');
 const kept=page.storage;
@@ -186,7 +189,9 @@ page=bootSignup({lang:'en',href:'https://fulviocorrea.com/beauty-aesthetics-talk
 await page.submit();
 body=page.requests[0].body;
 assert.equal(body.language,'en');assert.equal(body.procedure_interest,'face');assert.equal(body.procedure,'face');assert.equal(body.utm_source,'google');assert.equal(body.utm_medium,'cpc');assert.equal(body.utm_campaign,'search');assert.equal(body.gclid,'g1');assert.equal(body.utm_source_first,'first');
-assert.match(page.status.textContent,/Friday, November 6, 2026, 6:00 PM/,'EN confirmation after submit');
+ assert.match(page.status.textContent,/Friday, November 6, 2026, 6:00 PM/,'EN confirmation after submit');
+ assert.equal(page.calendar.hidden,false,'EN calendar appears after a successful registration');
+ assert.equal(page.status.kids.at(-1),page.calendar,'EN calendar is placed inside the success box');
 const override=new Map(prior);
 page=bootSignup({lang:'en',href:'https://fulviocorrea.com/beauty-aesthetics-talk-doral/?utm_source=meta&utm_medium=paid&utm_campaign=talk',interest:'undecided',storage:override});
 await page.submit();
