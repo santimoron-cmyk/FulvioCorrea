@@ -4,6 +4,7 @@ import vm from 'node:vm';
 import {spawnSync} from 'node:child_process';
 import {physicianNode,editorialAuthor,membershipView} from './practice-view.mjs';
 import {localizePath} from './routes.mjs';
+import {assetVersion} from './asset-version.mjs';
 const practice=JSON.parse(fs.readFileSync('data/practice.json'));
 const origin=JSON.parse(fs.readFileSync('config.json')).origin;
 const doctor=physicianNode(practice,origin);
@@ -23,11 +24,12 @@ const ghlChat=JSON.parse(fs.readFileSync('data/chat.json','utf8')).provider==='g
 for(const page of JSON.parse(fs.readFileSync('pages.json'))){const h=fs.readFileSync(page.file,'utf8');
  assert.equal((h.match(/<\/body>/g)||[]).length,1,page.route+' corrupt body insertion');
  // Chat provider (data/chat.json): native = launcher + Sofía dialog; ghl = launcher only (GHL loads on first click).
- assert.match(h,ghlChat?/<\/button><\/div><script defer src="\/contact.js"><\/script>/:/<\/dialog><script defer src="\/contact.js"><\/script>/,page.route+' widget script must be outside form attributes');
- assert.equal(h.includes('src="/contact.js"'),h.includes('id="contact-open"'));
+ const v=assetVersion();
+ assert.match(h,ghlChat?new RegExp(`</button></div><script defer src="/contact.js\\?v=${v}"></script>`):new RegExp(`</dialog><script defer src="/contact.js\\?v=${v}"></script>`),page.route+' widget script must be outside form attributes');
+ assert.equal(h.includes(`src="/contact.js?v=${v}"`),h.includes('id="contact-open"'));
  // The launcher is just "Sofía": no "virtual assistant" label, visible or accessible.
  assert.doesNotMatch(h.match(/<div class="contact-launcher"><button[^>]*>/)?.[0]||'',/virtual assistant|asistente virtual/i,page.route);assert.equal(h.includes('id="contact-dialog"'),!ghlChat&&h.includes('id="contact-open"'));
- assert.equal(h.includes('src="/thank-you.js"'),h.includes('id="thanks-confirmation"'));
+ assert.equal(h.includes(`src="/thank-you.js?v=${v}"`),h.includes('id="thanks-confirmation"'));
  if(ghlChat&&h.includes('id="contact-open"')){const t=JSON.parse(h.match(/data-texts="([^"]*)"/)[1].replaceAll('&quot;','"').replaceAll('&amp;','&').replaceAll('&#39;',"'").replaceAll('&lt;','<').replaceAll('&gt;','>'));
   // GHL texts follow the page language, name Sofía (never the dashboard's Eileen) and use the S avatar, not a photo.
   assert.equal(t.heading,'Sofía',page.route);assert.equal(t.subtitle,undefined,page.route);assert.match(t.promptAvatar,/^data:image\/svg\+xml/);assert.doesNotMatch(JSON.stringify(t),/Eileen|Enter your question|Ingresa una pregunta|virtual assistant|asistente virtual/i,page.route);

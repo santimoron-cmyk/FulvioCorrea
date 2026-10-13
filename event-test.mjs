@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import {doralIcs,DORAL_LOCATION,DORAL_UID,DORAL_TITLES} from './event-calendar.mjs';
+import {assetVersion} from './asset-version.mjs';
 const origin=JSON.parse(fs.readFileSync('config.json','utf8')).origin;
 const production=process.env.SITE_ENV?process.env.SITE_ENV==='production':!/^Disallow: \/\s*$/m.test(fs.readFileSync('dist/robots.txt','utf8'));
 const live={
@@ -30,7 +31,8 @@ function pair(pages,label){
   const text=main.replace(/<[^>]+>/g,' ');
   assert.doesNotMatch(text,/board[- ]certified|certificad[oa] por la junta|virtual assistant|asistente virtual|\$\s?\d|US\$|USD|COP|garant|guarantee|licen[cs]|antes y después|before[- ]and[- ]after|\bbest\b/i,label+' '+lang+' banned copy');
   for(const name of ['name','whatsapp','email','city','companion','contact_consent','website','phone_country'])assert.ok(main.includes(`name="${name}"`),label+' '+lang+' field '+name);
-  assert.ok(h.includes('<script defer src="/event-signup.js"></script></body>'),label+' '+lang+' form script');
+  assert.ok(h.includes(`<script defer src="/event-signup.js?v=${assetVersion()}"></script></body>`),label+' '+lang+' form script');
+  assert.ok(h.includes(`src="/app.js?v=${assetVersion()}"`)&&h.includes(`src="/config.js?v=${assetVersion()}"`),label+' '+lang+' shared scripts cache bust');
   assert.ok(main.includes('data-consent-version="event-doral-consent-2026-09-30"'),label+' '+lang+' consent version');
   p.html=h;p.main=main;p.event=ev;
  }
