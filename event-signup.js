@@ -54,7 +54,7 @@
   button.disabled=true;status.className='form-status';status.textContent=T.sending;const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),15000);
   try{const r=await fetch('/api/lead',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json','Idempotency-Key':body.event_id},body:JSON.stringify(body),signal:abort.signal});let j={};try{j=JSON.parse(await r.text());}catch{}
    if(!r.ok||j.accepted!==true)throw Error(j.error||String(r.status));
-   status.className='form-status ok';status.textContent=T.ok(name.split(' ')[0]);const cal=document.getElementById('event-calendar');if(aromas&&cal)cal.hidden=false;form.querySelectorAll('input,button,select').forEach(x=>{if(x.type!=='hidden')x.disabled=true;});
+   status.className='form-status ok';status.textContent=T.ok(name.split(' ')[0]);const cal=document.getElementById('event-calendar');if(aromas&&cal){cal.hidden=false;status.append(cal);}form.querySelectorAll('input,button,select').forEach(x=>{if(x.type!=='hidden')x.disabled=true;});
    push('event_signup',{lead_id:leadId,companion:body.companion,city:body.city?'provided':'',procedure,...(hasInterest?{procedure_interest:interest}:{})});push('generate_lead',{lead_id:leadId,lead_type:'event_signup',procedure});
   }catch(err){status.textContent=T.error;button.disabled=false;push('form_error',{error:String(err?.message||'network').slice(0,40)});}finally{clearTimeout(timer);}
  });
