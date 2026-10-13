@@ -3,6 +3,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
+import {doralIcs,DORAL_LOCATION,DORAL_UID,DORAL_TITLES} from './event-calendar.mjs';
 const origin=JSON.parse(fs.readFileSync('config.json','utf8')).origin;
 const production=process.env.SITE_ENV?process.env.SITE_ENV==='production':!/^Disallow: \/\s*$/m.test(fs.readFileSync('dist/robots.txt','utf8'));
 const live={
@@ -78,7 +79,28 @@ for(const [lang,p] of Object.entries(live)){
  assert.match(p.html,/\.bio-fulvio img\{object-position:center 8%\}/,lang+' Fulvio face position');
  assert.match(p.html,/\.bio-nader img\{object-position:center 4%\}/,lang+' Nader face position');
  assert.ok(p.main.includes(lang==='es'?'Te recibimos en Aromas Med Spa, Doral.':'We welcome you at Aromas Med Spa, Doral.'),lang+' Aromas welcomes you in Doral');
+ assert.equal((p.main.match(/https:\/\/maps\.app\.goo\.gl\/Uicgm1mwFxyLtxy97/g)||[]).length,2,lang+' maps link at each venue');
+ assert.equal((p.main.match(new RegExp('>'+DORAL_LOCATION.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'</a>','g'))||[]).length,2,lang+' full address at each venue');
+ assert.equal((p.main.match(/href="tel:\+13055913005"/g)||[]).length,2,lang+' phone at each venue');
+ assert.match(p.main,/<a href="https:\/\/aromaslaser\.com\/" target="_blank" rel="noopener">Aromas Med Spa<\/a>/,lang+' Aromas site link');
+ assert.ok(!p.main.includes('rel="nofollow"'),lang+' site link stays followable');
+ assert.match(p.main,/id="event-calendar" class="event-calendar" hidden/,lang+' calendar stays hidden until success');
+ assert.ok(p.main.includes(lang==='es'?'Agregar a mi calendario':'Add to my calendar'),lang+' calendar heading');
+ assert.ok(p.main.includes('href="/events/doral-2026-11-06.ics" download="doral-2026-11-06.ics"'),lang+' ics download');
+ assert.ok(p.main.includes('https://calendar.google.com/calendar/render?')&&p.main.includes('action=TEMPLATE')&&p.main.includes('dates=20261106T230000Z%2F20261107T010000Z')&&p.main.includes('ctz=America%2FNew_York'),lang+' Google Calendar link');
+ assert.ok(p.main.includes('https://outlook.live.com/calendar/0/deeplink/compose?')&&p.main.includes('startdt=2026-11-06T23%3A00%3A00Z')&&p.main.includes('enddt=2026-11-07T01%3A00%3A00Z'),lang+' Outlook.com link');
+ assert.ok(p.main.includes(encodeURIComponent(DORAL_TITLES[lang]).replaceAll('%20','+')),lang+' calendar title');
+ assert.ok(p.main.includes('9831+NW+58th+St+%23149'),lang+' calendar location');
 }
+const ics=fs.readFileSync('dist/events/doral-2026-11-06.ics','utf8');
+assert.equal(ics,doralIcs(),'static ics matches the shared event');
+const flat=ics.replace(/\r\n[ \t]/g,'').replaceAll('\\n','\n').replaceAll('\\,',',');
+assert.ok(flat.includes('UID:'+DORAL_UID)&&flat.includes('DTSTART:20261106T230000Z')&&flat.includes('DTEND:20261107T010000Z'),'ics instant and uid');
+assert.ok(flat.includes('BEGIN:VALARM')&&flat.includes('TRIGGER:-P1D')&&flat.includes('ACTION:DISPLAY'),'ics reminder one day before');
+assert.ok(flat.includes(DORAL_LOCATION)&&flat.includes('Vino y picadas, con el Dr. Fulvio Correa y Alberto (Aromas).')&&flat.includes('Wine and light bites, with Dr. Fulvio Correa and Alberto (Aromas).'),'ics location and description');
+assert.ok(flat.includes('https://fulviocorrea.com/es/conversatorio-belleza-estetica-doral/')&&flat.includes('https://fulviocorrea.com/beauty-aesthetics-talk-doral/'),'ics landing links');
+for(const line of ics.split('\r\n'))if(line)assert.ok(Buffer.byteLength(line)<=75,'ics line longer than 75 octets');
+assert.ok(fs.readFileSync('dist/_headers','utf8').includes('/events/doral-2026-11-06.ics\n  Content-Type: text/calendar; charset=utf-8'),'ics content type');
 const signup=fs.readFileSync('event-signup.js','utf8');
 assert.ok(signup.includes('viernes 6 de noviembre de 2026, 6:00 p. m.')&&signup.includes('vino y picadas'),'ES confirmation');
 assert.ok(signup.includes('Friday, November 6, 2026, 6:00 PM')&&signup.includes('wine and light bites'),'EN confirmation');
@@ -97,27 +119,29 @@ assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral-v1/')?.to,u
 assert.equal(rules.find(r=>r.from==='/mommy-makeover-talk-doral-v1/')?.to,undefined,'v1 English path is not published');
 console.log('PASS: Aromas event landing ES/EN — sitemap, production canonicals, hreflang pair, Event schema, copy rules, live form. Fulvio v1 is not published.');
 
-function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest}={}){
+function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest,accept=true}={}){
  const requests=[];const listeners={};
  const el=(value,extra={})=>({value,checked:false,disabled:false,type:'text',validation:'',validity:{customError:false},dataset:{},textContent:'',setCustomValidity(v){this.validation=v;this.validity.customError=!!v;},addEventListener(){},...extra});
  const name=el(lang==='es'?'Ana López':'Ana Lopez'),phone=el('+1 305 555 0123'),email=el('ana@example.com'),city=el('Doral'),website=el(''),companion=el('no'),consent=el('',{checked:true,type:'checkbox'}),button=el('',{type:'submit'});
  const select=interest===undefined?null:el(interest);
  const consentSpan={dataset:{consentVersion:'event-doral-consent-2026-09-30'},textContent:'contact consent'};
- const status={textContent:'',className:''};
+ const status={textContent:'',className:''};const calendar={hidden:true};
  const elements={name,whatsapp:phone,email,city,website,companion,contact_consent:consent};
  if(select)elements.procedure_interest=select;
  const form={dataset:{eventTag:shell==='aromas'?'conversatorio-belleza-estetica-doral-nov2026':'charla-mommy-makeover-doral-oct2026'},elements,addEventListener(type,fn){listeners[type]=fn;},checkValidity(){return !phone.validation;},reportValidity(){},querySelector(sel){return sel==='[data-consent-version]'?consentSpan:null;},querySelectorAll(){return [name,phone,email,city,button,select].filter(Boolean);}};
  const sessionStorage={getItem:k=>storage.has(k)?storage.get(k):null,setItem:(k,v)=>storage.set(k,String(v))};
  const location=new URL(href);
- const document={documentElement:{lang},body:{dataset:{eventShell:shell}},title:lang==='es'?'Cirugía en Cartagena':'Surgery in Cartagena',referrer:'',cookie:'',getElementById(id){return id==='event-signup-form'?form:id==='event-signup-status'?status:id==='event-signup-submit'?button:null;}};
- const context={document,sessionStorage,localStorage:{getItem:()=>null},location,window:{dataLayer:[]},URL,URLSearchParams,fetch:async(url,options)=>{requests.push({url,body:JSON.parse(options.body)});return {ok:true,text:async()=>JSON.stringify({accepted:true})};},AbortController,setTimeout,clearTimeout,crypto:{randomUUID:()=>'11111111-1111-4111-8111-111111111111'},Intl};
+ const document={documentElement:{lang},body:{dataset:{eventShell:shell}},title:lang==='es'?'Cirugía en Cartagena':'Surgery in Cartagena',referrer:'',cookie:'',getElementById(id){return id==='event-signup-form'?form:id==='event-signup-status'?status:id==='event-signup-submit'?button:id==='event-calendar'&&shell==='aromas'?calendar:null;}};
+ const context={document,sessionStorage,localStorage:{getItem:()=>null},location,window:{dataLayer:[]},URL,URLSearchParams,fetch:async(url,options)=>{requests.push({url,body:JSON.parse(options.body)});return accept?{ok:true,text:async()=>JSON.stringify({accepted:true})}:{ok:false,text:async()=>JSON.stringify({accepted:false,error:'delivery_unconfirmed'})};},AbortController,setTimeout,clearTimeout,crypto:{randomUUID:()=>'11111111-1111-4111-8111-111111111111'},Intl};
  vm.runInNewContext(fs.readFileSync('event-signup.js','utf8'),context);
- return {requests,status,storage,submit:()=>listeners.submit({preventDefault(){}})};
+ return {requests,status,storage,calendar,submit:()=>listeners.submit({preventDefault(){}})};
 }
 const talk='https://fulviocorrea.com/es/conversatorio-belleza-estetica-doral/?utm_source=instagram&utm_medium=social&utm_campaign=doral-nov';
 let page=bootSignup({href:talk,interest:''});
 assert.deepEqual(JSON.parse(page.storage.get('fc_event_utm')),{utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov'},'landing UTMs stored for the tab');
+assert.equal(page.calendar.hidden,true,'calendar is hidden before a successful registration');
 await page.submit();
+assert.equal(page.calendar.hidden,false,'calendar appears after a successful registration');
 let body=page.requests[0].body;
 for(const [k,v] of Object.entries({procedure_interest:'undecided',procedure:'undecided',procedure_label:'Aún no lo sé / Not sure yet',language:'es',event_tag:'conversatorio-belleza-estetica-doral-nov2026',utm_source:'instagram',utm_medium:'social',utm_campaign:'doral-nov',utm_source_last:'instagram',utm_medium_last:'social',utm_campaign_last:'doral-nov',form_id:'event-signup',event:'lead_created'}))assert.equal(body[k],v,'signup.'+k);
 assert.match(page.status.textContent,/viernes 6 de noviembre de 2026, 6:00 p\. m\./,'ES confirmation after submit');
@@ -152,4 +176,9 @@ body=page.requests[0].body;
 assert.equal(body.procedure,'mommy-makeover');assert.equal(body.procedure_label,'Mommy Makeover');assert.equal(body.procedure_interest,undefined,'v1 form has no interest select');
 assert.equal(body.event_tag,'charla-mommy-makeover-doral-oct2026');
 assert.ok(!page.status.textContent.includes('viernes 6 de noviembre'),'v1 confirmation is unchanged');
+assert.equal(page.calendar.hidden,true,'v1 confirmation does not open the Doral calendar');
+page=bootSignup({href:talk,interest:'',accept:false});
+await page.submit();
+assert.equal(page.calendar.hidden,true,'a failed registration does not show the calendar');
+assert.match(page.status.textContent,/No pudimos confirmar/);
 console.log('PASS: event sign-up sends procedure_interest (default undecided), keeps procedure/procedure_label, landing UTMs, language and event_tag.');
