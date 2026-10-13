@@ -36,7 +36,8 @@ export function createLeadHandler({env=globalThis.process?.env||{},send=(...args
  if(input.website)return json({accepted:false,error:'invalid_data'},400);
  const string=(key,max=500)=>typeof input[key]==='string'?input[key].trim().slice(0,max):'';
  const yes=v=>v===true||v==='true'||v==='on';
- const name=string('name',100).replace(/\s+/g,' '),phone=string('phone',30).replace(/[\s().-]/g,''),email=string('email',254),id=string('lead_id',100);
+ // Phone must already be E.164: a leading + and digits only. Punctuation is rejected, not stripped.
+ const name=string('name',100).replace(/\s+/g,' '),phone=string('phone',30),email=string('email',254),id=string('lead_id',100);
  const event=string('event',40)||'lead_created',eventId=string('event_id',140)||id,channel=string('channel',20),callTime=string('preferred_call_time',20);
  const timezone=/^(?:UTC|[A-Za-z]+(?:\/[-+\w]+){1,2})$/.test(string('timezone',64))?string('timezone',64):'';
  const consentVersion=/^[-\w.]{1,60}$/.test(string('consent_version',60))?string('consent_version',60):'';

@@ -24,10 +24,13 @@
  const dial=()=>{if(!countrySel)return '';if(countrySel.value!=='other')return countrySel.value;const digits=String(otherInput?.value||'').trim().replace(/[^\d+]/g,'').replace(/^00/,'+').replace(/\D/g,'');return /^[1-9]\d{0,3}$/.test(digits)?'+'+digits:'';};
  const national=()=>{let d=String(phoneInput.value||'').replace(/\D/g,'');if(dial()&&dial()!=='+1')d=d.replace(/^0+/,'');return d;};
  const combine=()=>{if(!countrySel)return e164(phoneInput.value);const cc=dial(),d=national();if(!cc||!d)return '';if(countrySel.value==='other'){if(d.length<4||d.length>14)return '';}else{const range=lengths[cc];if(!range||d.length<range[0]||d.length>range[1])return '';}const full=cc+d;return /^\+[1-9]\d{6,14}$/.test(full)?full:'';};
- phoneInput.addEventListener('input',()=>{if(countrySel){const d=phoneInput.value.replace(/\D/g,'');if(d!==phoneInput.value)phoneInput.value=d;}phoneInput.setCustomValidity('');});
+ const digitsOnly=v=>String(v||'').replace(/\D/g,'');
+ phoneInput.addEventListener('input',()=>{if(countrySel){const d=digitsOnly(phoneInput.value);if(d!==phoneInput.value)phoneInput.value=d;}phoneInput.setCustomValidity('');});
+ phoneInput.addEventListener('paste',e=>{if(!countrySel)return;e.preventDefault();phoneInput.value=digitsOnly(e.clipboardData?.getData?.('text'));phoneInput.setCustomValidity('');});
  if(countrySel&&otherWrap)countrySel.addEventListener('change',()=>{otherWrap.hidden=countrySel.value!=='other';if(countrySel.value!=='other'&&otherInput)otherInput.value='';});
  let started=false,leadId=uid(),last='';form.addEventListener('input',()=>{if(!started){started=true;push('form_start');}});
  form.addEventListener('submit',async e=>{e.preventDefault();if(form.elements.website.value)return;
+  if(countrySel)phoneInput.value=digitsOnly(phoneInput.value);
   const phone=combine();phoneInput.setCustomValidity((countrySel?national():phoneInput.value)&&!phone?T.phone:'');
   if(!form.checkValidity()){form.reportValidity();status.textContent=phoneInput.validity.customError?T.phone:T.required;push('form_error',{error:'validation'});return;}
   const a=read('fc_attribution')||{},f=a.first_touch||{},l=a.last_touch||{},s=a.session||{},attr={};

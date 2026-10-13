@@ -30,7 +30,7 @@ const copy={
   othp:'Si quieres, también hablamos de cómo es operarte en Cartagena a través de la asesoría de turismo médico: la planificación, la seguridad del proceso y el acompañamiento. Es un tema dentro del conversatorio, no el motivo del encuentro. Muchos pacientes del Dr. Correa viajan desde Estados Unidos.',
   formk:'Registro',formh:'Reserva tu cupo.',formp:'Déjanos tus datos y te contactaremos por WhatsApp para confirmar tu cupo. El conversatorio es el viernes 6 de noviembre de 2026, 6:00 p. m., en Aromas Med Spa Doral, con vino y picadas.',
   limit:'Cupos limitados: al completar los 30 lugares abriremos una lista de espera.',
-  fn:'Nombre y apellido',fcc:'Código de país',fw:'WhatsApp',fwh:'Solo números, sin el código de país. Ejemplo: 305 555 0123.',fother:'Otro',fotherc:'Otro código',fotherh:'Ejemplo: +44.',fe:'Correo electrónico',fc:'Ciudad donde vives',
+  fn:'Nombre y apellido',fcc:'Código de país',fw:'Teléfono',fother:'Otro',fotherc:'Otro código',fotherh:'Ejemplo: +44.',fe:'Correo electrónico',fc:'Ciudad donde vives',
   fi:'Tema de interés',fiempty:'Opcional',
   fopts:[['non-surgical','Tratamientos no quirúrgicos'],['breast','Cirugía de busto'],['abdomen-contour','Abdomen y contorno'],['face','Rostro'],['mommy-makeover','Mommy Makeover'],['undecided','Aún no lo sé']],
   fcomp:'¿Vienes con acompañante?',yes:'Sí',no:'No',
@@ -66,7 +66,7 @@ const copy={
   othp:'If you want, we also talk about having surgery in Cartagena through the medical tourism consultancy: planning, how safety is considered and accompaniment. It is one topic inside the talk, not the reason for the gathering. Many of Dr. Correa’s patients travel from the United States.',
   formk:'Sign up',formh:'Save your spot.',formp:'Leave your details and we will contact you on WhatsApp to confirm your spot. The talk is on Friday, November 6, 2026, 6:00 PM, at Aromas Med Spa Doral, with wine and light bites.',
   limit:'Limited spots: once all 30 are taken, we will open a waitlist.',
-  fn:'Full name',fcc:'Country code',fw:'WhatsApp',fwh:'Digits only, without the country code. Example: 305 555 0123.',fother:'Other',fotherc:'Other code',fotherh:'Example: +44.',fe:'Email',fc:'City where you live',
+  fn:'Full name',fcc:'Country code',fw:'Phone',fother:'Other',fotherc:'Other code',fotherh:'Example: +44.',fe:'Email',fc:'City where you live',
   fi:'Topic of interest',fiempty:'Optional',
   fopts:[['non-surgical','Non-surgical treatments'],['breast','Breast surgery'],['abdomen-contour','Abdomen and contour'],['face','Face'],['mommy-makeover','Mommy Makeover'],['undecided','Not sure yet']],
   fcomp:'Are you bringing a companion?',yes:'Yes',no:'No',
@@ -114,8 +114,9 @@ h1{font-size:clamp(2.1rem,3.6vw,3.3rem);line-height:1.08}.lead{font-size:1.05rem
 .reg-in{display:grid;grid-template-columns:1fr 1.2fr;gap:48px}.limit{color:var(--sky);font-size:.9rem}
 #event-signup-form{position:relative;background:var(--white);color:var(--navy);padding:28px;border-radius:14px;display:grid;gap:14px}
 #event-signup-form label{display:grid;gap:6px;font-size:.85rem;font-weight:500}#event-signup-form small{font-weight:400;color:var(--teal)}
-.phone-row{display:grid;grid-template-columns:minmax(8.5rem,.9fr) 1.35fr;gap:10px}.phone-other{margin:0}.phone-other[hidden]{display:none!important}
-#event-signup-form input:not([type]),#event-signup-form input[type=tel],#event-signup-form input[type=email],#event-signup-form select{border:1px solid var(--sky);border-radius:8px;padding:12px;font:inherit;background:var(--beige);color:var(--navy);width:100%}
+.phone-row{display:grid;grid-template-columns:10.5rem minmax(0,1fr);gap:10px;align-items:end}.phone-other{margin:0}.phone-other[hidden]{display:none!important}
+#event-signup-form input:not([type]),#event-signup-form input[type=tel],#event-signup-form input[type=email],#event-signup-form select{box-sizing:border-box;border:1px solid var(--sky);border-radius:8px;padding:12px;line-height:1.25;font:inherit;background:var(--beige);color:var(--navy);width:100%}
+#event-signup-form .phone-row select,#event-signup-form .phone-row input{height:48px;margin:0}
 #event-signup-form fieldset{border:0;padding:0;margin:0;display:flex;gap:18px;align-items:center;flex-wrap:wrap}#event-signup-form legend{font-size:.85rem;font-weight:500;margin-bottom:6px;width:100%}
 #event-signup-form .r{display:flex;gap:6px;align-items:center;font-weight:400}#event-signup-form .c{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.78rem;line-height:1.45}
 #event-signup-form .c a{color:var(--teal)}#event-signup-form .r input,#event-signup-form .c input{accent-color:var(--navy);margin-top:2px}
@@ -179,7 +180,7 @@ export function aromasEventHtml({lang,origin,consent,ghlGuard,gtm,privacyUrl}){
  const interestOpts=t.fopts.map(([v,l])=>`<option value="${v}">${esc(l)}</option>`).join('');
  const phoneCodes=[['+1','+1 (US)'],['+1','+1 (CA)'],['+57','+57 (CO)'],['+52','+52 (MX)'],['+58','+58 (VE)'],['+54','+54 (AR)'],['+51','+51 (PE)'],['+56','+56 (CL)'],['+593','+593 (EC)'],['+34','+34 (ES)'],['+507','+507 (PA)'],['+506','+506 (CR)'],['+1','+1 (PR/DO)']];
  const phoneOpts=phoneCodes.map(([v,l],i)=>`<option value="${v}"${i===0?' selected':''}>${esc(l)}</option>`).join('')+`<option value="other">${esc(t.fother)}</option>`;
- const phoneFields=`<div class="phone-row"><label>${t.fcc}<select name="phone_country" autocomplete="tel-country-code">${phoneOpts}</select></label><label>${t.fw}<input name="whatsapp" type="tel" autocomplete="tel-national" inputmode="tel" maxlength="14" placeholder="305 555 0123" aria-describedby="event-phone-hint" required><small id="event-phone-hint">${t.fwh}</small></label></div><label class="phone-other" id="event-phone-other" hidden>${t.fotherc}<input name="phone_country_other" type="tel" inputmode="tel" autocomplete="tel-country-code" maxlength="6" placeholder="+44" aria-describedby="event-phone-other-hint"><small id="event-phone-other-hint">${t.fotherh}</small></label>`;
+ const phoneFields=`<div class="phone-row"><label>${t.fcc}<select name="phone_country" autocomplete="tel-country-code">${phoneOpts}</select></label><label>${t.fw}<input name="whatsapp" type="tel" autocomplete="tel-national" inputmode="numeric" pattern="[0-9]*" maxlength="14" placeholder="305 555 0123" required></label></div><label class="phone-other" id="event-phone-other" hidden>${t.fotherc}<input name="phone_country_other" type="tel" inputmode="tel" autocomplete="tel-country-code" maxlength="6" placeholder="+44" aria-describedby="event-phone-other-hint"><small id="event-phone-other-hint">${t.fotherh}</small></label>`;
  const cta=(id,href,label,extra='')=>`<a class="btn${extra}" id="${id}" data-cta="${id}" data-event="navigation_click" href="${href}">${label}</a>`;
  const venue=`<a href="${DORAL_MAPS_URL}" target="_blank" rel="noopener">${esc(DORAL_LOCATION)}</a>`;
  const phone=`<a href="${DORAL_PHONE_TEL}">${esc(DORAL_PHONE_DISPLAY)}</a>`;

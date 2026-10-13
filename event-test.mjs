@@ -74,10 +74,14 @@ for(const [lang,p] of Object.entries(live)){
  assert.ok(p.main.includes('<option value="+1" selected>+1 (US)</option>'),lang+' country code defaults to +1 (US)');
  for(const label of ['+1 (CA)','+57 (CO)','+52 (MX)','+58 (VE)','+54 (AR)','+51 (PE)','+56 (CL)','+593 (EC)','+34 (ES)','+507 (PA)','+506 (CR)','+1 (PR/DO)'])assert.ok(p.main.includes(label),lang+' country option '+label);
  assert.ok(p.main.includes(lang==='es'?'>Otro</option>':'>Other</option>'),lang+' other country code');
- assert.match(p.main,/name="whatsapp" type="tel" autocomplete="tel-national" inputmode="tel"/,lang+' national number is a tel field');
+ assert.match(p.main,/name="whatsapp" type="tel" autocomplete="tel-national" inputmode="numeric" pattern="\[0-9\]\*"/,lang+' national number is digits only');
  assert.ok(p.main.includes('placeholder="305 555 0123"')&&!p.main.includes('placeholder="+1 305 555 0123"'),lang+' national number has no country code');
- assert.ok(p.main.includes('aria-describedby="event-phone-hint"')&&p.main.includes('id="event-phone-other" hidden'),lang+' phone labels and hidden other code');
- assert.ok(p.main.includes(lang==='es'?'Código de país':'Country code')&&p.main.includes(lang==='es'?'Solo números, sin el código de país':'Digits only, without the country code'),lang+' phone labels');
+ assert.ok(!p.main.includes('id="event-phone-hint"')&&!p.main.includes(lang==='es'?'Solo números':'Digits only'),lang+' no helper under the number');
+ assert.ok(p.main.includes('id="event-phone-other" hidden'),lang+' other country code stays hidden');
+ assert.ok(p.main.includes(lang==='es'?'Código de país':'Country code')&&p.main.includes(lang==='es'?'Teléfono<input name="whatsapp"':'Phone<input name="whatsapp"'),lang+' phone labels');
+ assert.match(p.html,/\.phone-row\{display:grid;grid-template-columns:10\.5rem minmax\(0,1fr\);gap:10px;align-items:end\}/,lang+' phone row aligns the controls');
+ assert.match(p.html,/#event-signup-form \.phone-row select,#event-signup-form \.phone-row input\{height:48px;margin:0\}/,lang+' phone controls share a height');
+ assert.match(p.html,/@media\(max-width:820px\)\{[\s\S]*\.phone-row\{grid-template-columns:1fr\}/,lang+' phone row stacks on mobile');
  assert.ok(p.main.includes(p.unsure),lang+' not sure yet option');
  assert.ok(!hero.includes('bio-photo'),lang+' hero portraits stay arched');
  const bios=p.main.slice(p.main.indexOf('class="bios"'));
@@ -136,7 +140,7 @@ console.log('PASS: Aromas event landing ES/EN — sitemap, production canonicals
 
 function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest,accept=true,national,dial='+1',otherDial=''}={}){
  const requests=[];const listeners={};
- const el=(value,extra={})=>({value,checked:false,disabled:false,type:'text',validation:'',validity:{customError:false},dataset:{},textContent:'',setCustomValidity(v){this.validation=v;this.validity.customError=!!v;},addEventListener(){},...extra});
+ const el=(value,extra={})=>({value,checked:false,disabled:false,type:'text',validation:'',validity:{customError:false},dataset:{},textContent:'',on:{},setCustomValidity(v){this.validation=v;this.validity.customError=!!v;},addEventListener(type,fn){this.on[type]=fn;},...extra});
  const split=shell==='aromas';
  const name=el(lang==='es'?'Ana López':'Ana Lopez'),phone=el(split?(national??'3055550123'):'+1 305 555 0123'),email=el('ana@example.com'),city=el('Doral'),website=el(''),companion=el('no'),consent=el('',{checked:true,type:'checkbox'}),button=el('',{type:'submit'});
  const select=interest===undefined?null:el(interest);
@@ -152,7 +156,7 @@ function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest,ac
  const document={documentElement:{lang},body:{dataset:{eventShell:shell}},title:lang==='es'?'Cirugía en Cartagena':'Surgery in Cartagena',referrer:'',cookie:'',getElementById(id){return id==='event-signup-form'?form:id==='event-signup-status'?status:id==='event-signup-submit'?button:id==='event-calendar'&&shell==='aromas'?calendar:null;}};
  const context={document,sessionStorage,localStorage:{getItem:()=>null},location,window:{dataLayer:[]},URL,URLSearchParams,fetch:async(url,options)=>{requests.push({url,body:JSON.parse(options.body)});return accept?{ok:true,text:async()=>JSON.stringify({accepted:true})}:{ok:false,text:async()=>JSON.stringify({accepted:false,error:'delivery_unconfirmed'})};},AbortController,setTimeout,clearTimeout,crypto:{randomUUID:()=>'11111111-1111-4111-8111-111111111111'},Intl};
  vm.runInNewContext(fs.readFileSync('event-signup.js','utf8'),context);
- return {requests,status,storage,calendar,submit:()=>listeners.submit({preventDefault(){}})};
+ return {requests,status,storage,calendar,phone,submit:()=>listeners.submit({preventDefault(){}})};
 }
 const talk='https://fulviocorrea.com/es/conversatorio-belleza-estetica-doral/?utm_source=instagram&utm_medium=social&utm_campaign=doral-nov';
 let page=bootSignup({href:talk,interest:''});
@@ -210,7 +214,14 @@ await page.submit();
 assert.equal(page.requests[0].body.phone,'+573001234567','a trunk zero is dropped before E.164');
 page=bootSignup({href:talk,interest:'',national:'305-555-0123'});
 await page.submit();
+assert.equal(page.phone.value,'3055550123','submit strips non-digits before the pattern check');
 assert.equal(page.requests[0].body.phone,'+13055550123','punctuation in the national number is ignored');
+page=bootSignup({href:talk,interest:'',national:''});
+page.phone.value='30a5 555-0123';
+page.phone.on.input();
+assert.equal(page.phone.value,'3055550123','typing keeps digits only');
+page.phone.on.paste({preventDefault(){},clipboardData:{getData:()=>'+1 (305) 555-0199'}});
+assert.equal(page.phone.value,'13055550199','paste keeps digits only');
 page=bootSignup({href:talk,interest:'',dial:'other',otherDial:'+44',national:'7911123456'});
 await page.submit();
 body=page.requests[0].body;
