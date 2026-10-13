@@ -57,9 +57,10 @@ Prueba local: `node lead-test.mjs` y `node leads-db-test.mjs` (webhook y KV simu
 
 Activa en Production y Preview desde el 13-oct-2026. Tras validar, y antes de llamar a NinjaSuite, `/api/lead` guarda el lead en el KV `fulvio-leads` (binding `LEADS_KV`, clave `lead:<event_id>`). Si KV falla o no está, el webhook se envía igual. Si NinjaSuite no confirma, el registro queda con `webhook_status=webhook_failed`; si confirma, `forwarded`. No se escribe la IP; solo el país (`CF-IPCountry`). No se registra PII en consola. (La cuenta no da permiso de D1 al token de despliegue; por eso KV.)
 
-Exportación privada, sin enlace en el sitio: `GET /api/leads.csv`. Filtros opcionales `?event=doral` y `?from=YYYY-MM-DD`. CSV UTF-8 con BOM (abre bien en Excel). Clave: secreto de Pages `LEADS_EXPORT_TOKEN` (Production y Preview), enviado en `Authorization: Bearer`, en el header `X-Leads-Export-Token` o en `?token=`. Sin la clave, 401. Respuesta `noindex` y `no-store`.
+Exportación privada, sin enlace en ninguna página, en el sitemap ni en `llms.txt`. En production, `robots.txt` incluye `Disallow: /api/leads.csv` para `User-agent: *` y para cada crawler de IA. `GET /api/leads.csv`. Filtros opcionales `?event=doral` y `?from=YYYY-MM-DD`. CSV UTF-8 con BOM (abre bien en Excel). Clave: secreto de Pages `LEADS_EXPORT_TOKEN` (Production y Preview), enviado en `Authorization: Bearer`, en el header `X-Leads-Export-Token`, en `?key=` o en `?token=`. La comparación es en tiempo constante. Sin la clave, 401. Respuesta `Cache-Control: no-store` y `X-Robots-Tag: noindex, nofollow` (también en `_headers`).
 
 ```
+curl -o inscritos-doral.csv "https://fulviocorrea.com/api/leads.csv?event=doral&key=<LEADS_EXPORT_TOKEN>"
 curl -H "Authorization: Bearer <LEADS_EXPORT_TOKEN>" -o inscritos-doral.csv "https://fulviocorrea.com/api/leads.csv?event=doral"
 ```
 

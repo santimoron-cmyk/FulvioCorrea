@@ -55,6 +55,8 @@ export async function leadsCsv(kv,{event='',from=''}={}){
  const lines=[CSV_COLUMNS.join(','),...rows.map(row=>CSV_COLUMNS.map(c=>csvCell(row[c])).join(','))];
  return {body:'\uFEFF'+lines.join('\r\n')+'\r\n',truncated:rows.length>=10000};
 }
+// Constant-time secret compare. SHA-256 makes the inputs the same length, then every byte is XOR'd.
+// Workers have no timingSafeEqual. Do not replace this with ===.
 export async function sameSecret(a,b){
  const enc=new TextEncoder();
  const [da,db]=await Promise.all([crypto.subtle.digest('SHA-256',enc.encode(String(a))),crypto.subtle.digest('SHA-256',enc.encode(String(b)))]);
