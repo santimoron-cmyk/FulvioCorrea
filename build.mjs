@@ -6,6 +6,7 @@ import {resolveSiteEnv} from './site-env.mjs';
 import {prepareDist,checkSourceAssets,checkDistAssets,sourceReferences,sourceAssets,STATIC_DEPLOY} from './assets.mjs';
 import {IMAGE_RENAMES,buildImageDerivatives,decorateDistImages,pruneUnreferencedAssets} from './media.mjs';
 import {writeCloudflareAdapter} from './cloudflare.mjs';
+import {assetVersion} from './asset-version.mjs';
 // Any failure prints a readable message (no stack noise) and exits with code 1, which fails the Cloudflare build.
 const fail=e=>{console.error('\nBUILD FAILED\n'+(e?.message||e)+'\n');process.exit(1);};process.on('uncaughtException',fail);process.on('unhandledRejection',fail);
 if(process.argv.includes('--production'))process.env.SITE_ENV='production';
@@ -34,8 +35,12 @@ for(const [file,sources] of Object.entries({'app.js':['app.js'],'contact.js':cha
  const compact=await minify(sources.map(f=>fs.readFileSync(f,'utf8')).join('\n'),{compress:true,mangle:true,format:{comments:false}});fs.writeFileSync('dist/'+file,compact.code);
 }
 // Widget code is included only with its dialog; confirmation code only on confirmation pages.
+// ?v= busts the apex browser cache (max-age=14400) for these scripts. Stamped again after image decoration.
+const assetV=assetVersion();
+const stampScripts=html=>html.replace(/src="\/(app|config|contact|event-signup|thank-you)\.js(?:\?v=[^"]*)?"/g,(_,name)=>`src="/${name}.js?v=${assetV}"`);
 for(const file of fs.readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.html'))){let h=fs.readFileSync('dist/'+file,'utf8');const scripts=(h.includes('id="contact-open"')?'<script defer src="/contact.js"></script>':'')+(h.includes('id="thanks-confirmation"')?'<script defer src="/thank-you.js"></script>':'')+(h.includes('id="event-signup-form"')?'<script defer src="/event-signup.js"></script>':'');fs.writeFileSync('dist/'+file,h.replace('</body>',()=>scripts+'</body>'));}
 decorateDistImages();
+for(const file of fs.readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.html'))){const p='dist/'+file;const h=fs.readFileSync(p,'utf8'),next=stampScripts(h);if(next!==h)fs.writeFileSync(p,next);}
 pruneUnreferencedAssets();
 // The former browser-language redirect is no longer used by any page.
 if(fs.existsSync('dist/locale.js'))fs.unlinkSync('dist/locale.js');
