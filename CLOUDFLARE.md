@@ -51,4 +51,16 @@ Las variables de build y de Functions son las mismas en Pages; `LEAD_*` solo se 
 
 Porte de `netlify/functions/lead.mjs`. Reutiliza `server/lead-handler.mjs` (también usado por `server.mjs` en local): valida origen, JSON ≤ 20 KB, honeypot, teléfono E.164, consentimiento, idioma, procedimiento, evento (`lead_created`/`channel_selected`), canal y franja de llamada, `Idempotency-Key` (= `event_id`); limita 10 envíos/min por IP (por instancia) y reenvía un JSON plano a `LEAD_WEBHOOK_URL` con `Idempotency-Key`. Payload y mapeo en NinjaSuite: [LEAD-WEBHOOK.md](LEAD-WEBHOOK.md). Responde `{accepted:true}` solo si HighLevel devuelve 2xx.
 
-Prueba local: `node lead-test.mjs` (mock del webhook). Prueba con runtime real: `npx wrangler pages dev dist` (requiere Node ≥ 22).
+Prueba local: `node lead-test.mjs` y `node leads-db-test.mjs` (webhook y KV simulados). Prueba con runtime real: `npx wrangler pages dev dist` (requiere Node ≥ 22).
+
+## Copia de respaldo de leads (Workers KV)
+
+Activa en Production y Preview desde el 13-oct-2026. Tras validar, y antes de llamar a NinjaSuite, `/api/lead` guarda el lead en el KV `fulvio-leads` (binding `LEADS_KV`, clave `lead:<event_id>`). Si KV falla o no está, el webhook se envía igual. Si NinjaSuite no confirma, el registro queda con `webhook_status=webhook_failed`; si confirma, `forwarded`. No se escribe la IP; solo el país (`CF-IPCountry`). No se registra PII en consola. (La cuenta no da permiso de D1 al token de despliegue; por eso KV.)
+
+Exportación privada, sin enlace en el sitio: `GET /api/leads.csv`. Filtros opcionales `?event=doral` y `?from=YYYY-MM-DD`. CSV UTF-8 con BOM (abre bien en Excel). Clave: secreto de Pages `LEADS_EXPORT_TOKEN` (Production y Preview), enviado en `Authorization: Bearer`, en el header `X-Leads-Export-Token` o en `?token=`. Sin la clave, 401. Respuesta `noindex` y `no-store`.
+
+```
+curl -H "Authorization: Bearer <LEADS_EXPORT_TOKEN>" -o inscritos-doral.csv "https://fulviocorrea.com/api/leads.csv?event=doral"
+```
+
+Para otro evento: el `event_slug` sale de `eventSlug()` en `server/leads-db.mjs` (hoy: tag o ruta con «doral» → `doral`).
