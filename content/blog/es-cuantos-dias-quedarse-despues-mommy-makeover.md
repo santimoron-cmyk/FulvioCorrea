@@ -8,7 +8,7 @@ tags: ["cuantos-dias-quedarse-despues-mommy-makeover", "mommy-makeover", "estadi
 cover: "/assets/blog-cartagena-stay.webp"
 coverAlt: "Fachada colonial amarilla y balcones de madera en Cartagena"
 date: "2026-09-30"
-updated: "2026-10-08"
+updated: "2026-10-14"
 author: "fulvio-correa"
 translationOf: "how-long-to-stay-after-mommy-makeover"
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/mommy-makeover/recovery","https://www.plasticsurgery.org/news/blog/how-will-your-body-change-after-a-mommy-makeover","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/make-a-plan/","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/post-surgery-considerations-abroad/"]
@@ -51,6 +51,8 @@ Los planes de estadía suelen extenderse cuando:
 Estadías más cortas pueden ser más realistas con combinaciones más acotadas y vuelos cortos—pero un mommy makeover completo rara vez es un viaje de “recuperación de fin de semana”. Si tu agenda solo permite pocos días después de la cirugía, conversa si es más seguro espaciar procedimientos o ajustar fechas de viaje que comprimir todo.
 
 Un plan solo de mama es una estadía distinta a un mommy makeover combinado. Para las comprobaciones y preguntas de viaje cuando el viaje es aumento mamario solo, ver [aumento de senos en Colombia](/es/blog/aumento-de-senos-colombia/).
+
+Si la combinación incluye lipotransferencia glútea—o estás comparando la estadía de un BBL solo—usa [BBL en Colombia: recuperación y días de estadía](/es/blog/bbl-colombia/) para las reglas de sentarse, la combinación de Avianca y cómo armar el calendario.
 
 ## Una forma práctica de armar el calendario
 

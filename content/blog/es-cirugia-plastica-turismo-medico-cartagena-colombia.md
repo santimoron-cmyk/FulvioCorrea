@@ -8,7 +8,7 @@ tags: ["turismo medico cartagena", "cirugia plastica cartagena", "cirugia plasti
 cover: "/assets/blog-cartagena-medical-tourism.webp"
 coverAlt: "Calle del centro histórico y torre de la catedral de Cartagena, Colombia"
 date: "2026-09-26"
-updated: "2026-10-07"
+updated: "2026-10-14"
 author: "fulvio-correa"
 translationOf: "plastic-surgery-medical-tourism-cartagena-colombia"
 sources: ["https://www.isaps.org/media/30xldsyf/isaps-global-survey-2024.pdf", "https://www.datos.gov.co/Comercio-Industria-y-Turismo/Extranjeros-No-Residentes/7wm8-w5ad", "https://www.mincit.gov.co/getattachment/estudios-economicos/estadisticas-e-informes/informes-de-turismo/2026/junio/oee-ec-turismo-junio-2026.pdf.aspx", "https://www.dane.gov.co/files/operaciones/EVI/bol-EVI-ene-mar2025.pdf", "https://www.plasticsurgery.org/news/articles/2025-plastic-surgery-by-the-numbers-what-are-the-trends-in-plastic-surgery-and-what-it-means-for-you", "https://wwwnc.cdc.gov/travel/page/medical-tourism", "https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism", "https://cartagenacomovamos.org/wp-content/uploads/2026/03/Infografia-Turismo-CTG2025.pdf", "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
@@ -120,7 +120,7 @@ El tiempo de estadía depende del procedimiento, de si se combinan varios, de tu
 
 Fuentes: Cleveland Clinic sobre [liposucción](https://my.clevelandclinic.org/health/treatments/11009-liposuction), [aumento de senos](https://my.clevelandclinic.org/health/treatments/11024-breast-augmentation), [abdominoplastia](https://my.clevelandclinic.org/health/procedures/11017-tummy-tuck), [BBL](https://my.clevelandclinic.org/health/treatments/23308-brazilian-butt-lift) y [mommy makeover](https://health.clevelandclinic.org/mommy-makeovers); [documento informativo de la ASPS](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism); [ASPS sobre viajar después de un BBL](https://www.plasticsurgery.org/news/articles/boarding-groups-added-complications-from-traveling-after-a-brazilian-butt-lift); [CDC](https://wwwnc.cdc.gov/travel/page/medical-tourism) (todas en inglés).
 
-Si quieres más detalle, lee nuestras guías sobre [aumento de senos en Colombia](/es/blog/aumento-de-senos-colombia/), [abdominoplastia en Colombia](/es/blog/abdominoplastia-colombia/) y el [tiempo de recuperación de un mommy makeover](/es/blog/tiempo-recuperacion-mommy-makeover/).
+Si quieres más detalle, lee nuestras guías sobre [liposucción en Colombia](/es/blog/liposuccion-colombia/), [aumento de senos en Colombia](/es/blog/aumento-de-senos-colombia/), [abdominoplastia en Colombia](/es/blog/abdominoplastia-colombia/), [BBL en Colombia: recuperación y días de estadía](/es/blog/bbl-colombia/) y el [tiempo de recuperación de un mommy makeover](/es/blog/tiempo-recuperacion-mommy-makeover/).
 
 Los procedimientos faciales siguen otra ventana para volar: la ASPS sugiere esperar de 7 a 10 días y Avianca indica 10 días después de una rinoplastia o septoplastia. Lo explicamos, junto con los límites de sol en Cartagena y el seguimiento a distancia, en la guía de [rinoplastia en Colombia](/es/blog/rinoplastia-colombia/).
 

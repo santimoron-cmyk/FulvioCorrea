@@ -8,7 +8,7 @@ tags: ["viajar-en-avion-despues-de-cirugia-plastica", "recuperacion", "turismo-m
 cover: "/assets/blog-flying-after-plastic-surgery.webp"
 coverAlt: "Asiento de ventanilla de avión con una botella de agua y un suéter doblado en la bandeja, con vista a la costa del Caribe y una ciudad colonial amurallada"
 date: "2026-10-05"
-updated: "2026-10-09"
+updated: "2026-10-14"
 author: "fulvio-correa"
 translationOf: "flying-after-plastic-surgery"
 sources: ["https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://scielo.isciii.es/scielo.php?pid=S0376-78922022000400002&script=sci_arttext","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html","https://www.cirugiaplastica.org.co/"]
@@ -48,6 +48,9 @@ Antes de comprar el tiquete, revisa tres reglas que cambian el calendario:
 
 - **El certificado tiene fecha de vencimiento.** Debe expedirse como máximo 10 días antes del viaje. Uno firmado en la primera semana no sirve para un vuelo el día 15.
 - **Las combinaciones suman.** El aumento de glúteos con grasa (BBL) casi siempre incluye liposucción para obtener la grasa. Por separado, Avianca lista 10 días para la inyección de grasa y 14 para la liposucción; combinados, aplica la regla de 15 días. Pregunta qué procedimientos describirá tu certificado.
+
+Para armar la estadía alrededor del sentarse, la faja y la autorización de vuelo —no solo del mínimo de la aerolínea—, lee [BBL en Colombia: recuperación y días de estadía](/es/blog/bbl-colombia/).
+
 - **La sanidad aeroportuaria decide si hay desacuerdo.** Si los días que indica tu médico no coinciden con el concepto de la autoridad sanitaria del aeropuerto, prevalece el de la autoridad.
 
 Si vuelas con otra aerolínea o haces conexión en otro país, lee también su política médica. No todas publican plazos por procedimiento, y que no exista una regla no equivale a una autorización.
