@@ -34,10 +34,8 @@
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "verified": "2026-09-26",
-    "usage": "Editorial illustration; not a Fulvio patient, result, staff member or recommended accommodation.",
-    "slugs": [
-      "bbl-colombia"
-    ]
+    "usage": "Earlier cover (back view of a woman in sportswear). No longer used as a cover; file retained. Editorial illustration; not a Fulvio patient, result, staff member or recommended accommodation.",
+    "slugs": []
   },
   {
     "file": "blog-breast-augmentation.webp",
@@ -173,6 +171,19 @@
     "slugs": [
       "tummy-tuck-vs-liposuction",
       "abdominoplastia-o-liposuccion"
+    ]
+  },
+  {
+    "file": "blog-bbl-colombia.webp",
+    "photoId": null,
+    "source": null,
+    "author": null,
+    "license": "Supplied with the 2026-10-14 blog package for publication. Not a Pexels photograph.",
+    "licenseUrl": null,
+    "verified": "2026-10-14",
+    "usage": "Wedge seat cushion and folded robe on a linen daybed by open colonial shutters and a bougainvillea balcony in Cartagena. Editorial illustration; not a Fulvio patient, result, staff member or recommended accommodation. Cover 1280×720 (WebP and AVIF, native resolution, not upscaled), 800×450 responsive variant (WebP and AVIF), 600×338 card (WebP), and Open Graph crops 1200×630 (WebP, AVIF and JPEG) were supplied with the post.",
+    "slugs": [
+      "bbl-colombia"
     ]
   }
 ]
