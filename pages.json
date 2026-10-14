@@ -3158,16 +3158,21 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-30",
+    "updated": "2026-10-14",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "BBL Colombia: What U.S. Patients Should Decide Before Travel",
+        "headline": "BBL Colombia: Recovery Time and How Long to Stay",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-09-30",
+        "dateModified": "2026-10-14",
         "inLanguage": "en",
-        "image": "https://fulviocorrea.com/assets/blog-bbl-body-contour.webp",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-bbl-colombia.webp",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia.avif",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-og.webp",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-og.avif"
+        ],
         "mainEntityOfPage": "https://fulviocorrea.com/blog/bbl-colombia/",
         "author": {
           "@id": "https://fulviocorrea.com/#physician"
@@ -3184,10 +3189,65 @@
             "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long is BBL recovery time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS describes about two weeks without prolonged sitting after fat grafting (some surgeons longer), garments as directed, and exercise often around six to eight weeks. Cleveland Clinic describes fuller recovery over roughly two to three months for many people, with final fat-transfer results still settling later. Your surgeon sets your plan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Colombia after a BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plan around the longest Avianca line that applies to your certificate (often 14 or 15 days when liposuction or combined body procedures are involved), plus arrival days and a buffer for clearance. Do not treat a blog’s itinerary as authorization to fly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I sit after a BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS advises avoiding prolonged sitting for about two weeks and using a thigh cushion when sitting is unavoidable. Cleveland Clinic’s education describes at least two weeks off the buttocks and a longer pillow phase. Follow your written instructions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I fly after a BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avianca lists 10 days after buttock fat injection and 14 after liposuction; combined body procedures can fall under 15 days. See flying after plastic surgery for the full table and certificate rules."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a BBL in Colombia safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Safety depends on surgeon, facility, and technique—not the country name. Society guidance emphasizes subcutaneous-only grafting with ultrasound confirmation, licensed facilities, and real follow-up for travelers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long until final BBL results?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS notes that after fat transfer it can take up to a year to see final results because some grafted fat is reabsorbed. Weight changes later can still change buttock volume."
+            }
+          }
+        ]
       }
     ],
     "alternate": "/es/blog/bbl-colombia/",
-    "cover": "/assets/blog-bbl-body-contour.webp",
+    "cover": "/assets/blog-bbl-colombia.webp",
     "alternates": [
       {
         "lang": "en",
@@ -3257,14 +3317,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-08",
+    "updated": "2026-10-14",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "How Long to Stay After Mommy Makeover",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-10-08",
+        "dateModified": "2026-10-14",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-stay.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/",
@@ -3893,14 +3953,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-09",
+    "updated": "2026-10-14",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Viajar en avión después de una cirugía plástica: cuántos días esperar",
         "datePublished": "2026-10-05",
-        "dateModified": "2026-10-09",
+        "dateModified": "2026-10-14",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.webp",
@@ -4044,16 +4104,21 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-09-30",
+    "updated": "2026-10-14",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "BBL Colombia: qué decidir antes de viajar por un aumento de glúteos",
+        "headline": "BBL en Colombia: recuperación y días de estadía",
         "datePublished": "2026-09-30",
-        "dateModified": "2026-09-30",
+        "dateModified": "2026-10-14",
         "inLanguage": "es",
-        "image": "https://fulviocorrea.com/assets/blog-bbl-body-contour.webp",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-bbl-colombia.webp",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia.avif",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-og.webp",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-og.avif"
+        ],
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/bbl-colombia/",
         "author": {
           "@id": "https://fulviocorrea.com/#physician"
@@ -4070,10 +4135,65 @@
             "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
           }
         }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura la recuperación de un BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La ASPS describe unas dos semanas sin estar sentada por periodos prolongados tras el injerto (algunos cirujanos más), faja según indiquen y ejercicio a menudo entre las seis y ocho semanas. Cleveland Clinic habla de una recuperación más completa en torno a dos o tres meses en muchos casos. Tu cirujano define el tuyo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días debo quedarme en Colombia después de un BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Planea alrededor de la línea más larga de Avianca que aplique a tu certificado (a menudo 14 o 15 días si hay liposucción o procedimientos combinados), más los días de llegada y un margen. Un blog no autoriza el vuelo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo sentarme después de un BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La ASPS pide evitar periodos prolongados unas dos semanas y usar cojín bajo los muslos cuando sea necesario. Cleveland Clinic describe al menos dos semanas sin apoyo directo y una fase más larga con cojín especial. Sigue tus indicaciones escritas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo volar después de un BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avianca lista 10 días tras inyección de grasa en glúteos y 14 tras liposucción; las combinaciones corporales pueden caer en 15 días. Detalle completo en viajar en avión después de una cirugía plástica."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es seguro un BBL en Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del cirujano, la clínica y la técnica—no del nombre del país. Las sociedades enfatizan plano subcutáneo con ecografía, instituciones habilitadas y seguimiento real para quien viaja."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo se ve el resultado final?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La ASPS indica que tras transferencia de grasa el resultado final puede tardar hasta un año porque parte de la grasa se reabsorbe. Los cambios de peso posteriores también pueden modificar el volumen."
+            }
+          }
+        ]
       }
     ],
     "alternate": "/en/blog/bbl-colombia/",
-    "cover": "/assets/blog-bbl-body-contour.webp",
+    "cover": "/assets/blog-bbl-colombia.webp",
     "alternates": [
       {
         "lang": "es",
@@ -4091,14 +4211,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-08",
+    "updated": "2026-10-14",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Días de estadía tras mommy makeover",
         "datePublished": "2026-09-30",
-        "dateModified": "2026-10-08",
+        "dateModified": "2026-10-14",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-stay.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/",
@@ -4237,14 +4357,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-07",
+    "updated": "2026-10-14",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Cirugía plástica y turismo médico en Cartagena: informe 2026",
         "datePublished": "2026-09-26",
-        "dateModified": "2026-10-07",
+        "dateModified": "2026-10-14",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-medical-tourism.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",
