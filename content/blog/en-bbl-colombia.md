@@ -8,7 +8,7 @@ tags: ["bbl-colombia", "bbl-recovery-time", "brazilian-butt-lift-colombia", "med
 cover: "/assets/blog-bbl-colombia.webp"
 coverAlt: "Wedge seat cushion and folded robe on a linen daybed by open colonial shutters and a bougainvillea balcony in Cartagena"
 date: "2026-09-23"
-updated: "2026-10-14"
+updated: "2026-10-15"
 author: "fulvio-correa"
 translationOf: "bbl-colombia"
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/recovery","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/safety","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/results","https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement","https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf","https://my.clevelandclinic.org/health/treatments/23308-brazilian-butt-lift","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://cirugiaplastica.org.co/procedimientos/aumento-de-gluteos/"]
@@ -104,7 +104,7 @@ Bring these into any consult:
 
 ASPS lists risks of buttock enhancement that include bleeding, infection, fat necrosis, contour issues, blood clots, and other complications; fat embolism is the safety topic that made society statements so specific about injection plane. A marketing page that skips risks is a weak quality signal.
 
-For the procedure itself—candidacy, technique overview, and FAQ—see [Brazilian butt lift in Cartagena](/procedures/bbl/). Donor-area contouring often overlaps with [liposuction in Cartagena](/blog/liposuction-cartagena/).
+For the procedure itself—candidacy, technique overview, and FAQ—see [Brazilian butt lift in Cartagena](/procedures/bbl/). Donor-area contouring often overlaps with [liposuction in Cartagena](/blog/liposuction-cartagena/), and when loose abdominal skin is part of the plan, with a [tummy tuck in Colombia](/blog/tummy-tuck-colombia/).
 
 ## What a consult decides before you book flights
 
