@@ -8,7 +8,7 @@ tags: ["abdominoplastia-o-liposuccion", "diferencia-lipo-abdominoplastia", "abdo
 cover: "/assets/blog-tummy-tuck-vs-liposuction.webp"
 coverAlt: "Sillón reclinable de lino crema y ropa de lino de tiro alto doblada junto a unos postigos abiertos con vista a los tejados de Cartagena"
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-15"
 author: "fulvio-correa"
 translationOf: "tummy-tuck-vs-liposuction"
 sources: ["https://cirugiaplastica.org.co/procedimientos/abdominmoplastia/","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586","https://www.mayoclinic.org/tests-procedures/tummy-tuck/about/pac-20384892","https://www.plasticsurgery.org/cosmetic-procedures/liposuction/recovery","https://www.plasticsurgery.org/news/press-releases/interest-in-aesthetic-health-remained-consistent-despite-economic-uncertainty-in-2024-according-to-new-report-from-american-society-of-plastic-surgeons","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
@@ -79,7 +79,7 @@ Las dos usan faja y exigen volver a la actividad de forma progresiva, pero no se
 
 **Abdominoplastia.** La SCCP indica que la cirugía dura en promedio de 2 a 4 horas, generalmente con anestesia general, y que se dejan drenes para evitar que se acumule líquido. El primer día conviene mantener las piernas flexionadas y con apoyo; caminar trechos cortos con frecuencia y respirar profundo ayuda a prevenir complicaciones pulmonares. También es normal sentir dolor al sentarse, porque los músculos del abdomen se contraen. Las actividades cotidianas se retoman poco a poco desde la primera o segunda semana, y el resultado final solo se aprecia pasados unos seis meses.
 
-En ambas, la SCCP pide dejar de fumar al menos dos semanas antes y evitar el sol antes y después de la cirugía, porque favorece la inflamación y la pigmentación de las cicatrices. El calendario exacto lo fija el cirujano según lo que se haga y tu estado de salud.
+En ambas, la SCCP pide dejar de fumar al menos dos semanas antes y evitar el sol antes y después de la cirugía, porque favorece la inflamación y la pigmentación de las cicatrices. El calendario exacto lo fija el cirujano según lo que se haga y tu estado de salud. La abdominoplastia, etapa por etapa, está en [recuperación de abdominoplastia semana a semana](/es/blog/recuperacion-abdominoplastia/).
 
 ## Si vienes de otra ciudad o del exterior
 
