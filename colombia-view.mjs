@@ -68,7 +68,7 @@ const numbered = list => `<ol class="question-list">${list.map(x => { const m = 
 const copy = {
   en: {
     title: 'Plastic Surgery in Colombia: How to Choose a Surgeon (2026)',
-    description: 'There’s no official ranking of the best plastic surgeons in Colombia. How to verify one (SCCP, ReTHUS, REPS), what drives cost, and why patients choose Cartagena.',
+    description: 'No official ranking of the best plastic surgeons in Colombia. How to verify (SCCP, ReTHUS, REPS), what drives cost, and why patients choose Cartagena.',
     eyebrow: 'Cartagena, Colombia',
     h1: 'Plastic surgery in Colombia: a 2026 guide to choosing your surgeon safely',
     lead: 'People looking for plastic surgery in Colombia in 2026 usually want four answers: why patients travel here, what actually changes a quote, how to check a surgeon and a clinic, and how many days to plan. This page answers those from the practice in Cartagena. It is education, not a promise of a result, and it does not list prices.',
