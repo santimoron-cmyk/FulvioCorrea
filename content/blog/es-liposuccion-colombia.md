@@ -35,7 +35,7 @@ Si además hay piel flácida o el abdomen quedó abombado después de un embaraz
 
 Colombia concentra oferta de cirugía plástica y pacientes internacionales; Cartagena suma aeropuerto internacional, alojamiento servido y equipos acostumbrados al turismo médico. Para quien viaja, la logística pesa tanto como la técnica: vuelos, alojamiento cercano, acompañante y un calendario que permita reposo real.
 
-Trata el viaje como un proyecto médico, no como vacaciones. Planifica días libres antes y después, evita turismo intenso en la ventana temprana de recuperación y confirma cómo llegarás a los controles. Un entorno tranquilo, con aire acondicionado y ayuda para desplazarte, suele apoyar mejor la recuperación que un hotel ruidoso lejos del equipo. La lista completa está en [cómo elegir cirujano plástico en Colombia](/es/cirugia-plastica-colombia/).
+Trata el viaje como un proyecto médico, no como vacaciones. Planifica días libres antes y después, evita turismo intenso en la ventana temprana de recuperación y confirma cómo llegarás a los controles. Un entorno tranquilo, con aire acondicionado y ayuda para desplazarte, suele apoyar mejor la recuperación que un hotel ruidoso lejos del equipo. La lista completa está en [la guía para elegir cirujano plástico en Colombia](/es/cirugia-plastica-colombia/).
 
 ### Cómo verificar cirujano e institución antes de pagar
 
