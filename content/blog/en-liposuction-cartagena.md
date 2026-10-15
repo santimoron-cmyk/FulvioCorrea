@@ -37,7 +37,7 @@ Patient-education pages from the American Society of Plastic Surgeons (ASPS) des
 
 Colombia is a frequent destination for aesthetic surgery among international patients. Cartagena adds an international airport, serviced lodging, and teams experienced with medical tourism. For travelers, logistics matter as much as technique: flights, nearby lodging, a companion, and a schedule that allows real rest.
 
-Treat the trip as a medical project, not a vacation. Plan free days before and after, avoid intense sightseeing in the early recovery window, and confirm how you will reach follow-up visits. A quiet setting with air conditioning and help getting around supports recovery better than a noisy hotel far from the care team.
+Treat the trip as a medical project, not a vacation. Plan free days before and after, avoid intense sightseeing in the early recovery window, and confirm how you will reach follow-up visits. A quiet setting with air conditioning and help getting around supports recovery better than a noisy hotel far from the care team. The full checklist is in [how to choose a plastic surgeon in Colombia](/plastic-surgery-colombia/).
 
 ### Credentials to verify before you book travel
 

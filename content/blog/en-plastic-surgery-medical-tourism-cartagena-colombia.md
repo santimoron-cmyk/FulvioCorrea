@@ -38,7 +38,7 @@ Cartagena's appeal to medical travelers starts with access. According to the cit
 
 Aerocivil figures compiled by Cartagena Cómo Vamos show **3,815,429 air passengers arriving in Cartagena in 2025** (+2.8%), making it the third-busiest arrival city in Colombia after Bogotá and Medellín. Of those, **736,910 arrived on international flights**, up from 711,714 in 2024. ([Cartagena Cómo Vamos](https://cartagenacomovamos.org/wp-content/uploads/2026/03/Infografia-Turismo-CTG2025.pdf))
 
-For patients, those direct routes matter for more than convenience. Fewer connections mean shorter travel days after surgery, and several U.S. gateways reach Cartagena without a stop. That is still not a reason to shorten recovery time; flight timing is covered below.
+For patients, those direct routes matter for more than convenience. Fewer connections mean shorter travel days after surgery, and several U.S. gateways reach Cartagena without a stop. That is still not a reason to shorten recovery time; flight timing is covered below. How to verify a surgeon and a clinic before you book is covered in [plastic surgery in Colombia: how to choose a surgeon](/plastic-surgery-colombia/).
 
 ## Tourism and medical tourism: what the data shows
 

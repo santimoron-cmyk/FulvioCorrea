@@ -38,7 +38,7 @@ El primer atractivo de Cartagena para quien viaja por una cirugía es la conecti
 
 Con datos de la Aerocivil, Cartagena Cómo Vamos reporta **3.815.429 pasajeros aéreos llegados a Cartagena en 2025** (+2,8%), la tercera ciudad del país en llegadas después de Bogotá y Medellín. De ellos, **736.910 llegaron en vuelos internacionales**, frente a 711.714 en 2024. ([Cartagena Cómo Vamos](https://cartagenacomovamos.org/wp-content/uploads/2026/03/Infografia-Turismo-CTG2025.pdf))
 
-Para un paciente, los vuelos directos significan menos escalas y jornadas de viaje más cortas después de la cirugía. Aun así, no son una razón para recortar la recuperación; más abajo explicamos cuándo conviene volar.
+Para un paciente, los vuelos directos significan menos escalas y jornadas de viaje más cortas después de la cirugía. Aun así, no son una razón para recortar la recuperación; más abajo explicamos cuándo conviene volar. Cómo verificar al cirujano y a la clínica antes de reservar está en [cirugía plástica en Colombia: cómo elegir cirujano](/es/cirugia-plastica-colombia/).
 
 ## Turismo y turismo médico: lo que dicen los datos
 
