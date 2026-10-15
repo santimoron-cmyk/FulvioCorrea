@@ -42,7 +42,7 @@ function portrait(alt) {
   return `<picture><source type="image/avif" srcset="${avif}" sizes="${sizes}"><img src="/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp" alt="${esc(alt)}" width="1200" height="1500" srcset="${webp}" sizes="${sizes}" data-fixed-srcset="1" data-keep-loading="1" loading="lazy" decoding="async"></picture>`;
 }
 
-const updated = '2026-10-09';
+const updated = '2026-10-15';
 
 // Body copy may include [label](/path) or [label](https://…) links. Everything else is escaped.
 function rich(s) {
@@ -62,15 +62,27 @@ function rich(s) {
 }
 const prose = list => `<div class="article-body">${list.map(p => `<p>${rich(p)}</p>`).join('')}</div>`;
 const bullets = list => `<ul class="question-list">${list.map(x => `<li>${rich(x)}</li>`).join('')}</ul>`;
+// Numbered checklist; a leading **label.** becomes <strong>.
+const numbered = list => `<ol class="question-list">${list.map(x => { const m = String(x).match(/^\*\*([^*]+)\*\*\s*(.*)$/); return `<li>${m ? `<strong>${esc(m[1])}</strong> ${rich(m[2])}` : rich(x)}</li>`; }).join('')}</ol>`;
 
 const copy = {
   en: {
-    title: 'Plastic Surgery in Colombia: 2026 Guide',
-    description: 'Plastic surgery in Colombia, 2026: what drives cost, how to verify a surgeon and clinic, and how to plan the stay in Cartagena.',
+    title: 'Plastic Surgery in Colombia: How to Choose a Surgeon (2026)',
+    description: 'There’s no official ranking of the best plastic surgeons in Colombia. How to verify one (SCCP, ReTHUS, REPS), what drives cost, and why patients choose Cartagena.',
     eyebrow: 'Cartagena, Colombia',
-    h1: 'Plastic surgery in Colombia in 2026',
+    h1: 'Plastic surgery in Colombia: a 2026 guide to choosing your surgeon safely',
     lead: 'People looking for plastic surgery in Colombia in 2026 usually want four answers: why patients travel here, what actually changes a quote, how to check a surgeon and a clinic, and how many days to plan. This page answers those from the practice in Cartagena. It is education, not a promise of a result, and it does not list prices.',
     cta: 'Request a virtual consultation',
+    checksTitle: 'How to choose a plastic surgeon in Colombia: 5 checks',
+    checksIntro: 'There is no official ranking of the best plastic surgeons in Colombia. What you can do is check five facts before you pay or book a date. Each one is public or should be given to you in writing.',
+    checks: [
+      '**Look up the surgeon in ReTHUS.** It is the Ministry of Health’s [national registry of health professionals](https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx), and registration is how a person is authorized to practice. Confirm the specialty in plastic surgery, not only a medical degree.',
+      '**Check membership in the SCCP.** The Colombian Society of Plastic Surgery publishes a [surgeon directory](https://cirugiaplastica.org.co/buscar-cirujano/). Membership can be confirmed. It does not promise a result.',
+      '**Confirm the clinic in REPS.** Ask where the operation will take place and whether that facility is enrolled in REPS with its surgical service currently authorized (habilitado). A photograph of the lobby is not that check.',
+      '**Have a consultation first.** A virtual conversation with your photographs is a starting point. The in-person examination comes before any surgery is scheduled.',
+      '**Ask for a written quote.** It should separate the surgeon, the anesthesia and the facility, list what is included, state the currency and how long it is valid, and explain follow-up after you fly home.',
+    ],
+    checksNote: 'For Dr. Fulvio Correa, the [SCCP profile](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/) is public, and surgery is at [CAPRI Clinic](/en/capri-clinic/) in Cartagena. The sections below explain each check, what changes the cost, and how to plan the stay.',
     whyTitle: 'Why patients consider Colombia',
     why: [
       'Colombia is one of the busiest countries in the world for aesthetic surgery. The [Colombian Society of Plastic Surgery (SCCP)](https://cirugiaplastica.org.co/en-2024-aumentaron-10-los-procedimientos-esteticos-quirurgicos-y-no-quirurgicos-en-colombia/), summarizing the 2024 ISAPS global survey, reported 321,408 aesthetic surgical procedures in the country that year, within 490,944 aesthetic procedures in total. Surgeons in Colombia said that on average 30 percent of their patients came from somewhere else, most often the United States, Spain and Canada. [ISAPS](https://www.isaps.org/discover/about-isaps/global-statistics/global-survey-2024-full-report-and-press-releases/) lists Colombia among the countries with the highest share of foreign patients. Those figures are what surgeons reported. They are not a census, and volume is not a quality ranking.',
@@ -177,12 +189,22 @@ const copy = {
     },
   },
   es: {
-    title: 'Cirugía plástica en Colombia, 2026',
-    description: 'Cirugía plástica en Colombia, 2026: de qué depende el costo, cómo verificar cirujano y clínica, y cómo planear la estadía en Cartagena.',
+    title: 'Cirugía plástica en Colombia: cómo elegir cirujano (2026)',
+    description: 'No existe un ranking oficial del mejor cirujano plástico en Colombia. Cómo verificarlo (SCCP, ReTHUS, REPS), de qué depende el costo y por qué Cartagena.',
     eyebrow: 'Cartagena, Colombia',
-    h1: 'Cirugía plástica en Colombia en 2026',
+    h1: 'Cirugía plástica en Colombia: guía 2026 para elegir cirujano con seguridad',
     lead: 'Quien busca cirugía plástica en Colombia en 2026 suele querer cuatro respuestas: por qué viajan otros pacientes, qué mueve una cotización, cómo revisar al cirujano y a la clínica, y cuántos días reservar. Esta página lo responde desde el consultorio en Cartagena. Es información, no una promesa de resultado, y no publica precios.',
     cta: 'Solicitar valoración virtual',
+    checksTitle: 'Cómo elegir cirujano plástico en Colombia: 5 verificaciones',
+    checksIntro: 'No existe un ranking oficial del mejor cirujano plástico en Colombia. Lo que sí puedes hacer es revisar cinco datos antes de pagar o de reservar una fecha. Cada uno es público o te lo deben entregar por escrito.',
+    checks: [
+      '**Busca al cirujano en el ReTHUS.** Es el [registro nacional del talento humano en salud](https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx) del Ministerio de Salud, y la inscripción es la forma en que una persona queda autorizada para ejercer. Confirma la especialización en cirugía plástica, no solo el título de médico.',
+      '**Revisa la membresía en la SCCP.** La Sociedad Colombiana de Cirugía Plástica publica un [directorio de cirujanos](https://cirugiaplastica.org.co/buscar-cirujano/). La membresía se puede confirmar. No promete un resultado.',
+      '**Confirma la clínica en el REPS.** Pregunta dónde será la cirugía y si esa institución está inscrita en el REPS con el servicio quirúrgico habilitado hoy. La foto del lobby no reemplaza esa verificación.',
+      '**Haz primero una valoración.** Una conversación virtual con tus fotos es el punto de partida. El examen presencial va antes de agendar cualquier cirugía.',
+      '**Pide la cotización por escrito.** Debe separar al cirujano, la anestesia y la clínica, decir qué incluye, indicar la moneda y hasta cuándo vale, y explicar el seguimiento cuando regreses a casa.',
+    ],
+    checksNote: 'En el caso del Dr. Fulvio Correa, el [perfil en la SCCP](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/) es público, y la cirugía es en la [Clínica CAPRI](/es/capri-clinic/), en Cartagena. Las secciones de abajo explican cada verificación, qué mueve el costo y cómo planear la estadía.',
     whyTitle: 'Por qué algunos pacientes miran a Colombia',
     why: [
       'Colombia está entre los países con más cirugías estéticas del mundo. La [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/en-2024-aumentaron-10-los-procedimientos-esteticos-quirurgicos-y-no-quirurgicos-en-colombia/), al resumir la encuesta global de ISAPS de 2024, reportó 321.408 cirugías estéticas en el país ese año, dentro de 490.944 procedimientos estéticos en total. Los cirujanos dijeron que, en promedio, el 30 por ciento de sus pacientes venía de otro lugar, sobre todo de Estados Unidos, España y Canadá. [ISAPS](https://www.isaps.org/discover/about-isaps/global-statistics/global-survey-2024-full-report-and-press-releases/) incluye a Colombia entre los países con mayor proporción de pacientes extranjeros. Son respuestas de una encuesta, no un censo, y el volumen no dice nada sobre la calidad de un cirujano.',
@@ -320,6 +342,7 @@ export function colombiaGuide(lang, practice, procedures, posts, origin) {
   const byline = `<p class="post-dates">${es ? 'Actualizado el' : 'Last updated'} <time datetime="${updated}">${updated}</time></p><p class="reviewed">${es ? 'Revisado médicamente por' : 'Medically reviewed by'} Dr. Fulvio Correa · <time datetime="${updated}">${updated}</time></p>`;
   const days = `<div class="article-body">${c.steps.map(([title, text]) => `<h3>${esc(title)}</h3><p>${rich(text)}</p>`).join('')}</div>`;
   const body = `<section class="page-hero wrap" data-surface="charcoal"><p class="eyebrow">${esc(c.eyebrow)}</p><h1>${esc(c.h1)}</h1><p class="lead">${esc(c.lead)}</p>${byline}${cta('colombia-hero')}</section>
+<section class="section wrap" data-surface="plum" id="five-checks"><h2>${esc(c.checksTitle)}</h2>${prose([c.checksIntro])}${numbered(c.checks)}${prose([c.checksNote])}</section>
 <section class="section wrap" data-surface="black" id="why-colombia"><h2>${esc(c.whyTitle)}</h2>${prose(c.why)}<figure>${picture(officeBase, c.officeAlt, 1400, 788)}</figure></section>
 <section class="section wrap" data-surface="plum" id="cost"><h2>${esc(c.costTitle)}</h2><div class="article-body"><p>${rich(c.costIntro)}</p></div>${bullets(c.costItems)}<h3>${esc(c.quoteTitle)}</h3>${prose(c.quote)}</section>
 <section class="section wrap" data-surface="charcoal" id="safety"><h2>${esc(c.chooseTitle)}</h2><div class="article-body"><p>${rich(c.chooseIntro)}</p></div><h3>${esc(c.credTitle)}</h3>${bullets(c.creds)}<h3>${esc(c.clinicTitle)}</h3>${prose([c.clinic])}<h3>${esc(c.flagTitle)}</h3>${bullets(c.flags)}${prose([c.flagNote])}</section>

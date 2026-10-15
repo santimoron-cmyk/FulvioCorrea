@@ -1,8 +1,8 @@
 // Keyword headings and meta descriptions. Titles are the text before
 // " | Dr. Fulvio Correa" (20 characters) and must stay within 40 so the
 // suffix fits in 60. Descriptions are 120–155 characters.
-const homeDescEn = 'Dr. Fulvio Correa, plastic surgeon in Cartagena. 15+ years, 3,000+ procedures, trained at Ivo Pitanguy. Breast surgery focus. Virtual consultation.';
-const homeDescEs = 'Dr. Fulvio Correa, cirujano plástico en Cartagena. Más de 15 años, más de 3.000 procedimientos y formación en Ivo Pitanguy. Enfoque en cirugía mamaria.';
+const homeDescEn = 'Dr. Fulvio Correa, plastic surgeon in Cartagena, Colombia: SCCP member, 15+ years, 3,000+ procedures, surgery at CAPRI Clinic. Book a virtual consultation.';
+const homeDescEs = 'Dr. Fulvio Correa, cirujano plástico en Cartagena y miembro de la SCCP: más de 15 años y más de 3.000 procedimientos. Opera en Clínica CAPRI.';
 const proceduresDescEn = 'Plastic surgery procedures in Cartagena with Dr. Fulvio Correa: face, breast and body. Each plan starts with an individual consultation.';
 const proceduresDescEs = 'Procedimientos de cirugía plástica en Cartagena con el Dr. Fulvio Correa: rostro, mamas y cuerpo. El plan empieza en una valoración individual.';
 const aboutDescEn = 'Plastic surgeon in Cartagena, Colombia with 15+ years of experience and 3,000+ procedures. SCCP member focused on breast surgery and body contouring.';
@@ -26,7 +26,7 @@ export const seo = {
     proceduresDesc: proceduresDescEn,
     proceduresH2: 'Procedures offered in Cartagena',
     aboutH1: 'Dr. Fulvio Correa, plastic surgeon in Cartagena, Colombia',
-    aboutTitle: 'Plastic Surgeon in Cartagena, Colombia',
+    aboutTitle: 'Surgeon Profile: Training and Experience',
     aboutDesc: aboutDescEn,
     faqH1: 'Plastic surgery questions in Cartagena',
     faqTitle: 'Plastic Surgery FAQ, Cartagena',
@@ -45,14 +45,14 @@ export const seo = {
   },
   es: {
     homeH1: 'Cirugía plástica en Cartagena, Colombia',
-    homeTitle: 'Cirugía plástica en Cartagena, Colombia',
+    homeTitle: 'Cirujano plástico en Cartagena, Colombia',
     homeDesc: homeDescEs,
     proceduresH1: 'Procedimientos de cirugía plástica en Cartagena',
     proceduresTitle: 'Procedimientos en Cartagena',
     proceduresDesc: proceduresDescEs,
     proceduresH2: 'Procedimientos en el consultorio',
     aboutH1: 'Dr. Fulvio Correa, cirujano plástico en Cartagena',
-    aboutTitle: 'Cirujano plástico en Cartagena',
+    aboutTitle: 'Formación y experiencia del cirujano',
     aboutDesc: aboutDescEs,
     faqH1: 'Preguntas de cirugía plástica en Cartagena',
     faqTitle: 'Preguntas frecuentes, Cartagena',
