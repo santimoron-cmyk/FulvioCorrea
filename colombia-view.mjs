@@ -83,6 +83,12 @@ const copy = {
       '**Ask for a written quote.** It should separate the surgeon, the anesthesia and the facility, list what is included, state the currency and how long it is valid, and explain follow-up after you fly home.',
     ],
     checksNote: 'For Dr. Fulvio Correa, the [SCCP profile](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/) is public, and surgery is at [CAPRI Clinic](/en/capri-clinic/) in Cartagena. The sections below explain each check, what changes the cost, and how to plan the stay.',
+    bestTitle: 'Who is the best plastic surgeon in Colombia?',
+    best: [
+      'There is no official ranking of the best plastic surgeon in Colombia. A claim of “the best” without a record anyone can check is marketing, not a clinical fact.',
+      'The way to answer is to use the five checks above: ReTHUS, SCCP membership, the clinic in REPS, a consultation, and a written quote.',
+      'These are facts about Dr. Fulvio Correa that you can check. They are not a rank. He is a [Miembro de Número of the SCCP](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). He has been registered in [ReTHUS](https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx) since 2004. He has more than 15 years of experience and has performed more than 3,000 procedures. Surgery is at [CAPRI Clinic](/en/capri-clinic/) in Cartagena. None of that says he is the best, and none of it predicts the result of a case.',
+    ],
     whyTitle: 'Why patients consider Colombia',
     why: [
       'Colombia is one of the busiest countries in the world for aesthetic surgery. The [Colombian Society of Plastic Surgery (SCCP)](https://cirugiaplastica.org.co/en-2024-aumentaron-10-los-procedimientos-esteticos-quirurgicos-y-no-quirurgicos-en-colombia/), summarizing the 2024 ISAPS global survey, reported 321,408 aesthetic surgical procedures in the country that year, within 490,944 aesthetic procedures in total. Surgeons in Colombia said that on average 30 percent of their patients came from somewhere else, most often the United States, Spain and Canada. [ISAPS](https://www.isaps.org/discover/about-isaps/global-statistics/global-survey-2024-full-report-and-press-releases/) lists Colombia among the countries with the highest share of foreign patients. Those figures are what surgeons reported. They are not a census, and volume is not a quality ranking.',
@@ -162,6 +168,7 @@ const copy = {
     readTitle: 'Guides that go further',
     faqTitle: 'Questions patients ask',
     faqs: [
+      ['Who is the best plastic surgeon in Colombia?', 'There is no official ranking of the best plastic surgeon in Colombia. A claim of “the best” without a record anyone can check is marketing. The way to choose is to verify ReTHUS, SCCP membership, that the clinic is in REPS, have a consultation, and ask for a written quote. Dr. Fulvio Correa is a Miembro de Número of the SCCP, has been registered in ReTHUS since 2004, has more than 15 years of experience, has performed more than 3,000 procedures, and operates at CAPRI Clinic in Cartagena. Those facts can be checked. They are not a rank and they do not predict the result of a case.'],
       ['Is plastic surgery in Colombia safe?', 'Safety depends on the surgeon, the facility and the plan for your own case, not on the country. ASPS, ISAPS and the CDC advise you to verify training, the clinic, anesthesia and follow-up before you travel. The CDC notes that accreditation is not a promise of a good outcome, and that infection is the most common complication among people who travel for medical care.'],
       ['How do I choose a plastic surgeon in Colombia?', 'Confirm specialist training in plastic surgery, look up membership in the Colombian Society of Plastic Surgery, and use the Ministry of Health ReTHUS registry. Then ask where the operation will take place and which services that facility currently has authorized in REPS. A social-media following is not a credential.'],
       ['Is there an official ranking of plastic surgeons in Colombia?', 'No. There is no official ranking. A flattering phrase in a search result is not a registry. Use the checks above, then decide after a consultation whether that surgeon is the right one for you.'],
@@ -189,8 +196,8 @@ const copy = {
     },
   },
   es: {
-    title: 'Cirugía plástica en Colombia: cómo elegir cirujano (2026)',
-    description: 'No existe un ranking oficial del mejor cirujano plástico en Colombia. Cómo verificarlo (SCCP, ReTHUS, REPS), de qué depende el costo y por qué Cartagena.',
+    title: '¿Mejor cirujano plástico de Colombia? Cómo elegirlo (2026)',
+    description: 'No existe un ranking oficial del mejor cirujano plástico de Colombia. Cómo verificarlo (SCCP, ReTHUS, REPS), de qué depende el costo y por qué Cartagena.',
     eyebrow: 'Cartagena, Colombia',
     h1: 'Cirugía plástica en Colombia: guía 2026 para elegir cirujano con seguridad',
     lead: 'Quien busca cirugía plástica en Colombia en 2026 suele querer cuatro respuestas: por qué viajan otros pacientes, qué mueve una cotización, cómo revisar al cirujano y a la clínica, y cuántos días reservar. Esta página lo responde desde el consultorio en Cartagena. Es información, no una promesa de resultado, y no publica precios.',
@@ -205,6 +212,12 @@ const copy = {
       '**Pide la cotización por escrito.** Debe separar al cirujano, la anestesia y la clínica, decir qué incluye, indicar la moneda y hasta cuándo vale, y explicar el seguimiento cuando regreses a casa.',
     ],
     checksNote: 'En el caso del Dr. Fulvio Correa, el [perfil en la SCCP](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/) es público, y la cirugía es en la [Clínica CAPRI](/es/capri-clinic/), en Cartagena. Las secciones de abajo explican cada verificación, qué mueve el costo y cómo planear la estadía.',
+    bestTitle: '¿Cuál es el mejor cirujano plástico de Colombia?',
+    best: [
+      'No hay un ranking oficial del mejor cirujano plástico de Colombia. Quien se anuncia como «el mejor» sin una prueba que se pueda revisar está haciendo mercadeo, no entregando un dato clínico.',
+      'La forma de responder es verificar con las cinco comprobaciones de arriba: el ReTHUS, la membresía en la SCCP, la clínica en el REPS, una valoración y una cotización por escrito.',
+      'Estos son datos del Dr. Fulvio Correa que se pueden comprobar. No son un ranking. Es [Miembro de Número de la SCCP](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). Está inscrito en el [ReTHUS](https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx) desde 2004. Tiene más de 15 años de experiencia y ha realizado más de 3.000 procedimientos. La cirugía es en la [Clínica CAPRI](/es/capri-clinic/), en Cartagena. Ninguno de esos datos dice que sea el mejor, ni predice el resultado de un caso.',
+    ],
     whyTitle: 'Por qué algunos pacientes miran a Colombia',
     why: [
       'Colombia está entre los países con más cirugías estéticas del mundo. La [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/en-2024-aumentaron-10-los-procedimientos-esteticos-quirurgicos-y-no-quirurgicos-en-colombia/), al resumir la encuesta global de ISAPS de 2024, reportó 321.408 cirugías estéticas en el país ese año, dentro de 490.944 procedimientos estéticos en total. Los cirujanos dijeron que, en promedio, el 30 por ciento de sus pacientes venía de otro lugar, sobre todo de Estados Unidos, España y Canadá. [ISAPS](https://www.isaps.org/discover/about-isaps/global-statistics/global-survey-2024-full-report-and-press-releases/) incluye a Colombia entre los países con mayor proporción de pacientes extranjeros. Son respuestas de una encuesta, no un censo, y el volumen no dice nada sobre la calidad de un cirujano.',
@@ -284,6 +297,7 @@ const copy = {
     readTitle: 'Guías que profundizan',
     faqTitle: 'Preguntas frecuentes',
     faqs: [
+      ['¿Cuál es el mejor cirujano plástico de Colombia?', 'No hay un ranking oficial del mejor cirujano plástico de Colombia. Decir «el mejor» sin una prueba que se pueda revisar es mercadeo. La forma de elegir es verificar el ReTHUS, la membresía en la SCCP, que la clínica esté en el REPS, hacer una valoración y pedir la cotización por escrito. El Dr. Fulvio Correa es Miembro de Número de la SCCP, está inscrito en el ReTHUS desde 2004, tiene más de 15 años de experiencia, ha realizado más de 3.000 procedimientos y opera en la Clínica CAPRI, en Cartagena. Esos datos se pueden comprobar. No son un puesto en un ranking y no predicen el resultado de un caso.'],
       ['¿Es segura la cirugía plástica en Colombia?', 'La seguridad depende del cirujano, de la clínica y del plan de tu caso, no del país. La ASPS, ISAPS y los CDC recomiendan verificar la formación, el centro, la anestesia y el seguimiento antes de viajar. Los CDC aclaran que una acreditación no promete un buen resultado, y que la infección es la complicación más frecuente entre quienes viajan para recibir atención médica.'],
       ['¿Cómo elijo un cirujano plástico en Colombia?', 'Confirma la especialización en cirugía plástica, busca la membresía en la Sociedad Colombiana de Cirugía Plástica y consulta el ReTHUS del Ministerio de Salud. Después pregunta dónde será la cirugía y qué servicios tiene hoy habilitados ese centro en el REPS. Tener seguidores en redes no es una credencial.'],
       ['¿Hay un ranking oficial de cirujanos plásticos en Colombia?', 'No. No existe un ranking oficial. Una frase elogiosa en un buscador no es un registro. Usa las verificaciones de arriba y decide en la valoración si ese cirujano es el adecuado para ti.'],
@@ -343,6 +357,7 @@ export function colombiaGuide(lang, practice, procedures, posts, origin) {
   const days = `<div class="article-body">${c.steps.map(([title, text]) => `<h3>${esc(title)}</h3><p>${rich(text)}</p>`).join('')}</div>`;
   const body = `<section class="page-hero wrap" data-surface="charcoal"><p class="eyebrow">${esc(c.eyebrow)}</p><h1>${esc(c.h1)}</h1><p class="lead">${esc(c.lead)}</p>${byline}${cta('colombia-hero')}</section>
 <section class="section wrap" data-surface="plum" id="five-checks"><h2>${esc(c.checksTitle)}</h2>${prose([c.checksIntro])}${numbered(c.checks)}${prose([c.checksNote])}</section>
+<section class="section wrap" data-surface="charcoal" id="best-surgeon"><h2>${esc(c.bestTitle)}</h2>${prose(c.best)}</section>
 <section class="section wrap" data-surface="black" id="why-colombia"><h2>${esc(c.whyTitle)}</h2>${prose(c.why)}<figure>${picture(officeBase, c.officeAlt, 1400, 788)}</figure></section>
 <section class="section wrap" data-surface="plum" id="cost"><h2>${esc(c.costTitle)}</h2><div class="article-body"><p>${rich(c.costIntro)}</p></div>${bullets(c.costItems)}<h3>${esc(c.quoteTitle)}</h3>${prose(c.quote)}</section>
 <section class="section wrap" data-surface="charcoal" id="safety"><h2>${esc(c.chooseTitle)}</h2><div class="article-body"><p>${rich(c.chooseIntro)}</p></div><h3>${esc(c.credTitle)}</h3>${bullets(c.creds)}<h3>${esc(c.clinicTitle)}</h3>${prose([c.clinic])}<h3>${esc(c.flagTitle)}</h3>${bullets(c.flags)}${prose([c.flagNote])}</section>
