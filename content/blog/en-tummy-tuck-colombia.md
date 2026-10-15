@@ -8,7 +8,7 @@ tags: ["tummy-tuck-colombia"]
 cover: "/assets/blog-tummy-tuck-consultation.webp"
 coverAlt: "Hands of a medical professional reviewing documents on a clipboard"
 date: "2026-09-23"
-updated: "2026-10-12"
+updated: "2026-10-15"
 author: "fulvio-correa"
 translationOf: "abdominoplastia-colombia"
 sources: ["https://www.cirugiaplastica.org.co/","https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://medlineplus.gov/ency/article/002978.htm","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/recovery","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/safety"]
@@ -83,6 +83,8 @@ A companion helps with walking, meals, garments, and clinic visits in the first 
 ## Recovery themes to confirm with your surgeon
 
 Early recovery after a tummy tuck commonly involves limited upright posture changes, compression garments as directed, short walks to support circulation, and help with daily tasks. Swelling and tightness can last weeks; final contour continues to evolve for months. Desk work often returns sooner than core exercise, heavy lifting, or childcare duties.
+
+For a week-by-week view of drains, posture, return to work and lifting limits, plus how long to stay before flying, read [tummy tuck recovery time](/blog/tummy-tuck-recovery-time/).
 
 Do not use social-media timelines as medical clearance. When abdominal work is part of a broader mommy makeover plan, the separate guide on [mommy makeover recovery time](https://fulviocorrea.com/blog/mommy-makeover-recovery-time/) explains general week-by-week recovery ranges and consult questions without treating stay length as the same decision. Confirm with your surgeon when you may fly, lift a suitcase or child, drive, and resume workouts. If liposuction is part of your plan, the separate guide [Liposuction in Cartagena](https://fulviocorrea.com/blog/liposuction-cartagena/) covers contouring logistics that differ from a full abdominoplasty.
 

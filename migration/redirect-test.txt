@@ -629,6 +629,16 @@ curl -I "https://fulviocorrea.com/post/tummy-tuck-colombia/"
 curl -I "https://fulviocorrea.com/blog/tummy-tuck-colombia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/tummy-tuck-recovery-time"
+# Expected: 301 Location: /blog/tummy-tuck-recovery-time/
+curl -I "https://fulviocorrea.com/blog/tummy-tuck-recovery-time/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/tummy-tuck-recovery-time/"
+# Expected: 301 Location: /blog/tummy-tuck-recovery-time/
+curl -I "https://fulviocorrea.com/blog/tummy-tuck-recovery-time/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/tummy-tuck-vs-liposuction"
 # Expected: 301 Location: /blog/tummy-tuck-vs-liposuction/
 curl -I "https://fulviocorrea.com/blog/tummy-tuck-vs-liposuction/"
@@ -717,6 +727,16 @@ curl -I "https://fulviocorrea.com/es/blog/liposuccion-colombia/"
 curl -I "https://fulviocorrea.com/post/liposuccion-colombia/"
 # Expected: 301 Location: /es/blog/liposuccion-colombia/
 curl -I "https://fulviocorrea.com/es/blog/liposuccion-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/recuperacion-abdominoplastia"
+# Expected: 301 Location: /es/blog/recuperacion-abdominoplastia/
+curl -I "https://fulviocorrea.com/es/blog/recuperacion-abdominoplastia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/recuperacion-abdominoplastia/"
+# Expected: 301 Location: /es/blog/recuperacion-abdominoplastia/
+curl -I "https://fulviocorrea.com/es/blog/recuperacion-abdominoplastia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/post/rinoplastia-colombia"
@@ -1517,6 +1537,16 @@ curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
 curl -I "https://fulviocorrea.com/en/blog/category/plastic-surgery-in-colombia"
 # Expected: 301 Location: /blog/category/plastic-surgery-in-colombia/
 curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/tummy-tuck-recovery-time/"
+# Expected: 301 Location: /blog/tummy-tuck-recovery-time/
+curl -I "https://fulviocorrea.com/blog/tummy-tuck-recovery-time/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/tummy-tuck-recovery-time"
+# Expected: 301 Location: /blog/tummy-tuck-recovery-time/
+curl -I "https://fulviocorrea.com/blog/tummy-tuck-recovery-time/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/blog/tummy-tuck-vs-liposuction/"

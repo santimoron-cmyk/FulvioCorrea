@@ -2579,19 +2579,126 @@
     ]
   },
   {
+    "route": "/en/blog/tummy-tuck-recovery-time/",
+    "file": "dist/en/blog/tummy-tuck-recovery-time/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-15",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Tummy Tuck Recovery Time: Week by Week and Flying Home",
+        "datePublished": "2026-10-15",
+        "dateModified": "2026-10-15",
+        "inLanguage": "en",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-recovery-time.webp",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-recovery-time.avif",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-recovery-time-og.webp",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-recovery-time-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/tummy-tuck-recovery-time/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long is tummy tuck recovery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most people feel they are recovering for about two to three weeks, avoid lifting and straining for about six weeks, and wait at least eight weeks for sports (The Aesthetic Society, Mayo Clinic). The scar and final shape keep changing for months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I go back to work after a tummy tuck?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic and MedlinePlus say many people return in about 2 to 4 weeks. A desk job is usually earlier; a physical job, later."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long do I wear a compression garment or binder?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It varies by surgeon. Mayo Clinic mentions about 6 to 8 weeks for an abdominal binder, while MedlinePlus describes 2 to 3 weeks of elastic support. Your surgeon decides which applies to you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When are drains removed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Aesthetic Society says drains are typically removed between 3 and 14 days after surgery, depending on how much fluid is coming out."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Colombia after a tummy tuck?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you fly Avianca, plan around at least 14 days after surgery, or 15 if it is combined with other body procedures, plus your arrival days and a margin. The final date depends on your surgeon's clearance and a medical certificate issued within 10 days of the flight."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a mini tummy tuck recovery shorter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually, yes. The Aesthetic Society notes recovery is typically longest for a traditional abdominoplasty and when it is combined with other procedures. Avianca still lists 14 days for a mini tummy tuck."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/es/blog/recuperacion-abdominoplastia/",
+    "cover": "/assets/blog-tummy-tuck-recovery-time.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/tummy-tuck-recovery-time/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/recuperacion-abdominoplastia/"
+      }
+    ]
+  },
+  {
     "route": "/en/blog/tummy-tuck-vs-liposuction/",
     "file": "dist/en/blog/tummy-tuck-vs-liposuction/index.html",
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-12",
+    "updated": "2026-10-15",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Tummy Tuck vs Liposuction: Which One Do You Need?",
         "datePublished": "2026-10-12",
-        "dateModified": "2026-10-12",
+        "dateModified": "2026-10-15",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-tummy-tuck-vs-liposuction.webp",
@@ -3158,14 +3265,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-14",
+    "updated": "2026-10-15",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "BBL Colombia: Recovery Time and How Long to Stay",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-10-14",
+        "dateModified": "2026-10-15",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-bbl-colombia.webp",
@@ -3411,14 +3518,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-12",
+    "updated": "2026-10-15",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Tummy Tuck in Colombia: How to Choose",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-10-12",
+        "dateModified": "2026-10-15",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-tummy-tuck-consultation.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/tummy-tuck-colombia/",
@@ -3627,19 +3734,126 @@
     ]
   },
   {
+    "route": "/es/blog/recuperacion-abdominoplastia/",
+    "file": "dist/es/blog/recuperacion-abdominoplastia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-15",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Recuperación de abdominoplastia: semana a semana y estadía",
+        "datePublished": "2026-10-15",
+        "dateModified": "2026-10-15",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-recovery-time.webp",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-recovery-time.avif",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-recovery-time-og.webp",
+          "https://fulviocorrea.com/assets/blog-tummy-tuck-recovery-time-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/recuperacion-abdominoplastia/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura la recuperación de una abdominoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las actividades cotidianas se retoman poco a poco hacia la primera o segunda semana (SCCP), el trabajo suele volver entre la segunda y la cuarta (MedlinePlus), el esfuerzo intenso espera de 4 a 6 semanas y el deporte al menos ocho (Mayo Clinic). El resultado final se ve pasados seis meses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo volver a trabajar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MedlinePlus y Mayo Clinic hablan de 2 a 4 semanas. Un trabajo de oficina suele ser antes; uno físico, después."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo se usa la faja?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del cirujano. MedlinePlus menciona 2 a 3 semanas de soporte elástico y Mayo Clinic unas 6 a 8 semanas de faja abdominal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué duele sentarse después de una abdominoplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Porque los músculos del abdomen se contraen al sentarte. La SCCP explica que ese dolor cede con los días."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días debo quedarme en Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Si vuelas con Avianca, al menos 14 días después de la cirugía, o 15 si se combinó con otros procedimientos corporales, más los días de llegada y un margen. La fecha final depende de la autorización de tu cirujano y de un certificado expedido como máximo 10 días antes del vuelo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La recuperación de una mini abdominoplastia es más corta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Por lo general, sí. The Aesthetic Society indica que la recuperación más larga es la de la abdominoplastia completa o combinada. Aun así, Avianca pide los mismos 14 días para la mini."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/en/blog/tummy-tuck-recovery-time/",
+    "cover": "/assets/blog-tummy-tuck-recovery-time.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/recuperacion-abdominoplastia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/tummy-tuck-recovery-time/"
+      }
+    ]
+  },
+  {
     "route": "/es/blog/abdominoplastia-o-liposuccion/",
     "file": "dist/es/blog/abdominoplastia-o-liposuccion/index.html",
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-12",
+    "updated": "2026-10-15",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "¿Abdominoplastia o liposucción? Cómo saber cuál necesitas",
         "datePublished": "2026-10-12",
-        "dateModified": "2026-10-12",
+        "dateModified": "2026-10-15",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-tummy-tuck-vs-liposuction.webp",
@@ -4104,14 +4318,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-14",
+    "updated": "2026-10-15",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "BBL en Colombia: recuperación y días de estadía",
         "datePublished": "2026-09-30",
-        "dateModified": "2026-10-14",
+        "dateModified": "2026-10-15",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-bbl-colombia.webp",
@@ -4404,14 +4618,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-12",
+    "updated": "2026-10-15",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Abdominoplastia en Colombia: qué verificar antes de viajar",
         "datePublished": "2026-09-25",
-        "dateModified": "2026-10-12",
+        "dateModified": "2026-10-15",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-tummy-tuck-consultation.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/abdominoplastia-colombia/",
