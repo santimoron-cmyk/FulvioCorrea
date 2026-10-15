@@ -400,7 +400,7 @@
     "lang": "en",
     "noindex": false,
     "ads": false,
-    "updated": "2026-09-26",
+    "updated": "2026-10-15",
     "schemas": [
       {
         "@context": "https://schema.org",
@@ -417,7 +417,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/procedures/facelift/",
-        "name": "Facelift in Cartagena, Colombia",
+        "name": "Facelift in Cartagena, Colombia: Recovery & Flying Home",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -4167,14 +4167,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-14",
+    "updated": "2026-10-15",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Viajar en avión después de una cirugía plástica: cuántos días esperar",
         "datePublished": "2026-10-05",
-        "dateModified": "2026-10-14",
+        "dateModified": "2026-10-15",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.webp",
