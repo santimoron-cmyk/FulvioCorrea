@@ -634,6 +634,16 @@
       "status": 301
     },
     {
+      "from": "/post/tummy-tuck-recovery-time",
+      "to": "/blog/tummy-tuck-recovery-time/",
+      "status": 301
+    },
+    {
+      "from": "/post/tummy-tuck-recovery-time/",
+      "to": "/blog/tummy-tuck-recovery-time/",
+      "status": 301
+    },
+    {
       "from": "/post/tummy-tuck-vs-liposuction",
       "to": "/blog/tummy-tuck-vs-liposuction/",
       "status": 301
@@ -721,6 +731,16 @@
     {
       "from": "/post/liposuccion-colombia/",
       "to": "/es/blog/liposuccion-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/recuperacion-abdominoplastia",
+      "to": "/es/blog/recuperacion-abdominoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/post/recuperacion-abdominoplastia/",
+      "to": "/es/blog/recuperacion-abdominoplastia/",
       "status": 301
     },
     {
@@ -1521,6 +1541,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/tummy-tuck-recovery-time/",
+      "to": "/blog/tummy-tuck-recovery-time/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/tummy-tuck-recovery-time",
+      "to": "/blog/tummy-tuck-recovery-time/",
       "status": 301
     },
     {
