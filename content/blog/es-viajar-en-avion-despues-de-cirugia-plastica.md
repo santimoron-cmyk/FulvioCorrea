@@ -1,6 +1,6 @@
 ---
 title: "Viajar en avión después de una cirugía plástica: cuántos días esperar"
-description: "¿Cuánto tiempo después de una cirugía plástica puedes viajar en avión? Días mínimos de Avianca por procedimiento, la guía de la Aerocivil y qué confirmar antes de volar."
+description: "Avianca pide 10 a 15 días para volar tras cirugía plástica: 10 en rinoplastia; 14 en lipo, abdominoplastia y senos; 15 si se combinan. Tabla y requisitos."
 slug: "viajar-en-avion-despues-de-cirugia-plastica"
 lang: "es"
 category: "Recovery"
@@ -8,7 +8,7 @@ tags: ["viajar-en-avion-despues-de-cirugia-plastica", "recuperacion", "turismo-m
 cover: "/assets/blog-flying-after-plastic-surgery.webp"
 coverAlt: "Asiento de ventanilla de avión con una botella de agua y un suéter doblado en la bandeja, con vista a la costa del Caribe y una ciudad colonial amurallada"
 date: "2026-10-05"
-updated: "2026-10-14"
+updated: "2026-10-15"
 author: "fulvio-correa"
 translationOf: "flying-after-plastic-surgery"
 sources: ["https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://scielo.isciii.es/scielo.php?pid=S0376-78922022000400002&script=sci_arttext","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html","https://www.cirugiaplastica.org.co/"]
