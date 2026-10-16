@@ -549,6 +549,16 @@ curl -I "https://fulviocorrea.com/post/breast-lift-colombia/"
 curl -I "https://fulviocorrea.com/blog/breast-lift-colombia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/breast-lift-vs-breast-augmentation"
+# Expected: 301 Location: /blog/breast-lift-vs-breast-augmentation/
+curl -I "https://fulviocorrea.com/blog/breast-lift-vs-breast-augmentation/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/breast-lift-vs-breast-augmentation/"
+# Expected: 301 Location: /blog/breast-lift-vs-breast-augmentation/
+curl -I "https://fulviocorrea.com/blog/breast-lift-vs-breast-augmentation/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/facelift-colombia"
 # Expected: 301 Location: /blog/facelift-colombia/
 curl -I "https://fulviocorrea.com/blog/facelift-colombia/"
@@ -727,6 +737,16 @@ curl -I "https://fulviocorrea.com/es/blog/liposuccion-colombia/"
 curl -I "https://fulviocorrea.com/post/liposuccion-colombia/"
 # Expected: 301 Location: /es/blog/liposuccion-colombia/
 curl -I "https://fulviocorrea.com/es/blog/liposuccion-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/mastopexia-o-aumento-de-senos"
+# Expected: 301 Location: /es/blog/mastopexia-o-aumento-de-senos/
+curl -I "https://fulviocorrea.com/es/blog/mastopexia-o-aumento-de-senos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/mastopexia-o-aumento-de-senos/"
+# Expected: 301 Location: /es/blog/mastopexia-o-aumento-de-senos/
+curl -I "https://fulviocorrea.com/es/blog/mastopexia-o-aumento-de-senos/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/post/recuperacion-abdominoplastia"
@@ -1537,6 +1557,16 @@ curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
 curl -I "https://fulviocorrea.com/en/blog/category/plastic-surgery-in-colombia"
 # Expected: 301 Location: /blog/category/plastic-surgery-in-colombia/
 curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/breast-lift-vs-breast-augmentation/"
+# Expected: 301 Location: /blog/breast-lift-vs-breast-augmentation/
+curl -I "https://fulviocorrea.com/blog/breast-lift-vs-breast-augmentation/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/breast-lift-vs-breast-augmentation"
+# Expected: 301 Location: /blog/breast-lift-vs-breast-augmentation/
+curl -I "https://fulviocorrea.com/blog/breast-lift-vs-breast-augmentation/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/blog/tummy-tuck-recovery-time/"

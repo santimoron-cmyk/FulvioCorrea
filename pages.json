@@ -2500,13 +2500,17 @@
     "file": "dist/en/blog/category/breast-surgery/index.html",
     "lang": "en",
     "ads": false,
-    "noindex": true,
+    "noindex": false,
     "updated": "2026-09-25",
     "schemas": [],
     "alternates": [
       {
         "lang": "en",
         "route": "/en/blog/category/breast-surgery/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/categoria/cirugia-mamaria/"
       }
     ]
   },
@@ -2575,6 +2579,121 @@
       {
         "lang": "en",
         "route": "/en/blog/category/plastic-surgery-in-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/breast-lift-vs-breast-augmentation/",
+    "file": "dist/en/blog/breast-lift-vs-breast-augmentation/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-16",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Breast Lift vs Breast Augmentation: Which Do You Need?",
+        "datePublished": "2026-10-16",
+        "dateModified": "2026-10-16",
+        "inLanguage": "en",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-breast-lift-vs-breast-augmentation.webp",
+          "https://fulviocorrea.com/assets/blog-breast-lift-vs-breast-augmentation.avif",
+          "https://fulviocorrea.com/assets/blog-breast-lift-vs-breast-augmentation-og.webp",
+          "https://fulviocorrea.com/assets/blog-breast-lift-vs-breast-augmentation-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/breast-lift-vs-breast-augmentation/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need a lift or implants?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS’s three criteria: nipple position, desire for more volume, and size goals. Nipples below the crease or pointing down → lift conversation; more roundness or a larger size → implants; many people need both."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a breast lift make breasts bigger?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not meaningfully. ASPS: a lift does not significantly change size or upper fullness—add augmentation for fullness, or reduction to go smaller."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can implants fix sagging?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not reliably when true ptosis is present. Mayo Clinic: implants do not keep breasts from sagging; a lift may be recommended with augmentation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is mastopexy vs augmentation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mastopexy = breast lift (raise and reshape). Augmentation = add volume with implants (or, in selected cases, fat). Augmentation mastopexy combines both."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long after breastfeeding should I wait?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic commonly suggests about six months to a year after you stop breastfeeding."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How soon can I fly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you fly Avianca, plan around 14 days after mammoplasty (augmentation or reduction) or breast pexy with or without implants, plus a certificate dated within 10 days of the flight. Surgeon clearance comes first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Breastfeeding later?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often still possible, but some people make less milk—ask in consult if future pregnancies matter."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/es/blog/mastopexia-o-aumento-de-senos/",
+    "cover": "/assets/blog-breast-lift-vs-breast-augmentation.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/breast-lift-vs-breast-augmentation/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/mastopexia-o-aumento-de-senos/"
       }
     ]
   },
@@ -3655,13 +3774,17 @@
     "file": "dist/es/blog/categoria/cirugia-mamaria/index.html",
     "lang": "es",
     "ads": false,
-    "noindex": true,
+    "noindex": false,
     "updated": "2026-09-25",
     "schemas": [],
     "alternates": [
       {
         "lang": "es",
         "route": "/es/blog/categoria/cirugia-mamaria/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/category/breast-surgery/"
       }
     ]
   },
@@ -3730,6 +3853,121 @@
       {
         "lang": "es",
         "route": "/es/blog/categoria/cirugia-plastica-en-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/mastopexia-o-aumento-de-senos/",
+    "file": "dist/es/blog/mastopexia-o-aumento-de-senos/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-16",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "¿Mastopexia o aumento de senos? Cómo decidir",
+        "datePublished": "2026-10-16",
+        "dateModified": "2026-10-16",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-breast-lift-vs-breast-augmentation.webp",
+          "https://fulviocorrea.com/assets/blog-breast-lift-vs-breast-augmentation.avif",
+          "https://fulviocorrea.com/assets/blog-breast-lift-vs-breast-augmentation-og.webp",
+          "https://fulviocorrea.com/assets/blog-breast-lift-vs-breast-augmentation-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/mastopexia-o-aumento-de-senos/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Necesito levantamiento o implantes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tres criterios ASPS: posición del pezón, deseo de volumen y objetivo de tamaño. Pezones bajos → mastopexia; más redondez o copa → aumento; muchas necesitan ambos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La mastopexia agranda el seno?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No de forma significativa. ASPS: el lift no cambia mucho tamaño ni relleno superior—suma aumento si buscas plenitud, o reducción si quieres menos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Los implantes corrigen la caída?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No de forma confiable con ptosis real. Mayo Clinic: no evitan la caída; puede hacer falta levantamiento junto con el aumento."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre mastopexia y aumento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mastopexia = levantamiento. Aumento = volumen con implantes (o grasa en casos seleccionados). Aumento-mastopexia = ambos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto esperar después de la lactancia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic suele sugerir unos seis meses a un año tras dejar de lactar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo volar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Con Avianca, 14 días tras mamoplastia (aumento o reducción) o pexia con/sin implantes, más certificado de ≤ 10 días antes del vuelo. Primero el alta del cirujano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Lactancia después?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A menudo sí, pero algunas producen poca leche—coméntalo si te importan embarazos futuros."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/en/blog/breast-lift-vs-breast-augmentation/",
+    "cover": "/assets/blog-breast-lift-vs-breast-augmentation.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/mastopexia-o-aumento-de-senos/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/breast-lift-vs-breast-augmentation/"
       }
     ]
   },

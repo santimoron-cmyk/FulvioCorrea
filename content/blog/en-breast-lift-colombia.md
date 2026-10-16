@@ -16,7 +16,7 @@ draft: false
 originalUrl: ""
 procedure: "breast-lift-reduction"
 twin: "levantamiento-de-senos-colombia"
-related: ["breast-augmentation-colombia", "how-long-to-stay-after-mommy-makeover", "plastic-surgery-medical-tourism-cartagena-colombia"]
+related: ["breast-lift-vs-breast-augmentation", "breast-augmentation-colombia", "how-long-to-stay-after-mommy-makeover", "plastic-surgery-medical-tourism-cartagena-colombia"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -84,6 +84,10 @@ If a lift is part of a combined postpartum plan, also read [how long to stay aft
 • How many nights near the clinic should I plan before considering a return flight?
 • What is the plan if a concern appears after I fly home?
 • Who is my after hours contact while I am still in Colombia?
+
+
+
+Still deciding between a lift and implants? See [breast lift vs breast augmentation](/en/blog/breast-lift-vs-breast-augmentation/).
 
 Prefer Spanish? Read the twin guide: <a href="/es/blog/levantamiento-de-senos-colombia/" data-language="es" hreflang="es" lang="es">levantamiento de senos en Colombia</a>.
 
