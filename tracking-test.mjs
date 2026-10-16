@@ -59,6 +59,18 @@ for(const url of ['https://fulviocorrea.com/','https://www.fulviocorrea.com/es/'
 }
 const eeaBoot=boot('https://fulviocorrea.com/',{country:'DE'});
 assert.equal(eeaBoot.window.FCConsent,'denied','EEA country cookie denies until a choice');assert.equal(eeaBoot.window.FCChoice,'');
+function containerDefault(run){
+ const dl=run.dataLayer,native=dl.push.bind(dl);
+ dl.push=function(){return native.apply(dl,arguments);};
+ (function g(){dl.push(arguments);})('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});
+ return consentEntries(dl);
+}
+const overridden=containerDefault(boot('https://fulviocorrea.com/'));
+assert.equal(overridden.at(-1)[1],'update','a regionless container denial is overridden outside the EEA');
+assert.equal(overridden.at(-1)[2].ad_storage,'granted');assert.equal(overridden.at(-1)[2].analytics_storage,'granted');
+const eeaOver=containerDefault(boot('https://fulviocorrea.com/',{country:'DE'}));
+assert.equal(eeaOver.at(-1)[1],'default','EEA visitors keep the container denial');
+assert.equal(eeaOver.filter(entry=>entry[1]==='update').length,0);
 const prior=boot('https://fulviocorrea.com/',{consent:'granted'});
 const priorFlags=consentEntries(prior.dataLayer);assert.equal(priorFlags[2][1],'update');assert.equal(priorFlags[2][2].analytics_storage,'granted');assert.equal(priorFlags[2][2].ad_personalization,'granted');
 assert.ok(prior.dataLayer.findIndex(x=>x&&x[1]==='update')<prior.dataLayer.findIndex(x=>x&&x.event==='gtm.js'),'stored consent updates before GTM');
