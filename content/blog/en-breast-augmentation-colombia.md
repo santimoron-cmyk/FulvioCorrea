@@ -16,7 +16,7 @@ draft: false
 originalUrl: "https://fulviocorrea.com.co/post/breast-augmentation-colombia"
 procedure: "breast-augmentation"
 twin: "aumento-de-senos-colombia"
-related: ["plastic-surgery-medical-tourism-cartagena-colombia", "how-long-to-stay-after-mommy-makeover", "breast-lift-colombia"]
+related: ["breast-lift-vs-breast-augmentation", "plastic-surgery-medical-tourism-cartagena-colombia", "how-long-to-stay-after-mommy-makeover", "breast-lift-colombia"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -96,7 +96,7 @@ Ask how mammograms and future breast imaging are handled after implants, and how
 • What is the plan if a complication appears after I fly home?
 • Who is my after-hours contact while I am still in Colombia?
 
-If your concern is mainly drooping or low nipple position rather than volume, see the companion guide on [breast lift in Colombia](/en/blog/breast-lift-colombia/) (mastopexy), including when a lift alone or lift with implants may fit better.
+If your concern is mainly drooping or low nipple position rather than volume, see the companion guide on [breast lift in Colombia](/en/blog/breast-lift-colombia/) (mastopexy), including when a lift alone or lift with implants may fit better. For the side-by-side decision criteria, read [breast lift vs breast augmentation](/en/blog/breast-lift-vs-breast-augmentation/).
 
 Prefer to read this in Spanish? The Spanish-language guide covers the same topic: <a href="/es/blog/aumento-de-senos-colombia/" data-language="es" hreflang="es" lang="es">aumento de senos en Colombia</a>.
 
