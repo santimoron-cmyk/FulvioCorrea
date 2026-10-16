@@ -10,15 +10,16 @@
  let contact=null,leadId='',leadKey='',started=false;const sent=new Set();
  const read=key=>{try{return JSON.parse(sessionStorage.getItem(key));}catch{return null;}};
  let timezone='';try{timezone=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch{}
- // Anonymous measurement only after cookie consent (same rule as app.js). Never name/phone.
- const track=(event,detail={})=>{if(read('fc_consent')!=='granted')return;const d={...detail,language:lang,page_lang:lang,page_path:location.pathname};window.dataLayer=window.dataLayer||[];window.dataLayer.push({event,...d});};
+ // Anonymous measurement only when effective consent is granted (window.FCConsent, else the stored choice). Never name/phone.
+ const measurement=()=>window.FCConsent==='granted'||window.FCConsent==='denied'?window.FCConsent:(read('fc_consent')==='granted'?'granted':'denied');
+ const track=(event,detail={})=>{if(measurement()!=='granted')return;const d={...detail,language:lang,page_lang:lang,page_path:location.pathname};window.dataLayer=window.dataLayer||[];window.dataLayer.push({event,...d});};
  const uid=()=>globalThis.crypto?.randomUUID?.()||'l'+Date.now().toString(36)+Math.random().toString(36).slice(2,12);
  const pathOnly=u=>{try{const x=new URL(u);return x.origin+x.pathname;}catch{return '';}};
  const payload=extra=>{const a=read('fc_attribution')||{},f=a.first_touch||{},l=a.last_touch||{},s=a.session||{},p={};
   for(const k of KEYS){p[k]=l[k]||'';p[k+'_first']=f[k]||'';p[k+'_last']=l[k]||'';}
   const consent=form.querySelector?.('[data-consent-version]');
   return {...contact,...p,ref:window.FCRef||'',lead_id:leadId,page_url:location.origin+location.pathname,page_title:document.title||'',referrer:s.referrer||f.referrer||pathOnly(document.referrer),landing_page:s.landing_page||f.landing_page||'',landing_url_first:f.landing_page||'',referrer_first:f.referrer||'',attribution_timestamp:f.timestamp||'',
-   timezone,ga_client_id:(String(document.cookie||'').match(/(?:^|; )_ga=GA\d\.\d\.(\d+\.\d+)/)||[])[1]||'',consent_version:consent?.dataset.consentVersion||'',consent_text:(consent?.textContent||'').replace(/\s+/g,' ').trim(),measurement_consent:read('fc_consent')||'denied',form_id:'contact-widget',client_timestamp:new Date().toISOString(),journey:(()=>{try{return localStorage.getItem('fc_journey')}catch{}})()||'',...extra};};
+   timezone,ga_client_id:(String(document.cookie||'').match(/(?:^|; )_ga=GA\d\.\d\.(\d+\.\d+)/)||[])[1]||'',consent_version:consent?.dataset.consentVersion||'',consent_text:(consent?.textContent||'').replace(/\s+/g,' ').trim(),measurement_consent:measurement(),form_id:'contact-widget',client_timestamp:new Date().toISOString(),journey:(()=>{try{return localStorage.getItem('fc_journey')}catch{}})()||'',...extra};};
  // Resolves to the server JSON when accepted, otherwise null. keepalive lets the request finish if the page is left.
  const post=body=>config.leadEndpoint?fetch(config.leadEndpoint,{method:'POST',keepalive:true,credentials:'same-origin',headers:{'Content-Type':'application/json','Idempotency-Key':body.event_id},body:JSON.stringify(body)}).then(r=>r.text().then(x=>{let j={};try{j=JSON.parse(x);}catch{}return r.ok&&j.accepted===true?j:null;})).catch(()=>null):Promise.resolve(null);
  const choose=(channel,extra={})=>{if(!contact)return Promise.resolve(null);const eventId=leadId+'-'+channel+(extra.preferred_call_time?'-'+extra.preferred_call_time:'');

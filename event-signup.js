@@ -12,7 +12,8 @@
  const params=new URLSearchParams(location.search);let eventUtm=read(UTM_KEY);if(!eventUtm||typeof eventUtm!=='object'||Array.isArray(eventUtm))eventUtm={};
  let utmDirty=false;for(const k of UTM){if(!params.has(k))continue;const v=String(params.get(k)||'').trim().slice(0,500);if(v&&eventUtm[k]!==v){eventUtm[k]=v;utmDirty=true;}}
  if(utmDirty){try{sessionStorage.setItem(UTM_KEY,JSON.stringify(eventUtm));}catch{}}
- const push=(event,extra={})=>{if(read('fc_consent')!=='granted')return;window.dataLayer=window.dataLayer||[];window.dataLayer.push({event,page_path:location.pathname,language:lang,page_lang:lang,form_id:'event-signup',event_tag:tagName,...extra});};
+ const measurement=()=>window.FCConsent==='granted'||window.FCConsent==='denied'?window.FCConsent:(read('fc_consent')==='granted'?'granted':'denied');
+ const push=(event,extra={})=>{if(measurement()!=='granted')return;window.dataLayer=window.dataLayer||[];window.dataLayer.push({event,page_path:location.pathname,language:lang,page_lang:lang,form_id:'event-signup',event_tag:tagName,...extra});};
  const uid=()=>globalThis.crypto?.randomUUID?.()||'l'+Date.now().toString(36)+Math.random().toString(36).slice(2,12);
  const pathOnly=u=>{try{const x=new URL(u);return x.origin+x.pathname;}catch{return '';}};
  // WhatsApp → E.164. A bare 10-digit number (or 1 + 10) is taken as US/Canada, since the talk is in Florida.
@@ -44,7 +45,7 @@
   const interest=hasInterest?(labels[picked]?picked:'undecided'):'',procedure=hasInterest?interest:'mommy-makeover',procedure_label=labels[procedure]||'Mommy Makeover';
   const body={event:'lead_created',lead_id:leadId,name,phone,phone_country:pc,phone_country_code:pcc,email:form.elements.email.value.trim(),city:form.elements.city.value.trim(),companion:form.elements.companion.value,
    event_tag:tagName,procedure,procedure_label,language:lang,contact_consent:form.elements.contact_consent.checked,sms_consent:false,
-   consent_version:consentEl?.dataset.consentVersion||'',consent_text:(consentEl?.textContent||'').replace(/\s+/g,' ').trim(),measurement_consent:read('fc_consent')||'denied',
+   consent_version:consentEl?.dataset.consentVersion||'',consent_text:(consentEl?.textContent||'').replace(/\s+/g,' ').trim(),measurement_consent:measurement(),
    ...attr,page_url:location.origin+location.pathname,page_title:document.title||'',referrer:s.referrer||f.referrer||pathOnly(document.referrer),landing_page:s.landing_page||f.landing_page||'',landing_url_first:f.landing_page||'',referrer_first:f.referrer||'',attribution_timestamp:f.timestamp||'',
    timezone:(()=>{try{return Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch{return '';}})(),ga_client_id:(String(document.cookie||'').match(/(?:^|; )_ga=GA\d\.\d\.(\d+\.\d+)/)||[])[1]||'',
    form_id:'event-signup',button_id:'event-signup-submit',client_timestamp:new Date().toISOString(),journey:(()=>{try{return localStorage.getItem('fc_journey')}catch{}})()||''};

@@ -1,6 +1,6 @@
 (()=>{'use strict';
  const config=window.SITE_CONFIG||{},lang=document.documentElement.lang==='es'?'es':'en';
- const messages=lang==='es'?{preview:'No pudimos enviar tu solicitud. Contacta al equipo por WhatsApp para continuar.',sending:'Enviando tu solicitud…',received:'Recibimos tu solicitud. El equipo te contactará para conversar sobre la disponibilidad.',done:'Solicitud recibida',error:'No pudimos confirmar la recepción. Intenta de nuevo o contacta al consultorio por WhatsApp.'}:{preview:'We could not send your request. Please contact the team on WhatsApp to continue.',sending:'Sending your request…',received:'Your request has been received. The team will contact you to discuss availability.',done:'Request received',error:'We could not confirm receipt. Please try again or contact the practice on WhatsApp.'};
+ const messages=lang==='es'?{preview:'No pudimos enviar tu solicitud. Contacta al equipo por WhatsApp para continuar.',sending:'Enviando tu solicitud…',received:'Recibimos tu solicitud. El equipo te contactará para conversar sobre la disponibilidad.',error:'No pudimos confirmar la recepción. Intenta de nuevo o contacta al consultorio por WhatsApp.'}:{preview:'We could not send your request. Please contact the team on WhatsApp to continue.',sending:'Sending your request…',received:'Your request has been received. The team will contact you to discuss availability.',error:'We could not confirm receipt. Please try again or contact the practice on WhatsApp.'};
  const read=k=>{try{return JSON.parse(sessionStorage.getItem(k));}catch{return null;}},save=(k,v)=>{try{sessionStorage.setItem(k,JSON.stringify(v));}catch{}};
  const pathOnly=u=>{try{const x=new URL(u);return x.origin+x.pathname;}catch{return '';}};
  const keys=['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','fbclid'],params=new URLSearchParams(location.search),entry=read('fc_entry');
@@ -21,26 +21,29 @@
  const A='ABCDEFGHJKMNPQRSTUVWXYZ23456789',refOk=v=>new RegExp('^['+A+']{5}$').test(v||'');
  let leadRef='';try{const s=JSON.parse(localStorage.getItem('fc_ref'));if(s.expires>Date.now()&&refOk(s.value))leadRef=s.value;}catch{}
  if(!refOk(leadRef)){try{const s=sessionStorage.getItem('fc_ref');if(refOk(s))leadRef=s;}catch{}}
- if(!refOk(leadRef)){leadRef='';for(let i=0;i<5;i++)leadRef+=A[Math.random()*32|0];}
+ // 31 is A.length. I, L, O, 0 and 1 are left out, so a 32-wide index used to emit "undefined".
+ if(!refOk(leadRef)){leadRef='';for(let i=0;i<5;i++)leadRef+=A[Math.random()*31|0];}
  try{localStorage.setItem('fc_ref',JSON.stringify({value:leadRef,expires:Date.now()+7776e6}));}catch{}
  try{sessionStorage.setItem('fc_ref',leadRef);}catch{}
  window.FCRef=leadRef;
  const beacon=()=>{try{const url=config.waRefEndpoint;if(!url||!navigator.sendBeacon)return;const last=(read('fc_attribution')||{}).last_touch||{},ck=n=>(document.cookie.match('(?:^|; )'+n+'=([^;]*)')||[])[1]||'',body={ref:leadRef,fbc:ck('_fbc'),fbp:ck('_fbp'),page:location.pathname,ts:new Date().toISOString(),lang};for(const k of 'gclid,gbraid,wbraid,fbclid,utm_source,utm_medium,utm_campaign,utm_term,utm_content'.split(','))body[k]=last[k]||'';navigator.sendBeacon(url,new Blob([JSON.stringify(body)],{type:'text/plain'}));}catch{}};
- const decorateWa=a=>{try{const u=new URL(a.href,location.origin);if(!/wa\.me$|api\.whatsapp\.com$/.test(u.hostname))return;let text=(u.searchParams.get('text')||'').replace(new RegExp(' Ref: ['+A+']{5}$'),'').trim();if(!text||text.startsWith('[ref:'))text=(lang==='es'?'Hola, quiero información sobre cirugía con el Dr. Correa.':'Hi, I would like information about surgery with Dr. Correa.')+(text?' '+text:'');text+=' Ref: '+leadRef;if(u.searchParams.get('text')!==text){u.searchParams.set('text',text);a.href=u.href;}}catch{}};
+ const decorateWa=a=>{try{const u=new URL(a.href,location.origin);if(!/wa\.me$|api\.whatsapp\.com$/.test(u.hostname))return;let text=(u.searchParams.get('text')||'').replace(/(^|\s)Ref:\s*\S*/gi,'$1').trim();if(!text||text.startsWith('[ref:'))text=(lang==='es'?'Hola, quiero información sobre cirugía con el Dr. Correa.':'Hi, I would like information about surgery with Dr. Correa.')+(text?' '+text:'');text+=' Ref: '+leadRef;if(u.searchParams.get('text')!==text){u.searchParams.set('text',text);a.href=u.href;}}catch{}};
  document.querySelectorAll?.('a[href*="wa.me"],a[href*="api.whatsapp.com"]')?.forEach(decorateWa);
  document.querySelectorAll('a[data-language]').forEach(a=>{
   const target=new URL(a.href,location.origin);target.search=location.search;target.hash=location.hash;a.href=target.href;
   a.addEventListener('click',()=>{try{localStorage.setItem('fc_language',a.dataset.language);}catch{}});
  });
- let consent=read('fc_consent');window.dataLayer=window.dataLayer||[];
+ // Head snippet sets FCChoice (stored choice) and FCConsent (effective) before this file.
+ let choice=window.FCChoice||'',consent=choice||window.FCConsent||'granted';
+ window.dataLayer=window.dataLayer||[];
  function gtag(){window.dataLayer.push(arguments);}
  const consentFlags=v=>({analytics_storage:v,ad_storage:v,ad_user_data:v,ad_personalization:v});
  const event=(name,extra={})=>{if(consent!=='granted')return;window.dataLayer.push({event:name,page_path:location.pathname,language:lang,page_lang:lang,...extra});};
- const banner=document.getElementById('cookie-banner');banner.hidden=!!consent;
+ const banner=document.getElementById('cookie-banner');banner.hidden=!!choice;
  document.getElementById('privacy-settings').onclick=()=>{banner.hidden=false;};
  let sawProcedure=false;
  function procedureView(){const procedure=document.querySelector('main[data-procedure]')?.dataset.procedure;if(!procedure||sawProcedure)return;sawProcedure=true;event('procedure_view',{procedure});}
- function choose(v){const prev=consent;consent=v;save('fc_consent',v);banner.hidden=true;gtag('consent','update',consentFlags(v));if(v==='granted')procedureView();else if(prev==='granted'&&document.querySelector('script[src*="googletagmanager.com/gtm.js"]'))location.reload();}
+ function choose(v){const prev=consent;consent=choice=v;window.FCConsent=v;window.fcSaveConsent(v);banner.hidden=true;gtag('consent','update',consentFlags(v));if(v==='granted')procedureView();else if(prev==='granted'&&document.querySelector('script[src*="googletagmanager.com/gtm.js"]'))location.reload();}
  document.getElementById('accept-analytics').onclick=()=>choose('granted');document.getElementById('reject-analytics').onclick=()=>choose('denied');if(consent==='granted')procedureView();
  const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');menu.onclick=()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);};
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){menu.setAttribute('aria-expanded','false');nav.classList.remove('open');}});
