@@ -213,5 +213,19 @@
       "breast-lift-vs-breast-augmentation",
       "mastopexia-o-aumento-de-senos"
     ]
+  },
+  {
+    "file": "plastic-surgery-office-consultation-desk-cartagena.webp",
+    "photoId": null,
+    "source": null,
+    "author": null,
+    "license": "Existing practice photograph already published on the site (consultation room). Not a new or generated image.",
+    "licenseUrl": null,
+    "verified": "2026-10-16",
+    "usage": "Reused as the cover of the before-and-after evaluation posts because no original hero was supplied and the site has no consented patient before-and-after set (data/results.json authorized:false). It shows the consultation room, not a result. Same file already used on the office photo set.",
+    "slugs": [
+      "plastic-surgery-colombia-before-and-after",
+      "cirugia-plastica-colombia-antes-y-despues"
+    ]
   }
 ]

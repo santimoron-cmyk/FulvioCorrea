@@ -1,6 +1,6 @@
 ---
-title: "Liposucción en Colombia: valoración, viaje y recuperación"
-description: "Guía práctica de liposucción en Colombia (y Cartagena): cómo preparar la valoración, organizar el viaje médico y planear la recuperación antes de volar."
+title: "Planear la liposucción: valoración, viaje y recuperación"
+description: "Cómo preparar la valoración de liposucción, el viaje y la recuperación. La candidatura y la técnica están en la página del procedimiento."
 slug: "liposuccion-colombia"
 lang: "es"
 category: "Body Contouring"
@@ -8,7 +8,7 @@ tags: ["liposuccion-colombia", "lipo-en-colombia", "liposuccion-cartagena", "con
 cover: "/assets/blog-liposuction-measurement.webp"
 coverAlt: "Primer plano de una cintura medida con una cinta métrica"
 date: "2026-09-30"
-updated: "2026-10-12"
+updated: "2026-10-16"
 author: "fulvio-correa"
 translationOf: "liposuction-cartagena"
 sources: ["https://www.cirugiaplastica.org.co/","https://www.plasticsurgery.org/cosmetic-procedures/liposuction","https://www.plasticsurgery.org/cosmetic-procedures/liposuction/recovery","https://www.plasticsurgery.org/cosmetic-procedures/liposuction/safety"]
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-La **liposucción en Colombia** atrae a pacientes del país y del exterior que buscan un entorno clínico claro, buenas conexiones de viaje y un plan de recuperación realista. Muchas búsquedas empiezan por “lipo en Colombia” o “liposucción Cartagena”: ambas apuntan a la misma decisión—cómo preparar la valoración, organizar el turismo médico y pensar el postoperatorio para llegar con mejores preguntas, no con un guion fijo de resultados.
+Esta es una guía de planificación: qué llevar a la valoración, cómo organizar el viaje y cómo pensar la recuperación antes de dejar fijo el vuelo de regreso. Quién es candidata, cómo se hace la cirugía y qué planea este consultorio en el quirófano está en la página de [liposucción en Cartagena](/es/procedimientos/liposuccion/). Llega con mejores preguntas, no con un guion fijo de resultados.
 
 ## Qué es la liposucción—y qué expectativas son realistas
 

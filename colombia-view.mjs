@@ -12,6 +12,7 @@ const reading = {
     ['bbl-colombia','BBL in Colombia'],
     ['rhinoplasty-colombia','Rhinoplasty in Colombia'],
     ['liposuction-cartagena','Liposuction in Cartagena'],
+    ['plastic-surgery-colombia-before-and-after','Plastic surgery in Colombia before and after'],
     ['flying-after-plastic-surgery','Flying after plastic surgery'],
     ['plastic-surgery-medical-tourism-cartagena-colombia','Cartagena plastic surgery and medical tourism, 2026 data'],
   ],
@@ -24,6 +25,7 @@ const reading = {
     ['bbl-colombia','BBL en Colombia'],
     ['rinoplastia-colombia','Rinoplastia en Colombia'],
     ['liposuccion-colombia','Liposucción en Colombia'],
+    ['cirugia-plastica-colombia-antes-y-despues','Cirugía plástica en Colombia: antes y después'],
     ['viajar-en-avion-despues-de-cirugia-plastica','Viajar en avión después de una cirugía plástica'],
     ['cirugia-plastica-turismo-medico-cartagena-colombia','Cirugía plástica y turismo médico en Cartagena: datos 2026'],
   ],
@@ -42,7 +44,7 @@ function portrait(alt) {
   return `<picture><source type="image/avif" srcset="${avif}" sizes="${sizes}"><img src="/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp" alt="${esc(alt)}" width="1200" height="1500" srcset="${webp}" sizes="${sizes}" data-fixed-srcset="1" data-keep-loading="1" loading="lazy" decoding="async"></picture>`;
 }
 
-const updated = '2026-10-15';
+const updated = '2026-10-16';
 
 // Body copy may include [label](/path) or [label](https://…) links. Everything else is escaped.
 function rich(s) {
@@ -70,7 +72,7 @@ const copy = {
     title: 'Plastic Surgery in Colombia: How to Choose a Surgeon (2026)',
     description: 'No official ranking of the best plastic surgeons in Colombia. How to verify (SCCP, ReTHUS, REPS), what drives cost, and why patients choose Cartagena.',
     eyebrow: 'Cartagena, Colombia',
-    h1: 'Plastic surgery in Colombia: a 2026 guide to choosing your surgeon safely',
+    h1: 'Plastic Surgery in Colombia',
     lead: 'People looking for plastic surgery in Colombia in 2026 usually want four answers: why patients travel here, what actually changes a quote, how to check a surgeon and a clinic, and how many days to plan. This page answers those from the practice in Cartagena. It is education, not a promise of a result, and it does not list prices.',
     cta: 'Request a virtual consultation',
     checksTitle: 'How to choose a plastic surgeon in Colombia: 5 checks',
@@ -161,6 +163,18 @@ const copy = {
       'Dr. Fulvio Correa is a plastic surgeon in Cartagena. He has more than 15 years of experience and has performed more than 3,000 procedures. He earned his medical degree at the University of Cartagena and continued his postgraduate training at the Ivo Pitanguy Institute in Rio de Janeiro. He is a member of the SCCP. His focus is breast surgery, together with body contouring.',
       'The consultation office is in Manzanillo del Mar, at CC Ramblas. Surgery is at CAPRI Clinic, which is a different address in Cartagena. Confirm which door you are going to before you leave the hotel. The office photographs on this page are the consultation rooms, not the operating clinic.',
     ],
+    beforeTitle: 'Before and after: how to evaluate real results',
+    before: [
+      'A before-and-after photograph shows what changed for one person. It does not promise what surgery will do for you. The [American Society of Plastic Surgeons](https://www.plasticsurgery.org/news/articles/can-you-trust-before-and-after-photos) treats these pictures as one part of research, not the decision, and notes that lighting, angle or pose can change how a result looks when the surgery has not.',
+      'Use the same checks on any gallery, including photographs you are shown in consultation:',
+    ],
+    beforeChecks: [
+      '**Same conditions.** Lighting, camera angle, distance, background and pose should match. Makeup, clothing and hair should not be doing the work credited to the surgery. The ASPS [photographic guide](https://www.plasticsurgery.org/Documents/Health-Policy/Guidelines/ASPS-Photographic-Guide-Flyer-2020.pdf) exists so a before and an after can be compared without those distractions.',
+      '**More than one view.** Front, profile and three-quarter. One flattering frame is not a result.',
+      '**A date.** Ask how long after surgery the photo was taken. A picture at a few weeks still includes swelling. A [peer-reviewed review of outcome photography](https://pmc.ncbi.nlm.nih.gov/articles/PMC9390810/) notes that surgical photographs used for U.S. board certification are expected at least three months after surgery. That is a documentation standard, not the day your own result is finished.',
+      '**His own cases.** Ask, in consultation, to see patients he operated on, and whether that case is typical. A picture from another office, a stock library or an edited post is not his result.',
+    ],
+    beforeNote: 'This page does not display patient photographs. A before-and-after image is published only when that patient has agreed to it. The longer explanation, including what to ask in the room, is [plastic surgery in Colombia before and after: how to evaluate real results](/en/blog/plastic-surgery-colombia-before-and-after/).',
     doctorAlt: 'Dr. Fulvio Correa, plastic surgeon in Cartagena, Colombia, smiling in black scrubs',
     officeAlt: 'Reception of Dr. Fulvio Correa’s consultation office in Cartagena, with a marble desk and a wall lettered FULVIO CORREA',
     procTitle: 'Procedures in Cartagena',
@@ -199,7 +213,7 @@ const copy = {
     title: '¿Mejor cirujano plástico de Colombia? Cómo elegirlo (2026)',
     description: 'No existe un ranking oficial del mejor cirujano plástico de Colombia. Cómo verificarlo (SCCP, ReTHUS, REPS), de qué depende el costo y por qué Cartagena.',
     eyebrow: 'Cartagena, Colombia',
-    h1: 'Cirugía plástica en Colombia: guía 2026 para elegir cirujano con seguridad',
+    h1: 'Cirugía plástica en Colombia',
     lead: 'Quien busca cirugía plástica en Colombia en 2026 suele querer cuatro respuestas: por qué viajan otros pacientes, qué mueve una cotización, cómo revisar al cirujano y a la clínica, y cuántos días reservar. Esta página lo responde desde el consultorio en Cartagena. Es información, no una promesa de resultado, y no publica precios.',
     cta: 'Solicitar valoración virtual',
     checksTitle: 'Cómo elegir cirujano plástico en Colombia: 5 verificaciones',
@@ -290,6 +304,18 @@ const copy = {
       'El Dr. Fulvio Correa es cirujano plástico en Cartagena. Tiene más de 15 años de experiencia y ha realizado más de 3.000 procedimientos. Estudió medicina en la Universidad de Cartagena y continuó su formación de posgrado en el Instituto Ivo Pitanguy, en Río de Janeiro. Es miembro de la SCCP. Su enfoque es la cirugía mamaria, junto con el contorno corporal.',
       'El consultorio está en Manzanillo del Mar, en el CC Ramblas. La cirugía es en la Clínica CAPRI, otra dirección de Cartagena. Confirma a cuál vas antes de salir del hotel. Las fotos de esta página son del consultorio, no del quirófano.',
     ],
+    beforeTitle: 'Antes y después: cómo evaluar resultados reales',
+    before: [
+      'Una fotografía de antes y después muestra lo que cambió en una persona. No promete lo que la cirugía va a hacer en ti. La [Sociedad Americana de Cirujanos Plásticos](https://www.plasticsurgery.org/news/articles/can-you-trust-before-and-after-photos) trata esas imágenes como una parte de la investigación, no como la decisión, y señala que la luz, el ángulo o la pose pueden cambiar cómo se ve un resultado aunque la cirugía no haya cambiado.',
+      'Usa las mismas comprobaciones en cualquier galería, incluidas las fotos que te muestren en la valoración:',
+    ],
+    beforeChecks: [
+      '**Las mismas condiciones.** La luz, el ángulo de la cámara, la distancia, el fondo y la pose deben coincidir. El maquillaje, la ropa y el cabello no deberían hacer el trabajo que se le atribuye a la cirugía. La [guía fotográfica de la ASPS](https://www.plasticsurgery.org/Documents/Health-Policy/Guidelines/ASPS-Photographic-Guide-Flyer-2020.pdf) existe para que el antes y el después se puedan comparar sin esas distracciones.',
+      '**Más de una vista.** Frente, perfil y tres cuartos. Un solo encuadre favorecedor no es un resultado.',
+      '**Una fecha.** Pregunta cuánto tiempo después de la cirugía se tomó la foto. Una imagen de pocas semanas todavía incluye inflamación. Una [revisión con pares sobre fotografía de resultados](https://pmc.ncbi.nlm.nih.gov/articles/PMC9390810/) recuerda que las fotos quirúrgicas que se usan para la certificación de la junta estadounidense se esperan al menos tres meses después de la cirugía. Es un estándar de documentación, no el día en que tu propio resultado está listo.',
+      '**Sus propios casos.** Pide, en la valoración, ver pacientes que él operó y si ese caso es típico. Una foto de otro consultorio, de un banco de imágenes o de una publicación editada no es su resultado.',
+    ],
+    beforeNote: 'Esta página no muestra fotografías de pacientes. Una imagen de antes y después se publica solo cuando esa persona lo autorizó. La explicación más larga, con qué preguntar en el consultorio, está en [cirugía plástica en Colombia antes y después: cómo evaluar resultados reales](/es/blog/cirugia-plastica-colombia-antes-y-despues/).',
     doctorAlt: 'Dr. Fulvio Correa, cirujano plástico en Cartagena, Colombia, sonriendo con uniforme quirúrgico negro',
     officeAlt: 'Recepción del consultorio del Dr. Fulvio Correa en Cartagena, con un mostrador de mármol y un muro con las letras FULVIO CORREA',
     procTitle: 'Procedimientos en Cartagena',
@@ -331,6 +357,9 @@ const sources = [
   ['https://www.isaps.org/discover/about-isaps/global-statistics/global-survey-2024-full-report-and-press-releases/','ISAPS Global Survey 2024'],
   ['https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/','ISAPS: considering a procedure abroad'],
   ['https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism','ASPS briefing paper: cosmetic surgery tourism'],
+  ['https://www.plasticsurgery.org/news/articles/can-you-trust-before-and-after-photos','ASPS: can you trust before-and-after photos?'],
+  ['https://www.plasticsurgery.org/Documents/Health-Policy/Guidelines/ASPS-Photographic-Guide-Flyer-2020.pdf','ASPS photographic guide'],
+  ['https://pmc.ncbi.nlm.nih.gov/articles/PMC9390810/','PRS Global Open: SEPIA photographic standards'],
   ['https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html','CDC Yellow Book 2026: medical tourism'],
   ['https://wwwnc.cdc.gov/travel/page/medical-tourism','CDC: medical tourism'],
   ['https://cirugiaplastica.org.co/','Sociedad Colombiana de Cirugía Plástica (SCCP)'],
@@ -366,6 +395,7 @@ export function colombiaGuide(lang, practice, procedures, posts, origin) {
 <section class="section wrap" data-surface="charcoal" id="visa"><h2>${esc(c.visaTitle)}</h2>${prose(c.visa)}</section>
 <section class="section wrap" data-surface="black" id="expect"><h2>${esc(c.expectTitle)}</h2>${prose(c.expect)}</section>
 <section class="doctor-section wrap section" data-surface="plum"><div class="doctor-photo">${portrait(c.doctorAlt)}<span class="image-signature">Dr. Fulvio Correa</span></div><div class="doctor-copy"><p class="eyebrow">${esc(c.eyebrow)}</p><h2>${esc(c.doctorTitle)}</h2>${prose(c.doctor)}${membershipView(practice, lang)}<p><a class="textlink" href="${href('about/')}">${esc(c.links.about)}<span aria-hidden="true">↗</span></a></p><p><a class="textlink" href="${href('capri-clinic/')}">${esc(c.links.capri)}<span aria-hidden="true">↗</span></a></p></div></section>
+<section class="section wrap" data-surface="charcoal" id="before-after"><h2>${esc(c.beforeTitle)}</h2>${prose(c.before)}${numbered(c.beforeChecks)}${prose([c.beforeNote])}</section>
 <section class="section wrap" data-surface="charcoal"><h2>${esc(c.procTitle)}</h2>${prose([c.procIntro])}<ul class="cluster-links">${procs.map(p => `<li><a href="${href('procedures/' + p.slug + '/')}">${esc(p.name)}</a></li>`).join('')}</ul><h3>${esc(c.readTitle)}</h3><ul class="cluster-links">${guides.map(g => `<li><a href="${href('blog/' + g.slug + '/')}">${esc(g.label)}</a></li>`).join('')}</ul><p class="article-body"><a href="${href('procedures/')}">${es ? 'Ver todos los procedimientos' : 'See every procedure'}</a> · <a href="${href('resources/your-consultation/')}">${esc(c.links.consult)}</a> · <a href="${href('contact/')}">${esc(c.links.contact)}</a></p></section>
 <section class="section wrap" data-surface="black" id="faq"><h2>${esc(c.faqTitle)}</h2><div class="article">${c.faqs.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</div></section>
 <section class="section wrap sources" data-surface="plum"><h2>${esc(c.sourcesTitle)}</h2><ul>${sources.map(([url, name]) => `<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(name)}<span aria-hidden="true">↗</span></a></li>`).join('')}</ul></section>

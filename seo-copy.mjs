@@ -18,7 +18,7 @@ const intlDescEs = 'Planifica tu cirugía plástica en Cartagena desde otro paí
 
 export const seo = {
   en: {
-    homeH1: 'Plastic surgery in Cartagena, Colombia',
+    homeH1: 'Plastic Surgeon in Cartagena, Colombia',
     homeTitle: 'Plastic Surgeon in Cartagena, Colombia',
     homeDesc: homeDescEn,
     proceduresH1: 'Plastic surgery procedures in Cartagena',
@@ -44,8 +44,8 @@ export const seo = {
     testimonialsH2: 'Watch patient experiences',
   },
   es: {
-    homeH1: 'Cirugía plástica en Cartagena, Colombia',
-    homeTitle: 'Cirujano plástico en Cartagena, Colombia',
+    homeH1: 'Cirujano plástico en Cartagena',
+    homeTitle: 'Cirujano plástico en Cartagena',
     homeDesc: homeDescEs,
     proceduresH1: 'Procedimientos de cirugía plástica en Cartagena',
     proceduresTitle: 'Procedimientos en Cartagena',

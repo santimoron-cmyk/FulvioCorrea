@@ -1,5 +1,5 @@
 {
-  "active": false,
+  "active": true,
   "productionHostingConfirmed": true,
   "adapter": "cloudflare-pages",
   "redirects": [
@@ -614,6 +614,16 @@
       "status": 301
     },
     {
+      "from": "/post/plastic-surgery-colombia-before-and-after",
+      "to": "/blog/plastic-surgery-colombia-before-and-after/",
+      "status": 301
+    },
+    {
+      "from": "/post/plastic-surgery-colombia-before-and-after/",
+      "to": "/blog/plastic-surgery-colombia-before-and-after/",
+      "status": 301
+    },
+    {
       "from": "/post/plastic-surgery-medical-tourism-cartagena-colombia",
       "to": "/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
       "status": 301
@@ -691,6 +701,16 @@
     {
       "from": "/post/aumento-de-senos-colombia/",
       "to": "/es/blog/aumento-de-senos-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/cirugia-plastica-colombia-antes-y-despues",
+      "to": "/es/blog/cirugia-plastica-colombia-antes-y-despues/",
+      "status": 301
+    },
+    {
+      "from": "/post/cirugia-plastica-colombia-antes-y-despues/",
+      "to": "/es/blog/cirugia-plastica-colombia-antes-y-despues/",
       "status": 301
     },
     {
@@ -1571,6 +1591,16 @@
     {
       "from": "/en/blog/breast-lift-vs-breast-augmentation",
       "to": "/blog/breast-lift-vs-breast-augmentation/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/plastic-surgery-colombia-before-and-after/",
+      "to": "/blog/plastic-surgery-colombia-before-and-after/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/plastic-surgery-colombia-before-and-after",
+      "to": "/blog/plastic-surgery-colombia-before-and-after/",
       "status": 301
     },
     {

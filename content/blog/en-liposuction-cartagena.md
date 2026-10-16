@@ -1,6 +1,6 @@
 ---
-title: "Liposuction in Colombia (Cartagena): Consultation, Travel & Recovery"
-description: "Considering liposuction in Colombia? Practical guide for U.S. and international patients: consultation prep, Cartagena travel logistics, and recovery planning."
+title: "Planning Liposuction: Consultation, Travel, Recovery"
+description: "How to prepare a liposuction consultation, plan the trip and think through recovery. Candidacy and technique are on the procedure page."
 slug: "liposuction-cartagena"
 lang: "en"
 category: "Body Contouring"
@@ -8,7 +8,7 @@ tags: ["liposuction-colombia", "liposuction-cartagena", "lipo-colombia", "body-c
 cover: "/assets/blog-liposuction-measurement.webp"
 coverAlt: "Close-up of a waist being measured with a tape measure"
 date: "2026-09-23"
-updated: "2026-10-12"
+updated: "2026-10-16"
 author: "fulvio-correa"
 translationOf: ""
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/liposuction","https://www.plasticsurgery.org/cosmetic-procedures/liposuction/recovery","https://www.plasticsurgery.org/cosmetic-procedures/liposuction/safety","https://www.cirugiaplastica.org.co/"]
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**Liposuction in Colombia**—often searched as lipo in Colombia or liposuction in Cartagena—attracts patients who want a clear clinical setting, solid travel connections, and a realistic recovery plan. This guide covers how to prepare for a consultation, organize medical travel to Cartagena, and think through aftercare so you arrive with better questions—not a fixed outcome script.
+This is a planning guide: what to bring to the consultation, how to organize the trip, and how to think about recovery before you lock a return flight. Who is a candidate, how the surgery is done and what this practice plans in the operating room is on the page for [liposuction in Cartagena](/procedures/liposuction/). Arrive with better questions, not a fixed outcome script.
 
 ## What liposuction is—and which expectations are realistic
 
