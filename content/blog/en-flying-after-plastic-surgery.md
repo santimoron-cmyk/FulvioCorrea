@@ -1,6 +1,6 @@
 ---
-title: "Flying After Plastic Surgery: When You Can Fly Home From Colombia"
-description: "How long after plastic surgery can you fly? Avianca's minimum days for BBL, tummy tuck and breast surgery, what ASPS and CDC advise, and what to check first."
+title: "How Many Days Before Flying, by Surgery"
+description: "Avianca: 10 days after rhinoplasty or buttock fat injection; 14 after breast surgery, liposuction or tummy tuck; 15 if combined. Your surgeon clears you."
 slug: "flying-after-plastic-surgery"
 lang: "en"
 category: "Recovery"
@@ -8,7 +8,7 @@ tags: ["flying-after-plastic-surgery", "flying-after-bbl", "flying-after-tummy-t
 cover: "/assets/blog-flying-after-plastic-surgery.webp"
 coverAlt: "Airplane window seat with a water bottle and folded cardigan on the tray, overlooking the Caribbean coast and a walled colonial city"
 date: "2026-10-05"
-updated: "2026-10-09"
+updated: "2026-10-16"
 author: "fulvio-correa"
 translationOf: "viajar-en-avion-despues-de-cirugia-plastica"
 sources: ["https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html","https://www.cirugiaplastica.org.co/"]

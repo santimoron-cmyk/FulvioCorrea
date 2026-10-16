@@ -609,6 +609,16 @@ curl -I "https://fulviocorrea.com/post/mommy-makeover-recovery-time/"
 curl -I "https://fulviocorrea.com/blog/mommy-makeover-recovery-time/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/plastic-surgery-colombia-before-and-after"
+# Expected: 301 Location: /blog/plastic-surgery-colombia-before-and-after/
+curl -I "https://fulviocorrea.com/blog/plastic-surgery-colombia-before-and-after/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/plastic-surgery-colombia-before-and-after/"
+# Expected: 301 Location: /blog/plastic-surgery-colombia-before-and-after/
+curl -I "https://fulviocorrea.com/blog/plastic-surgery-colombia-before-and-after/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/plastic-surgery-medical-tourism-cartagena-colombia"
 # Expected: 301 Location: /blog/plastic-surgery-medical-tourism-cartagena-colombia/
 curl -I "https://fulviocorrea.com/blog/plastic-surgery-medical-tourism-cartagena-colombia/"
@@ -687,6 +697,16 @@ curl -I "https://fulviocorrea.com/es/blog/aumento-de-senos-colombia/"
 curl -I "https://fulviocorrea.com/post/aumento-de-senos-colombia/"
 # Expected: 301 Location: /es/blog/aumento-de-senos-colombia/
 curl -I "https://fulviocorrea.com/es/blog/aumento-de-senos-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/cirugia-plastica-colombia-antes-y-despues"
+# Expected: 301 Location: /es/blog/cirugia-plastica-colombia-antes-y-despues/
+curl -I "https://fulviocorrea.com/es/blog/cirugia-plastica-colombia-antes-y-despues/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/cirugia-plastica-colombia-antes-y-despues/"
+# Expected: 301 Location: /es/blog/cirugia-plastica-colombia-antes-y-despues/
+curl -I "https://fulviocorrea.com/es/blog/cirugia-plastica-colombia-antes-y-despues/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/post/cirugia-plastica-turismo-medico-cartagena-colombia"
@@ -1567,6 +1587,16 @@ curl -I "https://fulviocorrea.com/blog/breast-lift-vs-breast-augmentation/"
 curl -I "https://fulviocorrea.com/en/blog/breast-lift-vs-breast-augmentation"
 # Expected: 301 Location: /blog/breast-lift-vs-breast-augmentation/
 curl -I "https://fulviocorrea.com/blog/breast-lift-vs-breast-augmentation/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/plastic-surgery-colombia-before-and-after/"
+# Expected: 301 Location: /blog/plastic-surgery-colombia-before-and-after/
+curl -I "https://fulviocorrea.com/blog/plastic-surgery-colombia-before-and-after/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/plastic-surgery-colombia-before-and-after"
+# Expected: 301 Location: /blog/plastic-surgery-colombia-before-and-after/
+curl -I "https://fulviocorrea.com/blog/plastic-surgery-colombia-before-and-after/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/blog/tummy-tuck-recovery-time/"
