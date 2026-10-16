@@ -2,7 +2,7 @@ import vm from 'node:vm';import fs from 'node:fs';import assert from 'node:asser
 import {apexRedirect,isPagesDevHost} from './site-env.mjs';
 const source=fs.readFileSync('dist/app.js','utf8');
 const memory=new Map();
-function visit(url,{consent,procedure,lang='en',store=memory,lead=false}={}){
+function visit(url,{consent,procedure,lang='en',store=memory,lead=false,country=''}={}){
  const elements={};for(const n of ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','landing_page','referrer','first_touch','last_touch','conversion_page','lead_id'])elements[n]={value:'',setAttribute(k,v){this[k]=v;}};
  elements.procedure={options:[{value:'breast-lift-reduction'}],value:'breast-lift-reduction'};elements.website={value:''};elements.namedItem=n=>elements[n]||null;
  const form={id:'consultation-form',elements,dataset:{form:'consultation'},addEventListener(type,fn){(this.listeners||(this.listeners={}))[type]=fn;},reportValidity(){return true;},querySelector(){return {disabled:false};}};
@@ -11,10 +11,12 @@ function visit(url,{consent,procedure,lang='en',store=memory,lead=false}={}){
  const nodes=new Map();const scripts=[];let reloaded=false;const listeners={};
  const main=procedure?{dataset:{procedure}}:null;
  const storeGet=k=>store.get(k)||null;if(consent)store.set('fc_consent',JSON.stringify(consent));
+ const raw=store.get('fc_consent')||'';let picked=raw==='granted'||raw==='denied'?raw:'';if(!picked){try{const v=JSON.parse(raw);if(v==='granted'||v==='denied')picked=v;}catch{}}
+ const eea=country&&' AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE IS LI NO GB CH '.includes(' '+country+' ');
  const location=new URL(url);location.assign=href=>{location.assigned=href;};location.reload=()=>{reloaded=true;};
- const context={window:{SITE_CONFIG:lead?{leadEndpoint:'/api/lead'}:{},dataLayer:[]},URL,URLSearchParams,Date,Math,crypto:{randomUUID:()=>'test-id'},FormData:class{*[Symbol.iterator](){yield ['name','Ada Lovelace'];yield ['email','ada@example.com'];yield ['phone','+15551212'];}},AbortController,setTimeout,clearTimeout,fetch:async()=>({ok:true,text:async()=>JSON.stringify({accepted:true})}),location,sessionStorage:{getItem:storeGet,setItem:(k,v)=>store.set(k,v),removeItem:k=>store.delete(k)},localStorage:{getItem:storeGet,setItem:(k,v)=>store.set(k,v),removeItem:k=>store.delete(k)},document:{documentElement:{lang},referrer:'https://example.org/source?private=excluded',head:{append(n){scripts.push(n);if(n.id)nodes.set(n.id,n);}},createElement:()=>({id:'',async:false,src:''}),getElementById(id){if(id==='consultation-form')return form;if(id==='cookie-banner')return banner;if(id==='privacy-settings')return privacy;if(id==='accept-analytics')return accept;if(id==='reject-analytics')return reject;if(id==='form-status')return status;return nodes.get(id)||null;},querySelector(sel){if(sel==='.menu-toggle')return menu;if(sel==='.nav')return nav;if(sel==='main[data-procedure]')return main;return null;},querySelectorAll(){return [];},addEventListener(type,fn){listeners[type]=fn;}}};
+ const context={window:{SITE_CONFIG:lead?{leadEndpoint:'/api/lead'}:{},dataLayer:[],FCConsent:picked||(eea?'denied':'granted'),FCChoice:picked,fcSaveConsent(v){store.set('fc_consent',v);context.document.cookie='fc_consent='+v+';Path=/;Max-Age=31536000;SameSite=Lax;Secure';}},URL,URLSearchParams,Date,Math,crypto:{randomUUID:()=>'test-id'},FormData:class{*[Symbol.iterator](){yield ['name','Ada Lovelace'];yield ['email','ada@example.com'];yield ['phone','+15551212'];}},AbortController,setTimeout,clearTimeout,fetch:async()=>({ok:true,text:async()=>JSON.stringify({accepted:true})}),location,sessionStorage:{getItem:storeGet,setItem:(k,v)=>store.set(k,v),removeItem:k=>store.delete(k)},localStorage:{getItem:storeGet,setItem:(k,v)=>store.set(k,v),removeItem:k=>store.delete(k)},document:{documentElement:{lang},referrer:'https://example.org/source?private=excluded',cookie:country?`fc_country=${country}`:'',head:{append(n){scripts.push(n);if(n.id)nodes.set(n.id,n);}},createElement:()=>({id:'',async:false,src:''}),getElementById(id){if(id==='consultation-form')return form;if(id==='cookie-banner')return banner;if(id==='privacy-settings')return privacy;if(id==='accept-analytics')return accept;if(id==='reject-analytics')return reject;if(id==='form-status')return status;return nodes.get(id)||null;},querySelector(sel){if(sel==='.menu-toggle')return menu;if(sel==='.nav')return nav;if(sel==='main[data-procedure]')return main;return null;},querySelectorAll(){return [];},addEventListener(type,fn){listeners[type]=fn;}}};
  vm.runInNewContext(source,context);
- return {fields:elements,dataLayer:context.window.dataLayer,scripts,accept,reject,listeners,form,status,location,reloaded:()=>reloaded,banner};
+ return {fields:elements,dataLayer:context.window.dataLayer,scripts,accept,reject,privacy,listeners,form,status,location,reloaded:()=>reloaded,banner,ref:context.window.FCRef,store,document:context.document};
 }
 function consentEntries(layer){return layer.filter(x=>x&&x[0]==='consent');}
 function gtmScript(scripts){return scripts.find(s=>String(s.src).includes('gtm.js'));}
@@ -25,35 +27,68 @@ fields=visit('https://practice.test/book-consultation/');assert.equal(fields.fie
 fields=visit('https://practice.test/book-consultation/?utm_source=bing&gbraid=braid123');assert.equal(JSON.parse(fields.fields.first_touch.value).utm_source,'google');assert.equal(fields.fields.utm_source.value,'bing');assert.equal(fields.fields.gbraid.value,'braid123');assert.equal(fields.fields.gclid.value,'');
 console.log('Attribution passes: capture, persistence, first/last touch, clean referrer, fresh campaign.');
 
-function boot(url,{consent}={}){
+function boot(url,{consent,where='session',plain=false,country=''}={}){
  const html=fs.readFileSync('dist/en/index.html','utf8');
  const head=html.slice(html.indexOf('<head>')+6,html.indexOf('</head>'));
  const snippets=[...head.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m=>m[1]);
  const scripts=[];const location=new URL(url);
- const session=new Map();if(consent)session.set('fc_consent',JSON.stringify(consent));
+ const session=new Map(),local=new Map();
+ const value=consent?(plain?consent:JSON.stringify(consent)):'';
+ if(value&&where!=='local'&&where!=='cookie')session.set('fc_consent',value);
+ if(value&&where==='local')local.set('fc_consent',value);
+ let cookie=(country?`fc_country=${country}`:'')+(value&&where==='cookie'?`${country?'; ':''}fc_consent=${consent}`:'');
  const first={parentNode:{insertBefore(n){scripts.push(n);}}};
- const context={window:{},URL,JSON,Date,location,sessionStorage:{getItem:k=>session.get(k)||null},document:{getElementsByTagName:()=>[first],createElement:()=>({id:'',async:false,src:''}),head:{appendChild(n){scripts.push(n);}}}};
+ const context={window:{},URL,JSON,Date,location,sessionStorage:{getItem:k=>session.get(k)||null,setItem:(k,v)=>session.set(k,String(v))},localStorage:{getItem:k=>local.get(k)||null,setItem:(k,v)=>local.set(k,String(v))},document:{get cookie(){return cookie;},set cookie(v){cookie=String(v);},getElementsByTagName:()=>[first],createElement:()=>({id:'',async:false,src:''}),head:{appendChild(n){scripts.push(n);}}}};
  context.window=context;
  for(const snippet of snippets)vm.runInNewContext(snippet,context);
- return {dataLayer:context.dataLayer,scripts};
+ return {dataLayer:context.dataLayer,scripts,local,session,window:context.window};
 }
+const regions=['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'];
+const flags=['ad_storage','ad_user_data','ad_personalization','analytics_storage'];
 for(const url of ['https://fulviocorrea.com/','https://www.fulviocorrea.com/es/','https://fulviocorrea.pages.dev/en/','https://staging.fulviocorrea.pages.dev/es/','https://localhost/en/']){
  const run=boot(url);const script=gtmScript(run.scripts);assert.ok(script,'GTM missing on '+url);assert.match(script.src,/id=GTM-THZVNS9B$/);
  const layer=run.dataLayer;const def=layer.findIndex(x=>x&&x[0]==='consent'&&x[1]==='default');const start=layer.findIndex(x=>x&&x.event==='gtm.js');
  assert.ok(def>=0&&def<start,'consent default must precede GTM on '+url);
- const denied=consentEntries(run.dataLayer);assert.equal(denied[0][1],'default');for(const key of ['ad_storage','ad_user_data','ad_personalization','analytics_storage'])assert.equal(denied[0][2][key],'denied');
+ const entries=consentEntries(layer);assert.equal(entries.length,2,'regional denied default and granted default, no stored update');
+ assert.equal(entries[0][1],'default');for(const key of flags)assert.equal(entries[0][2][key],'denied');
+ assert.equal([...entries[0][2].region].join(','),regions.join(','));assert.equal(entries[0][2].wait_for_update,500);
+ assert.equal(entries[1][1],'default');for(const key of flags)assert.equal(entries[1][2][key],'granted');
+ assert.equal(entries[1][2].region,undefined);assert.equal(entries[1][2].wait_for_update,500);
+ const pass=layer.find(x=>x&&x[0]==='set'&&x[1]==='url_passthrough');assert.equal(pass[2],true);assert.ok(layer.indexOf(pass)<start,'url_passthrough before GTM');
+ assert.equal(run.window.FCConsent,'granted','no country cookie uses the granted default');assert.equal(run.window.FCChoice,'');
 }
+const eeaBoot=boot('https://fulviocorrea.com/',{country:'DE'});
+assert.equal(eeaBoot.window.FCConsent,'denied','EEA country cookie denies until a choice');assert.equal(eeaBoot.window.FCChoice,'');
 const prior=boot('https://fulviocorrea.com/',{consent:'granted'});
-const priorFlags=consentEntries(prior.dataLayer);assert.equal(priorFlags[1][1],'update');assert.equal(priorFlags[1][2].analytics_storage,'granted');assert.equal(priorFlags[1][2].ad_personalization,'granted');
+const priorFlags=consentEntries(prior.dataLayer);assert.equal(priorFlags[2][1],'update');assert.equal(priorFlags[2][2].analytics_storage,'granted');assert.equal(priorFlags[2][2].ad_personalization,'granted');
 assert.ok(prior.dataLayer.findIndex(x=>x&&x[1]==='update')<prior.dataLayer.findIndex(x=>x&&x.event==='gtm.js'),'stored consent updates before GTM');
-const granted=visit('https://fulviocorrea.com/en/procedures/breast-lift-reduction/',{consent:'granted',procedure:'breast-lift-reduction',store:new Map()});
+const plain=boot('https://fulviocorrea.com/',{consent:'denied',where:'local',plain:true});
+assert.equal(consentEntries(plain.dataLayer)[2][2].ad_storage,'denied','plain localStorage choice overrides the granted default');
+const fromCookie=boot('https://fulviocorrea.com/',{consent:'granted',where:'cookie',plain:true});
+assert.equal(consentEntries(fromCookie.dataLayer)[2][2].analytics_storage,'granted');assert.equal(fromCookie.local.get('fc_consent'),'granted','cookie choice is copied for the GTM variable');
+fromCookie.window.fcSaveConsent('denied');
+assert.equal(fromCookie.local.get('fc_consent'),'denied');assert.equal(fromCookie.session.get('fc_consent'),'denied');
+assert.match(fromCookie.window.document.cookie,/fc_consent=denied/);assert.match(fromCookie.window.document.cookie,/Max-Age=31536000/);assert.match(fromCookie.window.document.cookie,/SameSite=Lax/);assert.match(fromCookie.window.document.cookie,/Secure/);
+const granted=visit('https://fulviocorrea.com/en/procedures/breast-lift-reduction/',{consent:'granted',procedure:'breast-lift-reduction',store:new Map(),country:'DE'});
+assert.equal(granted.banner.hidden,true,'a stored choice hides the banner');
 assert.equal(granted.dataLayer.find(x=>x&&x.event==='procedure_view').procedure,'breast-lift-reduction');
 assert.equal(granted.dataLayer.find(x=>x&&x.event==='procedure_view').page_lang,'en');
-const fresh=visit('https://fulviocorrea.com/en/procedures/rhinoplasty/',{procedure:'rhinoplasty',store:new Map()});
-assert.equal(fresh.dataLayer.find(x=>x&&x.event==='procedure_view'),undefined,'procedure_view waits for consent');
+const fresh=visit('https://fulviocorrea.com/en/procedures/rhinoplasty/',{procedure:'rhinoplasty',store:new Map(),country:'DE'});
+assert.equal(fresh.banner.hidden,false,'the banner is still offered');
+assert.equal(fresh.dataLayer.find(x=>x&&x.event==='procedure_view'),undefined,'procedure_view waits for consent in the EEA');
 fresh.accept.onclick();
+assert.equal(fresh.store.get('fc_consent'),'granted');assert.match(fresh.document.cookie,/fc_consent=granted/);assert.match(fresh.document.cookie,/Max-Age=31536000/);assert.match(fresh.document.cookie,/SameSite=Lax/);assert.match(fresh.document.cookie,/Secure/);
 assert.equal(fresh.dataLayer.find(x=>x&&x.event==='procedure_view').procedure,'rhinoplasty');
 assert.equal(consentEntries(fresh.dataLayer).at(-1)[2].ad_user_data,'granted');
+const outside=visit('https://fulviocorrea.com/en/procedures/rhinoplasty/',{procedure:'rhinoplasty',store:new Map(),country:'US'});
+assert.equal(outside.banner.hidden,false,'the banner is still offered outside the EEA');
+assert.equal(outside.dataLayer.find(x=>x&&x.event==='procedure_view').procedure,'rhinoplasty','region default granted counts as granted');
+outside.reject.onclick();
+assert.equal(outside.store.get('fc_consent'),'denied');assert.match(outside.document.cookie,/fc_consent=denied/);
+assert.equal(consentEntries(outside.dataLayer).at(-1)[2].ad_storage,'denied');
+outside.privacy.onclick();assert.equal(outside.banner.hidden,false,'privacy settings reopens the banner');
+const returned=visit('https://fulviocorrea.com/en/procedures/rhinoplasty/',{procedure:'rhinoplasty',store:outside.store,country:'US'});
+assert.equal(returned.banner.hidden,true,'a new session keeps the stored denial');assert.equal(returned.dataLayer.find(x=>x&&x.event==='procedure_view'),undefined);
 const link=(event,extra={})=>({id:extra.id||'',dataset:{event,procedure:extra.procedure||'',location:extra.location||''},matches:()=>true});
 fresh.listeners.click({target:{closest:()=>link('whatsapp_click',{id:'footer-whatsapp',location:'footer',procedure:''})}});
 fresh.listeners.click({target:{closest:()=>link('phone_click',{id:'header-phone',location:'header'})}});
@@ -72,4 +107,28 @@ assert.equal(apexRedirect('https://www.fulviocorrea.com/es/contacto/?q=1'),'http
 assert.equal(apexRedirect('https://fulviocorrea.com/es/'),null);
 assert.equal(isPagesDevHost('staging.fulviocorrea.pages.dev'),true);
 assert.equal(isPagesDevHost('fulviocorrea.com'),false);
-console.log('GTM passes: container on every host, consent default before the container, banner update, procedure_view, whatsapp_click, phone_click, lead_submit without PII, noscript iframe.');
+const alphabet=/^[ABCDEFGHJKMNPQRSTUVWXYZ23456789]{5}$/;
+const realRandom=Math.random;Math.random=()=>0.9999999;
+const edge=visit('https://fulviocorrea.com/procedures/breast-augmentation/',{store:new Map(),country:'US'});
+Math.random=realRandom;
+assert.equal('ABCDEFGHJKMNPQRSTUVWXYZ23456789'.length,31);
+assert.equal(edge.ref,'99999','index uses the 31-character alphabet, not 32');
+const seen=new Set();
+for(let i=0;i<200;i++){const run=visit('https://fulviocorrea.com/procedures/breast-augmentation/?gclid=TEST123',{store:new Map(),country:'US'});assert.match(run.ref,alphabet,'ref '+run.ref);seen.add(run.ref);}
+assert.ok(seen.size>1,'cleared storage mints a new ref');
+const waPage=visit('https://fulviocorrea.com/procedures/breast-augmentation/',{store:new Map(),country:'US',procedure:'breast-augmentation'});
+let href='https://wa.me/573001234567?text='+encodeURIComponent('Hello Ref: K5HundefinedG Ref: ABCDE');
+const waLink={get href(){return href;},set href(v){href=v;},id:'procedure-hero-whatsapp',dataset:{event:'whatsapp_click',procedure:'breast-augmentation',location:'procedure-hero'}};
+const click=()=>waPage.listeners.click({target:{closest(sel){if(sel==='a'||sel==='a[data-event]')return waLink;return null;}}});
+click();click();
+const text=new URL(href).searchParams.get('text');
+assert.equal((text.match(/Ref:/gi)||[]).length,1,'Ref is appended once');
+assert.match(text,/ Ref: [ABCDEFGHJKMNPQRSTUVWXYZ23456789]{5}$/);
+assert.equal(text.includes('undefined'),false);assert.equal(text.includes('K5H'),false);assert.equal(text.includes('ABCDE'),false);
+const {onRequest}=await import('./functions/_middleware.js');
+const htmlRes=await onRequest({request:{url:'https://staging.fulviocorrea.pages.dev/procedures/breast-augmentation/',cf:{country:'de'}},async next(){return new Response('<html></html>',{headers:{'content-type':'text/html; charset=utf-8'}});}});
+assert.equal(htmlRes.headers.get('x-robots-tag'),'noindex, nofollow');
+assert.ok((htmlRes.headers.getSetCookie?.()||[]).some(c=>c.startsWith('fc_country=DE;')),'HTML responses carry the country cookie');
+const assetRes=await onRequest({request:{url:'https://fulviocorrea.com/app.js',cf:{country:'FR'}},async next(){return new Response('x',{headers:{'content-type':'text/javascript'}});}});
+assert.equal(assetRes.headers.get('set-cookie'),null,'static scripts are not given the country cookie');
+console.log('GTM passes: regional consent default, granted default, url_passthrough, stored choice, banner, procedure_view, whatsapp ref, phone_click, lead_submit without PII, noscript iframe.');

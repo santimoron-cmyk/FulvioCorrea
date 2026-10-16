@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 
-function runChat({consent, loader=false, loaded=false, active=false, lang='en'}={}){
+function runChat({consent, loader=false, loaded=false, active=false, lang='en', effective}={}){
  const scripts=[];
  const listeners={};
  const dataLayer=[];
@@ -13,6 +13,7 @@ function runChat({consent, loader=false, loaded=false, active=false, lang='en'}=
  const listed=sel=>sel.includes('loader.js')?scripts:sel==='chat-widget'?[]: [];
  const document={documentElement:{lang},getElementById:id=>id==='contact-open'?open:null,querySelector:sel=>listed(sel)[0]||null,querySelectorAll:sel=>sel==='[data-open-contact]'?[]:listed(sel),createElement:()=>({src:'',dataset:{},remove(){}}),body:{appendChild(n){scripts.push(n);return n;}}};
  const context={document,sessionStorage:{getItem:k=>session.get(k)||null},location:{pathname:lang==='es'?'/es/':'/'},dataLayer,leadConnector:{chatWidget:api},MutationObserver:class{constructor(){}observe(){}},WeakSet,JSON,addEventListener(type,fn){listeners[type]=fn;}};
+ if(effective)context.FCConsent=effective;
  context.window=context;
  vm.runInNewContext(fs.readFileSync('ghl-chat.js','utf8'),context);
  return {open,scripts,dataLayer,api,listeners};
@@ -37,6 +38,9 @@ chat.open.onclick({currentTarget:chat.open});
 assert.equal(chat.scripts.length,1,'pending open does not inject again');
 assert.equal(chat.dataLayer.some(e=>e.event==='sofia_open'),false,'sofia_open stays behind measurement consent');
 assert.equal(chat.dataLayer.filter(e=>e.event==='chat_open').length,1);
+chat=runChat({effective:'granted'});
+chat.open.onclick({currentTarget:chat.open});
+assert.ok(chat.dataLayer.some(e=>e.event==='sofia_open'),'effective granted default allows sofia_open');
 
 chat=runChat({loaded:true,consent:'granted',lang:'es'});
 chat.open.onclick({currentTarget:chat.open});
