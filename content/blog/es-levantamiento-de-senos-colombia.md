@@ -16,7 +16,7 @@ draft: false
 originalUrl: ""
 procedure: "breast-lift-reduction"
 twin: "breast-lift-colombia"
-related: ["aumento-de-senos-colombia", "cuantos-dias-quedarse-despues-mommy-makeover", "cirugia-plastica-turismo-medico-cartagena-colombia"]
+related: ["mastopexia-o-aumento-de-senos", "aumento-de-senos-colombia", "cuantos-dias-quedarse-despues-mommy-makeover", "cirugia-plastica-turismo-medico-cartagena-colombia"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -82,6 +82,8 @@ Si el levantamiento forma parte de un plan combinado posparto, lee también [cu�
 • ¿Cuántas noches cerca de la clínica debo planear antes de pensar en el vuelo de regreso?
 • ¿Qué plan hay si aparece una preocupación cuando ya estoy en casa?
 • ¿Quién es el contacto fuera de horario mientras estoy en Colombia?
+
+¿Todavía eliges entre levantamiento e implantes? Lee la guía [mastopexia o aumento de senos](/es/blog/mastopexia-o-aumento-de-senos/).
 
 ¿Prefieres inglés? Lee la guía hermana: <a href="/en/blog/breast-lift-colombia/" data-language="en" hreflang="en" lang="en">breast lift in Colombia</a>.
 

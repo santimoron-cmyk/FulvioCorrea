@@ -16,7 +16,7 @@ draft: false
 originalUrl: ""
 procedure: "breast-augmentation"
 twin: "breast-augmentation-colombia"
-related: ["cirugia-plastica-turismo-medico-cartagena-colombia", "tiempo-recuperacion-mommy-makeover", "levantamiento-de-senos-colombia"]
+related: ["mastopexia-o-aumento-de-senos", "cirugia-plastica-turismo-medico-cartagena-colombia", "tiempo-recuperacion-mommy-makeover", "levantamiento-de-senos-colombia"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -103,6 +103,8 @@ Si quieres coordinar una valoración de aumento de senos con el Dr. Fulvio Corre
 • Sociedad Colombiana de Cirugía Plástica — [Aumento de senos](https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/) y [directorio SCCP](https://www.cirugiaplastica.org.co/)
 • American Society of Plastic Surgeons — [Breast Augmentation](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation), [Recovery](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery) y [Safety](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety)
 • Avianca, centro de ayuda — [Restricciones de viaje para pasajeros con condiciones médicas especiales](https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) (mamoplastia / pexia: viajar después de 14 días; certificado médico)
+
+Si la duda es levantamiento frente a volumen, lee [mastopexia o aumento de senos](/es/blog/mastopexia-o-aumento-de-senos/).
 
 ## Aviso de información médica
 

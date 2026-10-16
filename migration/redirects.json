@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "productionHostingConfirmed": true,
   "adapter": "cloudflare-pages",
   "redirects": [
@@ -554,6 +554,16 @@
       "status": 301
     },
     {
+      "from": "/post/breast-lift-vs-breast-augmentation",
+      "to": "/blog/breast-lift-vs-breast-augmentation/",
+      "status": 301
+    },
+    {
+      "from": "/post/breast-lift-vs-breast-augmentation/",
+      "to": "/blog/breast-lift-vs-breast-augmentation/",
+      "status": 301
+    },
+    {
       "from": "/post/facelift-colombia",
       "to": "/blog/facelift-colombia/",
       "status": 301
@@ -731,6 +741,16 @@
     {
       "from": "/post/liposuccion-colombia/",
       "to": "/es/blog/liposuccion-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/mastopexia-o-aumento-de-senos",
+      "to": "/es/blog/mastopexia-o-aumento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/post/mastopexia-o-aumento-de-senos/",
+      "to": "/es/blog/mastopexia-o-aumento-de-senos/",
       "status": 301
     },
     {
@@ -1541,6 +1561,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/breast-lift-vs-breast-augmentation/",
+      "to": "/blog/breast-lift-vs-breast-augmentation/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/breast-lift-vs-breast-augmentation",
+      "to": "/blog/breast-lift-vs-breast-augmentation/",
       "status": 301
     },
     {
