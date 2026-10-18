@@ -40,13 +40,13 @@
     "lang": "en",
     "noindex": false,
     "ads": false,
-    "updated": "2026-09-26",
+    "updated": "2026-10-18",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/procedures/bbl/",
-        "name": "BBL Doctor in Cartagena, Colombia",
+        "name": "Colombia BBL Doctor in Cartagena",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -401,7 +401,7 @@
     "lang": "en",
     "noindex": false,
     "ads": false,
-    "updated": "2026-10-15",
+    "updated": "2026-10-18",
     "schemas": [
       {
         "@context": "https://schema.org",
@@ -418,7 +418,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/procedures/facelift/",
-        "name": "Facelift in Cartagena, Colombia: Recovery & Flying Home",
+        "name": "Facelift in Colombia: Neck Lift & Recovery in Cartagena",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -2015,7 +2015,7 @@
     "lang": "es",
     "noindex": false,
     "ads": false,
-    "updated": "2026-09-26",
+    "updated": "2026-10-18",
     "schemas": [
       {
         "@context": "https://schema.org",
@@ -2032,7 +2032,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/es/procedures/rhinoplasty/",
-        "name": "Rinoplastia en Cartagena, Colombia",
+        "name": "Rinoplastia en Cartagena con el Dr. Fulvio Correa",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
