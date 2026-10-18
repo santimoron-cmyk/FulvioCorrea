@@ -19,7 +19,7 @@ const intlDescEs = 'Planifica tu cirugía plástica en Cartagena desde otro paí
 export const seo = {
   en: {
     homeH1: 'Plastic Surgeon in Cartagena, Colombia',
-    homeTitle: 'Plastic Surgeon in Cartagena, Colombia',
+    homeTitle: 'Plastic Surgeon in Cartagena',
     homeDesc: homeDescEn,
     proceduresH1: 'Plastic surgery procedures in Cartagena',
     proceduresTitle: 'Surgery Procedures in Cartagena',
