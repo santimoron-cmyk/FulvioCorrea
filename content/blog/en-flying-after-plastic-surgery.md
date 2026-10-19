@@ -1,6 +1,6 @@
 ---
 title: "How Many Days Before Flying, by Surgery"
-description: "Avianca: 10 days after rhinoplasty or buttock fat injection; 14 after breast surgery, liposuction or tummy tuck; 15 if combined. Your surgeon clears you."
+description: "Breast augmentation: fly at 5–7 days (ASPS). Avianca: 10 days after rhinoplasty; 14 after liposuction or tummy tuck; 15 if combined."
 slug: "flying-after-plastic-surgery"
 lang: "en"
 category: "Recovery"
@@ -8,7 +8,7 @@ tags: ["flying-after-plastic-surgery", "flying-after-bbl", "flying-after-tummy-t
 cover: "/assets/blog-flying-after-plastic-surgery.webp"
 coverAlt: "Airplane window seat with a water bottle and folded cardigan on the tray, overlooking the Caribbean coast and a walled colonial city"
 date: "2026-10-05"
-updated: "2026-10-16"
+updated: "2026-10-19"
 author: "fulvio-correa"
 translationOf: "viajar-en-avion-despues-de-cirugia-plastica"
 sources: ["https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html","https://www.cirugiaplastica.org.co/"]
@@ -21,24 +21,27 @@ reviewed_by: ""
 review_date: ""
 ---
 
-There is no single safe number of days for **flying after plastic surgery**, but if you are flying home from Colombia there is a firm floor to plan around. Avianca, Colombia's flag carrier, lists **10 to 15 days** after cosmetic surgery depending on the procedure (14 days for breast surgery, liposuction, and tummy tuck; 15 days when two or more body procedures are combined) and requires a medical certificate issued within 10 days of the flight. That airline minimum sits on top of your surgeon's clearance, not in place of it.
+There is no single safe number of days for **flying after plastic surgery**. For **breast augmentation or reduction (mammoplasty)**, the window on this site is the one the American Society of Plastic Surgeons (ASPS) suggests: **5–7 days** before flying. Your surgeon's clearance still comes first. Airlines can have their own rules. Avianca publishes a 14-day minimum after mammoplasty; that is the airline's boarding rule, not the window above. Check with your airline before you book.
 
-So the practical answer to **how long after plastic surgery can you fly** is: the later of two dates, the airline's minimum and the day your surgical team examines you and signs off. Credentials, what a quote should include and how Cartagena compares with other cities are in the [2026 guide to plastic surgery in Colombia](/plastic-surgery-colombia/).
+For the other procedures below, Avianca, Colombia's flag carrier, lists **10 to 15 days** depending on the procedure (14 days for a breast lift, liposuction, and tummy tuck; 15 days when two or more body procedures are combined) and requires a medical certificate issued within 10 days of the flight. That airline minimum sits on top of your surgeon's clearance, not in place of it.
 
-## The airline minimum, procedure by procedure
+So the practical answer to **how long after plastic surgery can you fly** is: for breast augmentation, the ASPS window of 5–7 days and the day your surgical team signs off; for the other procedures in the table, the later of the airline's minimum and that clearance. Credentials, what a quote should include and how Cartagena compares with other cities are in the [2026 guide to plastic surgery in Colombia](/plastic-surgery-colombia/).
 
-Avianca publishes waiting periods for passengers with medical conditions, based on the guide from Colombia's civil aviation authority (Aerocivil). For the procedures most often planned by travelers coming to Cartagena, its [help center](https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions) lists:
+## The window, procedure by procedure
 
-| Procedure | Avianca: travel permitted after |
+For breast augmentation and reduction, use the **5–7 day** ASPS window in the paragraph above. Avianca publishes waiting periods for the other procedures travelers ask about, based on the guide from Colombia's civil aviation authority (Aerocivil). Its [help center](https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions) lists:
+
+| Procedure | Window to plan around |
 |---|---|
-| Breast augmentation, breast reduction, breast lift (with or without implants) | 14 days |
-| Liposuction, mini tummy tuck, tummy tuck, lipoabdominoplasty | 14 days |
-| Buttock fat injection | 10 days |
-| Buttock surgery and implants, gluteoplasty | 14 days |
-| Rhinoplasty and/or septoplasty | 10 days |
-| Cosmetic facial surgery | 14 days |
-| Facelift (rhytidoplasty) or two or more facial procedures combined | 15 days, depending on recovery |
-| Two or more body procedures combined (for example, a mommy makeover) | 15 days, depending on recovery |
+| Breast augmentation or reduction (mammoplasty) | 5–7 days (ASPS). Airlines can have their own rules; check before booking. |
+| Breast lift (pexy), with or without implants | 14 days (Avianca) |
+| Liposuction, mini tummy tuck, tummy tuck, lipoabdominoplasty | 14 days (Avianca) |
+| Buttock fat injection | 10 days (Avianca) |
+| Buttock surgery and implants, gluteoplasty | 14 days (Avianca) |
+| Rhinoplasty and/or septoplasty | 10 days (Avianca) |
+| Cosmetic facial surgery | 14 days (Avianca) |
+| Facelift (rhytidoplasty) or two or more facial procedures combined | 15 days, depending on recovery (Avianca) |
+| Two or more body procedures combined (for example, a mommy makeover) | 15 days, depending on recovery (Avianca) |
 
 Planning a nose job? Our guide to [rhinoplasty in Colombia](/blog/rhinoplasty-colombia/) explains how the 10-day rhinoplasty line and the 14-day cosmetic facial surgery line apply, and how to build the stay around them.
 
@@ -56,9 +59,9 @@ Flying another airline, or connecting through another country? Read that carrier
 
 If you have searched this already, you have probably seen numbers from a few days to more than a month. They are answering different questions:
 
-- **ASPS** (American Society of Plastic Surgeons), in its [briefing paper on cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism), suggests waiting five to seven days after body procedures such as liposuction and breast augmentation, and seven to 10 days after facial procedures including facelifts, eyelid surgery, and rhinoplasty, before flying.
-- **CDC's Yellow Book** [medical tourism chapter](https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html) says medical tourists should not fly for 10 days after chest or abdominal surgery, because cabin pressure is roughly equivalent to 6,000 to 8,000 feet of altitude.
-- **Avianca's** day counts are a boarding rule for that airline, and they are longer than both.
+- **ASPS** (American Society of Plastic Surgeons), in its [briefing paper on cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism), suggests waiting five to seven days after body procedures such as liposuction and breast augmentation, and seven to 10 days after facial procedures including facelifts, eyelid surgery, and rhinoplasty, before flying. For breast augmentation, that **5–7 day** figure is the window this site uses.
+- **CDC's Yellow Book** [medical tourism chapter](https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html) says medical tourists should not fly for 10 days after abdominal surgery, because cabin pressure is roughly equivalent to 6,000 to 8,000 feet of altitude. For breast augmentation, this page uses the ASPS window of 5–7 days.
+- **Avianca's** day counts in the table are a boarding rule for that airline. They are not the window this site uses for breast augmentation.
 - **Individual surgeons** often add time for long-haul routes, drains, combined procedures, or personal clot risk.
 
 None of these figures is a personal clearance. They are planning floors. ASPS and CDC both stress that surgery and long flights each raise the risk of blood clots on their own, and that combining them raises it further.
@@ -85,7 +88,7 @@ For U.S. patients, the decision that matters most is made before surgery: how ma
 3. Add margin for a later clearance than expected. Keep the return ticket changeable.
 4. Schedule the pre-flight visit and the medical certificate inside the 10-day window before departure.
 
-For stay length by procedure, see [how long to stay after a mommy makeover](/blog/how-long-to-stay-after-mommy-makeover/), the travel notes in [tummy tuck in Colombia](/blog/tummy-tuck-colombia/), the 14-day plan in [breast augmentation recovery week by week](/blog/breast-augmentation-recovery/), and [breast lift in Colombia](/blog/breast-lift-colombia/). If you are weighing a BBL, the safety questions in [BBL Colombia: what to decide before travel](/blog/bbl-colombia/) apply before any flight discussion. For destination data, including direct routes from U.S. cities to Cartagena, see the [Cartagena plastic surgery and medical tourism report](/blog/plastic-surgery-medical-tourism-cartagena-colombia/).
+For stay length by procedure, see [how long to stay after a mommy makeover](/blog/how-long-to-stay-after-mommy-makeover/), the travel notes in [tummy tuck in Colombia](/blog/tummy-tuck-colombia/), the 5–7 day ASPS window in [breast augmentation recovery week by week](/blog/breast-augmentation-recovery/), and [breast lift in Colombia](/blog/breast-lift-colombia/). If you are weighing a BBL, the safety questions in [BBL Colombia: what to decide before travel](/blog/bbl-colombia/) apply before any flight discussion. For destination data, including direct routes from U.S. cities to Cartagena, see the [Cartagena plastic surgery and medical tourism report](/blog/plastic-surgery-medical-tourism-cartagena-colombia/).
 
 ## On the plane: lowering clot risk
 

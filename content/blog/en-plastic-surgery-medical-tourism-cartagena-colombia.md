@@ -8,7 +8,7 @@ tags: ["medical tourism cartagena", "plastic surgery cartagena", "plastic surger
 cover: "/assets/blog-cartagena-medical-tourism.webp"
 coverAlt: "Historic street and cathedral tower in Cartagena, Colombia"
 date: "2026-09-26"
-updated: "2026-10-07"
+updated: "2026-10-19"
 author: "fulvio-correa"
 translationOf: ""
 sources: ["https://www.isaps.org/media/30xldsyf/isaps-global-survey-2024.pdf", "https://www.datos.gov.co/Comercio-Industria-y-Turismo/Extranjeros-No-Residentes/7wm8-w5ad", "https://www.mincit.gov.co/getattachment/estudios-economicos/estadisticas-e-informes/informes-de-turismo/2026/junio/oee-ec-turismo-junio-2026.pdf.aspx", "https://www.dane.gov.co/files/operaciones/EVI/bol-EVI-ene-mar2025.pdf", "https://www.plasticsurgery.org/news/articles/2025-plastic-surgery-by-the-numbers-what-are-the-trends-in-plastic-surgery-and-what-it-means-for-you", "https://wwwnc.cdc.gov/travel/page/medical-tourism", "https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism", "https://cartagenacomovamos.org/wp-content/uploads/2026/03/Infografia-Turismo-CTG2025.pdf", "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
@@ -115,7 +115,7 @@ How long you stay depends on the procedure, whether procedures are combined, you
 | Procedure | Typical return to desk work | Before strenuous exercise | Guidance on flying |
 |---|---|---|---|
 | Liposuction | A few days (outpatient cases) | Up to 6 weeks | ASPS: wait 5–7 days after body procedures |
-| Breast augmentation | At least 3 days; ≥3 weeks for physical jobs | No heavy lifting for ≥4 weeks | ASPS: 5–7 days after body procedures; CDC: 10–14 days after major surgery, especially chest surgery |
+| Breast augmentation | At least 3 days; ≥3 weeks for physical jobs | No heavy lifting for ≥4 weeks | ASPS: 5–7 days. Airlines can set their own rules; check before booking. |
 | Tummy tuck | At least 1 week | 4–6 weeks | CDC: 10–14 days after major surgery |
 | Brazilian butt lift (BBL) | 10–14 days; no sitting on the buttocks for ≥2 weeks | Full recovery 2–3 months | ASPS: stay at least 4–5 days and move every hour when traveling |
 | Mommy makeover | 1–2 weeks | No heavy lifting for 4–6 weeks | Combined surgery: follow the longest applicable window |
