@@ -61,7 +61,7 @@ Lleva a la valoración tu historial de mamografías cuando aplique, antecedentes
 
 Aquí se mezclan dos relojes: el de tu recuperación y el de la aerolínea.
 
-**El reloj de la recuperación.** Según la [guía de recuperación de ASPS](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery), suele usarse un vendaje elástico o un sostén de soporte para controlar la inflamación; el dolor agudo a menudo mejora en uno a cinco días, y la molestia e inflamación pueden durar varias semanas. El regreso al ejercicio y a la actividad normal lo indica tu cirujano, no las redes. El aspecto final sigue evolucionando durante meses.
+**El reloj de la recuperación.** Según la [guía de recuperación de ASPS](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery), suele usarse un vendaje elástico o un sostén de soporte para controlar la inflamación; el dolor agudo a menudo mejora en uno a cinco días, y la molestia e inflamación pueden durar varias semanas. El regreso al ejercicio y a la actividad normal lo indica tu cirujano, no las redes. El aspecto final sigue evolucionando durante meses. Las etapas, semana a semana y con fuentes, están en [recuperación del aumento de senos](/es/blog/recuperacion-aumento-de-senos/).
 
 **El reloj del vuelo.** El [centro de ayuda de Avianca](https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) indica que después de una mamoplastia (aumento o reducción) o una pexia mamaria (con o sin implantes) se permite viajar a partir de los 14 días, con certificado médico expedido como máximo 10 días antes del vuelo. Otras aerolíneas pueden tener reglas distintas: revisa la tuya antes de comprar.
 
@@ -88,7 +88,7 @@ La ciudad amurallada puede esperar. Los primeros días son de reposo relativo y 
 
 El Dr. Fulvio Correa es cirujano plástico y ejerce en Cartagena (Manzanillo del Mar / Centro Comercial Ramblas, local 23), donde valora pacientes para aumento de senos y otros procedimientos de mama, incluidos quienes viajan desde el exterior. En esa valoración se define si la cirugía es adecuada para ti, qué técnica corresponde y cuál sería el calendario de controles. Detalle del procedimiento en la práctica: [aumento de senos](/es/procedimientos/aumento-de-senos/). Si tu preocupación principal es la caída o la posición baja del pezón más que el volumen, lee la guía hermana sobre [levantamiento de senos en Colombia](/es/blog/levantamiento-de-senos-colombia/) (mastopexia), incluyendo cuándo conviene pexia sola o pexia con implantes.
 
-Si prefieres leer este mismo tema en inglés: <a href="/en/blog/breast-augmentation-colombia/" data-language="en" hreflang="en" lang="en">Breast Augmentation Colombia</a>.
+Si prefieres leer este mismo tema en inglés: <a href="/blog/breast-augmentation-colombia/" data-language="en" hreflang="en" lang="en">Breast Augmentation Colombia</a>.
 
 Si tu plan es un mommy makeover combinado y la pregunta es cuántos días quedarte cerca del equipo antes de volar, usa [cuántos días quedarse después de un mommy makeover](/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/).
 

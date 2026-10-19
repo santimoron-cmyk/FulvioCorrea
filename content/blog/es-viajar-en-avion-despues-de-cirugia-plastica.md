@@ -96,7 +96,7 @@ La decisión que más pesa se toma antes de operarte: cuántas noches reservar.
 3. Deja margen por si la autorización llega más tarde, y compra un regreso con cambio flexible.
 4. Agenda la revisión previa al vuelo y el certificado dentro de los 10 días anteriores a la salida.
 
-Para estadías por procedimiento, revisa [cuántos días quedarse después de un mommy makeover](/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/), las notas de viaje de [abdominoplastia en Colombia](/es/blog/abdominoplastia-colombia/), [liposucción en Colombia](/es/blog/liposuccion-colombia/) y [levantamiento de senos en Colombia](/es/blog/levantamiento-de-senos-colombia/). Si quieres ver los datos de rutas aéreas directas a Cartagena, consulta el [informe de cirugía plástica y turismo médico en Cartagena](/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/).
+Para estadías por procedimiento, revisa [cuántos días quedarse después de un mommy makeover](/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/), las notas de viaje de [abdominoplastia en Colombia](/es/blog/abdominoplastia-colombia/), [liposucción en Colombia](/es/blog/liposuccion-colombia/), la [recuperación del aumento de senos](/es/blog/recuperacion-aumento-de-senos/) y [levantamiento de senos en Colombia](/es/blog/levantamiento-de-senos-colombia/). Si quieres ver los datos de rutas aéreas directas a Cartagena, consulta el [informe de cirugía plástica y turismo médico en Cartagena](/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/).
 
 ## Durante el vuelo
 
