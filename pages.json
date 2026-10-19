@@ -4041,7 +4041,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [],
     "alternates": [
       {
@@ -4051,6 +4051,107 @@
       {
         "lang": "en",
         "route": "/en/blog/category/plastic-surgery-in-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/como-elegir-cirujano-plastico-en-cartagena/",
+    "file": "dist/es/blog/como-elegir-cirujano-plastico-en-cartagena/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-19",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Cómo elegir cirujano plástico en Cartagena",
+        "datePublished": "2026-10-19",
+        "dateModified": "2026-10-19",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/plastic-surgery-office-consultation-desk-cartagena.webp",
+          "https://fulviocorrea.com/assets/plastic-surgery-office-consultation-desk-cartagena.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/como-elegir-cirujano-plastico-en-cartagena/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cómo elijo un cirujano plástico en Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Confirma la especialización en cirugía plástica, la membresía en la SCCP y la inscripción en el ReTHUS. Pregunta en qué clínica será la cirugía y pide la habilitación vigente de ese servicio. Agenda una valoración, presencial o virtual, antes de reservar una fecha."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El Dr. Fulvio Correa es miembro de la SCCP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Es Miembro de Número de la Sociedad Colombiana de Cirugía Plástica y su perfil en la SCCP es público. También está inscrito en el ReTHUS desde 2004. Esos datos se pueden comprobar. No son un ranking y no predicen el resultado de un caso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde opera el Dr. Correa en Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La valoración es en el consultorio de Manzanillo del Mar, CC Ramblas, local 23. La cirugía es en la Clínica CAPRI, Anillo Vial Km 12, Edificio Génesis, Puerta de las Américas / Pontezuela. Son dos direcciones. El equipo confirma el lugar de cada cita."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo empezar con una valoración virtual?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. El consultorio ofrece valoración virtual y valoración presencial en Cartagena. La virtual es un primer paso si no estás en la ciudad. No reemplaza el examen presencial antes de la cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La foto de la clínica reemplaza la habilitación?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Pide el nombre de la institución y la autorización vigente del servicio quirúrgico. En Colombia esa habilitación la tramitan las secretarías de salud y el registro es el REPS. Una foto del lobby no es ese documento."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué debería hacerme pausar antes de reservar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una promesa de resultado seguro, de «sin dolor» o de «inmediato», presión para pagar antes de una valoración, y ninguna respuesta sobre quién opera, quién pone la anestesia y cómo es el seguimiento. La cirugía no debe proponerse en una casa o un apartamento."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": null,
+    "cover": "/assets/plastic-surgery-office-consultation-desk-cartagena.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/como-elegir-cirujano-plastico-en-cartagena/"
       }
     ]
   },
@@ -5856,8 +5957,8 @@
         "@type": "WebPage",
         "@id": "https://fulviocorrea.com/es/capri-clinic/#webpage",
         "url": "https://fulviocorrea.com/es/capri-clinic/",
-        "name": "Clínica CAPRI en Cartagena | Dr. Fulvio Correa",
-        "description": "Dónde opera el Dr. Fulvio Correa en Cartagena: Clínica CAPRI. Diferencia la clínica del consultorio y prepara tus preguntas antes de la cirugía.",
+        "name": "Clínica CAPRI en Cartagena: valoración | Dr. Fulvio Correa",
+        "description": "¿Buscas la Clínica CAPRI? Está en Cartagena y allí opera el Dr. Fulvio Correa. Anillo Vial Km 12, Edificio Génesis. Agenda tu valoración.",
         "inLanguage": "es",
         "about": {
           "@id": "https://fulviocorrea.com/#capri-clinic"
