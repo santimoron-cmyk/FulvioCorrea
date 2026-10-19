@@ -734,6 +734,16 @@
       "status": 301
     },
     {
+      "from": "/post/como-elegir-cirujano-plastico-en-cartagena",
+      "to": "/es/blog/como-elegir-cirujano-plastico-en-cartagena/",
+      "status": 301
+    },
+    {
+      "from": "/post/como-elegir-cirujano-plastico-en-cartagena/",
+      "to": "/es/blog/como-elegir-cirujano-plastico-en-cartagena/",
+      "status": 301
+    },
+    {
       "from": "/post/cuantos-dias-quedarse-despues-mommy-makeover",
       "to": "/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/",
       "status": 301
