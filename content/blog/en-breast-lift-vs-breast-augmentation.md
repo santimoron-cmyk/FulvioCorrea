@@ -16,7 +16,7 @@ draft: false
 originalUrl: ""
 procedure: "breast-lift-reduction"
 twin: "mastopexia-o-aumento-de-senos"
-related: ["breast-lift-colombia", "breast-augmentation-colombia", "how-long-to-stay-after-mommy-makeover"]
+related: ["breast-lift-colombia", "breast-augmentation-colombia", "how-long-to-stay-after-mommy-makeover", "breast-augmentation-recovery"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -78,7 +78,7 @@ Exact clearance is individualized. Below is **general** guidance from ASPS, Mayo
 | Exercise | Gradual; avoid early strain (Mayo) | Avoid straining activity that raises pulse/BP ≥ ~2 weeks (Mayo) | Often 6–8 weeks |
 | Support | Surgical then soft support bra for weeks (Mayo) | Compression/support as directed | Commonly 1–3 months |
 
-Cartagena clinic protocol (garment, drains, in-person check before flying, remote follow-up) is set after your exam and may be stricter. Separate society averages from your clearance.
+Cartagena clinic protocol (garment, drains, in-person check before flying, remote follow-up) is set after your exam and may be stricter. Separate society averages from your clearance. If implants alone are the plan, the week-by-week detail is in [breast augmentation recovery](/blog/breast-augmentation-recovery/).
 
 ## Travel: Avianca treats lift and implants the same
 

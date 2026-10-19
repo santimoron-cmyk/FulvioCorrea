@@ -85,7 +85,7 @@ For U.S. patients, the decision that matters most is made before surgery: how ma
 3. Add margin for a later clearance than expected. Keep the return ticket changeable.
 4. Schedule the pre-flight visit and the medical certificate inside the 10-day window before departure.
 
-For stay length by procedure, see [how long to stay after a mommy makeover](/blog/how-long-to-stay-after-mommy-makeover/), the travel notes in [tummy tuck in Colombia](/blog/tummy-tuck-colombia/), and [breast lift in Colombia](/blog/breast-lift-colombia/). If you are weighing a BBL, the safety questions in [BBL Colombia: what to decide before travel](/blog/bbl-colombia/) apply before any flight discussion. For destination data, including direct routes from U.S. cities to Cartagena, see the [Cartagena plastic surgery and medical tourism report](/blog/plastic-surgery-medical-tourism-cartagena-colombia/).
+For stay length by procedure, see [how long to stay after a mommy makeover](/blog/how-long-to-stay-after-mommy-makeover/), the travel notes in [tummy tuck in Colombia](/blog/tummy-tuck-colombia/), the 14-day plan in [breast augmentation recovery week by week](/blog/breast-augmentation-recovery/), and [breast lift in Colombia](/blog/breast-lift-colombia/). If you are weighing a BBL, the safety questions in [BBL Colombia: what to decide before travel](/blog/bbl-colombia/) apply before any flight discussion. For destination data, including direct routes from U.S. cities to Cartagena, see the [Cartagena plastic surgery and medical tourism report](/blog/plastic-surgery-medical-tourism-cartagena-colombia/).
 
 ## On the plane: lowering clot risk
 

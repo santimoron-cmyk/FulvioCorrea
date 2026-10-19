@@ -2469,7 +2469,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [],
     "alternates": [
       {
@@ -2541,7 +2541,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [],
     "alternates": [
       {
@@ -2585,6 +2585,105 @@
       {
         "lang": "es",
         "route": "/es/blog/categoria/cirugia-plastica-en-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/breast-augmentation-recovery/",
+    "file": "dist/en/blog/breast-augmentation-recovery/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-19",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Breast Augmentation Recovery Week by Week: What's Normal",
+        "datePublished": "2026-10-19",
+        "dateModified": "2026-10-19",
+        "inLanguage": "en",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-recovery.webp",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-recovery.avif",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-recovery-og.webp",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-recovery-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/breast-augmentation-recovery/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long is breast augmentation recovery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Aesthetic Society says recovery typically takes one to two weeks. Lifting and exercise usually wait three to four weeks (University of Utah Health, SCCP), and the final result starts to show at around three months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How painful is recovery from breast implants?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pain is usually worst in the first 48 hours and tends to be greater with implants under the muscle (The Aesthetic Society). ASPS says acute pain typically eases within one to five days, though soreness and swelling can last a few weeks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I go back to work after breast augmentation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For desk work, often within a few days to a week (The Aesthetic Society, University of Utah Health). Mayo Clinic speaks of a few weeks. Jobs with lifting take longer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long do I wear a surgical bra after breast augmentation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the surgeon. University of Utah Health describes a surgical bra for three to four weeks followed by a soft sports bra, and the SCCP describes a sports bra worn 24 hours a day for one month."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Colombia after breast augmentation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you fly Avianca, plan around at least 14 days after surgery, or 15 if it is combined with other body procedures, plus your arrival days and a margin. The final date depends on your surgeon's clearance and a medical certificate issued within 10 days of the flight."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/es/blog/recuperacion-aumento-de-senos/",
+    "cover": "/assets/blog-breast-augmentation-recovery.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/breast-augmentation-recovery/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/recuperacion-aumento-de-senos/"
       }
     ]
   },
@@ -3836,7 +3935,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [],
     "alternates": [
       {
@@ -3908,7 +4007,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [],
     "alternates": [
       {
@@ -3952,6 +4051,113 @@
       {
         "lang": "en",
         "route": "/en/blog/category/plastic-surgery-in-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/recuperacion-aumento-de-senos/",
+    "file": "dist/es/blog/recuperacion-aumento-de-senos/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-19",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Recuperación del aumento de senos: cuánto tarda y cuidados",
+        "datePublished": "2026-10-19",
+        "dateModified": "2026-10-19",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-recovery.webp",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-recovery.avif",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-recovery-og.webp",
+          "https://fulviocorrea.com/assets/blog-breast-augmentation-recovery-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/recuperacion-aumento-de-senos/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tarda la recuperación de un aumento de senos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Buena parte de las actividades se retoman hacia el tercer día y el deporte hacia las tres o cuatro semanas (SCCP). MedlinePlus habla de 3 a 6 semanas sin cargar peso ni hacer ejercicio fuerte, y el resultado empieza a verse definitivo hacia los tres meses (University of Utah Health)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto duele el postoperatorio del aumento de senos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El dolor suele ser mayor en las primeras 48 horas y cuando el implante va debajo del músculo (The Aesthetic Society). La SCCP describe un dolor que se controla con la medicación y una sensación de congestión que cede rápido."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo se usa el brasier después de un aumento de senos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del cirujano. La SCCP habla de un brasier deportivo las 24 horas durante un mes; MedlinePlus, de un sostén suave sin varillas de día y de noche durante 2 a 4 semanas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo volver a trabajar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En un trabajo de oficina, entre pocos días y dos semanas según la fuente (The Aesthetic Society, MedlinePlus). Mayo Clinic habla de unas semanas. Si tu trabajo implica cargar, tarda más."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo dormir de lado?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "University of Utah Health sugiere esperar de tres a cuatro semanas y alternar lados al principio. Boca abajo, solo con autorización del cirujano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días debo quedarme en Colombia después de un aumento de senos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Si vuelas con Avianca, al menos 14 días después de la cirugía, o 15 si se combinó con otros procedimientos corporales, más los días de llegada y un margen. La fecha final depende de la autorización de tu cirujano y de un certificado expedido como máximo 10 días antes del vuelo."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/en/blog/breast-augmentation-recovery/",
+    "cover": "/assets/blog-breast-augmentation-recovery.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/recuperacion-aumento-de-senos/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/breast-augmentation-recovery/"
       }
     ]
   },
