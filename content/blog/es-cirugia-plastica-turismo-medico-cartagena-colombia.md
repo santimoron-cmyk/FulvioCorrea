@@ -8,7 +8,7 @@ tags: ["turismo medico cartagena", "cirugia plastica cartagena", "cirugia plasti
 cover: "/assets/blog-cartagena-medical-tourism.webp"
 coverAlt: "Calle del centro histórico y torre de la catedral de Cartagena, Colombia"
 date: "2026-09-26"
-updated: "2026-10-14"
+updated: "2026-10-19"
 author: "fulvio-correa"
 translationOf: "plastic-surgery-medical-tourism-cartagena-colombia"
 sources: ["https://www.isaps.org/media/30xldsyf/isaps-global-survey-2024.pdf", "https://www.datos.gov.co/Comercio-Industria-y-Turismo/Extranjeros-No-Residentes/7wm8-w5ad", "https://www.mincit.gov.co/getattachment/estudios-economicos/estadisticas-e-informes/informes-de-turismo/2026/junio/oee-ec-turismo-junio-2026.pdf.aspx", "https://www.dane.gov.co/files/operaciones/EVI/bol-EVI-ene-mar2025.pdf", "https://www.plasticsurgery.org/news/articles/2025-plastic-surgery-by-the-numbers-what-are-the-trends-in-plastic-surgery-and-what-it-means-for-you", "https://wwwnc.cdc.gov/travel/page/medical-tourism", "https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism", "https://cartagenacomovamos.org/wp-content/uploads/2026/03/Infografia-Turismo-CTG2025.pdf", "https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
@@ -113,7 +113,7 @@ El tiempo de estadía depende del procedimiento, de si se combinan varios, de tu
 | Procedimiento | Regreso habitual a trabajo de oficina | Antes de ejercicio intenso | Recomendaciones para volar |
 |---|---|---|---|
 | Liposucción | Pocos días (casos ambulatorios) | Hasta 6 semanas | ASPS: esperar 5 a 7 días tras procedimientos corporales |
-| Aumento de senos | Al menos 3 días; 3 semanas o más en trabajos físicos | Sin cargar peso por al menos 4 semanas | ASPS: 5 a 7 días tras procedimientos corporales; CDC: 10 a 14 días tras cirugía mayor, en especial de tórax |
+| Aumento de senos | Al menos 3 días; 3 semanas o más en trabajos físicos | Sin cargar peso por al menos 4 semanas | ASPS: 5–7 días. Las aerolíneas pueden tener reglas propias; confírmalas antes de reservar. |
 | Abdominoplastia | Al menos 1 semana | 4 a 6 semanas | CDC: 10 a 14 días tras cirugía mayor |
 | BBL (lipotransferencia glútea) | 10 a 14 días; no sentarse sobre los glúteos por al menos 2 semanas | Recuperación completa en 2 a 3 meses | ASPS: quedarse al menos 4 a 5 días y moverse cada hora durante el viaje |
 | Mommy makeover | 1 a 2 semanas | Sin cargar peso por 4 a 6 semanas | Cirugía combinada: aplica el plazo más largo |

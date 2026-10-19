@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-¿Cuánto tarda la **recuperación de un aumento de senos**? La parte más dura son los primeros dos o tres días. La Sociedad Colombiana de Cirugía Plástica (SCCP) indica que buena parte de las actividades se retoman hacia el tercer día y el deporte hacia las tres o cuatro semanas. MedlinePlus, la enciclopedia médica de la Biblioteca Nacional de Medicina de Estados Unidos, habla de 7 a 14 días o más para volver al trabajo y de 3 a 6 semanas sin cargar peso, sin ejercicio fuerte y sin estirar mucho los brazos. El resultado empieza a verse como definitivo hacia los tres meses. Y si te operas lejos de casa hay un dato más: Avianca permite volar a partir de los **14 días** después de una mamoplastia de aumento.
+¿Cuánto tarda la **recuperación de un aumento de senos**? La parte más dura son los primeros dos o tres días. La Sociedad Colombiana de Cirugía Plástica (SCCP) indica que buena parte de las actividades se retoman hacia el tercer día y el deporte hacia las tres o cuatro semanas. MedlinePlus, la enciclopedia médica de la Biblioteca Nacional de Medicina de Estados Unidos, habla de 7 a 14 días o más para volver al trabajo y de 3 a 6 semanas sin cargar peso, sin ejercicio fuerte y sin estirar mucho los brazos. El resultado empieza a verse como definitivo hacia los tres meses. Y si te operas lejos de casa hay un dato más: la Sociedad Americana de Cirujanos Plásticos (ASPS) sugiere esperar **5–7 días** después de un aumento de senos antes de volar.
 
 Son rangos generales. El plano del implante, si se hizo otra cirugía en el mismo tiempo, tu trabajo y tu forma de sanar mueven esas fechas, y el calendario que vale es el que te da tu cirujano después de operarte.
 
@@ -96,16 +96,16 @@ La dificultad para respirar, el dolor en el pecho o los latidos inusuales necesi
 
 ## ¿Cuántos días quedarte en Cartagena antes de volar?
 
-Avianca indica que después de una mamoplastia (de aumento o de reducción) o de una pexia mamaria, con o sin implantes, se puede viajar a partir de los **14 días**, y a partir de los **15**, según la evolución, cuando se combinan dos o más procedimientos corporales. Pide además un certificado médico expedido como máximo 10 días antes del vuelo, y si tu médico tratante y la autoridad sanitaria del aeropuerto no coinciden en los días necesarios, prevalece el concepto de la autoridad sanitaria.
+La Sociedad Americana de Cirujanos Plásticos (ASPS), en su [documento sobre turismo de cirugía estética](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism), sugiere esperar **5–7 días** antes de volar tras procedimientos corporales como el aumento de senos. Esa es la ventana que usa esta página. La autorización de tu cirujano sigue primero, y los drenes, los puntos u otro procedimiento en la misma cirugía pueden mover la fecha.
 
-En internet vas a encontrar cifras más cortas porque responden a preguntas distintas. El documento de la ASPS sobre turismo de cirugía estética sugiere esperar de cinco a siete días antes de volar tras procedimientos corporales como el aumento de senos. El Yellow Book de los CDC recomienda a los viajeros de turismo médico no volar durante 10 días después de una cirugía de tórax. Los 14 días de Avianca son una regla de embarque de esa aerolínea: si vuelas con ella, ese es el número que fija tu tiquete, y la autorización de tu cirujano va por encima de todos. Otras aerolíneas tienen sus propias políticas. La tabla por procedimiento está en [viajar en avión después de una cirugía plástica](/es/blog/viajar-en-avion-despues-de-cirugia-plastica/).
+Las aerolíneas pueden tener reglas propias. Avianca, por ejemplo, publica un mínimo de 14 días después de una mamoplastia; eso es una regla de embarque de la aerolínea, no la ventana de recuperación de arriba. Confírmalo con tu aerolínea antes de comprar el tiquete. Si en la misma cirugía hay otro procedimiento corporal, usa la ventana más larga de ese procedimiento. La tabla por procedimiento está en [viajar en avión después de una cirugía plástica](/es/blog/viajar-en-avion-despues-de-cirugia-plastica/).
 
-Arma el viaje de atrás hacia adelante:
+Arma el viaje de atrás hacia adelante, a partir de la ventana de 5–7 días:
 
 1. Los días de llegada para la valoración presencial y los exámenes que te pidan antes de la cirugía.
 2. La cirugía y la primera semana, cerca de tus controles y sin trayectos largos.
-3. El mínimo de 14 días de la aerolínea, o 15 si el plan combina procedimientos corporales.
-4. El control previo al vuelo y el certificado médico, dentro de los 10 días anteriores a la salida.
+3. La ventana de la ASPS, de 5–7 días después del aumento de senos. Si el plan combina otros procedimientos corporales, usa la ventana más larga de ese procedimiento.
+4. El control previo al vuelo con tu cirujano, y un certificado médico si tu aerolínea lo pide.
 5. Un margen por si el alta llega más tarde, y un tiquete de regreso con cambio flexible.
 
 En el avión, los CDC recuerdan que una cirugía en los últimos tres meses aumenta el riesgo de coágulos en viajes de más de cuatro horas. Recomiendan mover las piernas y flexionar los tobillos con frecuencia, y preguntar al médico si te convienen medias de compresión graduada. Una silla de pasillo facilita levantarte. Como el límite de peso suele seguir vigente, pide que otra persona suba tu maleta al compartimento, y viaja con una camisa que se abotone adelante para no levantar los brazos.
@@ -149,7 +149,7 @@ En un trabajo de oficina, entre pocos días y dos semanas según la fuente (The 
 University of Utah Health sugiere esperar de tres a cuatro semanas y alternar lados al principio. Boca abajo, solo con autorización del cirujano.
 
 **¿Cuántos días debo quedarme en Colombia después de un aumento de senos?**
-Si vuelas con Avianca, al menos 14 días después de la cirugía, o 15 si se combinó con otros procedimientos corporales, más los días de llegada y un margen. La fecha final depende de la autorización de tu cirujano y de un certificado expedido como máximo 10 días antes del vuelo.
+La ASPS sugiere 5–7 días después de un aumento de senos antes de volar, más los días de llegada y un margen. Si en la misma cirugía se hizo otro procedimiento corporal, aplica la ventana más larga de ese procedimiento. La fecha final depende de la autorización de tu cirujano. Las aerolíneas pueden tener reglas propias: confírmalas antes de comprar el tiquete.
 
 ¿Prefieres leer en inglés? Consulta la guía gemela: <a href="/blog/breast-augmentation-recovery/" data-language="en" hreflang="en" lang="en">Breast Augmentation Recovery Week by Week: What's Normal</a>.
 
@@ -162,9 +162,9 @@ Si vuelas con Avianca, al menos 14 días después de la cirugía, o 15 si se com
 - American Society of Plastic Surgeons (ASPS) — [Aumento de senos: mi recuperación](https://www.plasticsurgery.org/cosmetic-procedures/aumento-de-senos/mi%20recuperacion) (recuperación inicial, irritación e hinchazón durante algunas semanas, atención inmediata ante dificultad para respirar o dolor en el pecho)
 - The Aesthetic Society — [Breast augmentation aftercare and recovery](https://www.theaestheticsociety.org/procedures/breast/breast-augmentation/aftercare-recovery) (en inglés; dolor en las primeras 48 horas y con implante submuscular, dormir inclinada a 25–45 grados, regreso al trabajo, hinchazón en el primer mes)
 - University of Utah Health — [Breast surgery recovery](https://healthcare.utah.edu/plastic-surgery/breast/recovery) (en inglés; caminar desde la primera noche, brasier quirúrgico 3–4 semanas, ducha, dormir de lado, límite de 10 libras, manejar, ropa que se abotona adelante, resultados a los 3–12 meses)
-- American Society of Plastic Surgeons — [Briefing paper: Cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (en inglés; 5 a 7 días antes de volar tras procedimientos corporales; actividades de vacaciones que conviene evitar)
-- Avianca, centro de ayuda — [Restricciones de viaje para pasajeros con condiciones médicas especiales](https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) (14 días tras mamoplastia o pexia mamaria con o sin implantes; 15 si se combinan procedimientos corporales; certificado de máximo 10 días; prevalece la autoridad sanitaria del aeropuerto)
-- CDC Yellow Book — [Medical Tourism](https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html) (en inglés; no volar durante 10 días después de una cirugía de tórax; actividades de vacaciones; copia de la historia clínica)
+- American Society of Plastic Surgeons — [Briefing paper: Cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (en inglés; 5–7 días antes de volar tras procedimientos corporales como el aumento de senos; actividades de vacaciones que conviene evitar)
+- Avianca, centro de ayuda — [Restricciones de viaje para pasajeros con condiciones médicas especiales](https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) (las aerolíneas publican sus propias reglas de embarque; confírmalas antes de comprar)
+- CDC Yellow Book — [Medical Tourism](https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html) (en inglés; actividades de vacaciones; copia de la historia clínica)
 - CDC — [Blood clots and travel](https://www.cdc.gov/blood-clots/risk-factors/travel.html) (en inglés; viajes de más de cuatro horas, cirugía reciente como factor de riesgo, ejercicios para las piernas, señales de alarma)
 
 ## Aviso de información médica

@@ -1,6 +1,6 @@
 ---
 title: "Aumento de senos en Colombia: qué verificar antes de viajar"
-description: "¿Piensas en un aumento de senos en Colombia? Cómo verificar cirujano y clínica (ReTHUS, SCCP, REPS), cuántos días quedarte antes de volar y qué preguntar."
+description: "¿Piensas en un aumento de senos en Colombia? Cómo verificar cirujano y clínica (ReTHUS, SCCP, REPS), la ventana de 5–7 días de la ASPS antes de volar y qué preguntar."
 slug: "aumento-de-senos-colombia"
 lang: "es"
 category: "Breast Surgery"
@@ -8,10 +8,10 @@ tags: ["aumento-de-senos-colombia", "mamoplastia-de-aumento", "cirugia-de-senos"
 cover: "/assets/blog-breast-augmentation-colombia.webp"
 coverAlt: "Mujer con gabardina esperando en la sala de un aeropuerto junto a su maleta de mano antes de un viaje internacional"
 date: "2026-09-28"
-updated: "2026-10-02"
+updated: "2026-10-19"
 author: "fulvio-correa"
 translationOf: "breast-augmentation-colombia"
-sources: ["https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/","https://www.cirugiaplastica.org.co/","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety","https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales"]
+sources: ["https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/","https://www.cirugiaplastica.org.co/","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales"]
 draft: false
 originalUrl: ""
 procedure: "breast-augmentation"
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-Un **aumento de senos en Colombia** (mamoplastia de aumento) puede planificarse con más claridad si se hacen tres cosas en orden: verificar al cirujano y la institución en los registros oficiales colombianos, confirmar en una valoración que eres candidata y qué técnica corresponde a tu caso, y armar el viaje alrededor de la recuperación, no al revés. Para quien viaja en avión, una cifra que suele cambiar el calendario es esta: Avianca indica que después de una mamoplastia (aumento o reducción) o una pexia mamaria se permite volar a partir de los **14 días**, con certificado médico.
+Un **aumento de senos en Colombia** (mamoplastia de aumento) puede planificarse con más claridad si se hacen tres cosas en orden: verificar al cirujano y la institución en los registros oficiales colombianos, confirmar en una valoración que eres candidata y qué técnica corresponde a tu caso, y armar el viaje alrededor de la recuperación, no al revés. Para quien viaja en avión, una cifra que suele cambiar el calendario es esta: la Sociedad Americana de Cirujanos Plásticos (ASPS) sugiere esperar **5–7 días** después de un aumento de senos antes de volar. Las aerolíneas pueden tener reglas propias, así que confírmalas antes de comprar el tiquete.
 
 Lo demás —marca de implante, plano de colocación, cuándo volver al trabajo— se decide con tu cirujano. Esta guía te ayuda a llegar a esa conversación con las preguntas correctas. El panorama de costo, seguridad y estadía está en la guía sobre [qué revisar al elegir cirujano plástico en Colombia](/es/cirugia-plastica-colombia/).
 
@@ -59,11 +59,11 @@ Lleva a la valoración tu historial de mamografías cuando aplique, antecedentes
 
 ## ¿Cuántos días quedarte en Colombia después de un aumento de senos?
 
-Aquí se mezclan dos relojes: el de tu recuperación y el de la aerolínea.
+Aquí se mezclan dos relojes: el de tu recuperación y el del vuelo.
 
 **El reloj de la recuperación.** Según la [guía de recuperación de ASPS](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery), suele usarse un vendaje elástico o un sostén de soporte para controlar la inflamación; el dolor agudo a menudo mejora en uno a cinco días, y la molestia e inflamación pueden durar varias semanas. El regreso al ejercicio y a la actividad normal lo indica tu cirujano, no las redes. El aspecto final sigue evolucionando durante meses. Las etapas, semana a semana y con fuentes, están en [recuperación del aumento de senos](/es/blog/recuperacion-aumento-de-senos/).
 
-**El reloj del vuelo.** El [centro de ayuda de Avianca](https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) indica que después de una mamoplastia (aumento o reducción) o una pexia mamaria (con o sin implantes) se permite viajar a partir de los 14 días, con certificado médico expedido como máximo 10 días antes del vuelo. Otras aerolíneas pueden tener reglas distintas: revisa la tuya antes de comprar.
+**El reloj del vuelo.** La ventana de esta página es la que [sugiere la ASPS](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism): **5–7 días** después de un aumento de senos, además de la autorización de tu cirujano. Las aerolíneas pueden tener reglas propias: revisa la tuya antes de comprar.
 
 En la práctica, reserva alojamiento con margen y deja el vuelo de regreso flexible hasta el alta para viajar. Si el plan incluye también abdomen o liposucción, el tiempo puede alargarse; la guía de [tiempo de recuperación del mommy makeover](/es/blog/tiempo-recuperacion-mommy-makeover/) explica cómo se suman esas piezas.
 
@@ -102,7 +102,8 @@ Si quieres coordinar una valoración de aumento de senos con el Dr. Fulvio Corre
 
 • Sociedad Colombiana de Cirugía Plástica — [Aumento de senos](https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/) y [directorio SCCP](https://www.cirugiaplastica.org.co/)
 • American Society of Plastic Surgeons — [Breast Augmentation](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation), [Recovery](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery) y [Safety](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety)
-• Avianca, centro de ayuda — [Restricciones de viaje para pasajeros con condiciones médicas especiales](https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) (mamoplastia / pexia: viajar después de 14 días; certificado médico)
+• American Society of Plastic Surgeons — [Briefing paper: Cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (en inglés; 5–7 días antes de volar después de un aumento de senos)
+• Avianca, centro de ayuda — [Restricciones de viaje para pasajeros con condiciones médicas especiales](https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) (las aerolíneas publican sus propias reglas; confírmalas antes de comprar)
 
 Si la duda es levantamiento frente a volumen, lee [mastopexia o aumento de senos](/es/blog/mastopexia-o-aumento-de-senos/).
 

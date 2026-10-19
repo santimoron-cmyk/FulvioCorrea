@@ -197,7 +197,7 @@
             "name": "How long should I stay in Colombia after breast augmentation?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "ASPS suggests waiting at least five to seven days before flying after breast augmentation. The exact date depends on your first follow-up visit, including stitch or drain removal if needed."
+              "text": "ASPS suggests waiting at least 5–7 days before flying after breast augmentation. The exact date depends on your first follow-up visit, including stitch or drain removal if needed."
             }
           },
           {
@@ -1469,7 +1469,7 @@
             "name": "¿Cuántos días después de la cirugía puedo viajar en avión?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La ASPS sugiere esperar al menos cinco a siete días después de un aumento de senos. La fecha la confirma tu cirujano en el primer control."
+              "text": "La ASPS sugiere esperar al menos 5–7 días después de un aumento de senos. La fecha la confirma tu cirujano en el primer control."
             }
           }
         ]
@@ -2503,7 +2503,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [],
     "alternates": [
       {
@@ -2560,7 +2560,7 @@
     "lang": "en",
     "ads": false,
     "noindex": true,
-    "updated": "2026-10-07",
+    "updated": "2026-10-19",
     "schemas": [],
     "alternates": [
       {
@@ -2668,7 +2668,7 @@
             "name": "How long should I stay in Colombia after breast augmentation?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "If you fly Avianca, plan around at least 14 days after surgery, or 15 if it is combined with other body procedures, plus your arrival days and a margin. The final date depends on your surgeon's clearance and a medical certificate issued within 10 days of the flight."
+              "text": "ASPS suggests 5–7 days after breast augmentation before flying, plus your arrival days and a margin. If another body procedure is done at the same time, that procedure's longer window applies. The final date depends on your surgeon's clearance. Airlines can have their own rules, so check with your airline before booking."
             }
           }
         ]
@@ -2693,14 +2693,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Breast Lift vs Breast Augmentation: Which Do You Need?",
         "datePublished": "2026-10-16",
-        "dateModified": "2026-10-16",
+        "dateModified": "2026-10-19",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-breast-lift-vs-breast-augmentation.webp",
@@ -2775,7 +2775,7 @@
             "name": "How soon can I fly?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "If you fly Avianca, plan around 14 days after mammoplasty (augmentation or reduction) or breast pexy with or without implants, plus a certificate dated within 10 days of the flight. Surgeon clearance comes first."
+              "text": "For breast augmentation, ASPS suggests 5–7 days before flying. For a breast lift, Avianca lists 14 days, plus a certificate dated within 10 days of the flight. Surgeon clearance comes first. Airlines can have their own rules, so check before you book."
             }
           },
           {
@@ -3325,14 +3325,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "How Many Days Before Flying, by Surgery",
         "datePublished": "2026-10-05",
-        "dateModified": "2026-10-16",
+        "dateModified": "2026-10-19",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.webp",
@@ -3432,14 +3432,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-05",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Breast Lift Colombia: Lift vs Implants and How to Verify",
         "datePublished": "2026-10-02",
-        "dateModified": "2026-10-05",
+        "dateModified": "2026-10-19",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-breast-lift-colombia.webp",
@@ -3484,14 +3484,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-07",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Cartagena Plastic Surgery and Medical Tourism: 2026 Report",
         "datePublished": "2026-09-26",
-        "dateModified": "2026-10-07",
+        "dateModified": "2026-10-19",
         "inLanguage": "en",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-medical-tourism.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/blog/plastic-surgery-medical-tourism-cartagena-colombia/",
@@ -3685,14 +3685,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-02",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Breast Augmentation Colombia: How U.S. Patients Verify Surgeons",
         "datePublished": "2026-09-23",
-        "dateModified": "2026-10-02",
+        "dateModified": "2026-10-19",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia.webp",
@@ -3969,7 +3969,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [],
     "alternates": [
       {
@@ -4026,7 +4026,7 @@
     "lang": "es",
     "ads": false,
     "noindex": true,
-    "updated": "2026-10-14",
+    "updated": "2026-10-19",
     "schemas": [],
     "alternates": [
       {
@@ -4142,7 +4142,7 @@
             "name": "¿Cuántos días debo quedarme en Colombia después de un aumento de senos?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Si vuelas con Avianca, al menos 14 días después de la cirugía, o 15 si se combinó con otros procedimientos corporales, más los días de llegada y un margen. La fecha final depende de la autorización de tu cirujano y de un certificado expedido como máximo 10 días antes del vuelo."
+              "text": "La ASPS sugiere 5–7 días después de un aumento de senos antes de volar, más los días de llegada y un margen. Si en la misma cirugía se hizo otro procedimiento corporal, aplica la ventana más larga de ese procedimiento. La fecha final depende de la autorización de tu cirujano. Las aerolíneas pueden tener reglas propias: confírmalas antes de comprar el tiquete."
             }
           }
         ]
@@ -4256,14 +4256,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "¿Mastopexia o aumento de senos? Cómo decidir",
         "datePublished": "2026-10-16",
-        "dateModified": "2026-10-16",
+        "dateModified": "2026-10-19",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-breast-lift-vs-breast-augmentation.webp",
@@ -4338,7 +4338,7 @@
             "name": "¿Cuándo puedo volar?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Con Avianca, 14 días tras mamoplastia (aumento o reducción) o pexia con/sin implantes, más certificado de ≤ 10 días antes del vuelo. Primero el alta del cirujano."
+              "text": "Para un aumento de senos, la ASPS sugiere 5–7 días antes de volar. Para un levantamiento, Avianca lista 14 días, más un certificado de no más de 10 días antes del vuelo. Primero el alta del cirujano. Las aerolíneas pueden tener reglas propias: confírmalas antes de reservar."
             }
           },
           {
@@ -4799,14 +4799,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Cuántos días esperar para volar, por cirugía",
         "datePublished": "2026-10-05",
-        "dateModified": "2026-10-16",
+        "dateModified": "2026-10-19",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-flying-after-plastic-surgery.webp",
@@ -4898,14 +4898,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-02",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Levantamiento de senos en Colombia: pexia vs implantes",
         "datePublished": "2026-10-02",
-        "dateModified": "2026-10-02",
+        "dateModified": "2026-10-19",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-breast-lift-colombia.webp",
@@ -5151,14 +5151,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-02",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Aumento de senos en Colombia: qué verificar antes de viajar",
         "datePublished": "2026-09-28",
-        "dateModified": "2026-10-02",
+        "dateModified": "2026-10-19",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-breast-augmentation-colombia.webp",
@@ -5203,14 +5203,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-14",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Cirugía plástica y turismo médico en Cartagena: informe 2026",
         "datePublished": "2026-09-26",
-        "dateModified": "2026-10-14",
+        "dateModified": "2026-10-19",
         "inLanguage": "es",
         "image": "https://fulviocorrea.com/assets/blog-cartagena-medical-tourism.webp",
         "mainEntityOfPage": "https://fulviocorrea.com/es/blog/cirugia-plastica-turismo-medico-cartagena-colombia/",
@@ -5433,7 +5433,7 @@
     "lang": "en",
     "noindex": false,
     "ads": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
@@ -5443,8 +5443,8 @@
         "name": "Plastic Surgery in Colombia",
         "description": "No official ranking of the best plastic surgeons in Colombia. How to verify (SCCP, ReTHUS, REPS), what drives cost, and why patients choose Cartagena.",
         "inLanguage": "en",
-        "dateModified": "2026-10-16",
-        "lastReviewed": "2026-10-16",
+        "dateModified": "2026-10-19",
+        "lastReviewed": "2026-10-19",
         "reviewedBy": {
           "@type": "Physician",
           "@id": "https://fulviocorrea.com/#physician",
@@ -5500,7 +5500,7 @@
             "name": "How long should I stay in Cartagena after surgery?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "It depends on the procedure, on how you are healing, and on when your surgeon clears you to fly. Avianca lists 10 days after rhinoplasty, 14 days after breast surgery, liposuction and tummy tuck, and 15 days when two or more body procedures are combined. Those are airline minimums, not a personal clearance. Count the days before surgery as well."
+              "text": "It depends on the procedure, on how you are healing, and on when your surgeon clears you to fly. For breast augmentation, ASPS suggests 5–7 days before flying. Avianca lists 10 days after rhinoplasty, 14 days after a breast lift, liposuction and tummy tuck, and 15 days when two or more body procedures are combined. Airlines can have their own rules, so check before you book. Those airline figures are not a personal clearance. Count the days before surgery as well."
             }
           },
           {
@@ -5572,7 +5572,7 @@
     "lang": "es",
     "noindex": false,
     "ads": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "schemas": [
       {
         "@context": "https://schema.org",
@@ -5582,8 +5582,8 @@
         "name": "Cirugía plástica en Colombia",
         "description": "No existe un ranking oficial del mejor cirujano plástico de Colombia. Cómo verificarlo (SCCP, ReTHUS, REPS), de qué depende el costo y por qué Cartagena.",
         "inLanguage": "es",
-        "dateModified": "2026-10-16",
-        "lastReviewed": "2026-10-16",
+        "dateModified": "2026-10-19",
+        "lastReviewed": "2026-10-19",
         "reviewedBy": {
           "@type": "Physician",
           "@id": "https://fulviocorrea.com/#physician",
@@ -5639,7 +5639,7 @@
             "name": "¿Cuántos días hay que quedarse en Cartagena?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Depende del procedimiento, de cómo evoluciona la recuperación y de cuándo tu cirujano autoriza el vuelo. Avianca lista 10 días después de una rinoplastia, 14 días después de cirugía de senos, liposucción y abdominoplastia, y 15 días cuando se combinan dos o más procedimientos del cuerpo. Son mínimos de la aerolínea, no una autorización personal. Cuenta también los días previos a la cirugía."
+              "text": "Depende del procedimiento, de cómo evoluciona la recuperación y de cuándo tu cirujano autoriza el vuelo. Para un aumento de senos, la ASPS sugiere 5–7 días antes de volar. Avianca lista 10 días después de una rinoplastia, 14 días después de un levantamiento de senos, una liposucción y una abdominoplastia, y 15 días cuando se combinan dos o más procedimientos del cuerpo. Las aerolíneas pueden tener reglas propias: confírmalas antes de reservar. Esas cifras de la aerolínea no son una autorización personal. Cuenta también los días previos a la cirugía."
             }
           },
           {

@@ -1,6 +1,6 @@
 ---
 title: "Breast Augmentation Colombia: How U.S. Patients Verify Surgeons"
-description: "Researching breast augmentation in Colombia? Verify ReTHUS, SCCP and REPS, plan Cartagena travel, and confirm Avianca’s 14-day mammoplasty flight rule."
+description: "Researching breast augmentation in Colombia? Verify ReTHUS, SCCP and REPS, plan Cartagena travel, and the ASPS 5–7 day window before flying."
 slug: "breast-augmentation-colombia"
 lang: "en"
 category: "Breast Surgery"
@@ -8,10 +8,10 @@ tags: ["breast-augmentation-colombia", "breast-surgery", "medical-tourism-colomb
 cover: "/assets/blog-breast-augmentation-colombia.webp"
 coverAlt: "Woman in a trench coat waiting at an airport gate with a carry-on suitcase before international travel"
 date: "2026-09-23"
-updated: "2026-10-02"
+updated: "2026-10-19"
 author: "fulvio-correa"
 translationOf: "aumento-de-senos-colombia"
-sources: ["https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety","https://www.cirugiaplastica.org.co/","https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions"]
+sources: ["https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cirugiaplastica.org.co/","https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions"]
 draft: false
 originalUrl: "https://fulviocorrea.com.co/post/breast-augmentation-colombia"
 procedure: "breast-augmentation"
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-There is no official ranking of the **best breast augmentation in Colombia**, so the useful question is how to tell a well-qualified plastic surgeon and facility from a well-marketed one. For U.S. patients researching **breast augmentation colombia**, three checks usually matter most: verify the surgeon and the facility in Colombia’s official registries, confirm in consultation that implants or fat transfer actually fit your anatomy and goals, and build the trip around recovery—not vacation photos. One number often shapes the calendar: Avianca, Colombia’s flag carrier, lists travel **14 days** after mammoplasty (augmentation or reduction) or breast pexy, with a medical certificate.
+There is no official ranking of the **best breast augmentation in Colombia**, so the useful question is how to tell a well-qualified plastic surgeon and facility from a well-marketed one. For U.S. patients researching **breast augmentation colombia**, three checks usually matter most: verify the surgeon and the facility in Colombia’s official registries, confirm in consultation that implants or fat transfer actually fit your anatomy and goals, and build the trip around recovery—not vacation photos. One number often shapes the calendar: the American Society of Plastic Surgeons (ASPS) suggests waiting **5–7 days** after breast augmentation before flying. Airlines can have their own rules, so check with your airline before you book.
 
 This guide walks through those checks, Cartagena logistics, and the questions worth bringing to a consult. The wider picture of cost, safety and the stay is in [plastic surgery in Colombia](/plastic-surgery-colombia/).
 
@@ -75,7 +75,7 @@ Ask for a clear explanation of risks that apply to breast implants and surgery g
 
 Build your itinerary around clinical milestones, not vacation days. Ask how early you should arrive to complete pending labs or evaluations and settle into lodging near follow-up care—timing is case-specific. Keep return flights flexible until your surgical team clears you.
 
-Airlines add their own rules on top of medical clearance. [Avianca’s help center](https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions) lists travel from **14 days** after mammoplasty (augmentation or reduction) or breast pexy (with or without implants), and asks for a medical certificate issued no more than 10 days before the flight. Check your own carrier’s policy before booking.
+The flying window on this page is the one [ASPS suggests](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism): **5–7 days** after breast augmentation, on top of your surgeon’s clearance. Airlines can have their own rules, so check your carrier’s policy before booking. The week-by-week timeline is in [breast augmentation recovery](/blog/breast-augmentation-recovery/).
 
 A companion helps with walking, meals, garment changes, and clinic visits in the first days. Choose lodging with an elevator when possible, reliable air conditioning, and a quiet room. Procedure details at the practice are outlined on [breast augmentation in Cartagena](/en/procedures/breast-augmentation/). If breast surgery is part of a combined postpartum plan, also read [mommy makeover](/en/procedures/mommy-makeover/) and [how long to stay after a mommy makeover](/en/blog/how-long-to-stay-after-mommy-makeover/).
 
@@ -109,7 +109,8 @@ If you want help coordinating a breast augmentation evaluation with Dr. Fulvio C
 ## Sources / Medical references
 
 • American Society of Plastic Surgeons — [Breast Augmentation](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation), [Breast Augmentation Recovery](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery), and [Breast Augmentation Safety](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety)
-• Avianca help center — [Travel restrictions for passengers with special medical conditions](https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions) (mammoplasty / breast pexy: travel after 14 days; medical certificate)
+• American Society of Plastic Surgeons — [Briefing paper: Cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (5–7 days before flying after breast augmentation)
+• Avianca help center — [Travel restrictions for passengers with special medical conditions](https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions) (airlines publish their own rules; check before booking)
 • [Sociedad Colombiana de Cirugía Plástica, Estética y Reconstructiva (SCCP)](https://www.cirugiaplastica.org.co/) and SCCP patient education on [aumento de senos](https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/)
 
 ## Medical Information Disclaimer
