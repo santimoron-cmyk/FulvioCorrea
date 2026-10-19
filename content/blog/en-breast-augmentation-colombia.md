@@ -81,7 +81,7 @@ A companion helps with walking, meals, garment changes, and clinic visits in the
 
 ## Recovery themes to confirm with your surgeon
 
-[ASPS recovery guidance](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery) notes that breasts are typically wrapped or supported with an elastic bandage or support bra to minimize swelling, that acute pain often eases within about one to five days, and that soreness and swelling can last a few weeks—with exercise and normal activity resumed only as your surgeon directs. Final appearance continues to settle for months (“drop and fluff” language online is informal, not a clinical schedule).
+[ASPS recovery guidance](https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery) notes that breasts are typically wrapped or supported with an elastic bandage or support bra to minimize swelling, that acute pain often eases within about one to five days, and that soreness and swelling can last a few weeks—with exercise and normal activity resumed only as your surgeon directs. Final appearance continues to settle for months (“drop and fluff” language online is informal, not a clinical schedule). For the sourced stage-by-stage timeline, from the first 48 hours to the three-month mark, see [breast augmentation recovery week by week](/blog/breast-augmentation-recovery/).
 
 Ask how mammograms and future breast imaging are handled after implants, and how you should monitor for changes once you are back in the United States. Do not use social-media timelines as medical clearance.
 

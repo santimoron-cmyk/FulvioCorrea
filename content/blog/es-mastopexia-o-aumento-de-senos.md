@@ -16,7 +16,7 @@ draft: false
 originalUrl: ""
 procedure: "breast-lift-reduction"
 twin: "breast-lift-vs-breast-augmentation"
-related: ["levantamiento-de-senos-colombia", "aumento-de-senos-colombia", "cuantos-dias-quedarse-despues-mommy-makeover"]
+related: ["levantamiento-de-senos-colombia", "aumento-de-senos-colombia", "cuantos-dias-quedarse-despues-mommy-makeover", "recuperacion-aumento-de-senos"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -78,7 +78,7 @@ El alta es individual. Lo siguiente es orientación **general** (ASPS, Mayo Clin
 | Ejercicio | Gradual; evitar esfuerzo temprano (Mayo) | Evitar esfuerzo que suba pulso/presión ≥ ~2 semanas (Mayo) | A menudo 6–8 semanas |
 | Soporte | Quirúrgico y luego suave por semanas (Mayo) | Compresión/soporte según indiquen | Comúnmente 1–3 meses |
 
-El protocolo en Cartagena (prenda, drenes, control presencial antes de volar, seguimiento remoto) se fija tras examinarte y puede ser más estricto. Separa promedios de sociedades de tu autorización clínica.
+El protocolo en Cartagena (prenda, drenes, control presencial antes de volar, seguimiento remoto) se fija tras examinarte y puede ser más estricto. Separa promedios de sociedades de tu autorización clínica. Si el plan es solo implantes, el detalle semana a semana está en [recuperación del aumento de senos](/es/blog/recuperacion-aumento-de-senos/).
 
 ## Viaje: Avianca trata lift e implantes igual
 

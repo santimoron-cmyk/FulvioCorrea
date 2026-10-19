@@ -544,6 +544,16 @@
       "status": 301
     },
     {
+      "from": "/post/breast-augmentation-recovery",
+      "to": "/blog/breast-augmentation-recovery/",
+      "status": 301
+    },
+    {
+      "from": "/post/breast-augmentation-recovery/",
+      "to": "/blog/breast-augmentation-recovery/",
+      "status": 301
+    },
+    {
       "from": "/post/breast-lift-colombia",
       "to": "/blog/breast-lift-colombia/",
       "status": 301
@@ -781,6 +791,16 @@
     {
       "from": "/post/recuperacion-abdominoplastia/",
       "to": "/es/blog/recuperacion-abdominoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/post/recuperacion-aumento-de-senos",
+      "to": "/es/blog/recuperacion-aumento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/post/recuperacion-aumento-de-senos/",
+      "to": "/es/blog/recuperacion-aumento-de-senos/",
       "status": 301
     },
     {
@@ -1581,6 +1601,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/breast-augmentation-recovery/",
+      "to": "/blog/breast-augmentation-recovery/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/breast-augmentation-recovery",
+      "to": "/blog/breast-augmentation-recovery/",
       "status": 301
     },
     {
