@@ -8,7 +8,7 @@ tags: ["levantamiento-de-senos-colombia", "mastopexia", "cirugia-de-senos", "tur
 cover: "/assets/blog-breast-lift-colombia.webp"
 coverAlt: "Balcón de hotel con sillón y vista a tejados coloniales de Cartagena y el mar Caribe"
 date: "2026-10-02"
-updated: "2026-10-02"
+updated: "2026-10-19"
 author: "fulvio-correa"
 translationOf: "breast-lift-colombia"
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/breast-lift","https://www.plasticsurgery.org/cosmetic-procedures/breast-lift/recovery","https://www.mayoclinic.org/tests-procedures/breast-lift/about/pac-20393218","https://www.cirugiaplastica.org.co/","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales"]
@@ -71,7 +71,7 @@ El patrón depende de cuánta piel hay que retirar. ASPS y Mayo Clinic describen
 
 La [guía de recuperación de ASPS sobre breast lift](https://www.plasticsurgery.org/cosmetic-procedures/breast-lift/recovery) y los materiales de Mayo Clinic describen inflamación y moretones en las primeras semanas, uso de brasier de soporte según indiquen, y límites de actividad que suelen extenderse varias semanas. El alta para viajar es individual.
 
-Las aerolíneas añaden reglas propias. El [centro de ayuda de Avianca](https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) indica viaje a partir de **14 días** después de mamoplastia (aumento o reducción) o pexia mamaria (con o sin implantes), con certificado médico emitido como máximo 10 días antes del vuelo. Revisa también la política de tu aerolínea. Mantén tiquetes de regreso flexibles hasta que el equipo quirúrgico te autorice.
+Las aerolíneas añaden reglas propias. Para un levantamiento, el [centro de ayuda de Avianca](https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) indica viaje a partir de **14 días** después de una pexia mamaria (con o sin implantes), con certificado médico emitido como máximo 10 días antes del vuelo. El aumento de senos sigue otra ventana: la ASPS sugiere **5–7 días**. Las aerolíneas pueden tener reglas propias, así que revisa la tuya antes de comprar. Mantén tiquetes de regreso flexibles hasta que el equipo quirúrgico te autorice.
 
 Si el levantamiento forma parte de un plan combinado posparto, lee también [cuántos días quedarse después de un mommy makeover](/es/blog/cuantos-dias-quedarse-despues-mommy-makeover/).
 

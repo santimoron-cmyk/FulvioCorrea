@@ -1,6 +1,6 @@
 ---
 title: "¿Mastopexia o aumento de senos? Cómo decidir"
-description: "Mastopexia o aumento de senos: posición del pezón, volumen y talla; cuándo basta el levantamiento, cuándo los implantes y cuándo ambos, con recuperación y la regla de 14 días de Avianca."
+description: "Mastopexia o aumento de senos: posición del pezón, volumen y talla; cuándo basta el levantamiento, los implantes o ambos. Aumento: volar a los 5–7 días (ASPS)."
 slug: "mastopexia-o-aumento-de-senos"
 lang: "es"
 category: "Breast Surgery"
@@ -8,10 +8,10 @@ tags: ["mastopexia-o-aumento-de-senos", "levantamiento-de-senos-o-implantes", "m
 cover: "/assets/blog-breast-lift-vs-breast-augmentation.webp"
 coverAlt: "Brasier de soporte color crema doblado sobre una silla de lino junto a ventanas con postigos con vista a los tejados de Cartagena al atardecer"
 date: "2026-10-16"
-updated: "2026-10-16"
+updated: "2026-10-19"
 author: "fulvio-correa"
 translationOf: "breast-lift-vs-breast-augmentation"
-sources: ["https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/","https://cirugiaplastica.org.co/procedimientos/levantamiento-de-senos/","https://www.plasticsurgery.org/news/blog/how-to-decide-if-you-need-a-breast-augmentation-or-breast-lift","https://www.plasticsurgery.org/cosmetic-procedures/breast-lift","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation","https://www.mayoclinic.org/tests-procedures/breast-lift/about/pac-20393218","https://www.mayoclinic.org/tests-procedures/breast-augmentation/about/pac-20393178","https://www.isaps.org/discover/patients-home/procedures/breast-procedures/augmentation-mastopexy/","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
+sources: ["https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/","https://cirugiaplastica.org.co/procedimientos/levantamiento-de-senos/","https://www.plasticsurgery.org/news/blog/how-to-decide-if-you-need-a-breast-augmentation-or-breast-lift","https://www.plasticsurgery.org/cosmetic-procedures/breast-lift","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.mayoclinic.org/tests-procedures/breast-lift/about/pac-20393218","https://www.mayoclinic.org/tests-procedures/breast-augmentation/about/pac-20393178","https://www.isaps.org/discover/patients-home/procedures/breast-procedures/augmentation-mastopexy/","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
 draft: false
 originalUrl: ""
 procedure: "breast-lift-reduction"
@@ -80,11 +80,11 @@ El alta es individual. Lo siguiente es orientación **general** (ASPS, Mayo Clin
 
 El protocolo en Cartagena (prenda, drenes, control presencial antes de volar, seguimiento remoto) se fija tras examinarte y puede ser más estricto. Separa promedios de sociedades de tu autorización clínica. Si el plan es solo implantes, el detalle semana a semana está en [recuperación del aumento de senos](/es/blog/recuperacion-aumento-de-senos/).
 
-## Viaje: Avianca trata lift e implantes igual
+## Viaje: plazos distintos para implantes y levantamiento
 
-En la lista de Avianca, la **mamoplastia (aumento o reducción)** y la **pexia con o sin implantes** comparten **14 días** mínimos antes de viajar, más certificado médico de no más de **10 días** antes del vuelo. Son reglas de embarque encima de la autorización del cirujano. Si la autoridad sanitaria del aeropuerto discrepa, prevalece esa autoridad.
+Para un aumento de senos (mamoplastia), la Sociedad Americana de Cirujanos Plásticos (ASPS) sugiere esperar **5–7 días** antes de volar. Para un levantamiento (pexia, con o sin implantes), Avianca lista viajar a partir de **14 días**, más un certificado de no más de **10 días** antes del vuelo. No es la misma ventana. Las aerolíneas pueden tener reglas propias: confírmalas antes de comprar el tiquete. Primero va el alta del cirujano.
 
-Elegir lift, implantes o ambos **no acorta** esa línea; combinar senos con otro procedimiento corporal sí puede. Tabla: [viajar en avión después de una cirugía plástica](/es/blog/viajar-en-avion-despues-de-cirugia-plastica/). Lo que cambia es cómo se sienten esas semanas—acompañante, ascensor, ropa que se abotone por delante, pasaje flexible. Destino: [cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
+Elegir levantamiento, implantes o ambos no cambia la ventana del aumento a los 14 días del levantamiento. Combinar la cirugía de senos con otro procedimiento corporal sí puede. Tabla: [viajar en avión después de una cirugía plástica](/es/blog/viajar-en-avion-despues-de-cirugia-plastica/). Lo que cambia es cómo se sienten esos días—acompañante, ascensor, ropa que se abotone por delante, pasaje flexible. Destino: [cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
 
 ## Antes de comprar vuelos: fotos y preguntas
 
@@ -126,7 +126,7 @@ Mastopexia = levantamiento. Aumento = volumen con implantes (o grasa en casos se
 Mayo Clinic suele sugerir unos seis meses a un año tras dejar de lactar.
 
 **¿Cuándo puedo volar?**
-Con Avianca, **14 días** tras mamoplastia (aumento o reducción) o pexia con/sin implantes, más certificado de ≤ **10 días** antes del vuelo. Primero el alta del cirujano.
+Para un aumento de senos, la ASPS sugiere 5–7 días antes de volar. Para un levantamiento, Avianca lista 14 días, más un certificado de no más de 10 días antes del vuelo. Primero el alta del cirujano. Las aerolíneas pueden tener reglas propias: confírmalas antes de reservar.
 
 **¿Lactancia después?**
 A menudo sí, pero algunas producen poca leche—coméntalo si te importan embarazos futuros.
@@ -143,7 +143,8 @@ A menudo sí, pero algunas producen poca leche—coméntalo si te importan embar
 - Mayo Clinic — [Breast lift](https://www.mayoclinic.org/tests-procedures/breast-lift/about/pac-20393218) (en inglés; riesgos, cicatrices 1–2 años, espera tras lactancia, sostén)
 - Mayo Clinic — [Breast augmentation](https://www.mayoclinic.org/tests-procedures/breast-augmentation/about/pac-20393178) (en inglés)
 - ISAPS — [Augmentation mastopexy](https://www.isaps.org/discover/patients-home/procedures/breast-procedures/augmentation-mastopexy/) (en inglés; recuperación ~2–6 semanas de tensión; 1–2 semanas fuera del trabajo; deporte 6–8; sostén 1–3 meses)
-- Avianca — [Restricciones de viaje para pasajeros con condiciones médicas especiales](https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions) (14 días tras mamoplastia o pexia; certificado dentro de 10 días)
+- American Society of Plastic Surgeons — [Briefing paper: Cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (en inglés; 5–7 días antes de volar después de un aumento de senos)
+- Avianca — [Restricciones de viaje para pasajeros con condiciones médicas especiales](https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions) (pexia: 14 días; certificado dentro de 10 días. Cada aerolínea fija sus reglas.)
 
 ## Aviso de información médica
 

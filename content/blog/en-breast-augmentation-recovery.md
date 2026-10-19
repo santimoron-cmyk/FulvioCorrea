@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**Most people need one to two weeks after breast augmentation before daily life and desk work feel manageable, three to four weeks before lifting or exercise, and about three months before the result starts to look final.** The Aesthetic Society puts typical recovery at one to two weeks and says pain is usually worst in the first 48 hours. University of Utah Health asks patients not to lift, push or pull more than 10 pounds for three to four weeks, and the Colombian Society of Plastic Surgery (SCCP) places the return to sport at around three to four weeks. Final results begin to show at about three months, with subtle changes for up to a year. If you are recovering in Colombia, the flight home runs on its own calendar: Avianca lists **14 days** after breast augmentation before you can fly.
+**Most people need one to two weeks after breast augmentation before daily life and desk work feel manageable, three to four weeks before lifting or exercise, and about three months before the result starts to look final.** The Aesthetic Society puts typical recovery at one to two weeks and says pain is usually worst in the first 48 hours. University of Utah Health asks patients not to lift, push or pull more than 10 pounds for three to four weeks, and the Colombian Society of Plastic Surgery (SCCP) places the return to sport at around three to four weeks. Final results begin to show at about three months, with subtle changes for up to a year. If you are recovering in Colombia, plan the flight home on the window the American Society of Plastic Surgeons (ASPS) suggests: **5–7 days** after breast augmentation.
 
 Treat these as general ranges. Implant placement, anything done in the same operation, your job and how you heal all move the dates, and the plan that applies to you is the one your surgeon writes after the operation.
 
@@ -59,7 +59,7 @@ Most recovery questions are really about one activity. This is what the general 
 | Exercise and sport | Nothing that strains you or raises your pulse for at least two weeks (Mayo Clinic); sport again at around three to four weeks (SCCP) |
 | Sexual activity | Not for at least two weeks (The Aesthetic Society) |
 | Support bra | Worn around the clock as instructed (ASPS); a surgical bra for three to four weeks, then a soft supportive sports bra (University of Utah Health); a sports bra 24 hours a day for one month (SCCP) |
-| Flying home on Avianca | From 14 days after surgery, with a medical certificate (Avianca) |
+| Flying home | 5–7 days after surgery (ASPS). Airlines can have their own rules; check with your airline before booking. |
 
 ## What makes breast implant recovery harder or easier?
 
@@ -93,18 +93,18 @@ Shortness of breath or chest pain needs medical help immediately (Mayo Clinic, C
 
 ### How many days before you can fly
 
-Avianca, Colombia's flag carrier, lists travel from **14 days** after a mammoplasty (augmentation or reduction) or a breast lift with or without implants, and from **15 days**, depending on how you are recovering, when two or more body procedures are combined. Any special medical condition needs a medical certificate issued no earlier than 10 days before the flight, and if your treating doctor and the airport health authority disagree on the days needed, the health authority's opinion prevails.
+The American Society of Plastic Surgeons (ASPS), in its [briefing paper on cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism), suggests waiting **5–7 days** after body procedures such as breast augmentation before flying. That is the window this page uses. Your surgeon's clearance still comes first, and drains, stitches, or another procedure in the same operation can move the date.
 
-You will see shorter numbers online, because different sources answer different questions. In its briefing paper on cosmetic surgery tourism, ASPS suggests waiting five to seven days after body procedures such as breast augmentation before flying. The CDC's Yellow Book tells medical tourists not to fly for 10 days after chest or abdominal surgery, because cabin pressure is roughly equivalent to 6,000 to 8,000 feet of altitude. Avianca's 14 days is a boarding rule for that airline. If you are flying Avianca, the longest of these is the one that sets your ticket, and your surgeon's clearance sits on top of all of them. Other airlines publish their own policies, so check yours before you buy. The full table by procedure is in [flying after plastic surgery](/blog/flying-after-plastic-surgery/).
+Airlines can have their own rules. Avianca, for example, publishes a 14-day minimum after mammoplasty; that is an airline boarding rule, not the recovery window above. Check with your airline before you book. If the same operation includes another body procedure, use that procedure's longer window. The full table by procedure is in [flying after plastic surgery](/blog/flying-after-plastic-surgery/).
 
 ### Planning the stay
 
-Build the trip backwards from that floor:
+Build the trip backwards from the 5–7 day window:
 
 1. Your arrival days for the in-person evaluation and any tests requested before surgery.
 2. The surgery and the first week, the part you want to spend resting near your follow-up appointments, not in transit.
-3. The 14-day airline minimum, or 15 if your plan combines body procedures.
-4. A pre-flight check and the medical certificate, dated inside the 10-day window before departure.
+3. The ASPS window of 5–7 days after breast augmentation. If the plan combines other body procedures, use that procedure's longer window.
+4. A pre-flight check with your surgeon, and a medical certificate if your airline asks for one.
 5. A margin in case clearance comes later than planned, and a changeable return ticket.
 
 Cartagena makes the second week tempting. The CDC and ASPS both warn that typical vacation activities after surgery, including sunbathing, swimming, alcohol, strenuous exercise and long walking or bus tours, can delay healing. The beaches and the walled city will still be there once you are cleared. For how a visit for [breast augmentation in Cartagena](/procedures/breast-augmentation/) is organized, and what the clinic's [international patients](/international-patients/) program covers before and after the trip, see those pages.
@@ -150,7 +150,7 @@ For desk work, often within a few days to a week (The Aesthetic Society, Univers
 It depends on the surgeon. University of Utah Health describes a surgical bra for three to four weeks followed by a soft sports bra, and the SCCP describes a sports bra worn 24 hours a day for one month.
 
 **How long should I stay in Colombia after breast augmentation?**
-If you fly Avianca, plan around at least 14 days after surgery, or 15 if it is combined with other body procedures, plus your arrival days and a margin. The final date depends on your surgeon's clearance and a medical certificate issued within 10 days of the flight.
+ASPS suggests 5–7 days after breast augmentation before flying, plus your arrival days and a margin. If another body procedure is done at the same time, that procedure's longer window applies. The final date depends on your surgeon's clearance. Airlines can have their own rules, so check with your airline before booking.
 
 Prefer Spanish? Read the twin guide: <a href="/es/blog/recuperacion-aumento-de-senos/" data-language="es" hreflang="es" lang="es">Recuperación del aumento de senos: cuánto tarda y cuidados</a>.
 
@@ -162,9 +162,9 @@ Prefer Spanish? Read the twin guide: <a href="/es/blog/recuperacion-aumento-de-s
 - University of Utah Health — [Breast surgery recovery](https://healthcare.utah.edu/plastic-surgery/breast/recovery) (first week, surgical bra for three to four weeks, showering, sleeping position, 10-pound limit, driving and work, sensation changes, results at three to 12 months, scars)
 - Sociedad Colombiana de Cirugía Plástica (SCCP) — [Aumento de senos](https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/) (in Spanish; activities around day 3, sports bra 24 hours a day for a month, stitches at 10 to 14 days, no pool for two weeks, sport at three to four weeks, scar at six weeks, warning signs, mammograms)
 - U.S. Food and Drug Administration — [Breast implants](https://www.fda.gov/medical-devices/implants-and-prosthetics/breast-implants) (implant types and labeling recommendations, including the patient device card)
-- American Society of Plastic Surgeons — [Briefing paper: Cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (five to seven days before flying after body procedures; vacation activities to avoid after surgery)
-- Avianca help center — [Travel restrictions for passengers with special medical conditions](https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions) (14 days after mammoplasty or breast lift with or without implants; 15 days for combined body procedures; certificate within 10 days; airport health authority prevails)
-- CDC Yellow Book — [Medical tourism](https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html) (no flying for 10 days after chest surgery; vacation activities and healing; medical records in English)
+- American Society of Plastic Surgeons — [Briefing paper: Cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (5–7 days before flying after body procedures such as breast augmentation; vacation activities to avoid after surgery)
+- Avianca help center — [Travel restrictions for passengers with special medical conditions](https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions) (airlines publish their own boarding rules; check before booking)
+- CDC Yellow Book — [Medical tourism](https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html) (vacation activities and healing; medical records in English)
 - CDC — [Blood clots and travel](https://www.cdc.gov/blood-clots/risk-factors/travel.html) (trips over four hours, recent surgery as a risk factor, leg exercises, warning signs)
 
 ## Medical Information Disclaimer

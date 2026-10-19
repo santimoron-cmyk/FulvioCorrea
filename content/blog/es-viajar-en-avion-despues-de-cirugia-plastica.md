@@ -1,6 +1,6 @@
 ---
 title: "Cuántos días esperar para volar, por cirugía"
-description: "Avianca: 10 días tras rinoplastia o grasa en glúteos; 14 en senos, lipo o abdominoplastia; 15 si se combinan. El alta del vuelo la da tu cirujano."
+description: "Aumento de senos: volar a los 5–7 días (ASPS). Avianca: 10 días tras rinoplastia; 14 en lipo o abdominoplastia; 15 si se combinan."
 slug: "viajar-en-avion-despues-de-cirugia-plastica"
 lang: "es"
 category: "Recovery"
@@ -8,7 +8,7 @@ tags: ["viajar-en-avion-despues-de-cirugia-plastica", "recuperacion", "turismo-m
 cover: "/assets/blog-flying-after-plastic-surgery.webp"
 coverAlt: "Asiento de ventanilla de avión con una botella de agua y un suéter doblado en la bandeja, con vista a la costa del Caribe y una ciudad colonial amurallada"
 date: "2026-10-05"
-updated: "2026-10-16"
+updated: "2026-10-19"
 author: "fulvio-correa"
 translationOf: "flying-after-plastic-surgery"
 sources: ["https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://scielo.isciii.es/scielo.php?pid=S0376-78922022000400002&script=sci_arttext","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html","https://www.cirugiaplastica.org.co/"]
@@ -21,24 +21,27 @@ reviewed_by: ""
 review_date: ""
 ---
 
-Si te operas en Colombia y regresas en avión, la respuesta corta es esta: **Avianca permite volar entre 10 y 15 días después de una cirugía plástica**, según el procedimiento, y exige un certificado médico expedido como máximo 10 días antes del vuelo. Para liposucción, abdominoplastia y cirugías de senos el mínimo es de 14 días; si se combinan dos o más procedimientos corporales, sube a 15. Ese plazo es el piso de la aerolínea. La fecha real la pone tu cirujano cuando te revisa.
+Si te operas en Colombia y regresas en avión, la respuesta corta depende del procedimiento. Para un **aumento o una reducción de senos (mamoplastia)**, la ventana de este sitio es la que sugiere la Sociedad Americana de Cirujanos Plásticos (ASPS): **5–7 días** antes de volar. La autorización de tu cirujano sigue primero. Las aerolíneas pueden tener reglas propias. Avianca publica un mínimo de 14 días después de una mamoplastia; eso es una regla de embarque de la aerolínea, no la ventana de arriba. Confírmalo con tu aerolínea antes de comprar el tiquete.
 
-Dicho de otra forma: **viajar en avión después de una cirugía** depende de dos fechas, y manda la que llegue más tarde. Las credenciales, qué debe traer una cotización y cómo se compara Cartagena con otras ciudades están en la [guía 2026 de cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
+Para los demás procedimientos de abajo, **Avianca permite volar entre 10 y 15 días después de una cirugía plástica**, según el caso, y exige un certificado médico expedido como máximo 10 días antes del vuelo. Para una pexia mamaria, una liposucción y una abdominoplastia el mínimo es de 14 días; si se combinan dos o más procedimientos corporales, sube a 15. Ese plazo es el piso de la aerolínea para esos procedimientos. La fecha real la pone tu cirujano cuando te revisa.
 
-## Los días mínimos que publica Avianca
+Dicho de otra forma: **viajar en avión después de una cirugía** depende del procedimiento. En un aumento de senos, mandan la ventana de 5–7 días de la ASPS y el alta de tu cirujano. En los demás procedimientos de la tabla, manda la fecha más tardía entre el mínimo de la aerolínea y esa autorización. Las credenciales, qué debe traer una cotización y cómo se compara Cartagena con otras ciudades están en la [guía 2026 de cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
 
-Avianca toma sus plazos de la guía de la Aeronáutica Civil de Colombia (Aerocivil) para pasajeros en condiciones médicas especiales. Estos son los que aplican a las cirugías que más se planifican en Cartagena, según su [centro de ayuda](https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales):
+## La ventana, procedimiento por procedimiento
 
-| Procedimiento | Avianca: puedes viajar a partir de |
+Para el aumento y la reducción de senos, usa la ventana de **5–7 días** de la ASPS del párrafo de arriba. Avianca toma sus plazos de la guía de la Aeronáutica Civil de Colombia (Aerocivil) para los demás procedimientos. Estos son los que aplican a las cirugías que más se planifican en Cartagena, según su [centro de ayuda](https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales):
+
+| Procedimiento | Ventana para planear el vuelo |
 |---|---|
-| Rinoplastia y/o septoplastia | 10 días |
-| Inyección de grasa en glúteos | 10 días |
-| Mamoplastia (aumento o reducción) y pexia mamaria, con o sin implantes | 14 días |
-| Liposucción, mini abdominoplastia, abdominoplastia y lipoabdominoplastia | 14 días |
-| Cirugía de glúteos e implantes, gluteoplastia | 14 días |
-| Cirugía facial estética | 14 días |
-| Ritidoplastia (lifting facial) o combinación de dos o más procedimientos faciales | 15 días, según evolución |
-| Combinación de dos o más procedimientos corporales (por ejemplo, un mommy makeover) | 15 días, según evolución |
+| Aumento o reducción de senos (mamoplastia) | 5–7 días (ASPS). Las aerolíneas pueden tener reglas propias; confírmalas antes de reservar. |
+| Rinoplastia y/o septoplastia | 10 días (Avianca) |
+| Inyección de grasa en glúteos | 10 días (Avianca) |
+| Pexia mamaria, con o sin implantes | 14 días (Avianca) |
+| Liposucción, mini abdominoplastia, abdominoplastia y lipoabdominoplastia | 14 días (Avianca) |
+| Cirugía de glúteos e implantes, gluteoplastia | 14 días (Avianca) |
+| Cirugía facial estética | 14 días (Avianca) |
+| Ritidoplastia (lifting facial) o combinación de dos o más procedimientos faciales | 15 días, según evolución (Avianca) |
+| Combinación de dos o más procedimientos corporales (por ejemplo, un mommy makeover) | 15 días, según evolución (Avianca) |
 
 Si estás pensando en operarte la nariz, en nuestra guía sobre [rinoplastia en Colombia](/es/blog/rinoplastia-colombia/) explicamos cuándo aplica la línea de 10 días y cuándo la de cirugía facial estética, de 14, y cómo armar la estadía.
 
@@ -69,9 +72,9 @@ La conclusión del artículo coincide con la de cualquier equipo serio: los tiem
 
 Vas a encontrar respuestas que van de unos pocos días a más de un mes. No se contradicen tanto como parece, porque responden a cosas distintas:
 
-- La **Sociedad Americana de Cirujanos Plásticos (ASPS)** sugiere, en su [documento sobre turismo de cirugía estética](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism), esperar de cinco a siete días tras procedimientos corporales como la liposucción o el aumento de senos, y de siete a diez días tras procedimientos faciales como lifting, blefaroplastia y rinoplastia.
-- El **Yellow Book de los CDC** de Estados Unidos indica, en su [capítulo de turismo médico](https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html), no volar durante 10 días después de una cirugía de tórax o abdomen.
-- **Avianca** fija plazos de embarque más largos que ambos.
+- La **Sociedad Americana de Cirujanos Plásticos (ASPS)** sugiere, en su [documento sobre turismo de cirugía estética](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism), esperar de cinco a siete días tras procedimientos corporales como la liposucción o el aumento de senos, y de siete a diez días tras procedimientos faciales como lifting, blefaroplastia y rinoplastia. Para el aumento de senos, esa cifra de **5–7 días** es la ventana que usa este sitio.
+- El **Yellow Book de los CDC** de Estados Unidos indica, en su [capítulo de turismo médico](https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html), no volar durante 10 días después de una cirugía de abdomen. Para el aumento de senos, esta página usa la ventana de 5–7 días de la ASPS.
+- Los plazos de **Avianca** en la tabla son una regla de embarque de esa aerolínea. No son la ventana que este sitio usa para el aumento de senos.
 - Muchos cirujanos añaden margen cuando hay drenes, procedimientos combinados, un vuelo largo o factores de riesgo de trombosis.
 
 ## Qué debería revisar tu cirujano antes de firmar
