@@ -89,6 +89,27 @@ for (const [from, to] of [
   ['/liposuction-es/', '/es/procedimientos/liposuccion/'],
   ['/mommy-makeover-es', '/es/procedimientos/mommy-makeover/'],
   ['/mommy-makeover-es/', '/es/procedimientos/mommy-makeover/'],
+  ['/mommy-makeover', '/procedures/mommy-makeover/'],
+  ['/mommy-makeover/', '/procedures/mommy-makeover/'],
+  ['/liposuction', '/procedures/liposuction/'],
+  ['/tummy-tuck/', '/procedures/tummy-tuck/'],
+  ['/abdominoplasty', '/procedures/tummy-tuck/'],
+  ['/rhinoplasty/', '/procedures/rhinoplasty/'],
+  ['/facelift', '/procedures/facelift/'],
+  ['/bbl/', '/procedures/bbl/'],
+  ['/breast-augmentation', '/procedures/breast-augmentation/'],
+  ['/breast-lift/', '/procedures/breast-lift-reduction/'],
+  ['/breast-reduction', '/procedures/breast-lift-reduction/'],
+  ['/es/mommy-makeover', '/es/procedimientos/mommy-makeover/'],
+  ['/es/mommy-makeover/', '/es/procedimientos/mommy-makeover/'],
+  ['/es/liposuccion/', '/es/procedimientos/liposuccion/'],
+  ['/es/abdominoplastia', '/es/procedimientos/abdominoplastia/'],
+  ['/es/rinoplastia/', '/es/procedimientos/rinoplastia/'],
+  ['/es/lifting-facial', '/es/procedimientos/lifting-facial/'],
+  ['/es/aumento-de-gluteos/', '/es/procedimientos/aumento-de-gluteos/'],
+  ['/es/aumento-de-senos', '/es/procedimientos/aumento-de-senos/'],
+  ['/es/bbl/', '/es/procedimientos/aumento-de-gluteos/'],
+  ['/es/mastopexia', '/es/procedimientos/reduccion-y-levantamiento-de-senos/'],
   ['/rhinoplasty-es', '/es/procedimientos/rinoplastia/'],
   ['/rhinoplasty-es/', '/es/procedimientos/rinoplastia/'],
   ['/staff-es', '/es/sobre-el-doctor/'],
@@ -148,6 +169,25 @@ assert.match(home, new RegExp('rel="canonical" href="' + origin + '/"'));
 assert.match(home, new RegExp('hreflang="en" href="' + origin + '/"'));
 assert.match(home, new RegExp('hreflang="es" href="' + origin + '/es/"'));
 assert.match(home, new RegExp('hreflang="x-default" href="' + origin + '/"'));
+const sitemap = fs.readFileSync('dist/sitemap.xml', 'utf8');
+for (const path of ['/plastic-surgery-cost-cartagena/', '/es/precios-cirugia-plastica-cartagena/', '/recovery-house-cartagena/', '/es/casa-de-recuperacion-cartagena/']) {
+  assert.equal(status(path, rules).code, 200, path + ' should be a page');
+  assert.ok(sitemap.includes('<loc>' + origin + path + '</loc>'), 'sitemap missing ' + path);
+}
+const costHtml = fs.readFileSync('dist/plastic-surgery-cost-cartagena/index.html', 'utf8');
+const costEs = fs.readFileSync('dist/es/precios-cirugia-plastica-cartagena/index.html', 'utf8');
+const recoveryHtml = fs.readFileSync('dist/recovery-house-cartagena/index.html', 'utf8');
+assert.match(costHtml, new RegExp('rel="canonical" href="' + origin + '/plastic-surgery-cost-cartagena/"'));
+assert.match(costHtml, new RegExp('hreflang="es" href="' + origin + '/es/precios-cirugia-plastica-cartagena/"'));
+assert.match(costEs, new RegExp('hreflang="en" href="' + origin + '/plastic-surgery-cost-cartagena/"'));
+assert.match(costHtml, /FAQPage/);
+assert.doesNotMatch(costHtml, /AggregateRating|"@type":"Review"/);
+assert.match(costHtml, /Google review/);
+assert.doesNotMatch(costHtml + costEs + recoveryHtml, /15 years old|Sofia H\./);
+assert.match(recoveryHtml, new RegExp('hreflang="es" href="' + origin + '/es/casa-de-recuperacion-cartagena/"'));
+assert.match(fs.readFileSync('dist/procedures/mommy-makeover/index.html', 'utf8'), /id="estimated-cost"/);
+assert.doesNotMatch(fs.readFileSync('dist/procedures/mommy-makeover/index.html', 'utf8'), /USD 9,900/);
+assert.match(fs.readFileSync('dist/procedures/tummy-tuck/index.html', 'utf8'), /USD 9,900–12,100/);
 assert.match(fs.readFileSync('dist/404.html', 'utf8'), /href="\/"/);
 assert.doesNotMatch(fs.readFileSync('dist/404.html', 'utf8'), /href="\/en/);
 
