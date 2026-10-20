@@ -524,6 +524,276 @@
       "status": 301
     },
     {
+      "from": "/mommy-makeover",
+      "to": "/procedures/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/mommy-makeover/",
+      "to": "/procedures/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/liposuction",
+      "to": "/procedures/liposuction/",
+      "status": 301
+    },
+    {
+      "from": "/liposuction/",
+      "to": "/procedures/liposuction/",
+      "status": 301
+    },
+    {
+      "from": "/tummy-tuck",
+      "to": "/procedures/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/tummy-tuck/",
+      "to": "/procedures/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/abdominoplasty",
+      "to": "/procedures/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/abdominoplasty/",
+      "to": "/procedures/tummy-tuck/",
+      "status": 301
+    },
+    {
+      "from": "/rhinoplasty",
+      "to": "/procedures/rhinoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/rhinoplasty/",
+      "to": "/procedures/rhinoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/facelift",
+      "to": "/procedures/facelift/",
+      "status": 301
+    },
+    {
+      "from": "/facelift/",
+      "to": "/procedures/facelift/",
+      "status": 301
+    },
+    {
+      "from": "/bbl",
+      "to": "/procedures/bbl/",
+      "status": 301
+    },
+    {
+      "from": "/bbl/",
+      "to": "/procedures/bbl/",
+      "status": 301
+    },
+    {
+      "from": "/breast-augmentation",
+      "to": "/procedures/breast-augmentation/",
+      "status": 301
+    },
+    {
+      "from": "/breast-augmentation/",
+      "to": "/procedures/breast-augmentation/",
+      "status": 301
+    },
+    {
+      "from": "/breast-lift",
+      "to": "/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/breast-lift/",
+      "to": "/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/breast-reduction",
+      "to": "/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/breast-reduction/",
+      "to": "/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/breast-lift-reduction",
+      "to": "/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/breast-lift-reduction/",
+      "to": "/procedures/breast-lift-reduction/",
+      "status": 301
+    },
+    {
+      "from": "/es/mommy-makeover",
+      "to": "/es/procedimientos/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/es/mommy-makeover/",
+      "to": "/es/procedimientos/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/es/liposuccion",
+      "to": "/es/procedimientos/liposuccion/",
+      "status": 301
+    },
+    {
+      "from": "/es/liposuccion/",
+      "to": "/es/procedimientos/liposuccion/",
+      "status": 301
+    },
+    {
+      "from": "/es/abdominoplastia",
+      "to": "/es/procedimientos/abdominoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/abdominoplastia/",
+      "to": "/es/procedimientos/abdominoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/rinoplastia",
+      "to": "/es/procedimientos/rinoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/rinoplastia/",
+      "to": "/es/procedimientos/rinoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/lifting-facial",
+      "to": "/es/procedimientos/lifting-facial/",
+      "status": 301
+    },
+    {
+      "from": "/es/lifting-facial/",
+      "to": "/es/procedimientos/lifting-facial/",
+      "status": 301
+    },
+    {
+      "from": "/es/aumento-de-gluteos",
+      "to": "/es/procedimientos/aumento-de-gluteos/",
+      "status": 301
+    },
+    {
+      "from": "/es/aumento-de-gluteos/",
+      "to": "/es/procedimientos/aumento-de-gluteos/",
+      "status": 301
+    },
+    {
+      "from": "/es/aumento-de-senos",
+      "to": "/es/procedimientos/aumento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/aumento-de-senos/",
+      "to": "/es/procedimientos/aumento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/bbl",
+      "to": "/es/procedimientos/aumento-de-gluteos/",
+      "status": 301
+    },
+    {
+      "from": "/es/bbl/",
+      "to": "/es/procedimientos/aumento-de-gluteos/",
+      "status": 301
+    },
+    {
+      "from": "/es/liposuction",
+      "to": "/es/procedimientos/liposuccion/",
+      "status": 301
+    },
+    {
+      "from": "/es/liposuction/",
+      "to": "/es/procedimientos/liposuccion/",
+      "status": 301
+    },
+    {
+      "from": "/es/tummy-tuck",
+      "to": "/es/procedimientos/abdominoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/tummy-tuck/",
+      "to": "/es/procedimientos/abdominoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/rhinoplasty",
+      "to": "/es/procedimientos/rinoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/rhinoplasty/",
+      "to": "/es/procedimientos/rinoplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/facelift",
+      "to": "/es/procedimientos/lifting-facial/",
+      "status": 301
+    },
+    {
+      "from": "/es/facelift/",
+      "to": "/es/procedimientos/lifting-facial/",
+      "status": 301
+    },
+    {
+      "from": "/es/breast-augmentation",
+      "to": "/es/procedimientos/aumento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/breast-augmentation/",
+      "to": "/es/procedimientos/aumento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/breast-lift",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/breast-lift/",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/breast-reduction",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/breast-reduction/",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/mastopexia",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/es/mastopexia/",
+      "to": "/es/procedimientos/reduccion-y-levantamiento-de-senos/",
+      "status": 301
+    },
+    {
       "from": "/post/bbl-colombia",
       "to": "/blog/bbl-colombia/",
       "status": 301
@@ -874,6 +1144,16 @@
       "status": 301
     },
     {
+      "from": "/es/plastic-surgery-cost-cartagena",
+      "to": "/es/precios-cirugia-plastica-cartagena/",
+      "status": 301
+    },
+    {
+      "from": "/es/plastic-surgery-cost-cartagena/",
+      "to": "/es/precios-cirugia-plastica-cartagena/",
+      "status": 301
+    },
+    {
       "from": "/es/blog/category/body-contouring",
       "to": "/es/blog/categoria/contorno-corporal/",
       "status": 301
@@ -951,6 +1231,16 @@
     {
       "from": "/es/plastic-surgery-colombia/",
       "to": "/es/cirugia-plastica-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/es/recovery-house-cartagena",
+      "to": "/es/casa-de-recuperacion-cartagena/",
+      "status": 301
+    },
+    {
+      "from": "/es/recovery-house-cartagena/",
+      "to": "/es/casa-de-recuperacion-cartagena/",
       "status": 301
     },
     {
@@ -1821,6 +2111,26 @@
     {
       "from": "/en/plastic-surgery-colombia",
       "to": "/plastic-surgery-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/plastic-surgery-cost-cartagena/",
+      "to": "/plastic-surgery-cost-cartagena/",
+      "status": 301
+    },
+    {
+      "from": "/en/plastic-surgery-cost-cartagena",
+      "to": "/plastic-surgery-cost-cartagena/",
+      "status": 301
+    },
+    {
+      "from": "/en/recovery-house-cartagena/",
+      "to": "/recovery-house-cartagena/",
+      "status": 301
+    },
+    {
+      "from": "/en/recovery-house-cartagena",
+      "to": "/recovery-house-cartagena/",
       "status": 301
     },
     {
