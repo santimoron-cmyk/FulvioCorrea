@@ -668,7 +668,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/procedures/mommy-makeover/",
-        "name": "Mommy Makeover in Cartagena, Colombia",
+        "name": "Mommy Makeover Cartagena: a Quote",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -1900,7 +1900,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/es/procedures/mommy-makeover/",
-        "name": "Mommy makeover en Cartagena, Colombia",
+        "name": "Mommy makeover Cartagena: precio",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -5542,7 +5542,7 @@
         "@id": "https://fulviocorrea.com/plastic-surgery-colombia/#webpage",
         "url": "https://fulviocorrea.com/plastic-surgery-colombia/",
         "name": "Plastic Surgery in Colombia",
-        "description": "No official ranking of the best plastic surgeons in Colombia. How to verify (SCCP, ReTHUS, REPS), what drives cost, and why patients choose Cartagena.",
+        "description": "How to choose a plastic surgeon in Cartagena. Estimated costs from USD 3,600 for eyelid surgery. SCCP member. A real quote follows consultation.",
         "inLanguage": "en",
         "dateModified": "2026-10-19",
         "lastReviewed": "2026-10-19",
@@ -5609,7 +5609,7 @@
             "name": "What drives the cost of plastic surgery in Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The procedure, whether procedures are combined, operating time, anesthesia, the facility, any implant, tests, garments, medication and the visits included while you are in Cartagena. Flights, lodging and care after you fly home are separate. This page does not publish prices."
+              "text": "The procedure, whether procedures are combined, operating time, anesthesia, the facility, any implant, tests, garments, medication and the visits while you are in Cartagena. Flights, lodging and care after you fly home are separate. Estimated ranges for this practice start at USD 3,600 for eyelid surgery and are on the plastic surgery cost page. The real quote comes after consultation."
             }
           },
           {
@@ -5681,7 +5681,7 @@
         "@id": "https://fulviocorrea.com/es/plastic-surgery-colombia/#webpage",
         "url": "https://fulviocorrea.com/es/plastic-surgery-colombia/",
         "name": "Cirugía plástica en Colombia",
-        "description": "No existe un ranking oficial del mejor cirujano plástico de Colombia. Cómo verificarlo (SCCP, ReTHUS, REPS), de qué depende el costo y por qué Cartagena.",
+        "description": "Cómo elegir cirujano plástico en Cartagena. Costos estimados desde USD 3.600 (blefaroplastia). Miembro de la SCCP. La cotización real sale en la valoración.",
         "inLanguage": "es",
         "dateModified": "2026-10-19",
         "lastReviewed": "2026-10-19",
@@ -5748,7 +5748,7 @@
             "name": "¿De qué depende el costo de la cirugía plástica en Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Del procedimiento, de si se combinan cirugías, del tiempo de quirófano, de la anestesia, de la clínica, de un implante si lo hay, de los exámenes, de la faja, de los medicamentos y de los controles incluidos mientras estás en Cartagena. Los tiquetes, el alojamiento y la atención después de volar a casa van aparte. Esta página no publica precios."
+              "text": "Del procedimiento, de si se combinan cirugías, del tiempo de quirófano, de la anestesia, de la clínica, de un implante si lo hay, de los exámenes, de la faja, de los medicamentos y de los controles mientras estás en Cartagena. Los tiquetes, el alojamiento y la atención después de volar a casa van aparte. Los rangos estimados de este consultorio empiezan en USD 3.600 para blefaroplastia y están en la página de precios. La cotización real sale después de la valoración."
             }
           },
           {
@@ -5803,6 +5803,362 @@
       {
         "lang": "en",
         "route": "/en/plastic-surgery-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/plastic-surgery-cost-cartagena/",
+    "file": "dist/en/plastic-surgery-cost-cartagena/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-10-20",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com/plastic-surgery-cost-cartagena/",
+        "name": "Plastic surgery in Colombia: cost and prices",
+        "description": "Plastic surgery Colombia cost and Colombia plastic surgery prices in Cartagena. Estimates from USD 3,600. The real quote comes after consultation.",
+        "inLanguage": "en",
+        "dateModified": "2026-10-20"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are these plastic surgery prices in Colombia final?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is an approximate estimate based on previous cases; sometimes the fee has been lower and sometimes higher, depending on the case. The real quote always comes after the virtual or in-person consultation. It does not commit the doctor to charge that amount or to operate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are prices shown in dollars and in pesos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The authorized ranges are in US dollars. Pesos on this page use the official TRM of 20 October 2026, COP 3,156.32 per dollar, rounded up to the nearest 10,000 pesos. The consultation fee stays USD 150 / COP 400,000 and is not converted at that rate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What usually changes the price?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The procedure, whether operations are combined, anesthesia, the facility, any implant or device, tests, garments, medication, and the visits while you are in Cartagena. The written quote says which of those are included. Flights, lodging, and transfers are separate. The individual case can also come in below or above the range."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do these compare with prices in the United States?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS publishes 2024 surgeon/physician fee ranges for its members, for example abdominoplasty USD 8,000–13,500 and rhinoplasty USD 7,500–12,500. Those are surgeon fees, not a total bill, and some of them overlap the estimates here. This page does not state a savings percentage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is there no mommy makeover, BBL, or non-HD liposuction price?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They are not in the authorized table. A mommy makeover, a fat-graft Brazilian butt lift, and liposuction that is not HD liposculpture are quoted per case. Gluteal implants are listed separately because they are a different operation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the estimate include the recovery house or the flights?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. These ranges do not include lodging, transfers, supplies, or flights. A recovery house can be arranged separately and is explained at the valuation. There is no package price."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get a real quote?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "After a virtual or in-person consultation. The consultation fee is USD 150 / COP 400,000. You can request it on WhatsApp or through the valuation form. The figure in that written quote is the one that applies to you."
+            }
+          }
+        ]
+      }
+    ],
+    "cover": "/assets/plastic-surgery-office-reception-cartagena.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/plastic-surgery-cost-cartagena/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/precios-cirugia-plastica-cartagena/"
+      }
+    ]
+  },
+  {
+    "route": "/es/precios-cirugia-plastica-cartagena/",
+    "file": "dist/es/precios-cirugia-plastica-cartagena/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-10-20",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com/es/precios-cirugia-plastica-cartagena/",
+        "name": "Precios de cirugía plástica en Cartagena",
+        "description": "Precios de cirugía plástica en Cartagena, Colombia, con rangos estimados desde USD 3.600. La cotización real se entrega después de la valoración.",
+        "inLanguage": "es",
+        "dateModified": "2026-10-20"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Estos precios de cirugía plástica en Colombia son definitivos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Estimación orientativa basada en experiencias previas; a veces se ha cobrado menos y a veces más según cada caso. La cotización real va siempre después de la consulta virtual o presencial. No compromete al Dr. a cobrar ese monto ni a operar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué hay dólares y pesos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los rangos autorizados están en dólares. Los pesos de esta página usan la TRM oficial del 20 de octubre de 2026, COP 3.156,32 por dólar, redondeados hacia arriba a 10.000 pesos. La valoración se mantiene en USD 150 / COP 400.000 y no se convierte con esa tasa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué suele cambiar el precio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El procedimiento, si se combinan cirugías, la anestesia, la clínica, un implante o dispositivo, los exámenes, la faja, los medicamentos y los controles mientras estás en Cartagena. La cotización escrita dice cuáles de esos están incluidos. Los tiquetes, el alojamiento y los traslados van aparte. El caso individual también puede quedar por debajo o por encima del rango."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo se comparan con los precios en Estados Unidos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La ASPS publica rangos de honorarios de cirujano de 2024 para sus miembros, por ejemplo abdominoplastia USD 8.000–13.500 y rinoplastia USD 7.500–12.500. Son honorarios del cirujano, no una cuenta total, y algunos se cruzan con las estimaciones de aquí. Esta página no afirma un porcentaje de ahorro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué no hay precio de mommy makeover, BBL ni liposucción que no sea HD?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No están en la tabla autorizada. El mommy makeover, el Brazilian butt lift con grasa y la liposucción que no es lipoescultura HD se cotizan por caso. Los implantes de glúteo sí aparecen, porque son otra cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La estimación incluye la casa de recuperación o los tiquetes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Estos rangos no incluyen alojamiento, traslados, insumos ni tiquetes. La casa de recuperación se puede organizar aparte y se explica en la valoración. No hay precio de paquete."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo obtengo una cotización real?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Después de una valoración virtual o presencial. La valoración cuesta USD 150 / COP 400.000. Puedes pedirla por WhatsApp o en el formulario. La cifra de esa cotización escrita es la que aplica a tu caso."
+            }
+          }
+        ]
+      }
+    ],
+    "cover": "/assets/plastic-surgery-office-reception-cartagena.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/precios-cirugia-plastica-cartagena/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/plastic-surgery-cost-cartagena/"
+      }
+    ]
+  },
+  {
+    "route": "/en/recovery-house-cartagena/",
+    "file": "dist/en/recovery-house-cartagena/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-10-20",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com/recovery-house-cartagena/",
+        "name": "Recovery house in Cartagena",
+        "description": "Equipped recovery house in Cartagena with 24/7 nursing, airport and clinic transfers, and supplies. The plan is set at your valuation. No package price.",
+        "inLanguage": "en",
+        "dateModified": "2026-10-20"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is there a package price for the recovery house?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. There is no published package price. The house, nursing, transfers, and supplies are arranged for the individual patient and detailed at the valuation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the recovery house include?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An equipped recovery house, nursing 24 hours a day and 7 days a week, transfers between the airport, the clinic, and the house, and supplies. The exact arrangement is explained at the valuation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many nights are included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "None are promised. The number of nights is not fixed in advance. It is decided at the valuation, based on the procedure and on how you are recovering."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are massages included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Massages are not promised. Any care beyond nursing, transfers, and supplies is discussed at the valuation and is not part of a published package."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do surgery price ranges include the house?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The ranges on the cost page are procedure estimates. Lodging, transfers, and supplies are separate and are not included in those figures."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When will I know the plan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "At the valuation, virtual or in person. That is when the team goes through what applies to your case. You can start on WhatsApp or with a valuation request."
+            }
+          }
+        ]
+      }
+    ],
+    "cover": "/assets/blog-cartagena-medical-tourism.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/recovery-house-cartagena/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/casa-de-recuperacion-cartagena/"
+      }
+    ]
+  },
+  {
+    "route": "/es/casa-de-recuperacion-cartagena/",
+    "file": "dist/es/casa-de-recuperacion-cartagena/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-10-20",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "url": "https://fulviocorrea.com/es/casa-de-recuperacion-cartagena/",
+        "name": "Casa de recuperación en Cartagena",
+        "description": "Casa de recuperación en Cartagena: enfermería 24/7, traslados e insumos. El plan se define en la valoración. Sin precio de paquete.",
+        "inLanguage": "es",
+        "dateModified": "2026-10-20"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Hay un precio de paquete para la casa de recuperación?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. No hay un precio de paquete publicado. La casa, la enfermería, los traslados y los insumos se organizan para cada paciente y se detallan en la valoración."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué incluye la casa de recuperación?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una casa de recuperación equipada, enfermería 24 horas al día y 7 días a la semana, traslados entre el aeropuerto, la clínica y la casa, e insumos. El arreglo exacto se explica en la valoración."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántas noches incluye?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No se promete ninguna cifra. El número de noches no se fija por adelantado. Se decide en la valoración, según el procedimiento y según cómo evoluciona tu recuperación."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Incluye masajes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Los masajes no se prometen. Cualquier atención más allá de la enfermería, los traslados y los insumos se conversa en la valoración y no forma parte de un paquete publicado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Los rangos de cirugía incluyen la casa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Los rangos de la página de precios son estimaciones del procedimiento. El alojamiento, los traslados y los insumos van aparte y no están incluidos en esas cifras."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo voy a conocer el plan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En la valoración, virtual o presencial. Ahí el equipo revisa lo que aplica a tu caso. Puedes empezar por WhatsApp o con una solicitud de valoración."
+            }
+          }
+        ]
+      }
+    ],
+    "cover": "/assets/blog-cartagena-medical-tourism.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/casa-de-recuperacion-cartagena/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/recovery-house-cartagena/"
       }
     ]
   },
