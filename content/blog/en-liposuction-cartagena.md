@@ -16,7 +16,7 @@ draft: false
 originalUrl: "https://fulviocorrea.com.co/post/liposuction-cartagena"
 procedure: "liposuction"
 twin: "liposuccion-colombia"
-related: ["bbl-colombia", "tummy-tuck-colombia", "plastic-surgery-medical-tourism-cartagena-colombia"]
+related: ["bbl-colombia", "tummy-tuck-colombia", "plastic-surgery-medical-tourism-cartagena-colombia", "liposuction-recovery"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -75,7 +75,7 @@ Prioritize relative rest: short walks as directed, hydration, light meals, and s
 
 Swelling can last weeks, and contour continues to evolve. Return to desk work and intense exercise is defined by the surgeon case by case. Do not compare your pace with social media: age, treatment area, technique, and aftercare change the response.
 
-Skin care, sun protection, and any adjunct therapies (for example, lymphatic massage if recommended) should follow written instructions from your care team—who performs them, when they start, and when they stop. If you live elsewhere, ask how virtual follow-ups and photo check-ins will work once you are home, and keep a short log of medication and symptoms if that helps you communicate clearly.
+Skin care, sun protection, and any adjunct therapies (for example, lymphatic massage if recommended) should follow written instructions from your care team—who performs them, when they start, and when they stop. If you live elsewhere, ask how virtual follow-ups and photo check-ins will work once you are home, and keep a short log of medication and symptoms if that helps you communicate clearly. For the stage-by-stage version, including how long the garment usually stays on and the two flight numbers to plan around, see [liposuction recovery time, week by week](/blog/liposuction-recovery/).
 
 ## Pre-op documents and common planning mistakes
 
