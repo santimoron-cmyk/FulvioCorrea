@@ -1,6 +1,6 @@
 ---
-title: "Breast Augmentation Colombia: How U.S. Patients Verify Surgeons"
-description: "Researching breast augmentation in Colombia? Verify ReTHUS, SCCP and REPS, plan Cartagena travel, and the ASPS 5–7 day window before flying."
+title: "How to Verify a Breast Implant Surgeon"
+description: "How to verify a breast implant surgeon: ReTHUS, SCCP and REPS, Cartagena travel, and the ASPS 5–7 day window before flying."
 slug: "breast-augmentation-colombia"
 lang: "en"
 category: "Breast Surgery"
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-There is no official ranking of the **best breast augmentation in Colombia**, so the useful question is how to tell a well-qualified plastic surgeon and facility from a well-marketed one. For U.S. patients researching **breast augmentation colombia**, three checks usually matter most: verify the surgeon and the facility in Colombia’s official registries, confirm in consultation that implants or fat transfer actually fit your anatomy and goals, and build the trip around recovery—not vacation photos. One number often shapes the calendar: the American Society of Plastic Surgeons (ASPS) suggests waiting **5–7 days** after breast augmentation before flying. Airlines can have their own rules, so check with your airline before you book.
+There is no official ranking of the **best breast augmentation in Colombia**, so the useful question is how to tell a well-qualified plastic surgeon and facility from a well-marketed one. For U.S. patients researching [breast augmentation in Colombia](/en/procedures/breast-augmentation/), three checks usually matter most: verify the surgeon and the facility in Colombia’s official registries, confirm in consultation that implants or fat transfer actually fit your anatomy and goals, and build the trip around recovery—not vacation photos. One number often shapes the calendar: the American Society of Plastic Surgeons (ASPS) suggests waiting **5–7 days** after breast augmentation before flying. Airlines can have their own rules, so check with your airline before you book.
 
 This guide walks through those checks, Cartagena logistics, and the questions worth bringing to a consult. The wider picture of cost, safety and the stay is in [plastic surgery in Colombia](/plastic-surgery-colombia/).
 

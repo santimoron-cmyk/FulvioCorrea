@@ -52,7 +52,7 @@ const rows = [
   {id: 'calf', usd: [6750, 8250], en: 'Calf implants', es: 'Implantes de pantorrillas'},
   {id: 'rhinoplasty', usd: [6750, 8250], page: 'rhinoplasty', en: 'Rhinoplasty', es: 'Rinoplastia'},
   {id: 'facelift', usd: [9000, 11000], page: 'facelift', en: 'Facelift (rhytidectomy)', es: 'Lifting facial (ritidoplastia)'},
-  {id: 'bleph', usd: [3600, 4400], en: 'Blepharoplasty', es: 'Blefaroplastia'},
+  {id: 'bleph', usd: [3600, 4400], page: 'blepharoplasty', en: 'Blepharoplasty', es: 'Blefaroplastia'},
   {id: 'otoplasty', usd: [4050, 4950], en: 'Otoplasty', es: 'Otoplastia'},
 ];
 const byId = Object.fromEntries(rows.map(r => [r.id, r]));
@@ -81,6 +81,7 @@ const procedureBlocks = {
   'breast-lift-reduction': {lines: ['pexy-implants', 'pexy', 'reduction', 'explant']},
   rhinoplasty: {lines: ['rhinoplasty']},
   facelift: {lines: ['facelift']},
+  blepharoplasty: {lines: ['bleph']},
   bbl: {
     quoted: {
       en: 'A Brazilian butt lift (fat transfer to the buttocks) is not in the price table. It is quoted per case. Gluteal implants are a different operation and are listed on the cost page.',
@@ -116,7 +117,7 @@ const reviews = [
   },
 ];
 
-const aspsUrl = 'https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf';
+const aspsUrl = 'https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf';
 const practice = read('data/practice.json');
 
 function lineHtml(id, lang) {
@@ -134,7 +135,15 @@ export function procedureCostBlock(procedure) {
   const lines = spec.lines ? `<ul class="question-list">${spec.lines.map(id => lineHtml(id, lang)).join('')}</ul>` : '';
   const extra = spec.note ? `<p>${esc(spec.note[lang])}</p>` : '';
   const quoted = spec.quoted ? `<p>${esc(spec.quoted[lang])}</p>` : '';
-  return `<section id="estimated-cost"><h2>${es ? 'Costo estimado' : 'Estimated cost'}</h2>${lines}${extra}${quoted}<p class="note">${esc(disclaimer[lang])}</p><p><a href="${href}">${es ? 'Ver todos los precios de cirugía plástica en Cartagena' : 'See all plastic surgery costs in Cartagena'}</a></p></section>`;
+  const headings = {
+    'tummy-tuck': {en: 'Tummy tuck cost in Colombia', es: 'Precio de la abdominoplastia en Colombia'},
+    'breast-augmentation': {en: 'Breast augmentation cost in Colombia'},
+    'breast-lift-reduction': {es: 'Precio de la mastopexia en Colombia'},
+    facelift: {es: 'Precio del lifting facial en Colombia'},
+    blepharoplasty: {en: 'Eyelid surgery cost in Colombia', es: 'Precio de la blefaroplastia en Colombia'},
+  };
+  const heading = headings[procedure.slug]?.[lang] || (es ? 'Costo estimado' : 'Estimated cost');
+  return `<section id="estimated-cost"><h2>${heading}</h2>${lines}${extra}${quoted}<p class="note">${esc(disclaimer[lang])}</p><p><a href="${href}">${es ? 'Ver todos los precios de cirugía plástica en Cartagena' : 'See all plastic surgery costs in Cartagena'}</a></p></section>`;
 }
 
 export function googleReviewsHtml(lang) {
@@ -196,7 +205,7 @@ const costCopy = {
     ],
     usTitle: 'A note on prices in the United States',
     us: [
-      `People often ask whether surgery in Cartagena costs less than at home. The honest answer is that these two numbers are not the same kind of bill. The American Society of Plastic Surgeons, in its <a href="${aspsUrl}">2024 plastic surgery statistics report</a>, publishes surgeon/physician fee ranges for ASPS member surgeons in the United States. Examples from that report: abdominoplasty USD 8,000–13,500, rhinoplasty USD 7,500–12,500, facelift USD 12,000–19,000, and breast augmentation USD 4,575–8,000. The report presents those figures as a projected range of surgeon fees, and it discusses anesthesia costs and operating-room fees separately.`,
+      `People often ask whether surgery in Cartagena costs less than at home. The honest answer is that these two numbers are not the same kind of bill. The American Society of Plastic Surgeons, in its <a href="${aspsUrl}">2024 plastic surgery statistics report (archived copy)</a>, publishes surgeon/physician fee ranges for ASPS member surgeons in the United States. Examples from that report: abdominoplasty USD 8,000–13,500, rhinoplasty USD 7,500–12,500, facelift USD 12,000–19,000, and breast augmentation USD 4,575–8,000. The report presents those figures as a projected range of surgeon fees, and it discusses anesthesia costs and operating-room fees separately.`,
       'Some of those U.S. surgeon-fee ranges overlap the estimates on this page. Breast augmentation is one example: the Cartagena estimate of USD 6,750–8,250 sits inside a U.S. surgeon-fee range that starts lower. A lipoabdominoplasty here is not the same operation as the ASPS abdominoplasty line. This page does not claim a percentage saving, and it does not publish a U.S. total cost. Compare a written quote with a written quote.',
     ],
     houseTitle: 'Recovery in Cartagena is arranged separately',
@@ -239,7 +248,7 @@ const costCopy = {
     ],
     usTitle: 'Una nota sobre los precios en Estados Unidos',
     us: [
-      `Es frecuente preguntar si operarse en Cartagena cuesta menos que en casa. La respuesta honesta es que estos dos números no son el mismo tipo de cuenta. La Sociedad Americana de Cirujanos Plásticos, en su <a href="${aspsUrl}">informe de estadísticas de cirugía plástica 2024</a>, publica rangos de honorarios del cirujano para sus miembros en Estados Unidos. Ejemplos de ese informe: abdominoplastia USD 8.000–13.500, rinoplastia USD 7.500–12.500, lifting facial USD 12.000–19.000 y aumento de senos USD 4.575–8.000. El informe presenta esas cifras como un rango proyectado de honorarios del cirujano, y habla de la anestesia y de los costos de quirófano por separado.`,
+      `Es frecuente preguntar si operarse en Cartagena cuesta menos que en casa. La respuesta honesta es que estos dos números no son el mismo tipo de cuenta. La Sociedad Americana de Cirujanos Plásticos, en su <a href="${aspsUrl}">informe de estadísticas de cirugía plástica 2024 (copia archivada)</a>, publica rangos de honorarios del cirujano para sus miembros en Estados Unidos. Ejemplos de ese informe: abdominoplastia USD 8.000–13.500, rinoplastia USD 7.500–12.500, lifting facial USD 12.000–19.000 y aumento de senos USD 4.575–8.000. El informe presenta esas cifras como un rango proyectado de honorarios del cirujano, y habla de la anestesia y de los costos de quirófano por separado.`,
       'Algunos de esos rangos de honorarios en Estados Unidos se cruzan con las estimaciones de esta página. El aumento de senos es un ejemplo: la estimación en Cartagena, USD 6.750–8.250, cae dentro de un rango estadounidense que empieza más abajo. Una lipoabdominoplastia aquí no es la misma cirugía que la línea de abdominoplastia de la ASPS. Esta página no afirma un porcentaje de ahorro y no publica un costo total en Estados Unidos. Lo que se compara es una cotización escrita con otra cotización escrita.',
     ],
     houseTitle: 'La recuperación en Cartagena se organiza aparte',

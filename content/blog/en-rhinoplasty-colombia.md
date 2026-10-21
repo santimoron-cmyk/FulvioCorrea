@@ -1,6 +1,6 @@
 ---
-title: "Rhinoplasty in Colombia: What to Decide Before You Travel"
-description: "Planning rhinoplasty in Colombia? How to vet the surgeon, what the consult decides, how many days to stay before flying home, and Cartagena's sun rules."
+title: "What to Decide Before a Nose Job Trip"
+description: "What to decide before a nose job trip: who operates, what the consult settles, how many days to stay before flying home, and Cartagena's sun rules."
 slug: "rhinoplasty-colombia"
 lang: "en"
 category: "Plastic Surgery in Colombia"
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-If you are weighing **rhinoplasty in Colombia**, the city matters less than three decisions: who operates (and whether you can check it), whether your goal fits the nose you actually have, and how long you stay. The stay has a firm floor. Avianca, Colombia's flag carrier, permits travel 10 days after rhinoplasty or septoplasty and requires a medical certificate issued no earlier than 10 days before the flight. ASPS and the CDC suggest waiting 7 to 10 days after facial procedures. Your real flight date is the later of the airline minimum and the day your surgeon examines you in person and clears you.
+If you are weighing [rhinoplasty in Colombia](/en/procedures/rhinoplasty/), the city matters less than three decisions: who operates (and whether you can check it), whether your goal fits the nose you actually have, and how long you stay. The stay has a firm floor. Avianca, Colombia's flag carrier, permits travel 10 days after rhinoplasty or septoplasty and requires a medical certificate issued no earlier than 10 days before the flight. ASPS and the CDC suggest waiting 7 to 10 days after facial procedures. Your real flight date is the later of the airline minimum and the day your surgeon examines you in person and clears you.
 
 Travel rules and how to check a clinic before you commit are in our guide to [choosing a plastic surgeon in Colombia](/plastic-surgery-colombia/). The other date to plan around is a year away. ASPS notes that a new nasal contour can take up to a year to fully refine, so the final shape of a **nose job in Colombia** is judged at home, not in Cartagena. Follow-up, and what would happen if a small revision were ever needed, belongs in the plan before you buy a ticket.
 

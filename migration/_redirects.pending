@@ -20,6 +20,8 @@
 /privacy-policies/ /privacy/ 301
 /plastic-surgery-colombia-cartagena-bbl /procedures/bbl/ 301
 /plastic-surgery-colombia-cartagena-bbl/ /procedures/bbl/ 301
+/plastic-surgery-colombia-cartagena-blepharoplasty /procedures/blepharoplasty/ 301
+/plastic-surgery-colombia-cartagena-blepharoplasty/ /procedures/blepharoplasty/ 301
 /plastic-surgery-colombia-cartagena-breast-augmentation /procedures/breast-augmentation/ 301
 /plastic-surgery-colombia-cartagena-breast-augmentation/ /procedures/breast-augmentation/ 301
 /plastic-surgery-colombia-cartagena-facelift /procedures/facelift/ 301
@@ -156,6 +158,14 @@
 /es/breast-reduction/ /es/procedimientos/reduccion-y-levantamiento-de-senos/ 301
 /es/mastopexia /es/procedimientos/reduccion-y-levantamiento-de-senos/ 301
 /es/mastopexia/ /es/procedimientos/reduccion-y-levantamiento-de-senos/ 301
+/blepharoplasty /procedures/blepharoplasty/ 301
+/blepharoplasty/ /procedures/blepharoplasty/ 301
+/eyelid-surgery /procedures/blepharoplasty/ 301
+/eyelid-surgery/ /procedures/blepharoplasty/ 301
+/es/blefaroplastia /es/procedimientos/blefaroplastia/ 301
+/es/blefaroplastia/ /es/procedimientos/blefaroplastia/ 301
+/es/blepharoplasty /es/procedimientos/blefaroplastia/ 301
+/es/blepharoplasty/ /es/procedimientos/blefaroplastia/ 301
 /post/bbl-colombia /blog/bbl-colombia/ 301
 /post/bbl-colombia/ /blog/bbl-colombia/ 301
 /post/breast-augmentation-colombia /blog/breast-augmentation-colombia/ 301
@@ -242,6 +252,8 @@
 /es/resources/your-consultation/ /es/recursos/tu-valoracion/ 301
 /es/procedures/mommy-makeover /es/procedimientos/mommy-makeover/ 301
 /es/procedures/mommy-makeover/ /es/procedimientos/mommy-makeover/ 301
+/es/procedures/blepharoplasty /es/procedimientos/blefaroplastia/ 301
+/es/procedures/blepharoplasty/ /es/procedimientos/blefaroplastia/ 301
 /es/plastic-surgery-colombia /es/cirugia-plastica-colombia/ 301
 /es/plastic-surgery-colombia/ /es/cirugia-plastica-colombia/ 301
 /es/recovery-house-cartagena /es/casa-de-recuperacion-cartagena/ 301
@@ -316,6 +328,10 @@
 /en/procedures/bbl /procedures/bbl/ 301
 /en/ads/bbl/ /ads/bbl/ 301
 /en/ads/bbl /ads/bbl/ 301
+/en/procedures/blepharoplasty/ /procedures/blepharoplasty/ 301
+/en/procedures/blepharoplasty /procedures/blepharoplasty/ 301
+/en/ads/blepharoplasty/ /ads/blepharoplasty/ 301
+/en/ads/blepharoplasty /ads/blepharoplasty/ 301
 /en/procedures/breast-augmentation/ /procedures/breast-augmentation/ 301
 /en/procedures/breast-augmentation /procedures/breast-augmentation/ 301
 /en/ads/breast-augmentation/ /ads/breast-augmentation/ 301
@@ -428,6 +444,8 @@
 /en/capri-clinic /capri-clinic/ 301
 /en/contact/ /contact/ 301
 /en/contact /contact/ 301
+/en/best-plastic-surgeon-colombia/ /best-plastic-surgeon-colombia/ 301
+/en/best-plastic-surgeon-colombia /best-plastic-surgeon-colombia/ 301
 /en/testimonials/ /testimonials/ 301
 /en/testimonials /testimonials/ 301
 /en/testimonials/natalia-vega/ /testimonials/natalia-vega/ 301

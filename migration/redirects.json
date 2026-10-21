@@ -114,6 +114,16 @@
       "status": 301
     },
     {
+      "from": "/plastic-surgery-colombia-cartagena-blepharoplasty",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-blepharoplasty/",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
       "from": "/plastic-surgery-colombia-cartagena-breast-augmentation",
       "to": "/procedures/breast-augmentation/",
       "status": 301
@@ -794,6 +804,46 @@
       "status": 301
     },
     {
+      "from": "/blepharoplasty",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/blepharoplasty/",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/eyelid-surgery",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/eyelid-surgery/",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/es/blefaroplastia",
+      "to": "/es/procedimientos/blefaroplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/blefaroplastia/",
+      "to": "/es/procedimientos/blefaroplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/blepharoplasty",
+      "to": "/es/procedimientos/blefaroplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/blepharoplasty/",
+      "to": "/es/procedimientos/blefaroplastia/",
+      "status": 301
+    },
+    {
       "from": "/post/bbl-colombia",
       "to": "/blog/bbl-colombia/",
       "status": 301
@@ -1224,6 +1274,16 @@
       "status": 301
     },
     {
+      "from": "/es/procedures/blepharoplasty",
+      "to": "/es/procedimientos/blefaroplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/blepharoplasty/",
+      "to": "/es/procedimientos/blefaroplastia/",
+      "status": 301
+    },
+    {
       "from": "/es/plastic-surgery-colombia",
       "to": "/es/cirugia-plastica-colombia/",
       "status": 301
@@ -1591,6 +1651,26 @@
     {
       "from": "/en/ads/bbl",
       "to": "/ads/bbl/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/blepharoplasty/",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/blepharoplasty",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/blepharoplasty/",
+      "to": "/ads/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/blepharoplasty",
+      "to": "/ads/blepharoplasty/",
       "status": 301
     },
     {
@@ -2151,6 +2231,16 @@
     {
       "from": "/en/contact",
       "to": "/contact/",
+      "status": 301
+    },
+    {
+      "from": "/en/best-plastic-surgeon-colombia/",
+      "to": "/best-plastic-surgeon-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/best-plastic-surgeon-colombia",
+      "to": "/best-plastic-surgeon-colombia/",
       "status": 301
     },
     {

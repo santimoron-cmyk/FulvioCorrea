@@ -1,6 +1,6 @@
 ---
-title: "Levantamiento de senos en Colombia: pexia vs implantes"
-description: "¿Pensando en un levantamiento de senos en Colombia? Diferencias con el aumento, cicatrices, verificación SCCP, viaje a Cartagena y la regla de 14 días de Avianca."
+title: "Pexia o implantes: cómo decidir"
+description: "Diferencias entre pexia e implantes, cicatrices, verificación de la SCCP, viaje a Cartagena y la regla de 14 días de Avianca."
 slug: "levantamiento-de-senos-colombia"
 lang: "es"
 category: "Breast Surgery"
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-Un **levantamiento de senos en Colombia** (mastopexia o pexia mamaria) eleva y remodela senos que perdieron posición después del embarazo, la lactancia, cambios de peso o el paso del tiempo. No busca, por sí solo, aumentar el tamaño. Si lo que quieres es más volumen, el camino suele ser el [aumento de senos](/es/blog/aumento-de-senos-colombia/); muchas personas que buscan **levantamiento de senos colombia** en realidad necesitan pexia, implantes o ambos, y esa decisión se define en consulta, no en una galería de fotos.
+Una [mastopexia en Colombia](/es/procedures/breast-lift-reduction/) (levantamiento de senos o pexia mamaria) eleva y remodela senos que perdieron posición después del embarazo, la lactancia, cambios de peso o el paso del tiempo. No busca, por sí solo, aumentar el tamaño. Si lo que quieres es más volumen, el camino suele ser el [aumento de senos](/es/blog/aumento-de-senos-colombia/); muchas personas que buscan **levantamiento de senos colombia** en realidad necesitan pexia, implantes o ambos, y esa decisión se define en consulta, no en una galería de fotos.
 
 Esta guía empieza por la decisión clínica, y luego cubre verificación del cirujano, cicatrices, tiempos de viaje y preguntas útiles para una valoración en Cartagena. Verificar al cirujano y armar el viaje está en [cómo verificar a un cirujano plástico antes de operarte en Colombia](/es/cirugia-plastica-colombia/).
 
