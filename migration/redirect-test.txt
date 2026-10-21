@@ -2259,6 +2259,16 @@ curl -I "https://fulviocorrea.com/en/contact"
 curl -I "https://fulviocorrea.com/contact/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/en/best-plastic-surgeon-colombia/"
+# Expected: 301 Location: /best-plastic-surgeon-colombia/
+curl -I "https://fulviocorrea.com/best-plastic-surgeon-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/best-plastic-surgeon-colombia"
+# Expected: 301 Location: /best-plastic-surgeon-colombia/
+curl -I "https://fulviocorrea.com/best-plastic-surgeon-colombia/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/en/testimonials/"
 # Expected: 301 Location: /testimonials/
 curl -I "https://fulviocorrea.com/testimonials/"

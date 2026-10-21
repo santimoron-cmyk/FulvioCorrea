@@ -135,7 +135,15 @@ export function procedureCostBlock(procedure) {
   const lines = spec.lines ? `<ul class="question-list">${spec.lines.map(id => lineHtml(id, lang)).join('')}</ul>` : '';
   const extra = spec.note ? `<p>${esc(spec.note[lang])}</p>` : '';
   const quoted = spec.quoted ? `<p>${esc(spec.quoted[lang])}</p>` : '';
-  return `<section id="estimated-cost"><h2>${es ? 'Costo estimado' : 'Estimated cost'}</h2>${lines}${extra}${quoted}<p class="note">${esc(disclaimer[lang])}</p><p><a href="${href}">${es ? 'Ver todos los precios de cirugía plástica en Cartagena' : 'See all plastic surgery costs in Cartagena'}</a></p></section>`;
+  const headings = {
+    'tummy-tuck': {en: 'Tummy tuck cost in Colombia', es: 'Precio de la abdominoplastia en Colombia'},
+    'breast-augmentation': {en: 'Breast augmentation cost in Colombia'},
+    'breast-lift-reduction': {es: 'Precio de la mastopexia en Colombia'},
+    facelift: {es: 'Precio del lifting facial en Colombia'},
+    blepharoplasty: {en: 'Eyelid surgery cost in Colombia', es: 'Precio de la blefaroplastia en Colombia'},
+  };
+  const heading = headings[procedure.slug]?.[lang] || (es ? 'Costo estimado' : 'Estimated cost');
+  return `<section id="estimated-cost"><h2>${heading}</h2>${lines}${extra}${quoted}<p class="note">${esc(disclaimer[lang])}</p><p><a href="${href}">${es ? 'Ver todos los precios de cirugía plástica en Cartagena' : 'See all plastic surgery costs in Cartagena'}</a></p></section>`;
 }
 
 export function googleReviewsHtml(lang) {

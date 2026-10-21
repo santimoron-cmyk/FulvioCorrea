@@ -2264,6 +2264,16 @@
       "status": 301
     },
     {
+      "from": "/en/best-plastic-surgeon-colombia/",
+      "to": "/best-plastic-surgeon-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/best-plastic-surgeon-colombia",
+      "to": "/best-plastic-surgeon-colombia/",
+      "status": 301
+    },
+    {
       "from": "/en/testimonials/",
       "to": "/testimonials/",
       "status": 301

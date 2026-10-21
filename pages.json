@@ -46,7 +46,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/procedures/bbl/",
-        "name": "Colombia BBL Doctor in Cartagena",
+        "name": "BBL in Colombia, Cartagena",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -268,7 +268,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/procedures/breast-augmentation/",
-        "name": "Breast Augmentation Cartagena, Colombia",
+        "name": "Breast Augmentation in Colombia: Cost & Recovery",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -392,7 +392,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/procedures/breast-lift-reduction/",
-        "name": "Breast Lift & Reduction in Cartagena",
+        "name": "Breast Lift in Colombia & Breast Reduction",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -766,7 +766,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/procedures/mommy-makeover/",
-        "name": "Mommy Makeover Cartagena: a Quote",
+        "name": "Mommy Makeover in Colombia: Cost & Plan",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -1011,7 +1011,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/procedures/tummy-tuck/",
-        "name": "Tummy Tuck (Abdominoplasty) in Colombia",
+        "name": "Tummy Tuck in Colombia: Cost & Recovery",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -1376,7 +1376,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/es/procedures/bbl/",
-        "name": "Lipotransferencia glútea (BBL) Cartagena",
+        "name": "BBL en Colombia (lipotransferencia glútea) en Cartagena",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -1722,7 +1722,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/es/procedures/breast-lift-reduction/",
-        "name": "Reducción y mastopexia en Cartagena",
+        "name": "Mastopexia (levantamiento de senos) en Colombia: precio",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -1846,7 +1846,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/es/procedures/facelift/",
-        "name": "Lifting facial (ritidoplastia) Cartagena",
+        "name": "Lifting facial en Colombia: precio y recuperación",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -2096,7 +2096,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/es/procedures/mommy-makeover/",
-        "name": "Mommy makeover Cartagena: precio",
+        "name": "Mommy makeover en Colombia: precio y plan",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -2341,7 +2341,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/es/procedures/tummy-tuck/",
-        "name": "Abdominoplastia en Cartagena, Colombia",
+        "name": "Abdominoplastia en Colombia: precio y recuperación",
         "inLanguage": "es",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -2381,10 +2381,10 @@
           },
           {
             "@type": "Question",
-            "name": "¿Cuánto cuesta una abdominoplastia en Cartagena?",
+            "name": "¿Cuánto vale una abdominoplastia en Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Depende de la técnica, el tiempo quirúrgico, la clínica, la anestesia y los controles incluidos. El valor se entrega después de la valoración, con el detalle de lo que incluye."
+              "text": "La lipoabdominoplastia publicada para este consultorio es USD 9.900–12.100 (COP 31.250.000–38.200.000). Una mini abdominoplastia, o una abdominoplastia sin liposucción, se cotiza por caso. Es una estimación orientativa; la cotización real va después de la valoración y no compromete al Dr. a cobrar ese monto ni a operar."
             }
           },
           {
@@ -3526,7 +3526,7 @@
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Rhinoplasty in Colombia: What to Decide Before You Travel",
+        "headline": "What to Decide Before a Nose Job Trip",
         "datePublished": "2026-10-07",
         "dateModified": "2026-10-09",
         "inLanguage": "en",
@@ -3740,7 +3740,7 @@
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Breast Lift Colombia: Lift vs Implants and How to Verify",
+        "headline": "Breast Lift or Implants: How to Decide",
         "datePublished": "2026-10-02",
         "dateModified": "2026-10-19",
         "inLanguage": "en",
@@ -3886,7 +3886,7 @@
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "BBL Colombia: Recovery Time and How Long to Stay",
+        "headline": "How Long to Stay After a BBL",
         "datePublished": "2026-09-23",
         "dateModified": "2026-10-15",
         "inLanguage": "en",
@@ -3993,7 +3993,7 @@
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Breast Augmentation Colombia: How U.S. Patients Verify Surgeons",
+        "headline": "How to Verify a Breast Implant Surgeon",
         "datePublished": "2026-09-23",
         "dateModified": "2026-10-19",
         "inLanguage": "en",
@@ -4139,7 +4139,7 @@
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Tummy Tuck in Colombia: How to Choose",
+        "headline": "How to Choose a Tummy Tuck Surgeon",
         "datePublished": "2026-09-23",
         "dateModified": "2026-10-15",
         "inLanguage": "en",
@@ -5208,7 +5208,7 @@
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Rinoplastia en Colombia: qué decidir antes de viajar",
+        "headline": "Qué decidir antes de viajar para una rinoplastia",
         "datePublished": "2026-10-07",
         "dateModified": "2026-10-09",
         "inLanguage": "es",
@@ -5414,7 +5414,7 @@
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Levantamiento de senos en Colombia: pexia vs implantes",
+        "headline": "Pexia o implantes: cómo decidir",
         "datePublished": "2026-10-02",
         "dateModified": "2026-10-19",
         "inLanguage": "es",
@@ -5466,7 +5466,7 @@
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "BBL en Colombia: recuperación y días de estadía",
+        "headline": "Recuperación del BBL y días de estadía",
         "datePublished": "2026-09-30",
         "dateModified": "2026-10-15",
         "inLanguage": "es",
@@ -5667,7 +5667,7 @@
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Aumento de senos en Colombia: qué verificar antes de viajar",
+        "headline": "Qué verificar antes de un aumento de senos",
         "datePublished": "2026-09-28",
         "dateModified": "2026-10-19",
         "inLanguage": "es",
@@ -5766,7 +5766,7 @@
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Abdominoplastia en Colombia: qué verificar antes de viajar",
+        "headline": "Cómo elegir cirujano para una abdominoplastia",
         "datePublished": "2026-09-25",
         "dateModified": "2026-10-15",
         "inLanguage": "es",
@@ -6915,6 +6915,158 @@
       {
         "lang": "en",
         "route": "/en/contact/"
+      }
+    ]
+  },
+  {
+    "route": "/en/best-plastic-surgeon-colombia/",
+    "file": "dist/en/best-plastic-surgeon-colombia/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-10-21",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is the best plastic surgeon in Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no official ranking. A claim of “the best” without a record you can check is marketing. Verify ReTHUS, SCCP membership, and that the clinic’s surgical service is authorized in REPS. Then have a consultation and ask for a written quote."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I verify a plastic surgeon in the SCCP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the society’s own surgeon directory and, if a profile is claimed, open that profile. Dr. Fulvio Correa’s SCCP profile is public and lists him as Miembro de Número. Membership is something you can confirm. It does not promise a result."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is ReTHUS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ReTHUS is the Colombian Ministry of Health registry of health professionals. Registration is how a person is authorized to practice. Dr. Correa has been registered since 2004, including a specialization in plastic, reconstructive and aesthetic surgery. The registry ID is not published here."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does Dr. Fulvio Correa operate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Surgery is at CAPRI Clinic in Cartagena. Consultations are at the office in CC Ramblas, Manzanillo del Mar. Confirm the address for each visit with the team. CAPRI’s phone is the clinic’s, not the office phone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a long list of procedures mean a better result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The biography states more than 15 years and more than 3,000 procedures. That is experience, not a rank, and it does not predict your result. Suitability is decided at consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I ask for a consultation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can request a virtual or in-person valuation. The consultation fee published by the practice is USD 150 / COP 400,000. The surgical figure that applies to you is the one in the written quote after that visit."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/es/mejor-cirujano-plastico-colombia/",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/best-plastic-surgeon-colombia/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/mejor-cirujano-plastico-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/mejor-cirujano-plastico-colombia/",
+    "file": "dist/es/mejor-cirujano-plastico-colombia/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-10-21",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Quién es el mejor cirujano plástico de Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No hay un ranking oficial. Decir «el mejor» sin un registro que se pueda revisar es mercadeo. Verifica el ReTHUS, la membresía en la SCCP y que el servicio quirúrgico de la clínica esté habilitado en el REPS. Después pide una valoración y una cotización por escrito."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo verifico a un cirujano plástico en la SCCP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usa el directorio de la sociedad y, si se afirma un perfil, ábrelo. El perfil del Dr. Fulvio Correa en la SCCP es público y lo lista como Miembro de Número. La membresía se puede confirmar. No promete un resultado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué es el ReTHUS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es el registro del Ministerio de Salud del talento humano en salud. La inscripción es la forma en que una persona queda autorizada para ejercer. El Dr. Correa está inscrito desde 2004, con especialización en cirugía plástica, reconstructiva y estética. El número de registro no se publica aquí."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde opera el Dr. Fulvio Correa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La cirugía es en la Clínica CAPRI, en Cartagena. La valoración es en el consultorio del CC Ramblas, Manzanillo del Mar. Confirma la dirección de cada cita con el equipo. El teléfono de CAPRI es de la clínica, no del consultorio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Una lista larga de procedimientos significa un mejor resultado?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. La biografía indica más de 15 años y más de 3.000 procedimientos. Eso es experiencia, no un puesto, y no predice tu resultado. La idoneidad se decide en la valoración."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo pido una valoración?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puedes solicitar una valoración virtual o presencial. La tarifa de valoración que publica el consultorio es USD 150 / COP 400.000. La cifra quirúrgica que aplica a tu caso es la de la cotización escrita después de esa visita."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/en/best-plastic-surgeon-colombia/",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/mejor-cirujano-plastico-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/best-plastic-surgeon-colombia/"
       }
     ]
   },

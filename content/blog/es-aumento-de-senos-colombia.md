@@ -1,6 +1,6 @@
 ---
-title: "Aumento de senos en Colombia: qué verificar antes de viajar"
-description: "¿Piensas en un aumento de senos en Colombia? Cómo verificar cirujano y clínica (ReTHUS, SCCP, REPS), la ventana de 5–7 días de la ASPS antes de volar y qué preguntar."
+title: "Qué verificar antes de un aumento de senos"
+description: "Cómo verificar cirujano y clínica (ReTHUS, SCCP, REPS), la ventana de 5–7 días de la ASPS antes de volar y qué preguntar antes de un aumento de senos."
 slug: "aumento-de-senos-colombia"
 lang: "es"
 category: "Breast Surgery"
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-Un **aumento de senos en Colombia** (mamoplastia de aumento) puede planificarse con más claridad si se hacen tres cosas en orden: verificar al cirujano y la institución en los registros oficiales colombianos, confirmar en una valoración que eres candidata y qué técnica corresponde a tu caso, y armar el viaje alrededor de la recuperación, no al revés. Para quien viaja en avión, una cifra que suele cambiar el calendario es esta: la Sociedad Americana de Cirujanos Plásticos (ASPS) sugiere esperar **5–7 días** después de un aumento de senos antes de volar. Las aerolíneas pueden tener reglas propias, así que confírmalas antes de comprar el tiquete.
+Un [aumento de senos en Colombia](/es/procedures/breast-augmentation/) (mamoplastia de aumento) puede planificarse con más claridad si se hacen tres cosas en orden: verificar al cirujano y la institución en los registros oficiales colombianos, confirmar en una valoración que eres candidata y qué técnica corresponde a tu caso, y armar el viaje alrededor de la recuperación, no al revés. Para quien viaja en avión, una cifra que suele cambiar el calendario es esta: la Sociedad Americana de Cirujanos Plásticos (ASPS) sugiere esperar **5–7 días** después de un aumento de senos antes de volar. Las aerolíneas pueden tener reglas propias, así que confírmalas antes de comprar el tiquete.
 
 Lo demás —marca de implante, plano de colocación, cuándo volver al trabajo— se decide con tu cirujano. Esta guía te ayuda a llegar a esa conversación con las preguntas correctas. El panorama de costo, seguridad y estadía está en la guía sobre [qué revisar al elegir cirujano plástico en Colombia](/es/cirugia-plastica-colombia/).
 
