@@ -2665,7 +2665,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-19",
+    "updated": "2026-10-21",
     "schemas": [],
     "alternates": [
       {
@@ -2737,7 +2737,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-19",
+    "updated": "2026-10-21",
     "schemas": [],
     "alternates": [
       {
@@ -2781,6 +2781,113 @@
       {
         "lang": "es",
         "route": "/es/blog/categoria/cirugia-plastica-en-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/liposuction-recovery/",
+    "file": "dist/en/blog/liposuction-recovery/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-21",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Liposuction Recovery Time: A Week-by-Week Timeline",
+        "datePublished": "2026-10-21",
+        "dateModified": "2026-10-21",
+        "inLanguage": "en",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-liposuction-recovery.webp",
+          "https://fulviocorrea.com/assets/blog-liposuction-recovery.avif",
+          "https://fulviocorrea.com/assets/blog-liposuction-recovery-og.webp",
+          "https://fulviocorrea.com/assets/blog-liposuction-recovery-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/liposuction-recovery/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long is liposuction recovery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most people return to light daily activity and desk work within a few days to two weeks (Mayo Clinic, ASPS, The Aesthetic Society). Strenuous exercise usually waits four to six weeks, and the final result takes several months to show as swelling settles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long do you wear a compression garment after liposuction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the surgeon. The Aesthetic Society says four to six weeks, Mayo Clinic says a few weeks, and the NHS says constantly for several weeks. Your surgeon decides the type and duration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I go back to work after lipo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often within a few days for a desk job (Mayo Clinic, The Aesthetic Society). ASPS places the return to work at weeks two to three depending on the job. Physical work takes longer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long after liposuction can I fly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS suggests five to seven days after body procedures such as liposuction. Avianca lists 14 days after liposuction and 15 if it is combined with another body procedure, with a medical certificate issued within 10 days of the flight. Your surgeon's clearance comes first either way."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When will I see the final result of liposuction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic says the area looks less bulky once swelling goes down in a few weeks and slimmer within several months. The NHS says it can take up to six months to settle completely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it normal to feel hard lumps after liposuction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Firm areas are common while swelling resolves, and the SCCP notes that fibrosis often needs specialized massage. Tell your surgeon about any lump that grows, hurts more or feels fluid-filled."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/es/blog/recuperacion-liposuccion/",
+    "cover": "/assets/blog-liposuction-recovery.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/liposuction-recovery/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/recuperacion-liposuccion/"
       }
     ]
   },
@@ -3571,7 +3678,7 @@
             "name": "Can I fly 7 days after liposuction?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "ASPS suggests five to seven days after body procedures such as liposuction, but Avianca lists 14 days after liposuction. If you are flying Avianca from Colombia, plan on at least 14 days and your surgeon's clearance."
+              "text": "ASPS suggests five to seven days after body procedures such as liposuction, but Avianca lists 14 days after liposuction. If you are flying Avianca from Colombia, plan on at least 14 days and your surgeon's clearance. The rest of the timeline, from the garment to exercise, is in liposuction recovery time, week by week."
             }
           },
           {
@@ -4131,7 +4238,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-19",
+    "updated": "2026-10-21",
     "schemas": [],
     "alternates": [
       {
@@ -4203,7 +4310,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-19",
+    "updated": "2026-10-21",
     "schemas": [],
     "alternates": [
       {
@@ -4247,6 +4354,113 @@
       {
         "lang": "en",
         "route": "/en/blog/category/plastic-surgery-in-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/recuperacion-liposuccion/",
+    "file": "dist/es/blog/recuperacion-liposuccion/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-21",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Recuperación de la liposucción: tiempos, faja y viaje",
+        "datePublished": "2026-10-21",
+        "dateModified": "2026-10-21",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-liposuction-recovery.webp",
+          "https://fulviocorrea.com/assets/blog-liposuction-recovery.avif",
+          "https://fulviocorrea.com/assets/blog-liposuction-recovery-og.webp",
+          "https://fulviocorrea.com/assets/blog-liposuction-recovery-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/recuperacion-liposuccion/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura la recuperación de una lipo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MedlinePlus habla de sentirse mejor después de una o dos semanas y de evitar el ejercicio extenuante durante más o menos un mes. La SCCP ubica la vuelta paulatina a la rutina hacia la primera o segunda semana. La hinchazón residual puede durar varios meses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo se usa la faja después de una liposucción?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del cirujano. MedlinePlus habla de varias semanas y The Aesthetic Society de cuatro a seis. Tu cirujano define el tipo de faja, las horas al día y la duración."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo empiezan los masajes después de la lipo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No hay un calendario único: algunos cirujanos los indican desde el día siguiente y otros más tarde o solo si aparecen zonas duras. La SCCP señala que la fibrosis frecuentemente requiere masajes especializados."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días después de una lipo puedo viajar en avión?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La ASPS sugiere de cinco a siete días después de procedimientos corporales como la liposucción. Avianca exige esperar 14 días después de una liposucción y 15 si se combina con otro procedimiento corporal, con un certificado médico expedido como máximo 10 días antes del vuelo. En cualquier caso, primero va la autorización de tu cirujano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo se ve el resultado final de la liposucción?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MedlinePlus dice que la mejoría se nota más entre las semanas 4 y 6, y Mayo Clinic que la zona se ve más delgada al cabo de algunos meses, cuando baja la hinchazón."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es normal sentir partes duras después de la lipo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, es frecuente mientras baja la inflamación, y la SCCP explica que la fibrosis puede necesitar masajes especializados. Avisa a tu cirujano si la zona crece, duele más o se siente con líquido."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/en/blog/liposuction-recovery/",
+    "cover": "/assets/blog-liposuction-recovery.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/recuperacion-liposuccion/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/liposuction-recovery/"
       }
     ]
   },
@@ -5146,7 +5360,7 @@
             "name": "¿Cuántos días después de una lipo puedo viajar en avión?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Avianca lista 14 días después de una liposucción. La guía de la Aerocivil citada en Cirugía Plástica Ibero-Latinoamericana desaconseja volar antes de 7 días, y la ASPS sugiere de cinco a siete. Si vuelas con Avianca desde Colombia, planea al menos 14 días y la autorización de tu cirujano."
+              "text": "Avianca lista 14 días después de una liposucción. La guía de la Aerocivil citada en Cirugía Plástica Ibero-Latinoamericana desaconseja volar antes de 7 días, y la ASPS sugiere de cinco a siete. Si vuelas con Avianca desde Colombia, planea al menos 14 días y la autorización de tu cirujano. El resto del postoperatorio, de la faja al ejercicio, está en recuperación de la liposucción: tiempos, faja y viaje."
             }
           },
           {

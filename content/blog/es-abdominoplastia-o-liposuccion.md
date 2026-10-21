@@ -79,7 +79,7 @@ Las dos usan faja y exigen volver a la actividad de forma progresiva, pero no se
 
 **Abdominoplastia.** La SCCP indica que la cirugía dura en promedio de 2 a 4 horas, generalmente con anestesia general, y que se dejan drenes para evitar que se acumule líquido. El primer día conviene mantener las piernas flexionadas y con apoyo; caminar trechos cortos con frecuencia y respirar profundo ayuda a prevenir complicaciones pulmonares. También es normal sentir dolor al sentarse, porque los músculos del abdomen se contraen. Las actividades cotidianas se retoman poco a poco desde la primera o segunda semana, y el resultado final solo se aprecia pasados unos seis meses.
 
-En ambas, la SCCP pide dejar de fumar al menos dos semanas antes y evitar el sol antes y después de la cirugía, porque favorece la inflamación y la pigmentación de las cicatrices. El calendario exacto lo fija el cirujano según lo que se haga y tu estado de salud. La abdominoplastia, etapa por etapa, está en [recuperación de abdominoplastia semana a semana](/es/blog/recuperacion-abdominoplastia/).
+En ambas, la SCCP pide dejar de fumar al menos dos semanas antes y evitar el sol antes y después de la cirugía, porque favorece la inflamación y la pigmentación de las cicatrices. El calendario exacto lo fija el cirujano según lo que se haga y tu estado de salud. La abdominoplastia, etapa por etapa, está en [recuperación de abdominoplastia semana a semana](/es/blog/recuperacion-abdominoplastia/), y la liposucción en [recuperación de la liposucción: tiempos, faja y viaje](/es/blog/recuperacion-liposuccion/).
 
 ## Si vienes de otra ciudad o del exterior
 

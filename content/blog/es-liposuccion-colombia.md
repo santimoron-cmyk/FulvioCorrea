@@ -16,7 +16,7 @@ draft: false
 originalUrl: ""
 procedure: "liposuction"
 twin: "liposuction-cartagena"
-related: ["bbl-colombia", "abdominoplastia-colombia", "cirugia-plastica-turismo-medico-cartagena-colombia"]
+related: ["bbl-colombia", "abdominoplastia-colombia", "cirugia-plastica-turismo-medico-cartagena-colombia", "recuperacion-liposuccion"]
 reviewed_by: ""
 review_date: ""
 ---
@@ -69,7 +69,7 @@ Prioriza reposo relativo: caminatas cortas según indiquen, hidratación, comida
 
 La inflamación puede durar semanas y el contorno sigue evolucionando. El regreso al trabajo de escritorio y al ejercicio intenso lo define el cirujano caso a caso. No compares tu ritmo con redes sociales: edad, zona tratada, técnica y cuidados cambian la respuesta.
 
-El cuidado de piel, protección solar y terapias complementarias (por ejemplo, masaje linfático si lo recomiendan) deben seguir instrucciones escritas de tu equipo—quién las realiza, cuándo empiezan y cuándo paran. Si vives en otra ciudad o país, pregunta cómo funcionarán controles virtuales y revisión de fotos al volver a casa.
+El cuidado de piel, protección solar y terapias complementarias (por ejemplo, masaje linfático si lo recomiendan) deben seguir instrucciones escritas de tu equipo—quién las realiza, cuándo empiezan y cuándo paran. Si vives en otra ciudad o país, pregunta cómo funcionarán controles virtuales y revisión de fotos al volver a casa. La versión etapa por etapa, con la faja, los masajes y cuántos días esperar antes de volar, está en [recuperación de la liposucción: tiempos, faja y viaje](/es/blog/recuperacion-liposuccion/).
 
 ## Errores frecuentes de planificación
 

@@ -127,7 +127,7 @@ Si quieres armar una estadía realista antes de reservar, escríbele a Sofía. E
 Depende del procedimiento, de tu evolución y de la aerolínea. En Avianca, el mínimo publicado va de 10 días (rinoplastia, inyección de grasa en glúteos) a 15 días (lifting facial o procedimientos combinados), con certificado médico expedido como máximo 10 días antes del vuelo.
 
 **¿Cuántos días después de una lipo puedo viajar en avión?**
-Avianca lista 14 días después de una liposucción. La guía de la Aerocivil citada en *Cirugía Plástica Ibero-Latinoamericana* desaconseja volar antes de 7 días, y la ASPS sugiere de cinco a siete. Si vuelas con Avianca desde Colombia, planea al menos 14 días y la autorización de tu cirujano.
+Avianca lista 14 días después de una liposucción. La guía de la Aerocivil citada en *Cirugía Plástica Ibero-Latinoamericana* desaconseja volar antes de 7 días, y la ASPS sugiere de cinco a siete. Si vuelas con Avianca desde Colombia, planea al menos 14 días y la autorización de tu cirujano. El resto del postoperatorio, de la faja al ejercicio, está en [recuperación de la liposucción: tiempos, faja y viaje](/es/blog/recuperacion-liposuccion/).
 
 **¿Cuándo puedo viajar después de una abdominoplastia?**
 Avianca indica 14 días después de una abdominoplastia, mini abdominoplastia o lipoabdominoplastia, y 15 si se combina con otros procedimientos corporales. Los CDC recomiendan no volar durante 10 días después de una cirugía abdominal.

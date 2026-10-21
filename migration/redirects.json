@@ -934,6 +934,16 @@
       "status": 301
     },
     {
+      "from": "/post/liposuction-recovery",
+      "to": "/blog/liposuction-recovery/",
+      "status": 301
+    },
+    {
+      "from": "/post/liposuction-recovery/",
+      "to": "/blog/liposuction-recovery/",
+      "status": 301
+    },
+    {
       "from": "/post/mommy-makeover-recovery-time",
       "to": "/blog/mommy-makeover-recovery-time/",
       "status": 301
@@ -1131,6 +1141,16 @@
     {
       "from": "/post/recuperacion-aumento-de-senos/",
       "to": "/es/blog/recuperacion-aumento-de-senos/",
+      "status": 301
+    },
+    {
+      "from": "/post/recuperacion-liposuccion",
+      "to": "/es/blog/recuperacion-liposuccion/",
+      "status": 301
+    },
+    {
+      "from": "/post/recuperacion-liposuccion/",
+      "to": "/es/blog/recuperacion-liposuccion/",
       "status": 301
     },
     {
@@ -1981,6 +2001,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/liposuction-recovery/",
+      "to": "/blog/liposuction-recovery/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/liposuction-recovery",
+      "to": "/blog/liposuction-recovery/",
       "status": 301
     },
     {

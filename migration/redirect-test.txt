@@ -929,6 +929,16 @@ curl -I "https://fulviocorrea.com/post/liposuction-cartagena/"
 curl -I "https://fulviocorrea.com/blog/liposuction-cartagena/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/liposuction-recovery"
+# Expected: 301 Location: /blog/liposuction-recovery/
+curl -I "https://fulviocorrea.com/blog/liposuction-recovery/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/liposuction-recovery/"
+# Expected: 301 Location: /blog/liposuction-recovery/
+curl -I "https://fulviocorrea.com/blog/liposuction-recovery/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/mommy-makeover-recovery-time"
 # Expected: 301 Location: /blog/mommy-makeover-recovery-time/
 curl -I "https://fulviocorrea.com/blog/mommy-makeover-recovery-time/"
@@ -1127,6 +1137,16 @@ curl -I "https://fulviocorrea.com/es/blog/recuperacion-aumento-de-senos/"
 curl -I "https://fulviocorrea.com/post/recuperacion-aumento-de-senos/"
 # Expected: 301 Location: /es/blog/recuperacion-aumento-de-senos/
 curl -I "https://fulviocorrea.com/es/blog/recuperacion-aumento-de-senos/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/recuperacion-liposuccion"
+# Expected: 301 Location: /es/blog/recuperacion-liposuccion/
+curl -I "https://fulviocorrea.com/es/blog/recuperacion-liposuccion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/recuperacion-liposuccion/"
+# Expected: 301 Location: /es/blog/recuperacion-liposuccion/
+curl -I "https://fulviocorrea.com/es/blog/recuperacion-liposuccion/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/post/rinoplastia-colombia"
@@ -1977,6 +1997,16 @@ curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
 curl -I "https://fulviocorrea.com/en/blog/category/plastic-surgery-in-colombia"
 # Expected: 301 Location: /blog/category/plastic-surgery-in-colombia/
 curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/liposuction-recovery/"
+# Expected: 301 Location: /blog/liposuction-recovery/
+curl -I "https://fulviocorrea.com/blog/liposuction-recovery/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/liposuction-recovery"
+# Expected: 301 Location: /blog/liposuction-recovery/
+curl -I "https://fulviocorrea.com/blog/liposuction-recovery/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/blog/breast-augmentation-recovery/"
