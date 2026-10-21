@@ -81,7 +81,7 @@ Recovery is where the two operations feel most different, even though both requi
 | Bruising and swelling | ASPS: bruising usually gone by weeks 4 to 5; Mayo Clinic: the area looks slimmer within several months | Swelling settles over months; the SCCP says the final result is visible after about 6 months |
 | What to watch | Fluid pockets (seroma), uneven contour; the SCCP notes firm areas (fibrosis) may need specialized massage | Seroma, wound-healing problems, scar quality; smoking raises the risk of poor healing |
 
-Your own timeline depends on how much is treated and on your health, and it is set by the surgeon who operates. The tummy tuck side is broken down stage by stage in [tummy tuck recovery time](/blog/tummy-tuck-recovery-time/).
+Your own timeline depends on how much is treated and on your health, and it is set by the surgeon who operates. The tummy tuck side is broken down stage by stage in [tummy tuck recovery time](/blog/tummy-tuck-recovery-time/), and the liposuction side in [liposuction recovery time, week by week](/blog/liposuction-recovery/).
 
 ## Does the choice change your trip to Colombia?
 
