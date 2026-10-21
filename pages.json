@@ -148,6 +148,104 @@
     ]
   },
   {
+    "route": "/en/procedures/blepharoplasty/",
+    "file": "dist/en/procedures/blepharoplasty/index.html",
+    "lang": "en",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-10-21",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Blepharoplasty",
+        "description": "Blepharoplasty is eyelid surgery that removes excess skin from the upper lids, the lower lids, or both. Mayo Clinic describes how aging stretches the lids, weakens the muscles that support them, and lets skin and fat gather above and below the eyes. Sagging eyebrows, droopy upper lids, and bags under the eyes are the changes people usually notice.",
+        "url": "https://fulviocorrea.com/procedures/blepharoplasty/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does eyelid surgery cost in Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The published estimate for blepharoplasty with this practice is USD 3,600–4,400 (COP 11,370,000–13,890,000). It is an approximate range from previous cases. The real quote is written after a virtual or in-person consultation and does not commit the doctor to charge that amount or to operate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is blepharoplasty the same as a brow lift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Blepharoplasty treats eyelid skin and, when needed, eyelid fat and muscle. A dropped brow is a different structure. Mayo Clinic notes the operations can be combined. Whether yours should be is decided at evaluation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will eyelid surgery fix my vision?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only in the specific situation Mayo Clinic describes: severely sagging upper-lid skin that reduces the upper and outer visual field. It is not a treatment for refractive errors, and it does not replace an eye exam."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Cartagena after blepharoplasty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The ASPS briefing on cosmetic surgery tourism suggests 7 to 10 days after facial procedures, including eyelid surgery, before flying. This practice confirms the recommended stay after evaluation. Do not treat the briefing as your clearance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When do the bruises fade?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic says bruising and swelling generally lessen in about 10 to 14 days. Scars can take months to fade, and the lids should be protected from the sun while they do."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I wear contact lenses afterward?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic says to leave contacts out for about two weeks and not to rub the eyes. Your own date is the one written in your instructions."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "blepharoplasty",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/procedures/blepharoplasty/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/procedimientos/blefaroplastia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/ads/blepharoplasty/",
+    "file": "dist/en/ads/blepharoplasty/index.html",
+    "lang": "en",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "blepharoplasty",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/ads/blepharoplasty/"
+      }
+    ]
+  },
+  {
     "route": "/en/procedures/breast-augmentation/",
     "file": "dist/en/procedures/breast-augmentation/index.html",
     "lang": "en",
@@ -1376,6 +1474,104 @@
       {
         "lang": "es",
         "route": "/es/ads/bbl/"
+      }
+    ]
+  },
+  {
+    "route": "/es/procedimientos/blefaroplastia/",
+    "file": "dist/es/procedimientos/blefaroplastia/index.html",
+    "lang": "es",
+    "noindex": false,
+    "ads": false,
+    "updated": "2026-10-21",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Blefaroplastia",
+        "description": "La blefaroplastia es la cirugía de párpados que retira el exceso de piel del párpado superior, del inferior o de ambos. Mayo Clinic describe cómo el envejecimiento estira los párpados, debilita los músculos que los sostienen y deja que la piel y la grasa se acumulen por encima y por debajo de los ojos. Lo que suele notarse son cejas caídas, párpados superiores pesados y bolsas.",
+        "url": "https://fulviocorrea.com/es/procedures/blepharoplasty/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta la cirugía de párpados en Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El rango publicado de blefaroplastia en este consultorio es USD 3.600–4.400 (COP 11.370.000–13.890.000). Es una estimación a partir de casos previos. La cotización real se escribe después de la valoración virtual o presencial y no compromete al Dr. a cobrar ese monto ni a operar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La blefaroplastia es lo mismo que un levantamiento de cejas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. La blefaroplastia trata la piel del párpado y, cuando hace falta, la grasa y el músculo del párpado. Una ceja caída es otra estructura. Mayo Clinic indica que las cirugías pueden combinarse. Si la tuya debe combinarse se decide en la valoración."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La cirugía de párpados corrige la visión?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solo en la situación que describe Mayo Clinic: piel del párpado superior tan caída que reduce el campo visual superior y externo. No corrige un defecto de refracción ni reemplaza un examen de los ojos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días debo quedarme en Cartagena después de una blefaroplastia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El documento de la ASPS sobre turismo de cirugía estética sugiere de 7 a 10 días después de procedimientos faciales, incluida la cirugía de párpados, antes de volar. Este consultorio confirma la estadía recomendada después de la valoración. Ese documento no es tu alta."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo bajan los moretones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic indica que los moretones y la hinchazón suelen disminuir en unos 10 a 14 días. Las cicatrices pueden tardar meses en aclarar, y los párpados deben protegerse del sol mientras eso ocurre."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo usar lentes de contacto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mayo Clinic indica unas dos semanas sin lentes de contacto y no frotar los ojos. La fecha que vale es la de tus indicaciones."
+            }
+          }
+        ]
+      }
+    ],
+    "procedure": "blepharoplasty",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/procedimientos/blefaroplastia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/procedures/blepharoplasty/"
+      }
+    ]
+  },
+  {
+    "route": "/es/ads/blepharoplasty/",
+    "file": "dist/es/ads/blepharoplasty/index.html",
+    "lang": "es",
+    "noindex": true,
+    "ads": true,
+    "updated": "2026-09-26",
+    "schemas": [],
+    "procedure": "blepharoplasty",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/ads/blepharoplasty/"
       }
     ]
   },
