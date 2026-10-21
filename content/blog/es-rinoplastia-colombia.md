@@ -1,6 +1,6 @@
 ---
-title: "Rinoplastia en Colombia: qué decidir antes de viajar"
-description: "Rinoplastia en Colombia: cómo verificar al cirujano, qué define la valoración, cuántos días quedarte antes de volar y por qué el sol de Cartagena importa."
+title: "Qué decidir antes de viajar para una rinoplastia"
+description: "Cómo verificar al cirujano, qué define la valoración, cuántos días quedarte antes de volar y por qué el sol de Cartagena importa en una rinoplastia."
 slug: "rinoplastia-colombia"
 lang: "es"
 category: "Plastic Surgery in Colombia"
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-Si estás pensando en una **rinoplastia en Colombia**, la ciudad pesa menos que tres decisiones: quién te va a operar (y cómo lo compruebas), si lo que quieres es posible con tu tipo de nariz y cuántos días te vas a quedar. Para lo último hay un piso claro. Avianca permite viajar 10 días después de una rinoplastia o una septoplastia y exige una constancia médica de aptitud para volar expedida como máximo 10 días antes del vuelo. La Sociedad Americana de Cirujanos Plásticos (ASPS) y los CDC de Estados Unidos hablan de 7 a 10 días después de procedimientos faciales. Tu fecha de regreso es la que llegue más tarde: la de la aerolínea o la del día en que tu cirujano te revise en persona y te autorice.
+Si estás pensando en una [rinoplastia en Colombia](/es/procedures/rhinoplasty/), la ciudad pesa menos que tres decisiones: quién te va a operar (y cómo lo compruebas), si lo que quieres es posible con tu tipo de nariz y cuántos días te vas a quedar. Para lo último hay un piso claro. Avianca permite viajar 10 días después de una rinoplastia o una septoplastia y exige una constancia médica de aptitud para volar expedida como máximo 10 días antes del vuelo. La Sociedad Americana de Cirujanos Plásticos (ASPS) y los CDC de Estados Unidos hablan de 7 a 10 días después de procedimientos faciales. Tu fecha de regreso es la que llegue más tarde: la de la aerolínea o la del día en que tu cirujano te revise en persona y te autorice.
 
 Las reglas del viaje y cómo revisar una clínica antes de comprometerte están en [cómo comprobar a un cirujano plástico en Colombia](/es/cirugia-plastica-colombia/). Hay otra fecha que conviene tener presente desde ya, aunque esté lejos: la nariz sigue afinándose durante cerca de un año. El resultado definitivo de una **cirugía de nariz en Colombia** se juzga en casa, no en Cartagena, así que el seguimiento, y qué pasaría si algún día hiciera falta un retoque, se acuerda antes de comprar el tiquete.
 

@@ -1,6 +1,6 @@
 ---
-title: "BBL en Colombia: recuperación y días de estadía"
-description: "BBL en Colombia: cuánto dura la recuperación de una lipotransferencia glútea, cuántos días quedarse, reglas para sentarse y el piso de Avianca antes de volar."
+title: "Recuperación del BBL y días de estadía"
+description: "Cuánto dura la recuperación de una lipotransferencia glútea, cuántos días quedarse, reglas para sentarse y el piso de Avianca antes de volar."
 slug: "bbl-colombia"
 lang: "es"
 category: "Body Contouring"
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-Quien busca **BBL en Colombia**, **recuperación del BBL** o **lipotransferencia glútea** suele querer dos respuestas a la vez: si el procedimiento se puede planear con criterios de seguridad claros, y cuántos días hace falta quedarse antes de volar. En recuperación, la Sociedad Americana de Cirujanos Plásticos (ASPS) recomienda evitar estar sentada por periodos prolongados unas **dos semanas** tras el injerto de grasa—algunos cirujanos piden más—y Cleveland Clinic describe al menos dos semanas sin sentarse ni acostarse sobre los glúteos. En el vuelo, Avianca lista **10 días** tras inyección de grasa en glúteos, **14** tras liposucción y **15** si se combinan dos o más procedimientos corporales, con certificado médico expedido como máximo 10 días antes del viaje. La autorización la firma tu cirujano después de revisarte.
+Quien busca un [BBL en Colombia](/es/procedures/bbl/), **recuperación del BBL** o **lipotransferencia glútea** suele querer dos respuestas a la vez: si el procedimiento se puede planear con criterios de seguridad claros, y cuántos días hace falta quedarse antes de volar. En recuperación, la Sociedad Americana de Cirujanos Plásticos (ASPS) recomienda evitar estar sentada por periodos prolongados unas **dos semanas** tras el injerto de grasa—algunos cirujanos piden más—y Cleveland Clinic describe al menos dos semanas sin sentarse ni acostarse sobre los glúteos. En el vuelo, Avianca lista **10 días** tras inyección de grasa en glúteos, **14** tras liposucción y **15** si se combinan dos o más procedimientos corporales, con certificado médico expedido como máximo 10 días antes del viaje. La autorización la firma tu cirujano después de revisarte.
 
 ## Primero, la seguridad: dónde va la grasa
 

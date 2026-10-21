@@ -109,6 +109,16 @@ curl -I "https://fulviocorrea.com/plastic-surgery-colombia-cartagena-bbl/"
 curl -I "https://fulviocorrea.com/procedures/bbl/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/plastic-surgery-colombia-cartagena-blepharoplasty"
+# Expected: 301 Location: /procedures/blepharoplasty/
+curl -I "https://fulviocorrea.com/procedures/blepharoplasty/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/plastic-surgery-colombia-cartagena-blepharoplasty/"
+# Expected: 301 Location: /procedures/blepharoplasty/
+curl -I "https://fulviocorrea.com/procedures/blepharoplasty/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/plastic-surgery-colombia-cartagena-breast-augmentation"
 # Expected: 301 Location: /procedures/breast-augmentation/
 curl -I "https://fulviocorrea.com/procedures/breast-augmentation/"
@@ -789,6 +799,46 @@ curl -I "https://fulviocorrea.com/es/mastopexia/"
 curl -I "https://fulviocorrea.com/es/procedimientos/reduccion-y-levantamiento-de-senos/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/blepharoplasty"
+# Expected: 301 Location: /procedures/blepharoplasty/
+curl -I "https://fulviocorrea.com/procedures/blepharoplasty/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/blepharoplasty/"
+# Expected: 301 Location: /procedures/blepharoplasty/
+curl -I "https://fulviocorrea.com/procedures/blepharoplasty/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/eyelid-surgery"
+# Expected: 301 Location: /procedures/blepharoplasty/
+curl -I "https://fulviocorrea.com/procedures/blepharoplasty/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/eyelid-surgery/"
+# Expected: 301 Location: /procedures/blepharoplasty/
+curl -I "https://fulviocorrea.com/procedures/blepharoplasty/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/blefaroplastia"
+# Expected: 301 Location: /es/procedimientos/blefaroplastia/
+curl -I "https://fulviocorrea.com/es/procedimientos/blefaroplastia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/blefaroplastia/"
+# Expected: 301 Location: /es/procedimientos/blefaroplastia/
+curl -I "https://fulviocorrea.com/es/procedimientos/blefaroplastia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/blepharoplasty"
+# Expected: 301 Location: /es/procedimientos/blefaroplastia/
+curl -I "https://fulviocorrea.com/es/procedimientos/blefaroplastia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/blepharoplasty/"
+# Expected: 301 Location: /es/procedimientos/blefaroplastia/
+curl -I "https://fulviocorrea.com/es/procedimientos/blefaroplastia/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/bbl-colombia"
 # Expected: 301 Location: /blog/bbl-colombia/
 curl -I "https://fulviocorrea.com/blog/bbl-colombia/"
@@ -877,6 +927,16 @@ curl -I "https://fulviocorrea.com/blog/liposuction-cartagena/"
 curl -I "https://fulviocorrea.com/post/liposuction-cartagena/"
 # Expected: 301 Location: /blog/liposuction-cartagena/
 curl -I "https://fulviocorrea.com/blog/liposuction-cartagena/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/liposuction-recovery"
+# Expected: 301 Location: /blog/liposuction-recovery/
+curl -I "https://fulviocorrea.com/blog/liposuction-recovery/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/liposuction-recovery/"
+# Expected: 301 Location: /blog/liposuction-recovery/
+curl -I "https://fulviocorrea.com/blog/liposuction-recovery/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/post/mommy-makeover-recovery-time"
@@ -1079,6 +1139,16 @@ curl -I "https://fulviocorrea.com/post/recuperacion-aumento-de-senos/"
 curl -I "https://fulviocorrea.com/es/blog/recuperacion-aumento-de-senos/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/recuperacion-liposuccion"
+# Expected: 301 Location: /es/blog/recuperacion-liposuccion/
+curl -I "https://fulviocorrea.com/es/blog/recuperacion-liposuccion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/recuperacion-liposuccion/"
+# Expected: 301 Location: /es/blog/recuperacion-liposuccion/
+curl -I "https://fulviocorrea.com/es/blog/recuperacion-liposuccion/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/rinoplastia-colombia"
 # Expected: 301 Location: /es/blog/rinoplastia-colombia/
 curl -I "https://fulviocorrea.com/es/blog/rinoplastia-colombia/"
@@ -1217,6 +1287,16 @@ curl -I "https://fulviocorrea.com/es/procedimientos/mommy-makeover/"
 curl -I "https://fulviocorrea.com/es/procedures/mommy-makeover/"
 # Expected: 301 Location: /es/procedimientos/mommy-makeover/
 curl -I "https://fulviocorrea.com/es/procedimientos/mommy-makeover/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/procedures/blepharoplasty"
+# Expected: 301 Location: /es/procedimientos/blefaroplastia/
+curl -I "https://fulviocorrea.com/es/procedimientos/blefaroplastia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/procedures/blepharoplasty/"
+# Expected: 301 Location: /es/procedimientos/blefaroplastia/
+curl -I "https://fulviocorrea.com/es/procedimientos/blefaroplastia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/es/plastic-surgery-colombia"
@@ -1589,6 +1669,26 @@ curl -I "https://fulviocorrea.com/en/ads/bbl"
 curl -I "https://fulviocorrea.com/ads/bbl/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/en/procedures/blepharoplasty/"
+# Expected: 301 Location: /procedures/blepharoplasty/
+curl -I "https://fulviocorrea.com/procedures/blepharoplasty/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/procedures/blepharoplasty"
+# Expected: 301 Location: /procedures/blepharoplasty/
+curl -I "https://fulviocorrea.com/procedures/blepharoplasty/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/ads/blepharoplasty/"
+# Expected: 301 Location: /ads/blepharoplasty/
+curl -I "https://fulviocorrea.com/ads/blepharoplasty/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/ads/blepharoplasty"
+# Expected: 301 Location: /ads/blepharoplasty/
+curl -I "https://fulviocorrea.com/ads/blepharoplasty/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/en/procedures/breast-augmentation/"
 # Expected: 301 Location: /procedures/breast-augmentation/
 curl -I "https://fulviocorrea.com/procedures/breast-augmentation/"
@@ -1899,6 +1999,16 @@ curl -I "https://fulviocorrea.com/en/blog/category/plastic-surgery-in-colombia"
 curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/en/blog/liposuction-recovery/"
+# Expected: 301 Location: /blog/liposuction-recovery/
+curl -I "https://fulviocorrea.com/blog/liposuction-recovery/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/liposuction-recovery"
+# Expected: 301 Location: /blog/liposuction-recovery/
+curl -I "https://fulviocorrea.com/blog/liposuction-recovery/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/en/blog/breast-augmentation-recovery/"
 # Expected: 301 Location: /blog/breast-augmentation-recovery/
 curl -I "https://fulviocorrea.com/blog/breast-augmentation-recovery/"
@@ -2147,6 +2257,16 @@ curl -I "https://fulviocorrea.com/contact/"
 curl -I "https://fulviocorrea.com/en/contact"
 # Expected: 301 Location: /contact/
 curl -I "https://fulviocorrea.com/contact/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/best-plastic-surgeon-colombia/"
+# Expected: 301 Location: /best-plastic-surgeon-colombia/
+curl -I "https://fulviocorrea.com/best-plastic-surgeon-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/best-plastic-surgeon-colombia"
+# Expected: 301 Location: /best-plastic-surgeon-colombia/
+curl -I "https://fulviocorrea.com/best-plastic-surgeon-colombia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/testimonials/"

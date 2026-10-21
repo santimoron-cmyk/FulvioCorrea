@@ -114,6 +114,16 @@
       "status": 301
     },
     {
+      "from": "/plastic-surgery-colombia-cartagena-blepharoplasty",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-colombia-cartagena-blepharoplasty/",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
       "from": "/plastic-surgery-colombia-cartagena-breast-augmentation",
       "to": "/procedures/breast-augmentation/",
       "status": 301
@@ -794,6 +804,46 @@
       "status": 301
     },
     {
+      "from": "/blepharoplasty",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/blepharoplasty/",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/eyelid-surgery",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/eyelid-surgery/",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/es/blefaroplastia",
+      "to": "/es/procedimientos/blefaroplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/blefaroplastia/",
+      "to": "/es/procedimientos/blefaroplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/blepharoplasty",
+      "to": "/es/procedimientos/blefaroplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/blepharoplasty/",
+      "to": "/es/procedimientos/blefaroplastia/",
+      "status": 301
+    },
+    {
       "from": "/post/bbl-colombia",
       "to": "/blog/bbl-colombia/",
       "status": 301
@@ -881,6 +931,16 @@
     {
       "from": "/post/liposuction-cartagena/",
       "to": "/blog/liposuction-cartagena/",
+      "status": 301
+    },
+    {
+      "from": "/post/liposuction-recovery",
+      "to": "/blog/liposuction-recovery/",
+      "status": 301
+    },
+    {
+      "from": "/post/liposuction-recovery/",
+      "to": "/blog/liposuction-recovery/",
       "status": 301
     },
     {
@@ -1084,6 +1144,16 @@
       "status": 301
     },
     {
+      "from": "/post/recuperacion-liposuccion",
+      "to": "/es/blog/recuperacion-liposuccion/",
+      "status": 301
+    },
+    {
+      "from": "/post/recuperacion-liposuccion/",
+      "to": "/es/blog/recuperacion-liposuccion/",
+      "status": 301
+    },
+    {
       "from": "/post/rinoplastia-colombia",
       "to": "/es/blog/rinoplastia-colombia/",
       "status": 301
@@ -1221,6 +1291,16 @@
     {
       "from": "/es/procedures/mommy-makeover/",
       "to": "/es/procedimientos/mommy-makeover/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/blepharoplasty",
+      "to": "/es/procedimientos/blefaroplastia/",
+      "status": 301
+    },
+    {
+      "from": "/es/procedures/blepharoplasty/",
+      "to": "/es/procedimientos/blefaroplastia/",
       "status": 301
     },
     {
@@ -1594,6 +1674,26 @@
       "status": 301
     },
     {
+      "from": "/en/procedures/blepharoplasty/",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/en/procedures/blepharoplasty",
+      "to": "/procedures/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/blepharoplasty/",
+      "to": "/ads/blepharoplasty/",
+      "status": 301
+    },
+    {
+      "from": "/en/ads/blepharoplasty",
+      "to": "/ads/blepharoplasty/",
+      "status": 301
+    },
+    {
       "from": "/en/procedures/breast-augmentation/",
       "to": "/procedures/breast-augmentation/",
       "status": 301
@@ -1904,6 +2004,16 @@
       "status": 301
     },
     {
+      "from": "/en/blog/liposuction-recovery/",
+      "to": "/blog/liposuction-recovery/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/liposuction-recovery",
+      "to": "/blog/liposuction-recovery/",
+      "status": 301
+    },
+    {
       "from": "/en/blog/breast-augmentation-recovery/",
       "to": "/blog/breast-augmentation-recovery/",
       "status": 301
@@ -2151,6 +2261,16 @@
     {
       "from": "/en/contact",
       "to": "/contact/",
+      "status": 301
+    },
+    {
+      "from": "/en/best-plastic-surgeon-colombia/",
+      "to": "/best-plastic-surgeon-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/best-plastic-surgeon-colombia",
+      "to": "/best-plastic-surgeon-colombia/",
       "status": 301
     },
     {

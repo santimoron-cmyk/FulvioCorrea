@@ -116,7 +116,7 @@ If you want help mapping a realistic stay before you book anything, message Sof√
 It depends on the procedure, your recovery, and the airline. On Avianca, the published minimum ranges from 10 days (rhinoplasty, buttock fat injection) to 15 days (facelift or combined procedures), with a medical certificate issued within 10 days of the flight. Your surgeon may ask you to wait longer.
 
 **Can I fly 7 days after liposuction?**
-ASPS suggests five to seven days after body procedures such as liposuction, but Avianca lists 14 days after liposuction. If you are flying Avianca from Colombia, plan on at least 14 days and your surgeon's clearance.
+ASPS suggests five to seven days after body procedures such as liposuction, but Avianca lists 14 days after liposuction. If you are flying Avianca from Colombia, plan on at least 14 days and your surgeon's clearance. The rest of the timeline, from the garment to exercise, is in [liposuction recovery time, week by week](/blog/liposuction-recovery/).
 
 **How long after a BBL can I fly?**
 Avianca lists 10 days after buttock fat injection and 14 days after liposuction. Because a BBL normally includes liposuction to harvest the fat, and plans combining two or more body procedures fall under Avianca's 15-day line, ask your team which category your certificate will describe. Also ask how you should sit during the flight; that guidance is individual.

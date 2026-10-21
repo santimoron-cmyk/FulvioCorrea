@@ -1,6 +1,6 @@
 ---
-title: "BBL Colombia: Recovery Time and How Long to Stay"
-description: "BBL Colombia for U.S. patients: ASPS sitting guidance, Avianca flight floors, how long to stay after a BBL, and safety questions to settle before you book."
+title: "How Long to Stay After a BBL"
+description: "How long to stay after a BBL: ASPS sitting guidance, Avianca flight floors, and safety questions to settle before you book a trip to Cartagena."
 slug: "bbl-colombia"
 lang: "en"
 category: "Body Contouring"
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**BBL Colombia** searches usually mix two decisions: whether gluteal fat grafting abroad can be planned safely, and how long recovery and a Cartagena stay actually take. On the recovery side, the American Society of Plastic Surgeons (ASPS) advises avoiding prolonged sitting for about **two weeks** after fat grafting—some surgeons prefer longer—and Cleveland Clinic describes no sitting or lying on the buttocks for at least two weeks, with a specialized pillow often used for weeks after that. On the flight side, Avianca lists **10 days** after buttock fat injection, **14 days** after liposuction, and **15 days** when two or more body procedures are combined, plus a medical certificate issued within 10 days of travel. Your surgeon’s clearance still comes first.
+A [BBL in Colombia](/en/procedures/bbl/) search usually mixes two decisions: whether gluteal fat grafting abroad can be planned safely, and how long recovery and a Cartagena stay actually take. On the recovery side, the American Society of Plastic Surgeons (ASPS) advises avoiding prolonged sitting for about **two weeks** after fat grafting—some surgeons prefer longer—and Cleveland Clinic describes no sitting or lying on the buttocks for at least two weeks, with a specialized pillow often used for weeks after that. On the flight side, Avianca lists **10 days** after buttock fat injection, **14 days** after liposuction, and **15 days** when two or more body procedures are combined, plus a medical certificate issued within 10 days of travel. Your surgeon’s clearance still comes first.
 
 ## How long does BBL recovery take?
 

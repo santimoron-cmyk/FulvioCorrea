@@ -10,6 +10,7 @@ export const procedureEs = {
   rhinoplasty: 'rinoplastia',
   facelift: 'lifting-facial',
   bbl: 'aumento-de-gluteos',
+  blepharoplasty: 'blefaroplastia',
 };
 
 export const categoryEs = {

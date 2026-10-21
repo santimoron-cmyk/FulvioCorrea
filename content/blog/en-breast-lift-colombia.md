@@ -1,6 +1,6 @@
 ---
-title: "Breast Lift Colombia: Lift vs Implants and How to Verify"
-description: "Considering a breast lift in Colombia? Learn lift vs augmentation, scar patterns, SCCP verification, Cartagena travel, and Avianca’s 14-day rule after breast pexy."
+title: "Breast Lift or Implants: How to Decide"
+description: "Lift or implants: how to decide, scar patterns, how to verify a surgeon, Cartagena travel, and Avianca’s 14-day rule after breast pexy."
 slug: "breast-lift-colombia"
 lang: "en"
 category: "Breast Surgery"
@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-A **breast lift in Colombia** (mastopexy) raises and reshapes breasts that have lost position after pregnancy, breastfeeding, weight change, or aging. It does not mainly add volume. If your goal is more size, [breast augmentation](/en/blog/breast-augmentation-colombia/) is the closer match; many travelers researching **breast lift colombia** actually need a lift, implants, or both, and that call belongs in consultation, not in a photo gallery.
+A [breast lift in Colombia](/en/procedures/breast-lift-reduction/) (mastopexy) raises and reshapes breasts that have lost position after pregnancy, breastfeeding, weight change, or aging. It does not mainly add volume. If your goal is more size, [breast augmentation](/en/blog/breast-augmentation-colombia/) is the closer match; many travelers researching **breast lift colombia** actually need a lift, implants, or both, and that call belongs in consultation, not in a photo gallery.
 
 This guide answers the decision first, then covers verification, scars, travel timing, and questions worth bringing to a Cartagena consult. Verifying the surgeon and planning the trip are covered in [choosing a plastic surgeon in Colombia](/plastic-surgery-colombia/).
 
