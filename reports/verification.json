@@ -1,14 +1,14 @@
 {
   "mode": "production",
-  "pages": 131,
+  "pages": 135,
   "bytes": 64000,
   "errors": [],
   "warnings": [
-    "/en/procedures/: 149 words (<600; content required before launch).",
+    "/en/procedures/: 153 words (<600; content required before launch).",
     "/en/resources/: 67 words (<600; content required before launch).",
     "/en/resources/your-consultation/: 132 words (<600; content required before launch).",
     "/en/faq/: 136 words (<600; content required before launch).",
-    "/es/procedimientos/: 148 words (<600; content required before launch).",
+    "/es/procedimientos/: 152 words (<600; content required before launch).",
     "/es/recursos/: 76 words (<600; content required before launch).",
     "/es/recursos/tu-valoracion/: 118 words (<600; content required before launch).",
     "/es/preguntas-frecuentes/: 133 words (<600; content required before launch).",

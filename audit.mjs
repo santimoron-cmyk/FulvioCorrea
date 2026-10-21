@@ -104,6 +104,10 @@ Object.assign(redirects,{
   '/es/breast-lift':'/es/procedures/breast-lift-reduction/',
   '/es/breast-reduction':'/es/procedures/breast-lift-reduction/',
   '/es/mastopexia':'/es/procedures/breast-lift-reduction/',
+  '/blepharoplasty':'/procedures/blepharoplasty/',
+  '/eyelid-surgery':'/procedures/blepharoplasty/',
+  '/es/blefaroplastia':'/es/procedures/blepharoplasty/',
+  '/es/blepharoplasty':'/es/procedures/blepharoplasty/',
 });
 // Same slug in both languages (bbl-colombia) must not retarget the legacy NinjaSuite
 // /post/ URL. English keeps the existing redirect; a new Spanish slug still gets one.
