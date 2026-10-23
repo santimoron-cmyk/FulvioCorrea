@@ -1,6 +1,8 @@
 ---
 title: "Cuántos días esperar para volar, por cirugía"
 description: "Aumento de senos: volar a los 5–7 días (ASPS). Avianca: 10 días tras rinoplastia; 14 en lipo o abdominoplastia; 15 si se combinan."
+seoTitle: "¿Cuándo puedo volar después de una cirugía plástica?"
+seoDescription: "Cuántos días esperar para volar según tu cirugía: senos 5–7 (ASPS); rinoplastia 10, lipo o abdominoplastia 14 y 15 si se combinan (Avianca)."
 slug: "viajar-en-avion-despues-de-cirugia-plastica"
 lang: "es"
 category: "Recovery"
