@@ -92,7 +92,7 @@ La ASPS pide buscar atención médica de inmediato ante **falta de aire, dolor e
 
 ## ¿Qué alarga la recuperación?
 
-**La extensión de la cirugía.** Mayo Clinic indica que el riesgo de complicaciones aumenta cuando se trabaja sobre superficies más grandes del cuerpo o se hacen varios procedimientos en la misma operación. No se recupera igual una zona pequeña que el abdomen, la cintura y la espalda completos, lo que muchos anuncios llaman "lipo 360".
+**La extensión de la cirugía.** Mayo Clinic indica que el riesgo de complicaciones aumenta cuando se trabaja sobre superficies más grandes del cuerpo o se hacen varios procedimientos en la misma operación. No se recupera igual una zona pequeña que el abdomen, la cintura y la espalda completos, lo que muchos anuncios llaman "lipo 360". Lo que cuesta una lipo 360 y qué servicios debe detallar la cotización está en [lipo 360 en Colombia: precio y qué incluye](/es/blog/lipo-360-precio-colombia/).
 
 **Lo que se combine.** Si la grasa se pasa a los glúteos, la recuperación suma las reglas de la lipotransferencia; están en [BBL en Colombia: recuperación y cuántos días quedarse](/es/blog/bbl-colombia/). Si además sobra piel o hay diástasis, la comparación de [abdominoplastia o liposucción](/es/blog/abdominoplastia-o-liposuccion/) explica por qué el postoperatorio cambia tanto.
 

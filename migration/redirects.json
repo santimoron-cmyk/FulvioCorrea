@@ -924,6 +924,16 @@
       "status": 301
     },
     {
+      "from": "/post/lipo-360-colombia-cost",
+      "to": "/blog/lipo-360-colombia-cost/",
+      "status": 301
+    },
+    {
+      "from": "/post/lipo-360-colombia-cost/",
+      "to": "/blog/lipo-360-colombia-cost/",
+      "status": 301
+    },
+    {
       "from": "/post/liposuction-cartagena",
       "to": "/blog/liposuction-cartagena/",
       "status": 301
@@ -1101,6 +1111,16 @@
     {
       "from": "/post/lifting-facial-colombia/",
       "to": "/es/blog/lifting-facial-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/lipo-360-precio-colombia",
+      "to": "/es/blog/lipo-360-precio-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/lipo-360-precio-colombia/",
+      "to": "/es/blog/lipo-360-precio-colombia/",
       "status": 301
     },
     {
@@ -2001,6 +2021,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/lipo-360-colombia-cost/",
+      "to": "/blog/lipo-360-colombia-cost/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/lipo-360-colombia-cost",
+      "to": "/blog/lipo-360-colombia-cost/",
       "status": 301
     },
     {

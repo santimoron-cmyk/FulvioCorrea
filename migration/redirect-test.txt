@@ -919,6 +919,16 @@ curl -I "https://fulviocorrea.com/post/how-long-to-stay-after-mommy-makeover/"
 curl -I "https://fulviocorrea.com/blog/how-long-to-stay-after-mommy-makeover/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/lipo-360-colombia-cost"
+# Expected: 301 Location: /blog/lipo-360-colombia-cost/
+curl -I "https://fulviocorrea.com/blog/lipo-360-colombia-cost/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/lipo-360-colombia-cost/"
+# Expected: 301 Location: /blog/lipo-360-colombia-cost/
+curl -I "https://fulviocorrea.com/blog/lipo-360-colombia-cost/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/liposuction-cartagena"
 # Expected: 301 Location: /blog/liposuction-cartagena/
 curl -I "https://fulviocorrea.com/blog/liposuction-cartagena/"
@@ -1097,6 +1107,16 @@ curl -I "https://fulviocorrea.com/es/blog/lifting-facial-colombia/"
 curl -I "https://fulviocorrea.com/post/lifting-facial-colombia/"
 # Expected: 301 Location: /es/blog/lifting-facial-colombia/
 curl -I "https://fulviocorrea.com/es/blog/lifting-facial-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/lipo-360-precio-colombia"
+# Expected: 301 Location: /es/blog/lipo-360-precio-colombia/
+curl -I "https://fulviocorrea.com/es/blog/lipo-360-precio-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/lipo-360-precio-colombia/"
+# Expected: 301 Location: /es/blog/lipo-360-precio-colombia/
+curl -I "https://fulviocorrea.com/es/blog/lipo-360-precio-colombia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/post/liposuccion-colombia"
@@ -1997,6 +2017,16 @@ curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
 curl -I "https://fulviocorrea.com/en/blog/category/plastic-surgery-in-colombia"
 # Expected: 301 Location: /blog/category/plastic-surgery-in-colombia/
 curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/lipo-360-colombia-cost/"
+# Expected: 301 Location: /blog/lipo-360-colombia-cost/
+curl -I "https://fulviocorrea.com/blog/lipo-360-colombia-cost/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/lipo-360-colombia-cost"
+# Expected: 301 Location: /blog/lipo-360-colombia-cost/
+curl -I "https://fulviocorrea.com/blog/lipo-360-colombia-cost/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/blog/liposuction-recovery/"

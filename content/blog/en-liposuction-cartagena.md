@@ -31,6 +31,8 @@ In consultation, the surgeon assesses fat distribution, skin quality, medical hi
 
 If loose skin or a post-pregnancy bulge is part of the picture, read [tummy tuck vs liposuction: which one do you need?](/blog/tummy-tuck-vs-liposuction/) before you plan the trip.
 
+If you are pricing abdomen, waist and back in one session, [lipo 360 in Colombia: cost and what the price includes](/blog/lipo-360-colombia-cost/) shows the published range and what a written quote should itemize.
+
 Patient-education pages from the American Society of Plastic Surgeons (ASPS) describe liposuction as a body-contouring procedure with a recovery that varies by treated areas and technique; swelling and gradual contour change are expected parts of healing, not signs that “nothing happened.” Use those general references as orientation—your surgeon sets your personal plan.
 
 ## Why Colombia—and why Cartagena shows up in the search
