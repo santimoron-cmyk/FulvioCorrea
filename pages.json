@@ -2665,7 +2665,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-21",
+    "updated": "2026-10-23",
     "schemas": [],
     "alternates": [
       {
@@ -2718,7 +2718,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-23",
     "schemas": [],
     "alternates": [
       {
@@ -2781,6 +2781,113 @@
       {
         "lang": "es",
         "route": "/es/blog/categoria/cirugia-plastica-en-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/lipo-360-colombia-cost/",
+    "file": "dist/en/blog/lipo-360-colombia-cost/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-23",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Lipo 360 in Colombia: Cost and What the Price Includes",
+        "datePublished": "2026-10-23",
+        "dateModified": "2026-10-23",
+        "inLanguage": "en",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-lipo-360-colombia-cost.webp",
+          "https://fulviocorrea.com/assets/blog-lipo-360-colombia-cost.avif",
+          "https://fulviocorrea.com/assets/blog-lipo-360-colombia-cost-og.webp",
+          "https://fulviocorrea.com/assets/blog-lipo-360-colombia-cost-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/lipo-360-colombia-cost/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does lipo 360 cost in Colombia with Dr. Fulvio Correa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HD liposculpture (Liposurg) has a published estimate of USD 6,300–7,700 (COP 19.890.000–24.310.000 at the TRM of 20 October 2026). A conventional lipo 360 that is not HD liposculpture is quoted per case after the consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does it cost to add arms or legs to a lipo 360?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Arm liposuction and leg liposuction added to a liposuction each have an estimate of USD 675–825 (COP 2.140.000–2.610.000)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much is lipo 360 with a BBL in Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no published range. Once fat is transferred to the buttocks, the plan is a Brazilian butt lift, and it is quoted per case after the consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the lipo 360 price include anesthesia and the clinic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The published ranges do not state that anesthesia, the facility, tests, the garment or medication are included. Your written quote is where each of those services is named."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the consultation free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The consultation is USD 150 / COP 400,000. It is not a surgery price."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long do I need to stay in Colombia after lipo 360?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS suggests at least five to seven days after liposuction before flying; Avianca lists 14 days, or 15 for combined body procedures. Your surgeon sets the date at your follow-up visit, so budget lodging with a few days of margin."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/es/blog/lipo-360-precio-colombia/",
+    "cover": "/assets/blog-lipo-360-colombia-cost.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/lipo-360-colombia-cost/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/lipo-360-precio-colombia/"
       }
     ]
   },
@@ -4238,7 +4345,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-21",
+    "updated": "2026-10-23",
     "schemas": [],
     "alternates": [
       {
@@ -4291,7 +4398,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-16",
+    "updated": "2026-10-23",
     "schemas": [],
     "alternates": [
       {
@@ -4354,6 +4461,113 @@
       {
         "lang": "en",
         "route": "/en/blog/category/plastic-surgery-in-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/lipo-360-precio-colombia/",
+    "file": "dist/es/blog/lipo-360-precio-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-23",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Lipo 360 en Colombia: precio y qué incluye",
+        "datePublished": "2026-10-23",
+        "dateModified": "2026-10-23",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-lipo-360-colombia-cost.webp",
+          "https://fulviocorrea.com/assets/blog-lipo-360-colombia-cost.avif",
+          "https://fulviocorrea.com/assets/blog-lipo-360-colombia-cost-og.webp",
+          "https://fulviocorrea.com/assets/blog-lipo-360-colombia-cost-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/lipo-360-precio-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta la lipo 360 en Colombia con el Dr. Fulvio Correa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La lipoescultura HD Liposurg tiene un rango estimado publicado de USD 6,300–7,700 (COP 19.890.000–24.310.000 con la TRM del 20 de octubre de 2026). La lipo 360 convencional, que no es lipoescultura HD, se cotiza por caso después de la valoración."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta sumar brazos o piernas a la lipo 360?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La lipo de brazos y la lipo de piernas, como adicional a una liposucción, tienen cada una un rango estimado de USD 675–825 (COP 2.140.000–2.610.000)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta la lipo 360 con transferencia a glúteos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No tiene rango publicado. Cuando la grasa se transfiere a los glúteos, el plan es un BBL y se cotiza por caso después de la valoración."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El precio de la lipo 360 incluye la anestesia y la clínica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los rangos publicados no afirman que estén incluidos la anestesia, la clínica, los exámenes, la faja ni los medicamentos. Esos servicios se nombran uno por uno en tu cotización escrita."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La valoración es gratis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. La valoración cuesta USD 150 / COP 400.000. No es un precio de cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días debo quedarme en Colombia después de una lipo 360?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La ASPS sugiere al menos de cinco a siete días después de una liposucción antes de volar; Avianca indica 14 días, o 15 si se combinan procedimientos corporales. Tu cirujano fija la fecha en el control, así que presupuesta el alojamiento con unos días de margen."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/en/blog/lipo-360-colombia-cost/",
+    "cover": "/assets/blog-lipo-360-colombia-cost.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/lipo-360-precio-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/lipo-360-colombia-cost/"
       }
     ]
   },
