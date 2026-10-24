@@ -191,6 +191,36 @@ assert.match(fs.readFileSync('dist/procedures/tummy-tuck/index.html', 'utf8'), /
 assert.match(fs.readFileSync('dist/404.html', 'utf8'), /href="\/"/);
 assert.doesNotMatch(fs.readFileSync('dist/404.html', 'utf8'), /href="\/en/);
 
+function jsonLd(html) {
+  return [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].flatMap(m => JSON.parse(m[1]));
+}
+const capriEn = fs.readFileSync('dist/capri-clinic/index.html', 'utf8');
+const capriEs = fs.readFileSync('dist/es/clinica-capri/index.html', 'utf8');
+const enWeb = jsonLd(capriEn).find(s => s['@type'] === 'WebPage');
+const esWeb = jsonLd(capriEs).find(s => s['@type'] === 'WebPage');
+assert.equal(enWeb.url, origin + '/capri-clinic/');
+assert.equal(enWeb['@id'], origin + '/capri-clinic/#webpage');
+assert.equal(esWeb.url, origin + '/es/clinica-capri/');
+assert.equal(esWeb['@id'], origin + '/es/clinica-capri/#webpage');
+assert.match(capriEn, new RegExp('rel="canonical" href="' + origin + '/capri-clinic/"'));
+assert.match(capriEn, new RegExp('hreflang="en" href="' + origin + '/capri-clinic/"'));
+assert.match(capriEn, new RegExp('hreflang="es" href="' + origin + '/es/clinica-capri/"'));
+assert.match(capriEn, new RegExp('hreflang="x-default" href="' + origin + '/capri-clinic/"'));
+assert.match(capriEs, new RegExp('rel="canonical" href="' + origin + '/es/clinica-capri/"'));
+assert.match(capriEs, new RegExp('hreflang="en" href="' + origin + '/capri-clinic/"'));
+assert.match(capriEs, new RegExp('hreflang="es" href="' + origin + '/es/clinica-capri/"'));
+assert.match(capriEs, new RegExp('hreflang="x-default" href="' + origin + '/capri-clinic/"'));
+const pagesJson = JSON.parse(fs.readFileSync('pages.json', 'utf8'));
+const storedEn = pagesJson.find(p => p.route === '/en/capri-clinic/').schemas.find(s => s['@type'] === 'WebPage');
+const storedEs = pagesJson.find(p => p.route === '/es/clinica-capri/').schemas.find(s => s['@type'] === 'WebPage');
+assert.equal(storedEn.url, origin + '/capri-clinic/');
+assert.equal(storedEn['@id'], origin + '/capri-clinic/#webpage');
+assert.equal(storedEs.url, origin + '/es/clinica-capri/');
+assert.equal(storedEs['@id'], origin + '/es/clinica-capri/#webpage');
+assert.equal(JSON.stringify(pagesJson).includes('/es/capri-clinic'), false);
+assert.equal(capriEn.includes('/es/capri-clinic'), false);
+assert.equal(capriEs.includes('/es/capri-clinic'), false);
+
 const samples = ['/', '/about/', '/procedures/bbl/', '/blog/', '/book-consultation/', '/es/', '/es/contacto/', '/en/', '/en/about/', '/en/procedures/bbl/', '/en/blog/', '/en/404/', '/plastic-surgery-colombia-cartagena-evaluation-agenda', '/plastic-surgery-colombia-cartagena-evaluation-agenda/', '/mammoplasty-es', '/mammoplasty-es/', '/facelift-es', '/facelift-es/', '/draft-home-es', '/draft-home-es/', '/home-plastic-surgery-colombia-cartagena-es', '/home-plastic-surgery-colombia-cartagena-es/', '/draft-travel-es', '/draft-travel-es/', '/privacy-policy', '/polticas-de-privacidad-1485', '/trminos-y-condiciones-1', '/liposuction-es', '/mommy-makeover-es', '/rhinoplasty-es', '/staff-es', '/travel-es', '/plastic-surgery-colombia-cartagena-evaluation-agenda-es', '/appointment-scheduled', '/appointment-scheduled-es', '/tummy-tuck-gracias', '/lander', '/es-gracias-7148-6046', '/evaluacin-gratis-por-fotos-2729-9735-3835', '/mmthankyoupage-3410-1108-9453', '/gracias/', '/es/gracias/'];
 for (const sample of samples) {
   const result = status(sample, rules);
