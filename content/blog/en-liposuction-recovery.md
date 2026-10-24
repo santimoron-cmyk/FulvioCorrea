@@ -54,7 +54,7 @@ The milestones below come from patient guidance published by ASPS, The Aesthetic
 
 ## What makes liposuction recovery longer or shorter?
 
-**How much is treated.** One small area and a full midsection are different recoveries. Mayo Clinic says the risk of complications rises when the surgeon works on larger body surfaces or does several procedures in the same operation, and large-volume liposuction can shift enough fluid to affect the kidneys, heart and lungs. Circumferential liposuction of the abdomen, waist and back, often marketed as "lipo 360," sits at the larger end of that range.
+**How much is treated.** One small area and a full midsection are different recoveries. Mayo Clinic says the risk of complications rises when the surgeon works on larger body surfaces or does several procedures in the same operation, and large-volume liposuction can shift enough fluid to affect the kidneys, heart and lungs. Circumferential liposuction of the abdomen, waist and back, often marketed as "lipo 360," sits at the larger end of that range. What a lipo 360 costs, and which services a quote should list, is in [lipo 360 in Colombia: cost and what the price includes](/blog/lipo-360-colombia-cost/).
 
 **What else is done in the same operation.** A BBL adds fat grafting to the buttocks, with its own sitting and safety rules; those are covered in [BBL Colombia: recovery time and how long to stay](/blog/bbl-colombia/). If loose skin or the abdominal wall is part of the problem, the comparison in [tummy tuck vs liposuction](/blog/tummy-tuck-vs-liposuction/) explains why the recovery is very different.
 

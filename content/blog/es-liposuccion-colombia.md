@@ -31,6 +31,8 @@ En la valoración, el cirujano evalúa distribución de grasa, calidad de piel, 
 
 Si además hay piel flácida o el abdomen quedó abombado después de un embarazo, lee [¿abdominoplastia o liposucción? Cómo saber cuál necesitas](/es/blog/abdominoplastia-o-liposuccion/) antes de planear el viaje.
 
+Si estás cotizando abdomen, cintura y espalda en una sola cirugía, [lipo 360 en Colombia: precio y qué incluye](/es/blog/lipo-360-precio-colombia/) muestra el rango publicado y lo que debe detallar una cotización escrita.
+
 ## Por qué Colombia—y por qué Cartagena aparece tanto en la búsqueda
 
 Colombia concentra oferta de cirugía plástica y pacientes internacionales; Cartagena suma aeropuerto internacional, alojamiento servido y equipos acostumbrados al turismo médico. Para quien viaja, la logística pesa tanto como la técnica: vuelos, alojamiento cercano, acompañante y un calendario que permita reposo real.
