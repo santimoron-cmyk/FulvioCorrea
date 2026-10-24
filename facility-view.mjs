@@ -1,4 +1,5 @@
 import {esc} from './editorial.mjs';
+import {localizePath} from './routes.mjs';
 // CAPRI surgical clinic (data/facility.json). Phone and hours are the clinic's, not Dr. Correa's office line.
 export function clinicNode(data,origin){
  const address=data.address?{'@type':'PostalAddress',...data.address}:{'@type':'PostalAddress',addressLocality:data.city,addressCountry:data.country};
@@ -10,7 +11,7 @@ export function clinicContact(lang,data){
  return `<p><a href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(lines.join(', '))}" target="_blank" rel="noopener">${lines.map(esc).join('<br>')}</a></p>${data.telephone?`<p>${es?'Teléfono de la clínica':'Clinic phone'}: <a href="tel:${esc(data.telephone)}">${esc(data.telephoneDisplay||data.telephone)}</a></p>`:''}${data.openingHoursText?.[lang]?`<p>${es?'Horario de la clínica':'Clinic hours'}: ${esc(data.openingHoursText[lang])}</p>`:''}`;
 }
 export function facilityView(lang,data,practice,origin){
- const c=data[lang],es=lang==='es',url=origin+`/${lang}/capri-clinic/`,clinicId=origin+'/#capri-clinic';
+ const c=data[lang],es=lang==='es',url=origin+localizePath(`/${lang}/capri-clinic/`),clinicId=origin+'/#capri-clinic';
  const cta=id=>`<button type="button" class="button" data-cta="${id}" data-open-contact aria-haspopup="dialog" aria-controls="contact-dialog">${esc(c.cta)}</button>`;
  const body=`<section class="page-hero wrap" data-surface="charcoal"><p class="eyebrow">${esc(c.eyebrow)}</p><h1>${c.heading}</h1><p class="lead">${esc(c.intro)}</p>${cta('capri-hero')}</section>
  <section class="section" data-surface="black"><div class="wrap result-philosophy-grid"><div><p class="eyebrow">CAPRI / CARTAGENA</p><h2>${esc(c.settingTitle)}</h2></div><p>${esc(c.settingText)}</p></div></section>
