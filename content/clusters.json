@@ -1,7 +1,8 @@
 {
   "en": {
     "bbl": [
-      "bbl-colombia"
+      "bbl-colombia",
+      "bbl-colombia-cost"
     ],
     "breast-augmentation": [
       "breast-augmentation-colombia",
@@ -51,7 +52,8 @@
       "recuperacion-abdominoplastia"
     ],
     "bbl": [
-      "bbl-colombia"
+      "bbl-colombia",
+      "bbl-precio-colombia"
     ],
     "mommy-makeover": [
       "tiempo-recuperacion-mommy-makeover",

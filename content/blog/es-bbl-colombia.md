@@ -38,6 +38,8 @@ La ASPS lista entre los riesgos del aumento de glúteos sangrado, infección, ne
 
 Para el procedimiento—candidatura, técnica y preguntas frecuentes—lee [aumento glúteo con grasa (BBL) en Cartagena](/es/procedimientos/aumento-de-gluteos/). El contorno de zonas donantes suele cruzarse con la guía de [liposucción en Colombia](/es/blog/liposuccion-colombia/) y, si también hay piel abdominal sobrante, con la de [abdominoplastia en Colombia](/es/blog/abdominoplastia-colombia/).
 
+Si estás armando el presupuesto del viaje, [cuánto cuesta un BBL en Colombia](/es/blog/bbl-precio-colombia/) explica por qué la cirugía se cotiza por caso y qué debe detallar una cotización escrita.
+
 ## ¿Cuántos días quedarse en Colombia después de un BBL?
 
 No hay una sola reserva de hotel válida para todas. Arma el calendario con tres pisos y deja margen:

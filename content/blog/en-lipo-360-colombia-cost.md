@@ -82,7 +82,7 @@ Adding a few nights of margin is cheaper than changing a flight because clearanc
 
 ## Lipo 360 with a BBL: why it is quoted separately
 
-Many people searching "lipo 360 with BBL cost" are pricing two things at once: removing fat from the midsection and transferring part of it to the buttocks and hips. Once fat is grafted, the plan is a Brazilian butt lift, with its own technique, sitting rules and safety precautions, and it is quoted per case. The safety questions and the stay are covered in [BBL Colombia: recovery time and how long to stay](/blog/bbl-colombia/), and the procedure itself on the [Brazilian butt lift page](/procedures/bbl/).
+Many people searching "lipo 360 with BBL cost" are pricing two things at once: removing fat from the midsection and transferring part of it to the buttocks and hips. Once fat is grafted, the plan is a Brazilian butt lift, with its own technique, sitting rules and safety precautions, and it is quoted per case. The safety questions and the stay are covered in [BBL Colombia: recovery time and how long to stay](/blog/bbl-colombia/), and the procedure itself on the [Brazilian butt lift page](/procedures/bbl/). What a BBL quote should itemize is in [how much is a BBL in Colombia?](/blog/bbl-colombia-cost/).
 
 ## How to compare lipo 360 quotes from different clinics
 

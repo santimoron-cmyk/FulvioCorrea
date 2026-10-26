@@ -106,6 +106,8 @@ ASPS lists risks of buttock enhancement that include bleeding, infection, fat ne
 
 For the procedure itself—candidacy, technique overview, and FAQ—see [Brazilian butt lift in Cartagena](/procedures/bbl/). Donor-area contouring often overlaps with [liposuction in Cartagena](/blog/liposuction-cartagena/), and when loose abdominal skin is part of the plan, with a [tummy tuck in Colombia](/blog/tummy-tuck-colombia/).
 
+If you are budgeting the trip, [how much a BBL in Colombia costs](/blog/bbl-colombia-cost/) explains why the surgery is quoted per case and what a written quote should list.
+
 ## What a consult decides before you book flights
 
 Strong candidacy conversations usually cover stable weight, realistic goals, enough donor fat, smoking status, clotting history, medications, and prior surgeries. If major weight change is still underway, or if you cannot arrange help during early recovery, many teams prefer to wait.

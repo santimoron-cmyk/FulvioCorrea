@@ -844,6 +844,16 @@
       "status": 301
     },
     {
+      "from": "/post/bbl-colombia-cost",
+      "to": "/blog/bbl-colombia-cost/",
+      "status": 301
+    },
+    {
+      "from": "/post/bbl-colombia-cost/",
+      "to": "/blog/bbl-colombia-cost/",
+      "status": 301
+    },
+    {
       "from": "/post/bbl-colombia",
       "to": "/blog/bbl-colombia/",
       "status": 301
@@ -1051,6 +1061,16 @@
     {
       "from": "/post/aumento-de-senos-colombia/",
       "to": "/es/blog/aumento-de-senos-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/bbl-precio-colombia",
+      "to": "/es/blog/bbl-precio-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/bbl-precio-colombia/",
+      "to": "/es/blog/bbl-precio-colombia/",
       "status": 301
     },
     {
@@ -2021,6 +2041,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/bbl-colombia-cost/",
+      "to": "/blog/bbl-colombia-cost/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/bbl-colombia-cost",
+      "to": "/blog/bbl-colombia-cost/",
       "status": 301
     },
     {

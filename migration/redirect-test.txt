@@ -839,6 +839,16 @@ curl -I "https://fulviocorrea.com/es/blepharoplasty/"
 curl -I "https://fulviocorrea.com/es/procedimientos/blefaroplastia/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/post/bbl-colombia-cost"
+# Expected: 301 Location: /blog/bbl-colombia-cost/
+curl -I "https://fulviocorrea.com/blog/bbl-colombia-cost/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/bbl-colombia-cost/"
+# Expected: 301 Location: /blog/bbl-colombia-cost/
+curl -I "https://fulviocorrea.com/blog/bbl-colombia-cost/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/post/bbl-colombia"
 # Expected: 301 Location: /blog/bbl-colombia/
 curl -I "https://fulviocorrea.com/blog/bbl-colombia/"
@@ -1047,6 +1057,16 @@ curl -I "https://fulviocorrea.com/es/blog/aumento-de-senos-colombia/"
 curl -I "https://fulviocorrea.com/post/aumento-de-senos-colombia/"
 # Expected: 301 Location: /es/blog/aumento-de-senos-colombia/
 curl -I "https://fulviocorrea.com/es/blog/aumento-de-senos-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/bbl-precio-colombia"
+# Expected: 301 Location: /es/blog/bbl-precio-colombia/
+curl -I "https://fulviocorrea.com/es/blog/bbl-precio-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/post/bbl-precio-colombia/"
+# Expected: 301 Location: /es/blog/bbl-precio-colombia/
+curl -I "https://fulviocorrea.com/es/blog/bbl-precio-colombia/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/post/cirugia-plastica-colombia-antes-y-despues"
@@ -2017,6 +2037,16 @@ curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
 curl -I "https://fulviocorrea.com/en/blog/category/plastic-surgery-in-colombia"
 # Expected: 301 Location: /blog/category/plastic-surgery-in-colombia/
 curl -I "https://fulviocorrea.com/blog/category/plastic-surgery-in-colombia/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/bbl-colombia-cost/"
+# Expected: 301 Location: /blog/bbl-colombia-cost/
+curl -I "https://fulviocorrea.com/blog/bbl-colombia-cost/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/blog/bbl-colombia-cost"
+# Expected: 301 Location: /blog/bbl-colombia-cost/
+curl -I "https://fulviocorrea.com/blog/bbl-colombia-cost/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/blog/lipo-360-colombia-cost/"
