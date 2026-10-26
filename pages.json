@@ -2665,7 +2665,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-23",
+    "updated": "2026-10-26",
     "schemas": [],
     "alternates": [
       {
@@ -2718,7 +2718,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-23",
+    "updated": "2026-10-26",
     "schemas": [],
     "alternates": [
       {
@@ -2781,6 +2781,113 @@
       {
         "lang": "es",
         "route": "/es/blog/categoria/cirugia-plastica-en-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/en/blog/bbl-colombia-cost/",
+    "file": "dist/en/blog/bbl-colombia-cost/index.html",
+    "lang": "en",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How Much Is a BBL in Colombia? Cost and Safety Guide",
+        "datePublished": "2026-10-26",
+        "dateModified": "2026-10-26",
+        "inLanguage": "en",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-cost.webp",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-cost.avif",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-cost-og.webp",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-cost-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/blog/bbl-colombia-cost/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a BBL cost in Colombia with Dr. Fulvio Correa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no published range. A Brazilian butt lift is quoted per case after the consultation, because the donor areas, the amount of fat and any combined procedures change the operation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much is the consultation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "USD 150 / COP 400,000, virtual or in person. It is not a surgery price."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a BBL cost in the United States?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS lists a 2024 surgeon/physician fee range of USD 7,000–11,500 for buttock augmentation with fat grafting. That is the surgeon's fee only, without anesthesia, facility or follow-up."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are gluteal implants cheaper than a BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They are a different operation. Gluteal implants have a published estimate of USD 6,750–8,250 (COP 21.310.000–26.040.000) with Dr. Fulvio Correa; a BBL is quoted per case, so the two cannot be compared until you have a quote."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much is lipo 360 with a BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is also quoted per case. The liposuction ranges that do exist are explained in lipo 360 in Colombia: cost and what the price includes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do some clinics advertise a much lower BBL price?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Quotes can leave out anesthesia, the facility, tests or follow-up, or describe a smaller plan. Safety precautions such as ultrasound-guided subcutaneous grafting also take time and equipment. Compare item by item and verify the surgeon and the facility."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/es/blog/bbl-precio-colombia/",
+    "cover": "/assets/blog-bbl-colombia-cost.webp",
+    "alternates": [
+      {
+        "lang": "en",
+        "route": "/en/blog/bbl-colombia-cost/"
+      },
+      {
+        "lang": "es",
+        "route": "/es/blog/bbl-precio-colombia/"
       }
     ]
   },
@@ -4345,7 +4452,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-23",
+    "updated": "2026-10-26",
     "schemas": [],
     "alternates": [
       {
@@ -4398,7 +4505,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-23",
+    "updated": "2026-10-26",
     "schemas": [],
     "alternates": [
       {
@@ -4461,6 +4568,113 @@
       {
         "lang": "en",
         "route": "/en/blog/category/plastic-surgery-in-colombia/"
+      }
+    ]
+  },
+  {
+    "route": "/es/blog/bbl-precio-colombia/",
+    "file": "dist/es/blog/bbl-precio-colombia/index.html",
+    "lang": "es",
+    "ads": false,
+    "noindex": false,
+    "updated": "2026-10-26",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "¿Cuánto cuesta un BBL en Colombia? Precio y seguridad",
+        "datePublished": "2026-10-26",
+        "dateModified": "2026-10-26",
+        "inLanguage": "es",
+        "image": [
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-cost.webp",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-cost.avif",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-cost-og.webp",
+          "https://fulviocorrea.com/assets/blog-bbl-colombia-cost-og.avif"
+        ],
+        "mainEntityOfPage": "https://fulviocorrea.com/es/blog/bbl-precio-colombia/",
+        "author": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "reviewedBy": {
+          "@id": "https://fulviocorrea.com/#physician"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Fulvio Correa",
+          "url": "https://fulviocorrea.com/es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fulviocorrea.com/assets/dr-fulvio-correa-logo.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta un BBL en Colombia con el Dr. Fulvio Correa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No tiene rango publicado. El BBL se cotiza por caso después de la valoración, porque las zonas donantes, la cantidad de grasa y lo que se combine cambian la cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta la valoración?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "USD 150 / COP 400.000, virtual o presencial. No es un precio de cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta un BBL en Estados Unidos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La ASPS reporta para 2024 un rango de honorarios del cirujano de USD 7,000–11,500 para el aumento de glúteos con injerto de grasa. Es solo el honorario del cirujano, sin anestesia, clínica ni controles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La gluteoplastia con implantes es más barata que el BBL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Son cirugías distintas. La gluteoplastia con implantes tiene una estimación publicada de USD 6,750–8,250 (COP 21.310.000–26.040.000) con el Dr. Fulvio Correa; el BBL se cotiza por caso, así que no se pueden comparar hasta tener la cotización."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta la lipo 360 con transferencia a glúteos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "También se cotiza por caso. Los rangos de liposucción que sí existen están en lipo 360 en Colombia: precio y qué incluye."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué algunas clínicas anuncian un BBL mucho más barato?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La cotización puede dejar por fuera la anestesia, la clínica, los exámenes o los controles, o describir un plan más pequeño. Además, medidas como el injerto subcutáneo guiado por ecografía requieren tiempo y equipos. Compara punto por punto y verifica al cirujano y la clínica."
+            }
+          }
+        ]
+      }
+    ],
+    "alternate": "/en/blog/bbl-colombia-cost/",
+    "cover": "/assets/blog-bbl-colombia-cost.webp",
+    "alternates": [
+      {
+        "lang": "es",
+        "route": "/es/blog/bbl-precio-colombia/"
+      },
+      {
+        "lang": "en",
+        "route": "/en/blog/bbl-colombia-cost/"
       }
     ]
   },
