@@ -1,6 +1,7 @@
 ---
 title: "How Many Days Before Flying, by Surgery"
-description: "Breast augmentation: fly at 5–7 days (ASPS). Avianca: 10 days after rhinoplasty; 14 after liposuction or tummy tuck; 15 if combined."
+description: "How soon can you fly after plastic surgery? Breast augmentation: 5–7 days (ASPS). Avianca: rhinoplasty 10 days, lipo or tummy tuck 14, combined procedures 15."
+seoTitle: "Flying After Plastic Surgery: How Soon? | Dr. Fulvio Correa"
 slug: "flying-after-plastic-surgery"
 lang: "en"
 category: "Recovery"
@@ -8,7 +9,7 @@ tags: ["flying-after-plastic-surgery", "flying-after-bbl", "flying-after-tummy-t
 cover: "/assets/blog-flying-after-plastic-surgery.webp"
 coverAlt: "Airplane window seat with a water bottle and folded cardigan on the tray, overlooking the Caribbean coast and a walled colonial city"
 date: "2026-10-05"
-updated: "2026-10-19"
+updated: "2026-10-27"
 author: "fulvio-correa"
 translationOf: "viajar-en-avion-despues-de-cirugia-plastica"
 sources: ["https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html","https://www.cirugiaplastica.org.co/"]

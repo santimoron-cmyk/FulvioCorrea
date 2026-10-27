@@ -1,6 +1,6 @@
 ---
 title: "Cómo elegir cirujano plástico en Cartagena"
-description: "Cirujanos plásticos en Cartagena: confirma la SCCP, la habilitación de la clínica y agenda una valoración. El Dr. Fulvio Correa atiende aquí."
+description: "Cómo elegir cirujano plástico en Cartagena: confirma la SCCP, la habilitación de la clínica y pide una valoración en Manzanillo del Mar antes de reservar."
 slug: "como-elegir-cirujano-plastico-en-cartagena"
 lang: "es"
 category: "Plastic Surgery in Colombia"
@@ -8,7 +8,7 @@ tags: ["cirujanos-plasticos-en-cartagena", "como-elegir-cirujano-plastico", "scc
 cover: "/assets/plastic-surgery-office-consultation-desk-cartagena.webp"
 coverAlt: "Sala de consulta del consultorio en Cartagena, con un escritorio oscuro, una silla de oficina negra y una silla de procedimientos beige"
 date: "2026-10-19"
-updated: "2026-10-19"
+updated: "2026-10-27"
 author: "fulvio-correa"
 translationOf: ""
 sources: ["https://cirugiaplastica.org.co/buscar-cirujano/","https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx","https://prestadores.minsalud.gov.co/habilitacion/ayudas/Manual_HABILITACION_prestadores_novedades.pdf","https://www.eltiempo.com/salud/sociedad-de-cirugia-plastica-entrega-cinco-recomendaciones-a-tener-en-cuenta-antes-de-realizarse-una-intervencion-estetico-quirurgica-3556851"]
@@ -23,7 +23,7 @@ review_date: ""
 
 Para elegir un **cirujano plástico en Cartagena**, revisa tres cosas antes de pagar o de reservar una fecha: que sea miembro de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/buscar-cirujano/), que la clínica donde se opera tenga la habilitación vigente del servicio quirúrgico, y que haya una valoración, presencial o virtual, antes de cualquier cirugía. El Dr. Fulvio Correa es cirujano plástico en Cartagena y [Miembro de Número de la SCCP](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). La valoración es en su consultorio de Manzanillo del Mar. La cirugía es en la [Clínica CAPRI](/es/capri-clinic/), otra dirección de la ciudad.
 
-No existe un ranking oficial de cirujanos plásticos en Cartagena ni en Colombia. Decir «el mejor» sin un dato que se pueda revisar es mercadeo. Esta página explica qué comprobar y qué ya está publicado sobre este consultorio. El costo, la estadía y la comparación entre ciudades están en la guía de [cirugía plástica en Colombia](/es/plastic-surgery-colombia/). Si buscas el consultorio, entra por el [inicio en español](/es/).
+No existe un ranking oficial de cirujanos plásticos en Cartagena ni en Colombia. Decir «el mejor» sin un dato que se pueda revisar es mercadeo. Esta página explica qué comprobar y qué ya está publicado sobre este consultorio. El costo, la estadía y la comparación entre ciudades están en [cirugía plástica en Colombia](/es/cirugia-plastica-colombia/). Si buscas el consultorio, el [cirujano plástico en Cartagena](/es/) es el Dr. Fulvio Correa; esta página es solo la lista de qué comprobar.
 
 ## ¿Qué hay que revisar de un cirujano plástico en Cartagena?
 

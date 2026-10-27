@@ -8,7 +8,7 @@ tags: ["tummy-tuck-recovery-time", "tummy-tuck-colombia", "abdominoplasty", "rec
 cover: "/assets/blog-tummy-tuck-recovery-time.webp"
 coverAlt: "Two women walking slowly arm in arm under a shaded colonial arcade in Cartagena in the morning"
 date: "2026-10-15"
-updated: "2026-10-15"
+updated: "2026-10-27"
 author: "fulvio-correa"
 translationOf: "recuperacion-abdominoplastia"
 sources: ["https://www.mayoclinic.org/tests-procedures/tummy-tuck/about/pac-20384892","https://www.theaestheticsociety.org/procedures/body/tummy-tuck/aftercare-recovery","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/recovery","https://medlineplus.gov/ency/article/002978.htm","https://www.isaps.org/discover/patients-home/procedures/body-procedures/abdominoplasty/","https://cirugiaplastica.org.co/procedimientos/abdominmoplastia/","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html"]
@@ -96,7 +96,7 @@ Call your surgical team promptly, wherever you are, if you notice more swelling,
 
 ## Where Dr. Fulvio Correa fits
 
-Dr. Fulvio Correa is a plastic surgeon in Cartagena and a *Miembro de Número* of the [Colombian Society of Plastic Surgery (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). He performs [tummy tuck surgery in Cartagena](/procedures/tummy-tuck/) and sets each patient's recovery and travel plan after the evaluation. Patients who live abroad can start with a virtual consultation; the plan is confirmed in person before surgery, and follow-up continues remotely after you fly home. If you are still comparing surgeons and cities, start with [how to choose a tummy tuck surgeon in Colombia](/blog/tummy-tuck-colombia/) or our [guide to plastic surgery in Colombia](/plastic-surgery-colombia/).
+Dr. Fulvio Correa is a plastic surgeon in Cartagena and a *Miembro de Número* of the [Colombian Society of Plastic Surgery (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). He performs [tummy tuck surgery in Cartagena](/procedures/tummy-tuck/) and sets each patient's recovery and travel plan after the evaluation. Patients who live abroad can start with a virtual consultation; the plan is confirmed in person before surgery, and follow-up continues remotely after you fly home. If you are still comparing surgeons and cities, start with [how to choose a tummy tuck surgeon in Colombia](/blog/tummy-tuck-colombia/) or the guide to [plastic surgery in Colombia](/plastic-surgery-colombia/).
 
 To plan your dates around your own recovery, message Sofía. She coordinates the virtual consultation and the logistics of your stay; the medical recommendation comes from the surgeon.
 

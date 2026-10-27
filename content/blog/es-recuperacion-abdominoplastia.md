@@ -8,7 +8,7 @@ tags: ["recuperacion-abdominoplastia", "abdominoplastia-colombia", "recuperacion
 cover: "/assets/blog-tummy-tuck-recovery-time.webp"
 coverAlt: "Dos mujeres caminando despacio del brazo bajo unos portales coloniales sombreados en Cartagena en la mañana"
 date: "2026-10-15"
-updated: "2026-10-15"
+updated: "2026-10-27"
 author: "fulvio-correa"
 translationOf: "tummy-tuck-recovery-time"
 sources: ["https://cirugiaplastica.org.co/procedimientos/abdominmoplastia/","https://medlineplus.gov/spanish/ency/article/002978.htm","https://www.mayoclinic.org/tests-procedures/tummy-tuck/about/pac-20384892","https://www.theaestheticsociety.org/procedures/body/tummy-tuck/aftercare-recovery","https://www.isaps.org/discover/patients-home/procedures/body-procedures/abdominoplasty/","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html"]
@@ -82,7 +82,7 @@ Llama a tu equipo quirúrgico si notas más hinchazón, dolor, enrojecimiento, s
 
 ## Dónde encaja el Dr. Fulvio Correa
 
-El Dr. Fulvio Correa es cirujano plástico en Cartagena y *Miembro de Número* de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). Realiza la [abdominoplastia en Cartagena](/es/procedimientos/abdominoplastia/) y define el plan de recuperación y de viaje de cada paciente después de la valoración. Si vives en otra ciudad o fuera del país, puedes empezar con una valoración virtual dentro de su [programa para pacientes internacionales](/es/pacientes-internacionales/); el plan se confirma en persona en Cartagena antes de la cirugía y el seguimiento continúa a distancia cuando regresas. El panorama de credenciales, ciudades y tiempos de estadía está en nuestra [guía de cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
+El Dr. Fulvio Correa es cirujano plástico en Cartagena y *Miembro de Número* de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). Realiza la [abdominoplastia en Cartagena](/es/procedimientos/abdominoplastia/) y define el plan de recuperación y de viaje de cada paciente después de la valoración. Si vives en otra ciudad o fuera del país, puedes empezar con una valoración virtual dentro de su [programa para pacientes internacionales](/es/pacientes-internacionales/); el plan se confirma en persona en Cartagena antes de la cirugía y el seguimiento continúa a distancia cuando regresas. El panorama de credenciales, ciudades y tiempos de estadía está en la guía de [cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
 
 Para armar tus fechas alrededor de tu propia recuperación, escríbele a Sofía. Ella coordina la valoración virtual y la logística de tu estadía; la recomendación médica la da el cirujano.
 

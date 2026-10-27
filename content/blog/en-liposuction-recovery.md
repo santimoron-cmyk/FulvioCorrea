@@ -8,7 +8,7 @@ tags: ["liposuction-recovery", "liposuction-recovery-time", "lipo-recovery", "co
 cover: "/assets/blog-liposuction-recovery.webp"
 coverAlt: "Woman in a loose linen dress and sun hat walking slowly along Cartagena's old city wall in the late afternoon, with the sea behind her"
 date: "2026-10-21"
-updated: "2026-10-21"
+updated: "2026-10-27"
 author: "fulvio-correa"
 translationOf: "recuperacion-liposuccion"
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/liposuction/recovery","https://www.theaestheticsociety.org/procedures/body/liposuction/aftercare-recovery","https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586","https://www.nhs.uk/tests-and-treatments/cosmetic-procedures/cosmetic-surgery/liposuction/","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.plasticsurgery.org/news/articles/eight-ways-to-make-liposuction-recovery-a-breeze","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html"]
@@ -135,7 +135,7 @@ The CDC lists recent surgery as a risk factor for blood clots on trips longer th
 
 ## Where Dr. Fulvio Correa fits
 
-Dr. Fulvio Correa is a plastic surgeon in Cartagena and a *Miembro de Número* of the [Colombian Society of Plastic Surgery (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/); his background is on the [about page](/about/). He performs [liposuction in Cartagena](/procedures/liposuction/) and sets each patient's recovery and travel plan after the evaluation, including garment and follow-up instructions. Patients who live abroad can start with a virtual consultation through the [international patients](/international-patients/) program; the plan is confirmed in person before surgery and follow-up continues remotely once you are home. If you are still deciding where to have surgery, read [planning liposuction in Cartagena](/blog/liposuction-cartagena/) or the [guide to plastic surgery in Colombia](/plastic-surgery-colombia/).
+Dr. Fulvio Correa is a plastic surgeon in Cartagena and a *Miembro de Número* of the [Colombian Society of Plastic Surgery (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/); his background is on the [about page](/about/). He performs [liposuction in Cartagena](/procedures/liposuction/) and sets each patient's recovery and travel plan after the evaluation, including garment and follow-up instructions. Patients who live abroad can start with a virtual consultation through the [international patients](/international-patients/) program; the plan is confirmed in person before surgery and follow-up continues remotely once you are home. If you are still deciding where to have surgery, read [planning liposuction in Cartagena](/blog/liposuction-cartagena/) or the guide to [plastic surgery in Colombia](/plastic-surgery-colombia/).
 
 To plan your dates around the recovery, message Sofía. She coordinates the virtual consultation and the logistics of your stay; the medical recommendation comes from the surgeon.
 
