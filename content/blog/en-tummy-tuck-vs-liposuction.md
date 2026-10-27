@@ -8,7 +8,7 @@ tags: ["tummy-tuck-vs-liposuction", "lipo-vs-tummy-tuck", "tummy-tuck-colombia",
 cover: "/assets/blog-tummy-tuck-vs-liposuction.webp"
 coverAlt: "Cream linen recliner and folded high-waisted linen clothes beside open shutters overlooking the rooftops of Cartagena"
 date: "2026-10-12"
-updated: "2026-10-15"
+updated: "2026-10-27"
 author: "fulvio-correa"
 translationOf: "abdominoplastia-o-liposuccion"
 sources: ["https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586","https://www.mayoclinic.org/tests-procedures/tummy-tuck/about/pac-20384892","https://www.plasticsurgery.org/cosmetic-procedures/liposuction/recovery","https://www.plasticsurgery.org/cosmetic-procedures/tummy-tuck/recovery","https://www.plasticsurgery.org/news/press-releases/interest-in-aesthetic-health-remained-consistent-despite-economic-uncertainty-in-2024-according-to-new-report-from-american-society-of-plastic-surgeons","https://cirugiaplastica.org.co/procedimientos/abdominmoplastia/","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
@@ -120,7 +120,7 @@ Then ask the surgeon:
 
 Dr. Fulvio Correa is a plastic surgeon in Cartagena and a *Miembro de Número* of the [Colombian Society of Plastic Surgery (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). He performs both [tummy tuck surgery in Cartagena](/procedures/tummy-tuck/) and [liposuction](/procedures/liposuction/), and decides between them, or on the combination, after examining the abdomen. People who live abroad can start with a virtual consultation through his [international patients program](/international-patients/); the plan is confirmed in person in Cartagena before surgery, and follow-up continues remotely after you fly home. Consultations take place at his office in Manzanillo del Mar, CC Ramblas local 23.
 
-If you are still comparing destinations and surgeons, start with [how to choose a tummy tuck surgeon in Colombia](/blog/tummy-tuck-colombia/) or the [liposuction in Colombia consultation and recovery guide](/blog/liposuction-cartagena/). The broader picture of credentials, cities and stay length is in our [guide to plastic surgery in Colombia](/plastic-surgery-colombia/).
+If you are still comparing destinations and surgeons, start with [how to choose a tummy tuck surgeon in Colombia](/blog/tummy-tuck-colombia/) or the [liposuction in Colombia consultation and recovery guide](/blog/liposuction-cartagena/). The broader picture of credentials, cities and stay length is in the guide to [plastic surgery in Colombia](/plastic-surgery-colombia/).
 
 To find out which operation your abdomen actually needs, send your photos to Sofía. She coordinates the virtual consultation and the logistics of your stay; the medical recommendation comes from the surgeon.
 

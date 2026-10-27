@@ -1,5 +1,6 @@
 import {esc} from './editorial.mjs';
 import {membershipView} from './practice-view.mjs';
+import {localizePath} from './routes.mjs';
 
 const order = ['mommy-makeover','breast-augmentation','breast-lift-reduction','tummy-tuck','bbl','rhinoplasty','facelift','liposuction'];
 const reading = {
@@ -44,7 +45,7 @@ function portrait(alt) {
   return `<picture><source type="image/avif" srcset="${avif}" sizes="${sizes}"><img src="/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp" alt="${esc(alt)}" width="1200" height="1500" srcset="${webp}" sizes="${sizes}" data-fixed-srcset="1" data-keep-loading="1" loading="lazy" decoding="async"></picture>`;
 }
 
-const updated = '2026-10-19';
+const updated = '2026-10-27';
 
 // Body copy may include [label](/path) or [label](https://…) links. Everything else is escaped.
 function rich(s) {
@@ -70,7 +71,7 @@ const numbered = list => `<ol class="question-list">${list.map(x => { const m = 
 const copy = {
   en: {
     title: 'Plastic Surgery in Colombia: Prices',
-    description: 'How to choose a plastic surgeon in Cartagena. Estimated costs from USD 3,600 for eyelid surgery. SCCP member. A real quote follows consultation.',
+    description: 'Plastic surgery in Colombia: how to check a surgeon and a clinic, what changes a quote, and how long to stay. From USD 3,600. A real quote follows consultation.',
     eyebrow: 'Cartagena, Colombia',
     h1: 'Plastic Surgery in Colombia',
     lead: 'People looking for plastic surgery in Colombia in 2026 usually want four answers: why patients travel here, what actually changes a quote, how to check a surgeon and a clinic, and how many days to plan. This page answers those from the practice in Cartagena. Estimated ranges start at USD 3,600 for eyelid surgery and are on the cost page. It is education, not a promise of a result.',
@@ -212,8 +213,9 @@ const copy = {
     },
   },
   es: {
-    title: 'Cirugía plástica en Colombia: precios',
-    description: 'Cómo elegir cirujano plástico en Cartagena. Costos estimados desde USD 3.600 (blefaroplastia). Miembro de la SCCP. La cotización real sale en la valoración.',
+    title: 'Cirugía plástica en Colombia',
+    description: 'Cirugía plástica en Colombia: cómo revisar al cirujano y a la clínica, qué mueve la cotización y cuántos días reservar. La cifra real sale en la valoración.',
+    split: 'Los rangos en dólares y en pesos están en [precios de cirugía plástica en Cartagena](/es/plastic-surgery-cost-cartagena/). Si buscas el consultorio, el [cirujano plástico en Cartagena](/es/) es el Dr. Fulvio Correa: valora en Manzanillo del Mar, CC Ramblas local 23, y opera en la Clínica CAPRI.',
     eyebrow: 'Cartagena, Colombia',
     h1: 'Cirugía plástica en Colombia',
     lead: 'Quien busca cirugía plástica en Colombia en 2026 suele querer cuatro respuestas: por qué viajan otros pacientes, qué mueve una cotización, cómo revisar al cirujano y a la clínica, y cuántos días reservar. Esta página lo responde desde el consultorio en Cartagena. Los rangos estimados empiezan en USD 3.600 para blefaroplastia y están en la página de precios. Es información, no una promesa de resultado.',
@@ -380,7 +382,7 @@ const sources = [
 export function colombiaGuide(lang, practice, procedures, posts, origin) {
   const c = copy[lang];
   const es = lang === 'es';
-  const route = `/${lang}/plastic-surgery-colombia/`;
+  const route = localizePath(`/${lang}/plastic-surgery-colombia/`);
   const cta = id => `<button type="button" class="button" data-cta="${id}" data-open-contact aria-haspopup="dialog" aria-controls="contact-dialog">${esc(c.cta)}</button>`;
   const href = slug => `/${lang}/${slug}`;
   const procs = order.map(slug => procedures.find(p => p.lang === lang && p.slug === slug && p.offeredConfirmed)).filter(Boolean);
@@ -388,7 +390,7 @@ export function colombiaGuide(lang, practice, procedures, posts, origin) {
   const officeBase = es ? 'consultorio-cirugia-plastica-recepcion-cartagena' : 'plastic-surgery-office-reception-cartagena';
   const byline = `<p class="post-dates">${es ? 'Actualizado el' : 'Last updated'} <time datetime="${updated}">${updated}</time></p><p class="reviewed">${es ? 'Revisado médicamente por' : 'Medically reviewed by'} Dr. Fulvio Correa · <time datetime="${updated}">${updated}</time></p>`;
   const days = `<div class="article-body">${c.steps.map(([title, text]) => `<h3>${esc(title)}</h3><p>${rich(text)}</p>`).join('')}</div>`;
-  const body = `<section class="page-hero wrap" data-surface="charcoal"><p class="eyebrow">${esc(c.eyebrow)}</p><h1>${esc(c.h1)}</h1><p class="lead">${esc(c.lead)}</p>${byline}${cta('colombia-hero')}</section>
+  const body = `<section class="page-hero wrap" data-surface="charcoal"><p class="eyebrow">${esc(c.eyebrow)}</p><h1>${esc(c.h1)}</h1><p class="lead">${esc(c.lead)}</p>${c.split ? prose([c.split]) : ''}${byline}${cta('colombia-hero')}</section>
 <section class="section wrap" data-surface="plum" id="five-checks"><h2>${esc(c.checksTitle)}</h2>${prose([c.checksIntro])}${numbered(c.checks)}${prose([c.checksNote])}</section>
 <section class="section wrap" data-surface="charcoal" id="best-surgeon"><h2>${esc(c.bestTitle)}</h2>${prose(c.best)}</section>
 <section class="section wrap" data-surface="black" id="why-colombia"><h2>${esc(c.whyTitle)}</h2>${prose(c.why)}<figure>${picture(officeBase, c.officeAlt, 1400, 788)}</figure></section>

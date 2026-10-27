@@ -8,7 +8,7 @@ tags: ["aumento-de-senos-colombia", "mamoplastia-de-aumento", "cirugia-de-senos"
 cover: "/assets/blog-breast-augmentation-colombia.webp"
 coverAlt: "Mujer con gabardina esperando en la sala de un aeropuerto junto a su maleta de mano antes de un viaje internacional"
 date: "2026-09-28"
-updated: "2026-10-19"
+updated: "2026-10-27"
 author: "fulvio-correa"
 translationOf: "breast-augmentation-colombia"
 sources: ["https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/","https://www.cirugiaplastica.org.co/","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery","https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/es/articles/13090597036315--Existe-alguna-restricci%C3%B3n-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales"]
@@ -23,7 +23,7 @@ review_date: ""
 
 Un [aumento de senos en Colombia](/es/procedures/breast-augmentation/) (mamoplastia de aumento) puede planificarse con más claridad si se hacen tres cosas en orden: verificar al cirujano y la institución en los registros oficiales colombianos, confirmar en una valoración que eres candidata y qué técnica corresponde a tu caso, y armar el viaje alrededor de la recuperación, no al revés. Para quien viaja en avión, una cifra que suele cambiar el calendario es esta: la Sociedad Americana de Cirujanos Plásticos (ASPS) sugiere esperar **5–7 días** después de un aumento de senos antes de volar. Las aerolíneas pueden tener reglas propias, así que confírmalas antes de comprar el tiquete.
 
-Lo demás —marca de implante, plano de colocación, cuándo volver al trabajo— se decide con tu cirujano. Esta guía te ayuda a llegar a esa conversación con las preguntas correctas. El panorama de costo, seguridad y estadía está en la guía sobre [qué revisar al elegir cirujano plástico en Colombia](/es/cirugia-plastica-colombia/).
+Lo demás —marca de implante, plano de colocación, cuándo volver al trabajo— se decide con tu cirujano. Esta guía te ayuda a llegar a esa conversación con las preguntas correctas. El panorama de costo, seguridad y estadía está en [cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
 
 ## ¿Cómo saber si un cirujano es “el mejor” para tu aumento mamario?
 

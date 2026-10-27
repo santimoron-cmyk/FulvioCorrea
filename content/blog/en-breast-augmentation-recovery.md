@@ -8,7 +8,7 @@ tags: ["breast-augmentation-recovery", "breast-implant-recovery", "breast-augmen
 cover: "/assets/blog-breast-augmentation-recovery.webp"
 coverAlt: "Woman reading on a lounge chair under an awning on a Cartagena rooftop terrace, with colonial church towers behind"
 date: "2026-10-19"
-updated: "2026-10-19"
+updated: "2026-10-27"
 author: "fulvio-correa"
 translationOf: "recuperacion-aumento-de-senos"
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery","https://www.theaestheticsociety.org/procedures/breast/breast-augmentation/aftercare-recovery","https://www.mayoclinic.org/tests-procedures/breast-augmentation/about/pac-20393178","https://healthcare.utah.edu/plastic-surgery/breast/recovery","https://cirugiaplastica.org.co/procedimientos/aumento-de-senos/","https://www.fda.gov/medical-devices/implants-and-prosthetics/breast-implants","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html"]
@@ -129,7 +129,7 @@ Before you leave Colombia, ask for your implant records. Mayo Clinic advises rea
 
 ## Where Dr. Fulvio Correa fits
 
-Dr. Fulvio Correa is a plastic surgeon in Cartagena and a *Miembro de Número* of the [Colombian Society of Plastic Surgery (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/); his training and background are on the [about page](/about/). He performs [breast augmentation surgery in Cartagena](/procedures/breast-augmentation/) and sets each patient's recovery and travel plan after the evaluation. Patients who live abroad can start with a virtual consultation; the plan is confirmed in person before surgery, and follow-up continues remotely after you fly home. If you are still comparing surgeons and cities, start with [how U.S. patients verify surgeons for breast augmentation in Colombia](/blog/breast-augmentation-colombia/) or the [guide to plastic surgery in Colombia](/plastic-surgery-colombia/).
+Dr. Fulvio Correa is a plastic surgeon in Cartagena and a *Miembro de Número* of the [Colombian Society of Plastic Surgery (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/); his training and background are on the [about page](/about/). He performs [breast augmentation surgery in Cartagena](/procedures/breast-augmentation/) and sets each patient's recovery and travel plan after the evaluation. Patients who live abroad can start with a virtual consultation; the plan is confirmed in person before surgery, and follow-up continues remotely after you fly home. If you are still comparing surgeons and cities, start with [how U.S. patients verify surgeons for breast augmentation in Colombia](/blog/breast-augmentation-colombia/) or the guide to [plastic surgery in Colombia](/plastic-surgery-colombia/).
 
 To plan your dates around your recovery, message Sofía. She coordinates the virtual consultation and the logistics of your stay; the medical recommendation comes from the surgeon.
 

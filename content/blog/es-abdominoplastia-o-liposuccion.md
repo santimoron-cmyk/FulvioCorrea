@@ -8,7 +8,7 @@ tags: ["abdominoplastia-o-liposuccion", "diferencia-lipo-abdominoplastia", "abdo
 cover: "/assets/blog-tummy-tuck-vs-liposuction.webp"
 coverAlt: "Sillón reclinable de lino crema y ropa de lino de tiro alto doblada junto a unos postigos abiertos con vista a los tejados de Cartagena"
 date: "2026-10-12"
-updated: "2026-10-15"
+updated: "2026-10-27"
 author: "fulvio-correa"
 translationOf: "tummy-tuck-vs-liposuction"
 sources: ["https://cirugiaplastica.org.co/procedimientos/abdominmoplastia/","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586","https://www.mayoclinic.org/tests-procedures/tummy-tuck/about/pac-20384892","https://www.plasticsurgery.org/cosmetic-procedures/liposuction/recovery","https://www.plasticsurgery.org/news/press-releases/interest-in-aesthetic-health-remained-consistent-despite-economic-uncertainty-in-2024-according-to-new-report-from-american-society-of-plastic-surgeons","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
@@ -116,7 +116,7 @@ Y pregúntale al cirujano:
 
 El Dr. Fulvio Correa es cirujano plástico en Cartagena y *Miembro de Número* de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). Realiza tanto la [abdominoplastia en Cartagena](/es/procedimientos/abdominoplastia/) como la [liposucción](/es/procedimientos/liposuccion/), y define cuál conviene, o si se combinan, después de examinar el abdomen. Si vives en otra ciudad o fuera del país, puedes empezar con una valoración virtual dentro de su [programa para pacientes internacionales](/es/pacientes-internacionales/); el plan se confirma en persona en Cartagena antes de la cirugía y el seguimiento continúa a distancia cuando regresas. Las consultas son en su consultorio de Manzanillo del Mar, CC Ramblas local 23.
 
-Si todavía estás comparando cirujanos y ciudades, lee [abdominoplastia en Colombia](/es/blog/abdominoplastia-colombia/) y [liposucción en Colombia](/es/blog/liposuccion-colombia/). El panorama de credenciales, ciudades y tiempos de estadía está en nuestra [guía de cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
+Si todavía estás comparando cirujanos y ciudades, lee [abdominoplastia en Colombia](/es/blog/abdominoplastia-colombia/) y [liposucción en Colombia](/es/blog/liposuccion-colombia/). El panorama de credenciales, ciudades y tiempos de estadía está en la guía de [cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
 
 Para saber qué cirugía necesita tu abdomen, envíale tus fotos a Sofía. Ella coordina la valoración virtual y la logística de tu estadía; la recomendación médica la da el cirujano.
 

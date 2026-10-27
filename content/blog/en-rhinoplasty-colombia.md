@@ -8,7 +8,7 @@ tags: ["rhinoplasty-colombia", "nose-job-colombia", "rhinoplasty-recovery", "sep
 cover: "/assets/blog-rhinoplasty-colombia.webp"
 coverAlt: "Wide-brim straw hat, folded sunglasses, sunscreen and a closed notebook on a wooden desk beside green colonial shutters in Cartagena"
 date: "2026-10-07"
-updated: "2026-10-09"
+updated: "2026-10-27"
 author: "fulvio-correa"
 translationOf: "rinoplastia-colombia"
 sources: ["https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.plasticsurgery.org/cosmetic-procedures/rhinoplasty/recovery","https://www.mayoclinic.org/tests-procedures/rhinoplasty/about/pac-20384532","https://my.clevelandclinic.org/health/treatments/11011-rhinoplasty","https://cirugiaplastica.org.co/procedimientos/rinoplastia/","https://www.eltiempo.com/salud/sociedad-de-cirugia-plastica-entrega-cinco-recomendaciones-a-tener-en-cuenta-antes-de-realizarse-una-intervencion-estetico-quirurgica-3556851","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.nhs.uk/conditions/cosmetic-procedures/cosmetic-surgery-abroad/","https://www.isaps.org/discover/patients-home/considering-your-procedure-abroad/post-surgery-considerations-abroad/","https://cirugiaplastica.org.co/buscar-cirujano/","https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/"]
@@ -23,7 +23,7 @@ review_date: ""
 
 If you are weighing [rhinoplasty in Colombia](/en/procedures/rhinoplasty/), the city matters less than three decisions: who operates (and whether you can check it), whether your goal fits the nose you actually have, and how long you stay. The stay has a firm floor. Avianca, Colombia's flag carrier, permits travel 10 days after rhinoplasty or septoplasty and requires a medical certificate issued no earlier than 10 days before the flight. ASPS and the CDC suggest waiting 7 to 10 days after facial procedures. Your real flight date is the later of the airline minimum and the day your surgeon examines you in person and clears you.
 
-Travel rules and how to check a clinic before you commit are in our guide to [choosing a plastic surgeon in Colombia](/plastic-surgery-colombia/). The other date to plan around is a year away. ASPS notes that a new nasal contour can take up to a year to fully refine, so the final shape of a **nose job in Colombia** is judged at home, not in Cartagena. Follow-up, and what would happen if a small revision were ever needed, belongs in the plan before you buy a ticket.
+Travel rules and how to check a clinic before you commit are in [plastic surgery in Colombia](/plastic-surgery-colombia/). The other date to plan around is a year away. ASPS notes that a new nasal contour can take up to a year to fully refine, so the final shape of a **nose job in Colombia** is judged at home, not in Cartagena. Follow-up, and what would happen if a small revision were ever needed, belongs in the plan before you buy a ticket.
 
 ## What the consultation has to settle first
 
