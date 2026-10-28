@@ -1,8 +1,8 @@
 ---
 title: "Cuántos días esperar para volar, por cirugía"
 description: "Aumento de senos: volar a los 5–7 días (ASPS). Avianca: 10 días tras rinoplastia; 14 en lipo o abdominoplastia; 15 si se combinan."
-seoTitle: "¿Cuándo puedo volar después de una cirugía plástica?"
-seoDescription: "Cuántos días esperar para volar según tu cirugía: senos 5–7 (ASPS); rinoplastia 10, lipo o abdominoplastia 14 y 15 si se combinan (Avianca)."
+seoTitle: "¿Cuántos días después de una cirugía puedo viajar en avión?"
+seoDescription: "Días para viajar en avión según tu cirugía: senos 5–7, rinoplastia 10, lipo o abdominoplastia 14 y 15 si se combinan. Tabla y estadía en Cartagena."
 slug: "viajar-en-avion-despues-de-cirugia-plastica"
 lang: "es"
 category: "Recovery"
@@ -28,6 +28,8 @@ Si te operas en Colombia y regresas en avión, la respuesta corta depende del pr
 Para los demás procedimientos de abajo, **Avianca permite volar entre 10 y 15 días después de una cirugía plástica**, según el caso, y exige un certificado médico expedido como máximo 10 días antes del vuelo. Para una pexia mamaria, una liposucción y una abdominoplastia el mínimo es de 14 días; si se combinan dos o más procedimientos corporales, sube a 15. Ese plazo es el piso de la aerolínea para esos procedimientos. La fecha real la pone tu cirujano cuando te revisa.
 
 Dicho de otra forma: **viajar en avión después de una cirugía** depende del procedimiento. En un aumento de senos, mandan la ventana de 5–7 días de la ASPS y el alta de tu cirujano. En los demás procedimientos de la tabla, manda la fecha más tardía entre el mínimo de la aerolínea y esa autorización. Las credenciales, qué debe traer una cotización y cómo se compara Cartagena con otras ciudades están en la [guía 2026 de cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
+
+¿Ya estás armando fechas y presupuesto? Revisa los [precios de cirugía plástica en Cartagena](/es/precios-cirugia-plastica-cartagena/), incluida la [abdominoplastia en Cartagena](/es/procedimientos/abdominoplastia/). En la valoración, el doctor confirma cuántos días quedarte antes de volar.
 
 ## La ventana, procedimiento por procedimiento
 

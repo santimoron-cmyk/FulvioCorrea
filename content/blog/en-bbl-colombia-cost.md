@@ -1,6 +1,6 @@
 ---
 title: "How Much Is a BBL in Colombia? Cost and Safety Guide"
-description: "BBL in Colombia cost with Dr. Fulvio Correa in Cartagena: why a Brazilian butt lift is quoted per case, the U.S. surgeon-fee benchmark, what a quote must list and safety checks."
+description: "BBL in Colombia cost with Dr. Fulvio Correa in Cartagena: why a Brazilian butt lift is quoted per case, the U.S. fee benchmark and what a quote must list."
 slug: "bbl-colombia-cost"
 lang: "en"
 category: "Body Contouring"
