@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta un BBL en Colombia? Precio y seguridad"
-description: "Precio del BBL en Colombia con el Dr. Fulvio Correa en Cartagena: por qué la lipotransferencia glútea se cotiza por caso, qué debe detallar la cotización y qué verificar."
+description: "Precio del BBL en Colombia con el Dr. Fulvio Correa en Cartagena: por qué la lipotransferencia glútea se cotiza por caso y qué debe detallar la cotización."
 slug: "bbl-precio-colombia"
 lang: "es"
 category: "Body Contouring"
