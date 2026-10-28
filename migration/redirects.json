@@ -994,6 +994,16 @@
       "status": 301
     },
     {
+      "from": "/post/rhinoplasty-colombia-cost",
+      "to": "/blog/rhinoplasty-colombia-cost/",
+      "status": 301
+    },
+    {
+      "from": "/post/rhinoplasty-colombia-cost/",
+      "to": "/blog/rhinoplasty-colombia-cost/",
+      "status": 301
+    },
+    {
       "from": "/post/rhinoplasty-colombia",
       "to": "/blog/rhinoplasty-colombia/",
       "status": 301
@@ -1201,6 +1211,16 @@
     {
       "from": "/post/rinoplastia-colombia/",
       "to": "/es/blog/rinoplastia-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/rinoplastia-precio-colombia",
+      "to": "/es/blog/rinoplastia-precio-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/rinoplastia-precio-colombia/",
+      "to": "/es/blog/rinoplastia-precio-colombia/",
       "status": 301
     },
     {
@@ -2041,6 +2061,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/rhinoplasty-colombia-cost/",
+      "to": "/blog/rhinoplasty-colombia-cost/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/rhinoplasty-colombia-cost",
+      "to": "/blog/rhinoplasty-colombia-cost/",
       "status": 301
     },
     {
