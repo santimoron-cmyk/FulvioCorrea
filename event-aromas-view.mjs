@@ -9,7 +9,7 @@ const copy={
  es:{
   title:'Conversatorio de belleza 2026 · Aromas Med Spa Doral',
   otherLabel:'EN',
-  meta:'En Aromas Med Spa te elegimos para un conversatorio gratuito en Doral, el viernes 6 de noviembre de 2026, 6:00 p. m.: tendencias de belleza y estética 2026, con vino y picadas.',
+  meta:'Conversatorio gratuito en Aromas Med Spa, Doral: viernes 6 de noviembre de 2026, 6:00 p. m. Tendencias de belleza y estética 2026, con vino y picadas.',
   eyebrow:'Para nuestras clientas preferidas',
   h1:'Belleza y estética 2026.<br><em>Un conversatorio para ti.</em>',
   lead:'En Aromas Med Spa te elegimos para este encuentro exclusivo por la relación cercana que tenemos contigo. Es una orientación educativa y gratuita, con vino y picadas, sobre las tendencias de belleza y estética en 2026. Vienes a aprender y a decidir con información, sin presión.',

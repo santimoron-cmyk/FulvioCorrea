@@ -1,6 +1,6 @@
 ---
 title: "Lipo 360 en Colombia: precio y qué incluye"
-description: "Precio de la lipo 360 en Colombia con el Dr. Fulvio Correa en Cartagena: el rango publicado de lipoescultura HD en USD y COP, qué se cotiza por caso y qué debe detallar la cotización."
+description: "Precio de la lipo 360 en Colombia con el Dr. Fulvio Correa en Cartagena: rango publicado de lipoescultura HD en USD y COP y qué se cotiza por caso."
 slug: "lipo-360-precio-colombia"
 lang: "es"
 category: "Body Contouring"

@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta una rinoplastia en Colombia? Precio y cotización"
-description: "Precio de la rinoplastia en Colombia con el Dr. Fulvio Correa en Cartagena: estimado de USD 6.750–8.250, qué mueve la cotización y qué preguntar antes de reservar."
+description: "Precio de la rinoplastia en Colombia con el Dr. Fulvio Correa en Cartagena: estimado USD 6.750–8.250, qué mueve la cotización y qué preguntar."
 seoTitle: "¿Cuánto cuesta una rinoplastia en Colombia? Precios"
 slug: "rinoplastia-precio-colombia"
 lang: "es"
