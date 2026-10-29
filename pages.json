@@ -4559,7 +4559,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-28",
+    "updated": "2026-10-29",
     "schemas": [],
     "alternates": [
       {
@@ -4665,7 +4665,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-28",
+    "updated": "2026-10-29",
     "schemas": [],
     "alternates": [
       {
@@ -5112,14 +5112,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-27",
+    "updated": "2026-10-29",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Cómo elegir cirujano plástico en Cartagena",
+        "headline": "Checklist: cómo verificar a tu cirujano antes de operarte",
         "datePublished": "2026-10-19",
-        "dateModified": "2026-10-27",
+        "dateModified": "2026-10-29",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/plastic-surgery-office-consultation-desk-cartagena.webp",
@@ -5149,7 +5149,7 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "¿Cómo elijo un cirujano plástico en Cartagena?",
+            "name": "¿Cómo verifico a un cirujano plástico antes de operarme?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Confirma la especialización en cirugía plástica, la membresía en la SCCP y la inscripción en el ReTHUS. Pregunta en qué clínica será la cirugía y pide la habilitación vigente de ese servicio. Agenda una valoración, presencial o virtual, antes de reservar una fecha."
