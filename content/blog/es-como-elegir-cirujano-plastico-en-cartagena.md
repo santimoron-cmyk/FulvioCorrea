@@ -1,6 +1,6 @@
 ---
-title: "Cómo elegir cirujano plástico en Cartagena"
-description: "Cómo elegir cirujano plástico en Cartagena: confirma la SCCP, la habilitación de la clínica y pide una valoración en Manzanillo del Mar antes de reservar."
+title: "Checklist: cómo verificar a tu cirujano antes de operarte"
+description: "Checklist de 5 pasos antes de operarte: SCCP, ReTHUS, clínica habilitada en el REPS, valoración y presupuesto escrito. Qué revisar y dónde consultarlo."
 slug: "como-elegir-cirujano-plastico-en-cartagena"
 lang: "es"
 category: "Plastic Surgery in Colombia"
@@ -8,7 +8,7 @@ tags: ["cirujanos-plasticos-en-cartagena", "como-elegir-cirujano-plastico", "scc
 cover: "/assets/plastic-surgery-office-consultation-desk-cartagena.webp"
 coverAlt: "Sala de consulta del consultorio en Cartagena, con un escritorio oscuro, una silla de oficina negra y una silla de procedimientos beige"
 date: "2026-10-19"
-updated: "2026-10-27"
+updated: "2026-10-29"
 author: "fulvio-correa"
 translationOf: ""
 sources: ["https://cirugiaplastica.org.co/buscar-cirujano/","https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx","https://prestadores.minsalud.gov.co/habilitacion/ayudas/Manual_HABILITACION_prestadores_novedades.pdf","https://www.eltiempo.com/salud/sociedad-de-cirugia-plastica-entrega-cinco-recomendaciones-a-tener-en-cuenta-antes-de-realizarse-una-intervencion-estetico-quirurgica-3556851"]
@@ -21,11 +21,11 @@ reviewed_by: ""
 review_date: ""
 ---
 
-Para elegir un **cirujano plástico en Cartagena**, revisa tres cosas antes de pagar o de reservar una fecha: que sea miembro de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/buscar-cirujano/), que la clínica donde se opera tenga la habilitación vigente del servicio quirúrgico, y que haya una valoración, presencial o virtual, antes de cualquier cirugía. El Dr. Fulvio Correa es cirujano plástico en Cartagena y [Miembro de Número de la SCCP](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). La valoración es en su consultorio de Manzanillo del Mar. La cirugía es en la [Clínica CAPRI](/es/capri-clinic/), otra dirección de la ciudad.
+Antes de pagar o reservar una cirugía, revisa tres cosas: que sea miembro de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/buscar-cirujano/), que la clínica donde se opera tenga la habilitación vigente del servicio quirúrgico, y que haya una valoración, presencial o virtual, antes de cualquier cirugía. El Dr. Fulvio Correa es cirujano plástico en Cartagena y [Miembro de Número de la SCCP](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). La valoración es en su consultorio de Manzanillo del Mar. La cirugía es en la [Clínica CAPRI](/es/clinica-capri/), otra dirección de la ciudad.
 
-No existe un ranking oficial de cirujanos plásticos en Cartagena ni en Colombia. Decir «el mejor» sin un dato que se pueda revisar es mercadeo. Esta página explica qué comprobar y qué ya está publicado sobre este consultorio. El costo, la estadía y la comparación entre ciudades están en [cirugía plástica en Colombia](/es/cirugia-plastica-colombia/). Si buscas el consultorio, el [cirujano plástico en Cartagena](/es/) es el Dr. Fulvio Correa; esta página es solo la lista de qué comprobar.
+No existe un ranking oficial de cirujanos plásticos en Cartagena ni en Colombia. Decir «el mejor» sin un dato que se pueda revisar es mercadeo. Esta página explica qué comprobar y qué ya está publicado sobre este consultorio. El costo, la estadía y la comparación entre ciudades están en [cirugía plástica en Colombia](/es/cirugia-plastica-colombia/). Si lo que buscas es agendar tu valoración, entra a la página del [cirujano plástico en Cartagena, Dr. Fulvio Correa](/es/); esta página es solo la lista de qué comprobar.
 
-## ¿Qué hay que revisar de un cirujano plástico en Cartagena?
+## ¿Qué hay que revisar antes de elegir cirujano?
 
 En mayo de 2026, la Sociedad Colombiana de Cirugía Plástica publicó cinco recomendaciones para quien piense en una cirugía estética: verificar la formación del cirujano y su inscripción en el **ReTHUS** (Registro Único Nacional del Talento Humano en Salud), confirmar que la clínica esté **habilitada por la secretaría de salud**, exigir una valoración médica completa, desconfiar de promesas de resultados «sin dolor» o «inmediatos», y asegurarse de que el seguimiento posoperatorio haga parte del plan. ([El Tiempo, 19 de mayo de 2026](https://www.eltiempo.com/salud/sociedad-de-cirugia-plastica-entrega-cinco-recomendaciones-a-tener-en-cuenta-antes-de-realizarse-una-intervencion-estetico-quirurgica-3556851))
 
@@ -103,7 +103,7 @@ Para agendar, escríbele a Sofía. Ella coordina la valoración presencial o vir
 
 ## Preguntas frecuentes
 
-**¿Cómo elijo un cirujano plástico en Cartagena?**
+**¿Cómo verifico a un cirujano plástico antes de operarme?**
 Confirma la especialización en cirugía plástica, la membresía en la SCCP y la inscripción en el ReTHUS. Pregunta en qué clínica será la cirugía y pide la habilitación vigente de ese servicio. Agenda una valoración, presencial o virtual, antes de reservar una fecha.
 
 **¿El Dr. Fulvio Correa es miembro de la SCCP?**
