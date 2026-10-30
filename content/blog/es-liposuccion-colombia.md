@@ -33,6 +33,8 @@ Si además hay piel flácida o el abdomen quedó abombado después de un embaraz
 
 Si estás cotizando abdomen, cintura y espalda en una sola cirugía, [lipo 360 en Colombia: precio y qué incluye](/es/blog/lipo-360-precio-colombia/) muestra el rango publicado y lo que debe detallar una cotización escrita.
 
+Si estás cotizando una sola zona, o no sabes qué plan necesitas, [¿cuánto cuesta una lipo en Colombia?](/es/blog/liposuccion-precio-colombia/) explica qué precio publicado aplica a la liposucción, la lipoescultura HD y las zonas adicionales.
+
 ## Por qué Colombia—y por qué Cartagena aparece tanto en la búsqueda
 
 Colombia concentra oferta de cirugía plástica y pacientes internacionales; Cartagena suma aeropuerto internacional, alojamiento servido y equipos acostumbrados al turismo médico. Para quien viaja, la logística pesa tanto como la técnica: vuelos, alojamiento cercano, acompañante y un calendario que permita reposo real.
