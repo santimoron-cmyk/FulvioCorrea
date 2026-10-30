@@ -50,7 +50,7 @@ const copy = {
       'A Google review is one person’s account. It is not a rate and it is not a package that is currently for sale.',
     ],
     quoteTitle: 'The quote is separate from the checklist',
-    quote: 'Estimated ranges for surgery with this practice are on the plastic surgery cost page. Among operations listed on their own, eyelid surgery starts at USD 3,600. A consultation is USD 150 / COP 400,000. The real quote is the one written after a virtual or in-person consultation. A mommy makeover, a Brazilian butt lift with fat transfer, and liposuction that is not HD liposculpture are quoted per case. The recovery house in Cartagena — 24/7 nursing, transfers, and supplies — is arranged at the valuation and has no package price.',
+    quote: 'This practice does not publish surgery prices. A consultation is USD 150 / COP 400,000. That fee is not a surgery price. The real quote is the one written after a virtual or in-person consultation. A mommy makeover, a Brazilian butt lift with fat transfer, and every other procedure are quoted per case. The recovery house in Cartagena — 24/7 nursing, transfers, and supplies — is arranged at the valuation and has no package price.',
     faqTitle: 'Questions about choosing a surgeon',
     faqs: [
       ['Who is the best plastic surgeon in Colombia?', 'There is no official ranking. A claim of “the best” without a record you can check is marketing. Verify ReTHUS, SCCP membership, and that the clinic’s surgical service is authorized in REPS. Then have a consultation and ask for a written quote.'],
@@ -93,7 +93,7 @@ const copy = {
       'Una reseña de Google es el relato de una persona. No es una tarifa ni un paquete que se esté vendiendo hoy.',
     ],
     quoteTitle: 'La cotización va aparte de la verificación',
-    quote: 'Los rangos estimados de cirugía de este consultorio están en la página de precios. Entre las cirugías que tienen fila propia, la blefaroplastia empieza en USD 3.600. La valoración cuesta USD 150 / COP 400.000. La cotización real es la que queda por escrito después de la consulta virtual o presencial. El mommy makeover, el Brazilian butt lift con transferencia de grasa y la liposucción que no es lipoescultura HD se cotizan por caso. La casa de recuperación en Cartagena — enfermería 24/7, traslados e insumos — se organiza en la valoración y no tiene precio de paquete.',
+    quote: 'Este consultorio no publica precios de cirugía. La valoración cuesta USD 150 / COP 400.000. Esa tarifa no es un precio de cirugía. La cotización real es la que queda por escrito después de la consulta virtual o presencial. El mommy makeover, el Brazilian butt lift con transferencia de grasa y el resto de los procedimientos se cotizan por caso. La casa de recuperación en Cartagena — enfermería 24/7, traslados e insumos — se organiza en la valoración y no tiene precio de paquete.',
     faqTitle: 'Preguntas para elegir cirujano',
     faqs: [
       ['¿Quién es el mejor cirujano plástico de Colombia?', 'No hay un ranking oficial. Decir «el mejor» sin un registro que se pueda revisar es mercadeo. Verifica el ReTHUS, la membresía en la SCCP y que el servicio quirúrgico de la clínica esté habilitado en el REPS. Después pide una valoración y una cotización por escrito.'],
@@ -116,7 +116,7 @@ export function surgeonPage(lang, practice) {
   const about = es ? '/es/about/' : '/en/about/';
   const capri = es ? '/es/capri-clinic/' : '/en/capri-clinic/';
   const guide = es ? '/es/plastic-surgery-colombia/' : '/en/plastic-surgery-colombia/';
-  const cost = es ? '/es/plastic-surgery-cost-cartagena/' : '/en/plastic-surgery-cost-cartagena/';
+  const cost = es ? '/es/book-consultation/' : '/en/book-consultation/';
   const house = es ? '/es/recovery-house-cartagena/' : '/en/recovery-house-cartagena/';
   const procedures = es ? '/es/procedures/' : '/en/procedures/';
   const contact = es ? '/es/contact/' : '/en/contact/';
@@ -126,7 +126,7 @@ export function surgeonPage(lang, practice) {
 <section class="section wrap" data-surface="plum" id="verify"><h2>${esc(c.checkTitle)}</h2>${li(c.checks)}<div class="article-body">${para(c.checksNote)}</div></section>
 <section class="section wrap" data-surface="charcoal" id="credentials"><h2>${esc(c.doctorTitle)}</h2><div class="article-body">${c.doctor.map(para).join('')}</div>${credentialsView(practice, lang)}${membershipView(practice, lang)}<p><a href="${sccpProfile}" target="_blank" rel="noopener">${es ? 'Perfil del Dr. Correa en la SCCP' : 'Dr. Correa’s SCCP profile'}</a></p><p><a href="${about}">${es ? 'Biografía del Dr. Fulvio Correa' : 'Biography of Dr. Fulvio Correa'}</a> · <a href="${capri}">${es ? 'Clínica CAPRI' : 'CAPRI Clinic'}</a> · <a href="${contact}">${es ? 'Contacto' : 'Contact'}</a></p>${es ? '<p>Si buscas el consultorio, entra por el <a href="/es/">cirujano plástico en Cartagena</a>. Esta página es la lista de verificación.</p>' : ''}</section>
 <section class="section wrap" data-surface="black"><h2>${esc(c.notTitle)}</h2>${li(c.not)}</section>
-<section class="section wrap" data-surface="plum" id="quote"><h2>${esc(c.quoteTitle)}</h2><div class="article-body">${para(c.quote)}<p><a href="${cost}">${es ? 'Precios de cirugía plástica en Cartagena' : 'Plastic surgery costs in Cartagena'}</a> · <a href="${bleph}">${es ? 'Blefaroplastia' : 'Blepharoplasty'}</a> · <a href="${house}">${es ? 'Casa de recuperación en Cartagena' : 'Recovery house in Cartagena'}</a> · <a href="${guide}">${es ? 'cirugía plástica en Colombia' : 'Plastic surgery in Colombia guide'}</a> · <a href="${procedures}">${es ? 'Procedimientos' : 'Procedures'}</a></p></div></section>
+<section class="section wrap" data-surface="plum" id="quote"><h2>${esc(c.quoteTitle)}</h2><div class="article-body">${para(c.quote)}<p><a href="${cost}">${es ? 'Agendar una valoración' : 'Book a valuation'}</a> · <a href="${bleph}">${es ? 'Blefaroplastia' : 'Blepharoplasty'}</a> · <a href="${house}">${es ? 'Casa de recuperación en Cartagena' : 'Recovery house in Cartagena'}</a> · <a href="${guide}">${es ? 'cirugía plástica en Colombia' : 'Plastic surgery in Colombia guide'}</a> · <a href="${procedures}">${es ? 'Procedimientos' : 'Procedures'}</a></p></div></section>
 ${googleReviewsHtml(lang)}
 <section class="section wrap" data-surface="black" id="faq"><h2>${esc(c.faqTitle)}</h2>${faqs(c.faqs)}</section>
 <section class="section wrap" data-surface="charcoal"><h2>${esc(c.closingTitle)}</h2><div class="article-body">${para(c.closing)}</div>${cta('surgeon-closing')}</section>`;

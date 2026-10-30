@@ -33,7 +33,6 @@ const topEs = [
   ['capri-clinic/', 'clinica-capri/'],
   ['contact/', 'contacto/'],
   ['plastic-surgery-colombia/', 'cirugia-plastica-colombia/'],
-  ['plastic-surgery-cost-cartagena/', 'precios-cirugia-plastica-cartagena/'],
   ['recovery-house-cartagena/', 'casa-de-recuperacion-cartagena/'],
   ['privacy/', 'privacidad/'],
   ['terms/', 'terminos/'],

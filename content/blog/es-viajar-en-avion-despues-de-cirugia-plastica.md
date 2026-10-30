@@ -29,7 +29,7 @@ Para los demás procedimientos de abajo, **Avianca permite volar entre 10 y 15 d
 
 Dicho de otra forma: **viajar en avión después de una cirugía** depende del procedimiento. En un aumento de senos, mandan la ventana de 5–7 días de la ASPS y el alta de tu cirujano. En los demás procedimientos de la tabla, manda la fecha más tardía entre el mínimo de la aerolínea y esa autorización. Las credenciales, qué debe traer una cotización y cómo se compara Cartagena con otras ciudades están en la [guía 2026 de cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
 
-¿Ya estás armando fechas y presupuesto? Revisa los [precios de cirugía plástica en Cartagena](/es/precios-cirugia-plastica-cartagena/), incluida la [abdominoplastia en Cartagena](/es/procedimientos/abdominoplastia/). En la valoración, el doctor confirma cuántos días quedarte antes de volar.
+¿Ya estás armando fechas y presupuesto? Revisa la [abdominoplastia en Cartagena](/es/procedimientos/abdominoplastia/) y [agenda la valoración](/es/agendar-valoracion/). En esa cita, el doctor confirma cuántos días quedarte antes de volar. La valoración cuesta USD 150 / COP 400.000 y no es un precio de cirugía.
 
 ## La ventana, procedimiento por procedimiento
 

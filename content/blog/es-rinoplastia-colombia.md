@@ -25,7 +25,7 @@ Si estás pensando en una [rinoplastia en Colombia](/es/procedimientos/rinoplast
 
 Las reglas del viaje y cómo revisar una clínica antes de comprometerte están en [cirugía plástica en Colombia](/es/cirugia-plastica-colombia/). Hay otra fecha que conviene tener presente desde ya, aunque esté lejos: la nariz sigue afinándose durante cerca de un año. El resultado definitivo de una **cirugía de nariz en Colombia** se juzga en casa, no en Cartagena, así que el seguimiento, y qué pasaría si algún día hiciera falta un retoque, se acuerda antes de comprar el tiquete.
 
-Si estás comparando precios, [cuánto cuesta una rinoplastia en Colombia](/es/blog/rinoplastia-precio-colombia/) muestra el estimado publicado en dólares y pesos y los renglones que debe traer una cotización escrita.
+Si estás comparando precios, [cuánto cuesta una rinoplastia en Colombia](/es/blog/rinoplastia-precio-colombia/) explica qué mueve la cotización y los renglones que debe traer por escrito. La valoración cuesta USD 150 / COP 400.000.
 
 ## Lo primero: quién te va a operar
 

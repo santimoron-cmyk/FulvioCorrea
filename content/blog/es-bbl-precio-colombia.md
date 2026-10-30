@@ -8,10 +8,10 @@ tags: ["bbl-colombia", "bbl-precio", "lipotransferencia-glutea", "contorno-corpo
 cover: "/assets/blog-bbl-colombia-cost.webp"
 coverAlt: "Mujer con un vestido holgado de lino de manga larga de pie junto a la puerta abierta de un balcón de madera en Cartagena, con una carpeta cerrada en la mano, mirando el mar y los edificios de Bocagrande"
 date: "2026-10-26"
-updated: "2026-10-26"
+updated: "2026-10-30"
 author: "fulvio-correa"
 translationOf: "bbl-colombia-cost"
-sources: ["https://fulviocorrea.com/es/precios-cirugia-plastica-cartagena/","https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf","https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/procedure","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/recovery","https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx","https://prestadores.minsalud.gov.co/habilitacion/ayudas/Manual_HABILITACION_prestadores_novedades.pdf","https://cirugiaplastica.org.co/procedimientos/aumento-de-gluteos/"]
+sources: ["https://fulviocorrea.com/es/agendar-valoracion/","https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf","https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/procedure","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/recovery","https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx","https://prestadores.minsalud.gov.co/habilitacion/ayudas/Manual_HABILITACION_prestadores_novedades.pdf","https://cirugiaplastica.org.co/procedimientos/aumento-de-gluteos/"]
 draft: false
 originalUrl: ""
 procedure: "bbl"
@@ -21,21 +21,20 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**El BBL (lipotransferencia glútea) con el Dr. Fulvio Correa en Cartagena no tiene un precio publicado: se cotiza por caso, después de una valoración que cuesta USD 150 (COP 400.000).** No es por esconder el número. Un BBL son dos cirugías en un mismo tiempo, una liposucción para obtener la grasa y el injerto de esa grasa en glúteos y caderas, y el tamaño de cada parte cambia de un cuerpo a otro. Lo que sí puedes revisar antes de la valoración es la [guía de precios](/es/precios-cirugia-plastica-cartagena/) de procedimientos relacionados, la referencia de Estados Unidos que verás abajo y la lista de lo que toda cotización seria de un BBL en Colombia tiene que detallar.
+**El BBL (lipotransferencia glútea) con el Dr. Fulvio Correa en Cartagena no tiene un precio de cirugía publicado: se cotiza por caso, después de una valoración que cuesta USD 150 (COP 400.000).** No es por esconder el número. Un BBL son dos cirugías en un mismo tiempo, una liposucción para obtener la grasa y el injerto de esa grasa en glúteos y caderas, y el tamaño de cada parte cambia de un cuerpo a otro. Antes de la valoración puedes revisar qué mueve la cotización y la lista de lo que toda cotización seria de un BBL en Colombia tiene que detallar. [Agenda la valoración](/es/agendar-valoracion/) cuando quieras la cifra escrita de tu plan.
 
-## La respuesta corta, con cifras que puedes comprobar
+## Qué se puede saber antes de la valoración
 
-| Concepto | Qué está publicado | Fuente |
+| Concepto | Qué está publicado | Dónde seguir |
 |---|---|---|
-| BBL (transferencia de grasa a los glúteos) con el Dr. Fulvio Correa | Sin rango. Se cotiza por caso después de la valoración | [Guía de precios](/es/precios-cirugia-plastica-cartagena/) |
-| Valoración virtual o presencial | USD 150 / COP 400.000 | Guía de precios |
-| Gluteoplastia con implantes, otra cirugía | USD 6,750–8,250 (COP 21.310.000–26.040.000) | Guía de precios |
-| Lipoescultura HD Liposurg, sin transferencia de grasa | USD 6,300–7,700 (COP 19.890.000–24.310.000) | Guía de precios |
-| Referencia en EE. UU.: aumento de glúteos con injerto de grasa, solo honorario del cirujano (2024) | USD 7,000–11,500 | [Informe de estadísticas 2024 de la ASPS](https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf) |
+| BBL (transferencia de grasa a los glúteos) con el Dr. Fulvio Correa | Sin precio de cirugía publicado. Se cotiza por caso después de la valoración | [Agendar la valoración](/es/agendar-valoracion/) |
+| Valoración virtual o presencial | USD 150 / COP 400.000 | No es un precio de cirugía |
+| Gluteoplastia con implantes, otra cirugía | Se cotiza por caso. No es la misma cirugía que un BBL | [Aumento de glúteos en Cartagena](/es/procedimientos/aumento-de-gluteos/) |
+| Lipoescultura HD, liposucción sin transferencia de grasa | Se cotiza por caso. No es el precio de un BBL | [Precio de la liposucción en Colombia](/es/blog/liposuccion-precio-colombia/) |
 
-Las cifras de Cartagena son estimaciones desde–hasta basadas en casos anteriores. Los pesos se calcularon con la TRM del 20 de octubre de 2026, COP 3.156,32 por dólar, redondeando hacia arriba a la decena de mil más cercana. No son una cotización y aparecen para que veas la escala de otros procedimientos corporales. No son el precio de un BBL.
+La tarifa de la valoración es un par fijo. No se convierte en un precio de cirugía y no incluye la operación. Los procedimientos corporales relacionados también se cotizan después de esa misma visita. Sumarlos de cabeza no es el precio de un plan combinado.
 
-Estimación orientativa basada en experiencias previas; a veces se ha cobrado menos y a veces más según cada caso. La cotización real va siempre después de la consulta virtual o presencial. No compromete al Dr. a cobrar ese monto ni a operar.
+La cotización real va siempre después de la valoración virtual o presencial. No compromete al Dr. a operar.
 
 ## Por qué el BBL no tiene precio fijo
 
@@ -51,9 +50,7 @@ Por eso la respuesta honesta a "¿cuánto cuesta un BBL en Colombia?" es una cot
 
 ## La referencia de Estados Unidos y lo que no incluye
 
-La ASPS publica rangos de honorarios que reportan sus cirujanos miembros. Para 2024, el aumento de glúteos con injerto de grasa aparece con **USD 7,000–11,500**, y sus miembros reportaron **29.466** de estos procedimientos ese año. La ASPS aclara que el rango es una proyección construida con promedios de los miembros encuestados en distintas regiones y tipos de consulta.
-
-Esa cifra es el honorario del cirujano. Una cuenta completa incluye además anestesia, clínica, exámenes, prendas y controles, así que compararla con una cotización total de cualquier lugar no es comparar lo mismo. Esta página no afirma un porcentaje de ahorro.
+La ASPS publica honorarios de cirujano que reportan sus miembros, y habla de la anestesia y de los costos de quirófano por separado. Sus miembros reportaron **29.466** aumentos de glúteos con injerto de grasa en 2024. El honorario del cirujano no es una cuenta total: la anestesia, la clínica, los exámenes, las prendas y los controles quedan por fuera. Esta página no publica esas cifras de Estados Unidos y no afirma un porcentaje de ahorro. Lo que se compara es una cotización escrita con otra cotización escrita.
 
 ## Qué debe detallar una cotización escrita de BBL
 
@@ -110,13 +107,13 @@ No tiene rango publicado. El BBL se cotiza por caso después de la valoración, 
 USD 150 / COP 400.000, virtual o presencial. No es un precio de cirugía.
 
 **¿Cuánto cuesta un BBL en Estados Unidos?**
-La ASPS reporta para 2024 un rango de honorarios del cirujano de USD 7,000–11,500 para el aumento de glúteos con injerto de grasa. Es solo el honorario del cirujano, sin anestesia, clínica ni controles.
+La ASPS publica un honorario de cirujano para el aumento de glúteos con injerto de grasa, y trata la anestesia y la clínica como costos aparte. Ese honorario no es una cuenta total, y esta página no reproduce la cifra. Compara cotizaciones escritas, no un titular.
 
 **¿La gluteoplastia con implantes es más barata que el BBL?**
-Son cirugías distintas. La gluteoplastia con implantes tiene una estimación publicada de USD 6,750–8,250 (COP 21.310.000–26.040.000) con el Dr. Fulvio Correa; el BBL se cotiza por caso, así que no se pueden comparar hasta tener la cotización.
+Son cirugías distintas. Las dos se cotizan por caso con el Dr. Fulvio Correa, así que no se pueden comparar hasta tener la cotización escrita.
 
 **¿Cuánto cuesta la lipo 360 con transferencia a glúteos?**
-También se cotiza por caso. Los rangos de liposucción que sí existen están en [lipo 360 en Colombia: precio y qué incluye](/es/blog/lipo-360-precio-colombia/).
+También se cotiza por caso. Qué mueve el precio de una lipo 360 está en [lipo 360 en Colombia: precio y qué incluye](/es/blog/lipo-360-precio-colombia/).
 
 **¿Por qué algunas clínicas anuncian un BBL mucho más barato?**
 La cotización puede dejar por fuera la anestesia, la clínica, los exámenes o los controles, o describir un plan más pequeño. Además, medidas como el injerto subcutáneo guiado por ecografía requieren tiempo y equipos. Compara punto por punto y verifica al cirujano y la clínica.
@@ -125,8 +122,8 @@ La cotización puede dejar por fuera la anestesia, la clínica, los exámenes o 
 
 ## Fuentes / Referencias médicas
 
-- Dr. Fulvio Correa — [Precios de cirugía plástica en Cartagena](/es/precios-cirugia-plastica-cartagena/) (BBL cotizado por caso, rangos de gluteoplastia con implantes y lipoescultura HD, valoración, TRM del 20 de octubre de 2026)
-- Sociedad Americana de Cirujanos Plásticos (ASPS) — [Informe de estadísticas de cirugía plástica 2024 (copia archivada, en inglés)](https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf) (rango de honorarios 2024 y número de procedimientos de aumento de glúteos con injerto de grasa)
+- Dr. Fulvio Correa — [Agendar la valoración](/es/agendar-valoracion/) (la valoración cuesta USD 150 / COP 400.000; el BBL se cotiza después de esa visita)
+- Sociedad Americana de Cirujanos Plásticos (ASPS) — [Informe de estadísticas de cirugía plástica 2024 (copia archivada, en inglés)](https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf) (número de procedimientos de aumento de glúteos con injerto de grasa en 2024; los honorarios del cirujano se tratan aparte de la anestesia y la clínica)
 - ASPS / The Aesthetic Society — [Declaración conjunta de seguridad en injerto de grasa glúteo (2022, en inglés)](https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement)
 - ASPS — [Buttock enhancement: procedimiento](https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/procedure) y [recuperación](https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/recovery) (en inglés)
 - ISAPS — [Seguridad en lipotransferencia glútea (PDF, en inglés)](https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf)

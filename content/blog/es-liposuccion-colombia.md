@@ -31,9 +31,9 @@ En la valoración, el cirujano evalúa distribución de grasa, calidad de piel, 
 
 Si además hay piel flácida o el abdomen quedó abombado después de un embarazo, lee [¿abdominoplastia o liposucción? Cómo saber cuál necesitas](/es/blog/abdominoplastia-o-liposuccion/) antes de planear el viaje.
 
-Si estás cotizando abdomen, cintura y espalda en una sola cirugía, [lipo 360 en Colombia: precio y qué incluye](/es/blog/lipo-360-precio-colombia/) muestra el rango publicado y lo que debe detallar una cotización escrita.
+Si estás cotizando abdomen, cintura y espalda en una sola cirugía, [lipo 360 en Colombia: precio y qué incluye](/es/blog/lipo-360-precio-colombia/) explica qué cambia la cotización y qué debe detallar una cotización escrita.
 
-Si estás cotizando una sola zona, o no sabes qué plan necesitas, [¿cuánto cuesta una lipo en Colombia?](/es/blog/liposuccion-precio-colombia/) explica qué precio publicado aplica a la liposucción, la lipoescultura HD y las zonas adicionales.
+Si estás cotizando una sola zona, o no sabes qué plan necesitas, [¿cuánto cuesta una lipo en Colombia?](/es/blog/liposuccion-precio-colombia/) explica qué cambia la cotización de la liposucción, la lipoescultura HD y las zonas adicionales.
 
 ## Por qué Colombia—y por qué Cartagena aparece tanto en la búsqueda
 

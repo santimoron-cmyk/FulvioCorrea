@@ -1,6 +1,6 @@
 ---
 title: "Rhinoplasty Cost in Colombia: What a Nose Job Costs"
-description: "Rhinoplasty cost in Colombia with Dr. Fulvio Correa in Cartagena: USD 6,750–8,250 estimate, what moves a nose job quote, the U.S. fee benchmark and what to ask."
+description: "Rhinoplasty cost in Colombia with Dr. Fulvio Correa in Cartagena: what moves a nose job quote, and what a written quote should list."
 slug: "rhinoplasty-colombia-cost"
 lang: "en"
 category: "Plastic Surgery in Colombia"
@@ -8,10 +8,10 @@ tags: ["rhinoplasty-colombia", "rhinoplasty-cost", "nose-job-colombia", "septorh
 cover: "/assets/blog-rhinoplasty-colombia-cost.webp"
 coverAlt: "Woman in a loose cream linen shirt sitting in the deep window seat of a colonial house in Cartagena, reading a printed letter, with a straw hat and a closed folder beside her"
 date: "2026-10-28"
-updated: "2026-10-28"
+updated: "2026-10-30"
 author: "fulvio-correa"
 translationOf: "rinoplastia-precio-colombia"
-sources: ["https://fulviocorrea.com/plastic-surgery-cost-cartagena/","https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf","https://www.mayoclinic.org/tests-procedures/rhinoplasty/about/pac-20384532","https://www.plasticsurgery.org/cosmetic-procedures/rhinoplasty/recovery","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://cirugiaplastica.org.co/procedimientos/rinoplastia/","https://cirugiaplastica.org.co/buscar-cirujano/","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html"]
+sources: ["https://fulviocorrea.com/book-consultation/","https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf","https://www.mayoclinic.org/tests-procedures/rhinoplasty/about/pac-20384532","https://www.plasticsurgery.org/cosmetic-procedures/rhinoplasty/recovery","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://cirugiaplastica.org.co/procedimientos/rinoplastia/","https://cirugiaplastica.org.co/buscar-cirujano/","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html"]
 draft: false
 originalUrl: ""
 procedure: "rhinoplasty"
@@ -21,23 +21,21 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**Rhinoplasty with Dr. Fulvio Correa in Cartagena has a published estimate of USD 6,750–8,250 (COP 21.310.000–26.040.000).** That range comes from previous cases and is not a quote: your number is written after a consultation, which costs USD 150 (COP 400,000), virtual or in person. Below is what moves a nose job quote up or down inside that range, what the U.S. figure you may have seen actually measures, and the lines a written rhinoplasty quote in Colombia should spell out before you book a flight.
+**Rhinoplasty with Dr. Fulvio Correa in Cartagena does not have a published surgery price.** Your number is written after a consultation, which costs USD 150 (COP 400,000), virtual or in person. Below is what moves a nose job quote, what a U.S. surgeon-fee headline actually measures, and the lines a written rhinoplasty quote in Colombia should spell out before you book a flight. [Book the valuation](/book-consultation/) when you want the figure for your own nose.
 
-## Rhinoplasty in Colombia: the numbers that are published
+## What is published before the valuation
 
-| Item | Published figure | Where it comes from |
+| Item | What is published | Where to go next |
 |---|---|---|
-| Rhinoplasty with Dr. Fulvio Correa, Cartagena | USD 6,750–8,250 (COP 21.310.000–26.040.000) | [Cost guide](/plastic-surgery-cost-cartagena/) |
-| Consultation, virtual or in person | USD 150 / COP 400,000 | Cost guide |
-| Blepharoplasty (eyelids), sometimes planned in the same trip | USD 3,600–4,400 (COP 11.370.000–13.890.000) | Cost guide |
-| Facelift (rhytidectomy) | USD 9,000–11,000 (COP 28.410.000–34.720.000) | Cost guide |
-| U.S. benchmark: rhinoplasty, surgeon/physician fee only (2024) | USD 7,500–12,500 | [ASPS 2024 statistics report](https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf) |
+| Rhinoplasty with Dr. Fulvio Correa, Cartagena | No published surgery price. Quoted after the consultation | [Book a valuation](/book-consultation/) |
+| Consultation, virtual or in person | USD 150 / COP 400,000 | Not a surgery price |
+| Eyelids or a facelift in the same trip | Quoted as one plan, not by adding separate prices | [Rhinoplasty in Cartagena](/procedures/rhinoplasty/) |
 
-The Cartagena ranges are authorized in U.S. dollars. The peso figures use Colombia's official exchange rate (TRM) of 20 October 2026, COP 3,156.32 per dollar, rounded up to the nearest 10,000 pesos; the consultation fee is fixed in both currencies. The eyelid and facelift rows are there to show the pieces of a combined plan. Adding pieces together is not the price of a combination, which is quoted as a whole.
+The consultation fee is fixed in both currencies. It is not a surgery price. A combined facial plan is quoted as a whole. Adding pieces together is not the price of the combination.
 
-This is an approximate estimate based on previous cases; sometimes the fee has been lower and sometimes higher, depending on the case. The real quote always comes after the virtual or in-person consultation. It does not commit the doctor to charge that amount or to operate.
+The real quote always comes after the virtual or in-person consultation. It does not commit the doctor to operate.
 
-## What moves a nose job quote inside the range
+## What moves a nose job quote
 
 Mayo Clinic puts it plainly: the cost of a rhinoplasty depends on the complexity of the surgery, the surgeon's training and experience, and geography. Inside one practice, geography is fixed, so complexity does most of the work. In practice that means four questions.
 
@@ -53,9 +51,9 @@ What usually does not belong in that list is a brand name for a device. If a quo
 
 ## What the U.S. figure measures, and what it leaves out
 
-The American Society of Plastic Surgeons (ASPS) publishes surgeon/physician fee ranges reported by its member surgeons. For 2024, rhinoplasty is listed at **USD 7,500–12,500**. ASPS presents that as a projected range of surgeon fees, and it discusses anesthesia costs and operating-room fees separately.
+The American Society of Plastic Surgeons (ASPS) publishes surgeon/physician fees reported by its member surgeons, and it discusses anesthesia costs and operating-room fees separately.
 
-So the U.S. number and a written quote in Colombia are not the same kind of bill. A surgeon's fee leaves out anesthesia, the facility, tests and follow-up; the Cartagena range is an estimate for the procedure that becomes a written quote listing what is and is not included. The two ranges overlap, and this page does not claim a percentage saving. If the reason to travel is only a lower price, compare a full written quote from home with a full written quote here, item by item, and add the trip.
+So a U.S. surgeon-fee headline and a written quote in Colombia are not the same kind of bill. A surgeon's fee leaves out anesthesia, the facility, tests and follow-up. This page does not publish those U.S. figures and does not claim a percentage saving. If the reason to travel is only a lower price, compare a full written quote from home with a full written quote here, item by item, and add the trip.
 
 ## Seven lines a written rhinoplasty quote should spell out
 
@@ -96,7 +94,7 @@ The full checklist for comparing surgeons is in [how to choose a plastic surgeon
 
 ## Where Dr. Fulvio Correa fits
 
-Dr. Fulvio Correa is a plastic surgeon in Cartagena and a *Miembro de Número* of the [Colombian Society of Plastic Surgery (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). He evaluates [rhinoplasty in Cartagena](/procedures/rhinoplasty/) candidates personally, decides whether the plan is cosmetic, functional or both, and then the written quote follows. Surgery takes place at [CAPRI Clinic](/capri-clinic/), a different address from his consultation office in Manzanillo del Mar, CC Ramblas local 23. If you live abroad, the [international patients](/international-patients/) program starts with a virtual consultation from front and profile photos; the plan is confirmed in person before surgery. All published estimates are on the [plastic surgery cost guide](/plastic-surgery-cost-cartagena/).
+Dr. Fulvio Correa is a plastic surgeon in Cartagena and a *Miembro de Número* of the [Colombian Society of Plastic Surgery (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). He evaluates [rhinoplasty in Cartagena](/procedures/rhinoplasty/) candidates personally, decides whether the plan is cosmetic, functional or both, and then the written quote follows. Surgery takes place at [CAPRI Clinic](/capri-clinic/), a different address from his consultation office in Manzanillo del Mar, CC Ramblas local 23. If you live abroad, the [international patients](/international-patients/) program starts with a virtual consultation from front and profile photos; the plan is confirmed in person before surgery. The written quote follows the [valuation](/book-consultation/).
 
 To get a written rhinoplasty quote, message Sofía. She coordinates the virtual consultation, the quote and the logistics of your stay; medical decisions stay with the surgeon.
 
@@ -105,7 +103,7 @@ To get a written rhinoplasty quote, message Sofía. She coordinates the virtual 
 ## Frequently asked questions
 
 **How much does a nose job cost in Colombia with Dr. Fulvio Correa?**
-The published estimate for rhinoplasty is USD 6,750–8,250 (COP 21.310.000–26.040.000). It is based on previous cases; your written quote comes after the consultation.
+There is no published surgery price. The written quote comes after the consultation and depends on whether the plan is cosmetic, functional or both, on how much structure has to change, and on whether this is a first operation or a revision.
 
 **How much is the consultation?**
 USD 150 / COP 400,000, virtual or in person. It is not a surgery price.
@@ -114,7 +112,7 @@ USD 150 / COP 400,000, virtual or in person. It is not a surgery price.
 It can. Straightening a deviated septum in the same operation changes what is done, so the consultation sets whether the plan is cosmetic, functional or both, and the quote reflects that.
 
 **How does that compare with the United States?**
-ASPS lists a 2024 surgeon/physician fee range of USD 7,500–12,500 for rhinoplasty. That is the surgeon's fee only, without anesthesia, facility or follow-up, so it is not a total bill.
+ASPS publishes a surgeon's fee for rhinoplasty and treats anesthesia and the facility as separate costs. That fee is not a total bill, and this page does not reprint the number.
 
 **How many days should I budget in Cartagena?**
 At least 10 days after surgery if you fly Avianca, plus your days before surgery. ASPS and the CDC suggest 7 to 10 days after facial procedures; your surgeon confirms the date after examining you.
@@ -126,8 +124,8 @@ Prefer Spanish? Read the twin guide: <a href="/es/blog/rinoplastia-precio-colomb
 
 ## Sources / Medical references
 
-- Dr. Fulvio Correa — [Plastic surgery in Colombia: cost and prices](/plastic-surgery-cost-cartagena/) (rhinoplasty, blepharoplasty and facelift ranges, consultation fee, TRM of 20 October 2026, ASPS comparison)
-- American Society of Plastic Surgeons — [2024 plastic surgery statistics report (archived copy)](https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf) (2024 surgeon/physician fee range for rhinoplasty)
+- Dr. Fulvio Correa — [Book a valuation](/book-consultation/) (consultation fee USD 150 / COP 400,000; the rhinoplasty quote is written after that visit)
+- American Society of Plastic Surgeons — [2024 plastic surgery statistics report (archived copy)](https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf) (surgeon fees are discussed separately from anesthesia and facility fees)
 - Mayo Clinic — [Rhinoplasty](https://www.mayoclinic.org/tests-procedures/rhinoplasty/about/pac-20384532) (what drives cost, cartilage sources, septoplasty, anesthesia, splint, revision timing, choosing a surgeon)
 - American Society of Plastic Surgeons — [Rhinoplasty recovery](https://www.plasticsurgery.org/cosmetic-procedures/rhinoplasty/recovery) (contour refinement up to a year)
 - American Society of Plastic Surgeons — [Briefing paper: Cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (7 to 10 days before flying after facial procedures)
