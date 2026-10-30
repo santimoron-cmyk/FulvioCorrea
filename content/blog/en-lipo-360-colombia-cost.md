@@ -25,6 +25,8 @@ review_date: ""
 
 "Lipo 360" is not a separate operation. It is the common name for liposuction of the abdomen, waist (flanks) and back in the same session, so the whole midsection is treated "all the way around." That is why its price depends far more on your plan than on the name. This guide explains which numbers exist, which ones don't, and what to check in any quote for lipo 360 in Colombia, here or anywhere else.
 
+If you only want one or two areas treated, start with [how much lipo costs in Colombia](/blog/liposuction-colombia-cost/), which compares liposuction, HD liposculpture and lipo 360 side by side.
+
 ## Lipo 360 cost in Cartagena at a glance
 
 | Plan | Estimated range (USD) | Estimated range (COP) |

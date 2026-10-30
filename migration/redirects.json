@@ -954,6 +954,16 @@
       "status": 301
     },
     {
+      "from": "/post/liposuction-colombia-cost",
+      "to": "/blog/liposuction-colombia-cost/",
+      "status": 301
+    },
+    {
+      "from": "/post/liposuction-colombia-cost/",
+      "to": "/blog/liposuction-colombia-cost/",
+      "status": 301
+    },
+    {
       "from": "/post/liposuction-recovery",
       "to": "/blog/liposuction-recovery/",
       "status": 301
@@ -1161,6 +1171,16 @@
     {
       "from": "/post/liposuccion-colombia/",
       "to": "/es/blog/liposuccion-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/liposuccion-precio-colombia",
+      "to": "/es/blog/liposuccion-precio-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/post/liposuccion-precio-colombia/",
+      "to": "/es/blog/liposuccion-precio-colombia/",
       "status": 301
     },
     {
@@ -2061,6 +2081,16 @@
     {
       "from": "/en/blog/category/plastic-surgery-in-colombia",
       "to": "/blog/category/plastic-surgery-in-colombia/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/liposuction-colombia-cost/",
+      "to": "/blog/liposuction-colombia-cost/",
+      "status": 301
+    },
+    {
+      "from": "/en/blog/liposuction-colombia-cost",
+      "to": "/blog/liposuction-colombia-cost/",
       "status": 301
     },
     {

@@ -25,6 +25,8 @@ review_date: ""
 
 "Lipo 360" no es una cirugía distinta. Es el nombre con el que se conoce la liposucción de abdomen, cintura (flancos) y espalda en la misma cirugía, para trabajar todo el contorno "alrededor". Por eso el precio depende mucho más de tu plan que del nombre. Esta guía explica qué cifras existen, cuáles no, y qué revisar en cualquier cotización de lipo 360 en Colombia, aquí o en otro consultorio.
 
+Si solo quieres tratar una o dos zonas, empieza por [¿cuánto cuesta una lipo en Colombia?](/es/blog/liposuccion-precio-colombia/), que compara liposucción, lipoescultura HD y lipo 360 en una sola tabla.
+
 ## Precio de la lipo 360 en Cartagena, en una tabla
 
 | Plan | Rango estimado (USD) | Rango estimado (COP) |
