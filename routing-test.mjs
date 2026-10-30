@@ -170,24 +170,39 @@ assert.match(home, new RegExp('hreflang="en" href="' + origin + '/"'));
 assert.match(home, new RegExp('hreflang="es" href="' + origin + '/es/"'));
 assert.match(home, new RegExp('hreflang="x-default" href="' + origin + '/"'));
 const sitemap = fs.readFileSync('dist/sitemap.xml', 'utf8');
-for (const path of ['/plastic-surgery-cost-cartagena/', '/es/precios-cirugia-plastica-cartagena/', '/recovery-house-cartagena/', '/es/casa-de-recuperacion-cartagena/']) {
+for (const path of ['/recovery-house-cartagena/', '/es/casa-de-recuperacion-cartagena/']) {
   assert.equal(status(path, rules).code, 200, path + ' should be a page');
   assert.ok(sitemap.includes('<loc>' + origin + path + '</loc>'), 'sitemap missing ' + path);
 }
-const costHtml = fs.readFileSync('dist/plastic-surgery-cost-cartagena/index.html', 'utf8');
-const costEs = fs.readFileSync('dist/es/precios-cirugia-plastica-cartagena/index.html', 'utf8');
+for (const [from, to] of [
+  ['/plastic-surgery-cost-cartagena/', '/book-consultation/'],
+  ['/plastic-surgery-cost-cartagena', '/book-consultation/'],
+  ['/en/plastic-surgery-cost-cartagena/', '/book-consultation/'],
+  ['/en/plastic-surgery-cost-cartagena', '/book-consultation/'],
+  ['/es/precios-cirugia-plastica-cartagena/', '/es/agendar-valoracion/'],
+  ['/es/precios-cirugia-plastica-cartagena', '/es/agendar-valoracion/'],
+  ['/es/plastic-surgery-cost-cartagena/', '/es/agendar-valoracion/'],
+  ['/es/plastic-surgery-cost-cartagena', '/es/agendar-valoracion/'],
+]) {
+  const gone = status(from, rules);
+  assert.equal(gone.code, 301, from + ' should redirect');
+  assert.equal(gone.location, to, from + ' redirect target');
+  assert.equal(sitemap.includes('<loc>' + origin + (from.endsWith('/') ? from : from + '/') + '</loc>'), false, 'sitemap still lists ' + from);
+}
+assert.equal(fs.existsSync('dist/plastic-surgery-cost-cartagena/index.html'), false);
+assert.equal(fs.existsSync('dist/es/precios-cirugia-plastica-cartagena/index.html'), false);
 const recoveryHtml = fs.readFileSync('dist/recovery-house-cartagena/index.html', 'utf8');
-assert.match(costHtml, new RegExp('rel="canonical" href="' + origin + '/plastic-surgery-cost-cartagena/"'));
-assert.match(costHtml, new RegExp('hreflang="es" href="' + origin + '/es/precios-cirugia-plastica-cartagena/"'));
-assert.match(costEs, new RegExp('hreflang="en" href="' + origin + '/plastic-surgery-cost-cartagena/"'));
-assert.match(costHtml, /FAQPage/);
-assert.doesNotMatch(costHtml, /AggregateRating|"@type":"Review"/);
-assert.match(costHtml, /Google review/);
-assert.doesNotMatch(costHtml + costEs + recoveryHtml, /15 years old|Sofia H\./);
+assert.doesNotMatch(recoveryHtml, /AggregateRating|"@type":"Review"/);
+assert.match(recoveryHtml, /Google review/);
+assert.doesNotMatch(recoveryHtml, /15 years old|Sofia H\./);
 assert.match(recoveryHtml, new RegExp('hreflang="es" href="' + origin + '/es/casa-de-recuperacion-cartagena/"'));
-assert.match(fs.readFileSync('dist/procedures/mommy-makeover/index.html', 'utf8'), /id="estimated-cost"/);
-assert.doesNotMatch(fs.readFileSync('dist/procedures/mommy-makeover/index.html', 'utf8'), /USD 9,900/);
-assert.match(fs.readFileSync('dist/procedures/tummy-tuck/index.html', 'utf8'), /USD 9,900–12,100/);
+assert.match(recoveryHtml, /USD 150/);
+const mommy = fs.readFileSync('dist/procedures/mommy-makeover/index.html', 'utf8');
+const tummy = fs.readFileSync('dist/procedures/tummy-tuck/index.html', 'utf8');
+assert.match(mommy, /id="estimated-cost"/);
+assert.doesNotMatch(mommy, /USD 9,900/);
+assert.doesNotMatch(tummy, /USD 9,900/);
+assert.match(tummy, /USD 150/);
 assert.match(fs.readFileSync('dist/404.html', 'utf8'), /href="\/"/);
 assert.doesNotMatch(fs.readFileSync('dist/404.html', 'utf8'), /href="\/en/);
 

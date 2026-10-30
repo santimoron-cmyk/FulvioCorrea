@@ -1,6 +1,6 @@
 ---
 title: "How Much Does Lipo Cost in Colombia? Liposuction Prices"
-description: "How much lipo costs in Colombia with Dr. Fulvio Correa in Cartagena: HD liposculpture USD 6,300–7,700, add-ons per area, what is quoted per case."
+description: "How much lipo costs in Colombia with Dr. Fulvio Correa in Cartagena: what changes a quote, and why a price per area only compares if the plan is the same."
 slug: "liposuction-colombia-cost"
 lang: "en"
 category: "Body Contouring"
@@ -11,7 +11,7 @@ date: "2026-10-30"
 updated: "2026-10-30"
 author: "fulvio-correa"
 translationOf: "liposuccion-precio-colombia"
-sources: ["https://fulviocorrea.com/plastic-surgery-cost-cartagena/","https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586","https://www.plasticsurgery.org/cosmetic-procedures/liposuction","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://cirugiaplastica.org.co/buscar-cirujano/","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx"]
+sources: ["https://fulviocorrea.com/book-consultation/","https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586","https://www.plasticsurgery.org/cosmetic-procedures/liposuction","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://cirugiaplastica.org.co/buscar-cirujano/","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx"]
 draft: false
 originalUrl: ""
 procedure: "liposuction"
@@ -21,33 +21,33 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**With Dr. Fulvio Correa in Cartagena, the published estimate for HD liposculpture (listed as Liposurg) is USD 6,300–7,700, or COP 19.890.000–24.310.000. Arms or legs added to a liposuction are USD 675–825 per area. Liposuction that is not HD liposculpture has no published range: it is quoted per case after a consultation, which costs USD 150 (COP 400,000), virtual or in person.** These are from–to estimates based on previous cases, not a quote. The rest of this guide explains which of those numbers applies to the plan you have in mind, and why a price "per area" you saw online only compares if it describes the same surgery.
+**With Dr. Fulvio Correa in Cartagena, liposuction does not have a published surgery price.** HD liposculpture (listed as Liposurg), arms or legs added to a plan, retraction technology, and liposuction that is not HD are all quoted per case after a consultation, which costs USD 150 (COP 400,000), virtual or in person. The rest of this guide explains what changes the quote, and why a price "per area" you saw online only compares if it describes the same surgery. [Book the valuation](/book-consultation/) for the written figure.
 
-## Four names, four different prices
+## Four names, four different plans
 
-"Lipo" is used for several different plans. Before comparing any number, find the row that matches what you actually want done.
+"Lipo" is used for several different plans. Before comparing any quote, match the name to what you actually want done.
 
-| What you are looking for | What it is usually called | Published estimate in Cartagena |
+| What you are looking for | What it is usually called | How it is quoted in Cartagena |
 |---|---|---|
-| Less fat in one or a few areas, without detailed definition | Liposuction | Quoted per case |
-| Shaping and definition of the contour | HD liposculpture (Liposurg) | USD 6,300–7,700 (COP 19.890.000–24.310.000) |
-| Arms or legs added to a liposuction | Arm or leg liposuction, as an add-on | USD 675–825 per area (COP 2.140.000–2.610.000) |
-| Retraction technology, when the plan uses it | Retraction technology, per area | USD 450–550 (COP 1.430.000–1.740.000) |
+| Less fat in one or a few areas, without detailed definition | Liposuction | Quoted per case after the consultation |
+| Shaping and definition of the contour | HD liposculpture (Liposurg) | Quoted per case. A different operation from simple liposuction |
+| Arms or legs added to a liposuction | Arm or leg liposuction, as an add-on | Quoted with the main plan. More areas change operating time |
+| Retraction technology, when the plan uses it | Retraction technology, per area | Quoted only if the plan uses it |
 | Abdomen, waist and back in one session | Lipo 360 | See [lipo 360 cost in Colombia](/blog/lipo-360-colombia-cost/) |
 | Fat moved to the buttocks and hips | BBL (Brazilian butt lift) | Quoted per case, see [BBL cost in Colombia](/blog/bbl-colombia-cost/) |
-| Fat plus loose skin on the lower abdomen | Lipoabdominoplasty | USD 9,900–12,100 (COP 31.250.000–38.200.000) |
+| Fat plus loose skin on the lower abdomen | Lipoabdominoplasty | Quoted per case. Not the same operation as liposuction |
 | Consultation, virtual or in person | — | USD 150 / COP 400,000 |
 
-All figures come from the [plastic surgery cost guide for Cartagena](/plastic-surgery-cost-cartagena/). The ranges are authorized in U.S. dollars; the peso figures use Colombia's official exchange rate (TRM) of 20 October 2026, COP 3,156.32 per dollar, rounded up to the nearest 10,000 pesos. Adding rows together is not the price of a combined plan, which is quoted as a whole.
+The consultation fee is not a surgery price. Adding plans together in your head is not the price of a combined operation, which is quoted as a whole. [Book a valuation](/book-consultation/) for the written quote.
 
-This is an approximate estimate based on previous cases; sometimes the fee has been lower and sometimes higher, depending on the case. The real quote always comes after the virtual or in-person consultation. It does not commit the doctor to charge that amount or to operate.
+The real quote always comes after the virtual or in-person consultation. It does not commit the doctor to operate.
 
 ## Why a price "per area" online rarely matches
 
-Search for how much lipo costs in Colombia and you will find tables by number of areas, by city and by technique, in pesos and in dollars, some much lower than the range above and some higher. A number only compares with another if it describes the same plan. Three questions settle that:
+Search for how much lipo costs in Colombia and you will find tables by number of areas, by city and by technique, in pesos and in dollars. A number only compares with another if it describes the same plan. Three questions settle that:
 
 1. **Which areas, exactly?** "One area" can mean the lower abdomen alone or the whole abdomen with the flanks. Ask for the list of areas in writing.
-2. **Volume or definition?** Liposuction to reduce volume and HD liposculpture to define the contour are different operations with different planning. The published HD range is not the price of a simple liposuction, and a low "lipo" price is usually not the price of an HD plan.
+2. **Volume or definition?** Liposuction to reduce volume and HD liposculpture to define the contour are different operations with different planning. A simple liposuction quote is not the price of an HD plan, and a low "lipo" price is usually not the price of an HD plan.
 3. **What is inside the number?** Anesthesia, the operating room, tests before surgery, the compression garment and visits after surgery are in some prices and missing from others.
 
 Mayo Clinic adds a fact that explains part of the spread: if only a small amount of fat is removed, liposuction may be done in a clinic or medical office, while a large amount of fat, or other procedures at the same time, may move the surgery to a hospital. Where you are operated on, and with which anesthesia, is part of what you pay.
@@ -97,10 +97,10 @@ To get a written liposuction quote, message Sofía. She coordinates the virtual 
 ## Frequently asked questions
 
 **How much does lipo cost in Colombia with Dr. Fulvio Correa?**
-HD liposculpture has a published estimate of USD 6,300–7,700 (COP 19.890.000–24.310.000). Liposuction that is not HD liposculpture is quoted per case after the consultation.
+There is no published surgery price. HD liposculpture and liposuction that is not HD are both quoted per case after the consultation, because the areas, the technique and the facility change the plan.
 
 **How much does it cost to add arms or legs?**
-USD 675–825 per area (COP 2.140.000–2.610.000), as an add-on to a liposuction.
+There is no published add-on price. Arms or legs are quoted with the main plan, because each extra area changes operating time, anesthesia and recovery.
 
 **Is there a price for liposuction of just one area?**
 Not a fixed one. A single area is quoted per case, because the amount of fat, the technique and where the surgery is done change from one patient to another.
@@ -118,7 +118,7 @@ Prefer Spanish? Read the twin guide: <a href="/es/blog/liposuccion-precio-colomb
 
 ## Sources / Medical references
 
-- Dr. Fulvio Correa — [Plastic surgery in Colombia: cost and prices](/plastic-surgery-cost-cartagena/) (HD liposculpture, add-on, retraction and lipoabdominoplasty ranges, consultation fee, TRM of 20 October 2026, items quoted per case)
+- Dr. Fulvio Correa — [Book a valuation](/book-consultation/) (consultation fee USD 150 / COP 400,000; the liposuction quote is written after that visit)
 - Mayo Clinic — [Liposuction](https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586) (treatable areas, not a weight-loss method, loose skin, cellulite and stretch marks, risks with larger areas, office vs hospital setting, anesthesia, compression garments)
 - American Society of Plastic Surgeons — [Liposuction](https://www.plasticsurgery.org/cosmetic-procedures/liposuction)
 - American Society of Plastic Surgeons — [Briefing paper: Cosmetic surgery tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (5 to 7 days before flying after body procedures)

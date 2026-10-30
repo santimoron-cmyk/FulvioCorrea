@@ -1,6 +1,6 @@
 ---
 title: "Lipo 360 en Colombia: precio y qué incluye"
-description: "Precio de la lipo 360 en Colombia con el Dr. Fulvio Correa en Cartagena: rango publicado de lipoescultura HD en USD y COP y qué se cotiza por caso."
+description: "Precio de la lipo 360 en Colombia con el Dr. Fulvio Correa en Cartagena: qué cambia la cotización y qué debe incluir un precio por escrito."
 slug: "lipo-360-precio-colombia"
 lang: "es"
 category: "Body Contouring"
@@ -8,10 +8,10 @@ tags: ["lipo-360-colombia", "lipo-360-precio", "liposuccion-precio", "lipo-hd-pr
 cover: "/assets/blog-lipo-360-colombia-cost.webp"
 coverAlt: "Mujer con camisa de lino sentada a una mesa de madera en un patio colonial sombreado de Cartagena, escribiendo en una libreta junto a un portátil y un vaso de agua"
 date: "2026-10-23"
-updated: "2026-10-23"
+updated: "2026-10-30"
 author: "fulvio-correa"
 translationOf: "lipo-360-colombia-cost"
-sources: ["https://fulviocorrea.com/es/precios-cirugia-plastica-cartagena/","https://www.mayoclinic.org/es/tests-procedures/liposuction/about/pac-20384586","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://medlineplus.gov/spanish/ency/article/002985.htm","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html"]
+sources: ["https://fulviocorrea.com/es/agendar-valoracion/","https://www.mayoclinic.org/es/tests-procedures/liposuction/about/pac-20384586","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://medlineplus.gov/spanish/ency/article/002985.htm","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html"]
 draft: false
 originalUrl: ""
 procedure: "liposuction"
@@ -21,28 +21,25 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**Con el Dr. Fulvio Correa en Cartagena, la lipoescultura HD Liposurg tiene un rango estimado publicado de USD 6,300–7,700, es decir, COP 19.890.000–24.310.000. Sumar brazos o piernas cuesta USD 675–825 por zona. La lipo 360 convencional, que no es lipoescultura HD, y la lipo 360 con transferencia a glúteos no tienen rango publicado: se cotizan por caso después de la valoración.** Son estimaciones desde–hasta basadas en casos anteriores, no una cotización, y la tabla completa y vigente está en [precios de cirugía plástica en Cartagena](/es/precios-cirugia-plastica-cartagena/).
+**Con el Dr. Fulvio Correa en Cartagena, la lipo 360 no tiene un precio de cirugía publicado.** La lipoescultura HD Liposurg, los brazos o las piernas sumados al plan, la lipo 360 convencional y la lipo 360 con transferencia a glúteos se cotizan por caso después de la valoración, que cuesta USD 150 (COP 400.000). [Agenda la valoración](/es/agendar-valoracion/) para la cifra escrita.
 
-"Lipo 360" no es una cirugía distinta. Es el nombre con el que se conoce la liposucción de abdomen, cintura (flancos) y espalda en la misma cirugía, para trabajar todo el contorno "alrededor". Por eso el precio depende mucho más de tu plan que del nombre. Esta guía explica qué cifras existen, cuáles no, y qué revisar en cualquier cotización de lipo 360 en Colombia, aquí o en otro consultorio.
+"Lipo 360" no es una cirugía distinta. Es el nombre con el que se conoce la liposucción de abdomen, cintura (flancos) y espalda en la misma cirugía, para trabajar todo el contorno "alrededor". Por eso el precio depende mucho más de tu plan que del nombre. Esta guía explica qué cambia una cotización de lipo 360 en Colombia, aquí o en otro consultorio.
 
-Si solo quieres tratar una o dos zonas, empieza por [¿cuánto cuesta una lipo en Colombia?](/es/blog/liposuccion-precio-colombia/), que compara liposucción, lipoescultura HD y lipo 360 en una sola tabla.
+Si solo quieres tratar una o dos zonas, empieza por [¿cuánto cuesta una lipo en Colombia?](/es/blog/liposuccion-precio-colombia/), que compara liposucción, lipoescultura HD y lipo 360.
 
-## Precio de la lipo 360 en Cartagena, en una tabla
+## Qué cambia la cotización de una lipo 360
 
-| Plan | Rango estimado (USD) | Rango estimado (COP) |
-|---|---|---|
-| Lipoescultura HD Liposurg | USD 6,300–7,700 | COP 19.890.000–24.310.000 |
-| Tecnología de retracción, por zona (solo si el plan la usa) | USD 450–550 | COP 1.430.000–1.740.000 |
-| Lipo de brazos (adicional a la lipo) | USD 675–825 | COP 2.140.000–2.610.000 |
-| Lipo de piernas (adicional a la lipo) | USD 675–825 | COP 2.140.000–2.610.000 |
-| Lipoabdominoplastia (cuando hay piel flácida) | USD 9,900–12,100 | COP 31.250.000–38.200.000 |
-| Lipo 360 que no es lipoescultura HD | Se cotiza por caso | Se cotiza por caso |
-| Lipo 360 con transferencia a glúteos (BBL) | Se cotiza por caso | Se cotiza por caso |
-| Valoración | USD 150 | COP 400.000 |
+| Plan | Cómo se cotiza |
+|---|---|
+| Lipoescultura HD Liposurg | Se cotiza por caso. Definir el contorno no es lo mismo que reducir volumen |
+| Tecnología de retracción, por zona | Se cotiza solo si el plan la usa |
+| Lipo de brazos o de piernas, adicional a la lipo | Se cotiza con el plan principal. Cada zona extra cambia el tiempo de quirófano |
+| Lipoabdominoplastia, cuando hay piel flácida | Se cotiza por caso. Es otra cirugía que la lipo 360 |
+| Lipo 360 que no es lipoescultura HD | Se cotiza por caso |
+| Lipo 360 con transferencia a glúteos (BBL) | Se cotiza por caso. Si la grasa se injerta, es un BBL |
+| Valoración | USD 150 / COP 400.000. No es un precio de cirugía |
 
-Las cifras en dólares son los rangos autorizados. Los pesos se calcularon con la TRM oficial del 20 de octubre de 2026, COP 3.156,32 por dólar, redondeados hacia arriba a 10.000 pesos. Una TRM posterior cambia la cifra en pesos, no el rango en dólares. La valoración es un valor fijo y no se convierte con la TRM.
-
-Esta es una estimación aproximada basada en casos anteriores; a veces se ha cobrado menos y a veces más, según el caso. La cotización real siempre llega después de la valoración virtual o presencial y no compromete al doctor a cobrar ese valor ni a operar.
+La tarifa de la valoración es un par fijo. No es un precio de cirugía. La cotización real siempre llega después de la valoración virtual o presencial y no compromete al doctor a operar.
 
 ## Por qué la lipo 360 convencional no tiene un precio fijo
 
@@ -50,11 +47,11 @@ Si buscas "lipo 360 precio Colombia", vas a encontrar cifras únicas dichas con 
 
 - **Cuánta área se trata.** Solo abdomen y flancos, o abdomen, flancos, espalda alta y espalda baja. Mayo Clinic explica que el riesgo de complicaciones aumenta cuando se trabajan superficies más grandes del cuerpo o se hacen varios procedimientos en la misma cirugía, y que una liposucción de gran volumen puede mover suficiente líquido como para afectar los riñones, el corazón y los pulmones. Más área es más tiempo de quirófano y más planificación.
 - **Qué técnica necesita el plan.** Mayo Clinic describe la liposucción asistida por succión, que es la más común, además de las técnicas asistidas por ultrasonido, por láser y por motor (PAL), y explica que el cirujano elige la técnica según tus objetivos, la zona a tratar y si ya te habías hecho una liposucción. Ningún equipo es la mejor opción para todas.
-- **Si es lipoescultura HD o no.** La lipoescultura HD es el plan con rango publicado. Una lipo 360 que busca reducir volumen sin ese trabajo de definición es otro plan y se cotiza aparte.
+- **Si es lipoescultura HD o no.** La lipoescultura HD y una lipo 360 que solo busca reducir volumen son planes distintos. Cada uno se cotiza por su lado después de la valoración.
 - **Qué se suma.** Brazos o piernas tienen su propio rango adicional. Si la grasa se transfiere a los glúteos, el plan pasa a ser un BBL, con sus propias normas de seguridad, y se cotiza por caso.
 - **Tu piel.** La liposucción no tensa la piel flácida. Si en la valoración aparece piel sobrante en el abdomen bajo o una pared abdominal distendida, la conversación pasa a [¿abdominoplastia o liposucción?](/es/blog/abdominoplastia-o-liposuccion/) o a una lipoabdominoplastia, que tiene otro precio.
 
-La respuesta honesta a "¿cuánto cuesta una lipo 360 en Colombia?" es esta: hay un rango publicado cuando el plan es lipoescultura HD, y una cotización escrita para todo lo demás.
+La respuesta honesta a "¿cuánto cuesta una lipo 360 en Colombia?" es una cotización escrita después de la valoración, sea lipoescultura HD o una lipo 360 que solo reduce volumen.
 
 ## Qué incluye el precio y qué debe detallar la cotización
 
@@ -110,16 +107,16 @@ Para recibir una cotización escrita de tu lipo 360, escríbele a Sofía. Ella c
 ## Preguntas frecuentes
 
 **¿Cuánto cuesta la lipo 360 en Colombia con el Dr. Fulvio Correa?**
-La lipoescultura HD Liposurg tiene un rango estimado publicado de USD 6,300–7,700 (COP 19.890.000–24.310.000 con la TRM del 20 de octubre de 2026). La lipo 360 convencional, que no es lipoescultura HD, se cotiza por caso después de la valoración.
+No hay un precio de cirugía publicado. La lipoescultura HD y la lipo 360 convencional se cotizan por caso después de la valoración, porque las zonas, la técnica y si hay piel flácida cambian el plan.
 
 **¿Cuánto cuesta sumar brazos o piernas a la lipo 360?**
-La lipo de brazos y la lipo de piernas, como adicional a una liposucción, tienen cada una un rango estimado de USD 675–825 (COP 2.140.000–2.610.000).
+No hay un precio publicado de adicional. Brazos o piernas se cotizan con el plan principal, porque cada zona extra cambia el tiempo de quirófano.
 
 **¿Cuánto cuesta la lipo 360 con transferencia a glúteos?**
 No tiene rango publicado. Cuando la grasa se transfiere a los glúteos, el plan es un BBL y se cotiza por caso después de la valoración.
 
 **¿El precio de la lipo 360 incluye la anestesia y la clínica?**
-Los rangos publicados no afirman que estén incluidos la anestesia, la clínica, los exámenes, la faja ni los medicamentos. Esos servicios se nombran uno por uno en tu cotización escrita.
+Nada en esta página afirma que estén incluidos la anestesia, la clínica, los exámenes, la faja ni los medicamentos. Esos servicios se nombran uno por uno en tu cotización escrita.
 
 **¿La valoración es gratis?**
 No. La valoración cuesta USD 150 / COP 400.000. No es un precio de cirugía.
@@ -131,7 +128,7 @@ La ASPS sugiere al menos de cinco a siete días después de una liposucción ant
 
 ## Fuentes / Referencias médicas
 
-- Dr. Fulvio Correa — [Precios de cirugía plástica en Cartagena](/es/precios-cirugia-plastica-cartagena/) (rangos autorizados desde–hasta en USD y COP, TRM del 20 de octubre de 2026, valor de la valoración, lo que se cotiza por caso y lo que cambia el precio)
+- Dr. Fulvio Correa — [Agendar la valoración](/es/agendar-valoracion/) (la valoración cuesta USD 150 / COP 400.000; la lipo 360 se cotiza después de esa visita)
 - Mayo Clinic — [Liposucción](https://www.mayoclinic.org/es/tests-procedures/liposuction/about/pac-20384586) (técnicas, opciones de anestesia, noche de observación, mayor riesgo con áreas grandes o varios procedimientos, cambios de líquidos en cirugías de gran volumen)
 - Sociedad Colombiana de Cirugía Plástica (SCCP) — [Lipoescultura](https://cirugiaplastica.org.co/procedimientos/lipoescultura/) (información para pacientes sobre la lipoescultura)
 - MedlinePlus en español — [Liposucción](https://medlineplus.gov/spanish/ency/article/002985.htm) (qué es la liposucción, riesgos y recuperación)

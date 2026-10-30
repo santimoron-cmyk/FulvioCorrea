@@ -113,7 +113,7 @@ So the practical answer depends on how you fly. If you are flying Avianca out of
 4. A pre-flight check with your surgeon and the medical certificate if your airline requires one.
 5. A margin of a few days in case clearance comes later than planned.
 
-Where you spend those days matters. Some patients choose a recovery house with nursing support and others choose a hotel or apartment with a companion; the trade-offs are in our guide to [recovery houses in Cartagena](/recovery-house-cartagena/). If you are still pricing the trip, the [plastic surgery cost guide for Cartagena](/plastic-surgery-cost-cartagena/) explains what changes a quote.
+Where you spend those days matters. Some patients choose a recovery house with nursing support and others choose a hotel or apartment with a companion; the trade-offs are in our guide to [recovery houses in Cartagena](/recovery-house-cartagena/). If you are still planning the budget, [book a valuation](/book-consultation/) and the written quote is what applies to your case. The consultation fee is USD 150 / COP 400,000.
 
 ### Heat, sun and the city
 

@@ -1,99 +1,67 @@
-// Authorized procedure ranges (prices.md, 22 Sep 2026 list).
-// COP = USD × TRM 3,156.32 (20 Oct 2026, datos.gov.co dataset 32sa-8pi3), rounded UP to the nearest 10,000.
-// The consultation fee is the authorized pair USD 150 / COP 400,000 and is not converted.
+// Procedure prices are not published. The only fee on the site is the consultation.
 import {esc, read} from './editorial.mjs';
 
-export const TRM = 3156.32;
-export const TRM_DATE = '2026-10-20';
-const CONSULT_USD = 150;
-const CONSULT_COP = 400000;
+export const TRM_DATE = '2026-10-30';
+const CONSULT = {en: 'USD 150 / COP 400,000', es: 'USD 150 / COP 400.000'};
 
-export function copFromUsd(usd) {
-  return Math.ceil((usd * TRM) / 10000) * 10000;
-}
-
-const dots = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-const commas = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-export function usdRange(min, max) {
-  return `USD ${commas(min)}–${commas(max)}`;
-}
-export function copRange(min, max) {
-  return `COP ${dots(copFromUsd(min))}–${dots(copFromUsd(max))}`;
-}
-
-// COP figures already checked against the authorized TRM column in prices.md.
-const expectedCop = {
-  6300: 19890000, 7700: 24310000, 450: 1430000, 550: 1740000,
-  9900: 31250000, 12100: 38200000, 675: 2140000, 825: 2610000,
-  4950: 15630000, 6050: 19100000, 5400: 17050000, 6600: 20840000,
-  7650: 24150000, 9350: 29520000, 6750: 21310000, 8250: 26040000,
-  7200: 22730000, 8800: 27780000, 9000: 28410000, 11000: 34720000,
-  3600: 11370000, 4400: 13890000, 4050: 12790000, 4950: 15630000,
-};
-for (const [usd, cop] of Object.entries(expectedCop)) {
-  if (copFromUsd(Number(usd)) !== cop) throw new Error(`COP conversion drifted for USD ${usd}`);
-}
-
-const rows = [
-  {id: 'hd-lipo', usd: [6300, 7700], page: 'liposuction', en: 'HD liposculpture (Liposurg)', es: 'Lipoescultura HD Liposurg'},
-  {id: 'retraction', usd: [450, 550], en: 'Retraction technology, per zone', es: 'Tecnología de retracción, por zona'},
-  {id: 'lipo-abdominoplasty', usd: [9900, 12100], page: 'tummy-tuck', en: 'Lipoabdominoplasty', es: 'Lipoabdominoplastia'},
-  {id: 'arm-addon', usd: [675, 825], page: 'liposuction', en: 'Arm liposuction (add-on to liposuction)', es: 'Lipo de brazos (adicional a la lipo)'},
-  {id: 'leg-addon', usd: [675, 825], page: 'liposuction', en: 'Leg liposuction (add-on to liposuction)', es: 'Lipo de piernas (adicional a la lipo)'},
-  {id: 'brachioplasty', usd: [4950, 6050], en: 'Brachioplasty (arms)', es: 'Braquioplastia (brazos)'},
-  {id: 'thighplasty', usd: [5400, 6600], en: 'Thighplasty', es: 'Cruroplastia'},
-  {id: 'aug-preserve', usd: [7650, 9350], page: 'breast-augmentation', en: 'Breast augmentation with Preserve', es: 'Mamoplastia de aumento con Preserve'},
-  {id: 'aug', usd: [6750, 8250], page: 'breast-augmentation', en: 'Breast augmentation', es: 'Mamoplastia de aumento'},
-  {id: 'pexy-implants', usd: [7650, 9350], page: 'breast-lift-reduction', en: 'Breast lift with implants', es: 'Pexia mamaria con implantes'},
-  {id: 'pexy', usd: [7200, 8800], page: 'breast-lift-reduction', en: 'Breast lift without implants', es: 'Pexia mamaria sin implantes'},
-  {id: 'reduction', usd: [7650, 9350], page: 'breast-lift-reduction', en: 'Breast reduction / reconstruction', es: 'Reducción y reconstrucción mamaria'},
-  {id: 'explant', usd: [7650, 9350], page: 'breast-lift-reduction', en: 'Implant removal and lift, without new implants', es: 'Explantación y pexia mamaria sin implantes'},
-  {id: 'gluteal-implants', usd: [6750, 8250], en: 'Gluteal implants', es: 'Gluteoplastia con implantes'},
-  {id: 'calf', usd: [6750, 8250], en: 'Calf implants', es: 'Implantes de pantorrillas'},
-  {id: 'rhinoplasty', usd: [6750, 8250], page: 'rhinoplasty', en: 'Rhinoplasty', es: 'Rinoplastia'},
-  {id: 'facelift', usd: [9000, 11000], page: 'facelift', en: 'Facelift (rhytidectomy)', es: 'Lifting facial (ritidoplastia)'},
-  {id: 'bleph', usd: [3600, 4400], page: 'blepharoplasty', en: 'Blepharoplasty', es: 'Blefaroplastia'},
-  {id: 'otoplasty', usd: [4050, 4950], en: 'Otoplasty', es: 'Otoplastia'},
-];
-const byId = Object.fromEntries(rows.map(r => [r.id, r]));
-
-const disclaimer = {
-  en: 'This is an approximate estimate based on previous cases; sometimes the fee has been lower and sometimes higher, depending on the case. The real quote always comes after the virtual or in-person consultation. It does not commit the doctor to charge that amount or to operate.',
-  es: 'Estimación orientativa basada en experiencias previas; a veces se ha cobrado menos y a veces más según cada caso. La cotización real va siempre después de la consulta virtual o presencial. No compromete al Dr. a cobrar ese monto ni a operar.',
-};
-
-const procedureBlocks = {
+const costNotes = {
   liposuction: {
-    lines: ['hd-lipo', 'arm-addon', 'leg-addon'],
-    note: {
-      en: 'Liposuction that is not HD liposculpture is not in this table. It is quoted per case.',
-      es: 'La liposucción que no es lipoescultura HD no está en esta tabla. Se cotiza por caso.',
-    },
+    en: 'Liposuction that is not HD liposculpture, and HD liposculpture itself, are both quoted per case. Adding arms or legs, or using retraction technology, changes the plan.',
+    es: 'La liposucción que no es lipoescultura HD, y la lipoescultura HD, se cotizan por caso. Sumar brazos o piernas, o usar tecnología de retracción, cambia el plan.',
   },
   'tummy-tuck': {
-    lines: ['lipo-abdominoplasty'],
-    note: {
-      en: 'This range is for lipoabdominoplasty only. A mini tummy tuck, or a tummy tuck without liposuction, is quoted per case.',
-      es: 'Este rango es solo para lipoabdominoplastia. Una mini abdominoplastia, o una abdominoplastia sin liposucción, se cotiza por caso.',
-    },
+    en: 'A lipoabdominoplasty, a mini tummy tuck, and a tummy tuck without liposuction are different operations. Each one is quoted per case.',
+    es: 'Una lipoabdominoplastia, una mini abdominoplastia y una abdominoplastia sin liposucción son cirugías distintas. Cada una se cotiza por caso.',
   },
-  'breast-augmentation': {lines: ['aug', 'aug-preserve']},
-  'breast-lift-reduction': {lines: ['pexy-implants', 'pexy', 'reduction', 'explant']},
-  rhinoplasty: {lines: ['rhinoplasty']},
-  facelift: {lines: ['facelift']},
-  blepharoplasty: {lines: ['bleph']},
+  'breast-augmentation': {
+    en: 'Implant choice, including a Preserve plan when that is what fits, is part of the consultation. The written quote follows that visit.',
+    es: 'La elección del implante, incluido un plan con Preserve cuando corresponde, se define en la valoración. La cotización escrita viene después.',
+  },
+  'breast-lift-reduction': {
+    en: 'A lift with implants, a lift without implants, a reduction, and implant removal with a lift are different operations. The quote names which one applies.',
+    es: 'Una pexia con implantes, una pexia sin implantes, una reducción y una explantación con pexia son cirugías distintas. La cotización dice cuál aplica.',
+  },
+  rhinoplasty: {
+    en: 'A cosmetic plan, a functional plan, or both, and whether this is a first operation or a revision, are decided at the consultation.',
+    es: 'Un plan estético, uno funcional o ambos, y si es una primera cirugía o una revisión, se deciden en la valoración.',
+  },
+  facelift: {
+    en: 'How much of the face and neck is included, and whether anything else is planned in the same session, is set at the consultation.',
+    es: 'Cuánto del rostro y del cuello entra, y si se planea algo más en el mismo tiempo, se define en la valoración.',
+  },
+  blepharoplasty: {
+    en: 'Upper lids, lower lids, or both, and whether another facial procedure is planned in the same trip, change the quote.',
+    es: 'Párpados superiores, inferiores o ambos, y si se planea otro procedimiento facial en el mismo viaje, cambian la cotización.',
+  },
   bbl: {
-    quoted: {
-      en: 'A Brazilian butt lift (fat transfer to the buttocks) is not in the price table. It is quoted per case. Gluteal implants are a different operation and are listed on the cost page.',
-      es: 'El Brazilian butt lift (transferencia de grasa a los glúteos) no está en la tabla de precios. Se cotiza por caso. Los implantes de glúteo son otra cirugía y aparecen en la página de precios.',
-    },
+    en: 'A Brazilian butt lift combines liposuction to harvest fat with fat grafting to the buttocks and hips. It is quoted per case. Gluteal implants are a different operation and are also quoted after the consultation.',
+    es: 'Un Brazilian butt lift combina la liposucción para obtener la grasa con el injerto en glúteos y caderas. Se cotiza por caso. Los implantes de glúteo son otra cirugía y también se cotizan después de la valoración.',
   },
   'mommy-makeover': {
-    quoted: {
-      en: 'A mommy makeover is a combination of procedures and does not have its own range. It is quoted per case. Ranges for procedures that may be combined are on the cost page.',
-      es: 'El mommy makeover es una combinación de procedimientos y no tiene un rango propio. Se cotiza por caso. Los rangos de las cirugías que se pueden combinar están en la página de precios.',
-    },
+    en: 'A mommy makeover is a combination and does not have its own price. The combination is what the written quote describes.',
+    es: 'El mommy makeover es una combinación y no tiene un precio propio. La combinación es lo que describe la cotización escrita.',
   },
+};
+
+const drivers = {
+  en: [
+    'Technique. The operation that fits your anatomy is not the same work as a different technique with a similar name.',
+    'Areas treated. One zone and several zones do not take the same time in the operating room.',
+    'Anesthesia, and who provides it.',
+    'The facility where the surgery takes place.',
+    'The surgeon’s experience and how long the plan needs in the operating room.',
+    'Recovery care in Cartagena: visits, garments, medication, and any nursing support that is arranged for you.',
+    'Travel. Flights, lodging, a companion, and time away from work sit outside the surgical quote.',
+  ],
+  es: [
+    'La técnica. La cirugía que corresponde a tu anatomía no es el mismo trabajo que otra técnica con un nombre parecido.',
+    'Las zonas. Una zona y varias zonas no ocupan el mismo tiempo de quirófano.',
+    'La anestesia, y quién la pone.',
+    'La clínica donde se opera.',
+    'La experiencia del cirujano y el tiempo que el plan necesita en quirófano.',
+    'La recuperación en Cartagena: controles, faja, medicamentos y la enfermería que se organice para ti.',
+    'El viaje. Los tiquetes, el alojamiento, un acompañante y los días sin trabajar quedan fuera de la cotización quirúrgica.',
+  ],
 };
 
 // Google reviews copied from the directory that syncs Google (reviews.md source).
@@ -117,24 +85,14 @@ const reviews = [
   },
 ];
 
-const aspsUrl = 'https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf';
 const practice = read('data/practice.json');
 
-function lineHtml(id, lang) {
-  const row = byId[id];
-  const [min, max] = row.usd;
-  return `<li><strong>${esc(row[lang])}:</strong> ${usdRange(min, max)} (${copRange(min, max)})</li>`;
-}
-
 export function procedureCostBlock(procedure) {
-  const spec = procedureBlocks[procedure.slug];
-  if (!spec) return '';
   const lang = procedure.lang;
   const es = lang === 'es';
-  const href = `/${lang}/plastic-surgery-cost-cartagena/`;
-  const lines = spec.lines ? `<ul class="question-list">${spec.lines.map(id => lineHtml(id, lang)).join('')}</ul>` : '';
-  const extra = spec.note ? `<p>${esc(spec.note[lang])}</p>` : '';
-  const quoted = spec.quoted ? `<p>${esc(spec.quoted[lang])}</p>` : '';
+  const note = costNotes[procedure.slug]?.[lang];
+  if (!note) return '';
+  const href = `/${lang}/book-consultation/?procedure=${procedure.slug}`;
   const headings = {
     'tummy-tuck': {en: 'Tummy tuck cost in Colombia', es: 'Precio de la abdominoplastia en Colombia'},
     'breast-augmentation': {en: 'Breast augmentation cost in Colombia'},
@@ -142,8 +100,16 @@ export function procedureCostBlock(procedure) {
     facelift: {es: 'Precio del lifting facial en Colombia'},
     blepharoplasty: {en: 'Eyelid surgery cost in Colombia', es: 'Precio de la blefaroplastia en Colombia'},
   };
-  const heading = headings[procedure.slug]?.[lang] || (es ? 'Costo estimado' : 'Estimated cost');
-  return `<section id="estimated-cost"><h2>${heading}</h2>${lines}${extra}${quoted}<p class="note">${esc(disclaimer[lang])}</p><p><a href="${href}">${es ? 'Ver todos los precios de cirugía plástica en Cartagena' : 'See all plastic surgery costs in Cartagena'}</a></p></section>`;
+  const heading = headings[procedure.slug]?.[lang] || (es ? 'De qué depende el costo' : 'What drives the cost');
+  const lead = es
+    ? 'Este consultorio no publica el precio de la cirugía. La cifra exacta se escribe después de la valoración, virtual o presencial.'
+    : 'This practice does not publish a surgery price. The exact figure is written after a virtual or in-person consultation.';
+  const fee = es
+    ? `La valoración cuesta ${CONSULT.es}. Esa tarifa no es un precio de cirugía.`
+    : `The consultation fee is ${CONSULT.en}. That fee is not a surgery price.`;
+  const items = `<ul class="question-list">${drivers[lang].map(x => `<li>${esc(x)}</li>`).join('')}</ul>`;
+  const cta = es ? 'Agendar la valoración' : 'Book the valuation';
+  return `<section id="estimated-cost"><h2>${heading}</h2><p>${esc(lead)}</p><p>${esc(note)}</p>${items}<p>${esc(fee)}</p><p><a href="${href}">${cta}</a></p></section>`;
 }
 
 export function googleReviewsHtml(lang) {
@@ -160,111 +126,6 @@ function cta(lang, id) {
   const wa = `https://wa.me/${practice.whatsapp}`;
   return `<div class="pcta"><button type="button" class="button" data-cta="${id}-consult" data-open-contact aria-haspopup="dialog" aria-controls="contact-dialog">${es ? 'Pedir una valoración' : 'Request a valuation'}</button><a class="button light" data-whatsapp="direct" data-event="whatsapp_click" data-location="${id}" data-cta="${id}-whatsapp" href="${wa}" target="_blank" rel="noopener">WhatsApp</a></div>`;
 }
-
-function priceTable(lang) {
-  const es = lang === 'es';
-  const head = es
-    ? '<tr><th scope="col">Procedimiento</th><th scope="col">USD (desde–hasta)</th><th scope="col">COP (desde–hasta)</th></tr>'
-    : '<tr><th scope="col">Procedure</th><th scope="col">USD (from–to)</th><th scope="col">COP (from–to)</th></tr>';
-  const body = rows.map(row => {
-    const [min, max] = row.usd;
-    const label = row.page ? `<a href="/${lang}/procedures/${row.page}/#estimated-cost">${esc(row[lang])}</a>` : esc(row[lang]);
-    return `<tr><th scope="row">${label}</th><td>${usdRange(min, max)}</td><td>${copRange(min, max)}</td></tr>`;
-  }).join('');
-  const caption = es
-    ? 'Rangos estimados, desde–hasta, en dólares y en pesos colombianos.'
-    : 'Estimated ranges, from–to, in US dollars and Colombian pesos.';
-  return `<div class="table-scroll" tabindex="0"><table class="price-table"><caption>${esc(caption)}</caption><thead>${head}</thead><tbody>${body}</tbody></table></div>`;
-}
-
-const costCopy = {
-  en: {
-    title: 'Plastic Surgery Colombia Cost',
-    description: 'Plastic surgery Colombia cost and Colombia plastic surgery prices in Cartagena. Estimates from USD 3,600. The real quote comes after consultation.',
-    h1: 'Plastic surgery in Colombia: cost and prices',
-    lead: 'These are estimated from–to ranges for surgery with Dr. Fulvio Correa in Cartagena. They are a planning aid for people comparing plastic surgery Colombia cost and Colombia plastic surgery prices. They are not a quote.',
-    readTitle: 'How to read this table',
-    read: [
-      'Each row is a from–to range in US dollars and in Colombian pesos. The dollar figures are the authorized ranges. Pesos use the official TRM of 20 October 2026, COP 3,156.32 per US dollar (datos.gov.co, dataset 32sa-8pi3), rounded up to the nearest 10,000 pesos. A later TRM changes the peso figure. The dollar range is the one to compare until the office issues a new table.',
-      `A consultation is USD ${commas(CONSULT_USD)} / COP ${dots(CONSULT_COP)}. That pair is the authorized fee. It is not converted at the TRM, and it is not a surgery price.`,
-      'The lowest figure in the table, USD 450–550, is retraction technology per zone. It is not the starting price of a full operation. Among the operations listed on their own, eyelid surgery starts at USD 3,600.',
-    ],
-    caseTitle: 'Quoted per case, with no range in this table',
-    case: [
-      'Three requests do not have a row, so this page does not invent a price for them. A mommy makeover is a combination, and the combination is what sets the fee. A Brazilian butt lift (liposuction with fat transfer to the buttocks) is quoted per case. Liposuction that is not HD liposculpture is also quoted per case. Gluteal implants are a different operation and do have a row above.',
-      'If your plan is one of those three, the number you can use is the one written after your consultation. The ranges for procedures that might be part of a combination are in the table so you can see the pieces. Adding the pieces together is not the price of the combination.',
-    ],
-    factorTitle: 'What usually changes the price',
-    factors: [
-      'The operation itself. A single procedure and a combination do not take the same time in the operating room.',
-      'Who is in the room. The surgeon’s fee, the anesthesia, and the facility are different services. This table does not say that any of them is included. The written quote is where they are named.',
-      'Devices, when the plan uses them. Breast augmentation uses an implant. The quote should say whether that implant is included. This table does not.',
-      'Tests, the garment, medication, and how many visits you have while you are still in Cartagena. Each one is either in the quote or it is not. Nothing here asserts that they are included.',
-      'Your own case. Previous patients have sometimes been charged less than these ranges and sometimes more.',
-      'What is not surgery. Flights, lodging, a companion’s ticket, transfers, supplies, and time away from work sit outside these ranges. Care you might need after you fly home is also outside them.',
-    ],
-    usTitle: 'A note on prices in the United States',
-    us: [
-      `People often ask whether surgery in Cartagena costs less than at home. The honest answer is that these two numbers are not the same kind of bill. The American Society of Plastic Surgeons, in its <a href="${aspsUrl}">2024 plastic surgery statistics report (archived copy)</a>, publishes surgeon/physician fee ranges for ASPS member surgeons in the United States. Examples from that report: abdominoplasty USD 8,000–13,500, rhinoplasty USD 7,500–12,500, facelift USD 12,000–19,000, and breast augmentation USD 4,575–8,000. The report presents those figures as a projected range of surgeon fees, and it discusses anesthesia costs and operating-room fees separately.`,
-      'Some of those U.S. surgeon-fee ranges overlap the estimates on this page. Breast augmentation is one example: the Cartagena estimate of USD 6,750–8,250 sits inside a U.S. surgeon-fee range that starts lower. A lipoabdominoplasty here is not the same operation as the ASPS abdominoplasty line. This page does not claim a percentage saving, and it does not publish a U.S. total cost. Compare a written quote with a written quote.',
-    ],
-    houseTitle: 'Recovery in Cartagena is arranged separately',
-    house: 'Procedure ranges on this page do not include lodging, transfers, or supplies. Patients who want that support can have an equipped recovery house arranged, with 24/7 nursing, transfers between the airport, the clinic, and the house, and supplies. The plan is tailored at the valuation. There is no package price, and the practice does not promise a number of nights, a type of room, or massages.',
-    faqTitle: 'Questions about cost',
-    faqs: [
-      ['Are these plastic surgery prices in Colombia final?', disclaimer.en],
-      ['Why are prices shown in dollars and in pesos?', 'The authorized ranges are in US dollars. Pesos on this page use the official TRM of 20 October 2026, COP 3,156.32 per dollar, rounded up to the nearest 10,000 pesos. The consultation fee stays USD 150 / COP 400,000 and is not converted at that rate.'],
-      ['What usually changes the price?', 'The procedure, whether operations are combined, anesthesia, the facility, any implant or device, tests, garments, medication, and the visits while you are in Cartagena. The written quote says which of those are included. Flights, lodging, and transfers are separate. The individual case can also come in below or above the range.'],
-      ['How do these compare with prices in the United States?', 'ASPS publishes 2024 surgeon/physician fee ranges for its members, for example abdominoplasty USD 8,000–13,500 and rhinoplasty USD 7,500–12,500. Those are surgeon fees, not a total bill, and some of them overlap the estimates here. This page does not state a savings percentage.'],
-      ['Why is there no mommy makeover, BBL, or non-HD liposuction price?', 'They are not in the authorized table. A mommy makeover, a fat-graft Brazilian butt lift, and liposuction that is not HD liposculpture are quoted per case. Gluteal implants are listed separately because they are a different operation.'],
-      ['Does the estimate include the recovery house or the flights?', 'No. These ranges do not include lodging, transfers, supplies, or flights. A recovery house can be arranged separately and is explained at the valuation. There is no package price.'],
-      ['How do I get a real quote?', 'After a virtual or in-person consultation. The consultation fee is USD 150 / COP 400,000. You can request it on WhatsApp or through the valuation form. The figure in that written quote is the one that applies to you.'],
-    ],
-  },
-  es: {
-    title: 'Precios cirugía plástica Colombia',
-    description: 'Precios de cirugía plástica en Cartagena, Colombia, con rangos estimados desde USD 3.600. La cotización real se entrega después de la valoración.',
-    h1: 'Precios de cirugía plástica en Cartagena',
-    lead: 'Estos son rangos estimados, desde–hasta, para cirugía con el Dr. Fulvio Correa en Cartagena. Sirven para orientarse sobre los precios de la cirugía plástica en Colombia. No son una cotización.',
-    readTitle: 'Cómo leer esta tabla',
-    read: [
-      'Cada fila es un rango desde–hasta en dólares y en pesos colombianos. Las cifras en dólares son los rangos autorizados. Los pesos usan la TRM oficial del 20 de octubre de 2026, COP 3.156,32 por dólar (datos.gov.co, conjunto 32sa-8pi3), redondeados hacia arriba al siguiente múltiplo de 10.000 pesos. Si la TRM cambia, cambia el peso. El rango en dólares es el que conviene comparar hasta que el consultorio publique otra tabla.',
-      `La valoración cuesta USD ${commas(CONSULT_USD)} / COP ${dots(CONSULT_COP)}. Ese par es la tarifa autorizada. No se convierte con la TRM y no es el precio de una cirugía.`,
-      'La cifra más baja de la tabla, USD 450–550, es la tecnología de retracción por zona. No es el precio de entrada de una cirugía completa. Entre las cirugías que tienen fila propia, la blefaroplastia empieza en USD 3.600.',
-    ],
-    caseTitle: 'Se cotizan por caso: no tienen fila en esta tabla',
-    case: [
-      'Tres solicitudes no tienen fila, y esta página no les inventa un precio. El mommy makeover es una combinación, y la combinación es lo que define el valor. El Brazilian butt lift (liposucción con transferencia de grasa a los glúteos) se cotiza por caso. La liposucción que no es lipoescultura HD también se cotiza por caso. Los implantes de glúteo son otra cirugía y sí tienen fila arriba.',
-      'Si tu plan es uno de esos tres, el número que sirve es el que queda por escrito después de la valoración. Los rangos de las cirugías que a veces se combinan están en la tabla para que se vean las piezas. Sumar las piezas no es el precio de la combinación.',
-    ],
-    factorTitle: 'Qué suele cambiar el precio',
-    factors: [
-      'La cirugía en sí. Un solo procedimiento y una combinación no ocupan el mismo tiempo de quirófano.',
-      'Quién está en la sala. El honorario del cirujano, la anestesia y la clínica son servicios distintos. Esta tabla no dice que alguno esté incluido. La cotización escrita es donde se nombran.',
-      'Los dispositivos, cuando el plan los usa. El aumento de senos usa un implante. La cotización debe decir si ese implante está incluido. Esta tabla no lo dice.',
-      'Exámenes, faja, medicamentos y cuántos controles tienes mientras sigues en Cartagena. Cada uno está en la cotización o no está. Nada aquí afirma que estén incluidos.',
-      'Tu propio caso. A pacientes anteriores a veces se les ha cobrado menos que estos rangos y a veces más.',
-      'Lo que no es cirugía. Tiquetes, alojamiento, el pasaje de un acompañante, traslados, insumos y los días sin trabajar quedan fuera de estos rangos. La atención que pudieras necesitar después de volar a casa también queda fuera.',
-    ],
-    usTitle: 'Una nota sobre los precios en Estados Unidos',
-    us: [
-      `Es frecuente preguntar si operarse en Cartagena cuesta menos que en casa. La respuesta honesta es que estos dos números no son el mismo tipo de cuenta. La Sociedad Americana de Cirujanos Plásticos, en su <a href="${aspsUrl}">informe de estadísticas de cirugía plástica 2024 (copia archivada)</a>, publica rangos de honorarios del cirujano para sus miembros en Estados Unidos. Ejemplos de ese informe: abdominoplastia USD 8.000–13.500, rinoplastia USD 7.500–12.500, lifting facial USD 12.000–19.000 y aumento de senos USD 4.575–8.000. El informe presenta esas cifras como un rango proyectado de honorarios del cirujano, y habla de la anestesia y de los costos de quirófano por separado.`,
-      'Algunos de esos rangos de honorarios en Estados Unidos se cruzan con las estimaciones de esta página. El aumento de senos es un ejemplo: la estimación en Cartagena, USD 6.750–8.250, cae dentro de un rango estadounidense que empieza más abajo. Una lipoabdominoplastia aquí no es la misma cirugía que la línea de abdominoplastia de la ASPS. Esta página no afirma un porcentaje de ahorro y no publica un costo total en Estados Unidos. Lo que se compara es una cotización escrita con otra cotización escrita.',
-    ],
-    houseTitle: 'La recuperación en Cartagena se organiza aparte',
-    house: 'Los rangos de esta página no incluyen alojamiento, traslados ni insumos. Quien quiere ese apoyo puede tener una casa de recuperación equipada, con enfermería 24/7, traslados entre el aeropuerto, la clínica y la casa, e insumos. El plan se arma a la medida en la valoración. No hay precio de paquete, y el consultorio no promete un número de noches, un tipo de habitación ni masajes.',
-    faqTitle: 'Preguntas sobre el precio',
-    faqs: [
-      ['¿Estos precios de cirugía plástica en Colombia son definitivos?', disclaimer.es],
-      ['¿Por qué hay dólares y pesos?', 'Los rangos autorizados están en dólares. Los pesos de esta página usan la TRM oficial del 20 de octubre de 2026, COP 3.156,32 por dólar, redondeados hacia arriba a 10.000 pesos. La valoración se mantiene en USD 150 / COP 400.000 y no se convierte con esa tasa.'],
-      ['¿Qué suele cambiar el precio?', 'El procedimiento, si se combinan cirugías, la anestesia, la clínica, un implante o dispositivo, los exámenes, la faja, los medicamentos y los controles mientras estás en Cartagena. La cotización escrita dice cuáles de esos están incluidos. Los tiquetes, el alojamiento y los traslados van aparte. El caso individual también puede quedar por debajo o por encima del rango.'],
-      ['¿Cómo se comparan con los precios en Estados Unidos?', 'La ASPS publica rangos de honorarios de cirujano de 2024 para sus miembros, por ejemplo abdominoplastia USD 8.000–13.500 y rinoplastia USD 7.500–12.500. Son honorarios del cirujano, no una cuenta total, y algunos se cruzan con las estimaciones de aquí. Esta página no afirma un porcentaje de ahorro.'],
-      ['¿Por qué no hay precio de mommy makeover, BBL ni liposucción que no sea HD?', 'No están en la tabla autorizada. El mommy makeover, el Brazilian butt lift con grasa y la liposucción que no es lipoescultura HD se cotizan por caso. Los implantes de glúteo sí aparecen, porque son otra cirugía.'],
-      ['¿La estimación incluye la casa de recuperación o los tiquetes?', 'No. Estos rangos no incluyen alojamiento, traslados, insumos ni tiquetes. La casa de recuperación se puede organizar aparte y se explica en la valoración. No hay precio de paquete.'],
-      ['¿Cómo obtengo una cotización real?', 'Después de una valoración virtual o presencial. La valoración cuesta USD 150 / COP 400.000. Puedes pedirla por WhatsApp o en el formulario. La cifra de esa cotización escrita es la que aplica a tu caso.'],
-    ],
-  },
-};
 
 const recoveryCopy = {
   en: {
@@ -285,13 +146,13 @@ const recoveryCopy = {
       'The practice does not promise a number of nights. How long you stay depends on the operation and on how you are recovering, and it is set at the valuation, not in advance.',
       'The practice does not promise a type of room.',
       'The practice does not promise massages, drainage sessions, or any other add-on. If something beyond nursing, transfers, and supplies is appropriate, it is discussed at the valuation. A sentence in an older review is not a current offer.',
-      'The procedure ranges on the cost page do not include the house, the transfers, or the supplies. Logistics are arranged separately from the surgical estimate.',
+      'The surgical quote does not include the house, the transfers, or the supplies. Logistics are arranged separately, at the valuation.',
     ],
     fitTitle: 'How it fits the trip',
     fit: [
       'International patients usually start with a virtual consultation, then an in-person evaluation in Cartagena before any operation. The recovery plan is part of that conversation, together with who will accompany you and when you might fly. Nothing here replaces the surgeon’s clearance to travel.',
       'Surgery is at CAPRI Clinic. Consultations are at the office in Manzanillo del Mar. The transfers in this arrangement connect the airport, the clinic, and the house. They are not a city tour.',
-      'Estimated surgery ranges, and the consultation fee of USD 150 / COP 400,000, are on the cost page. Those figures and this house are different decisions.',
+      'The consultation fee is USD 150 / COP 400,000. It is not a surgery price, and it does not include this house. The surgical figure is written after the valuation. You can book that visit from the consultation page.',
     ],
     faqTitle: 'Questions about the recovery house',
     faqs: [
@@ -299,7 +160,7 @@ const recoveryCopy = {
       ['What does the recovery house include?', 'An equipped recovery house, nursing 24 hours a day and 7 days a week, transfers between the airport, the clinic, and the house, and supplies. The exact arrangement is explained at the valuation.'],
       ['How many nights are included?', 'None are promised. The number of nights is not fixed in advance. It is decided at the valuation, based on the procedure and on how you are recovering.'],
       ['Are massages included?', 'No. Massages are not promised. Any care beyond nursing, transfers, and supplies is discussed at the valuation and is not part of a published package.'],
-      ['Do surgery price ranges include the house?', 'No. The ranges on the cost page are procedure estimates. Lodging, transfers, and supplies are separate and are not included in those figures.'],
+      ['Does the surgical quote include the house?', 'No. Lodging, transfers, and supplies are separate from the surgical quote and are explained at the valuation. There is no package price. The consultation fee is USD 150 / COP 400,000 and is not a surgery price.'],
       ['When will I know the plan?', 'At the valuation, virtual or in person. That is when the team goes through what applies to your case. You can start on WhatsApp or with a valuation request.'],
     ],
   },
@@ -321,13 +182,13 @@ const recoveryCopy = {
       'El consultorio no promete un número de noches. Cuánto te quedas depende de la cirugía y de cómo evoluciona la recuperación, y se define en la valoración, no por adelantado.',
       'El consultorio no promete un tipo de habitación.',
       'El consultorio no promete masajes, drenajes ni ningún adicional. Si algo más allá de la enfermería, los traslados y los insumos corresponde, se conversa en la valoración. Una frase en una reseña antigua no es una oferta vigente.',
-      'Los rangos de la página de precios no incluyen la casa, los traslados ni los insumos. La logística se organiza aparte de la estimación quirúrgica.',
+      'La cotización quirúrgica no incluye la casa, los traslados ni los insumos. La logística se organiza aparte, en la valoración.',
     ],
     fitTitle: 'Cómo encaja en el viaje',
     fit: [
       'Quien viene de otro país suele empezar con una valoración virtual y luego con la evaluación presencial en Cartagena, antes de cualquier cirugía. El plan de recuperación entra en esa conversación, junto con quién te acompaña y cuándo podrías volar. Nada aquí reemplaza el alta del cirujano para viajar.',
       'La cirugía es en la Clínica CAPRI. La valoración es en el consultorio de Manzanillo del Mar. Los traslados de este arreglo conectan el aeropuerto, la clínica y la casa. No son un recorrido turístico.',
-      'Los rangos estimados de cirugía, y la valoración de USD 150 / COP 400.000, están en la página de precios. Esas cifras y esta casa son decisiones distintas.',
+      'La valoración cuesta USD 150 / COP 400.000. No es un precio de cirugía y no incluye esta casa. La cifra quirúrgica se escribe después de la valoración. Puedes pedir esa cita en la página de valoración.',
     ],
     faqTitle: 'Preguntas sobre la casa de recuperación',
     faqs: [
@@ -335,7 +196,7 @@ const recoveryCopy = {
       ['¿Qué incluye la casa de recuperación?', 'Una casa de recuperación equipada, enfermería 24 horas al día y 7 días a la semana, traslados entre el aeropuerto, la clínica y la casa, e insumos. El arreglo exacto se explica en la valoración.'],
       ['¿Cuántas noches incluye?', 'No se promete ninguna cifra. El número de noches no se fija por adelantado. Se decide en la valoración, según el procedimiento y según cómo evoluciona tu recuperación.'],
       ['¿Incluye masajes?', 'No. Los masajes no se prometen. Cualquier atención más allá de la enfermería, los traslados y los insumos se conversa en la valoración y no forma parte de un paquete publicado.'],
-      ['¿Los rangos de cirugía incluyen la casa?', 'No. Los rangos de la página de precios son estimaciones del procedimiento. El alojamiento, los traslados y los insumos van aparte y no están incluidos en esas cifras.'],
+      ['¿La cotización quirúrgica incluye la casa?', 'No. El alojamiento, los traslados y los insumos van aparte de la cotización quirúrgica y se explican en la valoración. No hay precio de paquete. La valoración cuesta USD 150 / COP 400.000 y no es un precio de cirugía.'],
       ['¿Cuándo voy a conocer el plan?', 'En la valoración, virtual o presencial. Ahí el equipo revisa lo que aplica a tu caso. Puedes empezar por WhatsApp o con una solicitud de valoración.'],
     ],
   },
@@ -359,33 +220,6 @@ function assertMeta(page, label) {
   if (page.description.length < 110 || page.description.length > 170) throw new Error(`${label} description ${page.description.length}`);
 }
 
-export function costPage(lang) {
-  const c = costCopy[lang];
-  const es = lang === 'es';
-  const costHref = `/${lang}/plastic-surgery-cost-cartagena/`;
-  const houseHref = `/${lang}/recovery-house-cartagena/`;
-  const guideHref = `/${lang}/plastic-surgery-colombia/`;
-  const intlHref = `/${lang}/international-patients/`;
-  const body = `<section class="page-hero wrap" data-surface="charcoal"><p class="eyebrow">Cartagena, Colombia</p><h1>${esc(c.h1)}</h1><p class="lead">${esc(c.lead)}</p><p class="note">${esc(disclaimer[lang])}</p>${cta(lang, 'cost-hero')}</section>
-<section class="section wrap" data-surface="plum" id="ranges"><h2>${esc(c.readTitle)}</h2>${prose(c.read.map(esc))}${priceTable(lang)}<p class="note">${esc(disclaimer[lang])}</p><p>${es ? 'Valoración' : 'Consultation'}: USD ${commas(CONSULT_USD)} / COP ${dots(CONSULT_COP)}.</p></section>
-<section class="section wrap" data-surface="black" id="per-case"><h2>${esc(c.caseTitle)}</h2>${prose(c.case.map(esc))}</section>
-<section class="section wrap" data-surface="charcoal" id="what-changes-price"><h2>${esc(c.factorTitle)}</h2>${bullets(c.factors)}</section>
-<section class="section wrap" data-surface="plum" id="united-states"><h2>${esc(c.usTitle)}</h2>${prose(c.us)}</section>
-<section class="section wrap" data-surface="black"><h2>${esc(c.houseTitle)}</h2><div class="article-body"><p>${esc(c.house)}</p><p><a href="${houseHref}">${es ? 'Casa de recuperación en Cartagena' : 'Recovery house in Cartagena'}</a> · <a href="${intlHref}">${es ? 'Pacientes internacionales' : 'International patients'}</a> · <a href="${guideHref}">${es ? 'cirugía plástica en Colombia' : 'Guide to plastic surgery in Colombia'}</a></p></div></section>
-${googleReviewsHtml(lang)}
-<section class="section wrap" data-surface="plum" id="faq"><h2>${esc(c.faqTitle)}</h2>${faqsHtml(c.faqs)}</section>
-<section class="section wrap" data-surface="charcoal"><h2>${es ? 'Pide la cotización real' : 'Ask for the real quote'}</h2><p>${es ? 'La tabla de arriba es una estimación. La cifra que vale es la que queda por escrito después de la valoración. Estos rangos los publica el <a href="/es/">cirujano plástico en Cartagena</a>, Dr. Fulvio Correa.' : 'The table above is an estimate. The figure that applies is the one written down after your consultation.'}</p>${cta(lang, 'cost-closing')}</section>`;
-  const page = {title: c.title, description: c.description, body, updated: TRM_DATE, schemas: [
-    {'@context': 'https://schema.org', '@type': 'MedicalWebPage', url: 'https://fulviocorrea.com' + (es ? '/es/precios-cirugia-plastica-cartagena/' : '/plastic-surgery-cost-cartagena/'), name: c.h1, description: c.description, inLanguage: lang, dateModified: TRM_DATE},
-    faqSchema(c.faqs, lang),
-  ]};
-  // MedicalWebPage url above is the public URL. The build route is still /en/ or /es/ plus the English slug;
-  // audit rewrites /en/ to the root and the Spanish slug via routes.mjs. Keep schema on the public URL.
-  assertMeta(page, 'cost ' + lang);
-  void costHref;
-  return page;
-}
-
 export function recoveryPage(lang) {
   const c = recoveryCopy[lang];
   const es = lang === 'es';
@@ -393,7 +227,7 @@ export function recoveryPage(lang) {
   const publicPath = es ? '/es/casa-de-recuperacion-cartagena/' : '/recovery-house-cartagena/';
   const body = `<section class="page-hero wrap" data-surface="charcoal"><p class="eyebrow">Cartagena, Colombia</p><h1>${esc(c.h1)}</h1><p class="lead">${esc(c.lead)}</p>${cta(lang, 'recovery-hero')}</section>
 <section class="section wrap" data-surface="plum"><h2>${esc(c.whatTitle)}</h2>${bullets(c.what)}</section>
-<section class="section wrap" data-surface="black"><h2>${esc(c.notTitle)}</h2>${bullets(c.not)}<div class="article-body"><p><a href="/${lang}/plastic-surgery-cost-cartagena/">${es ? 'Precios de cirugía plástica en Cartagena' : 'Plastic surgery costs in Cartagena'}</a> · <a href="/${lang}/international-patients/">${es ? 'Pacientes internacionales' : 'International patients'}</a> · <a href="/${lang}/plastic-surgery-colombia/">${es ? 'Guía de cirugía plástica en Colombia' : 'Guide to plastic surgery in Colombia'}</a></p></div></section>
+<section class="section wrap" data-surface="black"><h2>${esc(c.notTitle)}</h2>${bullets(c.not)}<div class="article-body"><p><a href="/${lang}/book-consultation/">${es ? 'Agendar una valoración' : 'Book a valuation'}</a> · <a href="/${lang}/international-patients/">${es ? 'Pacientes internacionales' : 'International patients'}</a> · <a href="/${lang}/plastic-surgery-colombia/">${es ? 'Guía de cirugía plástica en Colombia' : 'Guide to plastic surgery in Colombia'}</a></p></div></section>
 <section class="section wrap" data-surface="plum"><h2>${esc(c.fitTitle)}</h2>${prose(c.fit.map(esc))}</section>
 ${googleReviewsHtml(lang)}
 <section class="section wrap" data-surface="black" id="faq"><h2>${esc(c.faqTitle)}</h2>${faqsHtml(c.faqs)}</section>

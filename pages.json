@@ -171,7 +171,7 @@
             "name": "How much does eyelid surgery cost in Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The published estimate for blepharoplasty with this practice is USD 3,600–4,400 (COP 11,370,000–13,890,000). It is an approximate range from previous cases. The real quote is written after a virtual or in-person consultation and does not commit the doctor to charge that amount or to operate."
+              "text": "This practice does not publish a blepharoplasty price. The quote is written after a virtual or in-person consultation and depends on whether the plan is the upper lids, the lower lids, or both, and on anesthesia, the facility, and recovery care. The consultation fee is USD 150 / COP 400,000. That fee is not a surgery price."
             }
           },
           {
@@ -1501,7 +1501,7 @@
             "name": "¿Cuánto cuesta la cirugía de párpados en Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "El rango publicado de blefaroplastia en este consultorio es USD 3.600–4.400 (COP 11.370.000–13.890.000). Es una estimación a partir de casos previos. La cotización real se escribe después de la valoración virtual o presencial y no compromete al Dr. a cobrar ese monto ni a operar."
+              "text": "Este consultorio no publica un precio de blefaroplastia. La cotización se escribe después de la valoración virtual o presencial y depende de si el plan es el párpado superior, el inferior o ambos, y de la anestesia, la clínica y la recuperación. La valoración cuesta USD 150 / COP 400.000. Esa tarifa no es un precio de cirugía."
             }
           },
           {
@@ -2384,7 +2384,7 @@
             "name": "¿Cuánto vale una abdominoplastia en Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La lipoabdominoplastia publicada para este consultorio es USD 9.900–12.100 (COP 31.250.000–38.200.000). Una mini abdominoplastia, o una abdominoplastia sin liposucción, se cotiza por caso. Es una estimación orientativa; la cotización real va después de la valoración y no compromete al Dr. a cobrar ese monto ni a operar."
+              "text": "Este consultorio no publica un precio de abdominoplastia. La lipoabdominoplastia, la mini abdominoplastia y la abdominoplastia sin liposucción se cotizan por caso, según la técnica, las zonas, la anestesia, la clínica y la recuperación. La cotización real va después de la valoración. La valoración cuesta USD 150 / COP 400.000 y no es un precio de cirugía."
             }
           },
           {
@@ -2771,7 +2771,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-28",
+    "updated": "2026-10-30",
     "schemas": [],
     "alternates": [
       {
@@ -2832,7 +2832,7 @@
             "name": "How much does lipo cost in Colombia with Dr. Fulvio Correa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "HD liposculpture has a published estimate of USD 6,300–7,700 (COP 19.890.000–24.310.000). Liposuction that is not HD liposculpture is quoted per case after the consultation."
+              "text": "There is no published surgery price. HD liposculpture and liposuction that is not HD are both quoted per case after the consultation, because the areas, the technique and the facility change the plan."
             }
           },
           {
@@ -2840,7 +2840,7 @@
             "name": "How much does it cost to add arms or legs?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "USD 675–825 per area (COP 2.140.000–2.610.000), as an add-on to a liposuction."
+              "text": "There is no published add-on price. Arms or legs are quoted with the main plan, because each extra area changes operating time, anesthesia and recovery."
             }
           },
           {
@@ -2897,14 +2897,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-28",
+    "updated": "2026-10-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Rhinoplasty Cost in Colombia: What a Nose Job Costs",
         "datePublished": "2026-10-28",
-        "dateModified": "2026-10-28",
+        "dateModified": "2026-10-30",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia-cost.webp",
@@ -2939,7 +2939,7 @@
             "name": "How much does a nose job cost in Colombia with Dr. Fulvio Correa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The published estimate for rhinoplasty is USD 6,750–8,250 (COP 21.310.000–26.040.000). It is based on previous cases; your written quote comes after the consultation."
+              "text": "There is no published surgery price. The written quote comes after the consultation and depends on whether the plan is cosmetic, functional or both, on how much structure has to change, and on whether this is a first operation or a revision."
             }
           },
           {
@@ -2963,7 +2963,7 @@
             "name": "How does that compare with the United States?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "ASPS lists a 2024 surgeon/physician fee range of USD 7,500–12,500 for rhinoplasty. That is the surgeon's fee only, without anesthesia, facility or follow-up, so it is not a total bill."
+              "text": "ASPS publishes a surgeon's fee for rhinoplasty and treats anesthesia and the facility as separate costs. That fee is not a total bill, and this page does not reprint the number."
             }
           },
           {
@@ -3004,14 +3004,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-26",
+    "updated": "2026-10-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "How Much Is a BBL in Colombia? Cost and Safety Guide",
         "datePublished": "2026-10-26",
-        "dateModified": "2026-10-26",
+        "dateModified": "2026-10-30",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-bbl-colombia-cost.webp",
@@ -3062,7 +3062,7 @@
             "name": "How much does a BBL cost in the United States?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "ASPS lists a 2024 surgeon/physician fee range of USD 7,000–11,500 for buttock augmentation with fat grafting. That is the surgeon's fee only, without anesthesia, facility or follow-up."
+              "text": "ASPS publishes a surgeon's fee for buttock augmentation with fat grafting, and it treats anesthesia and the facility as separate costs. That fee is not a total bill, and this page does not reprint the number. Compare written quotes, not a headline."
             }
           },
           {
@@ -3070,7 +3070,7 @@
             "name": "Are gluteal implants cheaper than a BBL?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "They are a different operation. Gluteal implants have a published estimate of USD 6,750–8,250 (COP 21.310.000–26.040.000) with Dr. Fulvio Correa; a BBL is quoted per case, so the two cannot be compared until you have a quote."
+              "text": "They are a different operation. Both are quoted per case with Dr. Fulvio Correa, so they cannot be compared until you have a written quote."
             }
           },
           {
@@ -3078,7 +3078,7 @@
             "name": "How much is lipo 360 with a BBL?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "It is also quoted per case. The liposuction ranges that do exist are explained in lipo 360 in Colombia: cost and what the price includes."
+              "text": "It is also quoted per case. What changes a lipo 360 quote is explained in lipo 360 in Colombia: cost and what the price includes."
             }
           },
           {
@@ -3111,14 +3111,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-23",
+    "updated": "2026-10-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Lipo 360 in Colombia: Cost and What the Price Includes",
         "datePublished": "2026-10-23",
-        "dateModified": "2026-10-23",
+        "dateModified": "2026-10-30",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-lipo-360-colombia-cost.webp",
@@ -3153,7 +3153,7 @@
             "name": "How much does lipo 360 cost in Colombia with Dr. Fulvio Correa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "HD liposculpture (Liposurg) has a published estimate of USD 6,300–7,700 (COP 19.890.000–24.310.000 at the TRM of 20 October 2026). A conventional lipo 360 that is not HD liposculpture is quoted per case after the consultation."
+              "text": "There is no published surgery price. HD liposculpture and a conventional lipo 360 are both quoted per case after the consultation, because the areas, the technique and whether skin is loose change the plan."
             }
           },
           {
@@ -3161,7 +3161,7 @@
             "name": "How much does it cost to add arms or legs to a lipo 360?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Arm liposuction and leg liposuction added to a liposuction each have an estimate of USD 675–825 (COP 2.140.000–2.610.000)."
+              "text": "There is no published add-on price. Arms or legs are quoted with the main plan, because each extra area changes operating time."
             }
           },
           {
@@ -3177,7 +3177,7 @@
             "name": "Does the lipo 360 price include anesthesia and the clinic?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The published ranges do not state that anesthesia, the facility, tests, the garment or medication are included. Your written quote is where each of those services is named."
+              "text": "Nothing on this page states that anesthesia, the facility, tests, the garment or medication are included. Your written quote is where each of those services is named."
             }
           },
           {
@@ -4772,7 +4772,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-29",
+    "updated": "2026-10-30",
     "schemas": [],
     "alternates": [
       {
@@ -4833,7 +4833,7 @@
             "name": "¿Cuánto cuesta una lipo en Colombia con el Dr. Fulvio Correa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La lipoescultura HD tiene un estimado publicado de USD 6.300–7.700 (COP 19.890.000–24.310.000). La liposucción que no es lipoescultura HD se cotiza por caso después de la valoración."
+              "text": "No hay un precio de cirugía publicado. La lipoescultura HD y la liposucción que no es HD se cotizan por caso después de la valoración, porque las zonas, la técnica y la clínica cambian el plan."
             }
           },
           {
@@ -4841,7 +4841,7 @@
             "name": "¿Cuánto cuesta sumar brazos o piernas?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "USD 675–825 por zona (COP 2.140.000–2.610.000), como adicional a una liposucción."
+              "text": "No hay un precio publicado de adicional. Brazos o piernas se cotizan con el plan principal, porque cada zona extra cambia el tiempo de quirófano, la anestesia y la recuperación."
             }
           },
           {
@@ -4898,14 +4898,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-28",
+    "updated": "2026-10-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "¿Cuánto cuesta una rinoplastia en Colombia? Precio y cotización",
         "datePublished": "2026-10-28",
-        "dateModified": "2026-10-28",
+        "dateModified": "2026-10-30",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-rhinoplasty-colombia-cost.webp",
@@ -4940,7 +4940,7 @@
             "name": "¿Cuánto cuesta una rinoplastia en Colombia con el Dr. Fulvio Correa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "El estimado publicado es USD 6.750–8.250 (COP 21.310.000–26.040.000). Se basa en casos anteriores; tu cotización escrita llega después de la valoración."
+              "text": "No hay un precio de cirugía publicado. La cotización escrita llega después de la valoración y depende de si el plan es estético, funcional o ambos, de cuánta estructura hay que cambiar y de si es una primera cirugía o una revisión."
             }
           },
           {
@@ -4964,7 +4964,7 @@
             "name": "¿Cómo se compara con Estados Unidos?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La ASPS publica para 2024 un rango de honorarios del cirujano de USD 7.500–12.500 para rinoplastia. Son solo los honorarios del cirujano, sin anestesia, institución ni controles, así que no es una cuenta total."
+              "text": "La ASPS publica un honorario de cirujano para la rinoplastia y trata la anestesia y la institución como costos aparte. Ese honorario no es una cuenta total, y esta página no reproduce la cifra."
             }
           },
           {
@@ -5005,14 +5005,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-26",
+    "updated": "2026-10-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "¿Cuánto cuesta un BBL en Colombia? Precio y seguridad",
         "datePublished": "2026-10-26",
-        "dateModified": "2026-10-26",
+        "dateModified": "2026-10-30",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-bbl-colombia-cost.webp",
@@ -5063,7 +5063,7 @@
             "name": "¿Cuánto cuesta un BBL en Estados Unidos?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La ASPS reporta para 2024 un rango de honorarios del cirujano de USD 7,000–11,500 para el aumento de glúteos con injerto de grasa. Es solo el honorario del cirujano, sin anestesia, clínica ni controles."
+              "text": "La ASPS publica un honorario de cirujano para el aumento de glúteos con injerto de grasa, y trata la anestesia y la clínica como costos aparte. Ese honorario no es una cuenta total, y esta página no reproduce la cifra. Compara cotizaciones escritas, no un titular."
             }
           },
           {
@@ -5071,7 +5071,7 @@
             "name": "¿La gluteoplastia con implantes es más barata que el BBL?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Son cirugías distintas. La gluteoplastia con implantes tiene una estimación publicada de USD 6,750–8,250 (COP 21.310.000–26.040.000) con el Dr. Fulvio Correa; el BBL se cotiza por caso, así que no se pueden comparar hasta tener la cotización."
+              "text": "Son cirugías distintas. Las dos se cotizan por caso con el Dr. Fulvio Correa, así que no se pueden comparar hasta tener la cotización escrita."
             }
           },
           {
@@ -5079,7 +5079,7 @@
             "name": "¿Cuánto cuesta la lipo 360 con transferencia a glúteos?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "También se cotiza por caso. Los rangos de liposucción que sí existen están en lipo 360 en Colombia: precio y qué incluye."
+              "text": "También se cotiza por caso. Qué mueve el precio de una lipo 360 está en lipo 360 en Colombia: precio y qué incluye."
             }
           },
           {
@@ -5112,14 +5112,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-23",
+    "updated": "2026-10-30",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Lipo 360 en Colombia: precio y qué incluye",
         "datePublished": "2026-10-23",
-        "dateModified": "2026-10-23",
+        "dateModified": "2026-10-30",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-lipo-360-colombia-cost.webp",
@@ -5154,7 +5154,7 @@
             "name": "¿Cuánto cuesta la lipo 360 en Colombia con el Dr. Fulvio Correa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La lipoescultura HD Liposurg tiene un rango estimado publicado de USD 6,300–7,700 (COP 19.890.000–24.310.000 con la TRM del 20 de octubre de 2026). La lipo 360 convencional, que no es lipoescultura HD, se cotiza por caso después de la valoración."
+              "text": "No hay un precio de cirugía publicado. La lipoescultura HD y la lipo 360 convencional se cotizan por caso después de la valoración, porque las zonas, la técnica y si hay piel flácida cambian el plan."
             }
           },
           {
@@ -5162,7 +5162,7 @@
             "name": "¿Cuánto cuesta sumar brazos o piernas a la lipo 360?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La lipo de brazos y la lipo de piernas, como adicional a una liposucción, tienen cada una un rango estimado de USD 675–825 (COP 2.140.000–2.610.000)."
+              "text": "No hay un precio publicado de adicional. Brazos o piernas se cotizan con el plan principal, porque cada zona extra cambia el tiempo de quirófano."
             }
           },
           {
@@ -5178,7 +5178,7 @@
             "name": "¿El precio de la lipo 360 incluye la anestesia y la clínica?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Los rangos publicados no afirman que estén incluidos la anestesia, la clínica, los exámenes, la faja ni los medicamentos. Esos servicios se nombran uno por uno en tu cotización escrita."
+              "text": "Nada en esta página afirma que estén incluidos la anestesia, la clínica, los exámenes, la faja ni los medicamentos. Esos servicios se nombran uno por uno en tu cotización escrita."
             }
           },
           {
@@ -6808,7 +6808,7 @@
         "@id": "https://fulviocorrea.com/plastic-surgery-colombia/#webpage",
         "url": "https://fulviocorrea.com/plastic-surgery-colombia/",
         "name": "Plastic Surgery in Colombia",
-        "description": "Plastic surgery in Colombia: how to check a surgeon and a clinic, what changes a quote, and how long to stay. From USD 3,600. A real quote follows consultation.",
+        "description": "Plastic surgery in Colombia: how to check a surgeon and a clinic, what changes a quote, and how long to stay. A real quote follows consultation.",
         "inLanguage": "en",
         "dateModified": "2026-10-27",
         "lastReviewed": "2026-10-27",
@@ -6875,7 +6875,7 @@
             "name": "What drives the cost of plastic surgery in Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The procedure, whether procedures are combined, operating time, anesthesia, the facility, any implant, tests, garments, medication and the visits while you are in Cartagena. Flights, lodging and care after you fly home are separate. Estimated ranges for this practice start at USD 3,600 for eyelid surgery and are on the plastic surgery cost page. The real quote comes after consultation."
+              "text": "The procedure, whether procedures are combined, operating time, anesthesia, the facility, any implant, tests, garments, medication and the visits while you are in Cartagena. Flights, lodging and care after you fly home are separate. This practice does not publish surgery prices. The real quote comes after consultation. The consultation fee is USD 150 / COP 400,000 and is not a surgery price."
             }
           },
           {
@@ -7014,7 +7014,7 @@
             "name": "¿De qué depende el costo de la cirugía plástica en Colombia?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Del procedimiento, de si se combinan cirugías, del tiempo de quirófano, de la anestesia, de la clínica, de un implante si lo hay, de los exámenes, de la faja, de los medicamentos y de los controles mientras estás en Cartagena. Los tiquetes, el alojamiento y la atención después de volar a casa van aparte. Los rangos estimados de este consultorio empiezan en USD 3.600 para blefaroplastia y están en la página de precios. La cotización real sale después de la valoración."
+              "text": "Del procedimiento, de si se combinan cirugías, del tiempo de quirófano, de la anestesia, de la clínica, de un implante si lo hay, de los exámenes, de la faja, de los medicamentos y de los controles mientras estás en Cartagena. Los tiquetes, el alojamiento y la atención después de volar a casa van aparte. Este consultorio no publica precios de cirugía. La cotización real sale después de la valoración. La valoración cuesta USD 150 / COP 400.000 y no es un precio de cirugía."
             }
           },
           {
@@ -7073,198 +7073,12 @@
     ]
   },
   {
-    "route": "/en/plastic-surgery-cost-cartagena/",
-    "file": "dist/en/plastic-surgery-cost-cartagena/index.html",
-    "lang": "en",
-    "noindex": false,
-    "ads": false,
-    "updated": "2026-10-20",
-    "schemas": [
-      {
-        "@context": "https://schema.org",
-        "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com/plastic-surgery-cost-cartagena/",
-        "name": "Plastic surgery in Colombia: cost and prices",
-        "description": "Plastic surgery Colombia cost and Colombia plastic surgery prices in Cartagena. Estimates from USD 3,600. The real quote comes after consultation.",
-        "inLanguage": "en",
-        "dateModified": "2026-10-20"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "inLanguage": "en",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Are these plastic surgery prices in Colombia final?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "This is an approximate estimate based on previous cases; sometimes the fee has been lower and sometimes higher, depending on the case. The real quote always comes after the virtual or in-person consultation. It does not commit the doctor to charge that amount or to operate."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why are prices shown in dollars and in pesos?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The authorized ranges are in US dollars. Pesos on this page use the official TRM of 20 October 2026, COP 3,156.32 per dollar, rounded up to the nearest 10,000 pesos. The consultation fee stays USD 150 / COP 400,000 and is not converted at that rate."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What usually changes the price?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The procedure, whether operations are combined, anesthesia, the facility, any implant or device, tests, garments, medication, and the visits while you are in Cartagena. The written quote says which of those are included. Flights, lodging, and transfers are separate. The individual case can also come in below or above the range."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do these compare with prices in the United States?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "ASPS publishes 2024 surgeon/physician fee ranges for its members, for example abdominoplasty USD 8,000–13,500 and rhinoplasty USD 7,500–12,500. Those are surgeon fees, not a total bill, and some of them overlap the estimates here. This page does not state a savings percentage."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why is there no mommy makeover, BBL, or non-HD liposuction price?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "They are not in the authorized table. A mommy makeover, a fat-graft Brazilian butt lift, and liposuction that is not HD liposculpture are quoted per case. Gluteal implants are listed separately because they are a different operation."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does the estimate include the recovery house or the flights?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. These ranges do not include lodging, transfers, supplies, or flights. A recovery house can be arranged separately and is explained at the valuation. There is no package price."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I get a real quote?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "After a virtual or in-person consultation. The consultation fee is USD 150 / COP 400,000. You can request it on WhatsApp or through the valuation form. The figure in that written quote is the one that applies to you."
-            }
-          }
-        ]
-      }
-    ],
-    "cover": "/assets/plastic-surgery-office-reception-cartagena.webp",
-    "alternates": [
-      {
-        "lang": "en",
-        "route": "/en/plastic-surgery-cost-cartagena/"
-      },
-      {
-        "lang": "es",
-        "route": "/es/precios-cirugia-plastica-cartagena/"
-      }
-    ]
-  },
-  {
-    "route": "/es/precios-cirugia-plastica-cartagena/",
-    "file": "dist/es/precios-cirugia-plastica-cartagena/index.html",
-    "lang": "es",
-    "noindex": false,
-    "ads": false,
-    "updated": "2026-10-20",
-    "schemas": [
-      {
-        "@context": "https://schema.org",
-        "@type": "MedicalWebPage",
-        "url": "https://fulviocorrea.com/es/precios-cirugia-plastica-cartagena/",
-        "name": "Precios de cirugía plástica en Cartagena",
-        "description": "Precios de cirugía plástica en Cartagena, Colombia, con rangos estimados desde USD 3.600. La cotización real se entrega después de la valoración.",
-        "inLanguage": "es",
-        "dateModified": "2026-10-20"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "inLanguage": "es",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "¿Estos precios de cirugía plástica en Colombia son definitivos?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Estimación orientativa basada en experiencias previas; a veces se ha cobrado menos y a veces más según cada caso. La cotización real va siempre después de la consulta virtual o presencial. No compromete al Dr. a cobrar ese monto ni a operar."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Por qué hay dólares y pesos?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Los rangos autorizados están en dólares. Los pesos de esta página usan la TRM oficial del 20 de octubre de 2026, COP 3.156,32 por dólar, redondeados hacia arriba a 10.000 pesos. La valoración se mantiene en USD 150 / COP 400.000 y no se convierte con esa tasa."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Qué suele cambiar el precio?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "El procedimiento, si se combinan cirugías, la anestesia, la clínica, un implante o dispositivo, los exámenes, la faja, los medicamentos y los controles mientras estás en Cartagena. La cotización escrita dice cuáles de esos están incluidos. Los tiquetes, el alojamiento y los traslados van aparte. El caso individual también puede quedar por debajo o por encima del rango."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Cómo se comparan con los precios en Estados Unidos?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "La ASPS publica rangos de honorarios de cirujano de 2024 para sus miembros, por ejemplo abdominoplastia USD 8.000–13.500 y rinoplastia USD 7.500–12.500. Son honorarios del cirujano, no una cuenta total, y algunos se cruzan con las estimaciones de aquí. Esta página no afirma un porcentaje de ahorro."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Por qué no hay precio de mommy makeover, BBL ni liposucción que no sea HD?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No están en la tabla autorizada. El mommy makeover, el Brazilian butt lift con grasa y la liposucción que no es lipoescultura HD se cotizan por caso. Los implantes de glúteo sí aparecen, porque son otra cirugía."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿La estimación incluye la casa de recuperación o los tiquetes?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. Estos rangos no incluyen alojamiento, traslados, insumos ni tiquetes. La casa de recuperación se puede organizar aparte y se explica en la valoración. No hay precio de paquete."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Cómo obtengo una cotización real?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Después de una valoración virtual o presencial. La valoración cuesta USD 150 / COP 400.000. Puedes pedirla por WhatsApp o en el formulario. La cifra de esa cotización escrita es la que aplica a tu caso."
-            }
-          }
-        ]
-      }
-    ],
-    "cover": "/assets/plastic-surgery-office-reception-cartagena.webp",
-    "alternates": [
-      {
-        "lang": "es",
-        "route": "/es/precios-cirugia-plastica-cartagena/"
-      },
-      {
-        "lang": "en",
-        "route": "/en/plastic-surgery-cost-cartagena/"
-      }
-    ]
-  },
-  {
     "route": "/en/recovery-house-cartagena/",
     "file": "dist/en/recovery-house-cartagena/index.html",
     "lang": "en",
     "noindex": false,
     "ads": false,
-    "updated": "2026-10-20",
+    "updated": "2026-10-30",
     "schemas": [
       {
         "@context": "https://schema.org",
@@ -7273,7 +7087,7 @@
         "name": "Recovery house in Cartagena",
         "description": "Equipped recovery house in Cartagena with 24/7 nursing, airport and clinic transfers, and supplies. The plan is set at your valuation. No package price.",
         "inLanguage": "en",
-        "dateModified": "2026-10-20"
+        "dateModified": "2026-10-30"
       },
       {
         "@context": "https://schema.org",
@@ -7314,10 +7128,10 @@
           },
           {
             "@type": "Question",
-            "name": "Do surgery price ranges include the house?",
+            "name": "Does the surgical quote include the house?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. The ranges on the cost page are procedure estimates. Lodging, transfers, and supplies are separate and are not included in those figures."
+              "text": "No. Lodging, transfers, and supplies are separate from the surgical quote and are explained at the valuation. There is no package price. The consultation fee is USD 150 / COP 400,000 and is not a surgery price."
             }
           },
           {
@@ -7349,7 +7163,7 @@
     "lang": "es",
     "noindex": false,
     "ads": false,
-    "updated": "2026-10-20",
+    "updated": "2026-10-30",
     "schemas": [
       {
         "@context": "https://schema.org",
@@ -7358,7 +7172,7 @@
         "name": "Casa de recuperación en Cartagena",
         "description": "Casa de recuperación en Cartagena: enfermería 24/7, traslados e insumos. El plan se define en la valoración. Sin precio de paquete.",
         "inLanguage": "es",
-        "dateModified": "2026-10-20"
+        "dateModified": "2026-10-30"
       },
       {
         "@context": "https://schema.org",
@@ -7399,10 +7213,10 @@
           },
           {
             "@type": "Question",
-            "name": "¿Los rangos de cirugía incluyen la casa?",
+            "name": "¿La cotización quirúrgica incluye la casa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. Los rangos de la página de precios son estimaciones del procedimiento. El alojamiento, los traslados y los insumos van aparte y no están incluidos en esas cifras."
+              "text": "No. El alojamiento, los traslados y los insumos van aparte de la cotización quirúrgica y se explican en la valoración. No hay precio de paquete. La valoración cuesta USD 150 / COP 400.000 y no es un precio de cirugía."
             }
           },
           {

@@ -1,6 +1,6 @@
 ---
 title: "Lipo 360 in Colombia: Cost and What the Price Includes"
-description: "Lipo 360 in Colombia cost with Dr. Fulvio Correa in Cartagena: the published HD liposculpture range in USD and COP, and what is quoted per case."
+description: "Lipo 360 in Colombia cost with Dr. Fulvio Correa in Cartagena: what changes the quote, and what a written price should include."
 slug: "lipo-360-colombia-cost"
 lang: "en"
 category: "Body Contouring"
@@ -8,10 +8,10 @@ tags: ["lipo-360-colombia", "lipo-360-cost", "liposuction-colombia", "liposuctio
 cover: "/assets/blog-lipo-360-colombia-cost.webp"
 coverAlt: "Woman in a loose linen shirt seated at a wooden table in a shaded colonial courtyard in Cartagena, writing in a notebook beside a laptop and a glass of water"
 date: "2026-10-23"
-updated: "2026-10-23"
+updated: "2026-10-30"
 author: "fulvio-correa"
 translationOf: "lipo-360-precio-colombia"
-sources: ["https://fulviocorrea.com/plastic-surgery-cost-cartagena/","https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586","https://www.plasticsurgery.org/cosmetic-procedures/liposuction","https://www.plasticsurgery.org/cosmetic-procedures/liposuction/safety","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html"]
+sources: ["https://fulviocorrea.com/book-consultation/","https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586","https://www.plasticsurgery.org/cosmetic-procedures/liposuction","https://www.plasticsurgery.org/cosmetic-procedures/liposuction/safety","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html"]
 draft: false
 originalUrl: ""
 procedure: "liposuction"
@@ -21,28 +21,25 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**With Dr. Fulvio Correa in Cartagena, the published estimate for HD liposculpture (listed as Liposurg) is USD 6,300–7,700, or COP 19.890.000–24.310.000. Adding arms or legs is USD 675–825 per area. A conventional lipo 360 that is not HD liposculpture, and a lipo 360 combined with a BBL, have no published range: they are quoted per case after the consultation.** These are from–to estimates based on previous cases, not a quote, and the [plastic surgery cost guide for Cartagena](/plastic-surgery-cost-cartagena/) is the page that keeps the full table up to date.
+**With Dr. Fulvio Correa in Cartagena, lipo 360 does not have a published surgery price.** HD liposculpture (listed as Liposurg), arms or legs added to the plan, a conventional lipo 360, and a lipo 360 combined with a BBL are all quoted per case after the consultation, which costs USD 150 (COP 400,000). [Book the valuation](/book-consultation/) for the written figure.
 
-"Lipo 360" is not a separate operation. It is the common name for liposuction of the abdomen, waist (flanks) and back in the same session, so the whole midsection is treated "all the way around." That is why its price depends far more on your plan than on the name. This guide explains which numbers exist, which ones don't, and what to check in any quote for lipo 360 in Colombia, here or anywhere else.
+"Lipo 360" is not a separate operation. It is the common name for liposuction of the abdomen, waist (flanks) and back in the same session, so the whole midsection is treated "all the way around." That is why its price depends far more on your plan than on the name. This guide explains what changes a quote for lipo 360 in Colombia, here or anywhere else.
 
 If you only want one or two areas treated, start with [how much lipo costs in Colombia](/blog/liposuction-colombia-cost/), which compares liposuction, HD liposculpture and lipo 360 side by side.
 
-## Lipo 360 cost in Cartagena at a glance
+## What changes a lipo 360 quote
 
-| Plan | Estimated range (USD) | Estimated range (COP) |
-|---|---|---|
-| HD liposculpture (Liposurg) | USD 6,300–7,700 | COP 19.890.000–24.310.000 |
-| Retraction technology, per zone (only if the plan uses it) | USD 450–550 | COP 1.430.000–1.740.000 |
-| Arm liposuction, added to liposuction | USD 675–825 | COP 2.140.000–2.610.000 |
-| Leg liposuction, added to liposuction | USD 675–825 | COP 2.140.000–2.610.000 |
-| Lipoabdominoplasty (when loose skin is part of the plan) | USD 9,900–12,100 | COP 31.250.000–38.200.000 |
-| Lipo 360 that is not HD liposculpture | Quoted per case | Quoted per case |
-| Lipo 360 with fat transfer to the buttocks (BBL) | Quoted per case | Quoted per case |
-| Consultation | USD 150 | COP 400,000 |
+| Plan | How it is quoted |
+|---|---|
+| HD liposculpture (Liposurg) | Quoted per case. Definition work is not the same as volume reduction |
+| Retraction technology, per zone | Quoted only if the plan uses it |
+| Arm or leg liposuction, added to liposuction | Quoted with the main plan. Each extra area changes operating time |
+| Lipoabdominoplasty, when loose skin is part of the plan | Quoted per case. A different operation from lipo 360 |
+| Lipo 360 that is not HD liposculpture | Quoted per case |
+| Lipo 360 with fat transfer to the buttocks (BBL) | Quoted per case. Once fat is grafted, it is a BBL |
+| Consultation | USD 150 / COP 400,000. Not a surgery price |
 
-The dollar figures are the authorized ranges. The pesos were converted at Colombia's official exchange rate (TRM) of 20 October 2026, COP 3,156.32 per dollar, and rounded up to the nearest 10,000 pesos. A later exchange rate changes the peso figure, not the dollar range. The consultation fee is a fixed pair and is not converted.
-
-This is an approximate estimate based on previous cases; sometimes the fee has been lower and sometimes higher, depending on the case. The real quote always comes after the virtual or in-person consultation. It does not commit the doctor to charge that amount or to operate.
+The consultation fee is a fixed pair. It is not a surgery price. The real quote always comes after the virtual or in-person consultation. It does not commit the doctor to operate.
 
 ## Why a conventional lipo 360 has no fixed price
 
@@ -50,11 +47,11 @@ Online, "lipo 360 Colombia price" searches return confident single numbers. A re
 
 - **How much area is treated.** Abdomen and flanks only, or abdomen, flanks, upper and lower back. Mayo Clinic notes that the risk of complications rises when the surgeon works on larger body surfaces or does several procedures in the same operation, and that large-volume liposuction can shift enough fluid to affect the kidneys, heart and lungs. More area means more operating time and more planning.
 - **Which technique the plan needs.** Mayo Clinic describes suction-assisted liposuction, the most common type, along with ultrasound-assisted, laser-assisted and power-assisted techniques, and says the surgeon selects the technique based on your goals, the area treated and any previous liposuction. No single device is the right choice for everyone.
-- **HD sculpting or not.** HD liposculpture is the plan with a published range. A lipo 360 aimed at reducing volume without that definition work is a different plan, and it is quoted on its own.
+- **HD sculpting or not.** HD liposculpture and a volume-only lipo 360 are different plans. Each one is quoted on its own after the consultation.
 - **What is added.** Arms or legs have their own add-on range. Fat transfer to the buttocks turns the plan into a BBL, which has its own safety rules and is quoted per case.
 - **Your skin.** Liposuction does not tighten loose skin. If the consultation finds loose lower-abdominal skin or a stretched abdominal wall, the conversation moves toward a [tummy tuck vs liposuction](/blog/tummy-tuck-vs-liposuction/) decision or a lipoabdominoplasty, which is priced differently.
 
-So the honest answer to "how much is lipo 360 in Colombia?" is: there is a published range when the plan is HD liposculpture, and a written quote for anything else.
+So the honest answer to "how much is lipo 360 in Colombia?" is a written quote after the consultation, whether the plan is HD liposculpture or a volume-only lipo 360.
 
 ## What the price includes, and what a quote must spell out
 
@@ -110,16 +107,16 @@ To get a written quote for your lipo 360, message Sofía. She coordinates the vi
 ## Frequently asked questions
 
 **How much does lipo 360 cost in Colombia with Dr. Fulvio Correa?**
-HD liposculpture (Liposurg) has a published estimate of USD 6,300–7,700 (COP 19.890.000–24.310.000 at the TRM of 20 October 2026). A conventional lipo 360 that is not HD liposculpture is quoted per case after the consultation.
+There is no published surgery price. HD liposculpture and a conventional lipo 360 are both quoted per case after the consultation, because the areas, the technique and whether skin is loose change the plan.
 
 **How much does it cost to add arms or legs to a lipo 360?**
-Arm liposuction and leg liposuction added to a liposuction each have an estimate of USD 675–825 (COP 2.140.000–2.610.000).
+There is no published add-on price. Arms or legs are quoted with the main plan, because each extra area changes operating time.
 
 **How much is lipo 360 with a BBL in Colombia?**
 There is no published range. Once fat is transferred to the buttocks, the plan is a Brazilian butt lift, and it is quoted per case after the consultation.
 
 **Does the lipo 360 price include anesthesia and the clinic?**
-The published ranges do not state that anesthesia, the facility, tests, the garment or medication are included. Your written quote is where each of those services is named.
+Nothing on this page states that anesthesia, the facility, tests, the garment or medication are included. Your written quote is where each of those services is named.
 
 **Is the consultation free?**
 No. The consultation is USD 150 / COP 400,000. It is not a surgery price.
@@ -131,7 +128,7 @@ Prefer Spanish? Read the twin guide: <a href="/es/blog/lipo-360-precio-colombia/
 
 ## Sources / Medical references
 
-- Dr. Fulvio Correa — [Plastic surgery in Colombia: cost and prices](/plastic-surgery-cost-cartagena/) (authorized from–to ranges in USD and COP, TRM of 20 October 2026, consultation fee, items quoted per case, what changes the price)
+- Dr. Fulvio Correa — [Book a valuation](/book-consultation/) (consultation fee USD 150 / COP 400,000; the lipo 360 quote is written after that visit)
 - Mayo Clinic — [Liposuction](https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586) (techniques, anesthesia options, overnight monitoring, higher risk with larger areas or several procedures, fluid shifts in large-volume sessions)
 - American Society of Plastic Surgeons — [Liposuction](https://www.plasticsurgery.org/cosmetic-procedures/liposuction) and [Liposuction safety](https://www.plasticsurgery.org/cosmetic-procedures/liposuction/safety) (what liposuction treats and its risks)
 - Sociedad Colombiana de Cirugía Plástica (SCCP) — [Lipoescultura](https://cirugiaplastica.org.co/procedimientos/lipoescultura/) (in Spanish; patient guidance on liposculpture)

@@ -25,7 +25,7 @@ If you are weighing [rhinoplasty in Colombia](/procedures/rhinoplasty/), the cit
 
 Travel rules and how to check a clinic before you commit are in [plastic surgery in Colombia](/plastic-surgery-colombia/). The other date to plan around is a year away. ASPS notes that a new nasal contour can take up to a year to fully refine, so the final shape of a **nose job in Colombia** is judged at home, not in Cartagena. Follow-up, and what would happen if a small revision were ever needed, belongs in the plan before you buy a ticket.
 
-If you are comparing prices, [rhinoplasty cost in Colombia](/blog/rhinoplasty-colombia-cost/) lists the published estimate in dollars and pesos and the lines a written quote should spell out.
+If you are comparing prices, [rhinoplasty cost in Colombia](/blog/rhinoplasty-colombia-cost/) explains what moves a quote and the lines a written quote should spell out. The consultation fee is USD 150 / COP 400,000.
 
 ## What the consultation has to settle first
 

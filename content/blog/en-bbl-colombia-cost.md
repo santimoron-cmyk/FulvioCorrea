@@ -1,6 +1,6 @@
 ---
 title: "How Much Is a BBL in Colombia? Cost and Safety Guide"
-description: "BBL in Colombia cost with Dr. Fulvio Correa in Cartagena: why a Brazilian butt lift is quoted per case, the U.S. fee benchmark and what a quote must list."
+description: "BBL cost in Colombia with Dr. Fulvio Correa in Cartagena: what drives the quote, what a written quote must list, and why a very low price is a safety question."
 slug: "bbl-colombia-cost"
 lang: "en"
 category: "Body Contouring"
@@ -8,10 +8,10 @@ tags: ["bbl-colombia", "bbl-cost", "brazilian-butt-lift-colombia", "body-contour
 cover: "/assets/blog-bbl-colombia-cost.webp"
 coverAlt: "Woman in a loose long-sleeved linen dress standing at an open wooden balcony door in Cartagena, holding a closed folder and looking out at the sea and the Bocagrande skyline"
 date: "2026-10-26"
-updated: "2026-10-26"
+updated: "2026-10-30"
 author: "fulvio-correa"
 translationOf: "bbl-precio-colombia"
-sources: ["https://fulviocorrea.com/plastic-surgery-cost-cartagena/","https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf","https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/procedure","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/recovery","https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx","https://cirugiaplastica.org.co/procedimientos/aumento-de-gluteos/"]
+sources: ["https://fulviocorrea.com/book-consultation/","https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf","https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/procedure","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/recovery","https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx","https://cirugiaplastica.org.co/procedimientos/aumento-de-gluteos/"]
 draft: false
 originalUrl: ""
 procedure: "bbl"
@@ -21,21 +21,20 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**A Brazilian butt lift (BBL) with Dr. Fulvio Correa in Cartagena has no published price: it is quoted per case, after a consultation that costs USD 150 (COP 400,000).** The reason is practical, not secretive. A BBL is two operations in one session, liposuction to harvest fat and fat grafting to the buttocks and hips, and the size of each part changes from one body to the next. What you can check before the consultation is the practice's [published cost guide](/plastic-surgery-cost-cartagena/) for related procedures, the U.S. benchmark below, and the list of things any honest BBL quote in Colombia has to spell out.
+**A Brazilian butt lift (BBL) with Dr. Fulvio Correa in Cartagena has no published surgery price: it is quoted per case, after a consultation that costs USD 150 (COP 400,000).** The reason is practical, not secretive. A BBL is two operations in one session, liposuction to harvest fat and fat grafting to the buttocks and hips, and the size of each part changes from one body to the next. What you can check before the consultation is what drives the quote, and the list of things any honest BBL quote in Colombia has to spell out. [Book the valuation](/book-consultation/) when you want the written figure for your own plan.
 
-## The short answer, in numbers you can verify
+## What you can know before the valuation
 
-| Item | What is published | Source |
+| Item | What is published | Where to go next |
 |---|---|---|
-| BBL (fat transfer to the buttocks) with Dr. Fulvio Correa | No range. Quoted per case after the consultation | [Cost guide](/plastic-surgery-cost-cartagena/) |
-| Consultation, virtual or in person | USD 150 / COP 400,000 | Cost guide |
-| Gluteal implants, a different operation | USD 6,750–8,250 (COP 21.310.000–26.040.000) | Cost guide |
-| HD liposculpture (Liposurg), liposuction without fat transfer | USD 6,300–7,700 (COP 19.890.000–24.310.000) | Cost guide |
-| U.S. benchmark: buttock augmentation with fat grafting, surgeon/physician fee only (2024) | USD 7,000–11,500 | [ASPS 2024 statistics report](https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf) |
+| BBL (fat transfer to the buttocks) with Dr. Fulvio Correa | No published surgery price. Quoted per case after the consultation | [Book a valuation](/book-consultation/) |
+| Consultation, virtual or in person | USD 150 / COP 400,000 | Not a surgery price |
+| Gluteal implants, a different operation | Quoted per case. Not the same operation as a BBL | [BBL in Cartagena](/procedures/bbl/) |
+| HD liposculpture, liposuction without fat transfer | Quoted per case. Not a BBL price | [Liposuction cost in Colombia](/blog/liposuction-colombia-cost/) |
 
-The Cartagena figures are from–to estimates based on previous cases, converted to pesos at Colombia's official exchange rate (TRM) of 20 October 2026, COP 3,156.32 per dollar, rounded up to the nearest 10,000 pesos. They are not a quote, and they are listed so you can see the scale of related body procedures. They are not a BBL price.
+The consultation fee is a fixed pair. It is not converted into a surgery price, and it does not include the operation. Related body procedures are also quoted after the same visit. Adding them together in your head is not the price of a combined plan.
 
-This is an approximate estimate based on previous cases; sometimes the fee has been lower and sometimes higher, depending on the case. The real quote always comes after the virtual or in-person consultation. It does not commit the doctor to charge that amount or to operate.
+The real quote always comes after the virtual or in-person consultation. It does not commit the doctor to operate.
 
 ## Why a BBL has no fixed price
 
@@ -51,9 +50,7 @@ So the honest answer to "how much is a BBL in Colombia?" is a written quote for 
 
 ## The U.S. benchmark, and what it does not include
 
-ASPS publishes surgeon/physician fee ranges reported by its members. For 2024, buttock augmentation with fat grafting is listed at **USD 7,000–11,500**, and ASPS member surgeons reported **29,466** of these procedures that year. ASPS explains that the range is a projection built from averages submitted by surveyed members across different regions and practice settings.
-
-That figure is the surgeon's fee. A total bill also includes anesthesia, the operating facility, tests, garments and follow-up, so comparing it with a full quote from anywhere is not comparing like with like. This page does not claim a percentage saving.
+ASPS publishes surgeon/physician fees reported by its members, and it discusses anesthesia and operating-room fees separately. ASPS member surgeons reported **29,466** buttock augmentations with fat grafting in 2024. A surgeon's fee is not a total bill: anesthesia, the facility, tests, garments and follow-up sit outside it. This page does not publish those U.S. figures and does not claim a percentage saving. Compare a full written quote from home with a full written quote here.
 
 ## What a written BBL quote should list
 
@@ -110,13 +107,13 @@ There is no published range. A Brazilian butt lift is quoted per case after the 
 USD 150 / COP 400,000, virtual or in person. It is not a surgery price.
 
 **How much does a BBL cost in the United States?**
-ASPS lists a 2024 surgeon/physician fee range of USD 7,000–11,500 for buttock augmentation with fat grafting. That is the surgeon's fee only, without anesthesia, facility or follow-up.
+ASPS publishes a surgeon's fee for buttock augmentation with fat grafting, and it treats anesthesia and the facility as separate costs. That fee is not a total bill, and this page does not reprint the number. Compare written quotes, not a headline.
 
 **Are gluteal implants cheaper than a BBL?**
-They are a different operation. Gluteal implants have a published estimate of USD 6,750–8,250 (COP 21.310.000–26.040.000) with Dr. Fulvio Correa; a BBL is quoted per case, so the two cannot be compared until you have a quote.
+They are a different operation. Both are quoted per case with Dr. Fulvio Correa, so they cannot be compared until you have a written quote.
 
 **How much is lipo 360 with a BBL?**
-It is also quoted per case. The liposuction ranges that do exist are explained in [lipo 360 in Colombia: cost and what the price includes](/blog/lipo-360-colombia-cost/).
+It is also quoted per case. What changes a lipo 360 quote is explained in [lipo 360 in Colombia: cost and what the price includes](/blog/lipo-360-colombia-cost/).
 
 **Why do some clinics advertise a much lower BBL price?**
 Quotes can leave out anesthesia, the facility, tests or follow-up, or describe a smaller plan. Safety precautions such as ultrasound-guided subcutaneous grafting also take time and equipment. Compare item by item and verify the surgeon and the facility.
@@ -125,8 +122,8 @@ Prefer Spanish? Read the twin guide: <a href="/es/blog/bbl-precio-colombia/" dat
 
 ## Sources / Medical references
 
-- Dr. Fulvio Correa — [Plastic surgery in Colombia: cost and prices](/plastic-surgery-cost-cartagena/) (BBL quoted per case, gluteal implants and HD liposculpture ranges, consultation fee, TRM of 20 October 2026)
-- American Society of Plastic Surgeons — [2024 plastic surgery statistics report (archived copy)](https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf) (2024 surgeon/physician fee range and procedure count for buttock augmentation with fat grafting)
+- Dr. Fulvio Correa — [Book a valuation](/book-consultation/) (consultation fee USD 150 / COP 400,000; the BBL quote is written after that visit)
+- American Society of Plastic Surgeons — [2024 plastic surgery statistics report (archived copy)](https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf) (2024 procedure count for buttock augmentation with fat grafting; surgeon fees are discussed separately from anesthesia and the facility)
 - ASPS / The Aesthetic Society — [Gluteal fat grafting: a joint safety statement (2022)](https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement) (subcutaneous-only injection, ultrasound, licensed facilities, surgeon availability)
 - American Society of Plastic Surgeons — [Buttock enhancement: procedure steps](https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/procedure) and [recovery](https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/recovery) (fat harvest, anesthesia, sitting guidance)
 - ISAPS — [Patient safety in gluteal fat grafting (PDF)](https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf)

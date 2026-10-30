@@ -534,6 +534,46 @@
       "status": 301
     },
     {
+      "from": "/plastic-surgery-cost-cartagena",
+      "to": "/book-consultation/",
+      "status": 301
+    },
+    {
+      "from": "/plastic-surgery-cost-cartagena/",
+      "to": "/book-consultation/",
+      "status": 301
+    },
+    {
+      "from": "/en/plastic-surgery-cost-cartagena",
+      "to": "/book-consultation/",
+      "status": 301
+    },
+    {
+      "from": "/en/plastic-surgery-cost-cartagena/",
+      "to": "/book-consultation/",
+      "status": 301
+    },
+    {
+      "from": "/es/plastic-surgery-cost-cartagena",
+      "to": "/es/agendar-valoracion/",
+      "status": 301
+    },
+    {
+      "from": "/es/plastic-surgery-cost-cartagena/",
+      "to": "/es/agendar-valoracion/",
+      "status": 301
+    },
+    {
+      "from": "/es/precios-cirugia-plastica-cartagena",
+      "to": "/es/agendar-valoracion/",
+      "status": 301
+    },
+    {
+      "from": "/es/precios-cirugia-plastica-cartagena/",
+      "to": "/es/agendar-valoracion/",
+      "status": 301
+    },
+    {
       "from": "/mommy-makeover",
       "to": "/procedures/mommy-makeover/",
       "status": 301
@@ -1291,16 +1331,6 @@
     {
       "from": "/es/procedures/breast-augmentation/",
       "to": "/es/procedimientos/aumento-de-senos/",
-      "status": 301
-    },
-    {
-      "from": "/es/plastic-surgery-cost-cartagena",
-      "to": "/es/precios-cirugia-plastica-cartagena/",
-      "status": 301
-    },
-    {
-      "from": "/es/plastic-surgery-cost-cartagena/",
-      "to": "/es/precios-cirugia-plastica-cartagena/",
       "status": 301
     },
     {
@@ -2341,16 +2371,6 @@
     {
       "from": "/en/plastic-surgery-colombia",
       "to": "/plastic-surgery-colombia/",
-      "status": 301
-    },
-    {
-      "from": "/en/plastic-surgery-cost-cartagena/",
-      "to": "/plastic-surgery-cost-cartagena/",
-      "status": 301
-    },
-    {
-      "from": "/en/plastic-surgery-cost-cartagena",
-      "to": "/plastic-surgery-cost-cartagena/",
       "status": 301
     },
     {

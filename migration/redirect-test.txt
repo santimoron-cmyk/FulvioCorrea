@@ -529,6 +529,46 @@ curl -I "https://fulviocorrea.com/es/charla-cirugia-cartagena-doral/"
 curl -I "https://fulviocorrea.com/es/conversatorio-belleza-estetica-doral/"
 # Expected: 200
 
+curl -I "https://fulviocorrea.com/plastic-surgery-cost-cartagena"
+# Expected: 301 Location: /book-consultation/
+curl -I "https://fulviocorrea.com/book-consultation/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/plastic-surgery-cost-cartagena/"
+# Expected: 301 Location: /book-consultation/
+curl -I "https://fulviocorrea.com/book-consultation/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/plastic-surgery-cost-cartagena"
+# Expected: 301 Location: /book-consultation/
+curl -I "https://fulviocorrea.com/book-consultation/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/en/plastic-surgery-cost-cartagena/"
+# Expected: 301 Location: /book-consultation/
+curl -I "https://fulviocorrea.com/book-consultation/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/plastic-surgery-cost-cartagena"
+# Expected: 301 Location: /es/agendar-valoracion/
+curl -I "https://fulviocorrea.com/es/agendar-valoracion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/plastic-surgery-cost-cartagena/"
+# Expected: 301 Location: /es/agendar-valoracion/
+curl -I "https://fulviocorrea.com/es/agendar-valoracion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/precios-cirugia-plastica-cartagena"
+# Expected: 301 Location: /es/agendar-valoracion/
+curl -I "https://fulviocorrea.com/es/agendar-valoracion/"
+# Expected: 200
+
+curl -I "https://fulviocorrea.com/es/precios-cirugia-plastica-cartagena/"
+# Expected: 301 Location: /es/agendar-valoracion/
+curl -I "https://fulviocorrea.com/es/agendar-valoracion/"
+# Expected: 200
+
 curl -I "https://fulviocorrea.com/mommy-makeover"
 # Expected: 301 Location: /procedures/mommy-makeover/
 curl -I "https://fulviocorrea.com/procedures/mommy-makeover/"
@@ -1287,16 +1327,6 @@ curl -I "https://fulviocorrea.com/es/procedimientos/aumento-de-senos/"
 curl -I "https://fulviocorrea.com/es/procedures/breast-augmentation/"
 # Expected: 301 Location: /es/procedimientos/aumento-de-senos/
 curl -I "https://fulviocorrea.com/es/procedimientos/aumento-de-senos/"
-# Expected: 200
-
-curl -I "https://fulviocorrea.com/es/plastic-surgery-cost-cartagena"
-# Expected: 301 Location: /es/precios-cirugia-plastica-cartagena/
-curl -I "https://fulviocorrea.com/es/precios-cirugia-plastica-cartagena/"
-# Expected: 200
-
-curl -I "https://fulviocorrea.com/es/plastic-surgery-cost-cartagena/"
-# Expected: 301 Location: /es/precios-cirugia-plastica-cartagena/
-curl -I "https://fulviocorrea.com/es/precios-cirugia-plastica-cartagena/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/es/blog/category/body-contouring"
@@ -2337,16 +2367,6 @@ curl -I "https://fulviocorrea.com/plastic-surgery-colombia/"
 curl -I "https://fulviocorrea.com/en/plastic-surgery-colombia"
 # Expected: 301 Location: /plastic-surgery-colombia/
 curl -I "https://fulviocorrea.com/plastic-surgery-colombia/"
-# Expected: 200
-
-curl -I "https://fulviocorrea.com/en/plastic-surgery-cost-cartagena/"
-# Expected: 301 Location: /plastic-surgery-cost-cartagena/
-curl -I "https://fulviocorrea.com/plastic-surgery-cost-cartagena/"
-# Expected: 200
-
-curl -I "https://fulviocorrea.com/en/plastic-surgery-cost-cartagena"
-# Expected: 301 Location: /plastic-surgery-cost-cartagena/
-curl -I "https://fulviocorrea.com/plastic-surgery-cost-cartagena/"
 # Expected: 200
 
 curl -I "https://fulviocorrea.com/en/recovery-house-cartagena/"
