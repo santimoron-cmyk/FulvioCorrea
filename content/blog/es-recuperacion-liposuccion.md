@@ -115,7 +115,7 @@ Para calcular la estadía:
 4. Un control antes de viajar y el certificado médico si la aerolínea lo pide.
 5. Unos días de margen por si la autorización llega más tarde.
 
-Dónde pasas esos días también cuenta. Hay quien elige una casa de recuperación con apoyo de enfermería y quien prefiere un hotel o apartamento con un acompañante; las diferencias están en la guía de [casas de recuperación en Cartagena](/es/casa-de-recuperacion-cartagena/). Si todavía estás comparando presupuestos, la página de [precios de cirugía plástica en Cartagena](/es/precios-cirugia-plastica-cartagena/) explica qué cambia una cotización.
+Dónde pasas esos días también cuenta. Hay quien elige una casa de recuperación con apoyo de enfermería y quien prefiere un hotel o apartamento con un acompañante; las diferencias están en la guía de [casas de recuperación en Cartagena](/es/casa-de-recuperacion-cartagena/). Si todavía estás armando el presupuesto, [agenda la valoración](/es/agendar-valoracion/): la cotización escrita es la que aplica a tu caso. La valoración cuesta USD 150 / COP 400.000.
 
 La ASPS y el CDC advierten que las actividades típicas de vacaciones después de una cirugía, como tomar el sol, nadar, beber alcohol o hacer recorridos largos a pie o en bus, pueden afectar la cicatrización. Caminar un rato a la sombra, temprano o al final de la tarde, sí es parte de la recuperación. En el vuelo de regreso, levántate y mueve las piernas con frecuencia: el CDC considera la cirugía reciente un factor de riesgo de coágulos en viajes de más de cuatro horas. Antes de irte, pide copia de tu historia clínica.
 

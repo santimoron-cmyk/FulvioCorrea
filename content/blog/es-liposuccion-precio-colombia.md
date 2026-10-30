@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta una lipo en Colombia? Precios de liposucción"
-description: "Cuánto cuesta una lipo en Colombia con el Dr. Fulvio Correa en Cartagena: lipoescultura HD USD 6.300–7.700, zonas adicionales y qué se cotiza por caso."
+description: "Cuánto cuesta una lipo en Colombia con el Dr. Fulvio Correa en Cartagena: qué cambia la cotización y por qué un precio por zona solo compara si el plan es el mismo."
 slug: "liposuccion-precio-colombia"
 lang: "es"
 category: "Body Contouring"
@@ -11,7 +11,7 @@ date: "2026-10-30"
 updated: "2026-10-30"
 author: "fulvio-correa"
 translationOf: "liposuction-colombia-cost"
-sources: ["https://fulviocorrea.com/es/precios-cirugia-plastica-cartagena/","https://www.mayoclinic.org/es/tests-procedures/liposuction/about/pac-20384586","https://medlineplus.gov/spanish/ency/article/002985.htm","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://cirugiaplastica.org.co/buscar-cirujano/","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx"]
+sources: ["https://fulviocorrea.com/es/agendar-valoracion/","https://www.mayoclinic.org/es/tests-procedures/liposuction/about/pac-20384586","https://medlineplus.gov/spanish/ency/article/002985.htm","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://cirugiaplastica.org.co/buscar-cirujano/","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx"]
 draft: false
 originalUrl: ""
 procedure: "liposuction"
@@ -21,33 +21,33 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**Con el Dr. Fulvio Correa en Cartagena, la lipoescultura HD (Liposurg) tiene un estimado publicado de USD 6.300–7.700, es decir, COP 19.890.000–24.310.000. Sumar brazos o piernas a una liposucción cuesta USD 675–825 por zona. La liposucción que no es lipoescultura HD no tiene rango publicado: se cotiza por caso después de la valoración, que vale USD 150 (COP 400.000), virtual o presencial.** Son estimaciones desde–hasta basadas en casos anteriores, no una cotización. Esta guía explica cuál de esas cifras aplica al plan que tienes en mente y por qué un precio "por zona" que viste en internet solo sirve para comparar si describe la misma cirugía.
+**Con el Dr. Fulvio Correa en Cartagena, la liposucción no tiene un precio de cirugía publicado.** La lipoescultura HD (Liposurg), los brazos o las piernas sumados a un plan, la tecnología de retracción y la liposucción que no es HD se cotizan por caso después de la valoración, que vale USD 150 (COP 400.000), virtual o presencial. Esta guía explica qué cambia la cotización y por qué un precio "por zona" que viste en internet solo sirve para comparar si describe la misma cirugía. [Agenda la valoración](/es/agendar-valoracion/) para la cifra escrita.
 
-## Cuatro nombres, cuatro precios distintos
+## Cuatro nombres, cuatro planes distintos
 
-"Lipo" se usa para planes muy diferentes. Antes de comparar cualquier cifra, busca la fila que corresponde a lo que de verdad quieres hacerte.
+"Lipo" se usa para planes muy diferentes. Antes de comparar una cotización, busca la fila que corresponde a lo que de verdad quieres hacerte.
 
-| Lo que buscas | Cómo se suele llamar | Estimado publicado en Cartagena |
+| Lo que buscas | Cómo se suele llamar | Cómo se cotiza en Cartagena |
 |---|---|---|
-| Menos grasa en una o pocas zonas, sin definición detallada | Liposucción | Se cotiza por caso |
-| Moldear y definir el contorno | Lipoescultura HD (Liposurg) | USD 6.300–7.700 (COP 19.890.000–24.310.000) |
-| Brazos o piernas sumados a una liposucción | Lipo de brazos o de piernas, como adicional | USD 675–825 por zona (COP 2.140.000–2.610.000) |
-| Tecnología de retracción, cuando el plan la usa | Tecnología de retracción, por zona | USD 450–550 (COP 1.430.000–1.740.000) |
+| Menos grasa en una o pocas zonas, sin definición detallada | Liposucción | Se cotiza por caso después de la valoración |
+| Moldear y definir el contorno | Lipoescultura HD (Liposurg) | Se cotiza por caso. Es otra cirugía que una liposucción sencilla |
+| Brazos o piernas sumados a una liposucción | Lipo de brazos o de piernas, como adicional | Se cotiza con el plan principal. Más zonas cambian el tiempo de quirófano |
+| Tecnología de retracción, cuando el plan la usa | Tecnología de retracción, por zona | Se cotiza solo si el plan la usa |
 | Abdomen, cintura y espalda en una sola cirugía | Lipo 360 | Ver [lipo 360 en Colombia: precio y qué incluye](/es/blog/lipo-360-precio-colombia/) |
 | Pasar grasa a glúteos y caderas | BBL (lipotransferencia a glúteos) | Se cotiza por caso; ver [¿cuánto cuesta un BBL en Colombia?](/es/blog/bbl-precio-colombia/) |
-| Grasa y piel sobrante en el abdomen bajo | Lipoabdominoplastia | USD 9.900–12.100 (COP 31.250.000–38.200.000) |
+| Grasa y piel sobrante en el abdomen bajo | Lipoabdominoplastia | Se cotiza por caso. No es la misma cirugía que una liposucción |
 | Valoración, virtual o presencial | — | USD 150 / COP 400.000 |
 
-Todas las cifras salen de la [guía de precios de cirugía plástica en Cartagena](/es/precios-cirugia-plastica-cartagena/). Los rangos están autorizados en dólares; los valores en pesos usan la TRM del 20 de octubre de 2026, COP 3.156,32 por dólar, redondeada hacia arriba a la decena de mil más cercana. Sumar filas no da el precio de un plan combinado, que se cotiza completo.
+La tarifa de la valoración no es un precio de cirugía. Sumar planes de cabeza no da el precio de una cirugía combinada, que se cotiza completa. [Agenda la valoración](/es/agendar-valoracion/) para la cotización escrita.
 
-Este es un estimado aproximado basado en casos anteriores; a veces el valor ha sido menor y a veces mayor, según el caso. La cotización real siempre llega después de la valoración virtual o presencial y no compromete al doctor a cobrar ese valor ni a operar.
+La cotización real siempre llega después de la valoración virtual o presencial y no compromete al doctor a operar.
 
 ## Por qué los precios "por zona" de internet casi nunca coinciden
 
-Si buscas cuánto cuesta una lipo en Colombia vas a encontrar tablas por número de zonas, por ciudad y por técnica, en pesos y en dólares, unas mucho más bajas que el rango de arriba y otras más altas. Una cifra solo se compara con otra si describe el mismo plan. Tres preguntas lo resuelven:
+Si buscas cuánto cuesta una lipo en Colombia vas a encontrar tablas por número de zonas, por ciudad y por técnica, en pesos y en dólares. Una cifra solo se compara con otra si describe el mismo plan. Tres preguntas lo resuelven:
 
 1. **¿Qué zonas, exactamente?** "Una zona" puede ser solo el abdomen bajo o todo el abdomen con los flancos. Pide la lista de zonas por escrito.
-2. **¿Volumen o definición?** Una liposucción para reducir volumen y una lipoescultura HD para definir el contorno son cirugías distintas, con planeación distinta. El rango HD publicado no es el precio de una liposucción sencilla, y un precio bajo de "lipo" casi nunca es el de un plan HD.
+2. **¿Volumen o definición?** Una liposucción para reducir volumen y una lipoescultura HD para definir el contorno son cirugías distintas, con planeación distinta. La cotización de una liposucción sencilla no es el precio de un plan HD, y un precio bajo de "lipo" casi nunca es el de un plan HD.
 3. **¿Qué hay dentro de la cifra?** Anestesia, quirófano, exámenes previos, faja y controles después de la cirugía están en algunos precios y faltan en otros.
 
 Mayo Clinic agrega un dato que explica parte de la diferencia: si solo se extrae una pequeña cantidad de grasa, la liposucción puede hacerse en una clínica o consultorio; si se extrae mucha grasa o se hacen otros procedimientos al mismo tiempo, puede hacerse en un hospital. Dónde te operan y con qué anestesia también es parte de lo que pagas.
@@ -63,7 +63,7 @@ Lo que un plan más pequeño no cambia es la parte fija del presupuesto: la valo
 Algunas cotizaciones suben o bajan porque el plan cambia cuando el cirujano te examina. Según Mayo Clinic:
 
 - **La liposucción no es un método para bajar de peso.** Funciona mejor en quien tiene grasa en zonas específicas y un peso estable, y los resultados suelen durar si el peso se mantiene.
-- **No tensa la piel flácida.** Si la piel es fina y poco elástica, la zona tratada puede verse flácida. Cuando hay piel sobrante en el abdomen bajo, la conversación pasa a [¿abdominoplastia o liposucción?](/es/blog/abdominoplastia-o-liposuccion/) y a una lipoabdominoplastia, que tiene su propio rango.
+- **No tensa la piel flácida.** Si la piel es fina y poco elástica, la zona tratada puede verse flácida. Cuando hay piel sobrante en el abdomen bajo, la conversación pasa a [¿abdominoplastia o liposucción?](/es/blog/abdominoplastia-o-liposuccion/) y a una lipoabdominoplastia, que se cotiza por caso.
 - **No elimina la celulitis ni las estrías.** Desconfía de una cotización que lo prometa.
 - **El riesgo sube con más área y con procedimientos combinados.** Mayo Clinic señala que las complicaciones son más probables cuando se trabajan superficies más grandes del cuerpo o se hacen varios procedimientos en la misma cirugía. Es una razón médica, no solo de precio, para planear bien las zonas.
 
@@ -97,10 +97,10 @@ Para recibir una cotización escrita de liposucción, escríbele a Sofía. Ella 
 ## Preguntas frecuentes
 
 **¿Cuánto cuesta una lipo en Colombia con el Dr. Fulvio Correa?**
-La lipoescultura HD tiene un estimado publicado de USD 6.300–7.700 (COP 19.890.000–24.310.000). La liposucción que no es lipoescultura HD se cotiza por caso después de la valoración.
+No hay un precio de cirugía publicado. La lipoescultura HD y la liposucción que no es HD se cotizan por caso después de la valoración, porque las zonas, la técnica y la clínica cambian el plan.
 
 **¿Cuánto cuesta sumar brazos o piernas?**
-USD 675–825 por zona (COP 2.140.000–2.610.000), como adicional a una liposucción.
+No hay un precio publicado de adicional. Brazos o piernas se cotizan con el plan principal, porque cada zona extra cambia el tiempo de quirófano, la anestesia y la recuperación.
 
 **¿Hay precio para la liposucción de una sola zona?**
 No uno fijo. Una zona sola se cotiza por caso, porque la cantidad de grasa, la técnica y el lugar de la cirugía cambian de una paciente a otra.
@@ -118,7 +118,7 @@ Al menos 14 días después de la liposucción si vuelas con Avianca, o 15 si se 
 
 ## Fuentes / Referencias médicas
 
-- Dr. Fulvio Correa — [Precios de cirugía plástica en Cartagena](/es/precios-cirugia-plastica-cartagena/) (rangos de lipoescultura HD, adicionales, tecnología de retracción y lipoabdominoplastia, valor de la valoración, TRM del 20 de octubre de 2026, lo que se cotiza por caso)
+- Dr. Fulvio Correa — [Agendar la valoración](/es/agendar-valoracion/) (la valoración cuesta USD 150 / COP 400.000; la liposucción se cotiza después de esa visita)
 - Mayo Clinic — [Liposucción](https://www.mayoclinic.org/es/tests-procedures/liposuction/about/pac-20384586) (zonas tratables, no es para bajar de peso, piel flácida, celulitis y estrías, riesgo con más área, consultorio u hospital, anestesia, prendas de compresión)
 - MedlinePlus en español — [Liposucción](https://medlineplus.gov/spanish/ency/article/002985.htm)
 - American Society of Plastic Surgeons — [Briefing Paper: Cosmetic Surgery Tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (en inglés; de cinco a siete días antes de volar tras procedimientos corporales)
