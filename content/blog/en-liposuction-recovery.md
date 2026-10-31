@@ -1,6 +1,8 @@
 ---
 title: "Liposuction Recovery Time: A Week-by-Week Timeline"
 description: "Liposuction recovery time week by week: swelling peaks at 48 hours, desk work in days, garment for weeks, exercise at 4–6 weeks, and when you can fly home."
+seoTitle: "Liposuction Recovery Week by Week: What to Expect"
+seoDescription: "A week-by-week liposuction recovery timeline: swelling, compression garment, return to desk work, exercise, and when flying home is usually discussed."
 slug: "liposuction-recovery"
 lang: "en"
 category: "Recovery"
