@@ -1,6 +1,8 @@
 ---
 title: "Recuperación de la liposucción: tiempos, faja y viaje"
 description: "Recuperación de la liposucción por etapas: cuánto dura, faja, masajes, fibrosis, señales de alarma y cuántos días esperar en Cartagena antes de volar."
+seoTitle: "Recuperación de la liposucción, semana a semana y cuidados"
+seoDescription: "Cuánto suele durar la recuperación de una liposucción, semana a semana: cuidados, faja, vuelta al trabajo y qué esperar antes de volar. Los tiempos varían."
 slug: "recuperacion-liposuccion"
 lang: "es"
 category: "Recovery"
