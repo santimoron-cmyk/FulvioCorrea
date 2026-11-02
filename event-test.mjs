@@ -64,6 +64,20 @@ for(const [lang,p] of Object.entries(live)){
  assert.ok(hero.includes(p.eyebrow)&&hero.includes(p.chosen)&&hero.includes(p.free)&&hero.includes(p.bites)&&hero.includes(p.dateStatus),lang+' preferred-client intro and postponed date in the hero');
  const notice=notices[lang],plain=p.main.replace(/<[^>]+>/g,'');
  assert.ok(plain.includes(notice.title)&&notice.lines.every(line=>plain.includes(line)),lang+' approved postponement notice');
+ assert.ok(hero.includes(`<h2 class="postpone-alert" id="event-cancel-banner">${lang==='es'?'Evento cancelado por ahora':'Event cancelled for now'}</h2>`),lang+' red-banner headline above the notice');
+ assert.match(p.html,/\.postpone\{[^}]*background:#fdecea[^}]*border-left:12px solid #c62828/,lang+' in-page notice is a red bar on a light red ground');
+ const modal=p.html.slice(p.html.indexOf('id="event-cancel-modal"'),p.html.indexOf('id="event-cancel-script"'));
+ assert.match(modal,/id="event-cancel-modal" class="cancel-modal" hidden/,lang+' modal markup starts closed');
+ assert.match(modal,/role="dialog" aria-modal="true"/,lang+' modal dialog');
+ assert.ok(modal.includes(`<h2 id="event-cancel-title">${lang==='es'?'Evento cancelado por ahora':'Event cancelled for now'}</h2>`),lang+' modal headline');
+ assert.ok(modal.includes(lang==='es'?'>Entendido<':'>Got it<'),lang+' modal close label');
+ assert.ok(modal.includes('href="tel:+13055913005"')&&modal.includes('Aromas Med Spa Doral')&&modal.includes(lang==='es'?'no se realizará':'will not take place')&&modal.includes(lang==='es'?'reprogramar':'rescheduled')&&modal.includes(lang==='es'?'correo electrónico':'email you'),lang+' modal body covers the postponement');
+ assert.match(p.html,/\.cancel-modal\{[^}]*position:fixed[^}]*background:rgba\(18,16,20,\.72\)/,lang+' overlay covers the page');
+ assert.match(p.html,/\.cancel-modal-card\{[^}]*border:6px solid #c62828/,lang+' modal card has a thick red border');
+ assert.match(p.html,/\.cancel-modal\[hidden\]\{display:none!important\}/,lang+' modal stays out of the page without JS');
+ const modalJs=p.html.slice(p.html.indexOf('id="event-cancel-script"'),p.html.indexOf('</script>',p.html.indexOf('id="event-cancel-script"')));
+ assert.ok(modalJs.includes("e.key==='Escape'")&&modalJs.includes("closeBtn.focus()")&&modalJs.includes('inert=on'),lang+' Esc, focus and a blocked page');
+ assert.ok(!/localStorage|sessionStorage|document\.cookie/.test(modalJs),lang+' dismissal is not remembered');
  assert.ok(hero.includes(`<li class="status"><b>${p.dateStatus}</b></li>`),lang+' date badge is the unconfirmed new date');
  assert.ok(!/27 al 29|October 27|bebidas y pasabocas|drinks and light bites/i.test(p.html),lang+' old October date and drinks wording are gone');
  assert.ok(!/Hora confirmada|Time confirmed|30 cupos|30 spots|Luego, lista de espera|Then a waitlist|6:00 p\. m\.|6:00 PM/.test(plain),lang+' active time and capacity are gone');
@@ -107,6 +121,42 @@ for(const [lang,p] of Object.entries(live)){
  assert.ok(!p.main.includes(lang==='es'?'Agregar al calendario':'Add to calendar'),lang+' calendar label removed');
  assert.ok(!p.html.includes('id="event-calendar"')&&!p.html.includes('id="event-signup-status"'),lang+' calendar and success box removed');
 }
+function bootModal(html){
+ const script=html.slice(html.indexOf('id="event-cancel-script">')+'id="event-cancel-script">'.length,html.indexOf('</script>',html.indexOf('id="event-cancel-script">')));
+ const listeners={};
+ const closeBtn={focus(){document.activeElement=closeBtn;},addEventListener(type,fn){listeners[type]=fn;}};
+ const phone={focus(){document.activeElement=phone;}};
+ const card={querySelectorAll(){return [phone,closeBtn];}};
+ const root={hidden:true,querySelector(sel){return sel==='[role="dialog"]'?card:null;}};
+ const header={inert:false},main={inert:false},footer={inert:false};
+ const body={style:{},children:[header,root,main,footer]};
+ const document={activeElement:null,documentElement:{classList:{toggle(){}}},body,getElementById(id){return id==='event-cancel-modal'?root:id==='event-cancel-close'?closeBtn:id==='main'?main:null;},addEventListener(type,fn){listeners[type]=fn;}};
+ const window={scrollY:40,scrollTo(_x,y){window.scrollY=y;}};
+ vm.runInNewContext(script,{document,window});
+ return {root,closeBtn,phone,header,main,footer,body,listeners,window,document};
+}
+const modalPage=bootModal(live.en.html);
+assert.equal(modalPage.root.hidden,false,'modal opens on load');
+assert.equal(modalPage.document.activeElement,modalPage.closeBtn,'focus starts on Got it');
+assert.equal(modalPage.body.style.position,'fixed','page behind the modal cannot scroll');
+assert.equal(modalPage.header.inert,true,'header is blocked');
+assert.equal(modalPage.main.inert,true,'page is blocked');
+assert.equal(modalPage.footer.inert,true,'footer is blocked');
+assert.equal(modalPage.root.inert,undefined,'the dialog itself stays usable');
+modalPage.listeners.keydown({key:'Tab',shiftKey:false,preventDefault(){this.prevented=true;}});
+assert.equal(modalPage.document.activeElement,modalPage.phone,'Tab wraps inside the dialog');
+modalPage.listeners.keydown({key:'Escape',preventDefault(){}});
+assert.equal(modalPage.root.hidden,true,'Escape closes the modal');
+assert.equal(modalPage.body.style.position,'','page scrolls again after close');
+assert.equal(modalPage.main.inert,false,'page is usable after close');
+assert.equal(modalPage.window.scrollY,40,'scroll position is restored');
+modalPage.listeners.click();
+assert.equal(modalPage.root.hidden,true,'Got it stays closed');
+const again=bootModal(live.es.html);
+again.listeners.click();
+assert.equal(again.root.hidden,true,'Entendido closes the modal');
+assert.equal(again.body.style.position,'','Spanish close restores the page');
+console.log('PASS: cancel modal opens on each load, traps focus, and closes with Escape or the button.');
 assert.ok(!fs.existsSync('dist/events/doral-2026-11-06.ics'),'static calendar file is not published');
 assert.ok(!fs.readFileSync('dist/_headers','utf8').includes('text/calendar'),'headers do not advertise a calendar');
 const icsFn=fs.readFileSync('functions/events/doral-2026-11-06.ics.js','utf8');
@@ -136,7 +186,7 @@ assert.equal(rules.find(r=>r.from==='/en/plastic-surgery-cartagena-talk-doral/')
 assert.equal(rules.find(r=>r.from==='/es/charla-cirugia-cartagena-doral/')?.to,'/es/conversatorio-belleza-estetica-doral/');
 assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral-v1/')?.to,undefined,'v1 Spanish path is not published');
 assert.equal(rules.find(r=>r.from==='/mommy-makeover-talk-doral-v1/')?.to,undefined,'v1 English path is not published');
-console.log('PASS: Aromas event landing ES/EN — sitemap, canonicals, hreflang, EventPostponed, postponement notice, no form or calendar. Fulvio v1 is not published.');
+console.log('PASS: Aromas event landing ES/EN — sitemap, canonicals, hreflang, EventPostponed, postponement notice, cancel modal, no form or calendar. Fulvio v1 is not published.');
 
 function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest,accept=true,national,dial='+1',otherDial=''}={}){
  const requests=[];const listeners={};
