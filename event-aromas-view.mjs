@@ -1,21 +1,35 @@
 // Aromas Med Spa shell for the Doral conversatorio on beauty and aesthetics trends 2026.
 // Public URLs: /beauty-aesthetics-talk-doral/ and /es/conversatorio-belleza-estetica-doral/ (routes.mjs).
-// Visual source: the approved standalone concept (Red Hat Display, Aromas palette, both portraits and the reserve CTA in the hero).
-// The form is the live event-signup.js form (POST /api/lead), not the concept's local preview submit.
+// The November 6, 2026 date is postponed (logistics and the doctor's schedule). The page keeps the
+// Aromas address and phone, shows the approved notice, and does not offer registration or a calendar.
+// JSON-LD stays an Event with eventStatus EventPostponed and the original startDate: Google requires
+// that startDate until a new date is known, and eventStatus is what keeps it from being an active event.
 // The previous Fulvio-branded shell stays at the -v1 URLs (event-view.mjs) and is not reframed here.
-import {eventSchema,EVENT_TAG,EVENT_CONSENT_VERSION,EVENT_SLUG} from './event-view.mjs';
-import {DORAL_LOCATION,DORAL_MAPS_URL,DORAL_PHONE_DISPLAY,DORAL_PHONE_TEL,DORAL_SITE_URL,DORAL_SITE_NAME,DORAL_ICS_PATH,googleCalendarUrl,outlookCalendarUrl} from './event-calendar.mjs';
+import {eventSchema,EVENT_SLUG} from './event-view.mjs';
+import {DORAL_LOCATION,DORAL_MAPS_URL,DORAL_PHONE_DISPLAY,DORAL_PHONE_TEL,DORAL_SITE_URL,DORAL_SITE_NAME} from './event-calendar.mjs';
 const copy={
  es:{
   title:'Conversatorio de belleza 2026 · Aromas Med Spa Doral',
   otherLabel:'EN',
-  meta:'Conversatorio gratuito en Aromas Med Spa, Doral: viernes 6 de noviembre de 2026, 6:00 p. m. Tendencias de belleza y estética 2026, con vino y picadas.',
+  meta:'El conversatorio de belleza y estética del viernes 6 de noviembre de 2026 en Aromas Med Spa Doral no se realizará en esa fecha. Lo vamos a reprogramar. La nueva fecha se publicará aquí.',
+  cancelHeadline:'Evento cancelado por ahora',
+  cancelClose:'Entendido',
+  modal:[
+   'El conversatorio del viernes 6 de noviembre de 2026 en Aromas Med Spa Doral no se realizará, por motivos de logística y de agenda del Dr. Fulvio Correa. Lo vamos a reprogramar. La nueva fecha y las condiciones del encuentro se anunciarán aquí.',
+   'Te pedimos disculpas por el cambio. Si ya te registraste, te escribiremos por correo electrónico.',
+   '¿Tienes preguntas? Llama a Aromas Med Spa: (305) 591-3005.',
+  ],
+  noticeTitle:'Aviso importante: el conversatorio del 6 de noviembre no se realizará',
+  notice:[
+   'Por motivos de logística y de agenda del Dr. Fulvio Correa, el conversatorio de belleza y estética del viernes 6 de noviembre de 2026 en Aromas Med Spa Doral no se realizará en esa fecha. Lo vamos a reprogramar.',
+   'Te pedimos disculpas por el cambio. Apenas tengamos la nueva fecha y las condiciones del encuentro, las publicaremos aquí. Si ya te registraste, te escribiremos por correo electrónico.',
+   '¿Tienes preguntas? Llámanos a Aromas Med Spa: (305) 591-3005.',
+  ],
   eyebrow:'Para nuestras clientas preferidas',
   h1:'Belleza y estética 2026.<br><em>Un conversatorio para ti.</em>',
   lead:'En Aromas Med Spa te elegimos para este encuentro exclusivo por la relación cercana que tenemos contigo. Es una orientación educativa y gratuita, con vino y picadas, sobre las tendencias de belleza y estética en 2026. Vienes a aprender y a decidir con información, sin presión.',
-  date:'viernes 6 de noviembre de 2026, 6:00 p. m.',datesub:'Hora confirmada',seats:'30 cupos',seatsub:'Luego, lista de espera',
-  cal:'Agregar al calendario',calGoogle:'Google Calendar',calOutlook:'Outlook.com',
-  cta:'Reservar mi cupo',cta2:'Ver detalles',guest:'Invitado especial',host:'Anfitrión',
+  dateStatus:'Nueva fecha por confirmar',
+  cta2:'Ver detalles',guest:'Invitado especial',host:'Anfitrión',
   fdesc:'Cirujano plástico en Cartagena, Colombia. +15 años de experiencia, +3.000 procedimientos, formado en la escuela del Prof. Ivo Pitanguy. Enfoque en cirugía de mamas. Invitado especial de este conversatorio.',
   fmeta:'Cirujano plástico · invitado especial',ameta:'Fundador · Aromas Med Spa',
   adesc:'Originario de Colombia, médico de la Universidad del Norte (1990). Fundó Aromas Med Spa en Doral en 2008, donde dirige la atención de medicina estética y bienestar. En el conversatorio puedes hablar con él del spa y de los tratamientos no quirúrgicos de belleza y estética.',
@@ -28,14 +42,6 @@ const copy={
   note:'<strong>Importante.</strong> Este conversatorio es una orientación educativa y gratuita. No es una consulta médica. Vienes a aprender y a decidir con información, sin presión. Cualquier valoración médica se realiza directamente con el cirujano, de forma individual.',
   othk:'Un tema de la conversación',othh:'Operarte en Cartagena.',
   othp:'Si quieres, también hablamos de cómo es operarte en Cartagena a través de la asesoría de turismo médico: la planificación, la seguridad del proceso y el acompañamiento. Es un tema dentro del conversatorio, no el motivo del encuentro. Muchos pacientes del Dr. Correa viajan desde Estados Unidos.',
-  formk:'Registro',formh:'Reserva tu cupo.',formp:'Déjanos tus datos y te contactaremos por WhatsApp para confirmar tu cupo. El conversatorio es el viernes 6 de noviembre de 2026, 6:00 p. m., en Aromas Med Spa Doral, con vino y picadas.',
-  limit:'Cupos limitados: al completar los 30 lugares abriremos una lista de espera.',
-  fn:'Nombre y apellido',fcc:'Código de país',fw:'Teléfono',fother:'Otro',fotherc:'Otro código',fotherh:'Ejemplo: +44.',fe:'Correo electrónico',fc:'Ciudad donde vives',
-  fi:'Tema de interés',fiempty:'Opcional',
-  fopts:[['non-surgical','Tratamientos no quirúrgicos'],['breast','Cirugía de busto'],['abdomen-contour','Abdomen y contorno'],['face','Rostro'],['mommy-makeover','Mommy Makeover'],['undecided','Aún no lo sé']],
-  fcomp:'¿Vienes con acompañante?',yes:'Sí',no:'No',
-  consent:'Acepto que el equipo de Aromas Med Spa y el equipo del Dr. Fulvio Correa me contacten por WhatsApp y correo electrónico sobre este conversatorio y mi interés. Puedo pedir que dejen de contactarme en cualquier momento.',
-  privacy:'Política de privacidad',
   hostk:'Anfitrión',hosth:'Te recibimos en Aromas Med Spa, Doral.',hostp:'Te recibimos en Doral, con vino y picadas, y acompañamos este conversatorio educativo. En Aromas no realizamos los procedimientos de cirugía plástica de esta orientación. Para el spa y los tratamientos no quirúrgicos de belleza y estética, conversas con Alberto.',
   phone:'Teléfono',
   foot:'Contenido informativo. Se requiere valoración médica individual.',
@@ -45,13 +51,25 @@ const copy={
  en:{
   title:'Beauty and aesthetics talk 2026 · Aromas Med Spa Doral',
   otherLabel:'ES',
-  meta:'At Aromas Med Spa we chose you for a free talk in Doral on Friday, November 6, 2026, 6:00 PM: beauty and aesthetics trends for 2026, with wine and light bites.',
+  meta:'The beauty and aesthetics talk at Aromas Med Spa Doral on Friday, November 6, 2026 will not take place on that date. We are rescheduling it. The new date will be posted here.',
+  cancelHeadline:'Event cancelled for now',
+  cancelClose:'Got it',
+  modal:[
+   'The November 6, 2026 talk at Aromas Med Spa Doral will not take place, due to logistics and Dr. Fulvio Correa\'s schedule. It will be rescheduled. The new date and conditions will be announced here.',
+   'We apologize for the change. If you already signed up, we will email you.',
+   'Questions? Call Aromas Med Spa at (305) 591-3005.',
+  ],
+  noticeTitle:'Important update: the November 6 talk will not take place',
+  notice:[
+   'Due to logistics and Dr. Fulvio Correa\'s schedule, the beauty and aesthetics talk on Friday, November 6, 2026, at Aromas Med Spa Doral will not take place on that date. We are rescheduling it.',
+   'We apologize for the change. As soon as we have the new date and details, we will post them here. If you already signed up, we will email you.',
+   'Questions? Call Aromas Med Spa at (305) 591-3005.',
+  ],
   eyebrow:'For our preferred clients',
   h1:'Beauty and aesthetics<br>trends for 2026.<br><em>A talk for you.</em>',
   lead:'At Aromas Med Spa we chose you for this exclusive gathering because of the close relationship we share. It is a free educational orientation, with wine and light bites, about beauty and aesthetics trends for 2026. You come to learn and decide with information, without pressure.',
-  date:'Friday, November 6, 2026, 6:00 PM',datesub:'Time confirmed',seats:'30 spots',seatsub:'Then a waitlist',
-  cal:'Add to calendar',calGoogle:'Google Calendar',calOutlook:'Outlook.com',
-  cta:'Save my spot',cta2:'See details',guest:'Special guest',host:'Host',
+  dateStatus:'New date to be confirmed',
+  cta2:'See details',guest:'Special guest',host:'Host',
   fdesc:'Plastic surgeon in Cartagena, Colombia. 15+ years of experience, 3,000+ procedures, trained in the school of Prof. Ivo Pitanguy. Focused on breast surgery. Special guest of this talk.',
   fmeta:'Plastic surgeon · special guest',ameta:'Founder · Aromas Med Spa',
   adesc:'Originally from Colombia, he earned his medical degree from Universidad del Norte (1990) and founded Aromas Med Spa in Doral in 2008, where he leads its aesthetic and wellness care. At the talk you can speak with him about the spa and non-surgical beauty and aesthetics treatments.',
@@ -64,14 +82,6 @@ const copy={
   note:'<strong>Please note.</strong> This talk is a free educational orientation. It is not a medical consultation. You come to learn and decide with information, without pressure. Any medical evaluation is done directly with the surgeon, individually.',
   othk:'One topic in the conversation',othh:'Surgery in Cartagena.',
   othp:'If you want, we also talk about having surgery in Cartagena through the medical tourism consultancy: planning, how safety is considered and accompaniment. It is one topic inside the talk, not the reason for the gathering. Many of Dr. Correa’s patients travel from the United States.',
-  formk:'Sign up',formh:'Save your spot.',formp:'Leave your details and we will contact you on WhatsApp to confirm your spot. The talk is on Friday, November 6, 2026, 6:00 PM, at Aromas Med Spa Doral, with wine and light bites.',
-  limit:'Limited spots: once all 30 are taken, we will open a waitlist.',
-  fn:'Full name',fcc:'Country code',fw:'Phone',fother:'Other',fotherc:'Other code',fotherh:'Example: +44.',fe:'Email',fc:'City where you live',
-  fi:'Topic of interest',fiempty:'Optional',
-  fopts:[['non-surgical','Non-surgical treatments'],['breast','Breast surgery'],['abdomen-contour','Abdomen and contour'],['face','Face'],['mommy-makeover','Mommy Makeover'],['undecided','Not sure yet']],
-  fcomp:'Are you bringing a companion?',yes:'Yes',no:'No',
-  consent:'I agree to be contacted by the Aromas Med Spa team and Dr. Fulvio Correa’s team via WhatsApp and email about this talk and my interest. I can ask them to stop contacting me at any time.',
-  privacy:'Privacy policy',
   hostk:'Host',hosth:'We welcome you at Aromas Med Spa, Doral.',hostp:'We welcome you in Doral, with wine and light bites, and we host this educational talk. At Aromas we do not perform the plastic surgery procedures in this orientation. For the spa and non-surgical beauty and aesthetics treatments, you talk with Alberto.',
   phone:'Phone',
   foot:'Informational content. Individual medical assessment is required.',
@@ -97,11 +107,27 @@ h1,h2,h3{font-weight:300;letter-spacing:-.01em;margin:0 0 .4em}h1 em,h2 em{font-
 .bar{background:var(--white);border-bottom:1px solid var(--sky)}.bar-in{display:flex;align-items:center;gap:14px;height:72px}
 .logo{height:40px;width:auto}.x{color:var(--teal);font-weight:300}.guestname{letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
 .lang{margin-left:auto;color:var(--navy);text-decoration:none;border:1px solid var(--sky);padding:6px 12px;border-radius:30px;font-size:.8rem}
+.postpone{background:#fdecea;color:var(--navy);padding:22px 0 26px;border-top:4px solid #c62828;border-bottom:4px solid #c62828;border-left:12px solid #c62828}
+.postpone-alert{margin:0 0 8px;color:#c62828;font-size:clamp(1.55rem,3vw,2.05rem);font-weight:700;letter-spacing:-.02em;line-height:1.15}
+.postpone .postpone-title{font-weight:700;margin:0 0 12px;color:var(--navy);font-size:1.05rem}
+.postpone p{margin:0 0 12px;max-width:44em;color:var(--navy);font-size:1.02rem}
+.postpone p:last-child{margin-bottom:0}
+.postpone a{color:#9b1b1b;font-weight:700}
+.cancel-modal{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:16px;background:rgba(18,16,20,.72);overflow:auto}
+.cancel-modal[hidden]{display:none!important}
+html.cancel-lock,html.cancel-lock body{overflow:hidden}
+.cancel-modal-card{width:min(100%,34rem);max-height:min(100%,calc(100dvh - 32px));overflow:auto;background:#fff;color:var(--navy);border:6px solid #c62828;border-radius:16px;padding:28px 24px 22px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.cancel-modal-card h2{margin:0 0 12px;color:#c62828;font-size:clamp(1.5rem,4vw,2rem);font-weight:700;letter-spacing:-.02em;line-height:1.15}
+.cancel-modal-card p{margin:0 0 12px;font-size:1.02rem}
+.cancel-modal-card a{color:#9b1b1b;font-weight:700}
+.cancel-modal-close{display:block;width:100%;margin-top:8px;background:#c62828;color:#fff;border:0;border-radius:40px;padding:14px 22px;font:inherit;font-size:1rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.cancel-modal-close:focus{outline:3px solid var(--navy);outline-offset:3px}
 .hero{background:linear-gradient(180deg,var(--white) 0%,var(--beige) 100%);padding:40px 0 48px}
 .hero-in{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
 h1{font-size:clamp(2.1rem,3.6vw,3.3rem);line-height:1.08}.lead{font-size:1.05rem;max-width:34em;margin:0 0 22px}
-.facts{list-style:none;padding:0;margin:0 0 26px;display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,.7fr) minmax(0,.85fr);border-top:1px solid var(--sky);border-bottom:1px solid var(--sky)}
+.facts{list-style:none;padding:0;margin:0 0 26px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);border-top:1px solid var(--sky);border-bottom:1px solid var(--sky)}
 .facts li{padding:12px 10px 12px 0}.facts b{display:block;font-weight:500;font-size:.95rem;line-height:1.3}.facts small{color:var(--teal);font-size:.78rem}
+.facts li.status b{color:var(--teal);font-size:1.08rem}
 .ctas{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-block;background:var(--navy);color:var(--white);text-decoration:none;padding:15px 30px;border-radius:40px;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;font-weight:500;border:1px solid var(--navy);cursor:pointer;font-family:inherit}
 .btn:hover{background:var(--teal);border-color:var(--teal)}.btn.ghost{background:transparent;color:var(--navy)}.btn.ghost.light{color:var(--white);border-color:var(--sky)}
@@ -110,23 +136,7 @@ h1{font-size:clamp(2.1rem,3.6vw,3.3rem);line-height:1.08}.lead{font-size:1.05rem
 .doc img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:top;background:var(--sky)}
 .doc figcaption{padding:14px 16px 18px;text-align:center}.doc b{display:block;font-weight:500}.doc small{color:var(--teal);font-size:.8rem}
 .tag{display:inline-block;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-bottom:4px}
-.reg{background:var(--navy);color:var(--white);padding:64px 0}.reg .eyebrow{color:var(--sky)}.reg h2{font-size:2.4rem}
-.reg-in{display:grid;grid-template-columns:1fr 1.2fr;gap:48px}.limit{color:var(--sky);font-size:.9rem}
-#event-signup-form{position:relative;background:var(--white);color:var(--navy);padding:28px;border-radius:14px;display:grid;gap:14px}
-#event-signup-form label{display:grid;gap:6px;font-size:.85rem;font-weight:500}#event-signup-form small{font-weight:400;color:var(--teal)}
-.phone-row{display:grid;grid-template-columns:10.5rem minmax(0,1fr);gap:10px;align-items:end}.phone-other{margin:0}.phone-other[hidden]{display:none!important}
-#event-signup-form input:not([type]),#event-signup-form input[type=tel],#event-signup-form input[type=email],#event-signup-form select{box-sizing:border-box;border:1px solid var(--sky);border-radius:8px;padding:12px;line-height:1.25;font:inherit;background:var(--beige);color:var(--navy);width:100%}
-#event-signup-form .phone-row select,#event-signup-form .phone-row input{height:48px;margin:0}
-#event-signup-form fieldset{border:0;padding:0;margin:0;display:flex;gap:18px;align-items:center;flex-wrap:wrap}#event-signup-form legend{font-size:.85rem;font-weight:500;margin-bottom:6px;width:100%}
-#event-signup-form .r{display:flex;gap:6px;align-items:center;font-weight:400}#event-signup-form .c{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.78rem;line-height:1.45}
-#event-signup-form .c a{color:var(--teal)}#event-signup-form .r input,#event-signup-form .c input{accent-color:var(--navy);margin-top:2px}
-#event-signup-status{margin:0}#event-signup-status:not(:empty){background:var(--sky);padding:14px;border-radius:8px;display:grid;gap:12px}
 .facts a,.host .addr a{color:inherit;text-decoration:underline;text-underline-offset:.18em}
-#event-calendar[hidden]{display:none!important}
-#event-calendar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
-#event-calendar a.btn{padding:14px 22px}
-#event-calendar a.event-cal-alt{color:var(--teal);font-weight:500;font-size:.9rem}
-.event-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .explain{background:var(--white);padding:72px 0 28px}.explain h2,.about h2,.host h2,.also h2{font-size:2.2rem}.explain p{max-width:38em}
 .also{background:var(--white);padding:0 0 72px}.also-card{background:var(--beige);border-radius:14px;border-top:3px solid var(--teal);padding:28px 32px}.also-lead{max-width:40em;margin:0 0 4px}
 .also ul{list-style:none;padding:0;margin:16px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:4px 32px}.also li{position:relative;padding:8px 0 8px 16px}.also li::before{content:'';position:absolute;left:0;top:16px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
@@ -150,39 +160,39 @@ footer{background:var(--navy);color:var(--sky);padding:32px 0;font-size:.8rem}.f
 .consent-banner div{display:flex;gap:8px;flex-wrap:wrap}
 .consent-banner button{background:var(--white);color:var(--navy);border:0;border-radius:30px;padding:8px 14px;font:inherit;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
 @media(max-width:820px){.wrap{padding:0 18px}.bar-in{height:58px;gap:8px}.logo{height:30px}.guestname{font-size:.62rem;letter-spacing:.06em}
+.postpone{padding:18px 0 20px}.postpone-alert{font-size:1.4rem}
+.cancel-modal{padding:12px}.cancel-modal-card{padding:22px 16px 16px;border-width:5px}
 .hero{padding:18px 0 28px}.hero-in{grid-template-columns:1fr;gap:18px}.docs{order:-1;gap:10px}
 .doc{border-radius:120px 120px 10px 10px}.doc img{aspect-ratio:1/1;height:auto}.doc figcaption{padding:8px 6px 10px}.doc b{font-size:.88rem}.doc small{font-size:.7rem}
 .eyebrow{font-size:.62rem;letter-spacing:.16em}h1{font-size:1.8rem}.lead{font-size:.95rem;margin-bottom:14px}.facts{grid-template-columns:1fr;margin-bottom:16px}.facts b{font-size:.92rem}.facts small{font-size:.75rem}.facts li{padding:8px 0}
-.btn{padding:14px 22px}.ctas .btn{flex:1;text-align:center}.reg-in,.bios-in,.items,.also ul,.phone-row{grid-template-columns:1fr}
-.sticky{display:block;position:fixed;left:14px;right:14px;bottom:14px;background:var(--navy);color:#fff;text-align:center;padding:15px;border-radius:40px;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:500;box-shadow:0 10px 30px rgba(0,0,0,.25);z-index:9}
-footer{padding-bottom:90px}}
+.btn{padding:14px 22px}.ctas .btn{flex:1;text-align:center}.bios-in,.items,.also ul{grid-template-columns:1fr}}
 @media(max-width:820px) and (max-height:760px){.doc figcaption small{display:none}.hero{padding-bottom:18px}}`;
 
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
+// Shown on every load. No storage: closing it lasts only until the next visit.
+const MODAL_JS=`(function(){var root=document.getElementById('event-cancel-modal');if(!root)return;var card=root.querySelector('[role="dialog"]');var closeBtn=document.getElementById('event-cancel-close');var scrollY=0;function lock(on){document.documentElement.classList.toggle('cancel-lock',on);if(on){scrollY=window.scrollY||0;document.body.style.position='fixed';document.body.style.top=(-scrollY)+'px';document.body.style.left='0';document.body.style.right='0';document.body.style.width='100%';}else{document.body.style.position='';document.body.style.top='';document.body.style.left='';document.body.style.right='';document.body.style.width='';window.scrollTo(0,scrollY);}var kids=document.body.children;for(var i=0;i<kids.length;i++){if(kids[i]!==root)kids[i].inert=on;}}function open(){root.hidden=false;lock(true);if(closeBtn)closeBtn.focus();}function shut(){if(root.hidden)return;root.hidden=true;lock(false);}if(closeBtn)closeBtn.addEventListener('click',shut);document.addEventListener('keydown',function(e){if(root.hidden)return;if(e.key==='Escape'||e.key==='Esc'){e.preventDefault();shut();return;}if(e.key!=='Tab'||!card)return;var list=card.querySelectorAll('a[href],button:not([disabled])');if(!list.length)return;var first=list[0],last=list[list.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}});open();})();`;
 function photo(person,alt,sizes,eager,cls=''){
  const load=eager?'decoding="async"'+(eager==='high'?' fetchpriority="high"':''):'loading="lazy" decoding="async"';
  return `<picture${cls?` class="${cls}"`:''}><source type="image/avif" srcset="${person.avif}" sizes="${sizes}"><img src="/assets/${person.file}" alt="${esc(alt)}" width="${person.width}" height="${person.height}" srcset="${person.webp}" sizes="${sizes}" data-fixed-srcset="1" data-keep-loading="1" ${load}></picture>`;
 }
 
-export function aromasEventHtml({lang,origin,consent,ghlGuard,gtm,privacyUrl}){
+export function aromasEventHtml({lang,origin,consent,ghlGuard,gtm}){
  const t=copy[lang],other=lang==='en'?'es':'en',slug=EVENT_SLUG;
  const otherHref=other==='es'?'/es/'+slug:'/en/'+slug;
  const paths={en:'/en/'+slug,es:'/es/'+slug};
- const ev=eventSchema(lang,origin,paths);ev.name=t.title;ev.description=t.meta;ev.startDate='2026-11-06T18:00:00-05:00';delete ev.endDate;
+ const ev=eventSchema(lang,origin,paths);ev.name=t.title;ev.description=t.meta;ev.startDate='2026-11-06T18:00:00-05:00';delete ev.endDate;ev.eventStatus='https://schema.org/EventPostponed';delete ev.maximumAttendeeCapacity;
  const route=paths[lang];
  const canonical=origin+route;
  const heroSizes='(max-width: 820px) 44vw, 280px';
  const bioSizes='120px';
  const portrait=(person,alt,eager)=>`<figure class="doc">${photo(person,alt,heroSizes,eager)}<figcaption><span class="tag">${person===FULVIO?t.guest:t.host}</span><b>${person===FULVIO?'Dr. Fulvio Correa':'Alberto Nader'}</b><small>${person===FULVIO?t.fmeta:t.ameta}</small></figcaption></figure>`;
  const items=t.items.map(([h,p],i)=>`<div class="item"><span>0${i+1}</span><h3>${h}</h3><p>${p}</p></div>`).join('');
- const interestOpts=t.fopts.map(([v,l])=>`<option value="${v}">${esc(l)}</option>`).join('');
- const phoneCodes=[['+1','+1 (US)'],['+1','+1 (CA)'],['+57','+57 (CO)'],['+52','+52 (MX)'],['+58','+58 (VE)'],['+54','+54 (AR)'],['+51','+51 (PE)'],['+56','+56 (CL)'],['+593','+593 (EC)'],['+34','+34 (ES)'],['+507','+507 (PA)'],['+506','+506 (CR)'],['+1','+1 (PR/DO)']];
- const phoneOpts=phoneCodes.map(([v,l],i)=>`<option value="${v}"${i===0?' selected':''}>${esc(l)}</option>`).join('')+`<option value="other">${esc(t.fother)}</option>`;
- const phoneFields=`<div class="phone-row"><label>${t.fcc}<select name="phone_country" autocomplete="tel-country-code">${phoneOpts}</select></label><label>${t.fw}<input name="whatsapp" type="tel" autocomplete="tel-national" inputmode="numeric" pattern="[0-9]*" maxlength="14" placeholder="305 555 0123" required></label></div><label class="phone-other" id="event-phone-other" hidden>${t.fotherc}<input name="phone_country_other" type="tel" inputmode="tel" autocomplete="tel-country-code" maxlength="6" placeholder="+44" aria-describedby="event-phone-other-hint"><small id="event-phone-other-hint">${t.fotherh}</small></label>`;
  const cta=(id,href,label,extra='')=>`<a class="btn${extra}" id="${id}" data-cta="${id}" data-event="navigation_click" href="${href}">${label}</a>`;
  const venue=`<a href="${DORAL_MAPS_URL}" target="_blank" rel="noopener">${esc(DORAL_LOCATION)}</a>`;
  const phone=`<a href="${DORAL_PHONE_TEL}">${esc(DORAL_PHONE_DISPLAY)}</a>`;
- const calendar=`<div id="event-calendar" class="event-calendar" hidden><a class="btn" href="${DORAL_ICS_PATH}" download="doral-2026-11-06.ics">${esc(t.cal)}</a><a class="event-cal-alt" href="${esc(googleCalendarUrl(lang))}" target="_blank" rel="noopener">${esc(t.calGoogle)}</a><a class="event-cal-alt" href="${esc(outlookCalendarUrl(lang))}" target="_blank" rel="noopener">${esc(t.calOutlook)}</a></div>`;
- const form=`<form id="event-signup-form" data-form="event-signup" data-event-tag="${EVENT_TAG}" novalidate><label>${t.fn}<input name="name" autocomplete="name" maxlength="100" required></label>${phoneFields}<label>${t.fe}<input name="email" type="email" autocomplete="email" maxlength="254" required></label><label>${t.fc}<input name="city" autocomplete="address-level2" maxlength="100" required></label><label>${t.fi}<select name="procedure_interest"><option value="">${esc(t.fiempty)}</option>${interestOpts}</select></label><fieldset><legend>${t.fcomp}</legend><label class="r"><input type="radio" name="companion" value="yes" required> ${t.yes}</label><label class="r"><input type="radio" name="companion" value="no"> ${t.no}</label></fieldset><label class="c"><input type="checkbox" name="contact_consent" required> <span data-consent-version="${EVENT_CONSENT_VERSION}">${t.consent}</span> <a href="${privacyUrl}" target="_blank" rel="noopener">${t.privacy}</a>.</label><div class="event-hp" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div><button class="btn" id="event-signup-submit" type="submit">${t.cta}</button><div id="event-signup-status" class="form-status" role="status" aria-live="polite"></div>${calendar}</form>`;
- return `<!doctype html><html lang="${lang}"><head>${consent}${ghlGuard}${gtm}<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(t.title)}</title><meta name="description" content="${esc(ev.description)}"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#2F4157"><link rel="canonical" href="${canonical}"><link rel="alternate" hreflang="en" href="${origin}${paths.en}"><link rel="alternate" hreflang="es" href="${origin}${paths.es}"><link rel="alternate" hreflang="x-default" href="${origin}${paths.en}"><meta property="og:title" content="${esc(t.title)}"><meta property="og:description" content="${esc(ev.description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="website"><meta property="og:locale" content="${lang==='en'?'en_US':'es_CO'}"><meta property="og:image" content="${origin}/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp"><meta name="twitter:card" content="summary_large_image"><link rel="preload" href="/assets/fonts/red-hat-display-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><style>${CSS}</style><script type="application/ld+json">${JSON.stringify([ev]).replaceAll('<','\\u003c')}</script><script src="/config.js" defer></script><script src="/app.js" defer></script></head><body class="aromas" data-language="${lang}" data-event-shell="aromas"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THZVNS9B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><button class="menu-toggle" type="button" hidden aria-expanded="false" aria-controls="navigation"></button><nav class="nav" id="navigation" hidden></nav><aside class="consent-banner" id="cookie-banner" aria-label="${esc(t.cookies)}" hidden><p>${t.cookie}</p><div><button type="button" id="accept-analytics">${t.accept}</button><button type="button" id="reject-analytics">${t.reject}</button></div></aside><header class="bar"><div class="wrap bar-in"><img class="logo" src="/assets/aromas-logo-original.svg" alt="Aromas Med Spa" width="300" height="93" data-keep-loading="1" decoding="async"><span class="x" aria-hidden="true">×</span><span class="guestname">Dr. Fulvio Correa</span><a class="lang" href="${otherHref}" data-language="${other}" lang="${other}">${t.otherLabel}</a></div></header><main id="main"><section class="hero"><div class="wrap hero-in"><div class="copy"><p class="eyebrow">${t.eyebrow}</p><h1>${t.h1}</h1><p class="lead">${t.lead}</p><ul class="facts"><li><b>${t.date}</b><small>${t.datesub}</small></li><li><b>${t.seats}</b><small>${t.seatsub}</small></li><li><b>${venue}</b><small>${phone}</small></li></ul><div class="ctas">${cta('event-hero-signup','#registro',t.cta)}${cta('event-hero-details','#que-es',t.cta2,' ghost')}</div></div><div class="docs">${portrait(FULVIO,t.fulvioAlt,'high')}${portrait(NADER,t.naderAlt,true)}</div></div></section><section id="registro" class="reg"><div class="wrap reg-in"><div><p class="eyebrow">${t.formk}</p><h2>${t.formh}</h2><p>${t.formp}</p><p class="limit">${t.limit}</p></div>${form}</div></section><section id="que-es" class="explain"><div class="wrap"><p class="eyebrow">${t.mmk}</p><h2>${t.mmh}</h2><p>${t.mmp}</p></div></section><section id="otros" class="also"><div class="wrap"><div class="also-card"><p class="eyebrow">${t.othk}</p><h2>${t.othh}</h2><p class="also-lead">${t.othp}</p></div></div></section><section id="charla" class="about"><div class="wrap"><p class="eyebrow">${t.about}</p><h2>${t.abouth}</h2><div class="items">${items}</div><p class="note">${t.note}</p></div></section><section class="bios"><div class="wrap bios-in"><div class="bio">${photo(FULVIO,t.fulvioAlt,bioSizes,false,'bio-photo bio-fulvio')}<div><span class="tag">${t.guest}</span><h3>Dr. Fulvio Correa</h3><p>${t.fdesc}</p></div></div><div class="bio">${photo(NADER,t.naderAlt,bioSizes,false,'bio-photo bio-nader')}<div><span class="tag">${t.host}</span><h3>Alberto Nader</h3><p>${t.adesc}</p></div></div></div></section><section class="host"><div class="wrap"><p class="eyebrow">${t.hostk}</p><h2>${t.hosth}</h2><p>${t.hostp}</p><p class="addr">${venue} · ${t.phone}: <a href="${DORAL_PHONE_TEL}" id="event-host-phone" data-cta="event-host-phone" data-event="phone_click" data-location="event-host">${esc(DORAL_PHONE_DISPLAY)}</a></p><p class="addr"><a href="${DORAL_SITE_URL}" target="_blank" rel="noopener">${esc(DORAL_SITE_NAME)}</a></p>${cta('event-host-signup','#registro',t.cta,' ghost light')}</div></section></main><footer><div class="wrap"><img class="flogo" src="/assets/aromas-logo-white.svg" alt="Aromas Med Spa" width="300" height="93" data-keep-loading="1" loading="lazy" decoding="async"><p>Aromas Med Spa × Dr. Fulvio Correa · ${t.foot}</p><button type="button" id="privacy-settings" class="privacy-button">${t.preferences}</button></div></footer><a class="sticky" id="event-sticky-signup" data-cta="event-sticky-signup" data-event="navigation_click" href="#registro">${t.cta}</a></body></html>`;
+ const withPhone=paragraph=>{const at=paragraph.indexOf(DORAL_PHONE_DISPLAY);return at<0?esc(paragraph):esc(paragraph.slice(0,at))+`<a href="${DORAL_PHONE_TEL}">${esc(DORAL_PHONE_DISPLAY)}</a>`+esc(paragraph.slice(at+DORAL_PHONE_DISPLAY.length));};
+ const notice=t.notice.map(paragraph=>`<p>${withPhone(paragraph)}</p>`).join('');
+ const modalCopy=t.modal.map(paragraph=>`<p>${withPhone(paragraph)}</p>`).join('');
+ const modal=`<div id="event-cancel-modal" class="cancel-modal" hidden><div class="cancel-modal-card" role="dialog" aria-modal="true" aria-labelledby="event-cancel-title" aria-describedby="event-cancel-body"><h2 id="event-cancel-title">${esc(t.cancelHeadline)}</h2><div id="event-cancel-body">${modalCopy}</div><button type="button" class="cancel-modal-close" id="event-cancel-close">${esc(t.cancelClose)}</button></div></div><script id="event-cancel-script">${MODAL_JS}</script>`;
+ return `<!doctype html><html lang="${lang}"><head>${consent}${ghlGuard}${gtm}<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(t.title)}</title><meta name="description" content="${esc(ev.description)}"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#2F4157"><link rel="canonical" href="${canonical}"><link rel="alternate" hreflang="en" href="${origin}${paths.en}"><link rel="alternate" hreflang="es" href="${origin}${paths.es}"><link rel="alternate" hreflang="x-default" href="${origin}${paths.en}"><meta property="og:title" content="${esc(t.title)}"><meta property="og:description" content="${esc(ev.description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="website"><meta property="og:locale" content="${lang==='en'?'en_US':'es_CO'}"><meta property="og:image" content="${origin}/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp"><meta name="twitter:card" content="summary_large_image"><link rel="preload" href="/assets/fonts/red-hat-display-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><style>${CSS}</style><script type="application/ld+json">${JSON.stringify([ev]).replaceAll('<','\\u003c')}</script><script src="/config.js" defer></script><script src="/app.js" defer></script></head><body class="aromas" data-language="${lang}" data-event-shell="aromas"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THZVNS9B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><button class="menu-toggle" type="button" hidden aria-expanded="false" aria-controls="navigation"></button><nav class="nav" id="navigation" hidden></nav><aside class="consent-banner" id="cookie-banner" aria-label="${esc(t.cookies)}" hidden><p>${t.cookie}</p><div><button type="button" id="accept-analytics">${t.accept}</button><button type="button" id="reject-analytics">${t.reject}</button></div></aside><header class="bar"><div class="wrap bar-in"><img class="logo" src="/assets/aromas-logo-original.svg" alt="Aromas Med Spa" width="300" height="93" data-keep-loading="1" decoding="async"><span class="x" aria-hidden="true">×</span><span class="guestname">Dr. Fulvio Correa</span><a class="lang" href="${otherHref}" data-language="${other}" lang="${other}">${t.otherLabel}</a></div></header><main id="main"><section class="postpone" aria-labelledby="event-cancel-banner"><div class="wrap"><h2 class="postpone-alert" id="event-cancel-banner">${esc(t.cancelHeadline)}</h2><p class="postpone-title">${esc(t.noticeTitle)}</p>${notice}</div></section><section class="hero"><div class="wrap hero-in"><div class="copy"><p class="eyebrow">${t.eyebrow}</p><h1>${t.h1}</h1><p class="lead">${t.lead}</p><ul class="facts"><li class="status"><b>${esc(t.dateStatus)}</b></li><li><b>${venue}</b><small>${phone}</small></li></ul><div class="ctas">${cta('event-hero-details','#que-es',t.cta2,' ghost')}</div></div><div class="docs">${portrait(FULVIO,t.fulvioAlt,'high')}${portrait(NADER,t.naderAlt,true)}</div></div></section><section id="que-es" class="explain"><div class="wrap"><p class="eyebrow">${t.mmk}</p><h2>${t.mmh}</h2><p>${t.mmp}</p></div></section><section id="otros" class="also"><div class="wrap"><div class="also-card"><p class="eyebrow">${t.othk}</p><h2>${t.othh}</h2><p class="also-lead">${t.othp}</p></div></div></section><section id="charla" class="about"><div class="wrap"><p class="eyebrow">${t.about}</p><h2>${t.abouth}</h2><div class="items">${items}</div><p class="note">${t.note}</p></div></section><section class="bios"><div class="wrap bios-in"><div class="bio">${photo(FULVIO,t.fulvioAlt,bioSizes,false,'bio-photo bio-fulvio')}<div><span class="tag">${t.guest}</span><h3>Dr. Fulvio Correa</h3><p>${t.fdesc}</p></div></div><div class="bio">${photo(NADER,t.naderAlt,bioSizes,false,'bio-photo bio-nader')}<div><span class="tag">${t.host}</span><h3>Alberto Nader</h3><p>${t.adesc}</p></div></div></div></section><section class="host"><div class="wrap"><p class="eyebrow">${t.hostk}</p><h2>${t.hosth}</h2><p>${t.hostp}</p><p class="addr">${venue} · ${t.phone}: <a href="${DORAL_PHONE_TEL}" id="event-host-phone" data-cta="event-host-phone" data-event="phone_click" data-location="event-host">${esc(DORAL_PHONE_DISPLAY)}</a></p><p class="addr"><a href="${DORAL_SITE_URL}" target="_blank" rel="noopener">${esc(DORAL_SITE_NAME)}</a></p></div></section></main><footer><div class="wrap"><img class="flogo" src="/assets/aromas-logo-white.svg" alt="Aromas Med Spa" width="300" height="93" data-keep-loading="1" loading="lazy" decoding="async"><p>Aromas Med Spa × Dr. Fulvio Correa · ${t.foot}</p><button type="button" id="privacy-settings" class="privacy-button">${t.preferences}</button></div></footer>${modal}</body></html>`;
 }

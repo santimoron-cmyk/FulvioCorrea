@@ -1,5 +1,7 @@
-// Doral conversatorio, Friday 6 November 2026, 6:00–8:00 PM America/New_York (EST, UTC−5).
-// DORAL_LOCATION is the only address string. Pages, the .ics file, and the calendar links all read it.
+// Doral conversatorio. The Friday 6 November 2026 date is postponed.
+// DORAL_LOCATION is the only address string. The landing pages read it.
+// Do not publish doralIcs(), googleCalendarUrl(), or outlookCalendarUrl() until a new date is confirmed.
+// The old calendar URL returns 410 from functions/events/doral-2026-11-06.ics.js.
 export const DORAL_LOCATION = 'Aromas Med Spa, 9831 NW 58th St #149, Doral, FL 33178';
 export const DORAL_MAPS_URL = 'https://maps.app.goo.gl/Uicgm1mwFxyLtxy97';
 export const DORAL_PHONE_DISPLAY = '(305) 591-3005';

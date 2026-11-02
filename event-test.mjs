@@ -3,13 +3,25 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-import {doralIcs,DORAL_LOCATION,DORAL_UID,DORAL_TITLES} from './event-calendar.mjs';
+import {DORAL_LOCATION} from './event-calendar.mjs';
 import {assetVersion} from './asset-version.mjs';
 const origin=JSON.parse(fs.readFileSync('config.json','utf8')).origin;
 const production=process.env.SITE_ENV?process.env.SITE_ENV==='production':!/^Disallow: \/\s*$/m.test(fs.readFileSync('dist/robots.txt','utf8'));
 const live={
- es:{file:'dist/es/conversatorio-belleza-estetica-doral/index.html',path:'/es/conversatorio-belleza-estetica-doral/',route:'/es/conversatorio-belleza-estetica-doral/',line:'Cualquier valoración médica se realiza directamente con el cirujano, de forma individual.',host:'no realizamos los procedimientos',cta:'Reservar mi cupo',bio:'+15 años de experiencia',chosen:'te elegimos para este encuentro exclusivo',eyebrow:'Para nuestras clientas preferidas',journey:'Aprender y decidir, con calma.',bites:'vino y picadas',free:'orientación educativa y gratuita',date:'viernes 6 de noviembre de 2026, 6:00 p. m.',travel:'Muchos pacientes del Dr. Correa viajan desde Estados Unidos',unsure:'Aún no lo sé',guest:'Invitado especial',access:'Acceso directo',nonsurgical:'tratamientos no quirúrgicos de belleza y estética',cartagena:'Operarte en Cartagena.',title:'Conversatorio de belleza 2026 · Aromas Med Spa Doral'},
- en:{file:'dist/beauty-aesthetics-talk-doral/index.html',path:'/beauty-aesthetics-talk-doral/',route:'/en/beauty-aesthetics-talk-doral/',line:'Any medical evaluation is done directly with the surgeon, individually.',host:'do not perform the plastic surgery procedures',cta:'Save my spot',bio:'15+ years of experience',chosen:'we chose you for this exclusive gathering',eyebrow:'For our preferred clients',journey:'Learn and decide, calmly.',bites:'wine and light bites',free:'free educational orientation',date:'Friday, November 6, 2026, 6:00 PM',travel:'Many of Dr. Correa’s patients travel from the United States',unsure:'Not sure yet',guest:'Special guest',access:'Direct access',nonsurgical:'non-surgical beauty and aesthetics treatments',cartagena:'Surgery in Cartagena.',title:'Beauty and aesthetics talk 2026 · Aromas Med Spa Doral'}
+ es:{file:'dist/es/conversatorio-belleza-estetica-doral/index.html',path:'/es/conversatorio-belleza-estetica-doral/',route:'/es/conversatorio-belleza-estetica-doral/',line:'Cualquier valoración médica se realiza directamente con el cirujano, de forma individual.',host:'no realizamos los procedimientos',bio:'+15 años de experiencia',chosen:'te elegimos para este encuentro exclusivo',eyebrow:'Para nuestras clientas preferidas',journey:'Aprender y decidir, con calma.',bites:'vino y picadas',free:'orientación educativa y gratuita',dateStatus:'Nueva fecha por confirmar',travel:'Muchos pacientes del Dr. Correa viajan desde Estados Unidos',guest:'Invitado especial',access:'Acceso directo',nonsurgical:'tratamientos no quirúrgicos de belleza y estética',cartagena:'Operarte en Cartagena.',title:'Conversatorio de belleza 2026 · Aromas Med Spa Doral'},
+ en:{file:'dist/beauty-aesthetics-talk-doral/index.html',path:'/beauty-aesthetics-talk-doral/',route:'/en/beauty-aesthetics-talk-doral/',line:'Any medical evaluation is done directly with the surgeon, individually.',host:'do not perform the plastic surgery procedures',bio:'15+ years of experience',chosen:'we chose you for this exclusive gathering',eyebrow:'For our preferred clients',journey:'Learn and decide, calmly.',bites:'wine and light bites',free:'free educational orientation',dateStatus:'New date to be confirmed',travel:'Many of Dr. Correa’s patients travel from the United States',guest:'Special guest',access:'Direct access',nonsurgical:'non-surgical beauty and aesthetics treatments',cartagena:'Surgery in Cartagena.',title:'Beauty and aesthetics talk 2026 · Aromas Med Spa Doral'}
+};
+const notices={
+ es:{title:'Aviso importante: el conversatorio del 6 de noviembre no se realizará',lines:[
+  'Por motivos de logística y de agenda del Dr. Fulvio Correa, el conversatorio de belleza y estética del viernes 6 de noviembre de 2026 en Aromas Med Spa Doral no se realizará en esa fecha. Lo vamos a reprogramar.',
+  'Te pedimos disculpas por el cambio. Apenas tengamos la nueva fecha y las condiciones del encuentro, las publicaremos aquí. Si ya te registraste, te escribiremos por correo electrónico.',
+  '¿Tienes preguntas? Llámanos a Aromas Med Spa: (305) 591-3005.',
+ ]},
+ en:{title:'Important update: the November 6 talk will not take place',lines:[
+  "Due to logistics and Dr. Fulvio Correa's schedule, the beauty and aesthetics talk on Friday, November 6, 2026, at Aromas Med Spa Doral will not take place on that date. We are rescheduling it.",
+  'We apologize for the change. As soon as we have the new date and details, we will post them here. If you already signed up, we will email you.',
+  'Questions? Call Aromas Med Spa at (305) 591-3005.',
+ ]},
 };
 const sitemap=fs.readFileSync('dist/sitemap.xml','utf8');
 const pagesJson=JSON.parse(fs.readFileSync('pages.json','utf8'));
@@ -29,62 +41,69 @@ function pair(pages,label){
   assert.ok(ev,label+' '+lang+' Event schema');assert.equal(ev.location.name,'Aromas Med Spa Doral');assert.equal(ev.location.address.postalCode,'33178');assert.equal(ev.url,origin+p.path);
   assert.ok(main.includes(p.line),label+' '+lang+' medical-evaluation line');assert.ok(main.includes(p.host),label+' '+lang+' Aromas does not perform the procedure');
   const text=main.replace(/<[^>]+>/g,' ');
-  assert.doesNotMatch(text,/board[- ]certified|certificad[oa] por la junta|virtual assistant|asistente virtual|\$\s?\d|US\$|USD|COP|garant|guarantee|licen[cs]|antes y después|before[- ]and[- ]after|\bbest\b/i,label+' '+lang+' banned copy');
-  for(const name of ['name','whatsapp','email','city','companion','contact_consent','website','phone_country'])assert.ok(main.includes(`name="${name}"`),label+' '+lang+' field '+name);
-  assert.ok(h.includes(`<script defer src="/event-signup.js?v=${assetVersion()}"></script></body>`),label+' '+lang+' form script');
+  assert.doesNotMatch(text,/board[- ]certified|certificad[oa]|virtual assistant|asistente virtual|\$\s?\d|US\$|USD|COP|garant|guarantee|licen[cs]|antes y después|before[- ]and[- ]after|\bbest\b/i,label+' '+lang+' banned copy');
+  assert.ok(!main.includes('id="event-signup-form"')&&!/name="(?:name|whatsapp|email|city|companion|contact_consent|website|phone_country)"/.test(main),label+' '+lang+' registration form removed');
+  assert.ok(!h.includes('/event-signup.js'),label+' '+lang+' form script not on the page');
   assert.ok(h.includes(`src="/app.js?v=${assetVersion()}"`)&&h.includes(`src="/config.js?v=${assetVersion()}"`),label+' '+lang+' shared scripts cache bust');
-  assert.ok(main.includes('data-consent-version="event-doral-consent-2026-09-30"'),label+' '+lang+' consent version');
   p.html=h;p.main=main;p.event=ev;
  }
 }
 pair(live,'live');
 for(const [lang,p] of Object.entries(live)){
  assert.ok(p.html.includes('data-event-shell="aromas"'),lang+' aromas shell');
- assert.ok(p.main.includes('data-event-tag="conversatorio-belleza-estetica-doral-nov2026"'),lang+' event tag');
- assert.ok(p.main.includes(p.cta)&&p.html.includes(`class="sticky"`),lang+' reserve CTA');
+ assert.ok(!p.main.includes('data-event-tag='),lang+' event tag is not on a form');
+ assert.ok(!p.html.includes('class="sticky"')&&!p.main.includes(lang==='es'?'Reservar mi cupo':'Save my spot'),lang+' reserve CTA removed');
  assert.ok(p.main.includes('/assets/alberto-nader-aromas-med-spa-doral-480.avif')&&p.main.includes('/assets/dr-fulvio-correa-plastic-surgeon-cartagena-768.webp'),lang+' both doctor photos');
  assert.ok(p.html.includes('/assets/aromas-logo-original.svg')&&p.html.includes('/assets/aromas-logo-white.svg'),lang+' aromas logos');
  assert.ok(p.main.includes(p.bio),lang+' concept bio');
- assert.ok(!/no se envió|Concept preview|no data was sent/i.test(p.main),lang+' real form, not the concept preview');
- const hero=p.main.slice(0,p.main.indexOf('id="registro"'));
+ assert.ok(!/no se envió|Concept preview|no data was sent/i.test(p.main),lang+' not a concept preview');
+ const hero=p.main.slice(0,p.main.indexOf('id="que-es"'));
  const h1=hero.match(/<h1>[\s\S]*?<\/h1>/)[0];
  assert.ok(!/mommy makeover/i.test(h1),lang+' Mommy Makeover is not the headline');
- assert.ok(hero.includes(p.cta)&&hero.includes('alberto-nader')&&hero.includes('dr-fulvio-correa'),lang+' photos and CTA in the hero');
- assert.ok(hero.includes(p.eyebrow)&&hero.includes(p.chosen)&&hero.includes(p.free)&&hero.includes(p.bites)&&hero.includes(p.date),lang+' preferred-client intro and confirmed date in the hero');
- assert.ok(!/27 al 29|October 27|por confirmar|to be confirmed|bebidas y pasabocas|drinks and light bites/i.test(p.html),lang+' old date and drinks wording are gone');
- assert.equal(p.event.startDate,'2026-11-06T18:00:00-05:00',lang+' Event start');
- assert.ok(p.event.description.includes(p.date),lang+' JSON-LD description uses Friday');
+ assert.ok(!hero.includes(lang==='es'?'Reservar mi cupo':'Save my spot')&&hero.includes('alberto-nader')&&hero.includes('dr-fulvio-correa'),lang+' photos in the hero, no reserve CTA');
+ assert.ok(hero.includes(p.eyebrow)&&hero.includes(p.chosen)&&hero.includes(p.free)&&hero.includes(p.bites)&&hero.includes(p.dateStatus),lang+' preferred-client intro and postponed date in the hero');
+ const notice=notices[lang],plain=p.main.replace(/<[^>]+>/g,'');
+ assert.ok(plain.includes(notice.title)&&notice.lines.every(line=>plain.includes(line)),lang+' approved postponement notice');
+ assert.ok(hero.includes(`<h2 class="postpone-alert" id="event-cancel-banner">${lang==='es'?'Evento cancelado por ahora':'Event cancelled for now'}</h2>`),lang+' red-banner headline above the notice');
+ assert.match(p.html,/\.postpone\{[^}]*background:#fdecea[^}]*border-left:12px solid #c62828/,lang+' in-page notice is a red bar on a light red ground');
+ const modal=p.html.slice(p.html.indexOf('id="event-cancel-modal"'),p.html.indexOf('id="event-cancel-script"'));
+ assert.match(modal,/id="event-cancel-modal" class="cancel-modal" hidden/,lang+' modal markup starts closed');
+ assert.match(modal,/role="dialog" aria-modal="true"/,lang+' modal dialog');
+ assert.ok(modal.includes(`<h2 id="event-cancel-title">${lang==='es'?'Evento cancelado por ahora':'Event cancelled for now'}</h2>`),lang+' modal headline');
+ assert.ok(modal.includes(lang==='es'?'>Entendido<':'>Got it<'),lang+' modal close label');
+ assert.ok(modal.includes('href="tel:+13055913005"')&&modal.includes('Aromas Med Spa Doral')&&modal.includes(lang==='es'?'no se realizará':'will not take place')&&modal.includes(lang==='es'?'reprogramar':'rescheduled')&&modal.includes(lang==='es'?'correo electrónico':'email you'),lang+' modal body covers the postponement');
+ assert.match(p.html,/\.cancel-modal\{[^}]*position:fixed[^}]*background:rgba\(18,16,20,\.72\)/,lang+' overlay covers the page');
+ assert.match(p.html,/\.cancel-modal-card\{[^}]*border:6px solid #c62828/,lang+' modal card has a thick red border');
+ assert.match(p.html,/\.cancel-modal\[hidden\]\{display:none!important\}/,lang+' modal stays out of the page without JS');
+ const modalJs=p.html.slice(p.html.indexOf('id="event-cancel-script"'),p.html.indexOf('</script>',p.html.indexOf('id="event-cancel-script"')));
+ assert.ok(modalJs.includes("e.key==='Escape'")&&modalJs.includes("closeBtn.focus()")&&modalJs.includes('inert=on'),lang+' Esc, focus and a blocked page');
+ assert.ok(!/localStorage|sessionStorage|document\.cookie/.test(modalJs),lang+' dismissal is not remembered');
+ assert.ok(hero.includes(`<li class="status"><b>${p.dateStatus}</b></li>`),lang+' date badge is the unconfirmed new date');
+ assert.ok(!/27 al 29|October 27|bebidas y pasabocas|drinks and light bites/i.test(p.html),lang+' old October date and drinks wording are gone');
+ assert.ok(!/Hora confirmada|Time confirmed|30 cupos|30 spots|Luego, lista de espera|Then a waitlist|6:00 p\. m\.|6:00 PM/.test(plain),lang+' active time and capacity are gone');
+ assert.equal(p.event.eventStatus,'https://schema.org/EventPostponed',lang+' Event postponed');
+ assert.equal(p.event.eventAttendanceMode,'https://schema.org/OfflineEventAttendanceMode',lang+' in-person attendance mode');
+ assert.equal(p.event.startDate,'2026-11-06T18:00:00-05:00',lang+' original start kept until a new date exists');
+ assert.ok(!p.event.maximumAttendeeCapacity,lang+' capacity removed from schema');
+ assert.ok(p.event.description.includes(lang==='es'?'no se realizará':'will not take place'),lang+' JSON-LD description is the postponement');
+ assert.ok(!String(p.event.description).includes('6:00'),lang+' JSON-LD description has no clock time');
  assert.ok(p.html.includes(`<meta name="description" content="${p.event.description.replaceAll('"','&quot;')}">`),lang+' meta description');
  assert.ok(p.html.includes(`property="og:description" content="${p.event.description.replaceAll('"','&quot;')}"`),lang+' OG description');
  assert.ok(!/jueves 6 de noviembre de 2026|Thursday, November 6, 2026/.test(p.html),lang+' Thursday wording is gone');
  assert.ok(!String(p.event.endDate||'').includes('2026-10'),lang+' October window removed');
  assert.ok(p.event.name===p.title,lang+' schema name');
  assert.ok(p.html.includes(`<title>${p.title}</title>`),lang+' title');
- assert.ok(p.html.includes(p.date)&&p.html.includes(p.bites),lang+' date and wine in meta or body');
+ assert.ok(p.html.includes(p.bites)&&plain.includes(notice.lines[0]),lang+' wine stays in the body and the cancelled date is explained in the notice');
  assert.ok(p.main.includes(lang==='es'?'Cirujano plástico en Cartagena':'Plastic surgeon in Cartagena'),lang+' Fulvio stays in third person');
  assert.ok(p.main.includes(p.guest),lang+' Fulvio is the special guest');
  assert.ok(p.main.includes('id="que-es"')&&p.main.includes(p.journey)&&p.main.includes(p.bites)&&p.main.includes(p.nonsurgical)&&p.main.includes(lang==='es'?'No es una consulta médica':'not a medical consultation'),lang+' educational explanation');
- const heroH1=p.main.slice(0,p.main.indexOf('id="registro"')).match(/<h1>[\s\S]*?<\/h1>/)[0];
+ const heroH1=p.main.slice(0,p.main.indexOf('id="que-es"')).match(/<h1>[\s\S]*?<\/h1>/)[0];
  assert.ok(!/Cartagena/i.test(heroH1),lang+' Cartagena is not the headline');
  const card=p.main.slice(p.main.indexOf('id="otros"'),p.main.indexOf('id="charla"'));
  assert.ok(card.includes(p.cartagena)&&card.includes(p.travel),lang+' Cartagena is one short card');
  assert.ok(p.main.includes(p.access),lang+' direct access');
- assert.ok(p.main.includes('name="procedure_interest"')&&!/name="procedure_interest"[^>]*required/.test(p.main),lang+' optional interest select');
- for(const value of ['non-surgical','breast','abdomen-contour','face','mommy-makeover','undecided'])assert.ok(p.main.includes(`value="${value}"`),lang+' interest option '+value);
- const interestSelect=p.main.match(/<select name="procedure_interest">[\s\S]*?<\/select>/)[0];
- assert.ok(!/value="lipo-contour"|value="other"|value="abdomen"/.test(interestSelect),lang+' old interest values are gone');
- assert.ok(p.main.includes('<option value="+1" selected>+1 (US)</option>'),lang+' country code defaults to +1 (US)');
- for(const label of ['+1 (CA)','+57 (CO)','+52 (MX)','+58 (VE)','+54 (AR)','+51 (PE)','+56 (CL)','+593 (EC)','+34 (ES)','+507 (PA)','+506 (CR)','+1 (PR/DO)'])assert.ok(p.main.includes(label),lang+' country option '+label);
- assert.ok(p.main.includes(lang==='es'?'>Otro</option>':'>Other</option>'),lang+' other country code');
- assert.match(p.main,/name="whatsapp" type="tel" autocomplete="tel-national" inputmode="numeric" pattern="\[0-9\]\*"/,lang+' national number is digits only');
- assert.ok(p.main.includes('placeholder="305 555 0123"')&&!p.main.includes('placeholder="+1 305 555 0123"'),lang+' national number has no country code');
- assert.ok(!p.main.includes('id="event-phone-hint"')&&!p.main.includes(lang==='es'?'Solo números':'Digits only'),lang+' no helper under the number');
- assert.ok(p.main.includes('id="event-phone-other" hidden'),lang+' other country code stays hidden');
- assert.ok(p.main.includes(lang==='es'?'Código de país':'Country code')&&p.main.includes(lang==='es'?'Teléfono<input name="whatsapp"':'Phone<input name="whatsapp"'),lang+' phone labels');
- assert.match(p.html,/\.phone-row\{display:grid;grid-template-columns:10\.5rem minmax\(0,1fr\);gap:10px;align-items:end\}/,lang+' phone row aligns the controls');
- assert.match(p.html,/#event-signup-form \.phone-row select,#event-signup-form \.phone-row input\{height:48px;margin:0\}/,lang+' phone controls share a height');
- assert.match(p.html,/@media\(max-width:820px\)\{[\s\S]*\.phone-row\{grid-template-columns:1fr\}/,lang+' phone row stacks on mobile');
- assert.ok(p.main.includes(p.unsure),lang+' not sure yet option');
+ assert.ok(!p.main.includes('name="procedure_interest"')&&!p.main.includes('<form'),lang+' no interest select and no form');
+ assert.ok(hero.includes(lang==='es'?'>Ver detalles<':'>See details<'),lang+' details link stays');
  assert.ok(!hero.includes('bio-photo'),lang+' hero portraits stay arched');
  const bios=p.main.slice(p.main.indexOf('class="bios"'));
  assert.ok(bios.includes('class="bio-photo bio-fulvio"')&&bios.includes('class="bio-photo bio-nader"'),lang+' circular bio frames');
@@ -95,34 +114,62 @@ for(const [lang,p] of Object.entries(live)){
  assert.ok(p.main.includes(lang==='es'?'Te recibimos en Aromas Med Spa, Doral.':'We welcome you at Aromas Med Spa, Doral.'),lang+' Aromas welcomes you in Doral');
  assert.equal((p.main.match(/https:\/\/maps\.app\.goo\.gl\/Uicgm1mwFxyLtxy97/g)||[]).length,2,lang+' maps link at each venue');
  assert.equal((p.main.match(new RegExp('>'+DORAL_LOCATION.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'</a>','g'))||[]).length,2,lang+' full address at each venue');
- assert.equal((p.main.match(/href="tel:\+13055913005"/g)||[]).length,2,lang+' phone at each venue');
+ assert.equal((p.main.match(/href="tel:\+13055913005"/g)||[]).length,3,lang+' phone in the notice and at each venue');
  assert.match(p.main,/<a href="https:\/\/aromaslaser\.com\/" target="_blank" rel="noopener">Aromas Med Spa<\/a>/,lang+' Aromas site link');
  assert.ok(!p.main.includes('rel="nofollow"'),lang+' site link stays followable');
- assert.match(p.main,/id="event-calendar" class="event-calendar" hidden/,lang+' calendar stays hidden until success');
- assert.match(p.main,/id="event-signup-status" class="form-status" role="status"/,lang+' success box');
- assert.ok(p.main.includes('<a class="btn" href="/events/doral-2026-11-06.ics" download="doral-2026-11-06.ics">'+(lang==='es'?'Agregar al calendario':'Add to calendar')+'</a>'),lang+' calendar download button');
- assert.ok(!p.main.includes(lang==='es'?'Apple y Outlook':'Apple and Outlook'),lang+' download is not the old tiny label');
- assert.ok(p.main.includes('https://calendar.google.com/calendar/render?')&&p.main.includes('action=TEMPLATE')&&p.main.includes('dates=20261106T230000Z%2F20261107T010000Z')&&p.main.includes('ctz=America%2FNew_York'),lang+' Google Calendar link');
- assert.ok(p.main.includes('https://outlook.live.com/calendar/0/deeplink/compose?')&&p.main.includes('startdt=2026-11-06T23%3A00%3A00Z')&&p.main.includes('enddt=2026-11-07T01%3A00%3A00Z'),lang+' Outlook.com link');
- assert.ok(p.main.includes(encodeURIComponent(DORAL_TITLES[lang]).replaceAll('%20','+')),lang+' calendar title');
- assert.ok(p.main.includes('9831+NW+58th+St+%23149'),lang+' calendar location');
+ assert.ok(!p.html.includes('/events/doral-2026-11-06.ics')&&!p.html.includes('calendar.google.com')&&!p.html.includes('outlook.live.com'),lang+' no calendar links');
+ assert.ok(!p.main.includes(lang==='es'?'Agregar al calendario':'Add to calendar'),lang+' calendar label removed');
+ assert.ok(!p.html.includes('id="event-calendar"')&&!p.html.includes('id="event-signup-status"'),lang+' calendar and success box removed');
 }
-const ics=fs.readFileSync('dist/events/doral-2026-11-06.ics','utf8');
-assert.equal(ics,doralIcs(),'static ics matches the shared event');
-const flat=ics.replace(/\r\n[ \t]/g,'').replaceAll('\\n','\n').replaceAll('\\,',',');
-assert.ok(flat.includes('UID:'+DORAL_UID)&&flat.includes('DTSTART:20261106T230000Z')&&flat.includes('DTEND:20261107T010000Z'),'ics instant and uid');
-assert.ok(flat.includes('BEGIN:VALARM')&&flat.includes('TRIGGER:-P1D')&&flat.includes('ACTION:DISPLAY'),'ics reminder one day before');
-assert.ok(flat.includes(DORAL_LOCATION)&&flat.includes('Vino y picadas, con el Dr. Fulvio Correa y Alberto (Aromas).')&&flat.includes('Wine and light bites, with Dr. Fulvio Correa and Alberto (Aromas).'),'ics location and description');
-assert.ok(flat.includes('https://fulviocorrea.com/es/conversatorio-belleza-estetica-doral/')&&flat.includes('https://fulviocorrea.com/beauty-aesthetics-talk-doral/'),'ics landing links');
-for(const line of ics.split('\r\n'))if(line)assert.ok(Buffer.byteLength(line)<=75,'ics line longer than 75 octets');
-assert.ok(fs.readFileSync('dist/_headers','utf8').includes('/events/doral-2026-11-06.ics\n  Content-Type: text/calendar; charset=utf-8'),'ics content type');
+function bootModal(html){
+ const script=html.slice(html.indexOf('id="event-cancel-script">')+'id="event-cancel-script">'.length,html.indexOf('</script>',html.indexOf('id="event-cancel-script">')));
+ const listeners={};
+ const closeBtn={focus(){document.activeElement=closeBtn;},addEventListener(type,fn){listeners[type]=fn;}};
+ const phone={focus(){document.activeElement=phone;}};
+ const card={querySelectorAll(){return [phone,closeBtn];}};
+ const root={hidden:true,querySelector(sel){return sel==='[role="dialog"]'?card:null;}};
+ const header={inert:false},main={inert:false},footer={inert:false};
+ const body={style:{},children:[header,root,main,footer]};
+ const document={activeElement:null,documentElement:{classList:{toggle(){}}},body,getElementById(id){return id==='event-cancel-modal'?root:id==='event-cancel-close'?closeBtn:id==='main'?main:null;},addEventListener(type,fn){listeners[type]=fn;}};
+ const window={scrollY:40,scrollTo(_x,y){window.scrollY=y;}};
+ vm.runInNewContext(script,{document,window});
+ return {root,closeBtn,phone,header,main,footer,body,listeners,window,document};
+}
+const modalPage=bootModal(live.en.html);
+assert.equal(modalPage.root.hidden,false,'modal opens on load');
+assert.equal(modalPage.document.activeElement,modalPage.closeBtn,'focus starts on Got it');
+assert.equal(modalPage.body.style.position,'fixed','page behind the modal cannot scroll');
+assert.equal(modalPage.header.inert,true,'header is blocked');
+assert.equal(modalPage.main.inert,true,'page is blocked');
+assert.equal(modalPage.footer.inert,true,'footer is blocked');
+assert.equal(modalPage.root.inert,undefined,'the dialog itself stays usable');
+modalPage.listeners.keydown({key:'Tab',shiftKey:false,preventDefault(){this.prevented=true;}});
+assert.equal(modalPage.document.activeElement,modalPage.phone,'Tab wraps inside the dialog');
+modalPage.listeners.keydown({key:'Escape',preventDefault(){}});
+assert.equal(modalPage.root.hidden,true,'Escape closes the modal');
+assert.equal(modalPage.body.style.position,'','page scrolls again after close');
+assert.equal(modalPage.main.inert,false,'page is usable after close');
+assert.equal(modalPage.window.scrollY,40,'scroll position is restored');
+modalPage.listeners.click();
+assert.equal(modalPage.root.hidden,true,'Got it stays closed');
+const again=bootModal(live.es.html);
+again.listeners.click();
+assert.equal(again.root.hidden,true,'Entendido closes the modal');
+assert.equal(again.body.style.position,'','Spanish close restores the page');
+console.log('PASS: cancel modal opens on each load, traps focus, and closes with Escape or the button.');
+assert.ok(!fs.existsSync('dist/events/doral-2026-11-06.ics'),'static calendar file is not published');
+assert.ok(!fs.readFileSync('dist/_headers','utf8').includes('text/calendar'),'headers do not advertise a calendar');
 const icsFn=fs.readFileSync('functions/events/doral-2026-11-06.ics.js','utf8');
 assert.ok(!/from ['"]node:|require\(/.test(icsFn),'ics function must not import node: modules');
+assert.ok(!icsFn.includes('BEGIN:VCALENDAR')&&!icsFn.includes('DTSTART'),'ics function does not embed an event');
 const {onRequest:serveIcs}=await import('./functions/events/doral-2026-11-06.ics.js');
 const icsRes=await serveIcs();
-assert.equal(icsRes.headers.get('content-type'),'text/calendar; charset=utf-8','function content type');
+assert.equal(icsRes.status,410,'calendar URL is gone');
+assert.equal(icsRes.headers.get('content-type'),'text/plain; charset=utf-8','function content type');
 assert.equal(icsRes.headers.get('x-content-type-options'),'nosniff');
-assert.equal(await icsRes.text(),ics,'function body matches the static file');
+const icsBody=await icsRes.text();
+assert.ok(!icsBody.includes('BEGIN:VCALENDAR')&&!icsBody.includes('DTSTART:'),'response is not a calendar');
+assert.match(icsBody,/Postponed/);
 const signup=fs.readFileSync('event-signup.js','utf8');
 assert.ok(signup.includes('viernes 6 de noviembre de 2026, 6:00 p. m.')&&signup.includes('vino y picadas'),'ES confirmation');
 assert.ok(signup.includes('Friday, November 6, 2026, 6:00 PM')&&signup.includes('wine and light bites'),'EN confirmation');
@@ -139,7 +186,7 @@ assert.equal(rules.find(r=>r.from==='/en/plastic-surgery-cartagena-talk-doral/')
 assert.equal(rules.find(r=>r.from==='/es/charla-cirugia-cartagena-doral/')?.to,'/es/conversatorio-belleza-estetica-doral/');
 assert.equal(rules.find(r=>r.from==='/es/charla-mommy-makeover-doral-v1/')?.to,undefined,'v1 Spanish path is not published');
 assert.equal(rules.find(r=>r.from==='/mommy-makeover-talk-doral-v1/')?.to,undefined,'v1 English path is not published');
-console.log('PASS: Aromas event landing ES/EN — sitemap, production canonicals, hreflang pair, Event schema, copy rules, live form. Fulvio v1 is not published.');
+console.log('PASS: Aromas event landing ES/EN — sitemap, canonicals, hreflang, EventPostponed, postponement notice, cancel modal, no form or calendar. Fulvio v1 is not published.');
 
 function bootSignup({lang='es',shell='aromas',href,storage=new Map(),interest,accept=true,national,dial='+1',otherDial=''}={}){
  const requests=[];const listeners={};

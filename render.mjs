@@ -86,7 +86,7 @@ for(const lang of ['en','es']){
  // Aromas Med Spa shell at the public event URLs. Indexable on production (in the sitemap).
  // Canonical, hreflang and og:url are rewritten to https://fulviocorrea.com by audit.mjs.
  // The Fulvio -v1 backup is not published: nothing else imports those routes.
- {const route=url(EVENT_SLUG),file=path.join('dist',route,'index.html');fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,aromasEventHtml({lang,origin,consent,ghlGuard,gtm,privacyUrl:url('privacy/')}));pages.push({route,file,ads:false,lang,noindex:false,pairNoindex:true,cover:'/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp'});}
+ {const route=url(EVENT_SLUG),file=path.join('dist',route,'index.html');fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,aromasEventHtml({lang,origin,consent,ghlGuard,gtm}));pages.push({route,file,ads:false,lang,noindex:false,pairNoindex:true,cover:'/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp'});}
  const notFound=page('404/',lang==='en'?'Page not found':'Página no encontrada',t.notFound,intro('404','404',t.notFound)+`<section class="wrap section no-top">${button('back-home',t.home,url())}</section>`,{noindex:true});if(lang==='en')fs.writeFileSync('dist/404.html',notFound);
 }
 for(const p of pages.filter(p=>p.lang==='en')){const oldRoute=p.route.slice(3)||'/',file=path.join('dist',oldRoute,'index.html');fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,fs.readFileSync(p.file,'utf8').replace('<head>','<head><script src="/locale.js"></script>'));}

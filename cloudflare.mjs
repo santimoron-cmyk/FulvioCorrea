@@ -5,7 +5,6 @@
 //   functions/_shared/lead-procedures.js  allow-list used by the /api/lead Pages Function
 import fs from 'node:fs';
 import {robotsTxt} from './site-env.mjs';
-import {doralIcs,DORAL_ICS_PATH} from './event-calendar.mjs';
 const origin=JSON.parse(fs.readFileSync('config.json','utf8')).origin;
 export function writeCloudflareAdapter(production){
  const common=['  X-Content-Type-Options: nosniff','  Referrer-Policy: strict-origin-when-cross-origin','  Permissions-Policy: camera=(), microphone=(), geolocation=()','  X-Frame-Options: SAMEORIGIN'];
@@ -17,7 +16,6 @@ export function writeCloudflareAdapter(production){
   'https://:project.pages.dev/*','  X-Robots-Tag: noindex, nofollow',
   'https://:version.:project.pages.dev/*','  X-Robots-Tag: noindex, nofollow',
   '/api/leads.csv','  Cache-Control: no-store','  X-Robots-Tag: noindex, nofollow',
-  DORAL_ICS_PATH,'  Content-Type: text/calendar; charset=utf-8',
   '/assets/*','  Cache-Control: public, max-age=604800',
   // These four (plus thank-you.js) are also referenced as ?v=<sha> from every page.
   // A positive max-age is shorter than the apex 4-hour browser cache. The query string is the bust.
@@ -28,8 +26,6 @@ export function writeCloudflareAdapter(production){
   '/thank-you.js','  Cache-Control: public, max-age=300, must-revalidate',
   ''].join('\n');
  fs.writeFileSync('dist/_headers',headers);
- fs.mkdirSync('dist/events',{recursive:true});
- fs.writeFileSync('dist'+DORAL_ICS_PATH,doralIcs());
  fs.writeFileSync('dist/robots.txt',robotsTxt(production,origin));
  // _redirects: 2,000 static + 100 dynamic rules, 1,000 chars per rule.
  // Classification is order-dependent (workers-sdk #14694): the first source with
