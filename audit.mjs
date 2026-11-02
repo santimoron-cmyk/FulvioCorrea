@@ -193,9 +193,11 @@ const dynamicFrom=r=>/[*:]/.test(r.from);
 rules=[...rules.filter(r=>!dynamicFrom(r)),...rules.filter(dynamicFrom)];
 write('migration/redirects.json',JSON.stringify({active:production,productionHostingConfirmed:true,adapter:'cloudflare-pages',redirects:rules},null,2));const text=rules.map(r=>`${r.from} ${r.to} 301`).join('\n')+'\n';write('migration/_redirects.pending',text);write('dist/_redirects',text);
 write('migration/redirect-test.txt','# Run after production hostname is selected. Expect one 301, then 200; query strings preserved.\n'+rules.filter(r=>!r.to.includes(':')).map(r=>`curl -I "${origin+r.from.replace('*','example')}"\n# Expected: 301 Location: ${r.to}\ncurl -I "${origin+r.to.split('?')[0]}"\n# Expected: 200`).join('\n\n'));
-const indexed=[...pages.values()].filter(p=>(!p.noindex&&!p.ads)||/\/before-after\/$/.test(p.route));
-const xroute=p=>p.alternates.find(a=>a.lang==='en'&&!(pages.get(a.route)?.noindex))||p.alternates.find(a=>!(pages.get(a.route)?.noindex))||p.alternates[0];
-write('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'+indexed.map(p=>`<url><loc>${origin+p.route}</loc><lastmod>${p.updated||'2026-09-26'}</lastmod>${[...p.alternates,{lang:'x-default',route:xroute(p).route}].map(a=>`<xhtml:link rel="alternate" hreflang="${a.lang}" href="${origin+a.route}"/>`).join('')}</url>`).join('')+'</urlset>');
+// Sitemap lists indexable URLs only. A noindex or ads page is never a <loc> and never an hreflang alternate.
+const indexed=[...pages.values()].filter(p=>!p.noindex&&!p.ads);
+const altIndexable=a=>{const t=pages.get(a.route);return !!(t&&!t.noindex&&!t.ads);};
+const xroute=p=>p.alternates.find(a=>a.lang==='en'&&altIndexable(a))||p.alternates.find(altIndexable)||p.alternates[0];
+write('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'+indexed.map(p=>`<url><loc>${origin+p.route}</loc><lastmod>${p.updated||'2026-09-26'}</lastmod>${[...p.alternates.filter(altIndexable),{lang:'x-default',route:xroute(p).route}].map(a=>`<xhtml:link rel="alternate" hreflang="${a.lang}" href="${origin+a.route}"/>`).join('')}</url>`).join('')+'</urlset>');
 const sccp=practice.societies?.[0];
 const proceduresEn=data.filter(p=>p.lang==='en'&&p.offeredConfirmed);
 write('dist/llms.txt',[
