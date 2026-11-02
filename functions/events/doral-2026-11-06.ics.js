@@ -1,16 +1,17 @@
 // GET /events/doral-2026-11-06.ics
-// The same calendar is also written to dist/events/ for the local server. On Pages, this
-// Function owns the URL (same routing as functions/robots.txt.js) and sets text/calendar
-// itself, so a missing static asset cannot fall through to the HTML 404 page.
-import {doralIcs} from '../../event-calendar.mjs';
+// The November 6, 2026 Doral talk was postponed. This URL must not offer an active calendar
+// event. 410 tells calendars and old links the file is gone. The landing pages do not link
+// here. A new date, when it exists, should replace this response.
+const BODY = 'Postponed. The November 6, 2026 beauty and aesthetics talk at Aromas Med Spa Doral will not take place on that date. The new date will be posted at https://fulviocorrea.com/beauty-aesthetics-talk-doral/ and https://fulviocorrea.com/es/conversatorio-belleza-estetica-doral/\n';
 
 export async function onRequest() {
-  return new Response(doralIcs(), {
+  return new Response(BODY, {
+    status: 410,
     headers: {
-      'content-type': 'text/calendar; charset=utf-8',
+      'content-type': 'text/plain; charset=utf-8',
       'cache-control': 'public, max-age=300',
-      'content-disposition': 'inline; filename="doral-2026-11-06.ics"',
       'x-content-type-options': 'nosniff',
+      'x-robots-tag': 'noindex',
     },
   });
 }
