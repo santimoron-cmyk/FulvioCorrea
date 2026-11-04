@@ -89,7 +89,7 @@ Después de aterrizar en casa, la recuperación continúa. El trabajo de escrito
 
 Si estás comparando Cartagena para un mommy makeover, usa este artículo para la decisión de estadía y luego revisa detalles de procedimiento y candidatura en la página de [mommy makeover](/es/procedimientos/mommy-makeover/) y en [pacientes internacionales](/es/pacientes-internacionales/). Logística y evaluación clínica van juntas: un destino atractivo no sustituye el acceso a controles ni los criterios de autorización.
 
-Para notas de viaje específicas de liposucción, ver [liposucción en Colombia](/es/blog/liposuccion-colombia/)—ese tema es distinto al plan de estadía de un mommy makeover completo. Si la abdominoplastia es el componente que más pesa en tu combinación, también [abdominoplastia en Colombia](/es/blog/abdominoplastia-colombia/).
+Para notas de viaje específicas de liposucción, ver [liposucción en Colombia](/es/blog/liposuccion-colombia/)—ese tema es distinto al plan de estadía de un mommy makeover completo. Si la abdominoplastia es el componente que más pesa en tu combinación, también [abdominoplastia en Colombia](/es/blog/abdominoplastia-colombia/). Para saber qué define la cotización, revisa el [precio de la abdominoplastia en Colombia](/es/procedimientos/abdominoplastia/).
 
 ## Fuentes / Referencias médicas
 
