@@ -63,7 +63,7 @@ Lo que un plan más pequeño no cambia es la parte fija del presupuesto: la valo
 Algunas cotizaciones suben o bajan porque el plan cambia cuando el cirujano te examina. Según Mayo Clinic:
 
 - **La liposucción no es un método para bajar de peso.** Funciona mejor en quien tiene grasa en zonas específicas y un peso estable, y los resultados suelen durar si el peso se mantiene.
-- **No tensa la piel flácida.** Si la piel es fina y poco elástica, la zona tratada puede verse flácida. Cuando hay piel sobrante en el abdomen bajo, la conversación pasa a [¿abdominoplastia o liposucción?](/es/blog/abdominoplastia-o-liposuccion/) y a una lipoabdominoplastia, que se cotiza por caso.
+- **No tensa la piel flácida.** Si la piel es fina y poco elástica, la zona tratada puede verse flácida. Cuando hay piel sobrante en el abdomen bajo, la conversación pasa a [¿abdominoplastia o liposucción?](/es/blog/abdominoplastia-o-liposuccion/) y a una lipoabdominoplastia, que se cotiza por caso: mira de qué depende el [precio de la abdominoplastia en Colombia](/es/procedimientos/abdominoplastia/).
 - **No elimina la celulitis ni las estrías.** Desconfía de una cotización que lo prometa.
 - **El riesgo sube con más área y con procedimientos combinados.** Mayo Clinic señala que las complicaciones son más probables cuando se trabajan superficies más grandes del cuerpo o se hacen varios procedimientos en la misma cirugía. Es una razón médica, no solo de precio, para planear bien las zonas.
 

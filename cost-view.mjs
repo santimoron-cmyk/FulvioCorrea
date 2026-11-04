@@ -87,6 +87,28 @@ const reviews = [
 
 const practice = read('data/practice.json');
 
+// Optional per-procedure copy. Absent fields leave the shared block unchanged.
+function richText(s) {
+  return String(s).split(/(\[[^\]]+\]\([^)]+\))/g).map(part => {
+    const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!m) return esc(part);
+    if (!m[2].startsWith('/') || /["<>\s]/.test(m[2])) throw new Error('price link must be a site path');
+    return `<a href="${esc(m[2])}">${esc(m[1])}</a>`;
+  }).join('');
+}
+
+function procedurePriceOverride(procedure, {note, href, cta}) {
+  const factors = procedure.price_factors;
+  const steps = procedure.price_quote_steps;
+  if (!procedure.price_lead || !procedure.price_factors_title || !Array.isArray(factors) || !factors.length || !procedure.price_quote_title || !Array.isArray(steps) || !steps.length || !procedure.price_office) throw new Error(procedure.slug + ' price override is incomplete');
+  const street = practice.address?.streetAddress || '';
+  const locality = practice.address?.addressLocality || '';
+  if (!street || !procedure.price_office.includes(street) || !procedure.price_office.includes(locality)) throw new Error('price_office must include the practice.json address');
+  const items = `<ul class="question-list">${factors.map(x => `<li>${richText(x)}</li>`).join('')}</ul>`;
+  const quote = `<ol class="question-list">${steps.map(x => `<li>${richText(x)}</li>`).join('')}</ol>`;
+  return `<section id="estimated-cost" style="padding-right:clamp(72px,12vw,160px)"><h2>${esc(procedure.price_h2)}</h2><p>${esc(procedure.price_lead)}</p><p>${esc(note)}</p><h3>${esc(procedure.price_factors_title)}</h3>${items}<h3>${esc(procedure.price_quote_title)}</h3>${quote}<p>${esc(procedure.price_office)}</p><p><a href="${href}">${cta}</a></p></section>`;
+}
+
 export function procedureCostBlock(procedure) {
   const lang = procedure.lang;
   const es = lang === 'es';
@@ -109,6 +131,7 @@ export function procedureCostBlock(procedure) {
     : `The consultation fee is ${CONSULT.en}. That fee is not a surgery price.`;
   const items = `<ul class="question-list">${drivers[lang].map(x => `<li>${esc(x)}</li>`).join('')}</ul>`;
   const cta = es ? 'Agendar la valoración' : 'Book the valuation';
+  if (procedure.price_h2) return procedurePriceOverride(procedure, {note, href, cta});
   return `<section id="estimated-cost"><h2>${heading}</h2><p>${esc(lead)}</p><p>${esc(note)}</p>${items}<p>${esc(fee)}</p><p><a href="${href}">${cta}</a></p></section>`;
 }
 

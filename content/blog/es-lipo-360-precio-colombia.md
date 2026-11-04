@@ -49,7 +49,7 @@ Si buscas "lipo 360 precio Colombia", vas a encontrar cifras únicas dichas con 
 - **Qué técnica necesita el plan.** Mayo Clinic describe la liposucción asistida por succión, que es la más común, además de las técnicas asistidas por ultrasonido, por láser y por motor (PAL), y explica que el cirujano elige la técnica según tus objetivos, la zona a tratar y si ya te habías hecho una liposucción. Ningún equipo es la mejor opción para todas.
 - **Si es lipoescultura HD o no.** La lipoescultura HD y una lipo 360 que solo busca reducir volumen son planes distintos. Cada uno se cotiza por su lado después de la valoración.
 - **Qué se suma.** Brazos o piernas tienen su propio rango adicional. Si la grasa se transfiere a los glúteos, el plan pasa a ser un BBL, con sus propias normas de seguridad, y se cotiza por caso.
-- **Tu piel.** La liposucción no tensa la piel flácida. Si en la valoración aparece piel sobrante en el abdomen bajo o una pared abdominal distendida, la conversación pasa a [¿abdominoplastia o liposucción?](/es/blog/abdominoplastia-o-liposuccion/) o a una lipoabdominoplastia, que tiene otro precio.
+- **Tu piel.** La liposucción no tensa la piel flácida. Si en la valoración aparece piel sobrante en el abdomen bajo o una pared abdominal distendida, la conversación pasa a [¿abdominoplastia o liposucción?](/es/blog/abdominoplastia-o-liposuccion/) o a una lipoabdominoplastia, que se cotiza aparte: mira de qué depende el [precio de la abdominoplastia en Colombia](/es/procedimientos/abdominoplastia/).
 
 La respuesta honesta a "¿cuánto cuesta una lipo 360 en Colombia?" es una cotización escrita después de la valoración, sea lipoescultura HD o una lipo 360 que solo reduce volumen.
 
