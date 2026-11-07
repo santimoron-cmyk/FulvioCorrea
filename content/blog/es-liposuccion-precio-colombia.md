@@ -8,7 +8,7 @@ tags: ["liposuccion-colombia", "liposuccion-precio", "lipoescultura-precio", "li
 cover: "/assets/blog-liposuction-colombia-cost.webp"
 coverAlt: "Mujer con una camisa holgada de lino verde salvia caminando por una calle colonial sombreada de Cartagena, con un bolso de paja al hombro y una carpeta cerrada contra el pecho"
 date: "2026-10-30"
-updated: "2026-10-30"
+updated: "2026-11-07"
 author: "fulvio-correa"
 translationOf: "liposuction-colombia-cost"
 sources: ["https://fulviocorrea.com/es/agendar-valoracion/","https://www.mayoclinic.org/es/tests-procedures/liposuction/about/pac-20384586","https://medlineplus.gov/spanish/ency/article/002985.htm","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://cirugiaplastica.org.co/buscar-cirujano/","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx"]
@@ -88,7 +88,7 @@ Qué llevar y qué preguntar en la valoración está en [planear la liposucción
 
 ## Dónde encaja el Dr. Fulvio Correa
 
-El Dr. Fulvio Correa es cirujano plástico en Cartagena y Miembro de Número de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/); su trayectoria está en [sobre el doctor](/es/sobre-el-doctor/). Su consultorio está en Manzanillo del Mar, CC Ramblas, local 23, y opera en la [Clínica CAPRI](/es/clinica-capri/), otra dirección. Realiza [liposucción en Cartagena](/es/procedimientos/liposuccion/), incluida la lipoescultura HD, y en la valoración define qué zonas tienen sentido en tu caso, si el plan es liposucción o lipoescultura HD, y si conviene combinar algo más. Si vives fuera, el plan empieza con una valoración virtual y se confirma en persona antes de la cirugía.
+El Dr. Fulvio Correa es cirujano plástico en Cartagena y Miembro de Número de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/); su trayectoria está en [sobre el doctor](/es/sobre-el-doctor/). Su consultorio está en Manzanillo del Mar, CC Ramblas, local 23, y opera en la [Clínica CAPRI](/es/clinica-capri/), otra dirección. Realiza [liposucción en Cartagena](/es/procedimientos/liposuccion/), incluida la lipoescultura HD, y en la valoración define qué zonas tienen sentido en tu caso, si el plan es liposucción o lipoescultura HD, y si conviene combinar algo más. Si vives fuera, el plan empieza con una valoración virtual y se confirma en persona antes de la cirugía. Antes de comparar cifras, revisa en el inicio el [consultorio y la clínica](/es/).
 
 Para recibir una cotización escrita de liposucción, escríbele a Sofía. Ella coordina la valoración virtual, la cotización y la logística de tu estadía; las decisiones médicas son del cirujano.
 
