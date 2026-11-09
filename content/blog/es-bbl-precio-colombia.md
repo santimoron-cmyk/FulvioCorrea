@@ -21,13 +21,13 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**El BBL (lipotransferencia glútea) con el Dr. Fulvio Correa en Cartagena no tiene un precio de cirugía publicado: se cotiza por caso, después de una valoración que cuesta USD 150 (COP 400.000).** No es por esconder el número. Un BBL son dos cirugías en un mismo tiempo, una liposucción para obtener la grasa y el injerto de esa grasa en glúteos y caderas, y el tamaño de cada parte cambia de un cuerpo a otro. Antes de la valoración puedes revisar qué mueve la cotización y la lista de lo que toda cotización seria de un BBL en Colombia tiene que detallar. [Agenda la valoración](/es/agendar-valoracion/) cuando quieras la cifra escrita de tu plan.
+**El BBL (lipotransferencia glútea) con el Dr. Fulvio Correa en Cartagena no tiene un precio de cirugía publicado: se cotiza por caso, después de una valoración que cuesta USD 150 (COP 400.000).** No es por esconder el número. Un BBL son dos cirugías en un mismo tiempo, una liposucción para obtener la grasa y el injerto de esa grasa en glúteos y caderas, y el tamaño de cada parte cambia de un cuerpo a otro. Antes de la valoración puedes revisar qué mueve la cotización y la lista de lo que toda cotización seria de un BBL en Colombia tiene que detallar. [Agenda la valoración](/es/book-consultation/) cuando quieras la cifra escrita de tu plan.
 
 ## Qué se puede saber antes de la valoración
 
 | Concepto | Qué está publicado | Dónde seguir |
 |---|---|---|
-| BBL (transferencia de grasa a los glúteos) con el Dr. Fulvio Correa | Sin precio de cirugía publicado. Se cotiza por caso después de la valoración | [Agendar la valoración](/es/agendar-valoracion/) |
+| BBL (transferencia de grasa a los glúteos) con el Dr. Fulvio Correa | Sin precio de cirugía publicado. Se cotiza por caso después de la valoración | [Agendar la valoración](/es/book-consultation/) |
 | Valoración virtual o presencial | USD 150 / COP 400.000 | No es un precio de cirugía |
 | Gluteoplastia con implantes, otra cirugía | Se cotiza por caso. No es la misma cirugía que un BBL | [Aumento de glúteos en Cartagena](/es/procedimientos/aumento-de-gluteos/) |
 | Lipoescultura HD, liposucción sin transferencia de grasa | Se cotiza por caso. No es el precio de un BBL | [Precio de la liposucción en Colombia](/es/blog/liposuccion-precio-colombia/) |
@@ -122,7 +122,7 @@ La cotización puede dejar por fuera la anestesia, la clínica, los exámenes o 
 
 ## Fuentes / Referencias médicas
 
-- Dr. Fulvio Correa — [Agendar la valoración](/es/agendar-valoracion/) (la valoración cuesta USD 150 / COP 400.000; el BBL se cotiza después de esa visita)
+- Dr. Fulvio Correa — [Agendar la valoración](/es/book-consultation/) (la valoración cuesta USD 150 / COP 400.000; el BBL se cotiza después de esa visita)
 - Sociedad Americana de Cirujanos Plásticos (ASPS) — [Informe de estadísticas de cirugía plástica 2024 (copia archivada, en inglés)](https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf) (número de procedimientos de aumento de glúteos con injerto de grasa en 2024; los honorarios del cirujano se tratan aparte de la anestesia y la clínica)
 - ASPS / The Aesthetic Society — [Declaración conjunta de seguridad en injerto de grasa glúteo (2022, en inglés)](https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement)
 - ASPS — [Buttock enhancement: procedimiento](https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/procedure) y [recuperación](https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/recovery) (en inglés)

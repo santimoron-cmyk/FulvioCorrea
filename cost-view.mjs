@@ -97,6 +97,16 @@ function richText(s) {
   }).join('');
 }
 
+// Only the abdominoplastia "how to get a quote" step is the Sofía booking action
+// that was rendering as plain text. Keep every other price link unchanged.
+function quoteStep(procedure, step, index) {
+  const html = richText(step);
+  if (procedure.lang === 'es' && procedure.slug === 'tummy-tuck' && index === 0) {
+    return html.replace('<a href="/es/book-consultation/">', '<a class="button" href="/es/book-consultation/">');
+  }
+  return html;
+}
+
 function procedurePriceOverride(procedure, {note, href, cta}) {
   const factors = procedure.price_factors;
   const steps = procedure.price_quote_steps;
@@ -105,7 +115,7 @@ function procedurePriceOverride(procedure, {note, href, cta}) {
   const locality = practice.address?.addressLocality || '';
   if (!street || !procedure.price_office.includes(street) || !procedure.price_office.includes(locality)) throw new Error('price_office must include the practice.json address');
   const items = `<ul class="question-list">${factors.map(x => `<li>${richText(x)}</li>`).join('')}</ul>`;
-  const quote = `<ol class="question-list">${steps.map(x => `<li>${richText(x)}</li>`).join('')}</ol>`;
+  const quote = `<ol class="question-list">${steps.map((x, i) => `<li>${quoteStep(procedure, x, i)}</li>`).join('')}</ol>`;
   return `<section id="estimated-cost" style="padding-right:clamp(72px,12vw,160px)"><h2>${esc(procedure.price_h2)}</h2><p>${esc(procedure.price_lead)}</p><p>${esc(note)}</p><h3>${esc(procedure.price_factors_title)}</h3>${items}<h3>${esc(procedure.price_quote_title)}</h3>${quote}<p>${esc(procedure.price_office)}</p><p><a href="${href}">${cta}</a></p></section>`;
 }
 
