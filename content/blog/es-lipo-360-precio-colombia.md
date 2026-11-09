@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**Con el Dr. Fulvio Correa en Cartagena, la lipo 360 no tiene un precio de cirugía publicado.** La lipoescultura HD Liposurg, los brazos o las piernas sumados al plan, la lipo 360 convencional y la lipo 360 con transferencia a glúteos se cotizan por caso después de la valoración, que cuesta USD 150 (COP 400.000). [Agenda la valoración](/es/agendar-valoracion/) para la cifra escrita.
+**Con el Dr. Fulvio Correa en Cartagena, la lipo 360 no tiene un precio de cirugía publicado.** La lipoescultura HD Liposurg, los brazos o las piernas sumados al plan, la lipo 360 convencional y la lipo 360 con transferencia a glúteos se cotizan por caso después de la valoración, que cuesta USD 150 (COP 400.000). [Agenda la valoración](/es/book-consultation/) para la cifra escrita.
 
 "Lipo 360" no es una cirugía distinta. Es el nombre con el que se conoce la liposucción de abdomen, cintura (flancos) y espalda en la misma cirugía, para trabajar todo el contorno "alrededor". Por eso el precio depende mucho más de tu plan que del nombre. Esta guía explica qué cambia una cotización de lipo 360 en Colombia, aquí o en otro consultorio.
 
@@ -128,7 +128,7 @@ La ASPS sugiere al menos de cinco a siete días después de una liposucción ant
 
 ## Fuentes / Referencias médicas
 
-- Dr. Fulvio Correa — [Agendar la valoración](/es/agendar-valoracion/) (la valoración cuesta USD 150 / COP 400.000; la lipo 360 se cotiza después de esa visita)
+- Dr. Fulvio Correa — [Agendar la valoración](/es/book-consultation/) (la valoración cuesta USD 150 / COP 400.000; la lipo 360 se cotiza después de esa visita)
 - Mayo Clinic — [Liposucción](https://www.mayoclinic.org/es/tests-procedures/liposuction/about/pac-20384586) (técnicas, opciones de anestesia, noche de observación, mayor riesgo con áreas grandes o varios procedimientos, cambios de líquidos en cirugías de gran volumen)
 - Sociedad Colombiana de Cirugía Plástica (SCCP) — [Lipoescultura](https://cirugiaplastica.org.co/procedimientos/lipoescultura/) (información para pacientes sobre la lipoescultura)
 - MedlinePlus en español — [Liposucción](https://medlineplus.gov/spanish/ency/article/002985.htm) (qué es la liposucción, riesgos y recuperación)
