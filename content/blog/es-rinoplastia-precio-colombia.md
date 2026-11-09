@@ -22,13 +22,13 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**La rinoplastia con el Dr. Fulvio Correa en Cartagena no tiene un precio de cirugía publicado.** Tu valor queda por escrito después de la valoración, que cuesta USD 150 (COP 400.000), virtual o presencial. Aquí está qué mueve una cotización de rinoplastia, qué mide de verdad un titular de honorarios en Estados Unidos y qué renglones debe traer por escrito una cotización de rinoplastia en Colombia antes de comprar el tiquete. [Agenda la valoración](/es/agendar-valoracion/) cuando quieras la cifra de tu nariz.
+**La rinoplastia con el Dr. Fulvio Correa en Cartagena no tiene un precio de cirugía publicado.** Tu valor queda por escrito después de la valoración, que cuesta USD 150 (COP 400.000), virtual o presencial. Aquí está qué mueve una cotización de rinoplastia, qué mide de verdad un titular de honorarios en Estados Unidos y qué renglones debe traer por escrito una cotización de rinoplastia en Colombia antes de comprar el tiquete. [Agenda la valoración](/es/book-consultation/) cuando quieras la cifra de tu nariz.
 
 ## Qué está publicado antes de la valoración
 
 | Concepto | Qué está publicado | Dónde seguir |
 |---|---|---|
-| Rinoplastia con el Dr. Fulvio Correa, Cartagena | Sin precio de cirugía publicado. Se cotiza después de la valoración | [Agendar la valoración](/es/agendar-valoracion/) |
+| Rinoplastia con el Dr. Fulvio Correa, Cartagena | Sin precio de cirugía publicado. Se cotiza después de la valoración | [Agendar la valoración](/es/book-consultation/) |
 | Valoración virtual o presencial | USD 150 / COP 400.000 | No es un precio de cirugía |
 | Párpados o un lifting en el mismo viaje | Se cotizan como un solo plan, no sumando precios | [Rinoplastia en Cartagena](/es/procedimientos/rinoplastia/) |
 
@@ -95,7 +95,7 @@ La lista completa para comparar cirujanos está en [cómo elegir al mejor ciruja
 
 ## El papel del Dr. Fulvio Correa
 
-El Dr. Fulvio Correa es cirujano plástico en Cartagena y Miembro de Número de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). Valora personalmente a cada paciente de [rinoplastia en Cartagena](/es/procedimientos/rinoplastia/), define si el plan es estético, funcional o ambos, y después llega la cotización escrita. Opera en la [Clínica CAPRI](/es/clinica-capri/), una dirección distinta a la de su consultorio en Manzanillo del Mar, CC Ramblas, local 23. Si vives fuera, el [programa para pacientes internacionales](/es/pacientes-internacionales/) empieza con una valoración virtual a partir de fotos de frente y de perfil; el plan se confirma en persona antes de la cirugía. La cotización escrita llega después de [agendar la valoración](/es/agendar-valoracion/).
+El Dr. Fulvio Correa es cirujano plástico en Cartagena y Miembro de Número de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). Valora personalmente a cada paciente de [rinoplastia en Cartagena](/es/procedimientos/rinoplastia/), define si el plan es estético, funcional o ambos, y después llega la cotización escrita. Opera en la [Clínica CAPRI](/es/clinica-capri/), una dirección distinta a la de su consultorio en Manzanillo del Mar, CC Ramblas, local 23. Si vives fuera, el [programa para pacientes internacionales](/es/pacientes-internacionales/) empieza con una valoración virtual a partir de fotos de frente y de perfil; el plan se confirma en persona antes de la cirugía. La cotización escrita llega después de [agendar la valoración](/es/book-consultation/).
 
 Para recibir una cotización escrita de rinoplastia, escríbele a Sofía. Ella coordina la valoración virtual, la cotización y la logística de tu estadía; las decisiones médicas corresponden al cirujano.
 
@@ -125,7 +125,7 @@ Se cotiza por caso después de la valoración. Mayo Clinic aconseja esperar al m
 
 ## Fuentes / Referencias médicas
 
-- Dr. Fulvio Correa — [Agendar la valoración](/es/agendar-valoracion/) (la valoración cuesta USD 150 / COP 400.000; la rinoplastia se cotiza después de esa visita)
+- Dr. Fulvio Correa — [Agendar la valoración](/es/book-consultation/) (la valoración cuesta USD 150 / COP 400.000; la rinoplastia se cotiza después de esa visita)
 - American Society of Plastic Surgeons — [Informe de estadísticas de cirugía plástica 2024 (copia archivada)](https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf) (en inglés; los honorarios del cirujano se tratan aparte de la anestesia y la institución)
 - Mayo Clinic — [Rhinoplasty](https://www.mayoclinic.org/tests-procedures/rhinoplasty/about/pac-20384532) (en inglés; qué define el costo, origen del cartílago, septoplastia, anestesia, férula, plazo para una revisión, cómo elegir cirujano)
 - MedlinePlus en español — [Rinoplastia](https://medlineplus.gov/spanish/ency/article/002983.htm)

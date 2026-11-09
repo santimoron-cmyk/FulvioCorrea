@@ -21,7 +21,7 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**Con el Dr. Fulvio Correa en Cartagena, la liposucción no tiene un precio de cirugía publicado.** La lipoescultura HD (Liposurg), los brazos o las piernas sumados a un plan, la tecnología de retracción y la liposucción que no es HD se cotizan por caso después de la valoración, que vale USD 150 (COP 400.000), virtual o presencial. Esta guía explica qué cambia la cotización y por qué un precio "por zona" que viste en internet solo sirve para comparar si describe la misma cirugía. [Agenda la valoración](/es/agendar-valoracion/) para la cifra escrita.
+**Con el Dr. Fulvio Correa en Cartagena, la liposucción no tiene un precio de cirugía publicado.** La lipoescultura HD (Liposurg), los brazos o las piernas sumados a un plan, la tecnología de retracción y la liposucción que no es HD se cotizan por caso después de la valoración, que vale USD 150 (COP 400.000), virtual o presencial. Esta guía explica qué cambia la cotización y por qué un precio "por zona" que viste en internet solo sirve para comparar si describe la misma cirugía. [Agenda la valoración](/es/book-consultation/) para la cifra escrita.
 
 ## Cuatro nombres, cuatro planes distintos
 
@@ -38,7 +38,7 @@ review_date: ""
 | Grasa y piel sobrante en el abdomen bajo | Lipoabdominoplastia | Se cotiza por caso. No es la misma cirugía que una liposucción |
 | Valoración, virtual o presencial | — | USD 150 / COP 400.000 |
 
-La tarifa de la valoración no es un precio de cirugía. Sumar planes de cabeza no da el precio de una cirugía combinada, que se cotiza completa. [Agenda la valoración](/es/agendar-valoracion/) para la cotización escrita.
+La tarifa de la valoración no es un precio de cirugía. Sumar planes de cabeza no da el precio de una cirugía combinada, que se cotiza completa. [Agenda la valoración](/es/book-consultation/) para la cotización escrita.
 
 La cotización real siempre llega después de la valoración virtual o presencial y no compromete al doctor a operar.
 
@@ -118,7 +118,7 @@ Al menos 14 días después de la liposucción si vuelas con Avianca, o 15 si se 
 
 ## Fuentes / Referencias médicas
 
-- Dr. Fulvio Correa — [Agendar la valoración](/es/agendar-valoracion/) (la valoración cuesta USD 150 / COP 400.000; la liposucción se cotiza después de esa visita)
+- Dr. Fulvio Correa — [Agendar la valoración](/es/book-consultation/) (la valoración cuesta USD 150 / COP 400.000; la liposucción se cotiza después de esa visita)
 - Mayo Clinic — [Liposucción](https://www.mayoclinic.org/es/tests-procedures/liposuction/about/pac-20384586) (zonas tratables, no es para bajar de peso, piel flácida, celulitis y estrías, riesgo con más área, consultorio u hospital, anestesia, prendas de compresión)
 - MedlinePlus en español — [Liposucción](https://medlineplus.gov/spanish/ency/article/002985.htm)
 - American Society of Plastic Surgeons — [Briefing Paper: Cosmetic Surgery Tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (en inglés; de cinco a siete días antes de volar tras procedimientos corporales)
