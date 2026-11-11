@@ -2689,7 +2689,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-30",
+    "updated": "2026-11-11",
     "schemas": [],
     "alternates": [
       {
@@ -2761,7 +2761,7 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-27",
+    "updated": "2026-11-11",
     "schemas": [],
     "alternates": [
       {
@@ -3242,14 +3242,14 @@
     "lang": "en",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-27",
+    "updated": "2026-11-11",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Liposuction Recovery Time: A Week-by-Week Timeline",
         "datePublished": "2026-10-21",
-        "dateModified": "2026-10-27",
+        "dateModified": "2026-11-11",
         "inLanguage": "en",
         "image": [
           "https://fulviocorrea.com/assets/blog-liposuction-recovery.webp",
@@ -3325,6 +3325,30 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Firm areas are common while swelling resolves, and the SCCP notes that fibrosis often needs specialized massage. Tell your surgeon about any lump that grows, hurts more or feels fluid-filled."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should I stay in Colombia after liposuction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "At least until your surgeon clears you to fly: ASPS suggests five to seven days after liposuction as a recovery minimum, and Avianca requires 14 days (15 for combined body procedures). Add arrival days for the evaluation before surgery and a few days of margin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I exercise after liposuction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Aesthetic Society says strenuous exercise waits four to six weeks, and ASPS starts gentle exercise from week six. The NHS is more cautious, with gentle exercise at three to four weeks and nothing strenuous for 10 to 12 weeks. Your surgeon clears you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I go to the beach after liposuction in Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not in the first weeks. The Aesthetic Society recommends no sun or heat exposure for at least six weeks, and ASPS and the CDC Yellow Book warn that sunbathing and swimming after surgery can compromise healing. Short walks in the shade are fine."
             }
           }
         ]
@@ -4690,7 +4714,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-11-07",
+    "updated": "2026-11-11",
     "schemas": [],
     "alternates": [
       {
@@ -4762,7 +4786,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-11-07",
+    "updated": "2026-11-11",
     "schemas": [],
     "alternates": [
       {
@@ -5243,14 +5267,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-10-27",
+    "updated": "2026-11-11",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Recuperación de la liposucción: tiempos, faja y viaje",
         "datePublished": "2026-10-21",
-        "dateModified": "2026-10-27",
+        "dateModified": "2026-11-11",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-liposuction-recovery.webp",
@@ -5326,6 +5350,30 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Sí, es frecuente mientras baja la inflamación, y la SCCP explica que la fibrosis puede necesitar masajes especializados. Avisa a tu cirujano si la zona crece, duele más o se siente con líquido."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos días debo quedarme en Cartagena después de una liposucción?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Por lo menos hasta que tu cirujano te autorice a volar: la ASPS sugiere de cinco a siete días como mínimo de recuperación y Avianca exige 14 (15 si se combinan procedimientos corporales). Suma los días de llegada para la valoración y unos días de margen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo puedo hacer ejercicio después de una lipo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MedlinePlus pide evitar el ejercicio extenuante más o menos un mes y The Aesthetic Society habla de cuatro a seis semanas. Caminar sí se recomienda desde el primer día (SCCP). Tu cirujano te dice cuándo retomar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo ir a la playa después de una lipo en Cartagena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En las primeras semanas, no. The Aesthetic Society recomienda no exponerse al sol ni al calor durante al menos seis semanas, y la ASPS y el CDC advierten que tomar el sol y nadar después de una cirugía pueden afectar la cicatrización. Caminar un rato a la sombra sí."
             }
           }
         ]

@@ -1,8 +1,8 @@
 ---
 title: "Liposuction Recovery Time: A Week-by-Week Timeline"
 description: "Liposuction recovery time week by week: swelling peaks at 48 hours, desk work in days, garment for weeks, exercise at 4–6 weeks, and when you can fly home."
-seoTitle: "Liposuction Recovery Week by Week: What to Expect"
-seoDescription: "A week-by-week liposuction recovery timeline: swelling, compression garment, return to desk work, exercise, and when flying home is usually discussed."
+seoTitle: "Liposuction Recovery Time Week by Week | Dr. Fulvio Correa"
+seoDescription: "Liposuction recovery time, week by week: swelling, compression garment, desk work, exercise, and how many days to stay in Cartagena, Colombia before flying."
 slug: "liposuction-recovery"
 lang: "en"
 category: "Recovery"
@@ -10,7 +10,7 @@ tags: ["liposuction-recovery", "liposuction-recovery-time", "lipo-recovery", "co
 cover: "/assets/blog-liposuction-recovery.webp"
 coverAlt: "Woman in a loose linen dress and sun hat walking slowly along Cartagena's old city wall in the late afternoon, with the sea behind her"
 date: "2026-10-21"
-updated: "2026-10-27"
+updated: "2026-11-11"
 author: "fulvio-correa"
 translationOf: "recuperacion-liposuccion"
 sources: ["https://www.plasticsurgery.org/cosmetic-procedures/liposuction/recovery","https://www.theaestheticsociety.org/procedures/body/liposuction/aftercare-recovery","https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586","https://www.nhs.uk/tests-and-treatments/cosmetic-procedures/cosmetic-surgery/liposuction/","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.plasticsurgery.org/news/articles/eight-ways-to-make-liposuction-recovery-a-breeze","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/en-us/articles/13090597036315-Are-there-any-travel-restrictions-for-passengers-with-special-medical-conditions","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html"]
@@ -27,6 +27,15 @@ review_date: ""
 
 These are general ranges, not a personal plan. How many areas are treated, how much fat is removed, whether anything else is done in the same operation and how your body heals all move the dates. Your surgeon sets your timeline after surgery.
 
+## Liposuction recovery time: the short answer
+
+- **Back to a desk job:** within a few days for many people (Mayo Clinic, The Aesthetic Society); ASPS places the return to work at weeks two to three, depending on the job.
+- **Compression garment:** usually four to six weeks (The Aesthetic Society); Mayo Clinic says "a few weeks." Your surgeon sets the type and duration.
+- **Exercise:** strenuous exercise waits four to six weeks (The Aesthetic Society) and ASPS starts gentle exercise from week six. The NHS is more cautious: gentle exercise at three to four weeks and nothing strenuous for 10 to 12 weeks.
+- **Sun and heat:** none for at least six weeks, including sunbathing (The Aesthetic Society).
+- **Flying home from Colombia:** at least five to seven days after surgery as a recovery minimum (ASPS); Avianca lists 14 days, or 15 when two or more body procedures are combined, with a medical certificate.
+- **Final result:** the area looks slimmer within several months (Mayo Clinic) and can take up to six months to settle (NHS).
+
 ## Liposuction recovery time at a glance
 
 | Stage | What general sources describe |
@@ -38,7 +47,7 @@ These are general ranges, not a personal plan. How many areas are treated, how m
 | Week 6 and beyond | Gentle exercise and a gradual return to full activity (ASPS); no sun or heat exposure before six weeks (The Aesthetic Society) |
 | Months 3 to 6 | The area looks slimmer within several months (Mayo Clinic); NHS says it can take up to six months to settle completely |
 
-## Liposuction recovery week by week
+## Liposuction recovery day by day and week by week
 
 The milestones below come from patient guidance published by ASPS, The Aesthetic Society, Mayo Clinic, the NHS and the Colombian Society of Plastic Surgery (SCCP). Where they disagree, both numbers are shown, because the disagreement itself tells you how much recovery varies.
 
@@ -107,6 +116,10 @@ Two published numbers apply, and they are not the same:
 
 So the practical answer depends on how you fly. If you are flying Avianca out of Colombia, plan on at least 14 days, or 15 for a combined plan, plus your surgeon's clearance. On another airline, the ASPS window is the recovery minimum, but check that airline's own rules before you buy the ticket, and keep the return date changeable. The full table by procedure is in [flying after plastic surgery](/blog/flying-after-plastic-surgery/).
 
+### How long should you stay in Colombia after liposuction?
+
+Plan the trip around the flight home, not the surgery date. Count the arrival days for your in-person evaluation, the surgery itself, and then at least five to seven days after surgery (the ASPS recovery minimum) or 14 days if you fly Avianca (15 for combined body procedures). Add the pre-flight check with your surgeon and a few days of margin. The stay plan for [liposuction in Cartagena, Colombia](/procedures/liposuction/) is confirmed at that check, not before surgery.
+
 ### Building the stay
 
 1. Arrival days for the in-person evaluation and any tests your surgeon asks for.
@@ -162,6 +175,15 @@ Mayo Clinic says the area looks less bulky once swelling goes down in a few week
 
 **Is it normal to feel hard lumps after liposuction?**
 Firm areas are common while swelling resolves, and the SCCP notes that fibrosis often needs specialized massage. Tell your surgeon about any lump that grows, hurts more or feels fluid-filled.
+
+**How long should I stay in Colombia after liposuction?**
+At least until your surgeon clears you to fly: ASPS suggests five to seven days after liposuction as a recovery minimum, and Avianca requires 14 days (15 for combined body procedures). Add arrival days for the evaluation before surgery and a few days of margin.
+
+**When can I exercise after liposuction?**
+The Aesthetic Society says strenuous exercise waits four to six weeks, and ASPS starts gentle exercise from week six. The NHS is more cautious, with gentle exercise at three to four weeks and nothing strenuous for 10 to 12 weeks. Your surgeon clears you.
+
+**Can I go to the beach after liposuction in Cartagena?**
+Not in the first weeks. The Aesthetic Society recommends no sun or heat exposure for at least six weeks, and ASPS and the CDC Yellow Book warn that sunbathing and swimming after surgery can compromise healing. Short walks in the shade are fine.
 
 Prefer Spanish? Read the twin guide: <a href="/es/blog/recuperacion-liposuccion/" data-language="es" hreflang="es" lang="es">Recuperación de la liposucción: tiempos, faja y viaje</a>.
 
