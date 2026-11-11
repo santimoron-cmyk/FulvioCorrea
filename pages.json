@@ -3350,6 +3350,22 @@
               "@type": "Answer",
               "text": "Not in the first weeks. The Aesthetic Society recommends no sun or heat exposure for at least six weeks, and ASPS and the CDC Yellow Book warn that sunbathing and swimming after surgery can compromise healing. Short walks in the shade are fine."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Does liposuction recovery differ by the area treated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cleveland Clinic says it does: recovery changes with how much fat is removed and from which area. The abdomen, flanks, arms, thighs and chin or neck share the same broad stages, and the garment and the dates are set for your operation. A published range is not your plan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do you wear after chin or neck liposuction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASPS describes a compression garment that wraps around the head and under the chin. Cleveland Clinic's double-chin guide, which includes chin liposuction, says you may go home with bandages and possibly a chin strap. An ASPS article describes day-and-night wear for about one to three weeks, then nights, and says the exact time varies by procedure. Your surgeon sets it."
+            }
           }
         ]
       }
@@ -5374,6 +5390,22 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "En las primeras semanas, no. The Aesthetic Society recomienda no exponerse al sol ni al calor durante al menos seis semanas, y la ASPS y el CDC advierten que tomar el sol y nadar después de una cirugía pueden afectar la cicatrización. Caminar un rato a la sombra sí."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La recuperación de la liposucción cambia según la zona tratada?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cleveland Clinic dice que sí: cambia según cuánta grasa se extrae y de qué zona. Abdomen, flancos, brazos, muslos y mentón o cuello comparten las mismas etapas generales, y la faja y las fechas se definen para tu cirugía. Un plazo publicado no es tu plan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué se usa después de una liposucción de mentón o de cuello?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La ASPS describe una prenda de compresión que rodea la cabeza y pasa por debajo del mentón. La guía de Cleveland Clinic sobre la papada, que incluye la liposucción de mentón, dice que puedes irte a casa con vendajes y a veces con una mentonera. Un artículo de la ASPS describe el uso de día y de noche durante una a tres semanas y luego por las noches, y aclara que el tiempo exacto varía según el procedimiento. Lo fija tu cirujano."
             }
           }
         ]
