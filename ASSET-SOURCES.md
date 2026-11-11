@@ -17,7 +17,7 @@ Exact demo asset prefix: https://rejuvita.cmsmasters.studio/main/wp-content/uplo
 
 - fulvio-logo-footer.png: actual gold transparent 290x290 brand logo. Source https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/e3651db6-323b-450a-8955-6507d4cd1dc6.png . Verified img alt 'Dr. Fulvio Correa Logo' in homepage footer. Logo contains 'FULVIO CORREA' and 'Cirujano Plastico'.
 - fulvio-logo-header.png: actual homepage navigation brand logo. Source https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/663d3acf6f4c355fbd01d184.png . Verified alt 'Brand Logo'.
-- yarima-marquez.webp: actual portrait adjacent to YARIMA MARQUEZ on cached staff page. Exact role: 'Experiences Coach'. Downloaded existing optimized 640 variant: https://images.leadconnectorhq.com/image/f_webp/q_80/r_640/u_https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/66e1a684163e267bddd3dc60.webp . Original is https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/66e1a684163e267bddd3dc60.webp .
+- yarima-marquez.webp: archived portrait adjacent to YARIMA MARQUEZ on a cached staff page. Former role: 'Experiences Coach'. She is no longer on the team and this file is not referenced by any page, so the build does not deploy it. Do not add it back to a team listing. Downloaded existing optimized 640 variant: https://images.leadconnectorhq.com/image/f_webp/q_80/r_640/u_https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/66e1a684163e267bddd3dc60.webp . Original is https://assets.cdn.filesafe.space/Dsw5TTvdJGEKvFmjzgDD/media/66e1a684163e267bddd3dc60.webp .
 
 ## Additional category assets
 
