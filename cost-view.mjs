@@ -141,6 +141,12 @@ export function procedureCostBlock(procedure) {
     : `The consultation fee is ${CONSULT.en}. That fee is not a surgery price.`;
   const items = `<ul class="question-list">${drivers[lang].map(x => `<li>${esc(x)}</li>`).join('')}</ul>`;
   const cta = es ? 'Agendar la valoración' : 'Book the valuation';
+  // Spanish liposuction keeps one short quote section and sends price intent to the posts.
+  if (procedure.lang === 'es' && procedure.slug === 'liposuction') {
+    const quote = 'El valor cambia según el número de zonas, la cantidad de grasa, la técnica y la tecnología, y si vas a combinarla con otra cirugía o hay noche de hospitalización. La cifra exacta se escribe después de la valoración, virtual o presencial; la valoración cuesta USD 150 / COP 400.000 y esa tarifa no es un precio de cirugía.';
+    const detail = `El detalle está en <a href="/es/blog/liposuccion-precio-colombia/">cuánto cuesta una lipo en Colombia</a> y en el <a href="/es/blog/lipo-360-precio-colombia/">precio de la lipo 360 en Colombia</a>.`;
+    return `<section id="estimated-cost"><h2>Valoración y cotización de la lipoescultura en Cartagena</h2><p>${esc(quote)}</p><p>${detail}</p><p><a href="${href}">${cta}</a></p></section>`;
+  }
   if (procedure.price_h2) return procedurePriceOverride(procedure, {note, href, cta});
   return `<section id="estimated-cost"><h2>${heading}</h2><p>${esc(lead)}</p><p>${esc(note)}</p>${items}<p>${esc(fee)}</p><p><a href="${href}">${cta}</a></p></section>`;
 }
