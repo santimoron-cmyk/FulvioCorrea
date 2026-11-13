@@ -1,7 +1,8 @@
 ---
 title: "¿Cuánto cuesta una lipo en Colombia? Precios de liposucción"
 description: "Qué mirar para saber cuánto cuesta una lipo o lipoescultura en Colombia: el plan se cotiza tras la valoración en Cartagena."
-seoDescription: "Qué mirar para saber cuánto cuesta una lipo o lipoescultura en Colombia: el plan se cotiza tras la valoración en Cartagena."
+seoTitle: "Precio de la lipo en Colombia: qué incluye"
+seoDescription: "Qué incluye una cotización de lipo en Colombia, qué cambia el costo y cómo compararla. El plan se escribe tras la valoración en Cartagena."
 slug: "liposuccion-precio-colombia"
 lang: "es"
 category: "Body Contouring"
@@ -126,7 +127,7 @@ Depende del plan que se define en la valoración. El procedimiento se explica en
 **¿Cuántos días debo presupuestar en Cartagena?**
 Al menos 14 días después de la liposucción si vuelas con Avianca, o 15 si se combinan procedimientos corporales, más tus días previos. Tu cirujano confirma la fecha después de examinarte.
 
-¿Prefieres leer en inglés? Consulta la guía gemela: <a href="/blog/liposuction-colombia-cost/" data-language="en" hreflang="en" lang="en">How Much Does Lipo Cost in Colombia? Liposuction Prices</a>.
+¿Prefieres leer en inglés? Consulta la guía gemela: <a href="/blog/liposuction-colombia-cost/" data-language="en" hreflang="en" lang="en">Liposuction Cost in Colombia: What the Quote Includes</a>.
 
 ## Fuentes / Referencias médicas
 
