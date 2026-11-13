@@ -1,6 +1,8 @@
 ---
-title: "¿Cuánto cuesta un BBL en Colombia? Precio y seguridad"
-description: "Precio del BBL en Colombia con el Dr. Fulvio Correa en Cartagena: por qué la lipotransferencia glútea se cotiza por caso y qué debe detallar la cotización."
+title: "Precio del BBL en Colombia: qué incluye la cotización"
+description: "Qué incluye la cotización de un BBL en Colombia, qué cambia el costo y cómo comparar cirujanos. El plan se escribe después de la valoración en Cartagena."
+seoTitle: "Precio del BBL en Colombia: qué incluye"
+seoDescription: "Qué incluye la cotización de un BBL en Colombia, qué cambia el costo y cómo comparar cirujanos. El plan se escribe tras la valoración en Cartagena."
 slug: "bbl-precio-colombia"
 lang: "es"
 category: "Body Contouring"
@@ -8,7 +10,7 @@ tags: ["bbl-colombia", "bbl-precio", "lipotransferencia-glutea", "contorno-corpo
 cover: "/assets/blog-bbl-colombia-cost.webp"
 coverAlt: "Mujer con un vestido holgado de lino de manga larga de pie junto a la puerta abierta de un balcón de madera en Cartagena, con una carpeta cerrada en la mano, mirando el mar y los edificios de Bocagrande"
 date: "2026-10-26"
-updated: "2026-10-30"
+updated: "2026-11-13"
 author: "fulvio-correa"
 translationOf: "bbl-colombia-cost"
 sources: ["https://fulviocorrea.com/es/agendar-valoracion/","https://web.archive.org/web/20260101054337/https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf","https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/procedure","https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/recovery","https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx","https://prestadores.minsalud.gov.co/habilitacion/ayudas/Manual_HABILITACION_prestadores_novedades.pdf","https://cirugiaplastica.org.co/procedimientos/aumento-de-gluteos/"]
@@ -21,104 +23,91 @@ reviewed_by: ""
 review_date: ""
 ---
 
-**El BBL (lipotransferencia glútea) con el Dr. Fulvio Correa en Cartagena no tiene un precio de cirugía publicado: se cotiza por caso, después de una valoración que cuesta USD 150 (COP 400.000).** No es por esconder el número. Un BBL son dos cirugías en un mismo tiempo, una liposucción para obtener la grasa y el injerto de esa grasa en glúteos y caderas, y el tamaño de cada parte cambia de un cuerpo a otro. Antes de la valoración puedes revisar qué mueve la cotización y la lista de lo que toda cotización seria de un BBL en Colombia tiene que detallar. [Agenda la valoración](/es/book-consultation/) cuando quieras la cifra escrita de tu plan.
+**Cuánto cuesta un BBL en Colombia se escribe después de la valoración, porque el plan depende de las zonas donantes, de cuánta grasa se puede trasladar y de si se hace otro procedimiento en la misma cirugía.** Con el Dr. Fulvio Correa en Cartagena no hay un precio de cirugía publicado. Un BBL es una liposucción para obtener la grasa y el injerto de esa grasa en glúteos y caderas, y esas dos partes no miden lo mismo en cada cuerpo. La valoración, virtual o presencial, cuesta USD 150 / COP 400.000. Esa tarifa es la consulta. No es un precio de cirugía. [Agenda la valoración](/es/book-consultation/) cuando quieras la cifra escrita de tu plan.
 
-## Qué se puede saber antes de la valoración
+## Qué cambia el costo de un BBL
 
-| Concepto | Qué está publicado | Dónde seguir |
-|---|---|---|
-| BBL (transferencia de grasa a los glúteos) con el Dr. Fulvio Correa | Sin precio de cirugía publicado. Se cotiza por caso después de la valoración | [Agendar la valoración](/es/book-consultation/) |
-| Valoración virtual o presencial | USD 150 / COP 400.000 | No es un precio de cirugía |
-| Gluteoplastia con implantes, otra cirugía | Se cotiza por caso. No es la misma cirugía que un BBL | [Aumento de glúteos en Cartagena](/es/procedimientos/aumento-de-gluteos/) |
-| Lipoescultura HD, liposucción sin transferencia de grasa | Se cotiza por caso. No es el precio de un BBL | [Precio de la liposucción en Colombia](/es/blog/liposuccion-precio-colombia/) |
-
-La tarifa de la valoración es un par fijo. No se convierte en un precio de cirugía y no incluye la operación. Los procedimientos corporales relacionados también se cotizan después de esa misma visita. Sumarlos de cabeza no es el precio de un plan combinado.
-
-La cotización real va siempre después de la valoración virtual o presencial. No compromete al Dr. a operar.
-
-## Por qué el BBL no tiene precio fijo
-
-La Sociedad Americana de Cirujanos Plásticos (ASPS) describe el BBL como grasa obtenida por liposucción, purificada e inyectada en los glúteos, y explica que con frecuencia se extrae hasta tres veces más grasa de la que al final se injerta. Eso explica casi toda la diferencia entre una cotización y otra:
+La Sociedad Americana de Cirujanos Plásticos (ASPS) describe el BBL como grasa obtenida por liposucción, purificada e inyectada en los glúteos, y explica que con frecuencia se extrae hasta tres veces más grasa de la que al final se injerta. Por eso dos personas que hacen la misma pregunta pueden necesitar dos cirugías distintas:
 
 - **Las zonas donantes.** Solo abdomen y cintura, o también espalda, o además muslos. Más zonas, más tiempo de cirugía.
-- **La grasa disponible.** Una paciente muy delgada puede tener poca grasa para trasladar, lo que limita el volumen y puede cambiar el plan. A veces la liposucción sola, o una [lipo 360](/es/blog/lipo-360-precio-colombia/), es la mejor opción.
-- **Lo que se combina.** Una abdominoplastia o una cirugía de senos en el mismo viaje cambia el tiempo de anestesia, la estancia en la clínica y la recuperación, y se cotiza en conjunto.
-- **Las medidas de seguridad.** Las precauciones que verás más abajo requieren tiempo y equipos. Son parte del precio, no un adicional.
-- **Tus antecedentes de salud.** Exámenes o valoraciones que el cirujano pida antes de operar.
+- **La grasa disponible.** Una paciente muy delgada puede tener poca grasa para trasladar. Eso limita el volumen y puede cambiar el plan. A veces la liposucción sola, o una [lipo 360](/es/blog/lipo-360-precio-colombia/), es la mejor opción.
+- **Lo que se combina.** Una abdominoplastia o una cirugía de senos en el mismo viaje cambia el tiempo de anestesia, la estancia en la clínica y la recuperación. La combinación se cotiza como un solo plan.
+- **Las medidas de seguridad.** Las precauciones de más abajo requieren tiempo y equipos. Forman parte del plan, no de un adicional opcional.
+- **Tus antecedentes.** Exámenes o valoraciones que el cirujano pida antes de operar.
 
-Por eso la respuesta honesta a "¿cuánto cuesta un BBL en Colombia?" es una cotización escrita para tu plan, no una cifra en una publicación de redes sociales.
+Los miembros de la ASPS reportaron **29.466** aumentos de glúteos con injerto de grasa en 2024. La ASPS publica un honorario de cirujano y habla de la anestesia y del quirófano por separado. El honorario del cirujano no es una cuenta total. Esta página no reproduce esas cifras de Estados Unidos y no afirma un porcentaje de ahorro. Lo que se compara es una cotización escrita con otra cotización escrita.
 
-## La referencia de Estados Unidos y lo que no incluye
+## Qué incluye la cotización
 
-La ASPS publica honorarios de cirujano que reportan sus miembros, y habla de la anestesia y de los costos de quirófano por separado. Sus miembros reportaron **29.466** aumentos de glúteos con injerto de grasa en 2024. El honorario del cirujano no es una cuenta total: la anestesia, la clínica, los exámenes, las prendas y los controles quedan por fuera. Esta página no publica esas cifras de Estados Unidos y no afirma un porcentaje de ahorro. Lo que se compara es una cotización escrita con otra cotización escrita.
+Una cotización útil de BBL nombra cada servicio. Si un renglón no está escrito, asume que no está incluido hasta que alguien lo confirme por escrito.
 
-## Qué debe detallar una cotización escrita de BBL
-
-Antes de comparar dos cotizaciones de BBL en Colombia, revísalas punto por punto. Si algo no está escrito, asume que no está incluido hasta que te lo confirmen por escrito.
-
-| Concepto | Pregunta que conviene hacer |
+| Concepto | Qué debe decir ese renglón |
 |---|---|
-| Honorario del cirujano | ¿Qué zonas donantes? ¿Injerto solo en glúteos o también en caderas? |
-| Anestesia | La ASPS indica que el BBL se hace con sedación intravenosa o anestesia general. ¿Quién es el anestesiólogo y está incluido su honorario? |
-| Clínica | ¿Dónde se opera, está habilitada para cirugía y se incluye una noche si hace falta? |
-| Exámenes prequirúrgicos | ¿Cuáles y están en la cotización? |
-| Faja y cojín | ¿Se incluye la primera prenda de compresión? ¿Vas a necesitar cojín para BBL? |
-| Medicamentos y controles | ¿Cuántos controles hay en Cartagena y cómo es el seguimiento cuando vuelves a casa? |
-| Masajes o drenaje linfático, si se indican | ¿Incluidos o aparte? |
-| Moneda | ¿USD o COP? Si es en pesos, ¿con qué fecha de cambio? |
+| Cirujano | Qué zonas donantes, y si el injerto es solo en glúteos o también en caderas |
+| Anestesia | La ASPS indica que el BBL se hace con sedación intravenosa o anestesia general. Quién es el anestesiólogo y si su honorario está en la cotización |
+| Clínica u hospital | Dónde se opera, si el lugar está habilitado para cirugía y si se incluye una noche cuando el plan la necesita |
+| Exámenes de laboratorio | Qué estudios se piden y si están en la cotización |
+| Prendas | Si se incluye la primera faja y si vas a necesitar un cojín para BBL |
+| Medicamentos | Qué se entrega para los primeros días |
+| Controles | Cuántos controles hay en Cartagena y cómo es el seguimiento cuando vuelves a casa |
+| Cuidados postoperatorios | Drenaje linfático o masaje solo si el cirujano los indica, y si ese cuidado está en la cotización o se organiza aparte |
+| Moneda | USD o COP, y la fecha de la tasa de cambio si la cotización está en pesos |
 
-## La cotización más barata es una pregunta de seguridad
+Los tiquetes, el alojamiento, las comidas, un acompañante y los días sin trabajar quedan fuera de la cotización quirúrgica. Algunas pacientes organizan una [casa de recuperación en Cartagena](/es/casa-de-recuperacion-cartagena/) con enfermería, traslados e insumos. Ese plan se define en la valoración y no tiene precio de paquete.
 
-Los problemas de seguridad del BBL empiezan cuando se presiona el precio. En su [declaración conjunta de 2022](https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement), la ASPS, The Aesthetic Society y sus fundaciones respaldan inyectar la grasa **solo en el espacio subcutáneo, por encima del músculo glúteo**, usar **ecografía en tiempo real** para seguir la cánula, operar solo en instituciones habilitadas, no delegar pasos críticos en personal sin entrenamiento y que el cirujano esté disponible ante complicaciones, seas paciente local o viajera. ISAPS respaldó [orientaciones de seguridad en lipotransferencia glútea](https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf) en la misma línea.
+## Cómo comparar cotizaciones y señales de alerta
 
-Cada uno de esos puntos cuesta tiempo o equipos. Si una cotización de BBL está muy por debajo de otras para el mismo plan, pregunta:
+En su [declaración conjunta de 2022](https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement), la ASPS, The Aesthetic Society y sus fundaciones respaldan inyectar la grasa **solo en el espacio subcutáneo, por encima del músculo glúteo**, usar **ecografía en tiempo real** para seguir la cánula, operar solo en instituciones habilitadas, no delegar pasos críticos en personal sin entrenamiento y que el cirujano esté disponible si hay una complicación, vivas en Cartagena o hayas viajado. ISAPS respaldó [orientaciones de seguridad en lipotransferencia glútea](https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf) en la misma línea.
 
-1. ¿Dónde exactamente se pone la grasa y cómo se confirma ese plano durante la cirugía?
-2. ¿Quién hace cada paso de la operación?
-3. ¿En qué clínica, y está habilitada para cirugía? En Colombia, los prestadores habilitados aparecen en el REPS, según el [manual de habilitación del Ministerio de Salud](https://prestadores.minsalud.gov.co/habilitacion/ayudas/Manual_HABILITACION_prestadores_novedades.pdf).
-4. ¿El cirujano está registrado como cirujano plástico? Consulta el [ReTHUS](https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx) y, si dice ser miembro, la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/).
-5. ¿Qué pasa, y quién paga, si necesitas atención adicional antes de volver a casa?
+Alinea las cotizaciones antes de compararlas. Un número más bajo solo sirve si describe el mismo plan.
 
-La lista completa para comparar cirujanos está en [cómo elegir cirujano plástico en Colombia](/es/mejor-cirujano-plastico-colombia/).
+1. **La misma cirugía.** Las zonas donantes, los sitios de injerto y cualquier procedimiento combinado deben coincidir. Los implantes de glúteo son otra cirugía y también se cotizan por caso. Mira la página de [aumento de glúteos](/es/procedimientos/aumento-de-gluteos/).
+2. **El plano de la grasa.** ¿Dónde se coloca y cómo se confirma ese plano durante la cirugía?
+3. **Quién opera.** ¿Quién hace cada paso? En Colombia, consulta el [ReTHUS](https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx). Si te mencionan la membresía, revisa la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/).
+4. **Dónde.** El nombre y la dirección de la institución, por escrito, y si está habilitada para cirugía. En Colombia, los prestadores aparecen en el REPS, según el [manual de habilitación del Ministerio de Salud](https://prestadores.minsalud.gov.co/habilitacion/ayudas/Manual_HABILITACION_prestadores_novedades.pdf). El consultorio y la clínica quirúrgica suelen ser direcciones distintas.
+5. **Renglones que faltan.** Anestesia, clínica, exámenes, prendas o controles que no están en la cotización más baja.
+6. **Si algo pasa antes de volar.** Quién está disponible, y quién cubre la atención adicional, si la necesitas antes de que te autoricen a viajar.
 
-## Un BBL exige más días de viaje que la mayoría de cirugías
+La lista más larga está en [cómo elegir cirujano plástico en Colombia](/es/mejor-cirujano-plastico-colombia/).
 
-La cotización de la cirugía es solo una parte del presupuesto. El BBL cambia el viaje de dos maneras:
+## El viaje también hace parte del presupuesto
 
-- **Sentarse.** La ASPS recomienda evitar estar sentada por periodos prolongados durante unas dos semanas después del injerto de grasa en glúteos, y algunos cirujanos piden más. Un vuelo largo va en contra de eso.
-- **Las reglas de la aerolínea.** Avianca lista 10 días tras inyección de grasa en glúteos, 14 tras liposucción y 15 si se combinan dos o más procedimientos corporales, con un certificado médico expedido como máximo 10 días antes del viaje. Un BBL incluye liposucción, así que pregunta qué procedimientos va a mencionar tu certificado.
+La cotización de la cirugía es una parte de lo que gastas. El BBL cambia la estadía de dos maneras concretas:
 
-Eso significa presupuestar alojamiento, comidas y transporte para una estadía más larga, y un tiquete de regreso que se pueda cambiar. Algunas pacientes organizan una [casa de recuperación en Cartagena](/es/casa-de-recuperacion-cartagena/) con apoyo de enfermería; ese plan se define en la valoración. El cálculo día a día está en [recuperación del BBL y días de estadía](/es/blog/bbl-colombia/) y en [¿cuándo puedo volar después de una cirugía plástica?](/es/blog/viajar-en-avion-despues-de-cirugia-plastica/).
+- **Sentarse.** La ASPS recomienda evitar estar sentada por periodos prolongados durante unas dos semanas después del injerto de grasa en glúteos. Algunos cirujanos piden más. Un vuelo largo va en contra de eso.
+- **La aerolínea.** Avianca lista 10 días tras inyección de grasa en glúteos, 14 tras liposucción y 15 si se combinan dos o más procedimientos corporales, y pide un documento médico expedido como máximo 10 días antes del viaje. Un BBL incluye liposucción, así que pregunta qué procedimientos va a nombrar ese documento.
+
+Presupuesta el alojamiento y un tiquete de regreso que se pueda cambiar. El cálculo día a día está en [recuperación del BBL y días de estadía](/es/blog/bbl-colombia/) y en [cuándo volar después de una cirugía plástica](/es/blog/viajar-en-avion-despues-de-cirugia-plastica/).
 
 ## Dónde encaja el Dr. Fulvio Correa
 
-El Dr. Fulvio Correa es cirujano plástico en Cartagena y Miembro de Número de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/); su trayectoria está en [sobre el doctor](/es/sobre-el-doctor/). Su consultorio queda en Manzanillo del Mar (CC Ramblas, local 23). Valora personalmente a cada paciente que pide un [BBL en Colombia](/es/procedimientos/aumento-de-gluteos/), define las zonas donantes y si el BBL es de verdad el plan adecuado, y después llega la cotización escrita. Si vives fuera de Colombia, puedes empezar con una valoración virtual a través del programa de [pacientes internacionales](/es/pacientes-internacionales/); el plan se confirma en persona antes de la cirugía. El contexto general está en la [guía de cirugía plástica en Colombia](/es/cirugia-plastica-colombia/).
+El Dr. Fulvio Correa es cirujano plástico en Cartagena y Miembro de Número de la [Sociedad Colombiana de Cirugía Plástica (SCCP)](https://cirugiaplastica.org.co/author/correa-vitola-fulvio-alexander/). Su trayectoria está en [sobre el doctor](/es/sobre-el-doctor/). Las valoraciones son en el consultorio de Manzanillo del Mar (CC Ramblas, local 23). La cirugía es en la [Clínica CAPRI](/es/clinica-capri/), otra dirección. Valora personalmente a cada paciente de [BBL](/es/procedimientos/aumento-de-gluteos/), define las zonas donantes y si el BBL es el plan adecuado, y después llega la cotización escrita. Si vives fuera de Colombia, puedes empezar con una valoración virtual en el programa de [pacientes internacionales](/es/pacientes-internacionales/). El plan se confirma en persona antes de la cirugía.
 
-Para recibir una cotización escrita de tu BBL, escríbele a Sofía. Ella coordina la valoración virtual, la cotización y la logística de tu estadía; la recomendación médica la da el cirujano.
+Para recibir la cotización escrita, [agenda la valoración](/es/book-consultation/). Sofía coordina la valoración virtual, la cotización y la logística de la estadía. La recomendación médica la da el cirujano.
 
-[Escríbele a Sofía por WhatsApp para cotizar tu BBL en Cartagena](https://wa.me/16506656265?text=Hola%20Sof%C3%ADa%2C%20quiero%20cotizar%20un%20BBL%20en%20Cartagena%20con%20el%20Dr.%20Fulvio%20Correa)
+[Escríbele a Sofía por WhatsApp sobre una cotización de BBL en Cartagena](https://wa.me/16506656265?text=Hola%20Sof%C3%ADa%2C%20quiero%20cotizar%20un%20BBL%20en%20Cartagena%20con%20el%20Dr.%20Fulvio%20Correa)
 
 ## Preguntas frecuentes
 
-**¿Cuánto cuesta un BBL en Colombia con el Dr. Fulvio Correa?**
-No tiene rango publicado. El BBL se cotiza por caso después de la valoración, porque las zonas donantes, la cantidad de grasa y lo que se combine cambian la cirugía.
+**¿Cuánto cuesta un BBL en Colombia?**
+No hay un precio de cirugía publicado. El plan se cotiza después de la valoración porque las zonas donantes, la cantidad de grasa y cualquier procedimiento combinado cambian la cirugía.
+
+**¿Qué incluye la cotización de un BBL?**
+Pide que nombre el trabajo del cirujano, la anestesia, la clínica u hospital, los exámenes, las prendas, los medicamentos, los controles y los cuidados postoperatorios que se indiquen. Si falta un renglón, asume que no está incluido hasta que lo confirmen por escrito.
+
+**¿Qué cambia el costo de un BBL?**
+Las zonas donantes, cuánta grasa se puede trasladar, si se combina otro procedimiento, las medidas de seguridad del plan y los exámenes que el cirujano pida antes de operar.
+
+**¿Cómo comparo cotizaciones de BBL?**
+Haz coincidir las zonas y los sitios de injerto, pregunta dónde se coloca la grasa y cómo se confirma ese plano, y alinea anestesia, clínica, exámenes y controles. Después verifica al cirujano en el ReTHUS y la habilitación de la institución.
 
 **¿Cuánto cuesta la valoración?**
 USD 150 / COP 400.000, virtual o presencial. No es un precio de cirugía.
 
-**¿Cuánto cuesta un BBL en Estados Unidos?**
-La ASPS publica un honorario de cirujano para el aumento de glúteos con injerto de grasa, y trata la anestesia y la clínica como costos aparte. Ese honorario no es una cuenta total, y esta página no reproduce la cifra. Compara cotizaciones escritas, no un titular.
+**¿Cuántos días debo planear después de un BBL?**
+La ASPS recomienda evitar estar sentada por periodos prolongados unas dos semanas. Avianca lista 10 días tras inyección de grasa en glúteos, 14 tras liposucción y 15 si se combinan procedimientos corporales. Tu cirujano confirma la fecha después de examinarte.
 
-**¿La gluteoplastia con implantes es más barata que el BBL?**
-Son cirugías distintas. Las dos se cotizan por caso con el Dr. Fulvio Correa, así que no se pueden comparar hasta tener la cotización escrita.
-
-**¿Cuánto cuesta la lipo 360 con transferencia a glúteos?**
-También se cotiza por caso. Qué mueve el precio de una lipo 360 está en [lipo 360 en Colombia: precio y qué incluye](/es/blog/lipo-360-precio-colombia/).
-
-**¿Por qué algunas clínicas anuncian un BBL mucho más barato?**
-La cotización puede dejar por fuera la anestesia, la clínica, los exámenes o los controles, o describir un plan más pequeño. Además, medidas como el injerto subcutáneo guiado por ecografía requieren tiempo y equipos. Compara punto por punto y verifica al cirujano y la clínica.
-
-¿Prefieres leer en inglés? Lee la guía gemela: <a href="/blog/bbl-colombia-cost/" data-language="en" hreflang="en" lang="en">How Much Is a BBL in Colombia? Cost and Safety Guide</a>.
+¿Prefieres leer en inglés? Lee la guía gemela: <a href="/blog/bbl-colombia-cost/" data-language="en" hreflang="en" lang="en">BBL Cost in Colombia: What the Quote Includes</a>.
 
 ## Fuentes / Referencias médicas
 
@@ -127,7 +116,7 @@ La cotización puede dejar por fuera la anestesia, la clínica, los exámenes o 
 - ASPS / The Aesthetic Society — [Declaración conjunta de seguridad en injerto de grasa glúteo (2022, en inglés)](https://www.plasticsurgery.org/for-medical-professionals/publications/psn-extra/news/gluteal-fat-grafting-a-joint-safety-statement)
 - ASPS — [Buttock enhancement: procedimiento](https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/procedure) y [recuperación](https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/recovery) (en inglés)
 - ISAPS — [Seguridad en lipotransferencia glútea (PDF, en inglés)](https://www.isaps.org/media/3eukkm04/230214-endorsed-patient-safety-gluteal-fat-grafting.pdf)
-- Avianca — [Restricciones de viaje por condiciones médicas](https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) (10, 14 y 15 días; certificado médico)
+- Avianca — [Restricciones de viaje por condiciones médicas](https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) (10, 14 y 15 días)
 - Ministerio de Salud de Colombia — [ReTHUS](https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx) y [manual de habilitación de prestadores (REPS)](https://prestadores.minsalud.gov.co/habilitacion/ayudas/Manual_HABILITACION_prestadores_novedades.pdf)
 - Sociedad Colombiana de Cirugía Plástica (SCCP) — [Aumento de glúteos](https://cirugiaplastica.org.co/procedimientos/aumento-de-gluteos/)
 
