@@ -1,6 +1,7 @@
 ---
 title: "¿Cuánto cuesta una lipo en Colombia? Precios de liposucción"
-description: "Cuánto cuesta una lipo en Colombia con el Dr. Fulvio Correa en Cartagena: qué cambia la cotización y por qué un precio por zona solo compara si el plan es el mismo."
+description: "Qué mirar para saber cuánto cuesta una lipo o lipoescultura en Colombia: el plan se cotiza tras la valoración en Cartagena."
+seoDescription: "Qué mirar para saber cuánto cuesta una lipo o lipoescultura en Colombia: el plan se cotiza tras la valoración en Cartagena."
 slug: "liposuccion-precio-colombia"
 lang: "es"
 category: "Body Contouring"
@@ -8,7 +9,7 @@ tags: ["liposuccion-colombia", "liposuccion-precio", "lipoescultura-precio", "li
 cover: "/assets/blog-liposuction-colombia-cost.webp"
 coverAlt: "Mujer con una camisa holgada de lino verde salvia caminando por una calle colonial sombreada de Cartagena, con un bolso de paja al hombro y una carpeta cerrada contra el pecho"
 date: "2026-10-30"
-updated: "2026-11-07"
+updated: "2026-11-13"
 author: "fulvio-correa"
 translationOf: "liposuction-colombia-cost"
 sources: ["https://fulviocorrea.com/es/agendar-valoracion/","https://www.mayoclinic.org/es/tests-procedures/liposuction/about/pac-20384586","https://medlineplus.gov/spanish/ency/article/002985.htm","https://cirugiaplastica.org.co/procedimientos/lipoescultura/","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://cirugiaplastica.org.co/buscar-cirujano/","https://www.minsalud.gov.co/salud/PO/paginas/registro-unico-nacional-del-talento-humano-en-salud-rethus.aspx"]
@@ -22,6 +23,14 @@ review_date: ""
 ---
 
 **Con el Dr. Fulvio Correa en Cartagena, la liposucción no tiene un precio de cirugía publicado.** La lipoescultura HD (Liposurg), los brazos o las piernas sumados a un plan, la tecnología de retracción y la liposucción que no es HD se cotizan por caso después de la valoración, que vale USD 150 (COP 400.000), virtual o presencial. Esta guía explica qué cambia la cotización y por qué un precio "por zona" que viste en internet solo sirve para comparar si describe la misma cirugía. [Agenda la valoración](/es/book-consultation/) para la cifra escrita.
+
+## ¿Cuánto vale una lipo en Colombia? La respuesta corta
+
+- El número de zonas cambia la cotización: "una zona" puede ser solo el abdomen bajo o todo el abdomen con los flancos, y más zonas cambian el tiempo de quirófano.
+- Liposucción, lipoescultura, lipo 360 y pasar grasa a glúteos y caderas son planes distintos; cada uno se cotiza por caso después de la valoración.
+- Si hay piel sobrante o se combinan procedimientos, el plan deja de ser una liposucción sola —por ejemplo, una lipoabdominoplastia— y se cotiza completo.
+- Las noches en Cartagena van en el mismo presupuesto: alojamiento, comida, transporte y acompañante.
+- La cotización escrita y comparable llega después de la valoración, virtual o presencial, que vale USD 150 (COP 400.000) y no es un precio de cirugía.
 
 ## Cuatro nombres, cuatro planes distintos
 
@@ -110,6 +119,9 @@ Casi siempre describen otro plan: menos zonas, reducción de volumen en lugar de
 
 **¿Cuánto vale la valoración?**
 USD 150 / COP 400.000, virtual o presencial. No es un precio de cirugía.
+
+**¿Cuánto vale una lipoescultura en Colombia?**
+Depende del plan que se define en la valoración. El procedimiento se explica en [lipoescultura en Cartagena](/es/procedimientos/liposuccion/).
 
 **¿Cuántos días debo presupuestar en Cartagena?**
 Al menos 14 días después de la liposucción si vuelas con Avianca, o 15 si se combinan procedimientos corporales, más tus días previos. Tu cirujano confirma la fecha después de examinarte.
