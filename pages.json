@@ -1953,7 +1953,7 @@
     "lang": "es",
     "noindex": false,
     "ads": false,
-    "updated": "2026-11-07",
+    "updated": "2026-11-13",
     "schemas": [
       {
         "@context": "https://schema.org",
@@ -1987,7 +1987,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalProcedure",
         "name": "Liposucción",
-        "description": "La liposucción en Cartagena —también llamada lipoescultura— es una cirugía de contorno corporal que extrae depósitos de grasa localizada mediante pequeñas incisiones y una cánula conectada a succión. Sirve para definir abdomen, cintura, espalda, brazos, muslos o papada cuando la grasa no cede con dieta ni ejercicio.",
+        "description": "La liposucción en Cartagena —también llamada lipoescultura en Cartagena— es una cirugía de contorno corporal que extrae depósitos de grasa localizada mediante pequeñas incisiones y una cánula conectada a succión. Sirve para definir abdomen, cintura, espalda, brazos, muslos o papada cuando la grasa no cede con dieta ni ejercicio.",
         "url": "https://fulviocorrea.com/es/procedures/liposuction/"
       },
       {
@@ -2007,7 +2007,7 @@
             "name": "¿Cuánto cuesta una lipoescultura en Cartagena?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Depende del número de zonas, la técnica, la anestesia, la clínica y lo que incluya el posoperatorio. El valor se entrega después de la valoración, con el detalle de lo incluido."
+              "text": "El valor se entrega después de la valoración, con el detalle de lo incluido. Qué cambia la cotización está en cuánto cuesta una lipo en Colombia."
             }
           },
           {
@@ -4730,7 +4730,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-11-11",
+    "updated": "2026-11-13",
     "schemas": [],
     "alternates": [
       {
@@ -4783,7 +4783,7 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-11-07",
+    "updated": "2026-11-13",
     "schemas": [],
     "alternates": [
       {
@@ -4855,14 +4855,14 @@
     "lang": "es",
     "ads": false,
     "noindex": false,
-    "updated": "2026-11-07",
+    "updated": "2026-11-13",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "¿Cuánto cuesta una lipo en Colombia? Precios de liposucción",
         "datePublished": "2026-10-30",
-        "dateModified": "2026-11-07",
+        "dateModified": "2026-11-13",
         "inLanguage": "es",
         "image": [
           "https://fulviocorrea.com/assets/blog-liposuction-colombia-cost.webp",
@@ -4930,6 +4930,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "USD 150 / COP 400.000, virtual o presencial. No es un precio de cirugía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto vale una lipoescultura en Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del plan que se define en la valoración. El procedimiento se explica en lipoescultura en Cartagena."
             }
           },
           {
