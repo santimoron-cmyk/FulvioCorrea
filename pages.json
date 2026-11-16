@@ -6912,7 +6912,7 @@
     "lang": "en",
     "noindex": false,
     "ads": false,
-    "updated": "2026-10-27",
+    "updated": "2026-11-16",
     "schemas": [
       {
         "@context": "https://schema.org",
@@ -6920,10 +6920,10 @@
         "@id": "https://fulviocorrea.com/plastic-surgery-colombia/#webpage",
         "url": "https://fulviocorrea.com/plastic-surgery-colombia/",
         "name": "Plastic Surgery in Colombia",
-        "description": "Plastic surgery in Colombia: how to check a surgeon and a clinic, what changes a quote, and how long to stay. A real quote follows consultation.",
+        "description": "Plastic surgery in Colombia: how to verify a surgeon and clinic, what a written quote should include, and how long to stay in Cartagena before flying home.",
         "inLanguage": "en",
-        "dateModified": "2026-10-27",
-        "lastReviewed": "2026-10-27",
+        "dateModified": "2026-11-16",
+        "lastReviewed": "2026-11-16",
         "reviewedBy": {
           "@type": "Physician",
           "@id": "https://fulviocorrea.com/#physician",
@@ -7051,7 +7051,7 @@
     "lang": "es",
     "noindex": false,
     "ads": false,
-    "updated": "2026-10-27",
+    "updated": "2026-11-16",
     "schemas": [
       {
         "@context": "https://schema.org",
@@ -7059,10 +7059,10 @@
         "@id": "https://fulviocorrea.com/es/cirugia-plastica-colombia/#webpage",
         "url": "https://fulviocorrea.com/es/cirugia-plastica-colombia/",
         "name": "Cirugía plástica en Colombia",
-        "description": "Cirugía plástica en Colombia: cómo revisar al cirujano y a la clínica, qué mueve la cotización y cuántos días reservar. La cifra real sale en la valoración.",
+        "description": "Cirugía plástica en Colombia: cómo verificar al cirujano y a la clínica, qué debe traer la cotización y cuántos días quedarse en Cartagena.",
         "inLanguage": "es",
-        "dateModified": "2026-10-27",
-        "lastReviewed": "2026-10-27",
+        "dateModified": "2026-11-16",
+        "lastReviewed": "2026-11-16",
         "reviewedBy": {
           "@type": "Physician",
           "@id": "https://fulviocorrea.com/#physician",

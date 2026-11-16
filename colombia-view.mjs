@@ -45,7 +45,7 @@ function portrait(alt) {
   return `<picture><source type="image/avif" srcset="${avif}" sizes="${sizes}"><img src="/assets/dr-fulvio-correa-plastic-surgeon-cartagena-1200.webp" alt="${esc(alt)}" width="1200" height="1500" srcset="${webp}" sizes="${sizes}" data-fixed-srcset="1" data-keep-loading="1" loading="lazy" decoding="async"></picture>`;
 }
 
-const updated = '2026-10-27';
+const updated = '2026-11-16';
 
 // Body copy may include [label](/path) or [label](https://…) links. Everything else is escaped.
 function rich(s) {
@@ -70,8 +70,18 @@ const numbered = list => `<ol class="question-list">${list.map(x => { const m = 
 
 const copy = {
   en: {
-    title: 'Plastic Surgery in Colombia: Prices',
-    description: 'Plastic surgery in Colombia: how to check a surgeon and a clinic, what changes a quote, and how long to stay. A real quote follows consultation.',
+    title: 'Plastic Surgery in Colombia: 2026 Guide',
+    description: 'Plastic surgery in Colombia: how to verify a surgeon and clinic, what a written quote should include, and how long to stay in Cartagena before flying home.',
+    shortTitle: 'Plastic surgery in Colombia: the short answer',
+    shortLead: 'Check the surgeon in ReTHUS and the SCCP, and confirm the clinic is enrolled in REPS, before you travel for plastic surgery in Colombia. The written quote comes after the in-person examination in Cartagena, and a sample stay is 10 to 14 days.',
+    shortPoints: [
+      'Look up the surgeon in ReTHUS, the Ministry of Health registry, and confirm membership in the Colombian Society of Plastic Surgery (SCCP). Ask that the clinic be enrolled in REPS with its surgical service currently authorized.',
+      'The procedure, and whether surgeries are combined, changes the written figure. So does the care around the operation while you are still in Cartagena. The quote comes after the in-person examination and should separate the surgeon, the anesthesia and the facility.',
+      'Ten to fourteen days is a sample stay, not a clearance to fly. It includes the days before surgery for the examination.',
+      'The consultation fee is USD 150 / COP 400,000.',
+      'Consultations are in Cartagena, at the office in Manzanillo del Mar, CC Ramblas, local 23. Surgery is at CAPRI Clinic, a different address.',
+    ],
+    shortMore: 'A longer checklist is in [how to choose a plastic surgeon in Colombia](/en/best-plastic-surgeon-colombia/).',
     eyebrow: 'Cartagena, Colombia',
     h1: 'Plastic Surgery in Colombia',
     lead: 'People looking for plastic surgery in Colombia in 2026 usually want four answers: why patients travel here, what actually changes a quote, how to check a surgeon and a clinic, and how many days to plan. This page answers those from the practice in Cartagena. Surgery prices are not published. The written quote comes after the consultation. It is education, not a promise of a result.',
@@ -213,8 +223,18 @@ const copy = {
     },
   },
   es: {
-    title: 'Cirugía plástica en Colombia',
-    description: 'Cirugía plástica en Colombia: cómo revisar al cirujano y a la clínica, qué mueve la cotización y cuántos días reservar. La cifra real sale en la valoración.',
+    title: 'Cirugía plástica en Colombia: guía 2026',
+    description: 'Cirugía plástica en Colombia: cómo verificar al cirujano y a la clínica, qué debe traer la cotización y cuántos días quedarse en Cartagena.',
+    shortTitle: 'Cirugía plástica en Colombia: la respuesta corta',
+    shortLead: 'Revisa al cirujano en el ReTHUS y en la SCCP, y confirma que la clínica esté en el REPS, antes de viajar para una cirugía plástica en Colombia. La cotización escrita llega después del examen presencial en Cartagena, y una estadía de ejemplo va de 10 a 14 días.',
+    shortPoints: [
+      'Busca al cirujano en el ReTHUS, el registro del Ministerio de Salud, y confirma la membresía en la Sociedad Colombiana de Cirugía Plástica (SCCP). Pregunta si la clínica está inscrita en el REPS con el servicio quirúrgico habilitado.',
+      'El procedimiento, y si se combina con otra cirugía, mueve la cifra escrita. También cuentan los cuidados alrededor de la operación mientras sigues en Cartagena. La cotización sale después del examen presencial y debe separar al cirujano, la anestesia y la clínica.',
+      'De 10 a 14 días es una estadía de ejemplo, no una autorización para volar. Incluye los días previos a la cirugía para el examen.',
+      'La valoración cuesta USD 150 / COP 400.000.',
+      'La valoración es en Cartagena, en el consultorio de Manzanillo del Mar, CC Ramblas local 23. La cirugía es en la Clínica CAPRI, otra dirección.',
+    ],
+    shortMore: 'La lista más larga está en [cómo elegir cirujano plástico en Colombia](/es/mejor-cirujano-plastico-colombia/).',
     split: 'El precio de la cirugía no se publica: se escribe después de [agendar la valoración](/es/book-consultation/). Si buscas el consultorio, el [cirujano plástico en Cartagena](/es/) es el Dr. Fulvio Correa: valora en Manzanillo del Mar, CC Ramblas local 23, y opera en la Clínica CAPRI.',
     eyebrow: 'Cartagena, Colombia',
     h1: 'Cirugía plástica en Colombia',
@@ -390,7 +410,9 @@ export function colombiaGuide(lang, practice, procedures, posts, origin) {
   const officeBase = es ? 'consultorio-cirugia-plastica-recepcion-cartagena' : 'plastic-surgery-office-reception-cartagena';
   const byline = `<p class="post-dates">${es ? 'Actualizado el' : 'Last updated'} <time datetime="${updated}">${updated}</time></p><p class="reviewed">${es ? 'Revisado médicamente por' : 'Medically reviewed by'} Dr. Fulvio Correa · <time datetime="${updated}">${updated}</time></p>`;
   const days = `<div class="article-body">${c.steps.map(([title, text]) => `<h3>${esc(title)}</h3><p>${rich(text)}</p>`).join('')}</div>`;
+  const shortAnswer = `<section class="section wrap" data-surface="black" id="short-answer"><h2>${esc(c.shortTitle)}</h2>${prose([c.shortLead])}${bullets(c.shortPoints)}${prose([c.shortMore])}${cta('colombia-short')}</section>`;
   const body = `<section class="page-hero wrap" data-surface="charcoal"><p class="eyebrow">${esc(c.eyebrow)}</p><h1>${esc(c.h1)}</h1><p class="lead">${esc(c.lead)}</p>${c.split ? prose([c.split]) : ''}${byline}${cta('colombia-hero')}</section>
+${shortAnswer}
 <section class="section wrap" data-surface="plum" id="five-checks"><h2>${esc(c.checksTitle)}</h2>${prose([c.checksIntro])}${numbered(c.checks)}${prose([c.checksNote])}</section>
 <section class="section wrap" data-surface="charcoal" id="best-surgeon"><h2>${esc(c.bestTitle)}</h2>${prose(c.best)}</section>
 <section class="section wrap" data-surface="black" id="why-colombia"><h2>${esc(c.whyTitle)}</h2>${prose(c.why)}<figure>${picture(officeBase, c.officeAlt, 1400, 788)}</figure></section>
