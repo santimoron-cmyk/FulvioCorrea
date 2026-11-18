@@ -265,7 +265,7 @@ export function decorateHtml(html) {
       if (budget > 0) eagerLeft[slot] = budget - 1;
       const priority = !usedHigh && (slot === 'hero' || (!hasHero && eager));
       if (priority) usedHigh = true;
-      next = next.replace(/\s*\/?>$/, priority ? ' fetchpriority="high" decoding="async">' : eager ? ' decoding="async">' : ' loading="lazy" decoding="async">');
+      next = next.replace(/\s*\/?>$/, priority ? (slot === 'hero' ? ' fetchpriority="high">' : ' fetchpriority="high" decoding="async">') : eager ? ' decoding="async">' : ' loading="lazy" decoding="async">');
     }
     if (!attr(next, 'width') || !attr(next, 'height')) return tag;
     return next;

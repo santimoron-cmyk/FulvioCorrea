@@ -13,7 +13,7 @@ date: "2026-10-05"
 updated: "2026-10-19"
 author: "fulvio-correa"
 translationOf: "flying-after-plastic-surgery"
-sources: ["https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://scielo.isciii.es/scielo.php?pid=S0376-78922022000400002&script=sci_arttext","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html","https://www.cirugiaplastica.org.co/"]
+sources: ["https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales","https://doi.org/10.4321/S0376-78922022000400002","https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism","https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html","https://www.cdc.gov/blood-clots/risk-factors/travel.html","https://www.cirugiaplastica.org.co/"]
 draft: false
 originalUrl: ""
 procedure: "mommy-makeover"
@@ -64,7 +64,7 @@ Si vuelas con otra aerolínea o haces conexión en otro país, lee también su p
 
 ## Por qué el calendario no es lo único que cuenta
 
-En 2022, la coordinadora del Grupo de Medicina Aeronáutica de la Aerocivil publicó en *Cirugía Plástica Ibero-Latinoamericana* una [guía práctica para viajar en avión después de una cirugía plástica](https://scielo.isciii.es/scielo.php?pid=S0376-78922022000400002&script=sci_arttext). El texto, que usa como ejemplo a una paciente operada en Cartagena, explica qué pasa en la cabina y por qué no basta con contar días:
+En 2022, la coordinadora del Grupo de Medicina Aeronáutica de la Aerocivil publicó en *Cirugía Plástica Ibero-Latinoamericana* una [guía práctica para viajar en avión después de una cirugía plástica](https://doi.org/10.4321/S0376-78922022000400002). El texto, que usa como ejemplo a una paciente operada en Cartagena, explica qué pasa en la cabina y por qué no basta con contar días:
 
 - **Menos oxígeno.** La cabina presurizada equivale a unos 2.438 metros de altura. Después de una cirugía con pérdida de sangre, eso puede traducirse en fatiga, mareo o dolor en el pecho durante un vuelo largo.
 - **Dolor y gases.** Los cambios de presión expanden los gases intestinales (en torno a un 25 %, según el artículo) y la humedad de la cabina cae a entre 4 % y 17 %, frente a la humedad de Cartagena. Un dolor mal controlado en vuelo puede convertirse en una emergencia.
@@ -147,7 +147,7 @@ Los CDC señalan que el riesgo de coágulos aumenta con el tiempo de inmovilidad
 ## Fuentes / Referencias médicas
 
 - Avianca, centro de ayuda — [Restricciones de viaje para pasajeros con condiciones médicas especiales](https://ayuda.avianca.com/hc/es-es/articles/13090597036315-Existen-restricciones-de-viaje-para-pasajeros-con-condiciones-m%C3%A9dicas-especiales) (plazos por procedimiento; certificado máximo 10 días antes; prevalece la autoridad sanitaria aeroportuaria)
-- Salamanca-B, M. A. — [Guía práctica para viaje en avión de pacientes sometidos a cirugía plástica estética y reconstructiva](https://scielo.isciii.es/scielo.php?pid=S0376-78922022000400002&script=sci_arttext), *Cirugía Plástica Ibero-Latinoamericana*, 2022
+- Salamanca-B, M. A. — [Guía práctica para viaje en avión de pacientes sometidos a cirugía plástica estética y reconstructiva](https://doi.org/10.4321/S0376-78922022000400002), *Cirugía Plástica Ibero-Latinoamericana*, 2022
 - American Society of Plastic Surgeons — [Briefing Paper: Cosmetic Surgery Tourism](https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism) (en inglés)
 - CDC Yellow Book 2026 — [Medical Tourism](https://www.cdc.gov/yellow-book/hcp/health-care-abroad/medical-tourism.html) (en inglés)
 - CDC — [Understanding Your Risk for Blood Clots with Travel](https://www.cdc.gov/blood-clots/risk-factors/travel.html) (en inglés)
