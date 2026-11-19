@@ -20,7 +20,7 @@ for (const [slug, key] of Object.entries(keys)) for (const lang of ['en', 'es'])
 
 // Current practice team (data/team.json). Yarima Marquez is no longer on it.
 const team = JSON.parse(fs.readFileSync('data/team.json', 'utf8'));
-assert.deepEqual(team.members.map(m => m.name), ['Dr. Fulvio Correa', 'Dra. Jennifer Mendoza', 'Dra. Adriana Rojas', 'Eileen']);
+assert.deepEqual(team.members.map(m => m.name), ['Dr. Fulvio Correa', 'Dra. Jennifer Mendoza', 'Dra. Adriana Rojas', 'Eileen Cantillo']);
 for (const lang of ['en', 'es']) {
   const h = fs.readFileSync(`dist/${lang}/index.html`, 'utf8');
   for (const member of team.members) {
