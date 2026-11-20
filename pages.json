@@ -1005,13 +1005,13 @@
     "lang": "en",
     "noindex": false,
     "ads": false,
-    "updated": "2026-09-26",
+    "updated": "2026-11-20",
     "schemas": [
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "url": "https://fulviocorrea.com/procedures/tummy-tuck/",
-        "name": "Tummy Tuck Colombia Cost 2026 | Cartagena Surgeon",
+        "name": "Tummy Tuck in Colombia: Cost & Quote in Cartagena",
         "inLanguage": "en",
         "lastReviewed": "2026-09-26",
         "reviewedBy": {
@@ -1039,6 +1039,30 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Plan around at least two weeks if you are flying: Avianca lists travel from 14 days after an abdominoplasty with a medical certificate issued within 10 days of the flight. The final date depends on your surgeon's clearance at follow-up."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a tummy tuck cost in Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no single price: it depends on the technique (full, mini or lipoabdominoplasty), any combined procedures, the anesthesia, the facility and your recovery. Dr. Fulvio Correa's office in Cartagena does not publish surgery prices; the exact quote is given after the consultation, which costs USD 150 / COP 400,000."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a lipoabdominoplasty quoted the same as a tummy tuck?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Adding liposuction changes the plan and the operating time, so it is quoted per case, just like a mini tummy tuck or a tummy tuck within a mommy makeover."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is the consultation and how much does it cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can be virtual or in person at the office in Manzanillo del Mar, CC Ramblas, local 23, Cartagena. It costs USD 150 / COP 400,000; that fee is not a surgery price."
             }
           },
           {

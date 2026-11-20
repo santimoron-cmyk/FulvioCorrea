@@ -10,7 +10,7 @@ const costNotes = {
     es: 'La liposucción que no es lipoescultura HD, y la lipoescultura HD, se cotizan por caso. Sumar brazos o piernas, o usar tecnología de retracción, cambia el plan.',
   },
   'tummy-tuck': {
-    en: 'A lipoabdominoplasty, a mini tummy tuck, and a tummy tuck without liposuction are different operations. Each one is quoted per case.',
+    en: 'A lipoabdominoplasty, a mini tummy tuck and a tummy tuck without liposuction are different operations. Each one is quoted per case.',
     es: 'Una lipoabdominoplastia, una mini abdominoplastia y una abdominoplastia sin liposucción son cirugías distintas. Cada una se cotiza por caso.',
   },
   'breast-augmentation': {
