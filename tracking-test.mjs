@@ -27,7 +27,7 @@ fields=visit('https://practice.test/book-consultation/');assert.equal(fields.fie
 fields=visit('https://practice.test/book-consultation/?utm_source=bing&gbraid=braid123');assert.equal(JSON.parse(fields.fields.first_touch.value).utm_source,'google');assert.equal(fields.fields.utm_source.value,'bing');assert.equal(fields.fields.gbraid.value,'braid123');assert.equal(fields.fields.gclid.value,'');
 console.log('Attribution passes: capture, persistence, first/last touch, clean referrer, fresh campaign.');
 
-function boot(url,{consent,where='session',plain=false,country=''}={}){
+function boot(url,{consent,where='session',plain=false,country='',defer=false}={}){
  const html=fs.readFileSync('dist/en/index.html','utf8');
  const head=html.slice(html.indexOf('<head>')+6,html.indexOf('</head>'));
  const snippets=[...head.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m=>m[1]);
@@ -38,10 +38,15 @@ function boot(url,{consent,where='session',plain=false,country=''}={}){
  if(value&&where==='local')local.set('fc_consent',value);
  let cookie=(country?`fc_country=${country}`:'')+(value&&where==='cookie'?`${country?'; ':''}fc_consent=${consent}`:'');
  const first={parentNode:{insertBefore(n){scripts.push(n);}}};
- const context={window:{},URL,JSON,Date,location,sessionStorage:{getItem:k=>session.get(k)||null,setItem:(k,v)=>session.set(k,String(v))},localStorage:{getItem:k=>local.get(k)||null,setItem:(k,v)=>local.set(k,String(v))},document:{get cookie(){return cookie;},set cookie(v){cookie=String(v);},getElementsByTagName:()=>[first],createElement:()=>({id:'',async:false,src:''}),head:{appendChild(n){scripts.push(n);}}}};
+ const listeners={},timers=[],idles=[];
+ const addEventListener=(type,fn)=>{(listeners[type]||(listeners[type]=[])).push(fn);};
+ const removeEventListener=(type,fn)=>{const list=listeners[type]||[];const i=list.indexOf(fn);if(i>=0)list.splice(i,1);};
+ const context={window:{},URL,JSON,Date,location,addEventListener,removeEventListener,setTimeout:(fn)=>{timers.push(fn);return timers.length;},clearTimeout(){},requestIdleCallback:(fn)=>{idles.push(fn);return idles.length;},sessionStorage:{getItem:k=>session.get(k)||null,setItem:(k,v)=>session.set(k,String(v))},localStorage:{getItem:k=>local.get(k)||null,setItem:(k,v)=>local.set(k,String(v))},document:{readyState:'loading',get cookie(){return cookie;},set cookie(v){cookie=String(v);},getElementsByTagName:()=>[first],createElement:()=>({id:'',async:false,src:''}),head:{appendChild(n){scripts.push(n);}}}};
  context.window=context;
  for(const snippet of snippets)vm.runInNewContext(snippet,context);
- return {dataLayer:context.dataLayer,scripts,local,session,window:context.window};
+ function flush(){for(let n=0;n<6;n++){const loads=(listeners.load||[]).splice(0);for(const fn of loads)fn();const idle=idles.splice(0);for(const fn of idle)fn({didTimeout:false,timeRemaining:()=>50});const pending=timers.splice(0);for(const fn of pending)fn();if(!loads.length&&!idle.length&&!pending.length)break;}}
+ if(!defer)flush();
+ return {dataLayer:context.dataLayer,scripts,local,session,window:context.window,listeners,flush};
 }
 const regions=['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'];
 const flags=['ad_storage','ad_user_data','ad_personalization','analytics_storage'];
@@ -115,6 +120,21 @@ assert.ok(!JSON.stringify(lead.dataLayer).includes('Ada Lovelace'));assert.ok(!J
 const html=fs.readFileSync('dist/en/index.html','utf8');
 assert.match(html,/<body[^>]*><noscript><iframe src="https:\/\/www\.googletagmanager\.com\/ns\.html\?id=GTM-THZVNS9B" height="0" width="0" style="display:none;visibility:hidden"><\/iframe><\/noscript>/);
 assert.equal((html.match(/GTM-THZVNS9B/g)||[]).length,2,'one head container and one noscript');
+const queued=boot('https://fulviocorrea.com/',{defer:true});
+assert.equal(gtmScript(queued.scripts),undefined,'gtm.js waits for interaction or for load plus the 3s idle fallback');
+assert.ok(queued.dataLayer.some(x=>x&&x[0]==='consent'&&x[1]==='default'),'dataLayer and consent exist before the container');
+assert.equal(queued.dataLayer.find(x=>x&&x.event==='gtm.js'),undefined);
+queued.dataLayer.push({event:'whatsapp_click',link_location:'footer'});
+queued.listeners.pointerdown[0]();
+assert.match(gtmScript(queued.scripts).src,/id=GTM-THZVNS9B$/);
+const clickAt=queued.dataLayer.findIndex(x=>x&&x.event==='whatsapp_click'),startAt=queued.dataLayer.findIndex(x=>x&&x.event==='gtm.js');
+assert.ok(clickAt>=0&&clickAt<startAt,'a click pushed before gtm.js stays ahead of it');
+assert.ok(queued.dataLayer.findIndex(x=>x&&x[0]==='consent'&&x[1]==='default')<startAt,'consent default still precedes the deferred container');
+const onLoad=boot('https://fulviocorrea.com/es/',{defer:true});
+onLoad.dataLayer.push({event:'generate_lead',procedure:'blepharoplasty'});
+onLoad.flush();
+assert.ok(onLoad.dataLayer.findIndex(x=>x&&x.event==='generate_lead')<onLoad.dataLayer.findIndex(x=>x&&x.event==='gtm.js'),'events queued before load are still ahead of gtm.js');
+assert.match(gtmScript(onLoad.scripts).src,/id=GTM-THZVNS9B$/);
 assert.equal(apexRedirect('https://www.fulviocorrea.com/es/contacto/?q=1'),'https://fulviocorrea.com/es/contacto/?q=1');
 assert.equal(apexRedirect('https://fulviocorrea.com/es/'),null);
 assert.equal(isPagesDevHost('staging.fulviocorrea.pages.dev'),true);
